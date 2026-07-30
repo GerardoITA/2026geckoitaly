@@ -1,0 +1,203 @@
+country_decisions = {
+
+	french_nation = {
+		major = yes
+		potential = {
+			always = no
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_france_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = FRA }
+			NOT = { tag = PAP }
+			NOT = { tag = SPA }		# Basque is a valid culture for both FRA and SPA
+			NOT = { tag = AVE }		# Anglois is also valid
+			OR = {
+				ai = no
+				NOT = { exists = FRA }
+			}
+			OR = {
+				culture_group = french
+				primary_culture = basque
+				primary_culture = breton
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = france_region
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 15
+								region = france_region
+								is_core = root
+							}
+						}
+						owns_core_province = 183
+						owns_core_province = 184
+						owns_core_province = 186
+					}
+				}
+				province_id = 183	# �le-de-France
+				province_id = 184	# Orl�annais
+				province_id = 186	# Champagne
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = FRA }
+			owns_core_province = 184	# Orl�annais
+			owns_core_province = 186	# Champagne
+			owns_core_province = 183	# �le-de-France
+			183 = { 					# �le-de-France / Paris
+				is_state = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 15
+				region = france_region
+				is_core = root
+			}
+		}
+		effect = {
+			183 = { #Paris
+				move_capital_effect = yes
+			}
+			change_tag = FRA
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRA
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_france_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	french_empire = {
+		major = yes
+		potential = {
+			always = yes
+			tag = FRA
+			NOT = { has_country_flag = formed_france_flag }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = wallonia_area
+				area = brabant_area
+				area = flanders_area
+				area = north_brabant_area
+				area = holland_area
+				area = picardy_area
+				region = france_region
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			wallonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			brabant_area= {
+				type = all
+				owned_by = ROOT
+			}
+			flanders_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_brabant_area = {
+				type = all
+				owned_by = ROOT
+			}
+			holland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			france_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			north_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige_or_monarch_power = { amount = 50 }
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_government_reform = gc_french_empire
+			override_country_name = FRENCH_EMPIRE
+			set_country_flag = formed_france_flag
+		}
+
+	}
+}

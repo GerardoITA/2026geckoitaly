@@ -1,0 +1,69 @@
+﻿l_english:
+####################
+#Recruit Advisors   
+####################
+echo.10.title:0 "Recruit Administrative Advisor"
+echo.10.desc:0 "Recruit Administrative Advisor"
+echo.10.a:0 "£sea_prestige£Yearly Prestige: §G+1.00§!"
+echo.10.b:0 "£sea_production_efficiency£ Production Efficiency: §G+10.0%§!"
+echo.10.c:0 "£sea_monthly_splendor£ Monthly Splendor: §G+1.00§!"
+echo.10.d:0 "£sea_global_tax_modifier£ National Tax Modifier: §G+10.0%§!"
+echo.10.e:0 "£sea_global_unrest£ National Unrest: §G-2.00§!"
+echo.10.f:0 "£sea_domestic_trade_power£ Domestic Trade power value: §G+15.0%§!"
+echo.10.g:0 "£sea_global_missionary_strength£ Missionary Strength: §G+2.0§!"
+echo.10.h:0 "£no£ Don't Recruit Anyone"
+echo.11.title:0 "Recruit Diplomatic Advisor"
+echo.11.desc:0 "Recruit Diplomatic Advisor"
+echo.11.a:0 "£sea_diplomatic_reputation£ Diplomatic Reputation: §G+1.00§!"
+echo.11.b:0 "£sea_naval_morale£ Morale of Navies: §G+10.0%§!"####
+echo.11.c:0 "£sea_trade_efficiency£ Trade Efficiency: §G+10.0%§!"
+echo.11.d:0 "£sea_spy_offence£ Spy Network Construction: §G+25.%§!"
+echo.11.e:0 "£sea_global_tariffs£ Global Tariffs: §G+10.0%§!"$$$
+echo.11.f:0 "£sea_improve_relation_modifier£ Improve Relations: §G+20.0%§!"
+echo.11.g:0 "£sea_colonist_placement_chance£ Colonial Growth: §G+25.0§!"
+echo.11.h:0 "£no£ Don't Recruit Anyone"
+echo.12.title:0 "Recruit Military Advisor"
+echo.12.desc:0 "Recruit Military Advisor"
+echo.12.a:0 "£sea_land_morale£ Morale of Armies: §G+10.0%§!"#
+echo.12.b:0 "£sea_land_forcelimit_modifier£ Land Force Limit Modifier: §G+15.0%§!"#
+echo.12.c:0 "£sea_discipline£ Discipline: §G+5.0%§!"###
+echo.12.d:0 "£sea_reinforce_speed£ Reinforce Speed: §G+33.0%§!"
+echo.12.e:0 "£sea_global_manpower_modifier£ Manpower Recovery Speed Modifier: §G+20.0%§!"#
+echo.12.f:0 "£sea_defensiveness£ Fort Defence: §G+20.0%§!"
+echo.12.g:0 "£sea_land_maintenance_modifier£ Land Maintenance Modifier: §G-10.0%§!"##
+echo.12.h:0 "£no£ Don't Recruit Anyone"
+#####
+#estate privileges
+####
+echo.14.t:0 "Lapse of Burgher Demands"
+echo.14.d:0 "5 years have passed since we granted our Burghers further control over the state's affairs. We now have an opportunity to revert this decision and seize the Burgher's possessions back."
+echo.14.a:0 "Renew the privilege."
+echo.14.b:0 "Revoke the privilege."
+bastard_renew_burgher_priv_tooltip:0 "Renews the Burgher Financial Demand Privilege."
+bastard_revoke_burgher_priv_tooltip:0 "Removes the Burgher Financial Demand Privilege."
+
+ #gecko burgundy
+ gc_burgundy_event.1.t:0 "The Ascension of Burgundy to an Independent Kingdom"
+ gc_burgundy_event.1.d:0 "The Duchy of Burgundy is no more. Through a series of acquisitions and shrewd diplomacy, they have broken free from the authority of the French king and have been crowned in Trier by the Emperor."
+ gc_burgundy_event.1.a:0 "So be it."
+
+ gc_burgundy_event.2.t:0 "The Purchase of the Counties of Elsass and Ferrette"
+ gc_burgundy_event.2.d:0 "Through our deft diplomacy, we have convinced the Emperor to sell us the Counties of Ferrette, Mulhousen and Elsass. The Emperor has however now also gained a claim on these territories.."
+ gc_burgundy_event.2.a:0 "It is our right."
+
+##misc##
+
+echo.16.t:0 "Imperial Governance"
+echo.16.d:0 "Our imperial administration has seamlessly integrated our subjects into the Empire and as such our government has gained increased efficiency in ruling these peoples."
+echo.16.a:0 "Proceed."
+
+echo.17.t:0 "Imperial Decay"
+echo.17.d:0 "Our once great nation is slipping down the Great Power ranking and our international prestige is suffering as a result."
+echo.17.a:0 "Fine."
+#######
+ echo.21.t:0 "Peace in Our Time"
+ echo.21.d:0 "Peace has been secured and the army is no longer needed."
+ echo.21.a:0 "Ok"
+ echo.22.t:0 "Faceting"
+ echo.22.d:0 "Gem-cutting masters in [diamond_city.GetCapitalName] have made a breakthrough in diamond cutting by experimenting with diamond dust suspended in oil on their scaifs. This is allowing the [Root.GetAdjective] artisans to cut the rare stones in entirely new shapes and to much greater brilliance. The resulting technique, known as faceting, produces a stone of a more pleasing geometric shape and with better optical qualities. As the new stones, and the technique for making them, spread across courts and workshops the demand for jewelry, diamonds and precious stones is increasing greatly."
+ echo.22.a:0 "Gems are truly outrageous."

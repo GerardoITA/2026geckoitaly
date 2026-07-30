@@ -1,0 +1,128 @@
+#the one crimea start with
+X_CRI_great_tatar_state_reform = {
+	icon = "horde_riding"
+	
+	potential = {
+		OR = {
+			is_emperor_of_china = yes
+			have_had_reform = X_CRI_great_tatar_state_reform
+		}
+	}
+	nomad = yes
+	allow_normal_conversion = no
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	lock_level_when_selected = yes
+
+	
+	modifiers = {
+		meritocracy = 0.25
+		movement_speed = 0.1
+		available_province_loot = 0.25
+		years_of_nationalism = -5
+		governing_capacity = 150
+		land_forcelimit_modifier = 0.1
+		manpower_in_own_culture_provinces = 0.1
+		manpower_in_accepted_culture_provinces = 0.1
+		manpower_in_culture_group_provinces = 0.1
+		nomadic_tribes_loyalty_modifier = 0.05
+		reform_progress_growth = -0.5
+		development_cost = -0.1
+		cav_to_inf_ratio = 0.25
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		has_tributaries = yes
+	}
+	government_abilities = {
+		tribal_federation_mechanic
+	}
+	
+}
+
+#this one is  the one u get when forming golden horde
+X_CRI_great_tatar_state_reform_2 = {
+	icon = "horde_riding"
+	
+	potential = {
+		OR = {
+			is_emperor_of_china = yes
+			have_had_reform = X_CRI_great_tatar_state_reform_2
+		}
+	}
+	nomad = yes
+	allow_normal_conversion = no
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	lock_level_when_selected = yes
+
+	
+	modifiers = {
+		meritocracy = 0.25
+		movement_speed = 0.1
+		available_province_loot = 0.25
+		governing_capacity = 150
+		nomadic_tribes_loyalty_modifier = 0.05
+		reform_progress_growth = -0.25
+		development_cost = -0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		has_tributaries = yes
+	}
+	government_abilities = {
+		tribal_federation_mechanic
+	}
+	
+}
+
+
+#mongol empire one 
+great_mongol_state_reform_EOC_version = {
+	icon = "horde_riding"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = great_mongol_state_reform_EOC_version
+			have_had_reform = great_mongol_state_reform_EOC_version
+			tag = MGE
+		}
+	}
+	fixed_rank = 3
+	valid_for_nation_designer = no
+	nomad = yes
+	allow_normal_conversion = no
+	maintain_dynasty = yes
+	allow_force_tributary = no
+	lock_level_when_selected = yes
+	modifiers = {
+		meritocracy = 0.25
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		loot_amount = 0.50
+		reinforce_cost_modifier = -0.25
+		development_cost = -0.1
+		movement_speed = 0.1
+		years_of_nationalism = -5
+		governing_capacity = 150
+	}
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		allow_banners = yes
+		factions = {
+		}
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+		has_tributaries = yes
+	}
+	
+	government_abilities = {
+		tribal_federation_mechanic
+	}
+
+	ai = {
+		factor = 1000
+	}
+}

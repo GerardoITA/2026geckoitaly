@@ -1,0 +1,95 @@
+###### DHE's to spawn pirate republics ######
+###### by Daniel Tolman ######
+
+namespace = pirates
+normal_or_historical_nations = yes
+
+
+# The Golden Age of Piracy
+country_event = {
+	id = pirates.20
+	title = "pirates.20.t"
+	picture = PIRATE_CAPTAINS_eventPicture
+	desc = "pirates.20.d"
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		has_dlc = "Golden Century"
+		1516 = {
+			is_strongest_trade_power = ROOT
+		}
+		dip_tech = 6
+	}
+	mean_time_to_happen = {
+		months = 3
+	}
+	option = {
+		name = "pirates.20.a"
+		set_global_flag = golden_age_of_piracy
+		custom_tooltip = golden_age_of_piracy_tooltip
+	}
+}
+
+# Pirates of Rugen
+country_event = {
+	id = pirates.22
+	title = "pirates.22.name"
+	picture = SMUGGLERS_eventPicture
+	desc = "pirates.22.desc"
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = RUG
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Lions of the North"	#Rügen is a special case as it is in the Baltic Sea too
+		}
+		owns_core_province = 4745
+		NOT = { num_of_cities = 2 } #must be an OPM
+		OR = {
+			ai = no
+			is_subject = no
+		}
+		NOT = { has_reform = pirate_republic_reform }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "pirates.22.a"
+		change_government = republic
+		add_government_reform = pirate_republic_reform
+		define_ruler = {
+			force_republican_names = yes
+			dynasty = "Störtebeker"
+			culture = pommeranian
+		}
+		add_republican_tradition = 50
+		swap_non_generic_missions = yes
+
+		capital_scope = {
+			galley = root
+			galley = root
+			galley = root
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = "pirates.22.b"
+		add_stability = 1
+
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

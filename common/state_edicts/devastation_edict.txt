@@ -1,0 +1,39 @@
+edict_devastation_edict = {
+	potential = {
+		always = yes	
+		custom_trigger_tooltip = {
+			tooltip = sea_remove_state_edicts_flag_tt
+			OR = {
+				NOT = { has_country_flag = sea_state_edicts_clear_flag }
+				had_country_flag = {
+					flag = sea_state_edicts_clear_flag
+					days = 33
+				}
+			}
+		}
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	modifier = {
+		local_monthly_devastation = -1
+		local_prosperity_growth	 = 0.25
+	}
+	
+	color = {  46 187 508  }
+	on_state_edict_revoked = { FROM = { clr_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag } }
+	
+	ai_will_do = {
+		factor = 0
+	
+		modifier = {
+			factor = 500
+				any_province_in_state = {
+						devastation = 1
+				}
+		}
+	}
+	
+}

@@ -1,0 +1,181 @@
+#Mysore
+vassal = {
+	first = MYS
+	second = MAB
+	start_date = 1443.1.1
+	end_date = 1596.1.1
+}
+
+vassal = {
+	first = MYS
+	second = VND
+	start_date = 1443.1.1
+	end_date = 1596.1.1
+}
+
+vassal = {
+	first = TAU
+	second = MLB
+	start_date = 1814.2.1
+	end_date = 1819.6.1
+}
+
+#Ladakh
+vassal = {
+	first = AFG
+	second = LDK
+	start_date = 1443.1.1
+	end_date = 1809.1.1
+}
+
+#Tributary to Malwa
+guarantee = {
+	first = MLW
+	second = BGA
+	start_date = 1436.1.1
+	end_date = 1470.1.1
+}
+
+#Vijayanagar
+
+alliance = { #Vijayanagara and the Reddys
+	first = VIJ
+	second = YOR
+	start_date = 1443.1.1
+	end_date = 1448.1.1
+}
+
+#Kandy
+vassal = {
+	first = CEY
+	second = KND
+	start_date = 1440.1.1
+	end_date = 1467.1.1
+}
+
+
+#Hadoti (Bundi & Kota)
+vassal = {
+	first = MER
+	second = HAD
+	start_date = 1444.1.1
+	end_date = 1456.1.1
+}
+
+vassal = {
+	first = MER
+	second = NGA
+	start_date = 1444.1.1
+	end_date = 1456.1.1
+}
+
+vassal = {
+	first = MER
+	second = DHU
+	start_date = 1444.1.1
+	end_date = 1456.1.1
+}
+
+#Bundelkhand
+
+#Bundelkhand overlord
+vassal = {
+	first = MLW
+	second = KLP
+	start_date = 1443.1.1
+	end_date = 1531.1.1
+}
+
+vassal = {
+	first = MLW
+	second = BND
+	start_date = 1443.1.1
+	end_date = 1531.1.1
+}
+
+
+#Bagelkhand
+
+vassal = {
+	first = JNP
+	second = BGL
+	start_date = 1413.1.1
+	end_date = 1495.1.1
+}
+
+#Gondwana
+
+#Gondwana overlord
+vassal = {
+	first = MLW
+	second = GDW
+	start_date = 1441.1.1
+	end_date = 1531.1.1
+}
+
+
+#Orissa & Garjats
+
+vassal = { #Garjat
+	first = ORI
+	second = GRJ 
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+
+vassal = { #Parlakhimidi
+	first = ORI
+	second = PRD
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+
+vassal = { #Keonhjar
+	first = ORI
+	second = KJH
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+
+vassal = { #Jeypore
+	first = ORI
+	second = JPR
+	start_date = 1444.1.1
+	end_date = 1576.1.1
+}
+
+#Telingana
+
+vassal = {
+	first = BAH
+	second = TLG
+	start_date = 1433.1.1 #Defeated by Bahmanis, loses strongholds of Rachakonda and Warangal.
+	end_date = 1452.1.1
+}
+
+#Bengal
+
+#Khen-Ahom marriage alliance
+vassal = {
+	first = BNG
+	second = KMT
+	start_date = 1320.1.1
+	end_date = 1490.1.1
+}
+
+vassal = {
+	first = BNG
+	second = MBL
+	start_date = 1320.1.1
+	end_date = 1490.1.1
+}
+
+#Gujarat
+
+#Vassal of Gujarat
+vassal = {
+	first = GUJ
+	second = KHD
+	start_date = 1418.1.1
+	end_date = 1508.1.1
+}

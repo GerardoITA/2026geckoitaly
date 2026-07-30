@@ -1,0 +1,29 @@
+
+GZM = "countries/Great Zimbabwe.txt"
+PR2 = "countries/PRSokoto.txt"
+AHU = "countries/HabsburgEmpire.txt"
+EOH = "countries/EmpireOfHungary.txt"
+#Gecko Germans
+NGF = "countries/NorthGermanFederation.txt"
+SGF = "countries/SouthGermanFederation.txt"
+#Korea
+FO1 = "countries/Goguryeo.txt"
+FO2 = "countries/Mahan.txt"
+FO3 = "countries/Byeonham.txt"
+FO4 = "countries/Jinhan.txt"
+FO5 = "countries/Baekje.txt"
+FO6 = "countries/Ye.txt"
+FO7 = "countries/Dongye.txt"
+
+DSA = "countries/SouthAfrica.txt"
+ORJ = "countries/Oranje.txt"
+
+BEO = "countries/Beornia.txt"
+GCA = "countries/GranColumbia.txt"
+AME = "countries/Ameriga.txt"
+HER = "countries/Hereria.txt"
+PLA = "countries/Plantagenia.txt"
+ARC = "countries/Arcadia.txt"
+VIN = "countries/Vinland.txt"
+LUS = "countries/Lusitania.txt"
+FRE = "countries/Freiland.txt"

@@ -1,0 +1,17 @@
+# No previous file for Yao
+
+owner = YAO
+controller = YAO
+add_core = YAO
+culture = bilala 
+religion = sunni
+capital = "Yao"
+trade_goods = dyes
+hre = no
+base_tax = 4
+base_production = 3
+is_city = yes
+base_manpower = 4
+discovered_by = sub_saharan
+fort_15th = yes
+ramparts = yes

@@ -1,0 +1,52 @@
+####################
+# Estates
+####################
+defined_text = {
+	name = GetXCossackLootAmount
+	random = no
+	text = {
+		localisation_key = X_cossack_raid_loot_amount_zero
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = X_cossack_raid_total_development_localization_variable
+					value = 1
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = X_cossack_raid_loot_amount_not_zero
+		trigger = {
+			check_variable = {
+				which = X_cossack_raid_total_development_localization_variable
+				value = 1
+			}
+		}
+	}
+}
+
+defined_text = {
+	name = GetXCossackLootAmountTT
+	random = no
+	text = {
+		localisation_key = X_cossack_raid_loot_amount_zero_tt
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = X_cossack_raid_total_development_localization_variable
+					value = 1
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = X_cossack_raid_loot_amount_not_zero_tt
+		trigger = {
+			check_variable = {
+				which = X_cossack_raid_total_development_localization_variable
+				value = 1
+			}
+		}
+	}
+}

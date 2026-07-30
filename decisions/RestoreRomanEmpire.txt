@@ -1,0 +1,106 @@
+country_decisions = {
+
+	restore_roman_empire = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = restored_rome_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { exists = ROM }
+			OR = {
+				religion_group = christian
+				religion_group = pagan
+			}
+			tag = ITA
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = balkan_region
+				region = maghreb_region
+				region = egypt_region
+				region = italy_region
+				region = anatolia_region
+				region = mashriq_region
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			italy_region = {
+				type = all
+				owned_by = ROOT
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = balkan_region
+				value = 40
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = anatolia_region
+				value = 30
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = maghreb_region
+				value = 15
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = mashriq_region
+				value = 15
+			}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = egypt_region
+				value = 15
+			}
+			
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			118 = {
+				is_state = yes
+			}
+		}
+		effect = {
+			118 = {
+				move_capital_effect = yes
+			}
+			change_tag = ROM
+			restore_country_name_effect = yes
+			#change_primary_culture = roman
+			custom_tooltip = restore_roman_empire_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+			}
+			set_government_rank = 3
+			add_prestige_or_monarch_power = { amount = 50 }
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = restored_rome_flag
+
+			if = {
+				limit = {
+					has_country_modifier = ITA_blatant_roman_larp
+				}
+				remove_country_modifier = ITA_blatant_roman_larp
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

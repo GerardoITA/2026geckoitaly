@@ -638,7 +638,7 @@ stability = {
 
 positive_stability = {
 	global_unrest = -1					#-1% revolt risk each step
-	global_tax_modifier = 0.01
+	global_tax_modifier = 0.05
 	global_missionary_strength = 0.005
 	temples_influence = 0.02
 	mr_aristocrats_influence = 0.03

@@ -5,8 +5,7 @@ country_decisions = {
 		potential = {
 			tag = HUN
 			NOT = { has_country_flag = formed_byzantium_flag }
-			NOT = { exists = BYZ }
-			NOT = { exists = GRE }
+			
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -46,6 +45,8 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			NOT = { exists = BYZ }
+			NOT = { exists = GRE }
 		}
 		effect = {
 			151 = {

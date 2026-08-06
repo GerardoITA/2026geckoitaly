@@ -1176,11 +1176,11 @@ ARA_ideas = {
 BYZ_ideas = {
 	start = {
 		advisor_cost = -0.10
-		improve_relation_modifier = 0.2
+		tolerance_own = 2
 	}
 	
 	bonus = {
-		tolerance_own = 3
+		infantry_power = 0.2
 	}
 	
 	trigger = {
@@ -1206,7 +1206,8 @@ BYZ_ideas = {
 	}
 	
 	byz_protect_the_frontiers = {
-		defensiveness = 0.15
+		defensiveness = 0.25
+		shock_damage_received = -0.1
 	}
 	
 	byz_strategikon = {

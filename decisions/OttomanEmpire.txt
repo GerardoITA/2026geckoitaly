@@ -31,7 +31,6 @@ country_decisions = {
 				area = serbia_area
 				area = bosnia_area
 				area = wallachia_area
-				area = moldavia_area
 				area = imereti_area
 				area = samtskhe_area
 			}
@@ -108,10 +107,6 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			moldavia_area = {
-				type = all
-				owned_by = ROOT
-			}
 			imereti_area = {
 				type = all
 				owned_by = ROOT
@@ -128,6 +123,9 @@ country_decisions = {
 			add_prestige_or_monarch_power = {
 				amount = 100
 			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
 			if = {
 				limit = { NOT = { government_rank = 3} }
 				set_government_rank = 3

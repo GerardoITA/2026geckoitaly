@@ -1180,7 +1180,7 @@ BYZ_ideas = {
 	}
 	
 	bonus = {
-		infantry_power = 0.2
+		infantry_power = 0.15
 	}
 	
 	trigger = {

@@ -24,7 +24,7 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
-add_province_triggered_modifier=conquest_of_warszawa
+#add_province_triggered_modifier=conquest_of_warszawa
 
 1526.3.9 = {
 	owner = POL

@@ -1,4 +1,4 @@
-#153 - Pest (Pest + Pilis + Esztergom + Kalocsa + most of Kiskunság + Parts of Nógrád )
+#153 - Pest (Pest + Pilis + Esztergom + Kalocsa + most of Kiskunsï¿½g + Parts of Nï¿½grï¿½d )
 
 owner = HUN
 controller = HUN 
@@ -24,7 +24,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
-add_province_triggered_modifier=conquest_of_pest
+#add_province_triggered_modifier=conquest_of_pest
 add_permanent_province_modifier = {
     name = critical_province
     duration = -1

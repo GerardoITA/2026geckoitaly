@@ -3289,8 +3289,6 @@ mercenary_concessions = {
 hun_power_to_magnates = {
 	global_tax_modifier = -0.10
 	global_unrest = -3
-	technology_cost = 0.25
-	idea_cost = 0.25
 }
 
 hun_banditry_in_upper_hungary = {

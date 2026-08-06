@@ -954,7 +954,7 @@ estate_church_monopoly_of_incense = {
 			limit = {
 				incense = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -1064,7 +1064,6 @@ estate_church_monopoly_of_wool = {
 			limit = {
 				wool = 1
 			}
-			add_mercantilism = 2
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -1175,7 +1174,6 @@ estate_church_monopoly_of_wine = {
 			limit = {
 				wine = 1
 			}
-			add_mercantilism = 2
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -1286,7 +1284,7 @@ estate_church_monopoly_of_slaves = {
 			limit = {
 				slaves = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -3224,7 +3222,7 @@ estate_church_MAY_cocoa_monopoly = {
 			limit = {
 				cocoa = 1
 			}
-			add_mercantilism = 1
+		
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 12

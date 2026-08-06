@@ -4838,7 +4838,7 @@ mam_export_grain = {
 			set_country_flag = exported_grain_in_asia
 		}
 		add_adm_power = -50
-		add_mercantilism = 2
+		
 	}
 	on_decline = {
 		add_prestige_or_monarch_power = { amount = -10 }

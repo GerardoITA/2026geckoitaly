@@ -763,7 +763,7 @@ estate_burghers_monopoly_of_textiles = {
 					silk = 1
 				}
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -879,7 +879,7 @@ estate_burghers_monopoly_of_dyes = {
 			limit = {
 				dyes = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -990,7 +990,7 @@ estate_burghers_monopoly_of_glass = {
 			limit = {
 				glass = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -1119,7 +1119,7 @@ estate_burghers_monopoly_of_paper = {
 			limit = {
 				paper = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -3070,7 +3070,7 @@ estate_burghers_monopoly_of_coffee = {
 			limit = {
 				coffee = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -3408,7 +3408,7 @@ estate_burghers_YEM_coffee_monopoly = {
 			limit = {
 				coffee = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 15

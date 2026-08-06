@@ -543,7 +543,7 @@ estate_maratha_monopoly_of_metals = {
 					copper = 1
 				}
 			}
-			add_mercantilism = 2
+	
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -660,7 +660,6 @@ estate_maratha_monopoly_of_livestock = {
 			limit = {
 				livestock = 1
 			}
-			add_mercantilism = 2
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9
@@ -771,7 +770,7 @@ estate_maratha_monopoly_of_gems = {
 			limit = {
 				gems = 1
 			}
-			add_mercantilism = 2
+			
 		}
 		add_years_of_owned_provinces_production_income = {
 			years = 9

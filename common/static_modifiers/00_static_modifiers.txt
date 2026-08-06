@@ -1302,7 +1302,7 @@ pronoia_base_modifiers = {
 }
 
 BYZ_pronoia_buff_army_tradition_modifier = {
-	army_tradition = 0.2
+	army_tradition = 0.1
 }
 
 BYZ_pronoia_land_forcelimit_penalty = {

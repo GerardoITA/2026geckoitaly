@@ -3723,17 +3723,8 @@ estate_nobles_deteriorating_army = {
 	penalties = {
 		assault_fort_ability = -0.75
 		reinforce_speed = -0.1
-		army_tradition_decay = 0.01
 	}
-	conditional_modifier = {
-		trigger = {
-			has_dlc = "King of Kings"
-		}
-		is_bad = yes
-		modifier = {
-			land_morale = -0.15 #this is counteracted by the +10.0% from the mission tree and events
-		}
-	}
+
 	ai_will_do = {
 		factor = 0
 	}

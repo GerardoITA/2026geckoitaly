@@ -11115,8 +11115,8 @@ BYZ_elite_forces = {
 }
 
 BYZ_regional_mercenary_forces = {
-	mercenary_discipline = 0.05
-	mercenary_manpower = 0.5
+	mercenary_discipline = 0.025
+	mercenary_manpower = 0.1
 }
 
 BYZ_reliance_on_the_pronoiar = {

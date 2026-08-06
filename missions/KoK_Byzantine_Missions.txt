@@ -46,32 +46,6 @@ MEE_BYZ_conquest_1 = {
 			}
 		}
 		effect = {
-			simple_dynamic_effect = {
-				first_custom_tooltip = BYZ_if_done_via_conquest
-				first_limit = "
-					owns_or_non_sovereign_subject_of = 4699 #arta
-					NOT = { exists = EPI }
-				"
-				first_effect = "
-					add_country_modifier = {
-						name = EPI_epirote_forces
-						duration = 5475
-					}
-				"
-				second_custom_tooltip = BYZ_if_done_via_vassalization
-				second_limit = "
-					EPI = { is_subject_of = ROOT }
-				"
-				second_effect = "
-					add_dip_power = 75
-					
-					custom_tooltip = \" \" 
-					
-					add_core = 4698 #cephalonia
-					
-					custom_tooltip = \" \"
-				"
-			}
 			
 			give_claims = { area = albania_area }
 			
@@ -234,17 +208,12 @@ MEE_BYZ_conquest_2 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			OR = {
-				num_of_allies = 2
+			OR = {num_of_allies = 2
 				army_size_percentage = 0.9
 				army_size = 10
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = BYZ_dreams_of_restoration
-				duration = 5475
-			}
 			
 			give_claims = { area = hudavendigar_area }
 			give_claims = { area = aydin_area }
@@ -254,22 +223,6 @@ MEE_BYZ_conquest_2 = {
 			
 			custom_tooltip = " "
 			
-			complex_dynamic_effect = {
-				first_custom_tooltip = BYZ_if_we_are_allied_with_PAP
-				first_limit = "
-					alliance_with = PAP
-				"
-				first_effect = "
-					custom_tooltip = BYZ_extra_mercenary_cost_for_union_tt
-					hidden_effect = {
-						add_country_modifier = {
-							name = BYZ_extra_mercenary_cost_for_union
-							duration = 5475
-							hidden = yes
-						}
-					}
-				"
-			}
 		}
 	}
 	
@@ -3027,69 +2980,15 @@ MEE_BYZ_religion_1 = {
 				duration = 7300
 			}
 			
-			if = {
-				limit = {
-					has_dlc = "Third Rome"
-				}
-				custom_tooltip = BYZ_double_current_icon
-				hidden_effect = {
-					if = {
-						limit = {
-							current_icon = icon_eleusa
-						}
-						add_country_modifier = {
-							name = BYZ_icon_eleusa
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_pancreator
-						}
-						add_country_modifier = {
-							name = BYZ_icon_pancreator
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_nicholas
-						}
-						add_country_modifier = {
-							name = BYZ_icon_nicholas
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_climacus
-						}
-						add_country_modifier = {
-							name = BYZ_icon_climacus
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_michael
-						}
-						add_country_modifier = {
-							name = BYZ_icon_michael
-							duration = 5475
-						}
-					}
-					else = { }
-				}
+			
+			define_advisor = {
+				type = theologian
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.4 #so it's slightly better than event-based advisors.
 			}
-			else = {
-				define_advisor = {
-					type = theologian
-					skill = 3
-					culture = ROOT
-					religion = ROOT
-					cost_multiplier = 0.4 #so it's slightly better than event-based advisors.
-				}
-			}
+			
 			
 			custom_tooltip = " "
 			

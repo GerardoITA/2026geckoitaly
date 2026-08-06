@@ -140,3 +140,7 @@ sealand_events.28.15: "Enable §YFeudal Taxes Edict§! State Edict."
 sealand_events.28.16: "Enable §YReligious Tolerance Edict§! State Edict."
 sealand_events.28.17: "Enable §YState Integration Edict§! State Edict."
 sealand_events.28.18: "Enable §YUrbanization Edict§! State Edict."
+
+#colonial
+upgrade_colony_title:0 "Proclaim Dominion"
+upgrade_colony_desc:0 "The territorial extension we have reached demands a considerable reform, to better administrate our new territories."

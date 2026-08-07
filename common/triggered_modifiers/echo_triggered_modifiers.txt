@@ -256,8 +256,6 @@ War_chest = {
 			is_subject_of_type = tributary_state
 		}
 	}
-	land_morale = 0.1
-	land_forcelimit_modifier = 0.15
 	mercenary_manpower = 0.25
 	war_exhaustion = -0.05
 	land_maintenance_modifier = -0.1

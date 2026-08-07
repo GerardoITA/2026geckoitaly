@@ -31,6 +31,7 @@ country_decisions = {
 				area = serbia_area
 				area = bosnia_area
 				area = wallachia_area
+				area = moldavia_area
 				area = imereti_area
 				area = samtskhe_area
 			}
@@ -107,6 +108,11 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
+			moldavia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			
 			imereti_area = {
 				type = all
 				owned_by = ROOT

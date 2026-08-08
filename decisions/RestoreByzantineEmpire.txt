@@ -9,44 +9,77 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 151 # Constantinople
-				province_id = 149	# Edirne
-				province_id = 144  # Epiros
-				province_id = 147	# Salonica
-				province_id = 148	# Macedonia
-				province_id = 146	# Athens
-				province_id = 145	# Morea
-				province_id = 1773	# Achea
-				province_id = 316	# Bithynia
-				province_id = 317	# Bursa
-				province_id = 318	# Smyrna
-				province_id = 1853	# Kozani
-				province_id = 2296	# Biga
+				area = thrace_area
+				area = aegean_archipelago_area
+				area = macedonia_area
+				area = morea_area
+				area = northern_greece_area
+				area = X_central_greece_area
+				area = aydin_area
+				area = hudavendigar_area
 			}
-			NOT = { owned_by = ROOT }
+
+			NOT = {
+				owned_by = ROOT
+			}
 		}
+
 		allow = {
-			owns = 149	# Edirne
-			owns = 144  # Epiros
-			owns = 147	# Salonica
-			owns = 148	# Macedonia
-			owns = 146	# Athens
-			owns = 145	# Morea
-			owns = 1773	# Achea
-			owns = 316	# Bithynia
-			owns = 317	# Bursa
-			owns = 318	# Smyrna
-			owns = 1853	# Kozani
-			owns = 2296	# Biga
-			owns = 151  # Constantinople
-			151 = {		# Constantinople
+			thrace_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			aegean_archipelago_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			macedonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			morea_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			northern_greece_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			X_central_greece_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			aydin_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			hudavendigar_area = {
+				type = all
+				owned_by = ROOT
+			}
+
+			151 = {
 				is_state = yes
 			}
+
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			NOT = { exists = BYZ }
-			NOT = { exists = GRE }
+
+			NOT = {
+				exists = BYZ
+			}
+
+			NOT = {
+				exists = GRE
+			}
 		}
 		effect = {
 			151 = {

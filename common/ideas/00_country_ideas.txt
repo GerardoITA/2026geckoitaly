@@ -99,11 +99,11 @@ GER_ideas = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
-		infantry_power = 0.15
+		infantry_power = 0.2
 	}
 	
 	bonus = {
-		diplomatic_upkeep = 1
+		land_morale = 0.15
 	}	
 
 	trigger = {
@@ -112,7 +112,8 @@ GER_ideas = {
 	free = yes
 	
 	ger_german_confederation = {
-		global_unrest = -2
+		manpower_in_culture_group_provinces = 0.25
+		manpower_recovery_speed = 0.15
 	}
 	ger_german_universities = {
 		technology_cost = -0.1
@@ -127,7 +128,7 @@ GER_ideas = {
 		army_tradition = 0.5
 	}
 	ger_reichstag = {
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.1
 	}
 	ger_eisen_und_kohle = {
 		global_trade_goods_size_modifier = 0.2

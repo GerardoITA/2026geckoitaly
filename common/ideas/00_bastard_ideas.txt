@@ -1123,7 +1123,7 @@ NGF_ideas = {
 		infantry_power = 0.15
 	}
 	NGF_national_idea_2 = {
-		land_morale = 0.2
+		land_morale = 0.15
 	}
 	NGF_national_idea_3 = {
 		manpower_recovery_speed = 0.15
@@ -1141,7 +1141,7 @@ NGF_ideas = {
 		inflation_reduction = 0.1
 	}
 	NGF_national_idea_6 = {
-		naval_morale = 0.1
+		naval_morale = 0.05
 	}
 	NGF_national_idea_7 = {
 		trade_efficiency = 0.10

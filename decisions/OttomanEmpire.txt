@@ -36,90 +36,195 @@ country_decisions = {
 				area = samtskhe_area
 			}
 			NOT = {
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 		}
 		allow = {
 			anatolia_region = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			mashriq_region = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			egypt_region = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			thrace_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			bulgaria_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			silistria_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			macedonia_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			X_central_greece_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			morea_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			northern_greece_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			eastern_mediterrenean_islands_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			aegean_archipelago_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			albania_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			rascia_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			serbia_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			bosnia_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			wallachia_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			moldavia_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			
 			imereti_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			samtskhe_area = {
 				type = all
-				owned_by = ROOT
+				OR = {
+			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
+			owner = {
+				is_subject_of = ROOT
+			}
+		}
 			}
 			is_at_war = no
 			is_free_or_tributary_trigger = yes

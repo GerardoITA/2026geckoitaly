@@ -1,17 +1,23 @@
 country_decisions = {
+
 	proclaim_ottoman_empire = {
 		major = yes
+
 		potential = {
 			normal_or_historical_nations = yes
+
 			NOT = {
 				has_country_flag = proclaim_ottoman_empire_flag
 			}
+
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+
 			tag = TUR
 		}
+
 		provinces_to_highlight = {
 			OR = {
 				region = mashriq_region
@@ -35,223 +41,278 @@ country_decisions = {
 				area = imereti_area
 				area = samtskhe_area
 			}
+
 			NOT = {
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
 		}
-			}
-		}
+
 		allow = {
 			anatolia_region = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			mashriq_region = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			egypt_region = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			thrace_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			bulgaria_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			silistria_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			macedonia_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			X_central_greece_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			morea_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			northern_greece_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			eastern_mediterrenean_islands_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			aegean_archipelago_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			albania_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			rascia_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			serbia_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			bosnia_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			wallachia_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			moldavia_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
-			
+
 			imereti_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			samtskhe_area = {
 				type = all
 				OR = {
-			OR = {  owned_by = ROOT owner = {  is_subject_of = ROOT } 	}  
-			owner = {
-				is_subject_of = ROOT
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
 			}
-		}
-			}
+
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 		}
+
 		effect = {
 			add_prestige_or_monarch_power = {
 				amount = 100
 			}
+
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
+
 			if = {
-				limit = { NOT = { government_rank = 3} }
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+
 				set_government_rank = 3
 			}
+
 			override_country_name = OTTOMAN_EMPIRE
+
 			if = {
 				limit = {
 					has_custom_ideas = no
 				}
+
 				country_event = {
 					id = ideagroups.1
-				}				#Swap Ideas
+				}
 			}
+
 			set_country_flag = proclaim_ottoman_empire_flag
 		}
+
 		ai_will_do = {
 			factor = 1
 		}

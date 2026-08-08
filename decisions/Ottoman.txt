@@ -57,6 +57,37 @@ country_decisions = {
 		do_not_core = 151 # Constantinople
 	}
 
+	manage_eyalet_colors = {
+		major = yes
+
+		color = { 41  233  249 }
+			
+
+		potential = {
+			tag = TUR
+
+		}
+
+		allow = {
+			any_subject_country = {
+				OR = {
+					is_subject_of_type = eyalet
+					is_subject_of_type = core_eyalet
+				}
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = eyalet_colors.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	#provincial_system = {
 	#	potential = {
 	#		tag = TUR

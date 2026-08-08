@@ -144,3 +144,11 @@ sealand_events.28.18: "Enable §YUrbanization Edict§! State Edict."
 #colonial
 upgrade_colony_title:0 "Proclaim Dominion"
 upgrade_colony_desc:0 "The territorial extension we have reached demands a considerable reform, to better administrate our new territories."
+
+#color_manager
+manage_eyalet_colors_title:0 "Manage Eyalet Colors"
+manage_eyalet_colors_desc:0 "Choose whether our Eyalets should use the Ottoman map color or their original national colors."
+eyalet_colors.1.t:0 "Eyalet Colors"
+eyalet_colors.1.d:0 "We may choose how our Eyalets are represented on the political map."
+eyalet_colors.1.a:0 "Use the Ottoman color."
+eyalet_colors.1.b:0 "Restore their original colors."

@@ -1196,6 +1196,32 @@ on_new_consort = {
 
 # country
 on_monarch_death = {
+
+	############################################################
+	# RULER FAILSAFES
+	############################################################
+
+	# OTTOMANS
+	if = {
+		limit = {
+			tag = TUR
+
+			NOT = {
+				is_year = 1470
+			}
+
+			NOT = {
+				has_country_flag = ruler_failsafe_ottomans_used
+			}
+		}
+
+		country_event = {
+			id = ruler_failsafe.1
+		}
+	}
+
+
+
 	if = {
 		limit = {
 			tag = ANS

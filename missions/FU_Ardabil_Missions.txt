@@ -281,7 +281,7 @@ fu_ardabil_missions_3 = {
 				}
 			}
 			else = { has_idea = arl_safavid_order }
-			is_defender_of_faith = yes
+			
 		}
 		effect = {
 			add_country_modifier = {

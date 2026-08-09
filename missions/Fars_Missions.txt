@@ -50,21 +50,7 @@ Fars_Missions_slot_1 = {
 		}
 	}
 	
-	Timurid_prince_claim_the_empire_frs = {
-		icon = me_mission_timurids_princedom_claim_timur_empire
-		required_missions = { 
-			Timurid_prince_expand_the_state_frs
-			Timurid_grand_ruler_frs
-		}
-		position = 4
-		trigger = {
-			tag = FRS
-		}
-		effect = {
-			set_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS
-			custom_tooltip = ALLOW_FORMATION_OF_TIMURIDS.tooltip
-		}
-	}
+	
 }
 
 	Fars_Missions_slot_2 = {
@@ -186,10 +172,7 @@ Fars_Missions_slot_3 = {
 			army_size_percentage = 1
 		}
 		effect = {
-			add_country_modifier = {
-				name = ME_heir_of_timur
-				duration = 7300
-			}
+			
 			446 = {
 				add_permanent_claim = ROOT
 			}
@@ -261,7 +244,7 @@ Fars_Missions_slot_3 = {
 		position = 3
 		trigger = {
 			OR = {
-				army_size = 40
+				army_size = 30
 				calc_true_if = {
 					all_country = {
 						dynasty = "Timurid"
@@ -276,6 +259,10 @@ Fars_Missions_slot_3 = {
 				limit = {
 					mission_completed = Timurid_prince_power_strugle
 				}
+			}
+			add_country_modifier = {
+				name = ME_heir_of_timur
+				duration = 7300
 			}
 			add_prestige_or_monarch_power = { amount = 20 }
 			add_legitimacy_equivalent = { amount = 10 republican_tradition = 10 }

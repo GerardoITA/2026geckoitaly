@@ -803,3 +803,15 @@ the_holy_see = {
 	on_deactivation = {
 	}
 }
+
+mines_of_saresang = {
+	
+	trade_goods_size = 4
+	
+	
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}

@@ -63,6 +63,7 @@
  conquest_of_toledo:0 "Conquest of Toledo"
  caliph_of_cairo:0 "Seat of the Caliph of Cairo"
  subsaharan_buildings:0 "Subsaharan Infrastructure"
+ mines_of_saresang:0 "Mines of Sar-e-sang"
  #Advisor Event modifiers
  gc_arty_officer_delayed:0 "Arty Officer Delayed"
  gc_arty_officer_modifier:0 "Excellent Artillery Officers"

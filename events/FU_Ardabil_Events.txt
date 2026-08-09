@@ -116,35 +116,7 @@ country_event = {
 		
 		ai_chance = { factor = 1 }
 		capital_scope = {
-			if = {
-				limit = { has_building = fort_17th }
-				remove_building = fort_17th
-				add_building = fort_18th
-			}
-			else_if = {
-				limit = { has_building = fort_16th }
-				remove_building = fort_16th
-				add_building = fort_17th
-			}
-			else_if = {
-				limit = { has_building = fort_15th }
-				remove_building = fort_15th
-				add_building = fort_16th
-			}
-			else_if = {
-				limit = { has_building = fort_18th }
-				add_province_modifier = {
-					name = arl_fort_defense_18_modifier
-					duration = -1
-				}
-			}
-			else = {
-				add_building_construction = {
-					building = fort_15th 
-					speed = 0.33
-					cost = 0
-				}
-			}
+
 			add_province_modifier = {
 				name = arl_renovations_in_the_old_capital_modifier
 				duration = -1

@@ -1233,11 +1233,11 @@ AFG_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.15
-		discipline = 0.05
+		land_morale = 0.15
 	}
 	
 	bonus = {
-		land_forcelimit_modifier = 0.2
+		fire_damage = 0.15
 	}
 	
 	trigger = {
@@ -1247,6 +1247,7 @@ MUG_ideas = {
 	
 	mansabdari_system = {
 		cavalry_power = 0.1
+		land_forcelimit_modifier = 0.2
 	}
 	tureh = {
 		global_manpower_modifier = 0.2
@@ -1255,7 +1256,7 @@ MUG_ideas = {
 		yearly_innovativeness = 0.33
 	}
 	an_indian_padshah = {
-		land_morale = 0.1
+		discipline = 0.05
 	}
 	zabt_system = {
 		global_tax_modifier = 0.33
@@ -2901,7 +2902,7 @@ QOM_ideas = {
 
 TIM_ideas = {
 	start = {
-		manpower_recovery_speed = 0.2
+		land_morale = 0.15
 		leader_land_shock = 1
 	}
 	
@@ -2921,10 +2922,10 @@ TIM_ideas = {
 		cavalry_power = 0.1
 	}
 	unleash_the_tiger = {
-		fire_damage = 0.15
+		shock_damage = 0.1
 	}
 	bastard_populating_the_steppes = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.1
 	}
 	timurid_renaissance = {
 		technology_cost = -0.05

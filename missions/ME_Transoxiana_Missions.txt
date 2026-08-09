@@ -81,6 +81,9 @@ Transoxiana_missions_slot_2 = {
 					is_subject_of = ROOT
 				}
 			}
+			
+
+
 		}
 		effect = {
 			if = {
@@ -229,39 +232,7 @@ Transoxiana_missions_slot_3 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					AFG = {
-						OR = {
-							is_subject = yes
-							exists = no
-						}
-					}
-				}
-				kabulistan_area = {
-					limit = {
-						NOT = { owned_by = ROOT	}
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				ghor_area = {
-					limit = {
-						NOT = { owned_by = ROOT	}
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			else = {
-				AFG = {
-					country_event = { id = ME_Timurid_Princes_Event.16 }
-				}
-				custom_tooltip = AFGHANISTAN_MUST_ACCEPT_OUR_DEMANDS
-				tooltip = {
-					vassalize = AFG
-				}
-			}
+			
 			every_province = {
 				limit = {
 					owned_by = KHO
@@ -269,7 +240,15 @@ Transoxiana_missions_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			custom_tooltip = BABUR_MIGHT_RESPOND_TO_OUR_CLAIMS
+
+			every_province = {
+				limit = {
+					owned_by = AFG
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
 		}
 	}
 

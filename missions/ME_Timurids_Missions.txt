@@ -594,7 +594,6 @@ TIM_missions_3 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				area = kerman_area
 				area = mashhad_area
 				area = sistan_area
 				area = ghor_area
@@ -603,8 +602,7 @@ TIM_missions_3 = {
 				area = transoxiana_area
 				area = termez_area
 				area = merv_area
-				province_id = 431
-				province_id = 4327
+			
 				province_id = 458
 				province_id = 1967
 				province_id = 457
@@ -620,16 +618,9 @@ TIM_missions_3 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			kerman_area = {
-				type = all
-				owned_by = ROOT
-			}
-			431 = {
-				owned_by = ROOT
-			}
-			4327 = {
-				owned_by = ROOT
-			}
+	
+			
+			
 			mashhad_area = {
 				type = all
 				owned_by = ROOT
@@ -927,51 +918,22 @@ TIM_missions_4 = {
 			NOT = { exists = QOM }
 		}
 		trigger = {
-			if = {
-				limit = {
-					exists = QOM
-					QOM = { is_subject = no }
-				}
-				offensive_war_with = QOM
-			}
-			else_if = {
-				limit = {
-					NOT = { exists = QOM }
-				}
-				iraq_e_ajam_area = {
-					type = all
-					owned_by = ROOT
-				}
-				azerbaijan_area = {
-					type = all
-					owned_by = ROOT
-				}
-				414 = {
-					owned_by = ROOT
-				}
-				2210 = {
-					owned_by = ROOT
-				}
-			}
-			else = {
-				QOM = {
-					is_subject_of = ROOT
-				}
-			}
+		
+	
+				
+		samarkand_area = {
+			type = all
+			owned_by = ROOT
+		}
+			
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = QOM
-				}
-				country_event = { id = ME_Timurid_Princes_Event.20 }
+		
+			add_country_modifier = {
+				name = traitors_demise
+				duration = 7300
 			}
-			else = {
-				add_country_modifier = {
-					name = traitors_demise
-					duration = 7300
-				}
-			}
+
 		}
 	}
 

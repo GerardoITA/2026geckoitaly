@@ -63,7 +63,7 @@
 		}
 		position = 4
 		trigger = {
-			tag = TRS
+			tag = AFG
 		}
 		effect = {
 			set_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS
@@ -213,6 +213,35 @@ Timurid_princes_missions_3 = {
 				add_permanent_claim = ROOT
 			}
 			sistan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			merv_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			termez_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			transoxiana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			samarkand_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }

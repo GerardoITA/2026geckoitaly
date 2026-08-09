@@ -68,7 +68,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			tag = TRS
+			tag = AFG
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -76,7 +76,7 @@ country_decisions = {
 				#province_id = 2213
 				#province_id = 2218
 				#province_id = 465
-				province_id = 2221	# Mashhad
+				province_id = 4344	# Kish
 				#province_id = 451
 				province_id = 446
 				province_id = 445
@@ -95,12 +95,11 @@ country_decisions = {
 			owns_core_province = 454	# Samarkand
 			owns_core_province = 446	# Samarkand
 			AND = {
-					owns_core_province = 2221	# Mashhad
+					owns_core_province = 4344	# Kish
 					owns_core_province = 445	# Merv
 					#owns_core_province = 465	# Nogai
 				}
-			army_size = 30
-			share_of_starting_income = 2
+			
 		}
 		effect = {
 			454 = {

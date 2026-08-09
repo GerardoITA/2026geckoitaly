@@ -1842,8 +1842,7 @@ elephant_regiments = {
 }
 
 unparalleled_architecture = {
-	development_cost = -0.10
-	build_cost = -0.2
+	build_cost = -0.1
 }
 
 stampeding_the_traitor = {

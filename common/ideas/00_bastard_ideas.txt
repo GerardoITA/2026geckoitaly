@@ -600,7 +600,7 @@ HAN_ideas = {
 		fire_damage = 0.1
 	}
 	han_kings_legion = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.05
 	}
 }
 

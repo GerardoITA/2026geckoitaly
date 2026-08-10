@@ -602,11 +602,7 @@ TIM_missions_3 = {
 				area = transoxiana_area
 				area = termez_area
 				area = merv_area
-			
-				province_id = 458
-				province_id = 1967
-				province_id = 457
-				province_id = 2356
+
 				province_id = 437
 				province_id = 438
 				province_id = 2349
@@ -615,76 +611,66 @@ TIM_missions_3 = {
 				province_id = 2362
 				province_id = 1973
 			}
-			NOT = { owned_by = ROOT }
+
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
+
 		trigger = {
-	
-			
-			
 			mashhad_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			sistan_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			ghor_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			kabulistan_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			balkh_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			transoxiana_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			termez_area = {
 				type = all
-				owned_by = ROOT
-			}
-			458 = {
-				owned_by = ROOT
-			}
-			1967 = {
-				owned_by = ROOT
-			}
-			457 = {
-				owned_by = ROOT
-			}
-			2356 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			merv_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
+
 			437 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			438 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2349 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2214 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			441 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2362 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1973 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {

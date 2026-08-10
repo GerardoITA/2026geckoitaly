@@ -72,33 +72,38 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				#province_id = 429
-				#province_id = 2213
-				#province_id = 2218
-				#province_id = 465
-				province_id = 4344	# Kish
-				#province_id = 451
-				province_id = 446
-				province_id = 445
-				#province_id = 428
+				area = termez_area
+				area = merv_area
+				province_id = 2221
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
 		}
+
 		allow = {
 			has_country_flag = ME_ALLOW_FORMATION_OF_TIMURIDS
 			NOT = { exists = TIM }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns_core_province = 446	# Samarkand
-			AND = {
-					owns_core_province = 4344	# Kish
-					owns_core_province = 445	# Merv
-					#owns_core_province = 465	# Nogai
-				}
-			
+
+			termez_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+
+			merv_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+
+			2221 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		effect = {
 			454 = {

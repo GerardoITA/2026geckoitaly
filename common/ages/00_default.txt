@@ -503,6 +503,7 @@ age_of_reformation = {
 				OR ={
 					tag = HIN
 					tag = DLH
+					tag = MUG
 				}
 			}
 			modifier = {

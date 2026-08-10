@@ -173,41 +173,15 @@ Fars_Missions_slot_3 = {
 		}
 		effect = {
 			
-			446 = {
-				add_permanent_claim = ROOT
-			}
-			437 = {
-				add_permanent_claim = ROOT
-			}
-			438 = {
-				add_permanent_claim = ROOT
-			}
-			4325 ={
-				add_permanent_claim = ROOT
-			}
-			2349 = {
-				add_permanent_claim = ROOT
-			}
-			2214 = {
-				add_permanent_claim = ROOT
-			}
-			441 = {
-				add_permanent_claim = ROOT
-			}
-			2362 = {
-				add_permanent_claim = ROOT
-			}
-			1973 = {
-				add_permanent_claim = ROOT
-			}
-			arys_area = {
+	
+			farsistan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			ferghana_area = {
+			isfahan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -221,20 +195,21 @@ Fars_Missions_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			birjand_area = {
+			khuzestan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			sistan_area = {
+			luristan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
+			
 		}
 	}
 	

@@ -1,7 +1,7 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Totta
 add_core = TRS
-add_core = TIM
+#add_core = TIM
 owner = TRS
 controller = TRS
 culture = uzbehk

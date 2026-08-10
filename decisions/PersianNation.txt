@@ -15,6 +15,7 @@ country_decisions = {
 				NOT = { exists = PER }
 			}
 			NOT = { tag = MUG }
+			NOT = { tag = TIM }
 			NOT = { tag = PER }
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
@@ -23,7 +24,7 @@ country_decisions = {
 			NOT = { tag = BYZ }
 			NOT = { tag = ARB }
 			OR = {
-				tag = TIM
+		
 				AND ={
 					tag = AKK
 					has_country_flag = turkoman_can_form_persia

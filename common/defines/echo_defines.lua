@@ -34,6 +34,7 @@ NDefines.NDiplomacy.PEACE_COST_DEMAND_PROVINCE = 1					-- Demand a province (sca
 NDefines.NDiplomacy.PEACE_COST_CONCEDE_PROVINCE = 1000				-- Demand colonial area province concession.
 NDefines.NDiplomacy.PEACE_COST_ANNUL = 5
 NDefines.NDiplomacy.REFUSED_CALL_FROM_TRIBUTARY_MANDATE_LOSS = 0
+NDefines.NDiplomacy.TRIBUTE_MAX_MONARCH_POWER = 4.0             -- Max mana given per year as a tribute, lowered from 12 to 4
 NDefines.NDiplomacy.TRIBUTE_BASE_CASH = 0						-- Tributary State: Part of yearly income given in tribute
 NDefines.NDiplomacy.TRIBUTE_BASE_ADM = 0.12						-- Tributary State: Part Adm tribute, mulitplied by total development
 NDefines.NDiplomacy.TRIBUTE_BASE_DIP = 0.12						-- Tributary State: Part Dip tribute, mulitplied by total development

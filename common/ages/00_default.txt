@@ -544,7 +544,7 @@ age_of_reformation = {
 				}
 			}
 			modifier = {
-				reinforce_cost_modifier = -0.35
+				reinforce_speed = 0.25
 			}
 			ai_will_do = {
 				factor = 100

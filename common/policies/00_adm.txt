@@ -221,7 +221,7 @@ the_education_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	global_tax_modifier = 0.15
+	technology_cost = -0.05
 
 	effect = {}
 	removed_effect = {}

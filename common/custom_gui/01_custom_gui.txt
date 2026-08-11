@@ -130,8 +130,8 @@ custom_button = {
     }
     trigger = { 
 		FROM = {
-			treasury = 250
-			dip_power = 100
+			treasury = 200
+			dip_power = 50
 		}	
 		FROM = {
 			NOT = { has_country_modifier = echo_provincial_investment_cmod }
@@ -151,8 +151,8 @@ custom_button = {
 	}
     effect = { 
 		owner = { #This will apply to the country
-			add_treasury = -250
-			add_dip_power = -100
+			add_treasury = -200
+			add_dip_power = -50
 			add_country_modifier = {
 				name = echo_provincial_investment_cmod
 				duration = 3650

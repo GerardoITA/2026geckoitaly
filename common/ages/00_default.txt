@@ -244,7 +244,8 @@ age_of_discovery = {
 				}	
 			}
 			modifier = {
-				global_tax_modifier = 0.5
+				max_hostile_attrition = 2
+				hostile_attrition = 2
 			}
 			ai_will_do = {
 				factor = 10

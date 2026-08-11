@@ -2455,7 +2455,7 @@ HUN_ideas = {
 	}
 	
 	bonus = {
-		gold_depletion_chance_modifier = -0.2
+		global_trade_goods_size_modifier = 0.1
 	}
 	
 	trigger = {
@@ -2465,6 +2465,7 @@ HUN_ideas = {
 	
 	hun_renaissanse_knowledge = {
 		global_unrest = -1
+		global_tax_modifier = 0.25
 		effect = {
 			if = {
 				limit = {
@@ -2509,7 +2510,7 @@ HUN_ideas = {
 		}
 	}
 	reformed_coinage = {
-		global_tax_modifier = 0.1
+		inflation_reduction = 0.1
 		gold_depletion_chance_modifier = -0.25
 		effect = {
 			if = {

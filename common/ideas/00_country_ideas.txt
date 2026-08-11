@@ -1181,7 +1181,7 @@ BYZ_ideas = {
 	}
 	
 	bonus = {
-		infantry_power = 0.15
+		trade_efficiency = 0.1
 	}
 	
 	trigger = {
@@ -1208,11 +1208,10 @@ BYZ_ideas = {
 	
 	byz_protect_the_frontiers = {
 		defensiveness = 0.25
-		shock_damage_received = -0.1
 	}
 	
 	byz_strategikon = {
-		discipline = 0.05
+		discipline = 0.15
 	}
 
 	new_imperial_army = {

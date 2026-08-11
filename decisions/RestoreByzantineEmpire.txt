@@ -17,6 +17,7 @@ country_decisions = {
 				area = X_central_greece_area
 				area = aydin_area
 				area = hudavendigar_area
+				area = germiyan_area
 			}
 
 			NOT = {
@@ -64,9 +65,10 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-
-			151 = {
-				is_state = yes
+			
+			germiyan_area = {
+				type = all
+				owned_by = ROOT
 			}
 
 			is_at_war = no

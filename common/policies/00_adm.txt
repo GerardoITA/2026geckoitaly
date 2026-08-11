@@ -383,8 +383,7 @@ anti_heresy_act = {
 		full_idea_group = offensive_ideas
 	}
 	
-	artillery_barrage_cost = -0.25
-	artillery_cost = -0.1
+	artillery_levels_available_vs_fort = 1
 
 	effect = {}
 	removed_effect = {}

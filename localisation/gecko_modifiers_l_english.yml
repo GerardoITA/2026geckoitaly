@@ -312,3 +312,4 @@ Standing_Army:0 "Standing Army"
  echo_provincial_investment_pflag:0 "Province Already Upgraded"
 
  help_im_getting_vultured:0 "Help! I'm getting Vultured!"
+ tur_age_ability_modifier:0 "Space Janissaries"

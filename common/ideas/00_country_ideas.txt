@@ -1211,7 +1211,7 @@ BYZ_ideas = {
 	}
 	
 	byz_strategikon = {
-		discipline = 0.15
+		discipline = 0.2
 	}
 
 	new_imperial_army = {

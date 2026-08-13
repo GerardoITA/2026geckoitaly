@@ -19186,7 +19186,7 @@ venetian_arsenal_gp = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 750
 		}
 		province_modifiers = {
 			ship_recruit_speed = -0.1
@@ -19207,7 +19207,7 @@ venetian_arsenal_gp = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1500
 		}
 		province_modifiers = {
 			ship_recruit_speed = -0.5
@@ -19230,7 +19230,7 @@ venetian_arsenal_gp = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 2500
 		}
 		province_modifiers = {
 			ship_recruit_speed = -0.5
@@ -19430,7 +19430,7 @@ golden_kremnica = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 750
 		}
 		province_modifiers = {
 			local_gold_depletion_chance_modifier = -0.25
@@ -19452,7 +19452,7 @@ golden_kremnica = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2500
+			factor = 1500
 		}
 		province_modifiers = {
 			local_gold_depletion_chance_modifier = -0.25
@@ -19476,7 +19476,7 @@ golden_kremnica = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 5000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_gold_depletion_chance_modifier = -0.25

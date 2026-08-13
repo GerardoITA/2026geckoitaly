@@ -586,3 +586,66 @@ Peace_of_Italy = {
 	global_autonomy = -0.05
 	monthly_reform_progress_modifier = 0.25
 }
+
+help_im_getting_vultured = {
+	potential = {
+		OR = {
+			tag = PER 
+			tag = FRS 
+			tag = ARL
+		}
+	}
+	trigger = {
+		NOT = {
+			is_year = 1470
+		}
+		OR = {
+			AND = {
+				is_in_war = {
+					attackers = TUR
+				}
+				TUR = {
+					ai = no
+				}
+			}
+			AND = {
+				is_in_war = {
+					attackers = MAM
+				}
+				MAM = {
+					ai = no
+				}
+			}
+			AND = {
+				is_in_war = {
+					attackers = AFG
+				}
+				AFG = {
+					ai = no
+				}
+			}
+			AND = {
+				is_in_war = {
+					attackers = TIM
+				}
+				TIM = {
+					ai = no
+				}
+			}
+			AND = {
+				is_in_war = {
+					attackers = MUG
+				}
+				MUG = {
+					ai = no
+				}
+			}
+			
+		}
+	}
+	defensiveness = 0.75
+	garrison_size = 0.75
+	hostile_attrition = 5
+	max_hostile_attrition = 5
+	
+}

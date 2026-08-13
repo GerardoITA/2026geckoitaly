@@ -143,24 +143,24 @@ my_desert = {
 	}
 }
 
-#gc_mongol_kurultai = {
-#	potential = {
-#		normal_or_historical_nations = yes
-#		has_global_flag = gc_mongol_kurultai
-#	}
-#	trigger = {
-#		owner = {
-#			OR = {
-#				culture_group = altaic
-#				culture_group = tartar
-#			}
-#		}
-#		controlled_by = ROOT
-#	}
-#	
-#	#technology_cost = -0.05
-#	trade_goods_size = 5
-#}
+gc_mongol_kurultai = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_global_flag = gc_mongol_kurultai
+	}
+	trigger = {
+		owner = {
+			OR = {
+				culture_group = altaic
+				culture_group = tartar
+			}
+		}
+		controlled_by = ROOT
+	}
+	
+	technology_cost = -0.05
+	trade_goods_size = 5
+}
 #gc_cagliari_copper = {
 #	potential = {
 #		normal_or_historical_nations = yes

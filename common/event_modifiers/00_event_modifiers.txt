@@ -11747,7 +11747,7 @@ estate_cossacks_freedom_of_the_steppes_mod = {
 	local_development_cost = -0.05
 }
 estate_nomadic_tribes_freedom_of_the_steppes_mod = {
-	local_development_cost = -0.05
+	local_development_cost = -0.1
 }
 estate_dhimmi_development_of_communities_mod = {
 	local_development_cost = -0.05

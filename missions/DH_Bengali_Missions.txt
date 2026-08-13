@@ -922,9 +922,13 @@ bng_slot_5 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			NOT = {
-				piety = -0.33
+			OR = {
+				piety = 0.33
+				NOT = {
+					piety = -0.33
+				}
 			}
+
 			temple = 5
 			estate_loyalty = {
 				estate = estate_church

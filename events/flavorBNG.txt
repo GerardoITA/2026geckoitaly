@@ -275,7 +275,7 @@ country_event = {
 			}
 			hidden_effect = { add_ruler_personality_ancestor = { key = inspiring_leader } }
 		}
-		add_stability = -2
+		#add_stability = -2
 		#custom_tooltip = flavor_bng.6.b.tt
 		#add_legitimacy = -35
 	}

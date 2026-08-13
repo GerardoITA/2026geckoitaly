@@ -18,8 +18,7 @@ country_decisions = {
 				area = aydin_area
 				area = hudavendigar_area
 				area = germiyan_area
-				area = kastamonu_area
-				area = ankara_area
+				
 			}
 
 			NOT = {
@@ -72,14 +71,7 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			ankara_area = {
-				type = all
-				owned_by = ROOT
-			}
-			kastamonu_area = {
-				type = all
-				owned_by = ROOT
-			}
+			
 
 			is_at_war = no
 			is_free_or_tributary_trigger = yes

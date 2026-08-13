@@ -54,6 +54,49 @@ country_event = {
 	}
 }
 
+# Europeans in China
+country_event = {
+	id = prices.2
+	title = prices.2.t
+	desc = prices.2.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		capital_scope = {
+			superregion = western_europe_superregion
+		}
+		2190 = {
+			is_discovered_by = ROOT
+		}
+		NOT = { has_global_flag = europeans_in_china_happened }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = europeans_in_china_happened
+		}
+	}	
+	
+	option = {
+		name = prices.2.a
+		change_price = {
+			trade_goods = chinaware
+			key = EUROPEANS_IN_CHINA
+			value = 0.5
+			duration = -1
+		}
+		add_years_of_income  = 0.25
+		add_prestige = 20
+	}
+}
 
 #Johann Friedrich Boettger
 country_event = {

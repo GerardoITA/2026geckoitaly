@@ -24,7 +24,7 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA803"
-		add_stability = -1
+		#add_stability = -1
 		reduce_estate_burghers_loyalty_effect = yes
 	}
 }

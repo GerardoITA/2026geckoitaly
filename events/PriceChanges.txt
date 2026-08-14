@@ -67,7 +67,7 @@ country_event = {
 
 	trigger = {
 		capital_scope = {
-			superregion = western_europe_superregion
+			continent = europe
 		}
 		2190 = {
 			is_discovered_by = ROOT

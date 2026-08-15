@@ -147,9 +147,9 @@
  upgraded_colonial_ideas_bonus:0 "Colonial Ambition"
 
  #mongol empire
- mge_ideas:0 "Mongol Empire Ideas"
- mge_ideas_start:0 "Mongol Empire Traditions"
- mge_ideas_bonus:0 "Mongol Empire Ambition"
+ MGE_ideas:0 "Mongol Empire Ideas"
+ MGE_ideas_start:0 "Mongol Empire Traditions"
+ MGE_ideas_bonus:0 "Mongol Empire Ambition"
  mge_legacy_of_the_great_khan:0 "Legacy of the Great Khan"
  mge_legacy_of_the_great_khan_desc:0 "The conquests of Genghis Khan reshaped the world and established a military tradition without equal across the steppes. As heirs to his legacy, our commanders are expected to strike with overwhelming force, exploit every weakness and maintain the discipline that once carried Mongol armies from China to Europe."
  mge_mongol_administration:0 "Mongol Administration"

@@ -102,6 +102,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
 			NOT = { tag = PAP }
+			NOT = { exists = MGE }
 			NOT = { exists = KHA }
 		}
 		allow = {

@@ -157,9 +157,8 @@ gc_mongol_kurultai = {
 		}
 		controlled_by = ROOT
 	}
-	
 	technology_cost = -0.05
-	trade_goods_size = 2
+	trade_goods_size = 3
 }
 
 conquest_of_amsterdam = {

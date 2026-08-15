@@ -157,7 +157,7 @@ gc_mongol_kurultai = {
 		}
 		controlled_by = ROOT
 	}
-	technology_cost = -0.05
+	governing_capacity = 150
 	trade_goods_size = 3
 }
 

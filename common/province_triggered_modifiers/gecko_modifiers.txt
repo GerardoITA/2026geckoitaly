@@ -159,52 +159,9 @@ gc_mongol_kurultai = {
 	}
 	
 	technology_cost = -0.05
-	trade_goods_size = 5
+	trade_goods_size = 2
 }
-#gc_cagliari_copper = {
-#	potential = {
-#		normal_or_historical_nations = yes
-#		always = no
-#	}
-#	trigger = {
-#		controlled_by = ROOT
-#		owner = {
-#			has_global_flag = gc_cagliari_copper
-#		}
-#	}
-#	trade_goods_size = 3
-#	local_development_cost = -0.25
-#}
-#erzincan_copper = {
-#	potential = {
-#		normal_or_historical_nations = yes	
-#	}
-#	trigger = {
-#		controlled_by = ROOT
-#		owner = {
-#			OR = {
-#				tag = AKK
-#				mission_completed = conquer_kurdistan
-#			}	
-#		}
-#	}
-#	trade_goods_size = 3
-#	local_development_cost = -0.25
-#}
-#gc_catanzaro_silk = {
-#	potential = {
-#		normal_or_historical_nations = yes
-#		always = no
-#	}
-#	trigger = {
-#		owner = {
-#			has_global_flag = gc_catanzaro_silk
-#		}
-#		controlled_by = ROOT
-#	}
-#	trade_goods_size = 3
-#	local_development_cost = -0.10
-#}
+
 conquest_of_amsterdam = {
 	potential = {
 		normal_or_historical_nations = yes

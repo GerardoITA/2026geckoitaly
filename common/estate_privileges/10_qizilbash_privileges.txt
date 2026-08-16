@@ -571,7 +571,7 @@ estate_qizilbash_regimental_discipline = {
 		remove_country_modifier = estate_qizilbash_regimental_discipline_qizilbash
 	}
 	benefits = {
-		discipline = 0.025
+		drill_gain_modifier = 0.20
 	}
 	#influence_scaled_conditional_modifier = {
 	#	trigger = {
@@ -869,7 +869,7 @@ penalties = {
 	global_tax_modifier = -0.1
 }
 benefits = {
-	shock_damage_received = -0.10
+	shock_damage_received = -0.05
 }
 ai_will_do = {					
 	factor = 1000                               

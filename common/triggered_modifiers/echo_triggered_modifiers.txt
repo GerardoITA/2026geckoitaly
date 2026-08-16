@@ -256,10 +256,10 @@ War_chest = {
 			is_subject_of_type = tributary_state
 		}
 	}
-	mercenary_manpower = 0.25
-	war_exhaustion = -0.05
-	land_maintenance_modifier = -0.1
-	reinforce_speed = 0.1
+
+	mercenary_discipline = 0.05
+
+	
 }
 
 Ahead_of_time = {

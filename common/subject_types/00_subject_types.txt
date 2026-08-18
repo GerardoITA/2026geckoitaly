@@ -516,6 +516,15 @@ appanage = {
 	modifier_overlord = {
 		modifier = appanage_overlord
 	}
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 }
 
 personal_union = {
@@ -553,6 +562,7 @@ personal_union = {
 	support_loyalists = yes
 	divert_trade = yes
 	
+	
 	# Modifiers:
 	modifier_overlord = {
 		modifier = union_subject
@@ -568,6 +578,16 @@ personal_union = {
 			overlord = { has_government_attribute = personal_union_war_contribution }
 		}
 		modifier = pu_subject_bonus
+	}
+
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
 	}
 
 	overlord_opinion_modifier = in_union
@@ -591,6 +611,16 @@ client_vassal = {
 
 	# Subject Interactions:
 	customize_subject = yes
+	
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 }
 
 client_march = {
@@ -610,6 +640,16 @@ client_march = {
 
 	# Subject Interactions:
 	customize_subject = yes
+
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 }
 
 
@@ -695,6 +735,16 @@ colony = {
 
 	overlord_opinion_modifier = colonial_relation
 	subject_opinion_modifier = colonial_relation
+
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 }
 
 crown_colony = {
@@ -932,6 +982,16 @@ tributary_state = {
 			}
 		}
 	}
+
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 }
 
 eyalet = {
@@ -1007,6 +1067,15 @@ eyalet = {
 		modifier = eyalet_modifier
 	}
 
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
+	}
 	overlord_opinion_modifier = is_eyalet
 	subject_opinion_modifier = is_eyalet
 }
@@ -1061,6 +1130,16 @@ core_eyalet = {
 	}
 	modifier_subject = {
 		modifier = eyalet_modifier
+	}
+
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
 	}
 
 	overlord_opinion_modifier = is_eyalet
@@ -1570,6 +1649,15 @@ mongol_brother_realm = {
 	}
 	modifier_overlord = {
 		modifier = hordes_brother_realm_cavalry_buff
+	}
+	modifier_subject = {
+		trigger = {
+			OR = {
+				overlord = { ai = no }
+				ai = no
+			}
+		}
+		modifier = ai_overlord_modifier
 	}
 }
 

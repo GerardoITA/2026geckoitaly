@@ -477,8 +477,8 @@ council_of_ten = {
 							influence = 51
 						}
 					}
-					add_army_professionalism = 0.03
-					add_army_tradition = 5
+					add_army_professionalism = 0.005
+					add_army_tradition = 1
 					change_estate_land_share = {
 						estate = estate_nobles
 						share = 2.5

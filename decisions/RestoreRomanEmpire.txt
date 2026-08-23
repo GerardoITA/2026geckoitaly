@@ -37,7 +37,15 @@ country_decisions = {
 		allow = {
 			italy_region = {
 				type = all
-				owned_by = ROOT
+				OR = {
+					area = vatican_area
+					owned_by = ROOT
+			}
+}
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				region = balkan_region
+				value = 40
 			}
 			num_of_owned_provinces_with = {
 				is_core = ROOT

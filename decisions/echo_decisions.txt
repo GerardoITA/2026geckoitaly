@@ -633,7 +633,7 @@ country_decisions = {
 	}
 
 	master_of_india = {
-		color = { 41  233  249 }
+		major = yes
 		potential = {
 			is_at_war = no
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {

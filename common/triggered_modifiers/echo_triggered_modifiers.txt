@@ -539,9 +539,8 @@ italian_riches = {
 			}
 		}
 	}
-	#global_trade_goods_size_modifier = 0.1
-	#production_efficiency = 0.1
-	development_cost = -0.05
+	production_efficiency = 0.1
+	trade_efficiency = 0.1
 	merchants = 1
 }
 

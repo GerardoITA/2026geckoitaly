@@ -2234,7 +2234,7 @@ MOR_ideas = {
 		global_own_trade_power = 0.15
 	}
 	mor_slave_soldiers = {
-		land_maintenance_modifier = -0.05
+		infantry_power = 0.1
 	}
 	mor_curb_power_of_the_tribes = {
 		global_autonomy = -0.05

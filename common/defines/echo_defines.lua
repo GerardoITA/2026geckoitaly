@@ -425,3 +425,5 @@ NDefines.NDiplomacy.IMPERIAL_REFORM_COST = 50
 NDefines.NDiplomacy.HRE_HERETIC_PENALTY = 0
 NDefines.NDiplomacy.IMPERIAL_REFORM_AUTHORITY_ACCEPTANCE = 3
 NDefines.NDiplomacy.HRE_FOREIGN_CONTROL_PENALTY = -0.006
+
+NDefines.NCountry.MAX_CROWN_COLONIES = 0 --colonies spawn immediatly

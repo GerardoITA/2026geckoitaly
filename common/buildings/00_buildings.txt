@@ -818,6 +818,7 @@ coastal_defence = {
 	modifier = {
 		blockade_force_required = 0.5
 		hostile_disembark_speed = 1.0
+		hostile_fleet_attrition = 2
 		block_slave_raid = yes
 	}
 	on_built = {

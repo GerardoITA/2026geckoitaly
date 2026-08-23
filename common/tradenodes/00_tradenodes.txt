@@ -1386,6 +1386,82 @@ crimea={
 	}
 }
 
+tunis={
+	location=1301
+	color={
+		146 134 57 
+	}
+	outgoing={
+		name="sevilla"
+		path={
+		}
+		control={
+			2777.000000 1247.500000 
+		}
+	}
+
+	outgoing = {
+		name = "genua"
+		path={
+			1301 1300 1298
+		}
+		
+	}
+	
+	members={
+		339 1882 340 #kabylia_area
+		2455 341 2473 4566 2454 #tunisia_area
+		351 2458 350 #ouled_nail_area
+		2453 2954 353 #djerba_area
+		2452 354 2451 355 #tripolitania_area
+		4567 2449 2448  #fezzan_area
+		2457 2456 2472 2450 352 #north_sahara_area
+		2463 2462 2459 #hautes_plaines_area
+		337 2461 338 #barbary_coast_area
+		5826 5825
+		334 335 1751 4563 4561 #northern_morocco_area
+		336 2465 4562 #algier_area
+	
+		347 1110 2470 #southern_morocco_area
+		342 345 2469 4564 #western_morocco_area
+		343 344 2467 2468 #marrekesh_area
+		348 2464 2466 4568 #sus_area
+		346 2460 349 #tafilalt_area
+	}
+}
+ragusa={
+	location=4174
+	color = { 101 89 63 }
+	outgoing={
+		name="wien"
+		path={
+			138 3002 4755 4173 4126 
+		}
+		control={
+			3105.000000 1405.000000 3106.000000 1427.000000 3101.000000 1441.000000 
+		}
+	}
+	outgoing={
+		name="constantinople"
+		path={
+			4780 4705  
+		}
+		
+	}
+	outgoing={
+		name="genua"
+		path={
+			1310 1311 1307 1304 1303
+		}
+		
+	}
+	members={
+		138 139 140 141 142 143 144 147 1766 1827 1831 1853 3000 3002 3001 4174 4175 4176 148 1828 4239 145 146 1773 4702 4699 4698 4701 4750 4755 4757 4780  
+		6120 
+		131 4752 1826 #croatia
+		4753 136 137 4754 #dalmatia
+	}
+}
 genua={
 	location=1298
 	color={
@@ -1425,21 +1501,7 @@ genua={
 		
 	}
 	
-	outgoing={
-		name="ragusa"
-		path={
-			1303 1304 1307 1311 1310
-		}
-		
-	}
-
-	outgoing = {
-		name = "tunis"
-		path={
-			1298 1300 1301
-		}
-		
-	}
+	
 	members={
 		1298 #Water
 		102 2992 101 #genoa_area
@@ -1472,32 +1534,7 @@ genua={
 }
 
 
-ragusa={
-	location=4174
-	color = { 101 89 63 }
-	outgoing={
-		name="wien"
-		path={
-			138 3002 4755 4173 4126 
-		}
-		control={
-			3105.000000 1405.000000 3106.000000 1427.000000 3101.000000 1441.000000 
-		}
-	}
-	outgoing={
-		name="constantinople"
-		path={
-			4780 4705  
-		}
-		
-	}
-	members={
-		138 139 140 141 142 143 144 147 1766 1827 1831 1853 3000 3002 3001 4174 4175 4176 148 1828 4239 145 146 1773 4702 4699 4698 4701 4750 4755 4757 4780  
-		6120 
-		131 4752 1826 #croatia
-		4753 136 137 4754 #dalmatia
-	}
-}
+
 
 constantinople={
 	location=1320
@@ -1640,41 +1677,7 @@ novgorod={
 }
 
 
-tunis={
-	location=1301
-	color={
-		146 134 57 
-	}
-	outgoing={
-		name="sevilla"
-		path={
-		}
-		control={
-			2777.000000 1247.500000 
-		}
-	}
-	
-	members={
-		339 1882 340 #kabylia_area
-		2455 341 2473 4566 2454 #tunisia_area
-		351 2458 350 #ouled_nail_area
-		2453 2954 353 #djerba_area
-		2452 354 2451 355 #tripolitania_area
-		4567 2449 2448  #fezzan_area
-		2457 2456 2472 2450 352 #north_sahara_area
-		2463 2462 2459 #hautes_plaines_area
-		337 2461 338 #barbary_coast_area
-		5826 5825
-		334 335 1751 4563 4561 #northern_morocco_area
-		336 2465 4562 #algier_area
-	
-		347 1110 2470 #southern_morocco_area
-		342 345 2469 4564 #western_morocco_area
-		343 344 2467 2468 #marrekesh_area
-		348 2464 2466 4568 #sus_area
-		346 2460 349 #tafilalt_area
-	}
-}
+
 #pest={
 #	location=153
 #	color={

@@ -164,3 +164,8 @@
  mge_populating_the_steppes_desc:0 "The steppes are vast, but they need not remain empty. By encouraging settlement, protecting pastoral communities and rebuilding the cities that once prospered beneath Mongol rule, we can greatly increase the population available to serve the empire."
  mge_religious_pragmatism:0 "Religious Pragmatism"
  mge_religious_pragmatism_desc:0 "The Mongol Empire ruled over peoples of countless faiths and traditions. Rather than impose a single creed upon them, the Khans often allowed their subjects to worship freely so long as they remained loyal. By continuing this tradition of tolerance, we can preserve unity throughout our vast and diverse realm."
+
+ TTS_ideas:0 "Two Sicilies Ideas"
+ TTS_ideas_start:0 "Two Sicilies Traditions"
+ TTS_ideas_bonus:0 "Two Sicilies Ambition"
+ tts_greater_sicily:0 "Greater Sicily"

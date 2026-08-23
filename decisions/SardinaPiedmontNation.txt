@@ -10,81 +10,62 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = SPI }
+			
 			OR = {
-				tag = SAV
-				tag = SAR
-				primary_culture = sardinian
-				primary_culture = piedmontese
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
+				tag = MLO 
+				tag = VEN
 			}
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = piedmont_area
-				area = savoy_dauphine_area
 				area = liguria_area
-				area = corsica_sardinia_area
-			}	
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				area = torino_area
+				area = lombardy_area
+				area = po_valley_area
+				area = venetia_area
+				area = piedmont_area
+			}
+
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-		
+
 		allow = {
-			adm_tech = 10
+			adm_tech = 8
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			OR = {
-				AND = {
-					tag = SAR
-					NOT = { exists = SAV }
-				}
-				AND = {
-					tag = SAV
-					NOT = { exists = SAR }
-				}
-				AND = {
-					OR = {
-						primary_culture = sardinian
-						primary_culture = piedmontese
-					}
-					NOT = { exists = SAV }
-					NOT = { exists = SAR }
-				}
-			}
-			owns_core_province = 2986		# Cagliari
-			owns_core_province = 103		# Piedmont
-			103 = {							# Piedmont
-				is_state = yes
+
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 
-			num_of_owned_provinces_with = {
-				value = 3 #there are 4 (1 is Corsica)
-				area = corsica_sardinia_area
-				is_core = root
+			torino_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			num_of_owned_provinces_with = {
-				value = 6 #there are 12, but Savoy never owned most of them
-				OR = {
-					area = piedmont_area
-					area = savoy_dauphine_area
-					area = liguria_area
-				}
-				is_core = root
+
+			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+			po_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {

@@ -2735,6 +2735,7 @@ estate_burghers_financial_demand = {
 	}
 	can_select = {
 		is_at_war = no
+		num_of_loans = 10
 	}
 	modifier = {all_power_cost = 0.05 production_efficiency = 0.05}
 	

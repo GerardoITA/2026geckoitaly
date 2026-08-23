@@ -17,7 +17,11 @@ country_decisions = {
 				religion_group = christian
 				religion_group = pagan
 			}
-			tag = ITA
+			
+			OR = {
+				tag = ITA 
+				tag = BYZ
+			}
 		}
 		provinces_to_highlight = {
 			OR = {

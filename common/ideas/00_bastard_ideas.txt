@@ -2189,7 +2189,7 @@ ROM_ideas = {
 	}
 	roman_legions = {
 		infantry_power = 0.2
-		discipline = 0.05
+		discipline = 0.1
 	}
 	roman_architecture = {
 		production_efficiency = 0.2
@@ -2200,7 +2200,7 @@ ROM_ideas = {
 		technology_cost = -0.1
 	}
 	imperium_sine_fine = {
-		core_creation = -0.2
+		core_creation = -0.33
 		num_accepted_cultures = 3
 	}
 }

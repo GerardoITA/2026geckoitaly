@@ -3,7 +3,11 @@ country_decisions = {
 	restore_byzantine_empire = {
 		major = yes
 		potential = {
-			tag = HUN
+
+			OR = {
+				tag = HUN 
+				tag = VEN
+			}
 			NOT = { has_country_flag = formed_byzantium_flag }
 			
 		}

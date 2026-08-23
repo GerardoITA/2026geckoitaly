@@ -544,47 +544,47 @@ italian_riches = {
 	merchants = 1
 }
 
-Peace_of_Italy = {
-	potential = {
-		NOT = {
-			is_year = 1500
-		}
-		OR = {
-			tag = MLO
-			tag = VEN
-			tag = SIC
-			tag = TTS
-			tag = ITA
-			tag = ROM
-		}
-	}
-	trigger = {
-		OR = {
-			great_power_rank = 5
-			is_great_power = no
-		} 
-		NOT = {
-			is_lacking_institutions = yes
-		}
-		custom_trigger_tooltip = {
-			tooltip = peace_of_italy_tt
-			NOT = {
-				italy_region = {
-					owner = {
-						NOT = {
-							culture_group = latin
-						}
-					}
-				}
-			}
-		}
-	}
-	all_power_cost = -0.025
-	build_cost = -0.05
-	global_tax_modifier = 0.05
-	global_autonomy = -0.05
-	monthly_reform_progress_modifier = 0.25
-}
+#Peace_of_Italy = {
+#	potential = {
+#		NOT = {
+#			is_year = 1500
+#		}
+#		OR = {
+#			tag = MLO
+#			tag = VEN
+#			tag = SIC
+#			tag = TTS
+#			tag = ITA
+#			tag = ROM
+#		}
+#	}
+#	trigger = {
+#		OR = {
+#			great_power_rank = 5
+#			is_great_power = no
+#		} 
+#		NOT = {
+#			is_lacking_institutions = yes
+#		}
+#		custom_trigger_tooltip = {
+#			tooltip = peace_of_italy_tt
+#			NOT = {
+#				italy_region = {
+#					owner = {
+#						NOT = {
+#							culture_group = latin
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#	all_power_cost = -0.025
+#	build_cost = -0.05
+#	global_tax_modifier = 0.05
+#	global_autonomy = -0.05
+#	monthly_reform_progress_modifier = 0.25
+#}
 
 help_im_getting_vultured = {
 	potential = {

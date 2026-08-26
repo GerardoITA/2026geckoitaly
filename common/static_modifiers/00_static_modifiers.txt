@@ -1570,8 +1570,8 @@ vassal_nation = {
 
 ai_overlord_modifier = {
 	defensiveness = 0.5
-	global_autonomy = 0.1
-	yearly_corruption = 0.1
+	global_autonomy = -0.1
+	yearly_corruption = -0.1
 	diplomatic_upkeep = 2
 }
 

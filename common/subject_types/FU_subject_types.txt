@@ -65,14 +65,24 @@ canton = {
 		modifier = swi_canton_republican_ties_modifier
 	}
 	modifier_subject = {
-		trigger = {
-			OR = {
-				overlord = { ai = no }
+	trigger = {
+		OR = {
+			AND = {
 				ai = no
+				overlord = {
+					ai = yes
+				}
+			}
+			AND = {
+				ai = yes
+				overlord = {
+					ai = no
+				}
 			}
 		}
-		modifier = ai_overlord_modifier
 	}
+	modifier = ai_overlord_modifier
+}
 	
 	
 	overlord_opinion_modifier = is_vassal

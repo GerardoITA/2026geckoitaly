@@ -448,6 +448,7 @@ crusader = {
 		religion = catholic
 		crusade_target = {
 			exists = yes
+			ai = no
 		}
 		
 	}

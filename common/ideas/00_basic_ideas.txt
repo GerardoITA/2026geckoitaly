@@ -806,15 +806,17 @@ maritime_ideas = {
 ####################
 # MIL Ideas    
 ####################
+
 aristocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage_received = -0.15
+		fire_damage_received = -0.1
 	}
 	military_traditions = {
-		mil_tech_cost_modifier  = -0.1
-		army_tradition_from_battle = 0.25
+		reinforce_speed = 0.25
+		army_tradition_from_battle = 0.5
+		movement_speed = 0.10
 	}
 	noble_knights = {
 		cavalry_power = 0.1
@@ -822,14 +824,15 @@ aristocracy_ideas = {
 	}	
 	local_nobility = {
 		leader_cost = -0.1
-		nobles_loyalty_modifier = 0.1
-		nomadic_tribes_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.25
+		nomadic_tribes_loyalty_modifier = 0.25
 	}
 	noble_resilience = {
-		leader_siege = 1
+		max_general_siege = 1
+		leader_land_siege = 1
 	}
 	serfdom = {
-		development_cost = -0.05
+		siege_ability = 0.15
 		global_manpower_modifier = 0.2
 	}
 	noble_officers = {
@@ -838,7 +841,9 @@ aristocracy_ideas = {
 	}
 	international_nobility = {
 		land_morale = 0.05
+		free_land_leader_pool = 3
 	}
+
 	ai_will_do = {
 		factor = 5
 	}
@@ -848,7 +853,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.1
+		fire_damage = 0.15
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 	}
@@ -861,11 +866,11 @@ plutocracy_ideas = {
 		mercenary_cost = -0.1
 	}
 	abolished_serfdom = {
-		land_morale = 0.10
+		merc_maintenance_modifier = -0.15
 		global_unrest = -2
 	}
 	knowledge_transfer = {
-		infantry_power = 0.05
+		infantry_power = 0.15
 	}
 	pragmatism = {
 		mercenary_manpower = 0.20
@@ -875,7 +880,7 @@ plutocracy_ideas = {
 		leader_land_fire = 1
 	}
 	free_cities = {
-		development_cost = -0.05
+		global_trade_goods_size_modifier = 0.1
 	}
 	emancipation = {
 		manpower_recovery_speed = 0.15
@@ -906,52 +911,50 @@ plutocracy_ideas = {
 	}
 }
 
-
-
 theocracy_gov_ideas = {
 	category = MIL
 	
 	bonus = {
-		leader_land_shock = 1
-		church_loyalty_modifier = 0.1
-		brahmins_hindu_loyalty_modifier = 0.1
-		brahmins_muslim_loyalty_modifier = 0.1
+		land_morale = 0.15
 	}
 	
 	#trigger = {
 	#	has_government_attribute = enables_divine_idea_group
 	#}
+
 	servants_of_god = {
 		cb_on_religious_enemies = yes
 		manpower_recovery_speed = 0.15
 	}
 	by_the_grace_of_god = {
-		land_morale = 0.10
+		leader_land_shock = 1
+		church_loyalty_modifier = 0.1
+		brahmins_hindu_loyalty_modifier = 0.1
+		brahmins_muslim_loyalty_modifier = 0.1
 	}
 	alpha_and_omega = {
-		warscore_cost_vs_other_religion = -0.05
-		culture_conversion_cost = -0.15
-		culture_conversion_time = -0.15
+		culture_conversion_cost = -0.33
+		culture_conversion_time = -0.33
 	}
 	friends_in_high_places = {
 		leader_cost = -0.15
-		same_religion_advisor_cost = -0.1
 	}
 	flesh_is_weak = {
-		morale_damage = 0.1
+		morale_damage = 0.15
 		morale_damage_received = -0.1
 	}
 	conviction_of_sin = {
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.02
 		missionaries = 1
 		devotion = 1
 		legitimacy = 0.5
-		development_cost = -0.05
+		warscore_cost_vs_other_religion = -0.1
 	}
 	martyrs = {
 		manpower_in_true_faith_provinces = 0.15
-
+		army_tradition_from_battle = 0.33
 	}
+
 	ai_will_do = {
 		factor = 3.75
 		modifier = {
@@ -985,22 +988,21 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		special_unit_forcelimit = 0.15
-		land_forcelimit_modifier = 0.15
+		max_general_shock = 1
+		leader_land_shock = 1
 	}
 
 	shock_tactics = {
 		shock_damage = 0.1
 	}
 	glory_on_the_battlefield = {
-		army_tradition_from_battle = 0.25
-		warscore_from_battles_modifier = 0.15
+		warscore_from_battles_modifier = 0.25
 	}
 	volley_fire = {
 		fire_damage = 0.1
 	}
 	engineer_corps = {
-		siege_ability = 0.15
+		siege_ability = 0.25
 		artillery_levels_available_vs_fort = 1
 	}
 	melee_combat_training = {
@@ -1008,7 +1010,7 @@ offensive_ideas = {
 	}
 	fort_breaker = {
 		assault_fort_cost_modifier = -1
-		artillery_barrage_cost = -0.50
+		artillery_barrage_cost = -0.75
 	}
 	superior_firepower = {
 		artillery_power = 0.1
@@ -1082,7 +1084,7 @@ defensive_ideas = {
 	}
 	homeland_specialization = {
 		reinforce_speed = 0.33
-		war_exhaustion = -0.1
+		army_tradition = 0.5
 	}
 	guerilla_warfare_defense = {
 		hostile_attrition = 1
@@ -1090,7 +1092,7 @@ defensive_ideas = {
 	}
 	ditch_defense = {
 		garrison_damage = 0.15
-		garrison_size = 0.25
+		garrison_size = 0.5
 		may_refill_garrison = yes
 	}
 	terrain_defence = {
@@ -1164,20 +1166,20 @@ quality_ideas = {
 		drill_decay_modifier = -0.1
 	}
 	quality_education = {
-		recover_army_morale_speed = 0.10
-		morale_damage_received = -0.1
+		max_general_maneuver = 1
+		leader_land_maneuver = 1
 	}
 	massed_battery = {
 		artillery_power = 0.1
 	}
 	regimental_system = {
-		global_regiment_cost = -0.10
-		global_regiment_recruit_speed = -0.25
-		
+		may_refill_garrison = yes
+		may_return_manpower_on_disband = yes
 	}
 	napoleonic_warfare = {
 		discipline = 0.05
 	}
+
 	ai_will_do = {
 		factor = 3.5
 		modifier = {
@@ -1235,7 +1237,6 @@ quality_ideas = {
 					value = 0.01
 				}
 			}
-			
 		}
 	}
 }
@@ -1244,24 +1245,24 @@ quantity_ideas = {
 	category = MIL
 	
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.33
 		num_of_pronoiars = 1
 		possible_mil_policy = 1
 	}
 	mass_army = {
-		global_manpower_modifier = 0.33
-		allowed_marine_fraction = 0.33
+		global_manpower_modifier = 0.5
+		allowed_marine_fraction = 0.25
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.20
+		may_build_supply_depot = yes
+		land_morale = 0.075
 	}
 	grand_army = {
 		global_regiment_cost = -0.1
-		special_unit_cost_modifier = -0.2
+		special_unit_forcelimit = 0.25
 	}
 	camp_followers = {
-		may_build_supply_depot = yes
-		land_morale = 0.075
+		manpower_recovery_speed = 0.20
 	}
 	reinforcement_drafts = {
 		reinforce_speed = 0.25
@@ -1273,6 +1274,7 @@ quantity_ideas = {
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.20
+		recover_army_morale_speed = 0.1
 	}
 
 	ai_will_do = {
@@ -1323,7 +1325,6 @@ quantity_ideas = {
 		}
 	}
 }
-
 
 
 ####################

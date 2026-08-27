@@ -403,6 +403,9 @@ estate_nomadic_tribes_military_service = {
 		has_dlc = "Domination"
 	}
 	can_select = {
+		NOT = {
+			has_estate_privilege = estate_nobles_force_conscription
+		}
 	}
 	on_granted = {
 		enable_estate_action = {

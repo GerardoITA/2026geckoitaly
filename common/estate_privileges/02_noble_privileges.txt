@@ -3438,6 +3438,11 @@ estate_nobles_force_conscription = {
 	is_valid = {
 		has_dlc = "Domination"
 	}
+	can_select = {
+		NOT = {
+			has_estate_privilege = estate_nomadic_tribes_military_service
+		}
+	}
 	on_granted = {
 		enable_estate_action = {
 			estate_action = DEMAND_MORE_TROOPS_NOBLES

@@ -906,51 +906,7 @@ plutocracy_ideas = {
 	}
 }
 
-horde_gov_ideas = {
-	category = MIL
-	
-	bonus = {
-		cavalry_power = 0.25
-		nomadic_tribes_loyalty_modifier = 0.1
-	}
-	
-	trigger = {
-		has_government_attribute = enables_horde_idea_group
-		always = no
-	}
-	
-	horse_lords = {
-		cavalry_cost = -0.33
-		cav_to_inf_ratio = 0.10
-	}
-	beyond_the_sun = {
-		ae_impact = -0.1
-	}
-	mandate_of_the_khan = {
-		religious_unity = 0.25
-	}
-	there_shall_be_no_grass = {
-		land_attrition = -0.2
-	}
-	horde_loyalty = {
-		global_unrest = -1
-		horde_unity = 0.5
-	}
-	watchers_of_the_silk_road = {	
-		caravan_power = 0.20
-	}
-	a_magnanimous_empire = {
-		num_accepted_cultures = 2
-	}
-	
-	ai_will_do = {
-		factor = 8
-		modifier = {
-			factor = 1.5
-			personality = ai_militarist 
-		}
-	}
-}
+
 
 theocracy_gov_ideas = {
 	category = MIL
@@ -1368,6 +1324,11 @@ quantity_ideas = {
 	}
 }
 
+
+
+####################
+# Removed Ideas    
+####################
 mercenary_ideas = {
 	category = MIL 
 
@@ -1407,10 +1368,6 @@ mercenary_ideas = {
 		factor = 0
 	}
 }
-
-####################
-# Removed Ideas    
-####################
 
 naval_ideas = {
 	category = MIL
@@ -1467,6 +1424,51 @@ naval_ideas = {
 		modifier = {
 			factor = 10
 			has_government_attribute = is_pirate_republic_reform
+		}
+	}
+}
+horde_gov_ideas = {
+	category = MIL
+	
+	bonus = {
+		cavalry_power = 0.25
+		nomadic_tribes_loyalty_modifier = 0.1
+	}
+	
+	trigger = {
+		has_government_attribute = enables_horde_idea_group
+		always = no
+	}
+	
+	horse_lords = {
+		cavalry_cost = -0.33
+		cav_to_inf_ratio = 0.10
+	}
+	beyond_the_sun = {
+		ae_impact = -0.1
+	}
+	mandate_of_the_khan = {
+		religious_unity = 0.25
+	}
+	there_shall_be_no_grass = {
+		land_attrition = -0.2
+	}
+	horde_loyalty = {
+		global_unrest = -1
+		horde_unity = 0.5
+	}
+	watchers_of_the_silk_road = {	
+		caravan_power = 0.20
+	}
+	a_magnanimous_empire = {
+		num_accepted_cultures = 2
+	}
+	
+	ai_will_do = {
+		factor = 8
+		modifier = {
+			factor = 1.5
+			personality = ai_militarist 
 		}
 	}
 }

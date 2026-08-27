@@ -3140,7 +3140,7 @@ TUN_improved_ideas = {
 
 colonial_ideas = {
 	start = {
-		development_cost = 0.1
+		development_cost = 0.15
 		governing_capacity_modifier = -0.25
 		no_religion_penalty = yes
 	}
@@ -3188,6 +3188,7 @@ colonial_ideas = {
 
 upgraded_colonial_ideas = {
 	start = {
+		development_cost = 0.05
 		governing_capacity_modifier = 0.25
 		no_religion_penalty = yes
 	}

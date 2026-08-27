@@ -3864,7 +3864,7 @@ MSA_ideas = {
 	}
 	msa_advanced_galley_warfare = {
 		galley_power  = 0.25
-		global_naval_engagement_modifier = 0.1
+		global_naval_engagement_modifier = 0.2
 	}
 	msa_expert_haggling = {
 		trade_efficiency = 0.15

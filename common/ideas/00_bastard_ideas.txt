@@ -4607,7 +4607,7 @@ MGE_ideas = {
 	}
 	mge_cavalry_archers = {
 		cavalry_power = 0.2
-		cavalry_cost = -0.2
+		cavalry_cost = -0.1
 	}
 	mge_secure_the_trade_routes = {
 		movement_speed = 0.2

@@ -328,11 +328,17 @@ Berber_Raids = {
 			OR = {
 				AND = {
 					tag = MOR
-					alliance_with = TUN
+					OR = {
+						TUN = { ai = yes }
+						alliance_with = TUN
+					}
 				}
 				AND = {
 					tag = TUN
-					alliance_with = MOR
+					OR = {
+						MOR = { ai = yes }
+						alliance_with = MOR
+					}
 				}
 			}
 			NOT = {

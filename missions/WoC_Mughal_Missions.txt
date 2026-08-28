@@ -1626,10 +1626,9 @@ WoC_mughals_4 = {
 				cost_multiplier = 0.75			
 			}
 			
-			custom_tooltip = " "
 			
-			custom_tooltip = MUG_unlock_gurkhas
-			set_country_flag = MUG_unlock_gurkhas_flag
+			
+			
 		}
 	}
 	

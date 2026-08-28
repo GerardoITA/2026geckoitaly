@@ -1245,7 +1245,7 @@ MUG_ideas = {
 	free = yes
 	
 	mansabdari_system = {
-		cavalry_power = 0.1
+		can_recruit_rajputs = yes
 		land_forcelimit_modifier = 0.2
 	}
 	tureh = {

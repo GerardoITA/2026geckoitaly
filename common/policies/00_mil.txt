@@ -11,8 +11,33 @@ autonomous_estates = {
 		full_idea_group = aristocracy_ideas
 	}	
 	land_morale = 0.05
-	defensiveness = 0.15
+	cavalry_power = 0.025
 	
+	ai_will_do = {
+		factor = 1		
+	}
+}
+
+public_welfare_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = economic_ideas
+	}
+	
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = economic_ideas
+	}
+
+	defensiveness = 0.25
+	garrison_size = 0.5
+	garrison_damage = 0.25
+
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1		
 	}
@@ -31,8 +56,8 @@ local_militias = {
 		full_idea_group = defensive_ideas
 	}	
 	
-	shock_damage_received = -0.075
-	land_morale = 0.05
+	manpower_recovery_speed = 0.2
+	land_morale = 0.025
 	
 	ai_will_do = {
 		factor = 1		
@@ -388,7 +413,8 @@ superior_fortification_act = {
 		full_idea_group = defensive_ideas
 	}
 	
-	morale_damage = 0.1
+	defensiveness = 0.33
+	military_tactics = 0.05
 
 	effect = {}
 	removed_effect = {}
@@ -432,7 +458,8 @@ the_garrison_act = {
 		full_idea_group = quantity_ideas
 	}
 	
-	fire_damage = 0.1
+	land_forcelimit_modifier = 0.2
+	free_mil_policy = 1
 
 	effect = {}
 	removed_effect = {}
@@ -544,7 +571,7 @@ local_army_organisation = {
 		full_idea_group = defensive_ideas
 	}
 
-	morale_damage = 0.1
+	shock_damage_received = -0.075
 
 	effect = {}
 	removed_effect = {}
@@ -678,8 +705,8 @@ trained_marines_act = {
  		full_idea_group = diplomatic_ideas
  	}
  	
- 	shock_damage_received = -0.075
-	morale_damage_received = -0.05
+ 	shock_damage = 0.05
+	morale_damage = 0.05
 	
  	effect = {}
  	removed_effect = {}
@@ -790,6 +817,7 @@ streamlined_galley_production = {
 	}
 	
 	allowed_marine_fraction = 0.25
+	global_sailors_modifier = 0.25
 	has_marines = yes
 	free_mil_policy = 1
 	
@@ -837,7 +865,9 @@ the_wooden_wall = {
 		full_idea_group = defensive_ideas
 	}
 	
-	fire_damage = 0.1
+	defensiveness = 0.25
+	garrison_size = 0.5
+	garrison_damage = 0.25
 	
 	ai_will_do = {
 		factor = 1		
@@ -864,6 +894,28 @@ maritime_expertise_act = {
 	ai_will_do = {
 		factor = 1		
 	}
+}
+
+the_pioneer_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = expansion_ideas
+	}
+	
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = expansion_ideas
+	}
+
+	siege_ability = 0.2
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}	
 }
 
 protected_shipping_lanes = {
@@ -991,7 +1043,7 @@ deserteur_act = {
  		full_idea_group = administrative_ideas
  	}
  
- 	manpower_in_true_faith_provinces = 0.15
+ 	discipline = 0.025
  	
  	effect = {}
  	removed_effect = {}
@@ -1013,7 +1065,8 @@ deserteur_act = {
  		full_idea_group = religious_ideas
  	}
 
-  	land_morale = 0.05
+  	shock_damage = 0.05
+	land_morale = 0.05
 	
  	effect = {}
  	removed_effect = {}
@@ -1082,7 +1135,7 @@ bolstered_defence_act = {
 		full_idea_group = defensive_ideas 
 	}
 	
-	morale_damage_received = -0.075
+	attack_bonus_in_capital_terrain = 1
 
 	effect = {}
 	removed_effect = {}
@@ -1331,7 +1384,8 @@ edict_of_resistance = {
 	}
 
 
-	morale_damage_received = -0.075
+	land_morale = 0.05
+	defensiveness = 0.15
 
 	effect = {}
 	removed_effect = {}

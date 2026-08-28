@@ -1112,7 +1112,7 @@ defensive_ideas = {
 	}
 	homeland_specialization = {
 		reinforce_speed = 0.33
-		army_tradition = 0.5
+		army_tradition = 1
 	}
 	guerilla_warfare_defense = {
 		hostile_attrition = 1

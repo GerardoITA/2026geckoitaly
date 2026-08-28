@@ -61,7 +61,7 @@ vassal_obligations_act = {
 	}	
 	
 	global_trade_goods_size_modifier = 0.05
-	build_cost = -0.10
+	vassal_income = 0.2
 	
 	ai_will_do = {
 		factor = 1		
@@ -218,8 +218,9 @@ naval_infrastructure_act = {
 	}
 
 
-	merchants = 1
-	global_trade_power = 0.1
+	global_ship_repair = 0.5
+	global_ship_cost = -0.15
+	global_ship_recruit_speed = -0.33
 
 	effect = {}
 	removed_effect = {}

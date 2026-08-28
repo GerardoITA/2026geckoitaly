@@ -45,11 +45,8 @@ ENG_missions_1_1 = {
 				}
 			}
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				
+				war_with = FRA
+				war_with = BUR
 			}
 		}
 		effect = {
@@ -90,11 +87,8 @@ ENG_missions_1_1 = {
 				}
 			}
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				
+				war_with = FRA
+				war_with = BUR
 			}
 		}
 		effect = {
@@ -135,11 +129,8 @@ ENG_missions_1_1 = {
 				}
 			}
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				
+				war_with = FRA
+				war_with = BUR
 			}
 		}
 		effect = {
@@ -520,22 +511,13 @@ ENG_missions_2_1 = {
 		}
 		trigger = {
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = BUR
-				
-				}
-					
+				war_with = FRA
+				war_with = BUR
+
 				france_region = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				
-				
 			}
 				
 		}
@@ -628,8 +610,7 @@ ENG_missions_2_1 = {
 				AND ={
 					OR = {
 						is_in_war = {
-							attacker_leader = ROOT
-							defender_leader = FRA
+							participants = FRA
 							war_score = 40
 						}
 						AND = {
@@ -639,11 +620,10 @@ ENG_missions_2_1 = {
 								country_or_non_sovereign_subject_holds = ROOT
 							}
 						}
-
 					}
+
 					is_in_war = {
-						attacker_leader = ROOT
-						defender_leader = FRA
+						participants = FRA
 					}
 				}
 				
@@ -1249,11 +1229,8 @@ ENG_missions_3_1 = {
 				}
 			}
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				
+				war_with = FRA
+				war_with = BUR
 			}
 		}
 		effect = {
@@ -1294,11 +1271,8 @@ ENG_missions_3_1 = {
 				}
 			}
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				
+				war_with = FRA
+				war_with = BUR
 			}
 		}
 		effect = {
@@ -1405,11 +1379,8 @@ ENG_missions_3_1 = {
 				}
 			}
 			OR = {
-				is_in_war = {
-					attacker_leader = ROOT
-					defender_leader = FRA
-				}
-				
+				war_with = FRA
+				war_with = BUR
 			}
 		}
 		effect = {

@@ -2665,6 +2665,7 @@ mughal_government = {
 		vassal_income = 0.1
 		infantry_power = 0.1
 		num_accepted_cultures = 2
+		governing_capacity = 150
 	}
 	
 	conditional = {
@@ -2677,6 +2678,13 @@ mughal_government = {
 		allow = {
 		}
 		claim_states = yes
+	}
+	custom_attributes = {
+	
+		enables_estate_jains = yes
+		enables_estate_rajput = yes
+		disables_estate_burghers = yes
+		disables_estate_nobles = yes
 	}
 }
 

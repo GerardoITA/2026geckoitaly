@@ -127,8 +127,18 @@ country_decisions = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			custom_tooltip = timurid_claims_abandoned_tooltips
+			
 			set_country_flag = formed_mughal_empire_flag
+
+			change_estate_land_share = {
+				estate = estate_rajput
+				share = 35
+			}
+
+			change_estate_land_share = {
+				estate = estate_jains
+				share = 15
+			}
 		}
 		ai_will_do = {
 			factor = 1

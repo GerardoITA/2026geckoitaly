@@ -11,6 +11,10 @@
 # ADM Ideas    
 ####################
 
+####################
+# ADM Ideas    
+####################
+
 innovativeness_ideas = {
 	category = ADM
 
@@ -22,7 +26,7 @@ innovativeness_ideas = {
 		embracement_cost = -0.25
 	}
 	empiricism = {
-		reform_progress_growth = 0.25
+		reform_progress_growth = 0.5
 		yearly_innovativeness = 0.25
 	}
 	print_culture = {
@@ -30,16 +34,15 @@ innovativeness_ideas = {
 		idea_cost = -0.1
 	}
 	dynamic_court = {
-		advisor_cost = -0.1
+		advisor_cost = -0.2
 		innovativeness_gain = 0.5
 	}
 	organised_recruiting = {
-		manpower_recovery_speed = 0.1
-		global_regiment_recruit_speed = -0.1
+		military_tactics = 0.05
 	}
 	optimism = {
 		war_exhaustion = -0.05
-		land_morale = 0.05
+		monarch_lifespan = 0.2
 	}
 	expanded_policies = {
 		possible_policy = 1
@@ -113,13 +116,13 @@ religious_ideas = {
 	}
 	missionary_schools = {
 		missionaries = 1
-		global_missionary_strength = 0.02
+		global_missionary_strength = 0.05
 		prestige_per_development_from_conversion = 0.5
 		monthly_piety_accelerator = 0.01
 		years_of_nationalism = -10
 	}
 	devoutness = {
-		tolerance_own = 2
+		tolerance_own = 5
 		global_tax_modifier = 0.20
 		papal_influence = 2
 		monthly_fervor_increase = 0.30
@@ -129,8 +132,6 @@ religious_ideas = {
 	religious_tradition = {
 		yearly_government_power = 1.5
 		prestige = 1
-		great_project_upgrade_time = -0.25
-		great_project_upgrade_cost = -0.25		
 	}
 	inquisition = {
 		manpower_in_true_faith_provinces = 0.20
@@ -209,6 +210,7 @@ economic_ideas = {
 	bureaucracy = { 
 		land_forcelimit_modifier = 0.15
 	}
+
 	ai_will_do = {
 		factor = 0.35
 		modifier = {
@@ -260,37 +262,38 @@ expansion_ideas = {
 
 	bonus = {
 		manpower_in_accepted_culture_provinces = 0.25
+		transport_attrition = -0.75
+		blockade_efficiency = 0.25
 	}
 	adaptability = {
-		core_creation = -0.2
-		unjustified_demands = -0.25
+		min_autonomy_in_territories = -0.3
 	}
 	additional_merchants = {
 		merchants = 1
+		trade_efficiency = 0.1
 	}
 	faster_colonists = {
-		manpower_recovery_speed = 0.15
+		global_colonial_growth = 40
 		land_attrition = -0.15
 	}
 	vice_roys = {
-		global_tax_modifier = 0.1
-		state_maintenance_modifier = -0.25
+		global_tariffs = 0.1
+		reduced_liberty_desire_on_other_continent = 25
  	}
 	additional_diplomats = {
 		num_accepted_cultures = 2
 	}
 	competetive_merchants  = {
-		trade_steering = 0.1
-		reduced_trade_penalty_on_non_main_tradenode = 0.15
+		trade_steering = 0.5
+		reduced_trade_penalty_on_non_main_tradenode = 0.3
 	}
 	factories = {
 		defensiveness = 0.15
 		allowed_marine_fraction = 0.25
 		center_of_trade_upgrade_cost = -0.15
-		trade_efficiency = 0.1
-		governing_capacity_modifier = 0.1
 		development_cost = -0.05
 	}
+
 	ai_will_do = {
 		factor = 0.5
 		modifier = {
@@ -342,15 +345,14 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		monarch_military_power = 1
+		adm_tech_cost_modifier = -0.15
 	}
 	stable_government = {
-		stability_cost_modifier = -0.10 
-		reform_progress_growth = 0.5
+		governing_capacity_modifier = 0.25
 	}
 	civil_servants = {
-		advisor_cost = -0.1
-		monarch_lifespan = 0.2
+		administrative_efficiency = 0.1
+		move_capital_cost_modifier = -0.25
 	}
 	administrative_council = {
 		mercenary_manpower = 0.2
@@ -361,14 +363,15 @@ administrative_ideas = {
 		centralize_state_cost = -0.5
 	}
 	bookkeeping = {
-		interest = -0.25
+		core_creation = -0.25
 	}
 	cultural_regulations = {
-		development_cost = -0.05
+		num_accepted_cultures = 10
 	}
 	resilient_state = {
 		manpower_recovery_speed = 0.1
 		recover_army_morale_speed = 0.1
+		fort_maintenance_modifier = -0.2
 	}
 
 	ai_will_do = {

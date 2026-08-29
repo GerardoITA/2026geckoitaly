@@ -27,6 +27,9 @@ echo_production_hub_naval_supplies_pmod = {
 	trade_value_modifier = 0.5
 	local_development_cost = -0.15
 }
+echo_production_hub_cloth_pmod = {
+	local_development_cost = -0.05
+}
 
 ##############################
 # Country Modifiers

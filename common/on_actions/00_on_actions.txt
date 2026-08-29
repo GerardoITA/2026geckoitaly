@@ -4855,6 +4855,9 @@ on_province_owner_change = {
 	}
 	on_province_owner_change_estate_privileges_effect = yes
 	imperial_modifiers_on_province_change_culture_or_change_owner_effect = yes
+	# Gecko - Infrastructure Ideas
+	gc_update_expanded_infrastructure_bonus = yes
+	gc_update_regulation_bureau_production_hub = yes
 	if = {
 		limit = {
 			region = indo_china_region
@@ -6286,9 +6289,11 @@ on_capital_moved = {
 
 #ROOT = province that was expanded in, FROM = country that did it
 on_expanded_infrastructure = {
+	gc_update_expanded_infrastructure_bonus = yes
 }
 
 on_expanded_infrastructure_removed = {
+	gc_update_expanded_infrastructure_bonus = yes
 }
 
 #ROOT = province that was centralized in

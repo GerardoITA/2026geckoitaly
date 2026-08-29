@@ -110,4 +110,139 @@ development_counter = {
 		}
 	]
 }
+gc_update_expanded_infrastructure_bonus = {
 
+	remove_province_modifier = gc_expanded_infrastructure_extra_1
+	remove_province_modifier = gc_expanded_infrastructure_extra_2
+	remove_province_modifier = gc_expanded_infrastructure_extra_3
+	remove_province_modifier = gc_expanded_infrastructure_extra_4
+	remove_province_modifier = gc_expanded_infrastructure_extra_5
+	remove_province_modifier = gc_expanded_infrastructure_extra_6
+	remove_province_modifier = gc_expanded_infrastructure_extra_7
+	remove_province_modifier = gc_expanded_infrastructure_extra_8
+	remove_province_modifier = gc_expanded_infrastructure_extra_9
+	remove_province_modifier = gc_expanded_infrastructure_extra_10
+
+	if = {
+		limit = {
+			owner = {
+				full_idea_group = infrastructure_ideas
+			}
+		}
+
+		if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 10
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_10
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 9
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_9
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 8
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_8
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 7
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_7
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 6
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_6
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 5
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 4
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 3
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 2
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				num_of_times_expanded_infrastructure = 1
+			}
+			add_province_modifier = {
+				name = gc_expanded_infrastructure_extra_1
+				duration = -1
+			}
+		}
+	}
+}
+
+gc_update_regulation_bureau_production_hub = {
+
+	remove_province_modifier = gc_regulation_bureau_production_hub_bonus
+
+	if = {
+		limit = {
+			owner = {
+				infrastructure_ideas = 4
+			}
+			OR = {
+				has_province_modifier = echo_production_hub_grain_pmod
+				has_province_modifier = echo_production_hub_livestock_pmod
+				has_province_modifier = echo_production_hub_naval_supplies_pmod
+				has_province_modifier = echo_production_hub_cloth_pmod
+			}
+		}
+
+		add_province_modifier = {
+			name = gc_regulation_bureau_production_hub_bonus
+			duration = -1
+		}
+	}
+}

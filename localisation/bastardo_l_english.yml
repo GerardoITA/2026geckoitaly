@@ -22,10 +22,10 @@
  improve_heir_dip_button_title:0 "Educate Ruler Diplomatic Skill"
  improve_heir_mil_button_title:0 "Educate Ruler Military Skill"
  #Provincial Investment
- Issue_Provincial_Investment_button:0 "Issue Provincial Investment"
- echo_provincial_investment_tt:0 "§GIssue a Province Investment in [Root.Province.GetName]§!\nCreates a Production Hub in this province, greatly increasing its trade value."
+ Issue_Provincial_Investment_button:0 "Issue Provincial Improvement"
+ echo_provincial_investment_tt:0 "§GIssue a Province Improvement in [Root.Province.GetName]§!\nCreates a Production Hub in this province, greatly increasing its trade value."
  echo_provincial_investment_desc:0 ""
- echo_provincial_investment_title:0 "Province Eligible to issue a Provincial Investment following Further Development."
+ echo_provincial_investment_title:0 "Province Eligible to issue a Provincial Improvement following Further Development."
  view_province_tt:0 "You may enact this on the province view next to the development button."
  #critical events
  echo_critical_events_title:0 "Available Critical Events"
@@ -57,6 +57,9 @@
  desc_echo_production_hub_livestock_pmod:0 ""
  echo_production_hub_naval_supplies_pmod:0 "Major Shipyard"
  desc_echo_production_hub_naval_supplies_pmod:0 ""
+ echo_production_hub_cloth_pmod:0 "Textile Hub"
+ desc_echo_production_hub_cloth_pmod:0 ""
+ 
  bs_ARB_estate_burghers_desert_development_gt:0 "Every owned province with §YDesert§! or §YCoastal Desert§! terrain gains:\nLocal Development Cost: §G-20.0%§!"
  bs_ARB_estate_burghers_desert_development_rt:0 "Every owned province with §YDesert§! or §YCoastal Desert§! terrain loses:\nLocal Development Cost: §G-20.0%§!"
  bs_estate_dhimmi_manpower_effect_tooltip:0 "Every owned province NOT of §YMuslim§! faith gains §Y'Dhimmi Conscription'§!, giving the following effects:\nLocal Manpower Modifier: §G+15.0%§!"

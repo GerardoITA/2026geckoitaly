@@ -166,6 +166,7 @@ custom_button = {
 					name = echo_production_hub_grain_pmod
 					duration = -1
 				}
+				gc_update_regulation_bureau_production_hub = yes
 		}
 		else_if = {
 			limit = { trade_goods = livestock }
@@ -173,6 +174,7 @@ custom_button = {
 				name = echo_production_hub_livestock_pmod
 				duration = -1
 			}
+			gc_update_regulation_bureau_production_hub = yes
 		}
 		else_if = {
 			limit = { trade_goods = naval_supplies }
@@ -180,10 +182,16 @@ custom_button = {
 				name = echo_production_hub_naval_supplies_pmod
 				duration = -1
 			}
+			gc_update_regulation_bureau_production_hub = yes
 		}
 		else_if = {
 			limit = { trade_goods = wool }
 			change_trade_goods = cloth
+			add_province_modifier = {
+				name = echo_production_hub_cloth_pmod
+				duration = -1
+			}
+			gc_update_regulation_bureau_production_hub = yes
 		}
 		ROOT = {
 			set_province_flag = echo_provincial_investment_pflag

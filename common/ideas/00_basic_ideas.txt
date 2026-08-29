@@ -422,31 +422,82 @@ infrastructure_ideas = {
 	category = ADM
 	
 	bonus = {
-		development_cost = -0.075
+		center_of_trade_upgrade_cost = -0.25
 	}
 	state_efficiency = {
-		global_prosperity_growth = 0.25
+		global_prosperity_growth = 1
 		state_maintenance_modifier = -0.33
 	}
 	organised_construction = {
-		build_cost = -0.1 
-		build_time = -0.25
+		great_project_upgrade_time = -0.25
+		great_project_upgrade_cost = -0.25
+		
 	}
 	efficient_construction_plans = {
-		expand_infrastructure_cost_modifier = -0.25
+		#LOC
+		development_cost_modifier = -0.01
+
+		effect = {
+			custom_tooltip = gc_efficient_construction_plans_tt
+			
+		}
+		removed_effect = {
+			custom_tooltip = gc_efficient_construction_plans_tt
+			
+		}
 	}
-	expanded_infrastructure_network = {
-		center_of_trade_upgrade_cost = -0.25
+	regulation_bureau = {
+		#LOC
+		global_trade_goods_size_modifier = 0.01
+		effect = {
+			custom_tooltip = gc_regulation_bureau_tt
+			every_owned_province = {
+				gc_update_regulation_bureau_production_hub = yes
+			}
+
+		}
+		removed_effect = {
+			custom_tooltip = gc_regulation_bureau_tt
+			every_owned_province = {
+				remove_province_modifier = gc_regulation_bureau_production_hub_bonus
+			}
+
+		}
+		
 	}
 	administrative_efficiency_idea = {
-		state_governing_cost = -0.1
+		global_tax_income = 24
 	}
 	fort_logistics = {
 		fort_maintenance_modifier = -0.25
  	}
-	regulation_bureau = {
-		great_project_upgrade_time = -0.25
-		great_project_upgrade_cost = -0.25
+	expanded_infrastructure_network = {
+		#LOC
+
+		expand_infrastructure_cost_modifier = -0.25
+		
+		effect = {
+			custom_tooltip = gc_expanded_infrastructure_network_tt
+			every_owned_province = {
+				gc_update_expanded_infrastructure_bonus = yes
+			}
+		}
+
+		removed_effect = {
+			custom_tooltip = gc_expanded_infrastructure_network_tt
+			every_owned_province = {
+				remove_province_modifier = gc_expanded_infrastructure_extra_1
+				remove_province_modifier = gc_expanded_infrastructure_extra_2
+				remove_province_modifier = gc_expanded_infrastructure_extra_3
+				remove_province_modifier = gc_expanded_infrastructure_extra_4
+				remove_province_modifier = gc_expanded_infrastructure_extra_5
+				remove_province_modifier = gc_expanded_infrastructure_extra_6
+				remove_province_modifier = gc_expanded_infrastructure_extra_7
+				remove_province_modifier = gc_expanded_infrastructure_extra_8
+				remove_province_modifier = gc_expanded_infrastructure_extra_9
+				remove_province_modifier = gc_expanded_infrastructure_extra_10
+			}
+		}
 	}
 
 	ai_will_do = {
@@ -675,6 +726,7 @@ court_ideas = {
 		monarch_admin_power = 1
 		monarch_diplomatic_power = 1
 		monarch_military_power = 1
+		candidate_random_bonus = 1
 	}
 
 	recognize_hierarchy = {

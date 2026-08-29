@@ -246,3 +246,76 @@ gc_update_regulation_bureau_production_hub = {
 		}
 	}
 }
+
+gc_update_infrastructure_building_investment_bonus = {
+
+	remove_province_modifier = gc_infrastructure_building_dev_cost_1
+	remove_province_modifier = gc_infrastructure_building_dev_cost_2
+	remove_province_modifier = gc_infrastructure_building_dev_cost_3
+	remove_province_modifier = gc_infrastructure_building_dev_cost_4
+	remove_province_modifier = gc_infrastructure_building_dev_cost_5
+	remove_province_modifier = gc_infrastructure_building_dev_cost_6
+
+	if = {
+		limit = {
+			owner = {
+				has_idea = efficient_construction_plans
+			}
+		}
+
+		if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_6
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_6
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_5
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_5
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_4
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_4
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_3
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_2
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = bastard_dev_cost_modifier_1
+			}
+			add_province_modifier = {
+				name = gc_infrastructure_building_dev_cost_1
+				duration = -1
+			}
+		}
+	}
+}

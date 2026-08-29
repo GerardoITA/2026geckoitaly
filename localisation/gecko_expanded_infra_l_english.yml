@@ -28,4 +28,21 @@
 
  gc_expanded_infrastructure_extra_10:0 "Expanded Infrastructure Bonus X"
  gc_expanded_infrastructure_extra_10_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
- 
+
+ gc_infrastructure_building_dev_cost_1:0 "Provincial Investment Bonus I"
+ gc_infrastructure_building_dev_cost_1_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_2:0 "Provincial Investment Bonus II"
+ gc_infrastructure_building_dev_cost_2_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_3:0 "Provincial Investment Bonus III"
+ gc_infrastructure_building_dev_cost_3_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_4:0 "Provincial Investment Bonus IV"
+ gc_infrastructure_building_dev_cost_4_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_5:0 "Provincial Investment Bonus V"
+ gc_infrastructure_building_dev_cost_5_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."
+
+ gc_infrastructure_building_dev_cost_6:0 "Provincial Investment Bonus VI"
+ gc_infrastructure_building_dev_cost_6_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."

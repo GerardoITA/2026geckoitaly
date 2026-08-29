@@ -439,10 +439,20 @@ infrastructure_ideas = {
 
 		effect = {
 			custom_tooltip = gc_efficient_construction_plans_tt
-			
+			every_owned_province = {
+				gc_update_infrastructure_building_investment_bonus = yes
+			}
 		}
 		removed_effect = {
 			custom_tooltip = gc_efficient_construction_plans_tt
+			every_owned_province = {
+				remove_province_modifier = gc_infrastructure_building_dev_cost_1
+				remove_province_modifier = gc_infrastructure_building_dev_cost_2
+				remove_province_modifier = gc_infrastructure_building_dev_cost_3
+				remove_province_modifier = gc_infrastructure_building_dev_cost_4
+				remove_province_modifier = gc_infrastructure_building_dev_cost_5
+				remove_province_modifier = gc_infrastructure_building_dev_cost_6
+			}
 			
 		}
 	}

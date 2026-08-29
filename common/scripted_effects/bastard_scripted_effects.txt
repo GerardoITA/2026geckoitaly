@@ -261,6 +261,7 @@ bastard_dev_cost_add_from_buildings = {
 				duration = -1
 		}
 	}
+	gc_update_infrastructure_building_investment_bonus = yes
 }
 
 bastard_dev_cost_remove_from_buildings = {
@@ -325,6 +326,7 @@ bastard_dev_cost_remove_from_buildings = {
 				duration = -1
 		}
 	}
+	gc_update_infrastructure_building_investment_bonus = yes
 }
 
 bastard_dev_cost_terrain_add_from_buildings = {

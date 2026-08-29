@@ -4858,6 +4858,7 @@ on_province_owner_change = {
 	# Gecko - Infrastructure Ideas
 	gc_update_expanded_infrastructure_bonus = yes
 	gc_update_regulation_bureau_production_hub = yes
+	gc_update_infrastructure_building_investment_bonus = yes
 	if = {
 		limit = {
 			region = indo_china_region

@@ -242,3 +242,27 @@ gc_regulation_bureau_production_hub_bonus = {
 	trade_goods_size = 0.5
 	local_governing_cost_increase = 5
 }
+
+gc_infrastructure_building_dev_cost_1 = {
+	local_development_cost_modifier = -0.015
+}
+
+gc_infrastructure_building_dev_cost_2 = {
+	local_development_cost_modifier = -0.025
+}
+
+gc_infrastructure_building_dev_cost_3 = {
+	local_development_cost_modifier = -0.035
+}
+
+gc_infrastructure_building_dev_cost_4 = {
+	local_development_cost_modifier = -0.045
+}
+
+gc_infrastructure_building_dev_cost_5 = {
+	local_development_cost_modifier = -0.055
+}
+
+gc_infrastructure_building_dev_cost_6 = {
+	local_development_cost_modifier = -0.075
+}

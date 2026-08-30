@@ -639,6 +639,7 @@ country_event = {
 	picture = WAR_OF_THE_ROSES_eventPicture
 	
 	trigger = {
+		ai = no
 		ENG = {
 			has_disaster = war_of_the_roses
 			has_country_flag = supports_house_of_york
@@ -812,6 +813,7 @@ country_event = {
 	picture = WAR_OF_THE_ROSES_eventPicture
 	
 	trigger = {
+		ai = no
 		ENG = {
 			has_disaster = war_of_the_roses
 			has_country_flag = supports_house_of_lancaster
@@ -1070,7 +1072,7 @@ country_event = {
 			event_target:the_province = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 1
 					friend = FROM
 				}
 			}

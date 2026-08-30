@@ -10442,9 +10442,6 @@ RAS_ideas = {
 	}
 	free = yes
 	
-	ras_living_imam = {
-		land_morale = 0.15
-	}
 	ras_yemeni_highlands = {
 		global_trade_goods_size_modifier = 0.1
 	}
@@ -10466,6 +10463,9 @@ RAS_ideas = {
 	}
 	ras_secure_trade_monopolies = {
 		trade_efficiency = 0.1
+	}
+	ras_living_imam = {
+		land_morale = 0.15
 	}
 }
 

@@ -358,9 +358,7 @@ ARB_ideas = { #Arabian Empire
 		tag = ARB
 	}
 	free = yes
-	arb_7 = { #Arabia
-		land_morale = 0.15
-	}
+	
 	arb_1 = { #Indian Ocean Trade
 		trade_efficiency = 0.1
 	}
@@ -379,6 +377,9 @@ ARB_ideas = { #Arabian Empire
 	}
 	arb_6 = { #Bedouin Traders
 		trade_steering = 0.33
+	}
+	arb_7 = { #Arabia
+		land_morale = 0.15
 	}
 	
 }

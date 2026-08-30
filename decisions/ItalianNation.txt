@@ -8,7 +8,7 @@ country_decisions = {
 				tag = VEN
 				tag = SIC
 				tag = TTS
-				}
+			}
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_italy_flag }
@@ -16,29 +16,8 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = ITA }
-			NOT = { tag = PAP }
-			NOT = { tag = HLR }
-			culture_group = latin
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 15
-				}
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
+
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -86,6 +65,11 @@ country_decisions = {
 				value = 45
 				region = italy_region
 				is_core = root
+			}
+
+			OR = {
+				tag = SPI
+				tag = TTS
 			}
 		}
 		effect = {

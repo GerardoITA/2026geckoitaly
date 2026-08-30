@@ -598,7 +598,7 @@ swi_regional_diets_modifier = {
 	country_admin_power = 1 
 }
 swi_national_expansion_plan_modifier = {
-	local_manpower_modifier = 0.20
+	local_manpower_modifier = 0.33
 	local_hostile_movement_speed = -0.33
 }
 swi_eidgenossenschaft_modifier = {

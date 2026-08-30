@@ -2289,7 +2289,7 @@ l_english:
  swi_accept_piedmontese_culture_without_taking_slot_tt: "Accept the Piedmontese Culture without taking a slot"
  swi_compliment_modifier_if_ige_merc_exists_tt: "\nIf we have activated §MIdea Groups Expanded§! and its Mercenary Army Idea Group's '§YStandarized Contractors§!' idea, the above modifier will be complimented"
  swi_activate_home_guard_swi_tt: "Activates the Republican Swiss Guard §YMercenary Company§!"
- swi_applies_to_every_mountain_15_tt: "Every owned mountain province with at least §G15 Development§! gets '§YNational Expansion Plan§!' until the end of the game, giving the following effects: \nLocal Manpower Modifier: §G+33%§! \nLocal Hostile Movement Speed: §R-33%§! \nLocal Development Cost: §G-25%§!"
+ swi_applies_to_every_mountain_15_tt: "Every owned mountain province with at least §G15 Development§! gets '§YNational Expansion Plan§!' until the end of the game, giving the following effects: \nLocal Manpower Modifier: §G+33%§! \nLocal Hostile Movement Speed: §R-33%§!"
  swi_prosperous_romandie_tt: "Our capital area is prosperous"
  swi_tolerant_catholic_trigger_tt: "Is Catholic and has at least §G3§! Tolerance of Heretics"
  swi_based_on_the_development_of_our_capital_tt: "based on the development of our §Ycapital§!" 

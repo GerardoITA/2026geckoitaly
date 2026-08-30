@@ -1655,7 +1655,7 @@ TUN_missions_5 = {
 			
 			add_country_modifier = {
 				name = TUN_readied_the_troops
-				duration = 5475
+				duration = 3650
 			}
 		}
 	}

@@ -267,6 +267,7 @@ expansion_ideas = {
 	}
 	adaptability = {
 		min_autonomy_in_territories = -0.3
+		trade_company_investment_cost = -0.3
 	}
 	additional_merchants = {
 		merchants = 1

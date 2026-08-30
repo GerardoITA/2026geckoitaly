@@ -19,28 +19,6 @@ the_combination_act = {
 	}
 }
 
-vassal_taxation_policy = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = offensive_ideas
-		has_idea_group = administrative_ideas
-	}
-	
-	allow = {
-		full_idea_group = offensive_ideas
-		full_idea_group = administrative_ideas
-	}
-
-	artillery_cost = -0.1
-	reinforce_speed = 0.1
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
 the_espionage_act = {
 	monarch_power = ADM
@@ -379,7 +357,27 @@ anti_heresy_act = {
 		factor = 1		
 	}
  }
+modern_siege_weapons = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = offensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = offensive_ideas
+	}
+	
+	mil_tech_cost_modifier = -0.1
 
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
 
 
  the_spy_discovery_act = {

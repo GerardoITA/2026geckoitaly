@@ -293,7 +293,7 @@ expansion_ideas = {
 		allowed_marine_fraction = 0.25
 		center_of_trade_upgrade_cost = -0.15
 		development_cost = -0.05
-	}
+	} 
 
 	ai_will_do = {
 		factor = 0.5

@@ -267,18 +267,18 @@ expansion_ideas = {
 	}
 	adaptability = {
 		min_autonomy_in_territories = -0.3
-		trade_company_investment_cost = -0.3
+		trade_company_investment_cost = -0.5
 	}
 	additional_merchants = {
 		merchants = 1
-		trade_efficiency = 0.1
+		trade_efficiency = 0.2
 	}
 	faster_colonists = {
 		global_colonial_growth = 40
 		land_attrition = -0.15
 	}
 	vice_roys = {
-		global_tariffs = 0.1
+		global_tariffs = 0.15
 		reduced_liberty_desire_on_other_continent = 25
  	}
 	additional_diplomats = {

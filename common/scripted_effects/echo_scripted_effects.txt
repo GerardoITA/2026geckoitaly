@@ -132,42 +132,6 @@ gc_update_expanded_infrastructure_bonus = {
 
 		if = {
 			limit = {
-				num_of_times_expanded_infrastructure = 10
-			}
-			add_province_modifier = {
-				name = gc_expanded_infrastructure_extra_10
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				num_of_times_expanded_infrastructure = 9
-			}
-			add_province_modifier = {
-				name = gc_expanded_infrastructure_extra_9
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				num_of_times_expanded_infrastructure = 8
-			}
-			add_province_modifier = {
-				name = gc_expanded_infrastructure_extra_8
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				num_of_times_expanded_infrastructure = 7
-			}
-			add_province_modifier = {
-				name = gc_expanded_infrastructure_extra_7
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
 				num_of_times_expanded_infrastructure = 6
 			}
 			add_province_modifier = {

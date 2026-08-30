@@ -503,10 +503,8 @@ infrastructure_ideas = {
 				remove_province_modifier = gc_expanded_infrastructure_extra_4
 				remove_province_modifier = gc_expanded_infrastructure_extra_5
 				remove_province_modifier = gc_expanded_infrastructure_extra_6
-				remove_province_modifier = gc_expanded_infrastructure_extra_7
-				remove_province_modifier = gc_expanded_infrastructure_extra_8
-				remove_province_modifier = gc_expanded_infrastructure_extra_9
-				remove_province_modifier = gc_expanded_infrastructure_extra_10
+
+		
 			}
 		}
 	}
@@ -670,7 +668,6 @@ influence_ideas = {
 
 	establish_cadet_branches = {
 		stability_cost_modifier = -0.1
-		free_concentrate_development = yes
 	}
 
 	integrated_elites = {

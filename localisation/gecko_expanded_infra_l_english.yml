@@ -17,17 +17,6 @@
  gc_expanded_infrastructure_extra_6:0 "Expanded Infrastructure Bonus VI"
  gc_expanded_infrastructure_extra_6_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
 
- gc_expanded_infrastructure_extra_7:0 "Expanded Infrastructure Bonus VII"
- gc_expanded_infrastructure_extra_7_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
-
- gc_expanded_infrastructure_extra_8:0 "Expanded Infrastructure Bonus VIII"
- gc_expanded_infrastructure_extra_8_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
-
- gc_expanded_infrastructure_extra_9:0 "Expanded Infrastructure Bonus IX"
- gc_expanded_infrastructure_extra_9_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
-
- gc_expanded_infrastructure_extra_10:0 "Expanded Infrastructure Bonus X"
- gc_expanded_infrastructure_extra_10_desc:0 "This province receives an additional application of Expanded Infrastructure modifiers because its owner has completed Infrastructure Ideas."
 
  gc_infrastructure_building_dev_cost_1:0 "Provincial Investment Bonus I"
  gc_infrastructure_building_dev_cost_1_desc:0 "Additional Development Cost reduction provided by Infrastructure Ideas."

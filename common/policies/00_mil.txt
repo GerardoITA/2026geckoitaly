@@ -269,6 +269,7 @@ mercenary_registration_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = administrative_ideas
 		has_idea_group = mercenary_ideas 
 	}
@@ -296,20 +297,20 @@ the_mining_act = {
 		has_idea_group = expansion_ideas
 		has_idea_group = quality_ideas
 	}
+
 	allow = {
 		full_idea_group = expansion_ideas
 		full_idea_group = quality_ideas
 	}
 
 	is_marine_modifier = yes
-
 	fire_damage_received = -0.10
 	morale_damage = 0.10
+
 	
-	effect = {}
-	removed_effect = {}
+
 	ai_will_do = {
-		factor = 1		
+		factor = 1
 	}
 }
 
@@ -564,27 +565,29 @@ local_army_organisation = {
 }
 
  underhanded_diplomacy_act = {
- 	monarch_power = MIL
- 	potential = {
- 		has_idea_group = diplomatic_ideas
- 		has_idea_group = offensive_ideas
- 	}
- 	
- 	allow = {
- 		full_idea_group = diplomatic_ideas
- 		full_idea_group = offensive_ideas
- 	}
- 	
- 	is_cossack_modifier = yes
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = diplomatic_ideas
+		has_idea_group = offensive_ideas
+	}
+
+	allow = {
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+	}
+
+	is_cossack_modifier = yes
+
 	infantry_power = 0.10
 	discipline = 0.025
-	
- 	effect = {}
- 	removed_effect = {}
- 	ai_will_do = {
-		factor = 1		
+
+
+
+	ai_will_do = {
+		factor = 1
 	}
- }
+}
 
 
  mandatory_service = {
@@ -862,6 +865,7 @@ maritime_expertise_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = maritime_ideas   
 	}
@@ -1272,6 +1276,7 @@ mercenary_tactical_movement_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = infrastructure_ideas
 		has_idea_group = mercenary_ideas 
 	}
@@ -1338,6 +1343,8 @@ innovative_payment_techniques_act = {
 	monarch_power = MIL
 	
 	potential = {
+
+		always = no 
 		has_idea_group = court_ideas
 		has_idea_group = mercenary_ideas 
 	}
@@ -1476,6 +1483,7 @@ dutiful_mercenaries_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = religious_ideas  
 	}
@@ -1993,6 +2001,7 @@ hired_expeditions_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = expansion_ideas   
 	}

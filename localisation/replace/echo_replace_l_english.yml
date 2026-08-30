@@ -108,3 +108,14 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  bertus_changes.6032.title:0 "Treasury Stolen!"
  bertus_changes.6032.desc:0 "Part of our treasury has been stolen, we do not know who exactly got it but it is certainly missing!"
  bertus_changes.6032.a:0 "Damn it!"
+
+#ideas
+ desc_underhanded_diplomacy_act:0 "§GThese bonuses apply normally, but are not displayed directly on the individual unit interface.§!"
+ desc_the_mining_act:0 "§GThese bonuses apply normally, but are not displayed directly on the individual unit interface.§!"
+ 
+ vassal_taxation_policy:0 "Sword Techniques"
+ vassal_taxation_policy_1:0 "Sword Techniques II"
+ vassal_taxation_policy_2:0 "Sword Techniques III"
+ desc_vassal_taxation_policy_1:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
+ desc_vassal_taxation_policy_2:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
+ desc_vassal_taxation_policy:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."

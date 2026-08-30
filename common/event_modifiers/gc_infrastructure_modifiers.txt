@@ -15,8 +15,8 @@ gc_expanded_infrastructure_extra_1 = {
 	local_build_time = -0.1
 	province_trade_power_modifier = 0.1
 	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 10
-	#local_governing_cost = 0.1
+	local_governing_cost_increase = 25
+	local_governing_cost = -0.15
 	#local_great_project_upgrade_cost = -0.15
 	land_forcelimit = 0.75
 	naval_forcelimit = 1
@@ -29,217 +29,217 @@ gc_expanded_infrastructure_extra_2 = {
 	allowed_num_of_manufactories = 2
 	regiment_recruit_speed = -0.25
 	ship_recruit_speed = -0.25
-	local_production_efficiency = 0.15
-	local_tax_modifier = 0.15
-	local_manpower_modifier = 0.2
-	local_sailors_modifier = 0.2
-	local_ship_repair = 0.2
-	local_autonomy = -0.05
+	local_production_efficiency = 0.23
+	local_tax_modifier = 0.23
+	local_manpower_modifier = 0.30
+	local_sailors_modifier = 0.30
+	local_ship_repair = 0.30
+	local_autonomy = -0.08
 	local_build_cost = -0.10
 	local_build_time = -0.2
-	province_trade_power_modifier = 0.2
-	trade_goods_size_modifier = 0.10
-	local_governing_cost_increase = 20
-	#local_governing_cost = 0.2
-	#local_great_project_upgrade_cost = -0.30
-	land_forcelimit = 1.5
-	naval_forcelimit = 2
-}
-
-gc_expanded_infrastructure_extra_3 = {
-	picture = "expand_infrastructure_cost_modifier"
-	
-	allowed_num_of_buildings = 3
-	allowed_num_of_manufactories = 3
-	regiment_recruit_speed = -0.375
-	ship_recruit_speed = -0.375
-	local_production_efficiency = 0.225
-	local_tax_modifier = 0.225
-	local_manpower_modifier = 0.3
-	local_sailors_modifier = 0.3
-	local_ship_repair = 0.3
-	local_autonomy = -0.075
-	local_build_cost = -0.15
-	local_build_time = -0.3
-	province_trade_power_modifier = 0.3
+	province_trade_power_modifier = 0.30
 	trade_goods_size_modifier = 0.15
-	local_governing_cost_increase = 30
-	#local_governing_cost = 0.3
-	#local_great_project_upgrade_cost = -0.45
+	local_governing_cost_increase = 35
+	local_governing_cost = -0.3
+	#local_great_project_upgrade_cost = -0.30
 	land_forcelimit = 2.25
 	naval_forcelimit = 3
 }
 
+gc_expanded_infrastructure_extra_3 = {
+	picture = "expand_infrastructure_cost_modifier"
+
+	allowed_num_of_buildings = 3
+	allowed_num_of_manufactories = 3
+	regiment_recruit_speed = -0.375
+	ship_recruit_speed = -0.375
+	local_production_efficiency = 0.45
+	local_tax_modifier = 0.45
+	local_manpower_modifier = 0.60
+	local_sailors_modifier = 0.60
+	local_ship_repair = 0.60
+	local_autonomy = -0.15
+	local_build_cost = -0.15
+	local_build_time = -0.3
+	province_trade_power_modifier = 0.60
+	trade_goods_size_modifier = 0.30
+	local_governing_cost_increase = 45
+	local_governing_cost = -0.45
+	#local_great_project_upgrade_cost = -0.45
+	land_forcelimit = 4.50
+	naval_forcelimit = 6
+}
+
 gc_expanded_infrastructure_extra_4 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 4
 	allowed_num_of_manufactories = 4
 	regiment_recruit_speed = -0.5
 	ship_recruit_speed = -0.5
-	local_production_efficiency = 0.3
-	local_tax_modifier = 0.3
-	local_manpower_modifier = 0.4
-	local_sailors_modifier = 0.4
-	local_ship_repair = 0.4
-	local_autonomy = -0.1
+	local_production_efficiency = 0.79
+	local_tax_modifier = 0.79
+	local_manpower_modifier = 1.05
+	local_sailors_modifier = 1.05
+	local_ship_repair = 1.05
+	local_autonomy = -0.26
 	local_build_cost = -0.2
 	local_build_time = -0.4
-	province_trade_power_modifier = 0.4
-	trade_goods_size_modifier = 0.2
-	local_governing_cost_increase = 40
-	#local_governing_cost = 0.4
-	#local_great_project_upgrade_cost = -0.6
-	land_forcelimit = 3
-	naval_forcelimit = 4
+	province_trade_power_modifier = 1.05
+	trade_goods_size_modifier = 0.53
+	local_governing_cost_increase = 55
+	local_governing_cost = -0.6
+	#local_great_project_upgrade_cost = -0.60
+	land_forcelimit = 7.88
+	naval_forcelimit = 10.50
 }
 
 gc_expanded_infrastructure_extra_5 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 5
 	allowed_num_of_manufactories = 5
 	regiment_recruit_speed = -0.625
 	ship_recruit_speed = -0.625
-	local_production_efficiency = 0.375
-	local_tax_modifier = 0.375
-	local_manpower_modifier = 0.5
-	local_sailors_modifier = 0.5
-	local_ship_repair = 0.5
-	local_autonomy = -0.125
+	local_production_efficiency = 1.29
+	local_tax_modifier = 1.29
+	local_manpower_modifier = 1.73
+	local_sailors_modifier = 1.73
+	local_ship_repair = 1.73
+	local_autonomy = -0.43
 	local_build_cost = -0.25
 	local_build_time = -0.5
-	province_trade_power_modifier = 0.5
-	trade_goods_size_modifier = 0.25
-	local_governing_cost_increase = 50
-	#local_governing_cost = 0.5
+	province_trade_power_modifier = 1.73
+	trade_goods_size_modifier = 0.86
+	local_governing_cost_increase = 65
+	local_governing_cost = -0.75
 	#local_great_project_upgrade_cost = -0.75
-	land_forcelimit = 3.75
-	naval_forcelimit = 5
+	land_forcelimit = 12.94
+	naval_forcelimit = 17.25
 }
 
 gc_expanded_infrastructure_extra_6 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 6
 	allowed_num_of_manufactories = 6
 	regiment_recruit_speed = -0.75
 	ship_recruit_speed = -0.75
-	local_production_efficiency = 0.45
-	local_tax_modifier = 0.45
-	local_manpower_modifier = 0.6
-	local_sailors_modifier = 0.6
-	local_ship_repair = 0.6
-	local_autonomy = -0.15
+	local_production_efficiency = 2.05
+	local_tax_modifier = 2.05
+	local_manpower_modifier = 2.74
+	local_sailors_modifier = 2.74
+	local_ship_repair = 2.74
+	local_autonomy = -0.68
 	local_build_cost = -0.3
 	local_build_time = -0.6
-	province_trade_power_modifier = 0.6
-	trade_goods_size_modifier = 0.3
-	local_governing_cost_increase = 60
-	#local_governing_cost = 0.6
-	#local_great_project_upgrade_cost = -0.9
-	land_forcelimit = 4.5
-	naval_forcelimit = 6
+	province_trade_power_modifier = 2.74
+	trade_goods_size_modifier = 1.37
+	local_governing_cost_increase = 75
+	local_governing_cost = -0.9
+	#local_great_project_upgrade_cost = -0.90
+	land_forcelimit = 20.53
+	naval_forcelimit = 27.38
 }
 
 gc_expanded_infrastructure_extra_7 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 7
 	allowed_num_of_manufactories = 7
 	regiment_recruit_speed = -0.875
 	ship_recruit_speed = -0.875
-	local_production_efficiency = 0.525
-	local_tax_modifier = 0.525
-	local_manpower_modifier = 0.7
-	local_sailors_modifier = 0.7
-	local_ship_repair = 0.7
-	local_autonomy = -0.175
+	local_production_efficiency = 3.19
+	local_tax_modifier = 3.19
+	local_manpower_modifier = 4.26
+	local_sailors_modifier = 4.26
+	local_ship_repair = 4.26
+	local_autonomy = -1.06
 	local_build_cost = -0.35
 	local_build_time = -0.7
-	province_trade_power_modifier = 0.7
-	trade_goods_size_modifier = 0.35
-	local_governing_cost_increase = 70
-	#local_governing_cost = 0.7
+	province_trade_power_modifier = 4.26
+	trade_goods_size_modifier = 2.13
+	local_governing_cost_increase = 85
+	local_governing_cost = -1.05
 	#local_great_project_upgrade_cost = -1.05
-	land_forcelimit = 5.25
-	naval_forcelimit = 7
+	land_forcelimit = 31.92
+	naval_forcelimit = 42.56
 }
 
 gc_expanded_infrastructure_extra_8 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 8
 	allowed_num_of_manufactories = 8
 	regiment_recruit_speed = -1
 	ship_recruit_speed = -1
-	local_production_efficiency = 0.6
-	local_tax_modifier = 0.6
-	local_manpower_modifier = 0.8
-	local_sailors_modifier = 0.8
-	local_ship_repair = 0.8
-	local_autonomy = -0.2
+	local_production_efficiency = 4.90
+	local_tax_modifier = 4.90
+	local_manpower_modifier = 6.53
+	local_sailors_modifier = 6.53
+	local_ship_repair = 6.53
+	local_autonomy = -1.63
 	local_build_cost = -0.4
 	local_build_time = -0.8
-	province_trade_power_modifier = 0.8
-	trade_goods_size_modifier = 0.4
-	local_governing_cost_increase = 80
-	#local_governing_cost = 0.8
-	#local_great_project_upgrade_cost = -1.2
-	land_forcelimit = 6
-	naval_forcelimit = 8
+	province_trade_power_modifier = 6.53
+	trade_goods_size_modifier = 3.27
+	local_governing_cost_increase = 95
+	local_governing_cost = -1.2
+	#local_great_project_upgrade_cost = -1.20
+	land_forcelimit = 49.01
+	naval_forcelimit = 65.34
 }
 
 gc_expanded_infrastructure_extra_9 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 9
 	allowed_num_of_manufactories = 9
 	regiment_recruit_speed = -1.125
 	ship_recruit_speed = -1.125
-	local_production_efficiency = 0.675
-	local_tax_modifier = 0.675
-	local_manpower_modifier = 0.9
-	local_sailors_modifier = 0.9
-	local_ship_repair = 0.9
-	local_autonomy = -0.225
+	local_production_efficiency = 7.46
+	local_tax_modifier = 7.46
+	local_manpower_modifier = 9.95
+	local_sailors_modifier = 9.95
+	local_ship_repair = 9.95
+	local_autonomy = -2.49
 	local_build_cost = -0.45
 	local_build_time = -0.9
-	province_trade_power_modifier = 0.9
-	trade_goods_size_modifier = 0.45
-	local_governing_cost_increase = 90
-	#local_governing_cost = 0.9
+	province_trade_power_modifier = 9.95
+	trade_goods_size_modifier = 4.98
+	local_governing_cost_increase = 105
+	local_governing_cost = -1.35
 	#local_great_project_upgrade_cost = -1.35
-	land_forcelimit = 6.75
-	naval_forcelimit = 9
+	land_forcelimit = 74.64
+	naval_forcelimit = 99.52
 }
 
 gc_expanded_infrastructure_extra_10 = {
 	picture = "expand_infrastructure_cost_modifier"
-	
+
 	allowed_num_of_buildings = 10
 	allowed_num_of_manufactories = 10
 	regiment_recruit_speed = -1.25
 	ship_recruit_speed = -1.25
-	local_production_efficiency = 0.75
-	local_tax_modifier = 0.75
-	local_manpower_modifier = 1
-	local_sailors_modifier = 1
-	local_ship_repair = 1
-	local_autonomy = -0.25
+	local_production_efficiency = 11.31
+	local_tax_modifier = 11.31
+	local_manpower_modifier = 15.08
+	local_sailors_modifier = 15.08
+	local_ship_repair = 15.08
+	local_autonomy = -3.77
 	local_build_cost = -0.5
 	local_build_time = -1
-	province_trade_power_modifier = 1
-	trade_goods_size_modifier = 0.5
-	local_governing_cost_increase = 100
-	#local_governing_cost = 1
-	#local_great_project_upgrade_cost = -1.5
-	land_forcelimit = 7.5
-	naval_forcelimit = 10
+	province_trade_power_modifier = 15.08
+	trade_goods_size_modifier = 7.54
+	local_governing_cost_increase = 115
+	local_governing_cost = -1.5
+	#local_great_project_upgrade_cost = -1.50
+	land_forcelimit = 113.08
+	naval_forcelimit = 150.77
 }
 
 gc_regulation_bureau_production_hub_bonus = {
-	trade_goods_size = 0.5
+	trade_goods_size = 1
 	local_governing_cost_increase = 5
 }
 

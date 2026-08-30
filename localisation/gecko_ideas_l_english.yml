@@ -170,8 +170,8 @@
  TTS_ideas_bonus:0 "Two Sicilies Ambition"
  tts_greater_sicily:0 "Greater Sicily"
 
- gc_expanded_infrastructure_network_tt:0 "§YExpanded Infrastructure§! provides §G2x§! its normal bonuses and penalties, excluding §YDevelopment Cost§! and §YGreat Project Upgrade Cost§!."
-  gc_regulation_bureau_tt:0 "§YProvince Improvement§! grants §G+0.5§! Base Goods Produced and §R+5§! Local Governing Cost."
+ gc_expanded_infrastructure_network_tt:0 "§YExpanded Infrastructure§! grants additional bonuses. Most of these bonuses scale recursively: from the §Y2nd level§! onward, each level adds one base bonus and then increases the accumulated bonus by §G50%§!. Construction and recruitment speed bonuses scale normally. Each level also grants §G-15% Local Governing Cost§!, while the additional flat Governing Cost is §R+25§! at the first level and §R+10§! for each level thereafter. §YDevelopment Cost§! and §YGreat Project Upgrade Cost§! are excluded."
+  gc_regulation_bureau_tt:0 "§YProvince Improvement§! grants §G+1§! Base Goods Produced and §R+5§! Local Governing Cost."
  gc_efficient_construction_plans_tt:0 "§YProvincial Investments§! from buildings provide §G2x§! the normal Development Cost modifier."
  gc_regulation_bureau_production_hub_bonus:0 "Province Improvement Bonus"
 

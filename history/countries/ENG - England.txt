@@ -12,7 +12,7 @@ add_accepted_culture = normand
 
 change_estate_land_share = {
 	estate = estate_church
-	share = 10
+	share = -10
 }
 change_estate_land_share = {
 	estate = estate_burghers

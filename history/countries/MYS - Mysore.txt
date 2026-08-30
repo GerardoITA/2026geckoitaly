@@ -14,22 +14,7 @@ historical_rival = YOR
 #Very independent feudatories of Vijayanagara, often ignoring the empire or in rebelion against it
 #Have not been able to find specific ummatur rulers
 
-change_estate_land_share = {
-	estate = estate_brahmins
-	share = 2
-}
-change_estate_land_share = {
-	estate = estate_jains
-	share = 2
-}
-change_estate_land_share = {
-	estate = estate_maratha
-	share = 2
-}
-change_estate_land_share = {
-	estate = estate_vaisyas
-	share = 2
-}
+
 
 
 1424.11.11 = {

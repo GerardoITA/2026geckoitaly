@@ -1,2 +1,3 @@
-# bastard-fork
-just a bastard fork project me and paypal are working on
+# the true heir to gecko mod
+
+By Intlander, Dukksa and plenty other modders

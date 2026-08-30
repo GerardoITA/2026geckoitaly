@@ -2407,28 +2407,7 @@ french_missions_3_charlemagne_path = {
 			not_in_mission_preview_mode = { key = FRA_HRE }
 			hre_reform_passed = emperor_reichsstabilitaet
 			is_emperor = yes 
-			custom_trigger_tooltip = {
-				tooltip = no_hre_province_owned_by_non_hre_member_or_overlord_trigger
-				europe = {
-					type = all
-					OR = {
-						is_part_of_hre = no
-						AND = {
-							is_part_of_hre = yes
-							owner = {
-								is_part_of_hre = yes
-								OR = {
-									is_subject = no
-									AND = {
-										is_subject = yes
-										overlord = { is_part_of_hre = yes }
-									}
-								}
-							}
-						}
-					}
-				}
-			}
+
 			if = { 
 				limit = { has_dlc = "Leviathan" }
 				183 = { 

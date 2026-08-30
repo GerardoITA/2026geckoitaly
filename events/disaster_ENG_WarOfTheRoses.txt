@@ -78,7 +78,7 @@ country_event = {
 			hidden_effect = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 1
 					leader = "Richard"
 					leader_dynasty = "York"
 					win = yes
@@ -136,7 +136,7 @@ country_event = {
 			hidden_effect = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3
+					size = 1
 					leader = "Edward"
 					leader_dynasty = "Lancaster"
 					win = yes
@@ -564,7 +564,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 3
+				size = 1
 			}			
 			add_province_modifier = {
 				name = rebel_refugees
@@ -1010,7 +1010,7 @@ country_event = {
 					save_event_target_as = the_province
 					spawn_rebels = {
 						type = pretender_rebels
-						size = 2
+						size = 1
 						friend = FROM
 					}
 				}
@@ -1058,7 +1058,7 @@ country_event = {
 					save_event_target_as = the_province
 					spawn_rebels = {
 						type = pretender_rebels
-						size = 2
+						size = 1
 						friend = FROM
 					}
 				}
@@ -1694,7 +1694,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 2
+					size = 1
 					leader = "Edward"
 					leader_dynasty = "Lancaster"
 					win = yes
@@ -1703,7 +1703,7 @@ country_event = {
 			else = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 2
+					size = 1
 					leader = "Richard"
 					leader_dynasty = "York"
 					win = yes

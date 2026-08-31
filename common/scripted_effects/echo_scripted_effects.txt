@@ -117,11 +117,6 @@ gc_update_expanded_infrastructure_bonus = {
 	remove_province_modifier = gc_expanded_infrastructure_extra_3
 	remove_province_modifier = gc_expanded_infrastructure_extra_4
 	remove_province_modifier = gc_expanded_infrastructure_extra_5
-	remove_province_modifier = gc_expanded_infrastructure_extra_6
-	remove_province_modifier = gc_expanded_infrastructure_extra_7
-	remove_province_modifier = gc_expanded_infrastructure_extra_8
-	remove_province_modifier = gc_expanded_infrastructure_extra_9
-	remove_province_modifier = gc_expanded_infrastructure_extra_10
 
 	if = {
 		limit = {
@@ -131,15 +126,6 @@ gc_update_expanded_infrastructure_bonus = {
 		}
 
 		if = {
-			limit = {
-				num_of_times_expanded_infrastructure = 6
-			}
-			add_province_modifier = {
-				name = gc_expanded_infrastructure_extra_6
-				duration = -1
-			}
-		}
-		else_if = {
 			limit = {
 				num_of_times_expanded_infrastructure = 5
 			}

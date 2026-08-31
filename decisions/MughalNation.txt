@@ -130,14 +130,10 @@ country_decisions = {
 			
 			set_country_flag = formed_mughal_empire_flag
 
-			change_estate_land_share = {
-				estate = estate_rajput
-				share = 35
-			}
 
 			change_estate_land_share = {
 				estate = estate_jains
-				share = 15
+				share = 5
 			}
 		}
 		ai_will_do = {

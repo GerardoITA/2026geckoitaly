@@ -3443,6 +3443,10 @@ estate_nobles_force_conscription = {
 		NOT = {
 			has_estate_privilege = estate_nomadic_tribes_military_service
 		}
+		NOT = {
+			has_estate_privilege = estate_rajput_force_conscription
+		}
+		
 	}
 	on_granted = {
 		enable_estate_action = {

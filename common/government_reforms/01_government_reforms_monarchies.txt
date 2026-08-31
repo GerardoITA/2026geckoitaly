@@ -2684,7 +2684,6 @@ mughal_government = {
 		enables_estate_jains = yes
 		enables_estate_rajput = yes
 		disables_estate_burghers = yes
-		disables_estate_nobles = yes
 	}
 }
 

@@ -1129,6 +1129,10 @@ estate_rajput_force_conscription = {
 			limit = { has_estate = estate_maratha }
 			NOT = { has_estate_privilege = estate_maratha_force_conscription }
 		}
+		if = {
+			limit = { has_estate = estate_rajput }
+			NOT = { has_estate_privilege = estate_rajput_force_conscription }
+		}
 	}
 	on_granted = {
 		enable_estate_action = {

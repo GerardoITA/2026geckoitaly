@@ -106,7 +106,7 @@ the_tolerance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	placed_merchant_power = 2
+	placed_merchant_power = 25
 
 	effect = {}
 	removed_effect = {}

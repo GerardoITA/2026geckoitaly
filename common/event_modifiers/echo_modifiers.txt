@@ -119,3 +119,6 @@ h_event_dip = {
 h_event_mil = {
 	army_tradition = 0.5
 }
+eng_two_crowns = {
+	liberty_desire = -50
+}

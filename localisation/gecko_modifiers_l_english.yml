@@ -313,3 +313,6 @@ Standing_Army:0 "Standing Army"
 
  help_im_getting_vultured:0 "Help! I'm getting Vultured!"
  tur_age_ability_modifier:0 "Space Janissaries"
+ eng_two_crowns:0 "The Two Crowns"
+ eng_two_crowns_desc:0 "The Crowns of England and Scotland have been bound together under English supremacy, preserving Scottish institutions while subordinating the kingdom's foreign and military policy to London."
+ eng_two_crowns_warning_tt:0 "§RCompleting this mission before 1465 while Scotland is our vassal will turn Scotland into a March and grant §YThe Two Crowns§! (-50% Liberty Desire). Delaying Scottish subjugation will forfeit this reward.§!"

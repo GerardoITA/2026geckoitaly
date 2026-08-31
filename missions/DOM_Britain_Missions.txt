@@ -1398,6 +1398,13 @@ ENG_missions_3_1 = {
 			army_size_percentage = 0.8
 		}
 		effect = {
+
+			add_casus_belli = {
+				target = SCO
+				type = cb_vassalize_mission
+				months = 120
+			}
+
 			ulster_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -1444,43 +1451,68 @@ ENG_missions_3_1 = {
 	}
 
 	ENG_conquer_scotland = {
-		icon = mission_cannons_firing
-		required_missions = { ENG_rival_the_nobles }
-		position = 7
-		provinces_to_highlight = {
-			OR = {
-				area = lowlands_area
-				area = scottish_marches_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	icon = mission_cannons_firing
+	required_missions = { ENG_rival_the_nobles }
+	position = 7
+
+	provinces_to_highlight = {
+		OR = {
+			area = lowlands_area
+			area = scottish_marches_area
 		}
-		trigger = {
-			lowlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			scottish_marches_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+
+	trigger = {
+		lowlands_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
 		}
-		effect = {
-			highlands_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
+		scottish_marches_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+
+	effect = {
+		highlands_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
 			}
-			kingdom_of_the_isles_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
+			add_permanent_claim = ROOT
+		}
+
+		kingdom_of_the_isles_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		custom_tooltip = eng_two_crowns_warning_tt
+		if = {
+			limit = {
+				NOT = { is_year = 1465 }
+
+				# DON'T CHEESE AND SHOW STRENGTH SCOTLAND 1000 TIMES JUST DON'T
+
+				SCO = {
+					is_vassal = yes
+					is_subject_of = ROOT
 				}
-				add_permanent_claim = ROOT
+			}
+			create_march = SCO
+			SCO = {
+				
+				add_country_modifier = {
+					name = eng_two_crowns
+					duration = -1
+				}
 			}
 		}
 	}
+}
 
 	ENG_church_of_scotland = {
 		icon = mission_european_church

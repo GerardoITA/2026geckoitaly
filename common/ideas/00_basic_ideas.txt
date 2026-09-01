@@ -261,7 +261,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
-		manpower_in_accepted_culture_provinces = 0.25
+		manpower_in_culture_group_provinces  = 0.25
 		transport_attrition = -0.75
 		blockade_efficiency = 0.25
 	}

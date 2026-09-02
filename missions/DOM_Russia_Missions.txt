@@ -1589,10 +1589,7 @@ mos_rus_russian_consolidation = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			if = {
-				limit = { ai = no }
-				monthly_adm = 10
-			}
+
 			army_size_percentage = 0.8
 		}
 		effect = {

@@ -1,9 +1,10 @@
 
 Steppe_rule = {
-	cav_to_inf_ratio = 0.25
+	cav_to_inf_ratio = 0.5
 	horde_unity = 5
 }
 Steppe_rule_2 = {
+	cav_to_inf_ratio = 0.25
 	horde_unity = 5
 }
 

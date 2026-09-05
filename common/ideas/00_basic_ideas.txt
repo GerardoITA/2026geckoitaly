@@ -1102,7 +1102,7 @@ offensive_ideas = {
 	}
 	superior_firepower = {
 		artillery_power = 0.1
-		artillery_fire = 0.25
+		artillery_cost = -0.2
 	}
 
 	ai_will_do = {

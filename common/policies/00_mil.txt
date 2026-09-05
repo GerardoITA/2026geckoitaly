@@ -308,6 +308,24 @@ the_mining_act = {
 	morale_damage = 0.10
 
 	
+	effect = {
+		add_country_modifier = {
+			name = the_mining_act_global_negation
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = the_mining_act_marine_bonus
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	removed_effect  = {
+		remove_country_modifier = the_mining_act_global_negation
+		remove_country_modifier = the_mining_act_marine_bonus
+	}
+	
 
 	ai_will_do = {
 		factor = 1
@@ -582,7 +600,23 @@ local_army_organisation = {
 	infantry_power = 0.10
 	discipline = 0.025
 
+	effect = {
+		add_country_modifier = {
+			name = underhanded_diplomacy_act_global_negation
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = underhanded_diplomacy_act_cossack_bonus
+			duration = -1
+			hidden = yes
+		}
+	}
 
+	removed_effect = {
+		remove_country_modifier = underhanded_diplomacy_act_global_negation
+		remove_country_modifier = underhanded_diplomacy_act_cossack_bonus
+	}
 
 	ai_will_do = {
 		factor = 1

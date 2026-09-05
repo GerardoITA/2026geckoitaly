@@ -152,3 +152,28 @@ fuck_you_no_switching_mid_war = {
 	light_ship_power = -0.2
 	galley_power = -0.2
 }
+
+the_mining_act_global_negation = {
+	fire_damage_received = 0.10
+	morale_damage = -0.10
+	
+}
+
+the_mining_act_marine_bonus = {
+	is_marine_modifier = yes
+
+	fire_damage_received = -0.10
+	morale_damage = 0.10
+	
+}
+underhanded_diplomacy_act_global_negation = {
+	infantry_power = -0.10
+	discipline = -0.025
+}
+
+underhanded_diplomacy_act_cossack_bonus = {
+	is_cossack_modifier = yes
+
+	infantry_power = 0.10
+	discipline = 0.025
+}

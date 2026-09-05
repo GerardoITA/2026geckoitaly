@@ -1333,7 +1333,7 @@ quantity_ideas = {
 	
 	bonus = {
 		land_forcelimit_modifier = 0.33
-		special_unit_forcelimit = 0.1
+		special_unit_forcelimit = 0.15
 		num_of_pronoiars = 1
 		possible_mil_policy = 1
 	}
@@ -1341,17 +1341,17 @@ quantity_ideas = {
 	camp_followers = {
 		manpower_recovery_speed = 0.20
 	}
-	the_young_can_serve = {
-		may_build_supply_depot = yes
-		land_morale = 0.05
-	}
-	grand_army = {
-		global_regiment_cost = -0.
-		land_maintenance_modifier = -0.05
-	}
 	mass_army = {
 		global_manpower_modifier = 0.5
 		allowed_marine_fraction = 0.25
+	}
+	the_young_can_serve = {
+		may_build_supply_depot = yes
+		recover_army_morale_speed = 0.1
+	}
+	grand_army = {
+		global_regiment_cost = -0.1
+		land_maintenance_modifier = -0.1
 	}
 	reinforcement_drafts = {
 		reinforce_speed = 0.25
@@ -1362,7 +1362,7 @@ quantity_ideas = {
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.20
-		recover_army_morale_speed = 0.1
+		
 	}
 
 	ai_will_do = {

@@ -1343,7 +1343,6 @@ quantity_ideas = {
 	}
 	mass_army = {
 		global_manpower_modifier = 0.5
-		allowed_marine_fraction = 0.25
 	}
 	the_young_can_serve = {
 		may_build_supply_depot = yes

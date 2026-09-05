@@ -508,14 +508,14 @@ estate_nobles_right_of_counsel = {
 		cav_to_inf_ratio = 0.15
 	}
 	penalties = {
-		cavalry_cost = 0.1
+		cavalry_cost = 0.2
 	}
 	modifier = {
 		special_unit_forcelimit = 0.1
 	}
 	influence_scaled_conditional_modifier = {
 		trigger = { always = yes }
-		modifier = { allowed_cossack_fraction = 0.25 }
+		modifier = { allowed_cossack_fraction = 0.2 }
 	}
 	on_granted = {
 		if = {

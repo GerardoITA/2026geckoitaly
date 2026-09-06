@@ -597,7 +597,7 @@ local_army_organisation = {
 
 	is_cossack_modifier = yes
 
-	infantry_power = 0.10
+	infantry_power = 0.15
 	discipline = 0.025
 
 	effect = {

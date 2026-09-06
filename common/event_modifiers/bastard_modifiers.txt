@@ -167,13 +167,13 @@ the_mining_act_marine_bonus = {
 	
 }
 underhanded_diplomacy_act_global_negation = {
-	infantry_power = -0.10
+	infantry_power = -0.15
 	discipline = -0.025
 }
 
 underhanded_diplomacy_act_cossack_bonus = {
 	is_cossack_modifier = yes
 
-	infantry_power = 0.10
+	infantry_power = 0.15
 	discipline = 0.025
 }

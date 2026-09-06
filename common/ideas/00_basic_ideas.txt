@@ -734,7 +734,7 @@ court_ideas = {
 		monarch_admin_power = 1
 		monarch_diplomatic_power = 1
 		monarch_military_power = 1
-		candidate_random_bonus = 1
+		candidate_random_bonus = 2
 	}
 
 	recognize_hierarchy = {

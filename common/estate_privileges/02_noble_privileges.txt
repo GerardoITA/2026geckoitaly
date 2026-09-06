@@ -622,6 +622,9 @@ estate_nobles_french_strong_duchies = {
 						is_subject_of_type = client_march
 						is_subject_of_type = client_vassal
 						is_subject_of_type = personal_union
+						is_subject_of_type = canton
+						is_subject_of_type = eyalet
+						is_subject_of_type = core_eyalet
 					}
 				}
 			}

@@ -77,9 +77,9 @@ add_accepted_culture = slovene
 		name = "Friedrich III"
 		dynasty = "von Habsburg"
 		birth_date = 1415.9.21
-		adm = 3
+		adm = 4
 		dip = 5
-		mil = 3
+		mil = 4
 	}
 	
 	clear_scripted_personalities = yes
@@ -93,9 +93,9 @@ add_accepted_culture = slovene
 		dynasty = "von Habsburg"
 		birth_date = 1440.2.22
 		death_date = 1457.11.24
-		adm = 3
-		dip = 3
-		mil = 3
+		adm = 4
+		dip = 4
+		mil = 4
 	}
 	set_country_flag = hab_ladislaus_postumus_heir
 }
@@ -950,7 +950,7 @@ add_government_reform = autocracy_reform }
 
 1685.1.1 = { leader = {	name = "von Starhemberg"       	type = general	fire = 3	shock = 4	manuever = 4	siege = 3	death_date = 1705.1.1 } }
 
-#1690.1.1 = { leader = {	name = "von Mercy"             	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1734.1.1 } } # Removed /SWÖ
+#1690.1.1 = { leader = {	name = "von Mercy"             	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1734.1.1 } } # Removed /SWï¿½
 
 1690.1.1 = { leader = {	name = "Ludwig"                	type = general	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1710.1.1 } }
 
@@ -1096,7 +1096,7 @@ add_government_reform = autocracy_reform }
 
 1735.1.1 = { leader = {	name = "Sachsen"               	type = general	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1750.1.1 } }
 
-#1737.1.1 = { leader = {	name = "Charles de Lorraine"   	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.7.4 } } # Removed /SWÖ
+#1737.1.1 = { leader = {	name = "Charles de Lorraine"   	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.7.4 } } # Removed /SWï¿½
 
 1738.1.1 = { leader = {	name = "Browne"                	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1757.1.1 } }
 
@@ -1113,7 +1113,7 @@ add_government_reform = autocracy_reform }
 	queen = {
 		country_of_origin = LOR
 		name = "Francis"
-		dynasty = "de Vaudémont"
+		dynasty = "de Vaudï¿½mont"
 		birth_date = 1708.12.8
 		death_date = 1765.8.12
 		female = no

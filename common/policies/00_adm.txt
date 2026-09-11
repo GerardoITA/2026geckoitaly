@@ -145,27 +145,7 @@ the_provincial_taxation_system = {
 
 
 
-the_education_act = {
-	monarch_power = ADM
 
-	potential = {
-		has_idea_group = innovativeness_ideas
-		has_idea_group = plutocracy_ideas
-	}
-	
-	allow = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = plutocracy_ideas
-	}
-
-	technology_cost = -0.05
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
 
  policy_of_calculate_delay = {

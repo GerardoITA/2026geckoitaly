@@ -781,6 +781,28 @@ colonial_garrisons = {
 	}
 }
 
+the_education_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = plutocracy_ideas
+	}
+
+	infantry_power = 0.075
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
+
 weapon_quality_standards = {
 	monarch_power = ADM
 	

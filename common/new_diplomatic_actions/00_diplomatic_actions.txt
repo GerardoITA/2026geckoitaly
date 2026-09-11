@@ -387,6 +387,7 @@ fabricate_ottoman_invasion_cb = {
 		has_government_attribute = has_eyalets
 	}
 	is_allowed = {
+		always = no
 		if = {
 			limit = {
 				FROM = { total_development = 150 }

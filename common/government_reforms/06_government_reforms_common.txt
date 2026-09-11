@@ -4024,9 +4024,7 @@ thalassocracy_reform = {
 		naval_forcelimit_modifier = 0.25
 		global_trade_power = 0.15
 	}
-	custom_attributes = {
-		can_establish_trade_protectorates = yes
-	}
+	
 	ai = {
 		factor = 1
 	}
@@ -4048,14 +4046,7 @@ royal_charters_reform = {
 		global_unrest = -1 
 		stability_cost_modifier = -0.15
 	}
-	conditional = {
-		allow = {
-			has_dlc = "Domination"
-		}
-		custom_attributes = {
-			can_establish_trade_protectorates = yes
-		}
-	}
+
 	ai = {
 		factor = 1
 	}
@@ -4077,14 +4068,7 @@ commercial_trade_empire_reform = {
 		global_ship_trade_power = 0.25
 		mercantilism_cost = -0.33
 	}
-	conditional = {
-		allow = {
-			has_dlc = "Domination"
-		}
-		custom_attributes = {
-			can_establish_trade_protectorates = yes
-		}
-	}
+	
 	ai = {
 		factor = 1
 	}
@@ -5068,14 +5052,7 @@ merchant_representation_reform = {
 		global_trade_power = 0.1
 		global_ship_trade_power = 0.33
 	}
-	conditional = {
-		allow = {
-			has_dlc = "Domination"
-		}
-		custom_attributes = {
-			can_establish_trade_protectorates = yes
-		}
-	}
+
 	conditional = {
 		allow = {
 			OR = {

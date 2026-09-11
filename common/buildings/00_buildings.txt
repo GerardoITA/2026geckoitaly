@@ -3800,7 +3800,7 @@ soldier_households = {
 }
 
 impressment_offices = {
-	cost = 400
+	cost = 250
 	time = 12
 
 	build_trigger = {
@@ -3808,7 +3808,7 @@ impressment_offices = {
 	}
 
 	modifier = {
-		local_sailors = 750
+		local_sailors = 250
 		ship_recruit_speed = -0.1
 		local_ship_cost = -0.05
 	}

@@ -630,6 +630,7 @@ tower_of_london = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_defender_dice_roll_bonus = 1
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -659,6 +660,7 @@ tower_of_london = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_defender_dice_roll_bonus = 1
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -668,14 +670,6 @@ tower_of_london = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-		}
-		conditional_modifier = {
-			trigger = {
-				current_age = age_of_discovery
-			}
-			modifier = {
-				 	local_defender_dice_roll_bonus = 1
-			}
 		}
 		conditional_modifier = {
 			trigger = {
@@ -717,6 +711,7 @@ tower_of_london = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_defensiveness = 0.25
+			local_defender_dice_roll_bonus = 1
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -728,14 +723,7 @@ tower_of_london = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
-		conditional_modifier = {
-			trigger = {
-				current_age = age_of_discovery
-			}
-			modifier = {
-				 	local_defender_dice_roll_bonus = 1
-			}
-		}
+
 		conditional_modifier = {
 			trigger = {
 				owner = { 
@@ -777,6 +765,7 @@ tower_of_london = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_defensiveness = 0.33
+			local_defender_dice_roll_bonus = 1
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -788,14 +777,7 @@ tower_of_london = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
-		conditional_modifier = {
-			trigger = {
-				current_age = age_of_discovery
-			}
-			modifier = {
-				 	local_defender_dice_roll_bonus = 1
-			}
-		}
+	
 		conditional_modifier = {
 			trigger = {
 				owner = { 

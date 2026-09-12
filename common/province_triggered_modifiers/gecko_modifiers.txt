@@ -771,3 +771,16 @@ mines_of_saresang = {
 	on_deactivation = {
 	}
 }
+
+
+turtles_of_galapagos = {
+	
+	trade_value_modifier = 1
+	
+	
+	#Province scope
+	on_activation = {
+	}
+	on_deactivation = {
+	}
+}

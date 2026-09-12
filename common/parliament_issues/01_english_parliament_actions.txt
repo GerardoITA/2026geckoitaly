@@ -1201,7 +1201,7 @@ acts_of_maritime_professionalism = {
 		unlock_government_reform = {
 			government_reform = professional_navy_reform
 		}
-		change_government_reform_progress = 50
+		change_government_reform_progress = 15
 	}
 	
 	modifier = {

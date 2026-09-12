@@ -40,7 +40,7 @@ administrative_reform = {
 					limit = { local_autonomy = 20 }
 					add_local_autonomy = -20
 				}
-				change_government_reform_progress = 25
+				change_government_reform_progress = 15
 			"
 			fallback_effect = "
 				random_owned_province = {

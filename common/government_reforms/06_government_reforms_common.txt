@@ -1322,10 +1322,7 @@ separate_clergy_from_state_affairs_reform = {
 		tolerance_of_heretics_capacity = 1
 		innovativeness_gain = 0.25
 	}
-	custom_attributes = {
-		disables_estate_church = yes
-		disables_estate_brahmins = yes
-	}
+
 	
 	ai = {
 		factor = 1

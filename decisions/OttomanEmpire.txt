@@ -65,6 +65,8 @@ country_decisions = {
 				}
 			}
 
+			adm_tech = 14
+
 			mashriq_region = {
 				type = all
 				OR = {

@@ -4567,8 +4567,8 @@ OTR_ideas = {
 		max_general_shock = 1
 	}		
 	timariot_system2 = {
-		cavalry_power = 0.15
-		shock_damage = 0.15
+		cavalry_power = 0.1
+		shock_damage = 0.1
 		shock_damage_received = -0.1
 	}
 	autonmous_pashas2 = {

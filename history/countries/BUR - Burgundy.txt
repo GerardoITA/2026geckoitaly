@@ -8,6 +8,9 @@ technology_group = western
 capital = 192	# Dijon
 add_army_professionalism = 0.1
 
+add_truce_with = SWI
+add_truce_with = HES
+
 change_estate_land_share = {
 	estate = estate_nobles
 	share = 23

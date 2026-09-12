@@ -2216,9 +2216,13 @@ MOR_ideas = {
 		tag = MOR
 	}
 	free = yes
-	
+
 	mor_powerful_viziers = {
 		same_culture_advisor_cost = -0.2
+	}
+	mor_marabouts = {
+		idea_cost = -0.1
+		land_morale = 0.1
 	}
 	trans_saharan_trade = {
 		trade_efficiency = 0.1
@@ -2227,12 +2231,9 @@ MOR_ideas = {
 	mor_fleet = {
 		navy_tradition = 1
 	}
-	mor_marabouts = {
-		idea_cost = -0.1
-		land_morale = 0.1
-	}
+	
 	mor_pirate_republics = {
-		global_own_trade_power = 0.15
+		development_cost_in_primary_culture = -0.1
 	}
 	mor_slave_soldiers = {
 		infantry_power = 0.1

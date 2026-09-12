@@ -775,7 +775,7 @@ mines_of_saresang = {
 
 turtles_of_galapagos = {
 	
-	trade_value_modifier = 1
+	trade_goods_size = 3
 	
 	
 	#Province scope

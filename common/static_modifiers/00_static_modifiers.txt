@@ -2057,7 +2057,7 @@ regiment_drill_modifier = { # Used by individual regiments
 	fire_damage = 0.1
 	shock_damage = 0.1
 	morale_damage = 0.1
-	assault_fort_ability = 0.25
+	assault_fort_ability = 1
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill

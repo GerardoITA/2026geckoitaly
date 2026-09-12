@@ -133,7 +133,11 @@ chilean_sea_area = {
 }
 
 gulf_of_panama_area = {
-	1547 1548 1549 1550
+	1547 1548 1549 1550 6420
+}
+
+gordita_area = {
+    6416 6417 6418 6419
 }
 
 bay_of_biscay_area = {

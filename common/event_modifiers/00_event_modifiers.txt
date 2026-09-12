@@ -217,14 +217,16 @@ army_reform = {
 	mil_tech_cost_modifier = -0.10
 }
 naval_reform = {
-	naval_morale = 0.20
+	development_cost = -0.10
 	dip_tech_cost_modifier = -0.10
+	adm_tech_cost_modifier = -0.10
 }
 
 military_reform = {
 	dip_tech_cost_modifier = -0.05
+	adm_tech_cost_modifier = -0.05
 	mil_tech_cost_modifier = -0.05
-	naval_morale = 0.10
+	development_cost = -0.05
 	land_morale = 0.10
 }
 

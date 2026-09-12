@@ -7,6 +7,7 @@ country_event = {
 	
 	trigger = {
 
+		is_colonial_nation = no
 		mil = 5
 		is_year = 1500
 		NOT = { has_country_modifier = army_reform }
@@ -82,9 +83,8 @@ country_event = {
 		set_country_flag = military_reform
 	}
 	option = {
-		name = "EVTOPTB4011" # Only reform the navy
+		name = "EVTOPTB4011" # Only reform the navy - replaced with scaling
 		add_dip_power = 200
-		add_navy_tradition = 40
 		add_country_modifier = {
 			name = "naval_reform"
 			duration = 3650

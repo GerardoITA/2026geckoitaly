@@ -519,7 +519,6 @@ french_missions_1_Continuation_a = {
 		}
 		trigger = { 
 			num_of_galley = 12 
-			sailors_percentage = 0.8
 			201 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
 				has_dock_building_trigger = yes 

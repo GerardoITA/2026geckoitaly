@@ -2248,9 +2248,16 @@ cloves = {
 				OR = {
 					area = molluca_area
 					area = spice_islands_area
+					province_id = 6420
 				}
 			}
 		}
+
+		modifier = {
+			factor = 500
+			province_id = 6420
+		}
+		
 		modifier = {
 			factor = 2.0
 			FROM = {

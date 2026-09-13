@@ -4,7 +4,7 @@ estate_church = {
 	# If true, country will get estate
 	trigger = {
 		###X###
-		is_emperor_of_china = no
+		#is_emperor_of_china = no
 		#######
 
 		OR = {	#bertus mod
@@ -38,7 +38,10 @@ estate_church = {
 					NOT = { tag = USA }
 					government = theocracy
 				}
-				is_nomad = no
+				OR = {
+					is_nomad = no
+					has_reform = X_CRI_great_tatar_state_reform
+				}
 				is_colonial_nation = no
 			}
 		}

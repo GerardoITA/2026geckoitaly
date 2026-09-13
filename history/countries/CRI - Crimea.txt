@@ -4,7 +4,7 @@ technology_group = nomad_group
 religion = sunni
 primary_culture = crimean
 capital = 284 #Karasu (Capital at Eski Qirim/Solkhat)
-religious_school = maliki_school
+religious_school = shafii_school
 national_focus = MIL
 ###X###
 set_government_rank = 2

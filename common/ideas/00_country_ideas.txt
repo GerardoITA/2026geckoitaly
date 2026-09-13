@@ -1739,7 +1739,6 @@ PAP_ideas = {
 		diplomatic_upkeep = 10
 		global_trade_power = -0.9
 		merchants = -10
-		global_tax_income = 120
 		liberty_desire = 200	
 		can_not_declare_war = yes
 		

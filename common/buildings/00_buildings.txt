@@ -3968,7 +3968,8 @@ armory = {
 	on_obsolete = {
 	}
 	modifier = {
-		land_forcelimit = 1.5
+		land_forcelimit = 2
+		local_manpower = 0.25
 		
 	}
 	onmap = no

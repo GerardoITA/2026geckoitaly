@@ -614,6 +614,8 @@ ai_nation = {
 	sailors_recovery_speed = 0.25
 	defensiveness = -0.5
 	naval_morale = -0.5
+	naval_forcelimit = -20
+
 	global_autonomy = -0.1
 	yearly_corruption = -0.1
 	diplomatic_upkeep = -2

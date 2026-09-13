@@ -3969,7 +3969,7 @@ armory = {
 	}
 	modifier = {
 		land_forcelimit = 2
-		local_manpower = 0.25
+		local_manpower = 0.5
 		
 	}
 	onmap = no

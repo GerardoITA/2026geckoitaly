@@ -1485,7 +1485,7 @@ BUR_Ideas = {
 }
 LOT_ideas = {
 	start = {
-		infantry_power = 0.1
+		land_forcelimit_modifier = 0.1
 		global_manpower_modifier = 0.20
 	}
 	
@@ -1507,7 +1507,7 @@ LOT_ideas = {
 		mercenary_discipline = 0.025
 	}
 	lot_glory_of_charlemagne = {
-		land_morale = 0.10
+		land_morale = 0.2
 		discipline = 0.05
 	}
 	lot_dutch_cities = {

@@ -80,7 +80,7 @@ gc_morocco_1 = {
 		}
 		
 		trigger = {
-			adm_tech = 5
+			adm_tech = 4
 			if = {
 				limit = {
 					has_dlc = "Dharma"

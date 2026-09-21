@@ -1012,19 +1012,8 @@ TIM_missions_4 = {
 				owned_by = ROOT
 				development = 30
 			}
-			if = {
-				limit = {
-					has_dlc = "Rights of Man"
-				}
-				OR = {
-					ADM = 3
-					ruler_has_personality = scholar_personality
-					ruler_has_personality = architectural_visionary_personality
-				}
-			}
-			else = {
-				ADM = 3
-			}
+			
+			
 		}
 		effect = {
 			454 = {
@@ -1084,33 +1073,18 @@ TIM_missions_5 = {
 		trigger = {
 			446 = {
 				owned_by = ROOT
-				OR = {
-					has_building = temple
-					has_building = cathedral
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				balkh_area = {
-					type = all
-					owned_by = ROOT
-					is_state = yes
-					custom_trigger_tooltip = {
-						tooltip = IS_PROSPEROUS
-						is_prosperous = yes
+				AND = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
 					}
-				}
-			}
-			else = {
-				446 = {
 					OR = {
 						has_building = workshop
 						has_building = counting_house
 					}
 				}
 			}
+			
 		}
 		effect = {
 			446 = {

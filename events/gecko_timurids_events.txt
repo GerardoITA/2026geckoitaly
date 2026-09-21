@@ -16,7 +16,7 @@ country_event = { #New Heir of Timur
 			name = gc_tim_resurgent
 			duration = 3650
 		}
-		454 = {
+		2225 = {
 				set_great_project_tier_3 = {
 					type = registan_square
 				}

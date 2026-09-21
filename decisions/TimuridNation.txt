@@ -106,9 +106,6 @@ country_decisions = {
 			}
 		}
 		effect = {
-			454 = {
-				move_capital_effect = yes
-			}
 			change_tag = TIM
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
@@ -126,17 +123,6 @@ country_decisions = {
 				duration = 3650
 			}
 			change_primary_culture = khorasani
-			#change_government = tribal
-			#add_government_reform = tribal_federation
-			#change_technology_group = gunpowder_empire
-			change_unit_type = gunpowder_empire
-			#persia_region = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
 			khorasan_region = {
 				limit = {
 					NOT = { owned_by = TIM }
@@ -186,48 +172,7 @@ country_decisions = {
 				}
 				add_permanent_claim = TIM
 			}
-			#basra_area = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
-			#iraq_arabi_area = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
-			#al_jazira_area = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
-			#armenia_area = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
-			#north_kurdistan_area = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
-			#erzurum_area = {
-			#	limit = {
-			#		NOT = { owned_by = TIM }
-			#		NOT = { is_core = TIM }
-			#	}
-			#	add_permanent_claim = TIM
-			#}
+			
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas

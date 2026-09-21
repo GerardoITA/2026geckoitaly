@@ -449,11 +449,14 @@ TIM_missions_2 = {
 		}
 		icon = mission_have_manufactories
 		position = 9
+
+		provinces_to_highlight = {
+			region = khorasan_region
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
-			has_idea = riches_of_the_silk_road
-			#timurid_ideas = 6
-			mission_completed = revenge_against_the_sheep
-			full_idea_group = economic_ideas
 			estate_loyalty = {
 				estate = estate_burghers
 				loyalty = 60
@@ -466,23 +469,23 @@ TIM_missions_2 = {
 				estate = estate_nobles
 				loyalty = 60
 			}
-			if = {
-				limit = {
-					has_dlc = "Rights of Man"
-				}
-				NOT = {	ruler_has_personality = obsessive_perfectionist_personality }
+			khorasan_region = {
+				type = all
+				owned_by = ROOT
 			}
+
+			
 		}
 		effect = {
 			if = {
 				limit = {
-					persia_region = {
+					khorasan_region = {
 						owned_by = ROOT
 					}
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_base_manpower = 1
 					add_base_production = 1
@@ -490,7 +493,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_base_manpower = 1
 					add_base_production = 1
@@ -498,7 +501,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_base_manpower = 1
 					add_base_production = 1
@@ -506,7 +509,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_base_manpower = 1
 					add_base_production = 1
@@ -515,7 +518,7 @@ TIM_missions_2 = {
 
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_province_modifier = {
 						name = rebuilding_persia_modifier
@@ -524,7 +527,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_province_modifier = {
 						name = rebuilding_persia_modifier
@@ -533,7 +536,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_province_modifier = {
 						name = rebuilding_persia_modifier
@@ -542,7 +545,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_province_modifier = {
 						name = rebuilding_persia_modifier
@@ -551,7 +554,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_province_modifier = {
 						name = rebuilding_persia_modifier
@@ -560,7 +563,7 @@ TIM_missions_2 = {
 				}
 				random_owned_province = {
 					limit = {
-						region = persia_region
+						region = khorasan_region
 					}
 					add_province_modifier = {
 						name = rebuilding_persia_modifier
@@ -808,20 +811,15 @@ TIM_missions_3 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = { capital = 454 }
-				}
-				country_event = { id = ME_Timurids_Events.1 }
+			
+			
+			add_stability_or_adm_power = yes
+			454 = {
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
 			}
-			else = {
-				add_stability_or_adm_power = yes
-				454 = {
-					add_base_manpower = 1
-					add_base_production = 1
-					add_base_tax = 1
-				}
-			}
+			
 		}
 	}
 

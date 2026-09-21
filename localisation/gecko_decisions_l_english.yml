@@ -134,3 +134,16 @@ gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
 
  Create_a_Trade_Hub_2_title:0 "Invest in the Provinces"
  Create_a_Trade_Hub_2_desc:0 "At least one of our province has become a production hub and could potentially become a center of production, our merchants say. They would however, need some investment to make this happen."
+
+#educate ruler
+ educate_ruler_information_title:0 "Educate the Ruler"
+ educate_ruler_information_desc:0 "Learn how to improve your ruler's skills."
+
+ educate_ruler.1.t:0 "Educate the Ruler"
+ educate_ruler.1.d:0 "If your ruler has any skill below §Y3§!, you can educate them to improve it.\n\nTo do so, open the Government interface and click directly on the ruler's §YADM§!, §YDIP§! or §YMIL§! skill value."
+
+ educate_ruler.1.a:0 "Understood."
+
+#convert to judaism
+ embrace_judaism_ethiopia_title:0 "Embrace Judaism"
+ embrace_judaism_ethiopia_desc:0 "Abandon the old faith and embrace Judaism as the official religion of Ethiopia."

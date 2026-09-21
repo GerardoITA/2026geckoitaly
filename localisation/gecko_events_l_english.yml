@@ -227,3 +227,10 @@ create_45_mercs_tt:0 "Hire 45 Mercenary Regiments"
 create_50_mercs_tt:0 "Hire 50 Mercenary Regiments"
 create_100_mercs_tt:0 "Hire 100 Mercenary Regiments"
 create_200_mercs_tt:0 "Hire 200 Mercenary Regiments"
+
+echo.25.t:0 "Intlander's Food Truck"
+echo.25.d:0 "Intlander's Food Truck has arrived in England. The Crown must decide whether to make it an official supplier to the army or deny it the permits required to operate."
+
+echo.25.a:0 "Only 8 ducats for a hot, tasty meal? That's a bargain!"
+
+echo.25.b:0 "8 ducats for a plate of pasta? That's daylight robbery!"

@@ -2004,19 +2004,10 @@ WoC_austria_2_1 = {
 		}
 
 		trigger = {  
-			OR = {
-				NOT = {
-					has_estate = estate_nobles
-				}
-				NOT = {
-					estate_influence = {
-						influence = 40
-						estate = estate_nobles
-					}
-				}
-			}
-			total_development = 1000
-		} 
+			total_development = 1500
+		}
+		
+		
 
 		effect = {  
 			define_advisor = {

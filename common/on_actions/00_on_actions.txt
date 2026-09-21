@@ -3020,7 +3020,6 @@ on_thri_yearly_pulse_3 = {
 		50 = subject_interaction_events.35
 		50 = subject_interaction_events.36
 		50 = subject_interaction_events.38
-		50 = subject_interaction_events.40
 		50 = subject_interaction_events.43
 		75 = tributary_events.1
 		75 = tributary_events.2

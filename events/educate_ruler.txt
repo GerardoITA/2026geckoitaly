@@ -1,0 +1,14 @@
+namespace = educate_ruler
+
+country_event = {
+	id = educate_ruler.1
+	title = educate_ruler.1.t
+	desc = educate_ruler.1.d
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = educate_ruler.1.a
+	}
+}

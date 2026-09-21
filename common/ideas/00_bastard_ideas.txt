@@ -3145,12 +3145,15 @@ TUN_improved_ideas = {
 colonial_ideas = {
 	start = {
 		development_cost = 0.15
-		governing_capacity_modifier = -0.25
 		no_religion_penalty = yes
+		heavy_ship_cost = 10
+		light_ship_cost = 10
+		galley_cost = 10
+		land_morale = -0.10
 	}
 	
 	bonus = {
-		land_morale = -0.10
+		governing_capacity = 100
 	}
 	
 	trigger = {
@@ -3195,6 +3198,9 @@ upgraded_colonial_ideas = {
 		development_cost = 0.05
 		governing_capacity_modifier = 0.25
 		no_religion_penalty = yes
+		heavy_ship_cost = 10
+		light_ship_cost = 10
+		galley_cost = 10
 	}
 	
 	bonus = {

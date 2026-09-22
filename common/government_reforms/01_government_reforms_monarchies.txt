@@ -2159,7 +2159,7 @@ prussian_monarchy = {
 		NOT = { has_reform = prussian_monarchy_base }
 		OR = {
 			AND = {
-				tag = PRU
+				
 				OR = {
 					has_mission = emp_brapru_army_reforms_2
 					has_mission = emp_brapru_army_reforms_3
@@ -2237,6 +2237,14 @@ prussian_monarchy_base = {
 				NOT = { map_setup = map_setup_random }
 			}
 			AND = {
+				tag = NGF
+				NOT = { map_setup = map_setup_random }
+				OR = {
+					has_reform = prussian_monarchy_base
+					have_had_reform = prussian_monarchy_base
+				}
+			}
+			AND = {
 				tag = GER
 				NOT = { map_setup = map_setup_random }
 				OR = {
@@ -2266,6 +2274,7 @@ prussian_monarchy_base = {
 			}
 		}
 	}
+
 	trigger = {
 		OR = {
 			religion = protestant

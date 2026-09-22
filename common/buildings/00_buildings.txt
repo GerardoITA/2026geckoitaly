@@ -3867,12 +3867,9 @@ impressment_offices = {
 
 
 state_house = {
-		cost = 2000
-		time = 60
+	cost = 1500
+	time = 60
 
-	manufactory = {
-		all
-	}
 
 
 	build_trigger = {
@@ -3905,10 +3902,10 @@ state_house = {
 	}
 
 	modifier = {
-		statewide_governing_cost = -0.2
+		statewide_governing_cost = -0.15
 		min_local_autonomy = -5
-		local_governing_cost = -0.15
-		local_governing_cost_increase = -10
+		local_governing_cost_increase = -15
+		local_governing_cost = -0.25	
 
 	}
 	onmap = no

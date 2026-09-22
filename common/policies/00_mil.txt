@@ -97,8 +97,8 @@ local_militias = {
 		full_idea_group = defensive_ideas
 	}	
 	
-	manpower_recovery_speed = 0.2
-	land_morale = 0.025
+	manpower_recovery_speed = 0.15
+	land_morale = 0.05
 	
 	ai_will_do = {
 		factor = 1		
@@ -728,7 +728,7 @@ local_army_organisation = {
 
 	is_cossack_modifier = yes
 
-	infantry_power = 0.15
+	infantry_power = 0.2
 	discipline = 0.025
 
 	effect = {
@@ -813,6 +813,7 @@ diplomatic_defence_act = {
  
  	global_manpower_modifier = 0.1
 	land_forcelimit_modifier = 0.1
+	military_tactics = 0.05
  	
  	effect = {}
  	removed_effect = {}
@@ -1087,12 +1088,35 @@ the_pioneer_policy = {
 
 	siege_ability = 0.2
 	artillery_levels_available_vs_fort = 1
+	artillery_power = 0.05
 	
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
 		factor = 1		
 	}	
+}
+anti_heresy_act = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = offensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = offensive_ideas
+	}
+	
+	artillery_levels_available_vs_fort = 2
+	fire_damage = 0.10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
 }
 
 protected_shipping_lanes = {
@@ -1598,26 +1622,151 @@ sturdy_argument_act = {
 	}
 }
 
-special_forces_act = { 
+special_forces_act = {
 	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = court_ideas
-		has_idea_group = quality_ideas 
+		has_idea_group = quality_ideas
+		NOT = { mil_tech = 15 }
+
+		NOT = { has_active_policy = special_forces_act_1 }
+		NOT = { has_active_policy = special_forces_act_2 }
 	}
 	
 	allow = {
 		full_idea_group = court_ideas
-		full_idea_group = quality_ideas 
+		full_idea_group = quality_ideas
+		NOT = { mil_tech = 15 }
+
+		NOT = { has_active_policy = special_forces_act_1 }
+		NOT = { has_active_policy = special_forces_act_2 }
+	}
+
+	is_cossack_modifier = yes
+	infantry_fire = 0.25
+	infantry_shock = 0.25
+
+	effect = {
+		add_country_modifier = {
+			name = special_forces_act_global_negation
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = special_forces_act_heavy_infantry_bonus
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = special_forces_act_global_negation
+		remove_country_modifier = special_forces_act_heavy_infantry_bonus
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+special_forces_act_1 = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = quality_ideas
+		mil_tech = 15
+		NOT = { mil_tech = 22 }
+
+		NOT = { has_active_policy = special_forces_act }
+		NOT = { has_active_policy = special_forces_act_2 }
 	}
 	
-	global_regiment_cost = -0.1
-	yearly_army_professionalism = 0.002
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = quality_ideas
+		mil_tech = 15
+		NOT = { mil_tech = 22 }
 
-	effect = {}
-	removed_effect = {}
+		NOT = { has_active_policy = special_forces_act }
+		NOT = { has_active_policy = special_forces_act_2 }
+	}
+
+	is_cossack_modifier = yes
+	infantry_fire = 0.35
+	infantry_shock = 0.35
+
+	effect = {
+		add_country_modifier = {
+			name = special_forces_act_1_global_negation
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = special_forces_act_1_heavy_infantry_bonus
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = special_forces_act_1_global_negation
+		remove_country_modifier = special_forces_act_1_heavy_infantry_bonus
+	}
+
 	ai_will_do = {
-		factor = 1		
+		factor = 1
+	}
+}
+
+
+special_forces_act_2 = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = quality_ideas
+		mil_tech = 22
+
+		NOT = { has_active_policy = special_forces_act }
+		NOT = { has_active_policy = special_forces_act_1 }
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = quality_ideas
+		mil_tech = 22
+
+		NOT = { has_active_policy = special_forces_act }
+		NOT = { has_active_policy = special_forces_act_1 }
+	}
+
+	is_cossack_modifier = yes
+	infantry_fire = 0.45
+	infantry_shock = 0.45
+
+	effect = {
+		add_country_modifier = {
+			name = special_forces_act_2_global_negation
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = special_forces_act_2_heavy_infantry_bonus
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = special_forces_act_2_global_negation
+		remove_country_modifier = special_forces_act_2_heavy_infantry_bonus
+	}
+
+	ai_will_do = {
+		factor = 1
 	}
 }
 

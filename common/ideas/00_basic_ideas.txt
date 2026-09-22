@@ -1102,6 +1102,7 @@ offensive_ideas = {
 	}
 	superior_firepower = {
 		artillery_power = 0.1
+		artillery_fire = 0.25
 		artillery_cost = -0.2
 	}
 
@@ -1157,7 +1158,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		military_tactics = 0.1
+		military_tactics = 0.2
 	}
 	improved_body_armor = {
 		shock_damage_received = -0.1
@@ -1251,8 +1252,8 @@ quality_ideas = {
 		army_tradition = 0.5
 	}
 	military_drill = {
-		drill_gain_modifier = 0.1
-		drill_decay_modifier = -0.1
+		drill_gain_modifier = 0.5
+		drill_decay_modifier = -0.25
 	}
 	quality_education = {
 		leader_land_manuever  = 1
@@ -1263,6 +1264,8 @@ quality_ideas = {
 	regimental_system = {
 		may_refill_garrison = yes
 		may_return_manpower_on_disband = yes
+		may_build_supply_depot = yes
+		force_march_free = yes
 	}
 	napoleonic_warfare = {
 		discipline = 0.05

@@ -78,7 +78,7 @@ foreign_conscription_centers = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	fire_damage = 0.1
+	fire_damage = 0.15
 	
 	ai_will_do = {
 		factor = 1		
@@ -289,7 +289,27 @@ mercenary_registration_act = {
 }
 
 
+hold_the_weather_gauge = {
+	monarch_power = MIL
 
+	potential = {
+		has_idea_group = maritime_ideas
+		has_idea_group = offensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = maritime_ideas
+		full_idea_group = offensive_ideas
+	}
+	
+	fire_damage = 0.15
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
 
 the_mining_act = {
 	monarch_power = MIL
@@ -306,7 +326,7 @@ the_mining_act = {
 
 	is_marine_modifier = yes
 	fire_damage_received = -0.10
-	morale_damage = 0.10
+	morale_damage = 0.15
 
 	
 	effect = {
@@ -639,7 +659,7 @@ local_army_organisation = {
  		full_idea_group = plutocracy_ideas
  	}
  	
- 	fire_damage = 0.1
+ 	fire_damage = 0.15
  
  	effect = {}
  	removed_effect = {}
@@ -958,6 +978,7 @@ the_pioneer_policy = {
 	}
 
 	siege_ability = 0.2
+	artillery_levels_available_vs_fort = 1
 	
 	effect = {}
 	removed_effect = {}
@@ -1984,7 +2005,7 @@ black_chamber_act = {
 		NOT = { has_active_policy = black_chamber_act_2 }
 	}
 
-	artillery_fire = 0.25
+	artillery_fire = 0.4
 
 	effect = {}
 	removed_effect = {}
@@ -2017,7 +2038,7 @@ black_chamber_act_1 = {
 		NOT = { has_active_policy = black_chamber_act_2 }
 	}
 
-	artillery_fire = 0.5
+	artillery_fire = 0.8
 
 	effect = {}
 	removed_effect = {}
@@ -2048,7 +2069,7 @@ black_chamber_act_2 = {
 		NOT = { has_active_policy = black_chamber_act_1 }
 	}
 
-	artillery_fire = 1
+	artillery_fire = 1.2
 
 	effect = {}
 	removed_effect = {}

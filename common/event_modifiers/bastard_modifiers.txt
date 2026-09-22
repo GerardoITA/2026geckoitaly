@@ -155,7 +155,7 @@ fuck_you_no_switching_mid_war = {
 
 the_mining_act_global_negation = {
 	fire_damage_received = 0.10
-	morale_damage = -0.10
+	morale_damage = -0.15
 	
 }
 
@@ -163,7 +163,7 @@ the_mining_act_marine_bonus = {
 	is_marine_modifier = yes
 
 	fire_damage_received = -0.10
-	morale_damage = 0.10
+	morale_damage = 0.15
 	
 }
 underhanded_diplomacy_act_global_negation = {

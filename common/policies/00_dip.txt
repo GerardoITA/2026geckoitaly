@@ -182,27 +182,7 @@ the_recruiting_act = {
 	}
 }
 
-hold_the_weather_gauge = {
-	monarch_power = MIL
 
-	potential = {
-		has_idea_group = maritime_ideas
-		has_idea_group = offensive_ideas
-	}
-	
-	allow = {
-		full_idea_group = maritime_ideas
-		full_idea_group = offensive_ideas
-	}
-	
-	fire_damage = 0.1
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1
-	}
-}
 naval_infrastructure_act = {
 	monarch_power = DIP
 

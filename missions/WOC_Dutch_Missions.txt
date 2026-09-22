@@ -1659,10 +1659,9 @@ NED_3_1 = {
 		position = 15
 
 		trigger = {  
-			OR = {
+			
 				has_institution = new_world_i
-				exploration_ideas = 2
-			}
+				
 		} 
 
 		effect = {  

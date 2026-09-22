@@ -175,49 +175,49 @@ taxation_with_representation_marine_bonus = {
 	discipline = 0.075
 }
 underhanded_diplomacy_act_global_negation = {
-	infantry_power = -0.15
+	infantry_power = -0.2
 	discipline = -0.025
 }
 
 underhanded_diplomacy_act_cossack_bonus = {
 	is_cossack_modifier = yes
 
-	infantry_power = 0.15
+	infantry_power = 0.2
 	discipline = 0.025
 }
 
 
 special_forces_act_global_negation = {
-	infantry_fire = -0.25
-	infantry_shock = -0.25
+	infantry_fire = -0.2
+	infantry_shock = -0.2
 }
 
 special_forces_act_heavy_infantry_bonus = {
 	is_cossack_modifier = yes
-	infantry_fire = 0.25
-	infantry_shock = 0.25
+	infantry_fire = 0.2
+	infantry_shock = 0.2
 }
 
 
 special_forces_act_1_global_negation = {
-	infantry_fire = -0.35
-	infantry_shock = -0.35
+	infantry_fire = -0.3
+	infantry_shock = -0.3
 }
 
 special_forces_act_1_heavy_infantry_bonus = {
 	is_cossack_modifier = yes
-	infantry_fire = 0.35
-	infantry_shock = 0.35
+	infantry_fire = 0.3
+	infantry_shock = 0.3
 }
 
 
 special_forces_act_2_global_negation = {
-	infantry_fire = -0.45
-	infantry_shock = -0.45
+	infantry_fire = -0.4
+	infantry_shock = -0.4
 }
 
 special_forces_act_2_heavy_infantry_bonus = {
 	is_cossack_modifier = yes
-	infantry_fire = 0.45
-	infantry_shock = 0.45
+	infantry_fire = 0.4
+	infantry_shock = 0.4
 }

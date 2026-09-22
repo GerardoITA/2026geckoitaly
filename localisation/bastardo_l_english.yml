@@ -228,6 +228,8 @@ black_chamber_act_1:0 "The Black Chamber Act I"
 black_chamber_act_2:0 "The Black Chamber Act II"
 special_forces_act_1:0 "Special Forces Act I"
 special_forces_act_2:0 "Special Forces Act II"
+weapon_quality_standards_1:0 "Weapon Quality Standards I"
+weapon_quality_standards_2:0 "Weapon Quality Standards II"
 #############ideas#########################
  YUE_ideas:0 "Yue Ideas"
  YUE_ideas_start:0 "Yue Traditions"

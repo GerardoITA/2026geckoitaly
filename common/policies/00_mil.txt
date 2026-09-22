@@ -936,23 +936,102 @@ the_education_act = {
 }
 
 weapon_quality_standards = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = economic_ideas
 		has_idea_group = quality_ideas
+		NOT = { mil_tech = 15 }
+
+		NOT = { has_active_policy = weapon_quality_standards_1 }
+		NOT = { has_active_policy = weapon_quality_standards_2 }
 	}
+	
 	allow = {
 		full_idea_group = economic_ideas
 		full_idea_group = quality_ideas
+		NOT = { mil_tech = 15 }
+
+		NOT = { has_active_policy = weapon_quality_standards_1 }
+		NOT = { has_active_policy = weapon_quality_standards_2 }
 	}
-	
-	build_cost = -0.1
+
+	infantry_fire = 0.10
+	infantry_shock = 0.10
 	
 	effect = {}
 	removed_effect = {}
+
 	ai_will_do = {
-		factor = 1		
+		factor = 1
+	}
+}
+
+
+weapon_quality_standards_1 = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = quality_ideas
+		mil_tech = 15
+		NOT = { mil_tech = 22 }
+
+		NOT = { has_active_policy = weapon_quality_standards }
+		NOT = { has_active_policy = weapon_quality_standards_2 }
+	}
+	
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = quality_ideas
+		mil_tech = 15
+		NOT = { mil_tech = 22 }
+
+		NOT = { has_active_policy = weapon_quality_standards }
+		NOT = { has_active_policy = weapon_quality_standards_2 }
+	}
+
+	infantry_fire = 0.15
+	infantry_shock = 0.15
+	
+	effect = {}
+	removed_effect = {}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+weapon_quality_standards_2 = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = quality_ideas
+		mil_tech = 22
+
+		NOT = { has_active_policy = weapon_quality_standards }
+		NOT = { has_active_policy = weapon_quality_standards_1 }
+	}
+	
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = quality_ideas
+		mil_tech = 22
+
+		NOT = { has_active_policy = weapon_quality_standards }
+		NOT = { has_active_policy = weapon_quality_standards_1 }
+	}
+
+	infantry_fire = 0.20
+	infantry_shock = 0.20
+	
+	effect = {}
+	removed_effect = {}
+
+	ai_will_do = {
+		factor = 1
 	}
 }
 
@@ -1461,7 +1540,7 @@ bolstered_defence_act = {
 }
 
 handpicked_recruits_act = { 
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = infrastructure_ideas
@@ -1473,7 +1552,8 @@ handpicked_recruits_act = {
 		full_idea_group = quality_ideas 
 	}
 	
-	build_cost = -0.1
+	infantry_power = 0.05
+	artillery_power = 0.05
 
 	effect = {}
 	removed_effect = {}
@@ -1666,8 +1746,8 @@ special_forces_act = {
 	}
 
 	is_cossack_modifier = yes
-	infantry_fire = 0.25
-	infantry_shock = 0.25
+	infantry_fire = 0.2
+	infantry_shock = 0.2
 
 	effect = {
 		add_country_modifier = {
@@ -1717,8 +1797,8 @@ special_forces_act_1 = {
 	}
 
 	is_cossack_modifier = yes
-	infantry_fire = 0.35
-	infantry_shock = 0.35
+	infantry_fire = 0.3
+	infantry_shock = 0.3
 
 	effect = {
 		add_country_modifier = {
@@ -1766,8 +1846,8 @@ special_forces_act_2 = {
 	}
 
 	is_cossack_modifier = yes
-	infantry_fire = 0.45
-	infantry_shock = 0.45
+	infantry_fire = 0.4
+	infantry_shock = 0.4
 
 	effect = {
 		add_country_modifier = {

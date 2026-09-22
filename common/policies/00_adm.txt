@@ -1,23 +1,4 @@
-the_combination_act = {
-	monarch_power = ADM
 
-	potential = {
-		has_idea_group = aristocracy_ideas
-		has_idea_group = innovativeness_ideas
-	}
-	allow = {
-		full_idea_group = aristocracy_ideas
-		full_idea_group = innovativeness_ideas
-	}
-	
-	monthly_reform_progress_modifier = 0.33
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
 
 the_espionage_act = {
@@ -254,27 +235,6 @@ the_loyalty_act = {
  	}
  }
 
-anti_heresy_act = {
-	monarch_power = ADM
-	
-	potential = {
-		has_idea_group = religious_ideas
-		has_idea_group = offensive_ideas
-	}
-	
-	allow = {
-		full_idea_group = religious_ideas
-		full_idea_group = offensive_ideas
-	}
-	
-	artillery_levels_available_vs_fort = 1
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
  otto_per_mille = {
  	monarch_power = ADM
@@ -511,6 +471,7 @@ military_innovation_act = {
 	monarch_power = ADM
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = innovativeness_ideas  
 	}
@@ -533,6 +494,7 @@ efficient_war_taxes_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = economic_ideas   
 	}

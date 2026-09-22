@@ -11,7 +11,7 @@ autonomous_estates = {
 		full_idea_group = aristocracy_ideas
 	}	
 	land_morale = 0.05
-	cavalry_power = 0.025
+	cavalry_power = 0.05
 	
 	ai_will_do = {
 		factor = 1		
@@ -858,7 +858,7 @@ trained_marines_act = {
  		full_idea_group = diplomatic_ideas
  	}
  	
- 	shock_damage = 0.05
+ 	shock_damage = 0.075
 	morale_damage = 0.05
 	
  	effect = {}
@@ -1210,8 +1210,8 @@ the_combination_act = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	shock_damage = 0.075
-    drill_decay_modifier = -0.10
+	shock_damage = 0.01
+    drill_decay_modifier = -0.20
 
 	effect = {}
 	removed_effect = {}
@@ -1418,7 +1418,8 @@ vassal_taxation_policy_2 = {
  		full_idea_group = theocracy_gov_ideas 
  	}
  	
- 	infantry_power = 0.075
+ 	infantry_power = 0.05
+	cavalry_power = 0.05
  	
  
  	effect = {}

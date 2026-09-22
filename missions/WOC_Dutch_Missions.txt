@@ -1095,27 +1095,7 @@ NED_2_1 = {
 		} 
 
 		effect = {  
-			complex_dynamic_effect = {
-				first_custom_tooltip = NED_IF_REFORMED
-				first_limit = "
-					religion = reformed
-				"
-				first_effect = "
-					hidden_effect = {
-						set_country_flag = ned_buff_fervor_actions
-						update_fervor_effects = yes
-					}
-					custom_tooltip = NED_BUFF_FERVOR_ACTIONS_BY_50
-				"
-				second_custom_tooltip = NED_IF_NOT_REFORMED
-				second_limit = "
-					NOT = { religion = reformed }
-				"
-				second_effect = "
-					set_country_flag = ned_buff_clerical_studies
-					custom_tooltip = NED_BUFF_CLERICAL_STUDIES_PRIVILEGE
-				"
-			}
+			add_prestige = 100
 		} 
 	}
 
@@ -2794,36 +2774,35 @@ NED_5_1 = {
 
 	NED_garrision_system = {
 		icon = fixed_garrison_system
-		position = 6
-		required_missions = { NED_military_reforms }
+		position = 6s
 
 		trigger = {  
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = low_countries_region
-				province_has_current_tech_fort_trigger = yes
-				has_fort_building_trigger = yes
-				value = 7
+				province_has_center_of_trade_of_level = 5
+				value = 4
 			}
-			fortification_expert = 2
 		} 
 
-		effect = {  
+		effect = {
 			custom_tooltip = NED_FORTS_GRANT_BONUSES_IN_LOW_COUNTRIES
 			set_country_flag = ned_buffed_forts_flag
+
 			hidden_effect = {
 				if = {
 					limit = {
-						full_idea_group = defensive_ideas
+						full_idea_group = infrastructure_ideas
 					}
+
 					every_owned_province = {
 						limit = {
 							region = low_countries_region
-							has_fort_building_trigger = yes
+							province_has_center_of_trade_of_level = 1
 						}
+
 						add_province_modifier = {
 							name = ned_low_countries_fort_buff_buffed
 							duration = -1
-							hidden = yes
 						}
 					}
 				}
@@ -2831,17 +2810,17 @@ NED_5_1 = {
 					every_owned_province = {
 						limit = {
 							region = low_countries_region
-							has_fort_building_trigger = yes
+							province_has_center_of_trade_of_level = 1
 						}
+
 						add_province_modifier = {
 							name = ned_low_countries_fort_buff
 							duration = -1
-							hidden = yes
 						}
 					}
 				}
 			}
-		} 
+		}
 	}
 
 	NED_dutch_engineering = {

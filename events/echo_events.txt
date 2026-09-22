@@ -580,8 +580,14 @@ country_event = {
 	desc = echo.25.d
 	picture = INTLANDER_FOOD_TRUCK_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
-		was_player = yes
+		ai = no
+	}
+
+	mean_time_to_happen = {
+		months = 240
 	}
 
 	option = {

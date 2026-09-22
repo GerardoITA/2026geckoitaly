@@ -3430,7 +3430,6 @@ on_four_year_pulse_4 = {
 		100 = random_event.16
 		100 = random_event.26
 		1 = random_event.27
-		200 = echo.25
 	}
 }
 

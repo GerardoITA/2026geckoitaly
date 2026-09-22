@@ -1645,9 +1645,14 @@ stadthalter_monarchy_reform = {
 	lock_level_when_selected = yes
 
 	modifiers = {
-		artillery_fire = 0.25
+
+		heavy_ship_power = 0.1
 		trade_efficiency = 0.1
+		colonists = 1
+		global_colonial_growth = 20
+		global_ship_trade_power = 0.2
 		reduced_liberty_desire_on_other_continent = 10
+		max_absolutism = 10
 		has_voc_indiamen = yes
 		allowed_voc_indiamen_fraction = 0.2
 		no_stability_loss_on_monarch_death = yes

@@ -429,7 +429,7 @@ land_inheritance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	discipline = 0.025
+	discipline = 0.035
 	
 	effect = {}
 	removed_effect = {}
@@ -881,7 +881,7 @@ trained_marines_act = {
  		full_idea_group = aristocracy_ideas
  	}
  
- 	discipline = 0.025
+ 	discipline = 0.035
  	
  	effect = {}
  	removed_effect = {}
@@ -1232,7 +1232,7 @@ protected_shipping_lanes = {
 		full_idea_group = plutocracy_ideas
 	}
 	
-	discipline = 0.025
+	discipline = 0.035
 	
 	effect = {}
 	removed_effect = {}
@@ -1301,7 +1301,7 @@ deserteur_act = {
 		full_idea_group = quality_ideas
 	}
 
-	discipline = 0.025
+	discipline = 0.035
 	
 	effect = {}
 	removed_effect = {}
@@ -1438,7 +1438,7 @@ vassal_taxation_policy_2 = {
  		full_idea_group = administrative_ideas
  	}
  
- 	discipline = 0.025
+ 	discipline = 0.035
  	
  	effect = {}
  	removed_effect = {}

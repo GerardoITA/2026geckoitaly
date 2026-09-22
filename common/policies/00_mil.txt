@@ -35,7 +35,47 @@ public_welfare_act = {
 	defensiveness = 0.25
 	garrison_size = 0.5
 	garrison_damage = 0.25
-	military_tactics = 0.05
+	military_tactics = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
+
+taxation_with_representation = {
+	monarch_power = MIL
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	
+	is_marine_modifier = yes
+	discipline = 0.075
+
+	effect = {
+		add_country_modifier = {
+			name = taxation_with_representation_global_negation
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = taxation_with_representation_marine_bonus
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	removed_effect = {
+		remove_country_modifier = taxation_with_representation_global_negation
+		remove_country_modifier = taxation_with_representation_marine_bonus
+	}
 
 	effect = {}
 	removed_effect = {}
@@ -398,6 +438,74 @@ land_inheritance_act = {
 	}
 }
 
+ the_spy_discovery_act = {
+	monarch_power = MIL
+
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = administrative_ideas
+	}
+	
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = administrative_ideas
+	}
+
+	hostile_attrition = 2
+	max_hostile_attrition = 2
+	discipline = 0.025
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
+plutocratic_rule_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = plutocracy_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = plutocracy_ideas 
+	}
+	
+	mercenary_discipline = 0.05
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
+the_tolerance_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = plutocracy_ideas
+	}
+
+	infantry_power = 0.075
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
+
+
 horse_artillery = {
 	monarch_power = MIL
 	
@@ -437,7 +545,7 @@ superior_fortification_act = {
 	}
 	
 	defensiveness = 0.33
-	military_tactics = 0.05
+	military_tactics = 0.1
 	garrison_size = 0.25
 	garrison_damage = 0.25
 
@@ -1550,7 +1658,7 @@ edict_of_resistance = {
 
 
 	land_morale = 0.05
-	defensiveness = 0.15
+	defensiveness = 0.33
 
 	effect = {}
 	removed_effect = {}

@@ -93,27 +93,6 @@ enforce_religious_law = {
 	}
 }
 
-the_tolerance_act = {
-	monarch_power = ADM
-
-	potential = {
-		has_idea_group = religious_ideas
-		has_idea_group = plutocracy_ideas
-	}
-	
-	allow = {
-		full_idea_group = religious_ideas
-		full_idea_group = plutocracy_ideas
-	}
-
-	placed_merchant_power = 25
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
 
 
@@ -225,26 +204,7 @@ the_loyalty_act = {
  }
 
 
-taxation_with_representation = {
-	monarch_power = ADM
-	potential = {
-		has_idea_group = expansion_ideas
-		has_idea_group = plutocracy_ideas
-	}
-	
-	allow = {
-		full_idea_group = expansion_ideas
-		full_idea_group = plutocracy_ideas
-	}
-	
-	administrative_efficiency = 0.075
 
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
  cultural_understanding = {
  	monarch_power = ADM
@@ -360,54 +320,11 @@ modern_siege_weapons = {
 }
 
 
- the_spy_discovery_act = {
-	monarch_power = ADM
-
-
-	potential = {
-		has_idea_group = defensive_ideas
-		has_idea_group = administrative_ideas
-	}
-	
-	allow = {
-		full_idea_group = defensive_ideas
-		full_idea_group = administrative_ideas
-	}
-
-	hostile_attrition = 2
-	max_hostile_attrition = 2
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
  #1.35 Additions 
 
 
-plutocratic_rule_act = { 
-	monarch_power = ADM
-	
-	potential = {
-		has_idea_group = infrastructure_ideas
-		has_idea_group = plutocracy_ideas 
-	}
-	
-	allow = {
-		full_idea_group = infrastructure_ideas
-		full_idea_group = plutocracy_ideas 
-	}
-	
-	global_trade_goods_size_modifier = 0.1
 
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 1		
-	}
-}
 
  theocratic_rule_act = { 
  	monarch_power = ADM

@@ -166,6 +166,14 @@ the_mining_act_marine_bonus = {
 	morale_damage = 0.15
 	
 }
+
+taxation_with_representation_global_negation = {
+	discipline = -0.075
+}
+taxation_with_representation_marine_bonus = {
+	is_marine_modifier = yes
+	discipline = 0.075
+}
 underhanded_diplomacy_act_global_negation = {
 	infantry_power = -0.15
 	discipline = -0.025

@@ -2729,7 +2729,7 @@ on_bi_yearly_pulse_4 = {
 		1000 = estate_privileges_and_agendas_events.4
 		1000 = estate_privileges_and_agendas_events.5
 		2000 = 0
-		200 = echo.25
+		
 	}
 }
 
@@ -3430,6 +3430,7 @@ on_four_year_pulse_4 = {
 		100 = random_event.16
 		100 = random_event.26
 		1 = random_event.27
+		200 = echo.25
 	}
 }
 

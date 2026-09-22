@@ -230,7 +230,7 @@ create_200_mercs_tt:0 "Hire 200 Mercenary Regiments"
 
 echo.25.t:0 "Intlander's Food Truck"
 
-echo.25.d:0 "Intlander's Food Truck has arrived in §Y[Root.GetName]§!. We must decide whether to make it an official supplier to the army or deny it the permits required to operate.\n\nWe have managed to recover a copy of the menu:\n\n§Y--- INTLANDER'S PASTA MENU ---§!\n\nSpaghetti al Pomodoro — §Y8 Ducats§!\nPenne all'Arrabbiata — §Y8 Ducats§!\nCarbonara — §Y10 Ducats§!\nAmatriciana — §Y10 Ducats§!\nCacio e Pepe — §Y10 Ducats§!\nPasta al Ragù — §Y12 Ducats§!\nLinguine al Pesto — §Y10 Ducats§!\nLasagna — §Y14 Ducats§!"
+echo.25.d:0 "Intlander's Food Truck has arrived in §Y[Root.GetName]§!. We must decide whether to make it an official supplier to the army or deny it the permits required to operate.\n\nWe have managed to recover a copy of the menu:\n\nSpaghetti al Pomodoro — §Y8 Ducats§!\nPenne all'Arrabbiata — §Y8 Ducats§!\nCarbonara — §Y10 Ducats§!\nAmatriciana — §Y10 Ducats§!\nCacio e Pepe — §Y10 Ducats§!\nPasta al Ragù — §Y12 Ducats§!\nLinguine al Pesto — §Y10 Ducats§!\nLasagna — §Y14 Ducats§!"
 
 echo.25.a:0 "Only 8 ducats for a hot plate of pasta? That's a bargain!"
 

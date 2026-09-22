@@ -866,8 +866,8 @@ kilwa_asia_trade_missions_slot = {
 			}
 		}
 		trigger = {
-			OR = {
-				1371 = {
+			
+				1365 = {
 					OR = {
 						is_strongest_trade_power = ROOT
 						trade_share = {
@@ -876,16 +876,8 @@ kilwa_asia_trade_missions_slot = {
 						}
 					}
 				}
-				684 = {
-					OR = {
-						is_strongest_trade_power = ROOT
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
-					}
-				}
-			}
+				
+
 		}
 		effect = {
 			add_country_modifier = {

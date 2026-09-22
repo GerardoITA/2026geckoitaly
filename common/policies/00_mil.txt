@@ -1119,6 +1119,28 @@ anti_heresy_act = {
 	}
 }
 
+the_combination_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = innovativeness_ideas
+	}
+	
+	shock_damage = 0.075
+    drill_decay_modifier = -0.10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
+
 protected_shipping_lanes = {
 	monarch_power = MIL
 	potential = {

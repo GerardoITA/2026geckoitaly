@@ -41,6 +41,7 @@ estate_church = {
 				OR = {
 					is_nomad = no
 					has_reform = X_CRI_great_tatar_state_reform
+					has_reform = X_CRI_great_tatar_state_reform_2
 				}
 				is_colonial_nation = no
 			}

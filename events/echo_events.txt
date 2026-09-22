@@ -593,7 +593,7 @@ country_event = {
 	option = {
 		name = echo.25.a
 		add_treasury = -8
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 
 	option = {

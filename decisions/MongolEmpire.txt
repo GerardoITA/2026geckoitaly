@@ -4,23 +4,12 @@ country_decisions = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
-			OR = { # to prevent countries that can't form a prerequisite nation from seeing this
-				#tag = YUA
-				tag = GLH
-				#tag = ILK
-				tag = KHA
-				tag = BUK
-				tag = TIM
-				was_never_end_game_tag_trigger = yes
-			}
 			OR = {
-				culture_group = altaic
-				culture_group = tartar
+				tag = BUK
+				tag = OIR
+				tag = KHA
 			}
 			NOT = { has_country_flag = mongol_empire_flag }
-			NOT = { tag = HLR }
-			NOT = { tag = ROM }
-			NOT = { tag = PAP }
 			NOT = { exists = MGE }
 		}
 		provinces_to_highlight = {

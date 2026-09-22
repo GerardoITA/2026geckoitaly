@@ -96,11 +96,14 @@ X_CRI_great_tatar_state_reform_2 = {
 		governing_capacity = 150
 		nomadic_tribes_loyalty_modifier = 0.05
 		reform_progress_growth = -0.25
-		development_cost = -0.1
 	}
 	custom_attributes = {
 		locked_government_type = yes
 		has_tributaries = yes
+
+		enables_estate_church = yes
+		enables_estate_nobles = yes
+		enables_estate_burghers = yes
 	}
 	government_abilities = {
 		tribal_federation_mechanic

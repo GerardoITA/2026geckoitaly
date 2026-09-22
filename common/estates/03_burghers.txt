@@ -4,7 +4,7 @@ estate_burghers = {
 	# If true, country will get estate
 	trigger = {	
 		###X###
-		is_emperor_of_china = no
+		#is_emperor_of_china = no
 		#######
 		OR = {	#bertus mod
 			ai = no
@@ -23,7 +23,10 @@ estate_burghers = {
 				NOT = { is_revolutionary_republic_trigger = yes }
 				NOT = { government = native }
 				NOT = { has_reform = siberian_tribe }
-				is_nomad = no
+				OR = {
+					is_nomad = no
+					has_reform = X_CRI_great_tatar_state_reform_2
+				}
 				is_colonial_nation = no
 				NOT = { has_reform = revolutionary_empire_reform }
 				NOT = { has_estate = estate_vaisyas }

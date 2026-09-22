@@ -606,8 +606,8 @@ diplomatic_ideas = {
 		dip_advisor_cost = -0.25
 	}
 	benign_diplomats = {
-		free_policy = 2
-		possible_policy = 2
+		free_policy = 1
+		possible_policy = 1
 		diplomats = 3
 	}
 	experienced_diplomats = {
@@ -941,7 +941,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.15
+		fire_damage = 0.1
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 	}
@@ -1158,7 +1158,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		military_tactics = 0.2
+		military_tactics = 0.15
 	}
 	improved_body_armor = {
 		shock_damage_received = -0.1

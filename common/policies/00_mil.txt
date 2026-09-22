@@ -104,7 +104,27 @@ local_militias = {
 		factor = 1		
 	}
 }
-
+plutocratic_ethos_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = plutocracy_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = plutocracy_ideas 
+	}
+	
+	land_morale = 0.075
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1		
+	}
+}
 foreign_conscription_centers = {
 	monarch_power = MIL
 	
@@ -1210,7 +1230,7 @@ the_combination_act = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	shock_damage = 0.01
+	shock_damage = 0.1
     drill_decay_modifier = -0.20
 
 	effect = {}

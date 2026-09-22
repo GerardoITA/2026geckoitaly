@@ -1,0 +1,45 @@
+####INTSCORE
+intscore_superiority = {
+	# Show Superiority:
+	# il ticking warscore deriva dalla superiorità nelle battaglie.
+	type = superiority
+
+	# =========================================================
+	# ATTACCANTE
+	# =========================================================
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		# Queste sono le sole peace options specificamente
+		# autorizzate per l'attaccante.
+		peace_options = {
+			intscore_loss_025
+			intscore_loss_050
+			intscore_loss_075
+			intscore_loss_100
+		}
+
+		# Non permette l'annessione completa tramite questo CB.
+		deny_annex = yes
+	}
+
+	# =========================================================
+	# DIFENSORE
+	# =========================================================
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		# Permette al difensore vittorioso di chiedere province.
+		# Il difensore non è sottoposto ad attacker_disabled_po
+		# e mantiene le normali opzioni di pace applicabili.
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = INTSCORE_RIVALRY_WAR_NAME
+}

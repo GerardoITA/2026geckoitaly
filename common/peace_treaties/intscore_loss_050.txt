@@ -1,0 +1,42 @@
+####INTSCORE
+intscore_loss_050 = {
+	category = 6
+
+	power_projection = no
+	power_cost_base = 0
+	prestige_base = 0
+	ae_base = 0
+
+	warscore_cost = {
+		no_provinces = 50
+	}
+
+	requires_is_allowed = yes
+	applies_to_war_target = yes
+
+	is_visible = {
+		always = yes
+	}
+
+	is_allowed = {
+		always = yes
+	}
+
+	effect = {
+		FROM = {
+			intscore_apply_pvp_loss = {
+				BASE = 50
+			}
+		}
+		country_event = {
+			id = intscore.1061
+		}
+	}
+
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 0
+		}
+	}
+}

@@ -1,0 +1,356 @@
+####INTSCORE
+country_decisions = {
+
+show_score = {
+	major = yes
+	color = { 77  93  83 }
+	potential = {
+		was_player = yes
+	}
+
+	allow = {
+		custom_trigger_tooltip = {
+			tooltip = intscore_current_score_tooltip
+			always = yes
+		}
+	}
+
+	effect = {
+		custom_tooltip = intscore_ranking_decision_tooltip
+
+		hidden_effect = {
+			country_event = {
+				id = intscore.2000
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+check_standard_victory_provinces = {
+	major = yes
+	color = { 77  93  83 }
+	potential = {
+		was_player = yes
+	}
+
+	provinces_to_highlight = {
+		OR = {
+			#################################################
+			# PROVINCE ORDINARIE
+			# Valore base: 1 punto
+			#################################################
+
+			################################################# EUROPE
+
+			################### ITALY
+			province_id = 103  # TORINO
+			province_id = 116  # FIRENZE
+			province_id = 4738 # TRIESTE
+			province_id = 125  # PALERMO
+			province_id = 121  # NAPOLI
+
+			################### FRANCE
+			province_id = 174 # BORDEAUX
+
+			################### IBERIA
+			province_id = 213 # BARCELONA
+			province_id = 227 # LISBON
+			province_id = 226 # GIBRALTAIR		
+
+			################### BRITAIN
+			province_id = 248  # LOTHIAN
+			province_id = 4121 # DUBLIN
+
+			################### LOW COUNTRIES
+			province_id = 87 # CALAIS
+
+			################### NORTH GERMANY
+			province_id = 85   # KOLN
+			province_id = 1874 # BREMEN
+			province_id = 45   # LUBECK
+
+			################### SOUTH GERMANY
+			province_id = 75   # STRASBOURG
+			province_id = 165  # BERN
+			province_id = 266  # PRAGUE
+			province_id = 1872 # NURNBERG
+
+			################### CARPATHIA
+			province_id = 153  # PEST
+			province_id = 1756 # BESARABIA
+
+			################### BALKANS
+			province_id = 137 # RAGUSA
+			province_id = 141 # SMEDEREVO
+
+			################### SCANDINAVIA
+			province_id = 5004 # COPENHAGEN
+			province_id = 1    # STOCKHOLM
+			province_id = 17    # OSLO
+
+			################### BALTIC
+			province_id = 38 # RIGA
+			province_id = 41 # KOENIGSBERG
+
+			################### RUTHENIA
+			province_id = 280 # KIEV
+			province_id = 293 # SMOLENSK
+
+			################### RUSSIA
+			province_id = 33 # NEVA
+
+
+			################################################# CENTRAL ASIA
+
+			################### PONTIC STEPPE
+			province_id = 2410 # THEODORO
+			province_id = 466  # SARAI
+
+			################### URAL
+			province_id = 2444 # BASHGIRD
+
+			################### TIBET
+			province_id = 677 # LHASA
+
+			################### CAUCASIA
+			province_id = 421 # SHIRVAN
+			province_id = 422 # IMERETI
+
+			################### CENTRAL ASIA
+			province_id = 476 # KYPSHAK
+
+			################### MONGOLIA
+			province_id = 718 # KOBDO
+
+
+			################################################# MIDDLE EAST
+
+			################### ANATOLIA
+			province_id = 326 # ANKARA
+
+			################### MASHRIQ
+			province_id = 377 # HALAB
+			province_id = 411 # MOSUL
+			province_id = 408 # BASRAH
+
+			################### ARABIA
+			province_id = 385 # MAKKAH
+			province_id = 395 # QATAR
+			province_id = 390 # SAN'A
+
+			################### PERSIA
+			province_id = 416  # TABRIZ
+			province_id = 2999 # HORMUZ
+
+			################### KHORASAN
+			province_id = 451 # KABUL
+
+
+			################################################# AFRICA
+
+			################### EGYPT
+			province_id = 1234 # QASR IBRIM
+			province_id = 356 # BENGAZI
+
+			################### MAGHREB
+			province_id = 341  # TUNIS
+			province_id = 338 # MITIJA
+
+			################### SAHEL
+			province_id = 2269 # ZARMAGANDA
+			province_id = 2288 # YAO
+			province_id = 5807 # ARRAKIS
+
+			################### NIGER
+			#province_id = 1134 # JENNE
+
+			################### GUINEA
+			province_id = 1147 # BENIN
+			province_id = 1116 # WOLOF
+
+			################### KONGO
+			province_id = 4085 # YAKA
+
+			################### SOUTH AFRICA
+			province_id = 1177 # CAPE
+
+			################### EAST AFRICA
+			province_id = 1196 # KILWA
+			province_id = 1792 # MERINA
+
+			################### CENTRAL AFRICA
+			province_id = 4064 # BUGANDA
+
+			################### HORN OF AFRICA
+			province_id = 1224 # GONDER
+			province_id = 1205 # MOGADISHU
+
+			################################################# INDIA
+
+			################### HINDUSTAN
+			province_id = 522  # DELHI
+			province_id = 507  # LAHORE
+			province_id = 2095 # VARANASI
+
+			################### WESTERN INDIA
+			province_id = 504  # THATTA
+			province_id = 2058 # MEWAR
+
+			################### DECCAN
+			province_id = 534  # CALICUT
+			province_id = 542  # GOLCONDA
+			province_id = 2089 # CHAUL
+
+			################### COROMANDEL
+			province_id = 2099 # KANDY
+
+			################### BENGAL
+			province_id = 563 # GAUDA
+			province_id = 552 # CUTTACK
+
+			################### BURMA
+			province_id = 586 # PEGU
+			province_id = 584 # AVA
+
+
+			################################################# INDOCHINA AND EAST INDIES
+
+			################### INDOCHINA
+			province_id = 613 # DONG KINH
+
+			################### MALAYA
+			province_id = 4815 # SINGAPORE
+			province_id = 622  # PALEMBANG
+			province_id = 641  # MAKASSAR
+			province_id = 2687 # PAKUAN
+
+			################### OCEANIA
+			province_id = 1084 # WADJUK
+
+
+			################################################# AMERICAS
+
+			province_id = 965 # MANHATTAN
+			province_id = 994 # STADACONA
+			province_id = 490 # BANI
+			province_id = 852 # MEXICO
+			province_id = 893 # CHITIMACA
+			province_id = 831 # CARACAS
+			province_id = 763 # RIO DE JANEIRO
+			province_id = 778 # RIO DE LA PLATA
+		}
+	}
+
+	allow = {
+		always = no
+	}
+
+	effect = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+check_important_victory_provinces = {
+	major = yes
+	color = { 77  93  83 }
+	potential = {
+		was_player = yes
+	}
+
+	provinces_to_highlight = {
+		OR = {
+			#################################################
+			# PROVINCE IMPORTANTI
+			# Valore base: 2 punti
+			# Assegnano il doppio dei punti
+			#################################################
+
+			################################################# EUROPE
+
+			################### ITALY
+			province_id = 118 # ROMA
+
+			################### FRANCE
+			province_id = 183 # PARIS
+
+			################### IBERIA
+			province_id = 217 # MADRID
+
+			################### BRITAIN
+			province_id = 236 # LONDON
+
+			################### LOW COUNTRIES
+			province_id = 97 # AMSTERDAM
+
+			################### NORTH GERMANY
+			province_id = 1876 # FRANKFURT
+			province_id = 50   # BRANDENBURG
+
+			################### SOUTH GERMANY
+			province_id = 134 # WIEN
+
+			################### POLAND
+			province_id = 257 # WARSAW
+
+			################### RUSSIA
+			province_id = 295 # MOSCOW
+
+			################### BALKANS
+			province_id = 151 # CONSTANTINOPLE
+
+
+			################################################# AFRICA
+
+			################### MAGHREB
+			province_id = 343  # FEZ
+
+			################### EGYPT
+			province_id = 361 # CAIRO
+			
+			################################################# ASIA
+			################### KHORASAN
+			province_id = 454 # SAMARKAND
+
+			################################################# INDOCHINA AND EAST INDIES
+
+			################### INDOCHINA
+			province_id = 600 # AYUTTHAYA
+		}
+	}
+
+	allow = {
+		always = no
+	}
+
+	effect = {
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,15 @@
+####INTSCORE
+
+on_startup = {
+	if = {
+		limit = {
+			NOT =  {has_country_flag = score_set }	
+		}
+		set_country_flag = score_set
+		country_event = { 
+			id = intscore.0
+			days = 1
+		}
+	}	
+	
+}

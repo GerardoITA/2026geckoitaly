@@ -1,0 +1,130 @@
+####INTSCORE
+
+cb_intscore_rivalry = {
+	valid_for_subject = no
+
+	# =========================================================
+	# ATTACCANTE
+	# =========================================================
+	prerequisites_self = {
+
+		# CONFIGURAZIONE FINALE:
+		# il CB sarà disponibile solo ai player attivi.
+		#
+		# Per il test contro AI nel 1444 restano commentati.
+		ai = no
+		was_player = yes
+
+		is_colonial_nation = no
+		is_subject = no
+
+		# CONFIGURAZIONE FINALE:
+		# il CB sarà disponibile dal 1° gennaio 1500.
+		is_year = 1500
+	}
+
+	# =========================================================
+	# BERSAGLIO
+	#
+	# ROOT = attaccante
+	# FROM = bersaglio
+	# =========================================================
+	prerequisites = {
+
+		# Il bersaglio deve essere un rivale dell'attaccante.
+		is_rival = FROM
+
+		# Il CB non è disponibile durante una tregua.
+		NOT = {
+			truce_with = FROM
+		}
+
+		FROM = {
+
+			# CONFIGURAZIONE FINALE:
+			# il bersaglio deve essere un player attivo.
+			#
+			# Per il test contro AI restano commentati.
+			ai = no
+			was_player = yes
+
+			is_colonial_nation = no
+			is_subject = no
+		}
+	}
+
+	# =========================================================
+	# PEACE OPTIONS VIETATE ALL'ATTACCANTE
+	#
+	# L'attaccante può usare soltanto:
+	#
+	# intscore_loss_025
+	# intscore_loss_050
+	# intscore_loss_075
+	# intscore_loss_100
+	#
+	# Il difensore vittorioso NON è limitato da questo blocco.
+	# =========================================================
+	attacker_disabled_po = {
+
+		# -------------------------
+		# PEACE OPTIONS STANDARD
+		# -------------------------
+
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_change_religion
+		po_form_personal_union
+		po_gold
+		po_become_vassal
+		po_subjugate_vassal
+		po_concede_defeat
+		po_annul_treaties
+		po_change_government
+		po_revoke_elector
+		po_trade_power
+		po_steer_trade
+		po_humiliate
+		po_enforce_rebel_demands
+		po_return_cores
+		po_humiliate_rival
+		po_independence
+		po_become_tributary_state
+		po_change_hre_religion
+		po_take_mandate
+		po_force_migration
+		po_transfer_vassals
+		po_dismantle_revolution
+		po_join_empire
+		po_spread_revolution
+		po_subjugate_tributary_state
+		po_force_out_colonizers
+		po_guaranteed_join_empire
+		po_end_rivalry
+		po_enforce_fleet_basing_rights
+		po_enforce_military_access
+		po_war_reparations
+
+		# -------------------------
+		# ALTRE OPZIONI PRESENTI
+		# NELLA MOD
+		# -------------------------
+
+		make_canton
+		po_raid_churches
+		po_change_culture
+		po_change_culture_same_culture_group
+		po_show_burgundian_superiority
+		po_split_ottomans
+
+		X_CRI_peace_treaty_1
+		X_CRI_peace_treaty_2
+		X_CRI_peace_treaty_3
+		X_CRI_peace_treaty_4
+	}
+
+	# Richiama il war goal definito nel file wargoal_types.
+	war_goal = intscore_superiority
+}

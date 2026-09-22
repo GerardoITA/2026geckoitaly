@@ -1,0 +1,596 @@
+###################################################
+###################BY INTLANDER####################
+###################################################
+
+####INTSCORE
+
+namespace = intscore
+
+
+#country_event = {
+#	 id = debugscore.1
+#	title = debugscore.1.t
+#    desc = debugscore.1.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = no
+#	immediate = {
+#		export_to_variable = {
+#			which = FLScore
+#			value = modifier:discipline
+#			who = ROOT
+#		}
+#		#divide_variable = {
+#		#	which = FLScore
+#		#	value = 10
+#		#}
+#		change_variable = {
+#			which = IntScore
+#			which = FLScore
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#		add_prestige = 5
+#	}
+#}
+###################################################
+##SETS INTSCORE TO 0 AT THE BEGINNING OF THE GAME##
+###################################################
+country_event = {
+	 id = intscore.0
+	title = intscore.0.t
+    desc = intscore.0.d
+picture = COURT_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		set_variable = {
+			which = IntScore
+			value = 0
+		}
+		set_variable = {
+			which = YearlyIntScore
+			value = 0
+		}
+	}
+	
+	option = {
+		name = score_option_a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#####################################################################################
+## EVENTS TO INCREASE THE SCORE BY X POINTS - TO BE LINKED TO MISSIONS, EVENTS ETCC##
+#####################################################################################
+#country_event = {
+#	 id = intscore.1
+#	title = intscore.1.t
+#    desc = intscore.1.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 1
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.5
+#	title = intscore.5.t
+#    desc = intscore.5.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 5
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.10
+#	title = intscore.10.t
+#    desc = intscore.10.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 10
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.25
+#	title = intscore.25.t
+#    desc = intscore.25.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 25
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.50
+#	title = intscore.50.t
+ #   desc = intscore.50.d
+#	picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+ #       which = IntScore
+  #      value = 50
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+###########################################
+######EVENT THAT CALCULATES VP YEARLY######
+###########################################
+###10 25 50 100
+###10 20 40 60
+
+country_event = {
+	id = intscore.999
+	title = intscore.999.t
+	desc = intscore.999.d
+	picture = COURT_eventPicture
+	hidden = yes
+
+	trigger = {
+		was_player = yes
+		is_colonial_nation = no
+
+		NOT = {
+			has_country_flag = score_event_fired
+		}
+
+		is_month = 0
+		NOT = {
+			is_month = 1
+		}
+
+		is_year = 1444
+		NOT = {
+			is_year = 1500
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		# Calcola i punti delle province valide.
+		#
+		# Ogni provincia assegna:
+		# BASE della provincia × MULTIPLIER dell'epoca.
+		#
+		# Per il periodo 1444-1499 il moltiplicatore è 1.
+
+		set_variable = {
+			which = YearlyIntScore
+			value = 0
+		}
+
+		intscore_score_valid_provinces = {
+			MULTIPLIER = 1
+		}
+
+		set_country_flag = intscore_participant
+		set_country_flag = score_event_fired
+		clr_global_flag = intscore_ranking_updated
+	}
+
+	option = {
+		name = score_option_a
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = intscore.1000
+	title = intscore.1000.t
+	desc = intscore.1000.d
+	picture = COURT_eventPicture
+	hidden = yes
+
+	trigger = {
+		was_player = yes
+		is_colonial_nation = no
+
+		NOT = {
+			has_country_flag = score_event_fired
+		}
+
+		is_month = 0
+		NOT = {
+			is_month = 1
+		}
+
+		is_year = 1500
+		NOT = {
+			is_year = 1600
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		# 1500-1599:
+		# valore base della provincia × 2
+
+		set_variable = {
+			which = YearlyIntScore
+			value = 0
+		}
+
+		intscore_score_valid_provinces = {
+			MULTIPLIER = 2
+		}
+
+		set_country_flag = intscore_participant
+		set_country_flag = score_event_fired
+		clr_global_flag = intscore_ranking_updated
+	}
+
+	option = {
+		name = score_option_a
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = intscore.1001
+	title = intscore.1001.t
+	desc = intscore.1001.d
+	picture = COURT_eventPicture
+	hidden = yes
+
+	trigger = {
+		was_player = yes
+		is_colonial_nation = no
+
+		NOT = {
+			has_country_flag = score_event_fired
+		}
+
+		is_month = 0
+		NOT = {
+			is_month = 1
+		}
+
+		is_year = 1600
+		NOT = {
+			is_year = 1700
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		# 1600-1699:
+		# valore base della provincia × 4
+
+		set_variable = {
+			which = YearlyIntScore
+			value = 0
+		}
+
+		intscore_score_valid_provinces = {
+			MULTIPLIER = 4
+		}
+
+		set_country_flag = intscore_participant
+		set_country_flag = score_event_fired
+		clr_global_flag = intscore_ranking_updated
+	}
+
+	option = {
+		name = score_option_a
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = intscore.1002
+	title = intscore.1002.t
+	desc = intscore.1002.d
+	picture = COURT_eventPicture
+	hidden = yes
+
+	trigger = {
+		was_player = yes
+		is_colonial_nation = no
+
+		NOT = {
+			has_country_flag = score_event_fired
+		}
+
+		is_month = 0
+		NOT = {
+			is_month = 1
+		}
+
+		is_year = 1700
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		# Dal 1700:
+		# valore base della provincia × 6
+
+		set_variable = {
+			which = YearlyIntScore
+			value = 0
+		}
+
+		intscore_score_valid_provinces = {
+			MULTIPLIER = 6
+		}
+
+		set_country_flag = intscore_participant
+		set_country_flag = score_event_fired
+		clr_global_flag = intscore_ranking_updated
+	}
+
+	option = {
+		name = score_option_a
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+
+###########################################
+#######EVENT TO CLEAR FLAG EVERY YEAR######
+###########################################
+
+
+##UNUSED, DEPRECATED BY 1060
+country_event = {
+	id = intscore.1050
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = score_event_fired
+	}
+
+	option = {
+		name = score_option_a
+	}
+}
+
+#country_event = {
+#	 id = intscore.1100
+#	title = intscore.1100.t 
+#    desc = intscore.1100.d
+#	picture = COURT_eventPicture
+#	hidden = no
+#	trigger = {
+#		NOT = { has_country_flag = score_event2_fired}
+#		is_month = 0
+#		NOT = {	is_month = 4}
+#		OR ={
+#			AND = {
+#				is_year = 1450
+#				NOT = { is_year = 1451 }
+#			}
+#			AND = {
+#				is_year = 1455
+#				NOT = { is_year = 1456 }
+#			}
+#			AND = {
+#				is_year = 1460
+#				NOT = { is_year = 1461 }
+#			}
+#		
+#		}
+#	}
+#	mean_time_to_happen = {
+#	days = 1
+#	}
+#	immediate = {
+#		change_variable = {
+#			which = IntScore
+#			value = 1000
+#		}
+#		set_country_flag = score_event2_fired
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#
+#country_event = {
+#	 id = intscore.1101
+#	title = intscore.1101.t 
+#    desc = intscore.1101.d
+#	picture = COURT_eventPicture
+#	hidden = yes
+#	trigger = {
+#		has_country_flag = score_event2_fired
+#		is_month = 0
+#		NOT = {	is_month = 4}
+#		OR ={
+#			AND = {
+#				is_year = 1451
+#				NOT = { is_year = 1452 }
+#			}
+#			AND = {
+#				is_year = 1456
+#				NOT = { is_year = 1457 }
+#			}
+#			AND = {
+#				is_year = 1461
+#				NOT = { is_year = 1462 }
+#			}
+#		
+#		}
+#	}
+#	mean_time_to_happen = {
+#	days = 1
+#	}
+#	immediate = {
+#		clr_country_flag = score_event2_fired
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+
+############################################################
+################### INTSCORE RANKING UI #####################
+############################################################
+
+country_event = {
+	id = intscore.2000
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = intscore_ranking_close
+	}
+}
+
+
+
+
+
+
+####### RICALCOLA CLASSIFICA 
+country_event = {
+	id = intscore.1060
+	title = intscore.1060.t
+	desc = intscore.1060.d
+	picture = COURT_eventPicture
+	hidden = yes
+
+	trigger = {
+		has_country_flag = intscore_participant
+		has_country_flag = score_event_fired
+
+		# Esclusivamente febbraio
+		is_month = 1
+		NOT = {
+			is_month = 2
+		}
+
+		NOT = {
+			has_global_flag = intscore_ranking_updated
+		}
+
+		NOT = {
+			any_country = {
+				has_country_flag = intscore_participant
+
+				NOT = {
+					has_country_flag = score_event_fired
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = intscore_ranking_updated
+
+		intscore_build_ranking = yes
+		intscore_assign_place_flags = yes
+
+		clr_country_flag = score_event_fired
+
+		every_country = {
+			limit = {
+				has_country_flag = intscore_participant
+			}
+
+			clr_country_flag = score_event_fired
+		}
+	}
+
+	option = {
+		name = score_option_a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+
+############ CALCULATES RANKING FOR INTSCORE WARS
+country_event = {
+	id = intscore.1061
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		intscore_build_ranking = yes
+		intscore_assign_place_flags = yes
+	}
+
+	option = {
+		name = score_option_a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,122 @@
+﻿l_english:
+ show_score_title:0 "IntScore Ranking"
+ show_score_desc:0 "Open the ranking of every player country with more than 0 IntScore.\n\nYour current IntScore: §Y[Root.IntScore.GetValue]§!"
+ 
+ check_standard_victory_provinces_title:0 "Show §YStandard Victory Provinces§!"
+ check_standard_victory_provinces_desc:0 "Highlights all §YStandard Victory Provinces§!.\n\nEach province has a base value of §G1 point§! and grants IntScore every year when owned directly or by one of your subjects.\n\n§YAnnual value by period:§!\n1444–1499: §G1 IntScore§!\n1500–1599: §G2 IntScore§!\n1600–1699: §G4 IntScore§!\n1700–1821: §G6 IntScore§!"
+
+ check_important_victory_provinces_title:0 "Show §RImportant Victory Provinces§!"
+ check_important_victory_provinces_desc:0 "Highlights all §RImportant Victory Provinces§!.\n\nEach province has a base value of §R2 points§! and therefore grants §Ytwice as much IntScore§! as a Standard Victory Province when owned directly or by one of your subjects.\n\n§YAnnual value by period:§!\n1444–1499: §R2 IntScore§!\n1500–1599: §R4 IntScore§!\n1600–1699: §R8 IntScore§!\n1700–1821: §R12 IntScore§!"
+
+ intscore.1.t:0 "+1 Intscore"
+ intscore.1.d:0 "Adds 1 point to your score."
+ intscore.5.t:0 "+5 Intscore"
+ intscore.5.d:0 "Adds 5 points to your score."
+ intscore.10.t:0 "+10 Intscore"
+ intscore.10.d:0 "Adds 10 points to your score."
+ intscore.25.t:0 "+25 Intscore"
+ intscore.25.d:0 "Adds 25 points to your score."
+ intscore.50.t:0 "+50 Intscore"
+ intscore.50.d:0 "Adds 50 points to your score."
+
+ intscore_ranking_decision_tooltip:0 "Recalculate and open the current IntScore ranking."
+ intscore_ranking_title:0 "§YIntScore World Ranking§!"
+
+ intscore_ranking_desc:0 "The IntScore ranking is recalculated every year at the beginning of March, after all annual Victory Province points have been awarded.\nVictory Provinces owned directly or through subjects and colonial nations contribute to their overlord. §RImportant Victory Provinces§! are worth twice as many points.\nThe 3 highest-ranked countries receive scaling §Ytriggered modifiers§! that grant §Rpowerful bonuses§!.\n\n§YYour current IntScore:§! §G[Root.IntScore.GetValue]§!\n\n1. [intscore_rank_1.GetName] §b([intscore_rank_1.GetTag])§! — §G[intscore_rank_1.IntScore.GetValue]§! §Y(+[intscore_rank_1.YearlyIntScore.GetValue])§!\n2. [intscore_rank_2.GetName] §b([intscore_rank_2.GetTag])§! — §G[intscore_rank_2.IntScore.GetValue]§! §Y(+[intscore_rank_2.YearlyIntScore.GetValue])§!\n3. [intscore_rank_3.GetName] §b([intscore_rank_3.GetTag])§! — §G[intscore_rank_3.IntScore.GetValue]§! §Y(+[intscore_rank_3.YearlyIntScore.GetValue])§!\n\n4. [intscore_rank_4.GetName] §b([intscore_rank_4.GetTag])§! — §G[intscore_rank_4.IntScore.GetValue]§! §Y(+[intscore_rank_4.YearlyIntScore.GetValue])§!\n5. [intscore_rank_5.GetName] §b([intscore_rank_5.GetTag])§! — §G[intscore_rank_5.IntScore.GetValue]§! §Y(+[intscore_rank_5.YearlyIntScore.GetValue])§!\n6. [intscore_rank_6.GetName] §b([intscore_rank_6.GetTag])§! — §G[intscore_rank_6.IntScore.GetValue]§! §Y(+[intscore_rank_6.YearlyIntScore.GetValue])§!\n\n7. [intscore_rank_7.GetName] §b([intscore_rank_7.GetTag])§! — §G[intscore_rank_7.IntScore.GetValue]§! §Y(+[intscore_rank_7.YearlyIntScore.GetValue])§!\n8. [intscore_rank_8.GetName] §b([intscore_rank_8.GetTag])§! — §G[intscore_rank_8.IntScore.GetValue]§! §Y(+[intscore_rank_8.YearlyIntScore.GetValue])§!\n9. [intscore_rank_9.GetName] §b([intscore_rank_9.GetTag])§! — §G[intscore_rank_9.IntScore.GetValue]§! §Y(+[intscore_rank_9.YearlyIntScore.GetValue])§!\n10. [intscore_rank_10.GetName] §b([intscore_rank_10.GetTag])§! — §G[intscore_rank_10.IntScore.GetValue]§! §Y(+[intscore_rank_10.YearlyIntScore.GetValue])§!\n\n11. [intscore_rank_11.GetName] §b([intscore_rank_11.GetTag])§! — §G[intscore_rank_11.IntScore.GetValue]§! §Y(+[intscore_rank_11.YearlyIntScore.GetValue])§!\n12. [intscore_rank_12.GetName] §b([intscore_rank_12.GetTag])§! — §G[intscore_rank_12.IntScore.GetValue]§! §Y(+[intscore_rank_12.YearlyIntScore.GetValue])§!\n13. [intscore_rank_13.GetName] §b([intscore_rank_13.GetTag])§! — §G[intscore_rank_13.IntScore.GetValue]§! §Y(+[intscore_rank_13.YearlyIntScore.GetValue])§!\n14. [intscore_rank_14.GetName] §b([intscore_rank_14.GetTag])§! — §G[intscore_rank_14.IntScore.GetValue]§! §Y(+[intscore_rank_14.YearlyIntScore.GetValue])§!\n15. [intscore_rank_15.GetName] §b([intscore_rank_15.GetTag])§! — §G[intscore_rank_15.IntScore.GetValue]§! §Y(+[intscore_rank_15.YearlyIntScore.GetValue])§!\n16. [intscore_rank_16.GetName] §b([intscore_rank_16.GetTag])§! — §G[intscore_rank_16.IntScore.GetValue]§! §Y(+[intscore_rank_16.YearlyIntScore.GetValue])§!\n17. [intscore_rank_17.GetName] §b([intscore_rank_17.GetTag])§! — §G[intscore_rank_17.IntScore.GetValue]§! §Y(+[intscore_rank_17.YearlyIntScore.GetValue])§!\n18. [intscore_rank_18.GetName] §b([intscore_rank_18.GetTag])§! — §G[intscore_rank_18.IntScore.GetValue]§! §Y(+[intscore_rank_18.YearlyIntScore.GetValue])§!\n19. [intscore_rank_19.GetName] §b([intscore_rank_19.GetTag])§! — §G[intscore_rank_19.IntScore.GetValue]§! §Y(+[intscore_rank_19.YearlyIntScore.GetValue])§!\n20. [intscore_rank_20.GetName] §b([intscore_rank_20.GetTag])§! — §G[intscore_rank_20.IntScore.GetValue]§! §Y(+[intscore_rank_20.YearlyIntScore.GetValue])§!\n21. [intscore_rank_21.GetName] §b([intscore_rank_21.GetTag])§! — §G[intscore_rank_21.IntScore.GetValue]§! §Y(+[intscore_rank_21.YearlyIntScore.GetValue])§!\n22. [intscore_rank_22.GetName] §b([intscore_rank_22.GetTag])§! — §G[intscore_rank_22.IntScore.GetValue]§! §Y(+[intscore_rank_22.YearlyIntScore.GetValue])§!\n23. [intscore_rank_23.GetName] §b([intscore_rank_23.GetTag])§! — §G[intscore_rank_23.IntScore.GetValue]§! §Y(+[intscore_rank_23.YearlyIntScore.GetValue])§!\n24. [intscore_rank_24.GetName] §b([intscore_rank_24.GetTag])§! — §G[intscore_rank_24.IntScore.GetValue]§! §Y(+[intscore_rank_24.YearlyIntScore.GetValue])§!\n25. [intscore_rank_25.GetName] §b([intscore_rank_25.GetTag])§! — §G[intscore_rank_25.IntScore.GetValue]§! §Y(+[intscore_rank_25.YearlyIntScore.GetValue])§!\n26. [intscore_rank_26.GetName] §b([intscore_rank_26.GetTag])§! — §G[intscore_rank_26.IntScore.GetValue]§! §Y(+[intscore_rank_26.YearlyIntScore.GetValue])§!\n27. [intscore_rank_27.GetName] §b([intscore_rank_27.GetTag])§! — §G[intscore_rank_27.IntScore.GetValue]§! §Y(+[intscore_rank_27.YearlyIntScore.GetValue])§!\n28. [intscore_rank_28.GetName] §b([intscore_rank_28.GetTag])§! — §G[intscore_rank_28.IntScore.GetValue]§! §Y(+[intscore_rank_28.YearlyIntScore.GetValue])§!\n29. [intscore_rank_29.GetName] §b([intscore_rank_29.GetTag])§! — §G[intscore_rank_29.IntScore.GetValue]§! §Y(+[intscore_rank_29.YearlyIntScore.GetValue])§!\n30. [intscore_rank_30.GetName] §b([intscore_rank_30.GetTag])§! — §G[intscore_rank_30.IntScore.GetValue]§! §Y(+[intscore_rank_30.YearlyIntScore.GetValue])§!\n31. [intscore_rank_31.GetName] §b([intscore_rank_31.GetTag])§! — §G[intscore_rank_31.IntScore.GetValue]§! §Y(+[intscore_rank_31.YearlyIntScore.GetValue])§!\n32. [intscore_rank_32.GetName] §b([intscore_rank_32.GetTag])§! — §G[intscore_rank_32.IntScore.GetValue]§! §Y(+[intscore_rank_32.YearlyIntScore.GetValue])§!\n33. [intscore_rank_33.GetName] §b([intscore_rank_33.GetTag])§! — §G[intscore_rank_33.IntScore.GetValue]§! §Y(+[intscore_rank_33.YearlyIntScore.GetValue])§!\n34. [intscore_rank_34.GetName] §b([intscore_rank_34.GetTag])§! — §G[intscore_rank_34.IntScore.GetValue]§! §Y(+[intscore_rank_34.YearlyIntScore.GetValue])§!\n35. [intscore_rank_35.GetName] §b([intscore_rank_35.GetTag])§! — §G[intscore_rank_35.IntScore.GetValue]§! §Y(+[intscore_rank_35.YearlyIntScore.GetValue])§!\n36. [intscore_rank_36.GetName] §b([intscore_rank_36.GetTag])§! — §G[intscore_rank_36.IntScore.GetValue]§! §Y(+[intscore_rank_36.YearlyIntScore.GetValue])§!\n37. [intscore_rank_37.GetName] §b([intscore_rank_37.GetTag])§! — §G[intscore_rank_37.IntScore.GetValue]§! §Y(+[intscore_rank_37.YearlyIntScore.GetValue])§!\n38. [intscore_rank_38.GetName] §b([intscore_rank_38.GetTag])§! — §G[intscore_rank_38.IntScore.GetValue]§! §Y(+[intscore_rank_38.YearlyIntScore.GetValue])§!\n39. [intscore_rank_39.GetName] §b([intscore_rank_39.GetTag])§! — §G[intscore_rank_39.IntScore.GetValue]§! §Y(+[intscore_rank_39.YearlyIntScore.GetValue])§!\n40. [intscore_rank_40.GetName] §b([intscore_rank_40.GetTag])§! — §G[intscore_rank_40.IntScore.GetValue]§! §Y(+[intscore_rank_40.YearlyIntScore.GetValue])§!"
+
+ intscore_ranking_close:0 "§YClose Ranking§!"
+ intscore_ranking_no_entries:0 "No human-controlled country currently has more than 0 IntScore."
+ intscore_rank_empty:0 ""
+ 
+ intscore_rank_1_line:0 "§Y1.§! [intscore_rank_1.GetName] ([intscore_rank_1.GetTag]) — §G[intscore_rank_1.IntScore.GetValue]§!\n"
+ intscore_rank_2_line:0 "§Y2.§! [intscore_rank_2.GetName] ([intscore_rank_2.GetTag]) — §G[intscore_rank_2.IntScore.GetValue]§!\n"
+ intscore_rank_3_line:0 "§Y3.§! [intscore_rank_3.GetName] ([intscore_rank_3.GetTag]) — §G[intscore_rank_3.IntScore.GetValue]§!\n"
+ intscore_rank_4_line:0 "§Y4.§! [intscore_rank_4.GetName] ([intscore_rank_4.GetTag]) — §G[intscore_rank_4.IntScore.GetValue]§!\n"
+ intscore_rank_5_line:0 "§Y5.§! [intscore_rank_5.GetName] ([intscore_rank_5.GetTag]) — §G[intscore_rank_5.IntScore.GetValue]§!\n"
+ intscore_rank_6_line:0 "§Y6.§! [intscore_rank_6.GetName] ([intscore_rank_6.GetTag]) — §G[intscore_rank_6.IntScore.GetValue]§!\n"
+ intscore_rank_7_line:0 "§Y7.§! [intscore_rank_7.GetName] ([intscore_rank_7.GetTag]) — §G[intscore_rank_7.IntScore.GetValue]§!\n"
+ intscore_rank_8_line:0 "§Y8.§! [intscore_rank_8.GetName] ([intscore_rank_8.GetTag]) — §G[intscore_rank_8.IntScore.GetValue]§!\n"
+ intscore_rank_9_line:0 "§Y9.§! [intscore_rank_9.GetName] ([intscore_rank_9.GetTag]) — §G[intscore_rank_9.IntScore.GetValue]§!\n"
+ intscore_rank_10_line:0 "§Y10.§! [intscore_rank_10.GetName] ([intscore_rank_10.GetTag]) — §G[intscore_rank_10.IntScore.GetValue]§!\n"
+
+ intscore_rank_11_line:0 "§Y11.§! [intscore_rank_11.GetName] ([intscore_rank_11.GetTag]) — §G[intscore_rank_11.IntScore.GetValue]§!\n"
+ intscore_rank_12_line:0 "§Y12.§! [intscore_rank_12.GetName] ([intscore_rank_12.GetTag]) — §G[intscore_rank_12.IntScore.GetValue]§!\n"
+ intscore_rank_13_line:0 "§Y13.§! [intscore_rank_13.GetName] ([intscore_rank_13.GetTag]) — §G[intscore_rank_13.IntScore.GetValue]§!\n"
+ intscore_rank_14_line:0 "§Y14.§! [intscore_rank_14.GetName] ([intscore_rank_14.GetTag]) — §G[intscore_rank_14.IntScore.GetValue]§!\n"
+ intscore_rank_15_line:0 "§Y15.§! [intscore_rank_15.GetName] ([intscore_rank_15.GetTag]) — §G[intscore_rank_15.IntScore.GetValue]§!\n"
+ intscore_rank_16_line:0 "§Y16.§! [intscore_rank_16.GetName] ([intscore_rank_16.GetTag]) — §G[intscore_rank_16.IntScore.GetValue]§!\n"
+ intscore_rank_17_line:0 "§Y17.§! [intscore_rank_17.GetName] ([intscore_rank_17.GetTag]) — §G[intscore_rank_17.IntScore.GetValue]§!\n"
+ intscore_rank_18_line:0 "§Y18.§! [intscore_rank_18.GetName] ([intscore_rank_18.GetTag]) — §G[intscore_rank_18.IntScore.GetValue]§!\n"
+ intscore_rank_19_line:0 "§Y19.§! [intscore_rank_19.GetName] ([intscore_rank_19.GetTag]) — §G[intscore_rank_19.IntScore.GetValue]§!\n"
+ intscore_rank_20_line:0 "§Y20.§! [intscore_rank_20.GetName] ([intscore_rank_20.GetTag]) — §G[intscore_rank_20.IntScore.GetValue]§!\n"
+
+ intscore_rank_21_line:0 "§Y21.§! [intscore_rank_21.GetName] ([intscore_rank_21.GetTag]) — §G[intscore_rank_21.IntScore.GetValue]§!\n"
+ intscore_rank_22_line:0 "§Y22.§! [intscore_rank_22.GetName] ([intscore_rank_22.GetTag]) — §G[intscore_rank_22.IntScore.GetValue]§!\n"
+ intscore_rank_23_line:0 "§Y23.§! [intscore_rank_23.GetName] ([intscore_rank_23.GetTag]) — §G[intscore_rank_23.IntScore.GetValue]§!\n"
+ intscore_rank_24_line:0 "§Y24.§! [intscore_rank_24.GetName] ([intscore_rank_24.GetTag]) — §G[intscore_rank_24.IntScore.GetValue]§!\n"
+ intscore_rank_25_line:0 "§Y25.§! [intscore_rank_25.GetName] ([intscore_rank_25.GetTag]) — §G[intscore_rank_25.IntScore.GetValue]§!\n"
+ intscore_rank_26_line:0 "§Y26.§! [intscore_rank_26.GetName] ([intscore_rank_26.GetTag]) — §G[intscore_rank_26.IntScore.GetValue]§!\n"
+ intscore_rank_27_line:0 "§Y27.§! [intscore_rank_27.GetName] ([intscore_rank_27.GetTag]) — §G[intscore_rank_27.IntScore.GetValue]§!\n"
+ intscore_rank_28_line:0 "§Y28.§! [intscore_rank_28.GetName] ([intscore_rank_28.GetTag]) — §G[intscore_rank_28.IntScore.GetValue]§!\n"
+ intscore_rank_29_line:0 "§Y29.§! [intscore_rank_29.GetName] ([intscore_rank_29.GetTag]) — §G[intscore_rank_29.IntScore.GetValue]§!\n"
+ intscore_rank_30_line:0 "§Y30.§! [intscore_rank_30.GetName] ([intscore_rank_30.GetTag]) — §G[intscore_rank_30.IntScore.GetValue]§!\n"
+
+ intscore_rank_31_line:0 "§Y31.§! [intscore_rank_31.GetName] ([intscore_rank_31.GetTag]) — §G[intscore_rank_31.IntScore.GetValue]§!\n"
+ intscore_rank_32_line:0 "§Y32.§! [intscore_rank_32.GetName] ([intscore_rank_32.GetTag]) — §G[intscore_rank_32.IntScore.GetValue]§!\n"
+ intscore_rank_33_line:0 "§Y33.§! [intscore_rank_33.GetName] ([intscore_rank_33.GetTag]) — §G[intscore_rank_33.IntScore.GetValue]§!\n"
+ intscore_rank_34_line:0 "§Y34.§! [intscore_rank_34.GetName] ([intscore_rank_34.GetTag]) — §G[intscore_rank_34.IntScore.GetValue]§!\n"
+ intscore_rank_35_line:0 "§Y35.§! [intscore_rank_35.GetName] ([intscore_rank_35.GetTag]) — §G[intscore_rank_35.IntScore.GetValue]§!\n"
+ intscore_rank_36_line:0 "§Y36.§! [intscore_rank_36.GetName] ([intscore_rank_36.GetTag]) — §G[intscore_rank_36.IntScore.GetValue]§!\n"
+ intscore_rank_37_line:0 "§Y37.§! [intscore_rank_37.GetName] ([intscore_rank_37.GetTag]) — §G[intscore_rank_37.IntScore.GetValue]§!\n"
+ intscore_rank_38_line:0 "§Y38.§! [intscore_rank_38.GetName] ([intscore_rank_38.GetTag]) — §G[intscore_rank_38.IntScore.GetValue]§!\n"
+ intscore_rank_39_line:0 "§Y39.§! [intscore_rank_39.GetName] ([intscore_rank_39.GetTag]) — §G[intscore_rank_39.IntScore.GetValue]§!\n"
+ intscore_rank_40_line:0 "§Y40.§! [intscore_rank_40.GetName] ([intscore_rank_40.GetTag]) — §G[intscore_rank_40.IntScore.GetValue]§!\n"
+
+ intscore_current_score_tooltip:0 "Your current IntScore is §Y[Root.IntScore.GetValue]§!."
+
+ intscore_first_place_modifier:0 "First Place"
+ intscore_second_place_modifier:0 "Second Place"
+ intscore_third_place_modifier:0 "Third Place"
+ intscore_contender_modifier:0 "Contender"
+
+ cb_intscore_rivalry:0 "IntScore War"
+
+ cb_intscore_rivalry_desc:0 "Declare war on a player rival to reduce their IntScore. The winner gains half of the IntScore removed from the defeated country. This Casus Belli becomes available from 1 January 1500."
+
+ intscore_superiority:0 "Show IntScore Superiority"
+
+ intscore_superiority_desc:0 "The war goal is to show superiority by winning land battles. Winning a sufficient share of battles grants ticking war score."
+
+ INTSCORE_RIVALRY_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ IntScore War"
+
+ intscore_loss_025:0 "Remove Score 25 WS"
+
+ intscore_loss_025_desc:0 "The defeated country loses §R25 IntScore§! in 1500–1599, §R50 IntScore§! in 1600–1699 and §R100 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+
+ CB_ALLOWED_intscore_loss_025:0 "Reduce enemy IntScore"
+
+ PEACE_intscore_loss_025:0 "Remove Score 25 WS"
+
+ intscore_loss_050:0 "Remove Score 50 WS"
+
+ intscore_loss_050_desc:0 "The defeated country loses §R50 IntScore§! in 1500–1599, §R100 IntScore§! in 1600–1699 and §R200 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+
+ CB_ALLOWED_intscore_loss_050:0 "Reduce enemy IntScore"
+
+ PEACE_intscore_loss_050:0 "Remove Score 50 WS"
+
+ intscore_loss_075:0 "Remove Score 75 WS"
+
+ intscore_loss_075_desc:0 "The defeated country loses §R75 IntScore§! in 1500–1599, §R150 IntScore§! in 1600–1699 and §R300 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+
+ CB_ALLOWED_intscore_loss_075:0 "Reduce enemy IntScore"
+
+ PEACE_intscore_loss_075:0 "Remove Score 75 WS"
+
+ intscore_loss_100:0 "Remove Score 100 WS"
+
+ intscore_loss_100_desc:0 "The defeated country loses §R100 IntScore§! in 1500–1599, §R200 IntScore§! in 1600–1699 and §R400 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+
+ CB_ALLOWED_intscore_loss_100:0 "Reduce enemy IntScore"
+
+ PEACE_intscore_loss_100:0 "Remove Score 100 WS"

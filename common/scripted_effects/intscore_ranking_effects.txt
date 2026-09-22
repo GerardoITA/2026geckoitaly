@@ -1,0 +1,571 @@
+####INTSCORE
+intscore_clear_rank_slot = {
+	if = {
+		limit = {
+			has_saved_global_event_target = $TARGET$
+		}
+
+		clear_global_event_target = $TARGET$
+	}
+
+	clr_global_flag = $FLAG$
+}
+intscore_select_rank_slot = {
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					has_country_flag = intscore_participant
+
+					check_variable = {
+						which = IntScore
+						value = 0.001
+					}
+
+					NOT = {
+						has_country_flag = intscore_ranking_selected
+					}
+				}
+
+				any_country = {
+					has_country_flag = intscore_participant
+
+					check_variable = {
+						which = IntScore
+						value = 0.001
+					}
+
+					NOT = {
+						has_country_flag = intscore_ranking_selected
+					}
+				}
+			}
+		}
+
+		# ROOT viene utilizzato come candidato iniziale se è eleggibile.
+		if = {
+			limit = {
+				has_country_flag = intscore_participant
+
+				check_variable = {
+					which = IntScore
+					value = 0.001
+				}
+
+				NOT = {
+					has_country_flag = intscore_ranking_selected
+				}
+			}
+
+			save_global_event_target_as = $TARGET$
+		}
+
+		# Se ROOT non è eleggibile, seleziona un candidato iniziale
+		# tra i partecipanti non ancora classificati.
+		else = {
+			random_country = {
+				limit = {
+					has_country_flag = intscore_participant
+
+					check_variable = {
+						which = IntScore
+						value = 0.001
+					}
+
+					NOT = {
+						has_country_flag = intscore_ranking_selected
+					}
+				}
+
+				save_global_event_target_as = $TARGET$
+			}
+		}
+
+		# Esamina tutti i partecipanti non ancora classificati.
+		every_country = {
+			limit = {
+				has_country_flag = intscore_participant
+
+				check_variable = {
+					which = IntScore
+					value = 0.001
+				}
+
+				NOT = {
+					has_country_flag = intscore_ranking_selected
+				}
+			}
+
+			# Scope corrente: paese analizzato.
+			#
+			# Dentro event_target:$TARGET$:
+			# - scope corrente = candidato massimo attuale;
+			# - PREV = paese analizzato.
+			#
+			# Il controllo interno verifica:
+			# candidato.IntScore >= paese_analizzato.IntScore.
+			#
+			# Il NOT rende vero il limite soltanto quando:
+			# paese_analizzato.IntScore > candidato.IntScore.
+			if = {
+				limit = {
+					event_target:$TARGET$ = {
+						NOT = {
+							check_variable = {
+								which = IntScore
+								which = PREV
+							}
+						}
+					}
+				}
+
+				# Il paese analizzato ha un punteggio superiore
+				# e diventa il nuovo candidato massimo.
+				save_global_event_target_as = $TARGET$
+			}
+		}
+
+		# Assegna definitivamente lo slot al massimo trovato
+		# e lo esclude dalle selezioni successive.
+		event_target:$TARGET$ = {
+			set_country_flag = intscore_ranking_selected
+		}
+
+		set_global_flag = $FLAG$
+	}
+}
+
+intscore_assign_place_flags = {
+
+	# Pulisce eventuali piazzamenti precedenti anche da ROOT.
+	clr_country_flag = intscore_first_place
+	clr_country_flag = intscore_second_place
+	clr_country_flag = intscore_third_place
+	clr_country_flag = intscore_contender
+
+	every_country = {
+		limit = {
+			OR = {
+				has_country_flag = intscore_first_place
+				has_country_flag = intscore_second_place
+				has_country_flag = intscore_third_place
+				has_country_flag = intscore_contender
+			}
+		}
+
+		clr_country_flag = intscore_first_place
+		clr_country_flag = intscore_second_place
+		clr_country_flag = intscore_third_place
+		clr_country_flag = intscore_contender
+	}
+
+	# Nuovo primo posto.
+	if = {
+		limit = {
+			has_global_flag = intscore_rank_1_exists
+		}
+
+		event_target:intscore_rank_1 = {
+			set_country_flag = intscore_first_place
+		}
+	}
+
+	# Nuovo secondo posto.
+	if = {
+		limit = {
+			has_global_flag = intscore_rank_2_exists
+		}
+
+		event_target:intscore_rank_2 = {
+			set_country_flag = intscore_second_place
+		}
+	}
+
+	# Nuovo terzo posto.
+	if = {
+		limit = {
+			has_global_flag = intscore_rank_3_exists
+		}
+
+		event_target:intscore_rank_3 = {
+			set_country_flag = intscore_third_place
+		}
+	}
+
+	# Contender: quarto posto.
+	if = {
+		limit = {
+			has_global_flag = intscore_rank_4_exists
+		}
+
+		event_target:intscore_rank_4 = {
+			set_country_flag = intscore_contender
+		}
+	}
+
+	# Contender: quinto posto.
+	if = {
+		limit = {
+			has_global_flag = intscore_rank_5_exists
+		}
+
+		event_target:intscore_rank_5 = {
+			set_country_flag = intscore_contender
+		}
+	}
+
+	# Contender: sesto posto.
+	if = {
+		limit = {
+			has_global_flag = intscore_rank_6_exists
+		}
+
+		event_target:intscore_rank_6 = {
+			set_country_flag = intscore_contender
+		}
+	}
+}
+
+intscore_build_ranking = {
+	# Rimuove eventuali flag temporanei rimasti
+	every_country = {
+		limit = {
+			has_country_flag = intscore_ranking_selected
+		}
+
+		clr_country_flag = intscore_ranking_selected
+	}
+
+	# Cancella i risultati precedenti
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_1
+		FLAG = intscore_rank_1_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_2
+		FLAG = intscore_rank_2_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_3
+		FLAG = intscore_rank_3_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_4
+		FLAG = intscore_rank_4_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_5
+		FLAG = intscore_rank_5_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_6
+		FLAG = intscore_rank_6_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_7
+		FLAG = intscore_rank_7_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_8
+		FLAG = intscore_rank_8_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_9
+		FLAG = intscore_rank_9_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_10
+		FLAG = intscore_rank_10_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_11
+		FLAG = intscore_rank_11_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_12
+		FLAG = intscore_rank_12_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_13
+		FLAG = intscore_rank_13_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_14
+		FLAG = intscore_rank_14_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_15
+		FLAG = intscore_rank_15_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_16
+		FLAG = intscore_rank_16_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_17
+		FLAG = intscore_rank_17_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_18
+		FLAG = intscore_rank_18_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_19
+		FLAG = intscore_rank_19_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_20
+		FLAG = intscore_rank_20_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_21
+		FLAG = intscore_rank_21_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_22
+		FLAG = intscore_rank_22_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_23
+		FLAG = intscore_rank_23_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_24
+		FLAG = intscore_rank_24_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_25
+		FLAG = intscore_rank_25_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_26
+		FLAG = intscore_rank_26_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_27
+		FLAG = intscore_rank_27_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_28
+		FLAG = intscore_rank_28_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_29
+		FLAG = intscore_rank_29_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_30
+		FLAG = intscore_rank_30_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_31
+		FLAG = intscore_rank_31_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_32
+		FLAG = intscore_rank_32_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_33
+		FLAG = intscore_rank_33_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_34
+		FLAG = intscore_rank_34_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_35
+		FLAG = intscore_rank_35_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_36
+		FLAG = intscore_rank_36_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_37
+		FLAG = intscore_rank_37_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_38
+		FLAG = intscore_rank_38_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_39
+		FLAG = intscore_rank_39_exists
+	}
+	intscore_clear_rank_slot = {
+		TARGET = intscore_rank_40
+		FLAG = intscore_rank_40_exists
+	}
+
+	# Costruisce la nuova classifica
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_1
+		FLAG = intscore_rank_1_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_2
+		FLAG = intscore_rank_2_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_3
+		FLAG = intscore_rank_3_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_4
+		FLAG = intscore_rank_4_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_5
+		FLAG = intscore_rank_5_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_6
+		FLAG = intscore_rank_6_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_7
+		FLAG = intscore_rank_7_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_8
+		FLAG = intscore_rank_8_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_9
+		FLAG = intscore_rank_9_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_10
+		FLAG = intscore_rank_10_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_11
+		FLAG = intscore_rank_11_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_12
+		FLAG = intscore_rank_12_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_13
+		FLAG = intscore_rank_13_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_14
+		FLAG = intscore_rank_14_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_15
+		FLAG = intscore_rank_15_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_16
+		FLAG = intscore_rank_16_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_17
+		FLAG = intscore_rank_17_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_18
+		FLAG = intscore_rank_18_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_19
+		FLAG = intscore_rank_19_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_20
+		FLAG = intscore_rank_20_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_21
+		FLAG = intscore_rank_21_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_22
+		FLAG = intscore_rank_22_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_23
+		FLAG = intscore_rank_23_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_24
+		FLAG = intscore_rank_24_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_25
+		FLAG = intscore_rank_25_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_26
+		FLAG = intscore_rank_26_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_27
+		FLAG = intscore_rank_27_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_28
+		FLAG = intscore_rank_28_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_29
+		FLAG = intscore_rank_29_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_30
+		FLAG = intscore_rank_30_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_31
+		FLAG = intscore_rank_31_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_32
+		FLAG = intscore_rank_32_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_33
+		FLAG = intscore_rank_33_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_34
+		FLAG = intscore_rank_34_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_35
+		FLAG = intscore_rank_35_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_36
+		FLAG = intscore_rank_36_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_37
+		FLAG = intscore_rank_37_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_38
+		FLAG = intscore_rank_38_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_39
+		FLAG = intscore_rank_39_exists
+	}
+	intscore_select_rank_slot = {
+		TARGET = intscore_rank_40
+		FLAG = intscore_rank_40_exists
+	}
+
+	# Ripulisce i flag temporanei
+	every_country = {
+		limit = {
+			has_country_flag = intscore_ranking_selected
+		}
+
+		clr_country_flag = intscore_ranking_selected
+	}
+}

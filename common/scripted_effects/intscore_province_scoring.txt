@@ -1,0 +1,262 @@
+####INTSCORE
+intscore_score_single_province = {
+	if = {
+		limit = {
+			$PROVINCE$ = {
+				OR = {
+					owned_by = ROOT
+
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+
+		# Parte dal valore base della provincia.
+		set_variable = {
+			which = intscore_points_to_add
+			value = $BASE$
+		}
+
+		# Applica il moltiplicatore dell'epoca.
+		multiply_variable = {
+			which = intscore_points_to_add
+			value = $MULTIPLIER$
+		}
+
+		# Aggiunge il risultato a IntScore.
+		change_variable = {
+			which = IntScore
+			which = intscore_points_to_add
+		}
+
+		# Salva il risultato come YearlyIntScore.
+
+		change_variable = {
+			which = YearlyIntScore
+			which = intscore_points_to_add
+		}
+	}
+}
+
+intscore_score_valid_provinces = {
+
+	################################################# EUROPA
+		################### ITALY
+			intscore_score_single_province = { PROVINCE = 103  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # TORINO
+			intscore_score_single_province = { PROVINCE = 116  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # FIRENZE
+			intscore_score_single_province = { PROVINCE = 4738 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # TRIESTE
+			intscore_score_single_province = { PROVINCE = 118  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # ROMA
+			intscore_score_single_province = { PROVINCE = 125  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # PALERMO
+			intscore_score_single_province = { PROVINCE = 121  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # NAPOLI
+
+		################### FRANCE
+			intscore_score_single_province = { PROVINCE = 183 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # PARIS
+			intscore_score_single_province = { PROVINCE = 174 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BORDEAUX
+
+		################### IBERIA
+			intscore_score_single_province = { PROVINCE = 217 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # MADRID
+			intscore_score_single_province = { PROVINCE = 213 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BARCELONA
+			intscore_score_single_province = { PROVINCE = 227 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LISBON
+			intscore_score_single_province = { PROVINCE = 226 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GIBRALTAIR
+
+		################### BRITAIN
+			intscore_score_single_province = { PROVINCE = 236  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # LONDON
+			intscore_score_single_province = { PROVINCE = 248  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LOTHIAN
+			intscore_score_single_province = { PROVINCE = 4121 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DUBLIN
+
+		################### LOW COUNTRIES
+			intscore_score_single_province = { PROVINCE = 87 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CALAIS
+			intscore_score_single_province = { PROVINCE = 97 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # AMSTERDAM
+
+		################### NORTH GERMANY
+			intscore_score_single_province = { PROVINCE = 1876 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # FRANKFURT
+			intscore_score_single_province = { PROVINCE = 85   BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KOLN
+			intscore_score_single_province = { PROVINCE = 1874 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BREMEN
+			intscore_score_single_province = { PROVINCE = 45   BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LUBECK
+			intscore_score_single_province = { PROVINCE = 50   BASE = 2 MULTIPLIER = $MULTIPLIER$ } # BRANDENBURG
+
+		################### SOUTH GERMANY
+			intscore_score_single_province = { PROVINCE = 75   BASE = 1 MULTIPLIER = $MULTIPLIER$ } # STRASBOURG
+			intscore_score_single_province = { PROVINCE = 165  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BERN
+			intscore_score_single_province = { PROVINCE = 266  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # PRAGUE
+			intscore_score_single_province = { PROVINCE = 134  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # WIEN
+			intscore_score_single_province = { PROVINCE = 1872 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # NURNBERG
+
+		################### CARPATHIA
+			intscore_score_single_province = { PROVINCE = 153  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # PEST
+			intscore_score_single_province = { PROVINCE = 1756 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BESARABIA
+
+		################### BALKANS
+			intscore_score_single_province = { PROVINCE = 137 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # RAGUSA
+			intscore_score_single_province = { PROVINCE = 141 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # SMEDEREV
+			intscore_score_single_province = { PROVINCE = 151 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # CONSTANTINOPLE
+	
+
+		################### POLAND
+			intscore_score_single_province = { PROVINCE = 257 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # WARSAW
+
+		################### SCANDINAVIA
+			intscore_score_single_province = { PROVINCE = 5004 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # COPENHAGEN
+			intscore_score_single_province = { PROVINCE = 1    BASE = 1 MULTIPLIER = $MULTIPLIER$ } # STOCKHOLM
+			intscore_score_single_province = { PROVINCE = 17    BASE = 1 MULTIPLIER = $MULTIPLIER$ } # OSLO
+		################### BALTIC
+			intscore_score_single_province = { PROVINCE = 38 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # RIGA
+			intscore_score_single_province = { PROVINCE = 41 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KOENIGSBERG
+
+		################### RUTHENIA
+			intscore_score_single_province = { PROVINCE = 280 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KIEV
+			intscore_score_single_province = { PROVINCE = 293 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # SMOLENSK
+
+		################### RUSSIA
+			intscore_score_single_province = { PROVINCE = 295 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # MOSCOW
+			intscore_score_single_province = { PROVINCE = 33  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # NEVA
+
+
+	################################################# CENTRAL ASIA
+
+		################### PONTIC STEPPE
+		intscore_score_single_province = { PROVINCE = 2410 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # THEODORO
+		intscore_score_single_province = { PROVINCE = 466  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # SARAI
+
+		################### URAL
+		intscore_score_single_province = { PROVINCE = 2444 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BASHGIRD
+
+		################### TIBET
+		intscore_score_single_province = { PROVINCE = 677 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LHASA
+
+		################### CAUCASIA
+		intscore_score_single_province = { PROVINCE = 421 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # SHIRVAN
+		intscore_score_single_province = { PROVINCE = 422 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # IMERETI
+
+		################### CENTRAL ASIA
+		intscore_score_single_province = { PROVINCE = 476 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KYPSHAK
+
+		################### MONGOLIA
+		intscore_score_single_province = { PROVINCE = 718 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KOBDO
+
+
+	################################################# MIDDLE EAST
+
+		################### ANATOLIA
+		intscore_score_single_province = { PROVINCE = 326 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # ANKARA
+
+		################### MASHRIQ
+		intscore_score_single_province = { PROVINCE = 377 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # HALAB
+		intscore_score_single_province = { PROVINCE = 411 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MOSUL
+		intscore_score_single_province = { PROVINCE = 408 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BASRAH
+
+		################### ARABIA
+		intscore_score_single_province = { PROVINCE = 385 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MAKKAH
+		intscore_score_single_province = { PROVINCE = 395 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # QATAR
+		intscore_score_single_province = { PROVINCE = 390 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # SAN'A
+
+		################### PERSIA
+		intscore_score_single_province = { PROVINCE = 416  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # TABRIZ
+		intscore_score_single_province = { PROVINCE = 2999 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # HORMUZ
+
+		################### KHORASAN
+		intscore_score_single_province = { PROVINCE = 451 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KABUL
+		intscore_score_single_province = { PROVINCE = 454 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # SAMARKAND
+			
+
+
+	################################################# AFRICA
+
+		################### EGYPT
+		intscore_score_single_province = { PROVINCE = 361  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # QAIRO
+		intscore_score_single_province = { PROVINCE = 1234 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # QASR IBRIM
+		intscore_score_single_province = { PROVINCE = 356 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BENGAZI
+
+		################### MAGHREB
+		intscore_score_single_province = { PROVINCE = 343  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # FEZ
+		intscore_score_single_province = { PROVINCE = 341  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # TUNIS
+		intscore_score_single_province = { PROVINCE = 338 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MITIJA
+
+		################### SAHEL
+		intscore_score_single_province = { PROVINCE = 2269 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # ZARMAGANDA
+		intscore_score_single_province = { PROVINCE = 2288 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # YAO
+		intscore_score_single_province = { PROVINCE = 5807 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # ARRAKIS
+
+		################### NIGER
+		#intscore_score_single_province = { PROVINCE = 1134 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # JENNE
+
+		################### GUINEA
+		intscore_score_single_province = { PROVINCE = 1147 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BENIN
+		intscore_score_single_province = { PROVINCE = 1116 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # WOLOF
+
+		################### KONGO
+		intscore_score_single_province = { PROVINCE = 4085 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # YAKA
+
+		################### SOUTH AFRICA
+		intscore_score_single_province = { PROVINCE = 1177 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CAPE
+
+		################### EAST AFRICA
+		intscore_score_single_province = { PROVINCE = 1196 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KILWA
+		intscore_score_single_province = { PROVINCE = 1792 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MERINA
+
+		################### CENTRAL
+		intscore_score_single_province = { PROVINCE = 4064 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BUGANDA
+
+		################### HORN OF AFRICA
+		intscore_score_single_province = { PROVINCE = 1224 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GONDER
+		intscore_score_single_province = { PROVINCE = 1205 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MOGADISHU
+
+	################################################# INDIA
+
+		################### HINDUSTAN
+		intscore_score_single_province = { PROVINCE = 522  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DELHI
+		intscore_score_single_province = { PROVINCE = 507  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LAHORE
+		intscore_score_single_province = { PROVINCE = 2095 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # VARANASI
+
+		################### WESTERN INDIA
+		intscore_score_single_province = { PROVINCE = 504  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # THATTA
+		intscore_score_single_province = { PROVINCE = 2058 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MEWAR
+
+		################### DECCAN
+		intscore_score_single_province = { PROVINCE = 534  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CALICUT
+		intscore_score_single_province = { PROVINCE = 542  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GOLCONDA
+		intscore_score_single_province = { PROVINCE = 2089 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CHAUL
+
+		################### COROMANDEL
+		intscore_score_single_province = { PROVINCE = 2099 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # KANDY
+
+		################### BENGAL
+		intscore_score_single_province = { PROVINCE = 563 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GAUDA
+		intscore_score_single_province = { PROVINCE = 552 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CUTTACK
+
+		################### BURMA
+		intscore_score_single_province = { PROVINCE = 586 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # PEGU
+		intscore_score_single_province = { PROVINCE = 584 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # AVA
+
+
+	################################################# INDOCHINA AND EAST INDIES
+
+		################### INDOCHINA
+		intscore_score_single_province = { PROVINCE = 600 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # AYUTTHAYA
+		intscore_score_single_province = { PROVINCE = 613 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DONG KINH
+
+		################### MALAYA
+		intscore_score_single_province = { PROVINCE = 4815 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # SINGAPORE
+		intscore_score_single_province = { PROVINCE = 622  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # PALEMBANG
+		intscore_score_single_province = { PROVINCE = 641  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MAKASSAR
+		intscore_score_single_province = { PROVINCE = 2687 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # PAKUAN
+
+		################### OCEANIA
+		intscore_score_single_province = { PROVINCE = 1084 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # WADJUK
+
+
+	################################################# AMERICAS
+
+		intscore_score_single_province = { PROVINCE = 965 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MANHATTAN
+		intscore_score_single_province = { PROVINCE = 994 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # STADACONA
+		intscore_score_single_province = { PROVINCE = 490 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BANI
+		intscore_score_single_province = { PROVINCE = 852 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MEXICO
+		intscore_score_single_province = { PROVINCE = 893 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CHITIMACA
+		intscore_score_single_province = { PROVINCE = 831 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CARACAS
+		intscore_score_single_province = { PROVINCE = 763 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # RIO DE JANEIRO
+		intscore_score_single_province = { PROVINCE = 778 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # RIO DE LA PLATA
+		
+
+}

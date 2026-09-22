@@ -1,0 +1,112 @@
+# Sottrae IntScore in base all'epoca.
+#
+# BASE:
+# 25, 50, 75 oppure 100
+#
+# Moltiplicatori:
+# 1500-1599 = x1
+# 1600-1699 = x2
+# 1700+     = x4
+####INTSCORE
+intscore_apply_pvp_loss = {
+
+	# Parte dal valore base della peace option.
+	set_variable = {
+		which = intscore_pvp_loss
+		value = $BASE$
+	}
+
+	# Dal 1700: valore base x4.
+	if = {
+		limit = {
+			is_year = 1700
+		}
+
+		multiply_variable = {
+			which = intscore_pvp_loss
+			value = 4
+		}
+	}
+
+	# Dal 1600 al 1699: valore base x2.
+	else_if = {
+		limit = {
+			is_year = 1600
+		}
+
+		multiply_variable = {
+			which = intscore_pvp_loss
+			value = 2
+		}
+	}
+
+	# Se il perdente ha meno IntScore della penalità,
+	# trasferisce soltanto quello che possiede.
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = IntScore
+					which = intscore_pvp_loss
+				}
+			}
+		}
+
+		set_variable = {
+			which = intscore_pvp_loss
+			which = IntScore
+		}
+	}
+
+	# Sottrae tutti i punti al perdente.
+	subtract_variable = {
+		which = IntScore
+		which = intscore_pvp_loss
+	}
+
+	# Il vincitore riceve metà dei punti rimossi.
+	divide_variable = {
+		which = intscore_pvp_loss
+		value = 2
+	}
+
+	PREV = {
+		set_variable = {
+			which = intscore_pvp_loss
+			which = PREV
+		}
+
+		change_variable = {
+			which = IntScore
+			which = intscore_pvp_loss
+		}
+
+		set_variable = {
+			which = intscore_pvp_loss
+			value = 0
+		}
+	}
+
+	# Safety: IntScore non può diventare negativo.
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = IntScore
+					value = 0
+				}
+			}
+		}
+
+		set_variable = {
+			which = IntScore
+			value = 0
+		}
+	}
+
+	# Ripulisce la variabile temporanea del perdente.
+	set_variable = {
+		which = intscore_pvp_loss
+		value = 0
+	}
+}

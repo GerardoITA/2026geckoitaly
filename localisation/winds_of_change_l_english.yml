@@ -2438,7 +2438,7 @@
  NED_GAIN_RELATIONS_WITH_LUBECK_COUNTRIES:0 "Every nation in the §YLubeck§! Trade Node will gain §G30§! Opinion with us."
  NED_IF_NO_LUBECK:1 "If §Y[HSA.GetName]§! is not a §YTrade League Leader§!:"
  NED_WON_AT_LEAST_200_BATTLES:0 "has won at least §Y200§! Battles. (§G[Root.NEDBattlesWon.GetValue]§!)"
- NED_FORTS_GRANT_BONUSES_IN_LOW_COUNTRIES:0 "§YTrade Center§! provinces in the §YLow Countries§! will now grant the following bonuses:\n   Local Development Cost Modifier: §G-10.00%§!\n   Local Production Efficiency: §G+10.0%§!\n\nThe above bonuses will be §GDoubled§! should we ever complete §YInfrastructure Ideas§!."
+ NED_FORTS_GRANT_BONUSES_IN_LOW_COUNTRIES:0 "§YTrade Center§! provinces in the §YLow Countries§! will now grant the following bonuses:\n   Local Development Cost Modifier: §G-7.50%§!\n   Local Development Cost: §G-7.5%§!\n\nThe above bonuses will be §GDoubled§! should we ever complete §YInfrastructure Ideas§!."
  NED_MODIFY_STAATSE_LEGER_REFORM:0 "The Government Reform §YStaatse Leger§! will now grant the following:\n   Drill Gain Modifier: §G+15.0%§!\n   Discipline: §G+2.5%§!"
  NED_MILITARY_ENGINEER_GRANTS_SIEGE_ABILITY:0 "From now on, §YMilitary Engineer§! Advisors will grant §G+5.00%§! Siege Ability per level"
  NED_MODIFY_DUTCH_POLDERS_MONUMENT:0 "The §YDutch Polders§! Great Project will now grant the following:\n   Goods Produced Modifier: §G+5.00%§!\n   Provincial Trade Power Modifier: §G+20.0%§!"

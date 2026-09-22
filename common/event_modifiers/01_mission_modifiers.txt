@@ -12922,10 +12922,12 @@ ned_empowered_staatse_leger = {
 
 ned_low_countries_fort_buff = {
 	local_development_cost_modifier = -0.075
+	local_development_cost = -0.075
 }
 
 ned_low_countries_fort_buff_buffed = {
 	local_development_cost_modifier = -0.15
+	local_development_cost = -0.15
 }
 
 ned_dutch_cloth_trading = {

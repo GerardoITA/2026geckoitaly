@@ -91,7 +91,7 @@
 
  intscore_loss_025:0 "Remove Score 25 WS"
 
- intscore_loss_025_desc:0 "The defeated country loses §R25 IntScore§! in 1500–1599, §R50 IntScore§! in 1600–1699 and §R100 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_025_desc:0 "The defeated country loses §R25 IntScore§! in 1500–1549, §R50§! in 1550–1599, §R100§! in 1600–1649, §R200§! in 1650–1699, §R300§! in 1700–1749 and §R400§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
 
  CB_ALLOWED_intscore_loss_025:0 "Reduce enemy IntScore"
 
@@ -99,7 +99,7 @@
 
  intscore_loss_050:0 "Remove Score 50 WS"
 
- intscore_loss_050_desc:0 "The defeated country loses §R50 IntScore§! in 1500–1599, §R100 IntScore§! in 1600–1699 and §R200 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_050_desc:0 "The defeated country loses §R50 IntScore§! in 1500–1549, §R100§! in 1550–1599, §R200§! in 1600–1649, §R400§! in 1650–1699, §R600§! in 1700–1749 and §R800§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
 
  CB_ALLOWED_intscore_loss_050:0 "Reduce enemy IntScore"
 
@@ -107,7 +107,7 @@
 
  intscore_loss_075:0 "Remove Score 75 WS"
 
- intscore_loss_075_desc:0 "The defeated country loses §R75 IntScore§! in 1500–1599, §R150 IntScore§! in 1600–1699 and §R300 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_075_desc:0 "The defeated country loses §R75 IntScore§! in 1500–1549, §R150§! in 1550–1599, §R300§! in 1600–1649, §R600§! in 1650–1699, §R900§! in 1700–1749 and §R1200§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
 
  CB_ALLOWED_intscore_loss_075:0 "Reduce enemy IntScore"
 
@@ -115,7 +115,7 @@
 
  intscore_loss_100:0 "Remove Score 100 WS"
 
- intscore_loss_100_desc:0 "The defeated country loses §R100 IntScore§! in 1500–1599, §R200 IntScore§! in 1600–1699 and §R400 IntScore§! from 1700 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_100_desc:0 "The defeated country loses §R100 IntScore§! in 1500–1549, §R200§! in 1550–1599, §R400§! in 1600–1649, §R800§! in 1650–1699, §R1200§! in 1700–1749 and §R1600§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
 
  CB_ALLOWED_intscore_loss_100:0 "Reduce enemy IntScore"
 

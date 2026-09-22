@@ -4,9 +4,12 @@
 # 25, 50, 75 oppure 100
 #
 # Moltiplicatori:
-# 1500-1599 = x1
-# 1600-1699 = x2
-# 1700+     = x4
+# 1500-1549 = x1
+# 1550-1599 = x2
+# 1600-1649 = x4
+# 1650-1699 = x8
+# 1700-1749 = x12
+# 1750+     = x16
 ####INTSCORE
 intscore_apply_pvp_loss = {
 
@@ -16,10 +19,46 @@ intscore_apply_pvp_loss = {
 		value = $BASE$
 	}
 
-	# Dal 1700: valore base x4.
+	# 1750+: valore base x16.
 	if = {
 		limit = {
+			is_year = 1750
+		}
+
+		multiply_variable = {
+			which = intscore_pvp_loss
+			value = 16
+		}
+	}
+
+	# 1700-1749: valore base x12.
+	else_if = {
+		limit = {
 			is_year = 1700
+		}
+
+		multiply_variable = {
+			which = intscore_pvp_loss
+			value = 12
+		}
+	}
+
+	# 1650-1699: valore base x8.
+	else_if = {
+		limit = {
+			is_year = 1650
+		}
+
+		multiply_variable = {
+			which = intscore_pvp_loss
+			value = 8
+		}
+	}
+
+	# 1600-1649: valore base x4.
+	else_if = {
+		limit = {
+			is_year = 1600
 		}
 
 		multiply_variable = {
@@ -28,10 +67,10 @@ intscore_apply_pvp_loss = {
 		}
 	}
 
-	# Dal 1600 al 1699: valore base x2.
+	# 1550-1599: valore base x2.
 	else_if = {
 		limit = {
-			is_year = 1600
+			is_year = 1550
 		}
 
 		multiply_variable = {

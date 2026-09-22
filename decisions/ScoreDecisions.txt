@@ -56,6 +56,7 @@ check_standard_victory_provinces = {
 
 			################### FRANCE
 			province_id = 174 # BORDEAUX
+			province_id = 192 # DIJONNAIS
 
 			################### IBERIA
 			province_id = 213 # BARCELONA
@@ -73,6 +74,7 @@ check_standard_victory_provinces = {
 			province_id = 85   # KOLN
 			province_id = 1874 # BREMEN
 			province_id = 45   # LUBECK
+			province_id = 4742 # GOSLAR
 
 			################### SOUTH GERMANY
 			province_id = 75   # STRASBOURG
@@ -187,13 +189,11 @@ check_standard_victory_provinces = {
 			province_id = 4064 # BUGANDA
 
 			################### HORN OF AFRICA
-			province_id = 1224 # GONDER
 			province_id = 1205 # MOGADISHU
 
 			################################################# INDIA
 
 			################### HINDUSTAN
-			province_id = 522  # DELHI
 			province_id = 507  # LAHORE
 			province_id = 2095 # VARANASI
 
@@ -308,7 +308,9 @@ check_important_victory_provinces = {
 
 
 			################################################# AFRICA
-
+			################### HORN OF AFRICA
+			province_id = 1224 # GONDER
+			
 			################### MAGHREB
 			province_id = 343  # FEZ
 
@@ -318,6 +320,10 @@ check_important_victory_provinces = {
 			################################################# ASIA
 			################### KHORASAN
 			province_id = 454 # SAMARKAND
+
+			################################################# INDIA
+			################### HINDUSTAN
+			province_id = 522  # DELHI
 
 			################################################# INDOCHINA AND EAST INDIES
 

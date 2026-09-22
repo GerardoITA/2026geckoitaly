@@ -54,6 +54,7 @@ intscore_score_valid_provinces = {
 		################### FRANCE
 			intscore_score_single_province = { PROVINCE = 183 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # PARIS
 			intscore_score_single_province = { PROVINCE = 174 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BORDEAUX
+			intscore_score_single_province = { PROVINCE = 192 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DIJONNAIS
 
 		################### IBERIA
 			intscore_score_single_province = { PROVINCE = 217 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # MADRID
@@ -76,6 +77,7 @@ intscore_score_valid_provinces = {
 			intscore_score_single_province = { PROVINCE = 1874 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BREMEN
 			intscore_score_single_province = { PROVINCE = 45   BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LUBECK
 			intscore_score_single_province = { PROVINCE = 50   BASE = 2 MULTIPLIER = $MULTIPLIER$ } # BRANDENBURG
+			intscore_score_single_province = { PROVINCE = 4742 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GOSLAR
 
 		################### SOUTH GERMANY
 			intscore_score_single_province = { PROVINCE = 75   BASE = 1 MULTIPLIER = $MULTIPLIER$ } # STRASBOURG
@@ -200,13 +202,13 @@ intscore_score_valid_provinces = {
 		intscore_score_single_province = { PROVINCE = 4064 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BUGANDA
 
 		################### HORN OF AFRICA
-		intscore_score_single_province = { PROVINCE = 1224 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GONDER
+		intscore_score_single_province = { PROVINCE = 1224 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # GONDER
 		intscore_score_single_province = { PROVINCE = 1205 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # MOGADISHU
 
 	################################################# INDIA
 
 		################### HINDUSTAN
-		intscore_score_single_province = { PROVINCE = 522  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DELHI
+		intscore_score_single_province = { PROVINCE = 522  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # DELHI
 		intscore_score_single_province = { PROVINCE = 507  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LAHORE
 		intscore_score_single_province = { PROVINCE = 2095 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # VARANASI
 

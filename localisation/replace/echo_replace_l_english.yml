@@ -110,7 +110,8 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  bertus_changes.6032.a:0 "Damn it!"
 
 #ideas
- 
+ otto_per_mille:0 "Knights Templar"
+ desc_otto_per_mille:0 "By supporting elite warrior orders and combining religious zeal with rigorous battlefield training, we can field troops capable of delivering devastating charges and breaking the enemy's morale."
  vassal_taxation_policy:0 "Sword Techniques"
  vassal_taxation_policy_1:0 "Sword Techniques II"
  vassal_taxation_policy_2:0 "Sword Techniques III"

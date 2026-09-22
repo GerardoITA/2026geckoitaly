@@ -1026,6 +1026,7 @@ theocracy_gov_ideas = {
 	}
 	friends_in_high_places = {
 		leader_cost = -0.15
+		special_unit_forcelimit = 0.1
 	}
 	flesh_is_weak = {
 		morale_damage = 0.15

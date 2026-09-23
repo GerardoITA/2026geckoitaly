@@ -710,6 +710,7 @@ mongol_kurultai = {
 	}
 	
 	horde_unity = 1
+	meritocracy = 1
 	legitimacy = 1
 }
 

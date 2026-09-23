@@ -7,6 +7,7 @@ X_CRI_reform_1 = {
 	}
 	emperor = {
 		meritocracy = 0.5
+		horde_unity = 0.5
 		imperial_mandate = 0.1
 	}
 	on_effect = {

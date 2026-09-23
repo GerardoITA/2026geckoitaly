@@ -4317,6 +4317,7 @@ the_sacred_edict = {
 
 mch_sacred_mountain = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 	legitimacy = 0.5
 }
 
@@ -4383,6 +4384,7 @@ reorganized_mongols = {
 genghis_khan_reborn = {
 	prestige = 1
 	horde_unity = 1
+	meritocracy = 1
 }
 
 # Japanese Missions
@@ -8999,6 +9001,7 @@ mjz_formalized_confucian_practices_modifier = {
 }
 mjz_horde_diplomatic_ties_modifier = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 }
 mjz_hordesons_modifier = { 
 	special_unit_forcelimit = 0.1
@@ -9093,6 +9096,7 @@ chi_rising_dynasty_modifier2 = {
 	devotion = 1 
 	republican_tradition = 0.3
 	horde_unity = 1 
+	meritocracy = 1
 	all_estate_loyalty_equilibrium = 0.05
 }
 era_of_the_great_dragon_modifier = {
@@ -14017,34 +14021,40 @@ hordes_fall_of_china = {
 
 hordes_khan_of_khans = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 	envoy_travel_time = -0.15
 }
 
 hordes_khan_of_khans_1 = {
 	horde_unity = 1
+	meritocracy = 1
 	envoy_travel_time = -0.15
 	movement_speed = 0.1
 }
 
 hordes_khan_of_khans_2 = {
 	horde_unity = 1
+	meritocracy = 1
 	envoy_travel_time = -0.25
 	movement_speed = 0.1
 }
 
 hordes_return_of_the_mongols_moghulistan = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 	envoy_travel_time = -0.15
 }
 
 hordes_return_of_the_mongols_moghulistan_1 = {
 	horde_unity = 1
+	meritocracy = 1
 	envoy_travel_time = -0.15
 	movement_speed = 0.1
 }
 
 hordes_return_of_the_mongols_moghulistan_2 = {
 	horde_unity = 1
+	meritocracy = 1
 	envoy_travel_time = -0.25
 	movement_speed = 0.1
 }
@@ -14079,6 +14089,7 @@ tatars_raiding_traditions = {
 
 hordes_pax_mongolica = {
     horde_unity = 1
+	meritocracy = 1
     envoy_travel_time = -0.35
     movement_speed = 0.1
     loot_amount = 0.5
@@ -14122,6 +14133,7 @@ hordes_new_great_khan = {
 
 hordes_followers_of_tengri = {
 	horde_unity = 1
+	meritocracy = 1
 	raze_power_gain = 0.15
 }
 

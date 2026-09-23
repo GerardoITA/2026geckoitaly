@@ -83,6 +83,7 @@ great_mongol_state_reform = {
 
 	modifiers = {
 		horde_unity = 1
+		meritocracy = 1
 		global_manpower_modifier = 0.2
 		land_forcelimit_modifier = 0.2
 		loot_amount = 0.50
@@ -632,6 +633,7 @@ horde_tribal_unity_reform = {
 	}
 	modifiers = {
 		horde_unity = 2
+		meritocracy = 2
 	}
 	ai = {
 		factor = 2

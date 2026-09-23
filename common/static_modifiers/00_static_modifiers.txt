@@ -585,7 +585,7 @@ base_values = {
 	vassal_income = 0.15
 	horde_unity = -2
 	devotion = -0.5
-	meritocracy = -1
+	meritocracy = -2
 	governing_capacity = 200
 	num_accepted_cultures = 2
 	monthly_splendor = 1
@@ -1004,6 +1004,7 @@ negative_karma = {
 # Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
 country_development = {
 	horde_unity = -3
+	meritocracy = -3
 }
 
 # Multiplied by current Legitimacy - 50
@@ -1099,6 +1100,7 @@ recovery_motivation = {
 	navy_tradition = 1
 	global_unrest = -5
 	horde_unity = 10
+	meritocracy = 10
 }
 
 luck = {
@@ -1447,6 +1449,7 @@ power_projection = {
 	legitimacy = 0.5
 	devotion = 0.5
 	horde_unity = 0.5
+	meritocracy = 0.5
 	republican_tradition = 0.2
 }
 
@@ -2031,6 +2034,7 @@ ismaili_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	horde_unity = 1
+	meritocracy = 1
 	legitimacy = 1
 	republican_tradition = 0.5
 	devotion = 1

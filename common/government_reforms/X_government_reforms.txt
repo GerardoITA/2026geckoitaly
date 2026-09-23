@@ -24,6 +24,7 @@ X_CRI_great_tatar_state_reform = {
 	
 	modifiers = {
 		meritocracy = 0.25
+		horde_unity	= 0.25
 		movement_speed = 0.1
 		available_province_loot = 0.25
 		years_of_nationalism = -5
@@ -91,6 +92,7 @@ X_CRI_great_tatar_state_reform_2 = {
 	
 	modifiers = {
 		meritocracy = 0.25
+		horde_unity	= 0.25
 		movement_speed = 0.1
 		available_province_loot = 0.25
 		governing_capacity = 150
@@ -132,6 +134,7 @@ great_mongol_state_reform_EOC_version = {
 	lock_level_when_selected = yes
 	modifiers = {
 		meritocracy = 0.25
+		horde_unity	= 0.25
 		global_manpower_modifier = 0.2
 		land_forcelimit_modifier = 0.2
 		loot_amount = 0.50

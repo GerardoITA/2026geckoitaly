@@ -4633,6 +4633,7 @@ MGE_ideas = {
 		tolerance_heathen = 3
 		tolerance_heretic = 3
 		horde_unity  = 1
+		meritocracy = 1
 	}
 }
 

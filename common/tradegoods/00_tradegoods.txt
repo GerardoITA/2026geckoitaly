@@ -1121,7 +1121,7 @@ chinaware = {
 		devotion = 0.25
 		horde_unity = 0.25
 		republican_tradition = 0.12
-		meritocracy = 0.1
+		meritocracy = 0.25
 	}
 	province = {
 		local_autonomy = -0.1

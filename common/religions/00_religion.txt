@@ -1039,6 +1039,7 @@ muslim = {
 			picture = "GFX_icon_muslim_school_ismaili"
 
 			horde_unity = 1
+			meritocracy = 1
 			legitimacy = 1
 			republican_tradition = 0.2
 			devotion = 1

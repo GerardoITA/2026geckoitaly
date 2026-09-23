@@ -5026,7 +5026,7 @@ estate_action_SEEK_SUPPORT_OF_CLERGY_CHURCH = {
 	add_republican_tradition = -3
 	add_devotion = -5
 	add_horde_unity = -5
-	add_meritocracy = -2
+	add_meritocracy = -5
 	change_piety_effect = {
 		amount = 0.05
 	}
@@ -5845,6 +5845,7 @@ estate_action_RAISE_HOST_NOMADIC_TRIBES = {
 }
 estate_action_REDISTRIBUTE_HORDE_AUTHORITY_TRIBES = {
 	add_horde_unity = -5
+	add_meritocracy = -5
 	add_estate_loyalty = {
 		estate = estate_nomadic_tribes
 		loyalty = 15

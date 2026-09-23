@@ -390,6 +390,7 @@ per_king_of_kings_modifier = {
 	republican_tradition = 0.35
 	devotion = 1 
 	horde_unity = 1 
+	meritocracy = 1
 }
 per_conquest_of_baghdad_modifier = {
 	tolerance_own = 1 

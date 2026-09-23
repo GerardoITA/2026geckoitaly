@@ -1412,6 +1412,7 @@ controls_tea_trade = {
 diwani_script = {
 	legitimacy = 1
 	horde_unity = 1
+	meritocracy = 1
 }
 
 dutch_masters = {
@@ -7903,6 +7904,7 @@ tengri_local_plight = {
 
 tengri_shamans_spurned = {
 	horde_unity = -0.25
+	meritocracy = -0.25
 	legitimacy = -0.25
 	republican_tradition = -0.125
 	devotion = -0.25
@@ -7919,6 +7921,7 @@ tengri_ibadi_scholars = {
 	legitimacy = 0.5
 	devotion = 0.5
 	horde_unity = 0.5
+	meritocracy = 0.5
 	republican_tradition = 0.25
 }
 
@@ -7926,6 +7929,7 @@ tengri_sufi_teacher = {
 	devotion = 0.5
 	legitimacy = 0.5
 	horde_unity = 0.5
+	meritocracy = 0.5
 	stability_cost_modifier = 0.15
 }
 
@@ -7936,11 +7940,13 @@ tengri_qadi = {
 
 tengri_stood_up_for_yassa = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 	global_autonomy = 0.02
 }
 
 tengri_devout_muslim = {
 	horde_unity = -0.5
+	meritocracy = -0.5
 	legitimacy = -0.5
 	republican_tradition = -0.25
 	devotion = -0.25
@@ -8018,6 +8024,7 @@ tengri_devout_christian_ruler = {
 	prestige = 1
 	diplomatic_reputation = 1
 	horde_unity = -0.5
+	meritocracy = -0.5
 	legitimacy = -0.5
 	devotion = -0.3
 	republican_tradition = -0.3
@@ -8088,6 +8095,7 @@ tengri_shiite_settled_in_capital = {
 support_of_the_khojas = {
 	legitimacy = 1
 	horde_unity = 1
+	meritocracy = 1
 	stability_cost_modifier = 0.15
 }
 
@@ -8236,6 +8244,7 @@ legitimacy_defended = {
 
 horde_unity_defended = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 	nomadic_tribes_loyalty_modifier = 0.05
 }
 
@@ -8351,6 +8360,7 @@ venetian_terra_firma = {
 defended_against_shybanids = {
 	legitimacy = 1
 	horde_unity = 1
+	meritocracy = 1
 }
 
 afghanistan_secured_mug = {
@@ -8585,6 +8595,7 @@ government_reform_feudalism = {
 	global_institution_spread = 0.1
 	legitimacy = -0.5
 	horde_unity = -0.5
+	meritocracy = -0.5
 	republican_tradition = -0.25
 	devotion = -0.3
 }
@@ -8884,6 +8895,7 @@ persecuting_infidels = {
 grand_ancestral_tomb = {
 	legitimacy = 1
 	horde_unity = 1
+	meritocracy = 1
 	republican_tradition = 0.5
 	devotion = 0.5
 	local_autonomy = 0.08
@@ -8903,6 +8915,7 @@ rebuilding_efforts = {
 ancestral_tomb = {
 	legitimacy = 0.5
 	horde_unity = 0.5
+	meritocracy = 0.5
 	republican_tradition = 0.25
 	devotion = 0.25
 	local_autonomy = 0.08
@@ -8911,6 +8924,7 @@ ancestral_tomb = {
 crumbling_ancestral_tomb = {
 	legitimacy = -0.25
 	horde_unity = -0.25
+	meritocracy = -0.25
 	republican_tradition = -0.1
 	devotion = -0.1
 }
@@ -12240,6 +12254,7 @@ maj_harmed_trade_relations = {
 
 a_moving_city = {
 	horde_unity = 0.5
+	meritocracy = 0.5
 	caravan_power = 0.1
 	trade_range_modifier = 0.25
 }
@@ -12271,6 +12286,7 @@ taming_provinces = {
 	reduced_liberty_desire	= 10
 	movement_speed = 0.15
 	horde_unity = 1
+	meritocracy = 1
 }
 
 # Theocracy Modifiers

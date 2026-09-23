@@ -1549,6 +1549,7 @@ horde_gov_ideas = {
 	horde_loyalty = {
 		global_unrest = -1
 		horde_unity = 0.5
+		meritocracy = 0.5
 	}
 	watchers_of_the_silk_road = {	
 		caravan_power = 0.20

@@ -944,6 +944,7 @@ POL_return = {
 	legitimacy = 1
 	republican_tradition = 1
 	horde_unity = 1
+	meritocracy = 1
 	devotion = 1
 	ae_impact = -0.2
 }

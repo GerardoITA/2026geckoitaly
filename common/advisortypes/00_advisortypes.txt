@@ -92,6 +92,38 @@ philosopher = {
 		}
 		modifier = { tolerance_heretic = 1 }
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_government_attribute = advisors_generate_innovativeness 
+			}
+		}
+		modifier = {
+			yearly_innovativeness = 0.02 
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_government_mechanic = persian_influence_mechanic
+			}
+		}
+		modifier = {
+			monthly_persian_influence = 0.1
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -134,6 +166,16 @@ natural_scientist = {
 		}
 		modifier = {
 			yearly_innovativeness = 0.02 
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
 		}
 	}
 	
@@ -241,7 +283,7 @@ artist = {
 			}
 		}
 		modifier = {
-			monthly_splendor = 3
+			monthly_splendor = 1
 		}
 	}
 
@@ -372,7 +414,7 @@ treasurer = {
 			}
 		}
 		modifier = {
-			monthly_splendor = 3
+			monthly_splendor = 1
 		}
 	}
 	
@@ -391,6 +433,16 @@ treasurer = {
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
 		modifier = { idea_cost = -0.01 }
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = MUG_treasurer_upgrade_flag
+			}
+		}
+		modifier = {
+			yearly_corruption = -0.05
+		}
 	}
 
 	skill_scaled_modifier = {
@@ -514,6 +566,17 @@ theologian = {
 		}
 		modifier = {
 			yearly_innovativeness = 0.02 
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
 		}
 	}
 	
@@ -648,6 +711,16 @@ master_of_mint = {
 			yearly_innovativeness = 0.02 
 		}
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
+		}
+	}
 	
 	# Bonus
 	global_own_trade_power = 0.15
@@ -764,6 +837,28 @@ inquisitor = {
 	skill_scaled_modifier = {
 		trigger = { owner = {  has_country_modifier = mam_adm_advisors_generate_idea_cost_modifier  } }
 		modifier = { idea_cost = -0.01 }
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = {
+				has_country_flag = ven_splendor_flag
+			}
+		}
+		modifier = {
+			monthly_splendor = 1
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = azt_inquisitor_buff_flag 
+			}
+		}
+		modifier = { 
+			monthly_blood = 0.02 
+		}
 	}
 
 	skill_scaled_modifier = {
@@ -964,6 +1059,56 @@ statesman = {
 			trade_efficiency = 0.02
 		}
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_government_attribute = enables_statesman_autonomy_reduction }
+		}
+		modifier = {
+			global_autonomy = -0.01
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_country_flag = GER_statesmen_abso_flag }
+		}
+		modifier = {
+			yearly_absolutism = 0.4
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_country_flag = GER_statesmen_morale_flag }
+		}
+		modifier = {
+			land_morale = 0.02
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_country_flag = GER_statesmen_autonomy_flag }
+		}
+		modifier = {
+			global_autonomy = -0.02
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_country_flag = ITA_cavour_alive }
+		}
+		modifier = {
+			development_cost = -0.01
+			global_trade_goods_size_modifier = 0.01
+			reform_progress_growth = 0.1
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { has_country_flag = boh_empower_diplo_advisors }
+		}
+		modifier = {
+			reasons_to_elect = 5
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -1093,6 +1238,38 @@ trader = {
 		}
 		modifier = {
 			yearly_innovativeness = 0.02 
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = oma_trader_advisor_trade_influence_buff_flag
+			}
+		}
+		modifier = {
+			monthly_arabic_trade_influence_power = 0.02
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = feo_merchant_loyalty_per_trader_level
+			}
+		}
+		modifier = {
+			burghers_loyalty_modifier = 0.02
+		}
+	}
+
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = GER_upgrade_traders_flag 
+			}
+		}
+		modifier = { 
+			global_own_trade_power = 0.05
 		}
 	}
 	
@@ -1333,6 +1510,12 @@ colonial_governor = {
 ######################################################
 diplomat = {
 	monarch_power = DIP
+
+
+		
+	# Bonus
+	improve_relation_modifier = 0.2
+
 	skill_scaled_modifier = {
 		trigger = {
 			owner = {
@@ -1355,9 +1538,39 @@ diplomat = {
 			yearly_innovativeness = 0.02 
 		}
 	}
-	
-	# Bonus
-	improve_relation_modifier = 0.2
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_government_attribute = GER_buff_diplomat_advisor_for_rhenish 
+			}
+		}
+		modifier = { 
+			accept_vassalization_reasons = 3
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = boh_empower_diplo_advisors 
+			}
+		}
+		modifier = {
+			reasons_to_elect = 5
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = hab_diplomat_grants_ae_impact 
+			}
+		}
+		modifier = {
+			ae_impact = -0.02
+		}
+	}
+
 	
 	skill_scaled_modifier = {
 		trigger = {
@@ -1546,6 +1759,27 @@ army_reformer = {
 		modifier = { meritocracy = 0.25 }
 	}
 
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { 
+			army_tradition_decay = -0.003 
+		}
+	}
+
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = ven_offensive_reward_flag 
+			}
+		}
+		modifier = {
+			siege_ability = 0.03
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1592,6 +1826,27 @@ army_organiser = {
 		}
 		modifier = { 
 			mercenary_cost = -0.03
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = moghulistan_organizer_flag
+			}
+		}
+		modifier = { 
+			available_province_loot = 0.05
+		}
+	}
+
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { 
+			army_tradition_decay = -0.003 
 		}
 	}
 	
@@ -1665,6 +1920,27 @@ commandant = {
 		}
 	}
 	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_flag = ven_offensive_reward_flag 
+			}
+		}
+		modifier = {
+			siege_ability = 0.03
+		}
+	}
+
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { 
+			army_tradition_decay = -0.003 
+		}
+	}
+	skill_scaled_modifier = {
 		trigger = { 
 			owner = { 
 				is_emperor_of_china = yes 
@@ -1734,6 +2010,16 @@ quartermaster = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { 
+			army_tradition_decay = -0.003 
+		}
+	}
 
 	chance = {
 		factor = 1
@@ -1796,6 +2082,17 @@ recruitmaster = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { 
+			army_tradition_decay = -0.003 
+		}
+	}
+
 
 	chance = {
 		factor = 1
@@ -1933,6 +2230,16 @@ grand_captain = {
 			}
 		}
 		modifier = { meritocracy = 0.25 }
+	}
+	skill_scaled_modifier = { 
+		trigger = { 
+			owner = { 
+				has_country_flag = hsn_has_scaling_advisors
+			}
+		}
+		modifier = { 
+			army_tradition_decay = -0.003 
+		}
 	}
 
 	chance = {

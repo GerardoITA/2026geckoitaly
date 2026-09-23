@@ -2977,7 +2977,6 @@ WoC_mughals_5 = {
 				num_of_artillery = 80
 				artillery_fraction = 0.33
 			}
-			is_ahead_of_time_in_technology = { tech = mil }
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"

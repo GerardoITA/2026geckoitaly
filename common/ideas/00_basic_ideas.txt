@@ -788,6 +788,8 @@ maritime_ideas = {
 
 	bonus = {
 		sea_repair = yes
+		has_man_of_war = yes
+		allowed_man_of_war_fraction = 0.05
 	}
 
 	merchant_adventures = {

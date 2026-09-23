@@ -74,8 +74,6 @@ wooden_wall = {
 	cost = 0.1
 	country_modifier = {
 		own_coast_naval_combat_bonus = 1.0
-		has_man_of_war = yes
-		allowed_man_of_war_fraction = 0.1
 	}
 	effect = {}
 	removed_effect = {}
@@ -103,7 +101,7 @@ grand_armada = {
 	country_modifier = {
 		allowed_marine_fraction = 0.25
 		leader_naval_manuever = 1
-		treasure_fleet_income = 0.25
+		treasure_fleet_income = 0.25	
 	}
 	effect = {}
 	removed_effect = {}
@@ -231,8 +229,6 @@ dutch_trade_fleet = {
 	country_modifier = {
 		global_ship_trade_power = 0.25
 		range = 0.25
-		has_man_of_war = yes
-		allowed_man_of_war_fraction = 0.1
 	}
 	effect = {}
 	removed_effect = {}

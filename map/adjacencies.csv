@@ -47,16 +47,10 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
 6192;4560;sea;1295;-1;-1;-1;-1;Alicante-Ibiza
 366;4565;sea;1471;-1;-1;-1;-1;Canaries
-12;14;sea;;2980;1631;2975;1631;Sjaelland-Fyn
-14;4142;sea;1258;2965;1635;2963;1641;Fyn-Aarhus
-14;4149;sea;;-1;-1;-1;-1;Fyn-Kolding
-14;1983;sea;1258;2975;1618;2978;1619;Fyn-Lolland
-12;1983;sea;1258;2983;1619;2986;1626;Sjaelland-Lolland
 123;124;sea;1307;3050;1286;3045;1284;Calabria-Messina
 151;316;sea;;3261;1343;3258;1344;Thrace-Bithynia
 911;945;sea;1662;1479;1656;1478;1650;Menominee-Michigan
 1;1930;sea;1928;3099;1736;3111;1740;Stockholm-Åland
-4165;1981;sea;1257;-1;-1;-1;-1;G�inge-Bornholm
 3;25;sea;1255;-1;-1;-1;-1;Kalmar-Gotland
 1930;27;sea;1253;3131;1745;3140;1750;Åland-Finland
 142;144;sea;1311;3115;1314;3121;1317;Janina-Corfu
@@ -127,11 +121,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4351;4352;sea;1397;-1;-1;-1;-1;Buglas-Cebu
 4699;4698;sea;1312;-1;-1;-1;-1;Arta-Cephalonia
 47;4745;sea;1257;-1;-1;-1;-1;Rugen-Stralsund
-1981;4745;sea;1257;-1;-1;-1;-1;Rugen-Bornholm
 2994;48;sea;1257;-1;-1;-1;-1;Wolgast-Kolberg
 
 1984;5003;sea;1259;-1;-1;-1;-1;Nordjylland-Aalborg
-5004;6;sea;;-1;-1;-1;-1;Skane-Copenhagen
 6000;2447;sea;1324;-1;-1;-1;-1;Kerch-Matrika
 28;36;sea;1254;-1;-1;-1;-1;Nyland-Reval
 ###X###
@@ -149,6 +141,22 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 164;320;sea;1319;-1;-1;-1;-1;Naxos-Rhodes
 4700;6123;sea;1319;-1;-1;-1;-1;Lesbos-Lemnos
 #146;3003;sea;1319;3174;1294;3175;1294;Athens - Euboea
+
+#danish straights
+4165;1981;sea;1257;-1;-1;-1;-1;G�inge-Bornholm
+1981;4745;sea;1257;-1;-1;-1;-1;Rugen-Bornholm
+#danish straights that are removed
+#5004;6;sea;;-1;-1;-1;-1;Skane-Copenhagen
+#12;14;sea;;2980;1631;2975;1631;Sjaelland-Fyn
+#14;4142;sea;1258;2965;1635;2963;1641;Fyn-Aarhus
+#14;4149;sea;;-1;-1;-1;-1;Fyn-Kolding
+#14;1983;sea;1258;2975;1618;2978;1619;Fyn-Lolland
+#12;1983;sea;1258;2983;1619;2986;1626;Sjaelland-Lolland
+
+
+
+
+
 
 631;627;sea;1360;-1;-1;-1;-1;spiceislands
 4799;2714;sea;1359;-1;-1;-1;-1;spiceislands

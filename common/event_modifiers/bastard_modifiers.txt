@@ -224,12 +224,12 @@ special_forces_act_2_heavy_infantry_bonus = {
 
 
 otto_per_mille_global_negation = {
-	morale_damage = -0.10
+	cavalry_power = -0.10
 	shock_damage = -0.15
 }
 
 otto_per_mille_cossack_bonus = {
 	is_cossack_modifier = yes
-	morale_damage = 0.10
+	cavalry_power = 0.10
 	shock_damage = 0.15
 }

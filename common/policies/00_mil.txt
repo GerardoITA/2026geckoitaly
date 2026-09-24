@@ -159,7 +159,7 @@ otto_per_mille = {
 	}
 
 	is_cossack_modifier = yes
-	morale_damage = 0.10
+	cavalry_power = 0.1
 	shock_damage = 0.15
 	
 	effect = {

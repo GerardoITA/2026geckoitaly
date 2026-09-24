@@ -72,3 +72,8 @@ echo.22.a:0 "Gems are truly outrageous."
 ruler_failsafe.1.t:0 "Ottoman Failsafe"
 ruler_failsafe.1.d:0 "The premature death of Mehmed II threatens the future of the Ottoman state. A capable successor must take the throne to preserve the Empire's rise."
 ruler_failsafe.1.a:0 "Dehmem shall rule."
+
+###RULER FAILSAFE
+ruler_failsafe.2.t:0 "Polish Failsafe"
+ruler_failsafe.2.d:0 "The premature death of our king threatens the future of the Polish state. A capable successor must take the throne to preserve our country's rise."
+ruler_failsafe.2.a:0 "Polbocs shall rule."

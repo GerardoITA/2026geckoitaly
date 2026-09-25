@@ -21,7 +21,8 @@ kaffa_slave_market = {
 		owned_by = ROOT
 		controlled_by = ROOT
 	}
-	trade_goods_size = 5
+	trade_goods_size = 3
+	province_trade_power_value = 30
 	#Province scope
 	on_activation = {
 	}

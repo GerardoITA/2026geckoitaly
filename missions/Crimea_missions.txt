@@ -21,12 +21,6 @@ X_CRI_slot_1 = {
 		position = 1
 		trigger = {
 			army_size_percentage = 0.75
-			1322 = {
-				trade_share = {
-					country = ROOT
-					share = 45
-				}
-			}
 			OR = {
 				is_year = 1500
 				custom_trigger_tooltip = { 
@@ -213,6 +207,7 @@ X_CRI_slot_2 = {
 			create_admiral = { tradition = 50 }
 			6001 = {
 				change_trade_goods = slaves
+				add_province_triggered_modifier = kaffa_slave_market
 			}
 			add_estate_loyalty = {
 				estate = estate_nomadic_tribes
@@ -440,6 +435,7 @@ X_CRI_slot_3 = {
 			}
 			6213 = {
 				change_trade_goods = slaves
+				add_province_triggered_modifier = kaffa_slave_market
 				X_center_of_trade_effect = { cost_equivalency_max_lvl_2 = yes }
 				rename_capital = "Qarasubazar"
 			}

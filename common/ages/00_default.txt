@@ -601,9 +601,9 @@ age_of_absolutism = {
 		decrease_autonomy_command = 0
 		strengthen_government = 2
 		
-		increase_autonomy_command = -2
+		increase_autonomy_command = -1
 		debase_currency = -0
-		execute_rebel_acceptance_command = -10
+		execute_rebel_acceptance_command = -1
 		automatic_seat_in_parliament = 0
 		manual_seat_in_parliament = 0
 		war_exhaustion = 0

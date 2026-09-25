@@ -16,9 +16,9 @@ add_truce_with = GEN
 	monarch = {
 		name = "Haji I"
 		dynasty = Giray
-		birth_date = 1410.1.1
+		birth_date = 1425.1.1
 		adm = 4                                                         
-		dip = 4
+		dip = 6
 		mil = 4
 	}
 }

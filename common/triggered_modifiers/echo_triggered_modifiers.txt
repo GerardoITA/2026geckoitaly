@@ -642,3 +642,31 @@ help_im_getting_vultured = {
 	max_hostile_attrition = 5
 	
 }
+
+fars_ardabil_attack_bonus = {
+	potential = {
+		OR = {
+			tag = FRS
+			tag = ARL
+		}
+	}
+
+	trigger = {
+		NOT = {
+			is_year = 1470
+		}
+
+		OR = {
+			is_in_war = {
+				attackers = FRS
+				defenders = ARL
+			}
+			is_in_war = {
+				attackers = ARL
+				defenders = FRS
+			}
+		}
+	}
+
+	global_attacker_dice_roll_bonus = 1
+}

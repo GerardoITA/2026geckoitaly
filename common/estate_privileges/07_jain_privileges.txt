@@ -337,7 +337,11 @@ estate_jains_conscientious_objection = {
 		num_of_loans = 10
 	}
 
-	modifier = {can_not_declare_war = yes}
+	modifier = { 
+		all_power_cost = 0.05 
+		production_efficiency = 0.05
+		can_not_declare_war = yes
+	}
 	
 	benefits = {
 		interest = -0.75

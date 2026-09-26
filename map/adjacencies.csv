@@ -5,7 +5,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1101;1248;sea;1621;-1;-1;-1;-1;Hollhavai-Maldives
 1248;4410;sea;1340;-1;-1;-1;-1;Maldives-Venad
 1101;1999;sea;1621;-1;-1;-1;-1;Hollhavai-Cocos-Islands
-1999;1998;sea;1624;-1;-1;-1;-1;Cocos-Islands-Christmas-Island
+1999;1998;sea;1642;-1;-1;-1;-1;Cocos-Islands-Christmas-Island
 1998;4790;sea;1353;-1;-1;-1;-1;Christmas-Island-Pangguyanan
 4022;4020;sea;1449;-1;-1;-1;-1;Iboina-Comoros 
 4049;4020;sea;1449;-1;-1;-1;-1;Comoros-Ibo

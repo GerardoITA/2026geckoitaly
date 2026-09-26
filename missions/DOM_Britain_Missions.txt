@@ -2103,7 +2103,7 @@ GBR_missions_3_6 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 241
-				province_id = 4362
+				province_id = 249
 				province_id = 246
 				province_id = 4375
 				province_id = 1861
@@ -2124,7 +2124,7 @@ GBR_missions_3_6 = {
 					trade_goods = coal
 					has_building = furnace
 				}
-				4362 = {
+				249 = {
 					owned_by = ROOT
 					trade_goods = coal
 					has_building = furnace
@@ -2150,7 +2150,7 @@ GBR_missions_3_6 = {
 					owned_by = ROOT
 					num_of_times_improved = 10
 				}
-				4362 = {
+				249 = {
 					owned_by = ROOT
 					num_of_times_improved = 10
 				}

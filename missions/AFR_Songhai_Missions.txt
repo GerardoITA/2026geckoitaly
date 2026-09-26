@@ -37,7 +37,7 @@ songhai_military_slot = {
 		required_missions = { son_competence_in_court }
 		position = 2
 		trigger = {
-			is_monarch_leader = yes
+
 			army_tradition = 30
 			army_professionalism = 0.3
 			army_size_percentage = 1
@@ -112,17 +112,6 @@ songhai_military_slot = {
 		trigger = {
 			army_tradition = 75
 			army_professionalism = 0.8
-			custom_trigger_tooltip = {
-				tooltip = son_modernize_army_tt
-					NOT = {
-					any_country = {
-						technology_group = western
-						ROOT = {
-							NOT = { mil_tech = PREV }	#Checks if no country with western tech has more mil tech than Songhai. Double negations are fun!
-						}
-					}
-				}
-			}
 			num_of_artillery = 20
 			is_in_deficit = no
 		}

@@ -18718,11 +18718,11 @@ nizwa_fort = {
 			factor = 350
 		}
 		province_modifiers = {
-			attrition = 1
-			max_attrition = 1
+		
 		}
 		area_modifier = {
-			
+			local_defensiveness = 25
+			local_garrison_size = 25
 		}
 		country_modifiers = {
 			autonomy_change_time = -0.15
@@ -18742,8 +18742,9 @@ nizwa_fort = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			attrition = 2
-			max_attrition = 2
+			local_defensiveness = 33
+			local_garrison_size = 33
+			local_defender_dice_roll_bonus = 1
 		}
 		region_modifier = { 
 			
@@ -18767,7 +18768,9 @@ nizwa_fort = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			
+			local_defensiveness = 33
+			local_garrison_size = 33
+			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
 			autonomy_change_time = -0.25
@@ -19524,6 +19527,7 @@ schonbrunn_palace = {
 		area_modifier = {}
 		country_modifiers = {
 			diplomats = 1
+			diplomatic_reputation = 1
 		}
 		on_upgraded = {}
 	}
@@ -19533,9 +19537,9 @@ schonbrunn_palace = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_splendor = 1
-			chance_to_inherit = 0.05
+			monthly_splendor = 2
 			diplomats = 1
+			diplomatic_reputation = 2
 		}
 		on_upgraded = {}
 	}
@@ -19545,10 +19549,10 @@ schonbrunn_palace = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_splendor = 2
-			chance_to_inherit = 0.1 
+			monthly_splendor = 4
 			diplomats = 1
-			years_to_integrate_personal_union = -5
+			diplomatic_reputation = 2
+			diplomatic_upkeep = 1
 		}
 		on_upgraded = {}
 	}

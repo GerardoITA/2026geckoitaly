@@ -225,6 +225,15 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+
+				country_event = {
+					id = ideagroups.1
+				}
+			}
 			add_prestige = 25
 			set_country_flag = formed_germany_flag
 		}

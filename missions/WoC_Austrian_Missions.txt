@@ -2676,38 +2676,12 @@ WoC_austria_3_1 = {
 			}
 		} 
 	
-		effect = {  
-			complex_dynamic_effect = {
-				first_custom_tooltip = HAB_IF_AGE_OF_DISCOVERY
-				first_limit = "
-					current_age = age_of_discovery
-				"
-				first_effect = "
-					add_country_modifier_for_age = {
-						name = hab_onwards_for_glory
-						age = age_of_discovery
-						else = \"
-							add_army_tradition_or_mil_power = { amount = 30 }
-							custom_tooltip = SEPERATOR_TOOLTIP
-						\"
-					}
-					
-					add_mil_power = 100
-				"
-				second_custom_tooltip = HAB_IF_NOT_AGE_OF_DISCOVERY
-				second_limit = "
-					NOT = { current_age = age_of_discovery }
-				"
-				second_effect = "
-					add_country_modifier = {
-						name = hab_clinging_onto_past_tales
-						duration = 7300
-					}
-	
-					add_army_tradition_or_mil_power = { amount = 15 }
-				"
+		effect = {
+			add_country_modifier = {
+				name = hab_onwards_for_glory
+				duration = -1
 			}
-		} 
+		}
 	}
 
 	hab_aeiou = {

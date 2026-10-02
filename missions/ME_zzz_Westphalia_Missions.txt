@@ -373,29 +373,20 @@ WES_missions_2 = {
 		required_missions = { }
 		position = 12
 		trigger = {
-			OR = {
-				estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 60
-				}
-				NOT = { has_estate = estate_nobles }
+			
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 90
 			}
+			
 		}
 		effect = {
-			custom_tooltip = WES_if_we_have_loyalty
-			tooltip = {
-				add_country_modifier = {
-					name = WES_the_noble_of_westphalia
-					duration = 9125
-				}
+			
+			add_country_modifier = {
+				name = WES_more_property
+				duration = 3650
 			}
-			custom_tooltip = WES_if_we_have_removed
-			tooltip = {
-				add_country_modifier = {
-					name = WES_more_property
-					duration = 3650
-				}
-			}
+			
 		}
 	}
 

@@ -14405,7 +14405,7 @@ hab_aeiou_modifier = {
 }
 
 hab_onwards_for_glory = {
-	cavalry_shock = 0.5
+	cavalry_shock = 0.2
 	cavalry_flanking = 1
 }
 

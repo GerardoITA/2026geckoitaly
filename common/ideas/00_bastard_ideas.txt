@@ -1554,6 +1554,7 @@ NED_ideas = {
 	}
 	instructie_voor_de_admiraliteiten = {
 		allowed_marine_fraction = 0.25
+		naval_forcelimit_modifier = 0.25
 	}
 	embrace_humanism = {
 		land_morale = 0.1
@@ -3874,7 +3875,7 @@ MSA_ideas = {
 	}
 	msa_advanced_galley_warfare = {
 		galley_power  = 0.25
-		global_naval_engagement_modifier = 0.2
+		global_naval_engagement_modifier = 0.15
 	}
 	msa_expert_haggling = {
 		trade_efficiency = 0.15

@@ -538,7 +538,7 @@ shipyard = {
 	}
 	modifier = {
 		local_sailors_modifier = 1
-		naval_forcelimit = 2
+		naval_forcelimit = 1
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
 		local_ship_cost = -0.1
@@ -1744,7 +1744,7 @@ grand_shipyard = {
 		has_port = yes
 	}
 	modifier = {
-		naval_forcelimit = 2
+		naval_forcelimit = 1
 		ship_recruit_speed = -0.5
 		local_ship_repair = 0.5
 		local_ship_cost = -0.2

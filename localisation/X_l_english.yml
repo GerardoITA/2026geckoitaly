@@ -407,7 +407,7 @@
  X_CRI_mission_3_tt:0 "Event '§YGenoa Cedes Gazaria§!' has happened."
  X_CRI_mission_7_tt:0 "If this mission is completed by having the required relations with §Y[TUR.GetName]§!, you lose half the money."
  X_CRI_mission_8_tt:0 "All provinces in the §YCrimea§! trade node are owned by §Y[Root.GetName]§! or its subjects (including tributaries)."
- X_CRI_mission_9_tt:0 "Every owned province in the §Y[284.GetRegionName]§! gains §G1§! Base Tax and Base Manpower.\nEvery owned province in the areas of Moscow, Vladimir, Ryazan, Oka, Chernigov, Sloboda Ukraine, East Dnieper and West Dnieper will become §YCrimean§!."
+ X_CRI_mission_9_tt:0 "Every owned province in the §YCrimea region§! gains §G1§! Base Tax and Base Manpower.\nEvery owned province in the §YCrimea region§! outside our primary culture group will adopt our primary culture."
  X_CRI_mission_11_tt:0 "A §Ythird§! of the development in §Y[295.GetName]§! will be taken and randomly distributed amongst provinces owned by §Y[Root.GetName]§!.\n§Y[Root.GetName]§! gains §G+1000§!£icon_manpower£ and §Y20.0§!¤ per 1 development of §Y[295.GetName]§!."
  X_CRI_mission_12_tt:0 " provinces in the §Y[282.GetAreaName]§! area, §Y[1974.GetAreaName]§! area, §Y[283.GetAreaName]§! area, §Y[281.GetAreaName]§! area, §Y[280.GetAreaName]§! area, §Y[290.GetAreaName]§! area, and §Y[289.GetAreaName]§! area owned by §Y[Root.GetName]§! or its Subjects."
  X_CRI_mission_16_tt:0 " provinces in the §Y[280.GetRegionName]§! region owned by §Y[Root.GetName]§! or its Subjects."

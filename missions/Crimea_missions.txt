@@ -133,21 +133,10 @@ X_CRI_slot_1 = {
 					limit = { region = crimea_region }
 					add_base_tax = 1
 					add_base_manpower = 1
-				}
-				every_owned_province = {
-					limit = {
-						OR = {
-							area = moscow_area
-							area = vladimir_area
-							area = ryazan_area
-							area = oka_area
-							area = chernigov_area
-							area = sloboda_ukraine_area
-							area = east_dniepr_area
-							area = west_dniepr_area
-						}
+					if = {
+						limit = { NOT = { culture_group = ROOT } }
+						change_culture = ROOT
 					}
-					change_culture = crimean
 				}
 			}
 			every_owned_province = {

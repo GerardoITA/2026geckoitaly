@@ -116,6 +116,7 @@ technology = { #Modern Theocracy
 	allowed_idea_groups = 3
 	theocratic_government = yes
 	governing_capacity = 100
+	administrative_efficiency = 0.025
 }
 
 technology = { #Textile Manufactory
@@ -124,6 +125,7 @@ technology = { #Textile Manufactory
 	
 	#Textile Manufactory
 	textile = yes  
+	administrative_efficiency = 0.025
 }
 
 technology = { #Early Modern Administration
@@ -134,6 +136,7 @@ technology = { #Early Modern Administration
 	administrative_republic	= yes
 	governing_capacity = 100
 	state_house = yes
+	administrative_efficiency = 0.025
 }
 
 technology = { #Improved Drainage
@@ -142,6 +145,7 @@ technology = { #Improved Drainage
 	
 	#Improved Drainage
 	production_efficiency 	=	0.01
+	administrative_efficiency = 0.025
 	
 }
 

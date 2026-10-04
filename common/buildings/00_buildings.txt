@@ -3958,9 +3958,7 @@ armory = {
 					tag = ROOT
 				}
 				type = all
-				has_forcelimit_building_trigger = yes
 				development = 30
-				is_prosperous = yes
 			}
 	}
 	

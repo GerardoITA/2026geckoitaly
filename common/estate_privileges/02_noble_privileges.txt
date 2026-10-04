@@ -2389,19 +2389,22 @@ estate_nobles_rynda = {
 	
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = { has_absolutism_reduction_for_estate_privileges = yes }
+		modifier = { max_absolutism = 1 }
+	}
+
+	benefits = {
+		infantry_cost = -0.2
+		infantry_power = 0.1
+	}
+
 	on_granted = {
 		custom_tooltip = estate_nobles_rynda_at
-		custom_tooltip = SCALES_WITH_INFLUENCE_TT
-
-	}
-
-	influence_scaled_conditional_modifier = {
-		modifier = { infantry_cost = -0.2 }
-		modifier = { infantry_power = 0.1 }
 	}
 	
-	mechanics = {  }
+	mechanics = { }
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -2413,20 +2416,23 @@ estate_nobles_landed_army = {
 	
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = { has_absolutism_reduction_for_estate_privileges = yes }
+		modifier = { max_absolutism = 1 }
+	}
+
 	benefits = {
 		cav_to_inf_ratio = 0.1
 		cavalry_cost = -0.1
+		cavalry_power = 0.1
 	}
+
 	on_granted = {
 		custom_tooltip = estate_nobles_landed_army_tt
-		custom_tooltip = SCALES_WITH_INFLUENCE_TT
 	}
-	influence_scaled_conditional_modifier = {
-		trigger = { always = yes }
-		modifier = { cavalry_power = 0.1 }
-	}
-	mechanics = {  }
+
+	mechanics = { }
+
 	ai_will_do = {
 		factor = 1
 	}

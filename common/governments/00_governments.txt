@@ -886,6 +886,7 @@ republic = {
 		}
 		federalism_vs_unitarism_vs_confederacy = {
 			reforms = {
+				centralize_reform
 				provincial_governments_reform
 				administrative_divisions_reform
 				union_of_states_reform

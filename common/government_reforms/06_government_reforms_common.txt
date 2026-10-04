@@ -46,11 +46,16 @@ united_cantons_reform = {
 	custom_attributes = {
 		mercs_do_not_cost_army_professionalism = yes
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 parliamentary_reform = {
 	icon = "judge"
-	lock_level_when_selected = yes
 	modifiers = {
 		global_unrest = -1
 	}
@@ -67,6 +72,7 @@ parliamentary_reform = {
 	}
 	
 	trigger = {		
+		gecko_can_adopt_parliament_trigger = yes
 		if = {
 			limit = {
 				OR = {
@@ -129,11 +135,13 @@ parliamentary_reform = {
 	}
 	post_removed_effect = {
 	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 restoration_of_the_senate_reform = {
 	icon = "restoration_of_the_senate_reform"
-	lock_level_when_selected = yes
 	modifiers = {
 		global_unrest = -2
 		max_possible_parliament_seats = 8
@@ -149,6 +157,7 @@ restoration_of_the_senate_reform = {
 	}
 	
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		NOT = { has_reform = elective_monarchy }
 		NOT = { has_reform = polish_great_sejm }
 		NOT = { has_reform = polish_elective_monarchy }
@@ -196,6 +205,9 @@ restoration_of_the_senate_reform = {
 		}
 	}
 
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 # Upgraded Indian estate reforms
@@ -478,7 +490,6 @@ vodka_of_the_crown_reform = {
 
 governing_senate_reform = {
 	icon = governing_senate
-	lock_level_when_selected = yes
 	potential = {
 		has_dlc = "Domination"
 		is_revolutionary = no
@@ -493,6 +504,7 @@ governing_senate_reform = {
 	}
 	
 	trigger = {	
+		gecko_can_adopt_parliament_trigger = yes
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
@@ -527,6 +539,9 @@ governing_senate_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -5037,13 +5052,13 @@ german_other_reform = {
 merchant_representation_reform = {
 	icon = "merchant_representation_reform"
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
 	potential = {
 		has_unlocked_government_reform = {
 			government_reform = merchant_representation_reform
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 	}
 	modifiers = {
 		global_trade_power = 0.1
@@ -5062,6 +5077,9 @@ merchant_representation_reform = {
 
 	ai = {
 		factor = 100
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 

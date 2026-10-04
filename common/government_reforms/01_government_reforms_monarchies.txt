@@ -760,6 +760,12 @@ english_monarchy = {
 			english_parliament = yes
 		}
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 british_monarchy = {
@@ -804,6 +810,12 @@ british_monarchy = {
 	}
 	ai = {
 		factor = 100
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -859,6 +871,12 @@ angevin_monarchy = {
 	ai = {
 		factor = 100
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 absolute_british_monarchy = {
@@ -900,6 +918,12 @@ absolute_british_monarchy = {
 			english_parliament = yes
 			can_force_issue_through = yes
 		}
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1033,6 +1057,12 @@ reformed_byzantine_monarchy_reform = {
 		custom_attributes = {
 			enables_pronoias = yes 
 		}
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1174,6 +1204,7 @@ irish_highkingdom_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		primary_culture = irish
 	}
 	nation_designer_trigger = {
@@ -1205,6 +1236,9 @@ irish_highkingdom_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1242,6 +1276,12 @@ scottish_monarchy_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1394,6 +1434,12 @@ roman_empire_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1638,11 +1684,11 @@ stadthalter_monarchy_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		is_lesser_in_union = no
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
-	lock_level_when_selected = yes
 
 	modifiers = {
 
@@ -1659,6 +1705,7 @@ stadthalter_monarchy_reform = {
 	}
 
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		country_event = { id = dutch_republic.33 }
 	}
 
@@ -3314,6 +3361,12 @@ polish_great_sejm = {
 		}
 		has_parliament = yes
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 polish_elective_monarchy = {
@@ -3365,6 +3418,12 @@ polish_elective_monarchy = {
 			}
 		}
 		has_parliament = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -3840,6 +3899,7 @@ livonian_diplomatic_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3874,6 +3934,9 @@ livonian_diplomatic_monarchy = {
 		}
 		has_parliament = yes
 	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 # If you want to keep security and stability	(Wide)
@@ -3892,6 +3955,7 @@ livonian_constitutional_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3930,6 +3994,9 @@ livonian_constitutional_monarchy = {
 			blocked_call_diet = yes
 			halved_parliament_bribes = yes
 		}
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -4216,6 +4283,12 @@ norwegian_parliamentary_monarchy = {
 			}
 		}
 		has_parliament = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 austrian_absolute_monarchy = {
@@ -5118,7 +5191,6 @@ centralize_reform = {
 		}
 	}
 	modifiers = {
-		development_cost_modifier = -0.05
 		global_prosperity_growth = 0.5
 		all_estate_loyalty_equilibrium = -0.05
 	}
@@ -6031,6 +6103,7 @@ ottoman_siyasah_tax_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		religion_group = muslim
 	}
 	effect = {
@@ -6056,6 +6129,7 @@ ottoman_siyasah_tax_reform = {
 		}
 	}
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -6213,7 +6287,6 @@ great_council_of_mechelen_reform = {
 strengthened_parliament_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
 	potential = {
 		has_dlc = "Domination"
 		has_parliament = yes
@@ -6915,6 +6988,12 @@ courts_of_navarra = {
 			}
 		}
 		has_parliament = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 

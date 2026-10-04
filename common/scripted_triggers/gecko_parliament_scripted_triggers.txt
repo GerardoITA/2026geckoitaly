@@ -1,0 +1,14 @@
+# Country scope: existing parliaments remain usable; returning after removal takes ten years.
+gecko_can_adopt_parliament_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_parliament_return_cooldown_tt
+		OR = {
+			has_parliament = yes
+			NOT = { has_country_flag = gecko_parliament_removed }
+			had_country_flag = {
+				flag = gecko_parliament_removed
+				days = 3650
+			}
+		}
+	}
+}

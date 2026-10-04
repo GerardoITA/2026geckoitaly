@@ -673,6 +673,7 @@ dutch_theocracy_reform = {
 	}
 
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		country_event = { id = dutch_republic.33 }
 	}
 	royal_marriage = yes
@@ -715,6 +716,9 @@ dutch_theocracy_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 	}
 }
 
@@ -1548,6 +1552,7 @@ theocratic_democracy_reform = {
 	}
 	
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		NOT = { has_government_attribute = monastic_order }
 		if = {
 			limit = { 
@@ -1601,6 +1606,9 @@ theocratic_democracy_reform = {
 			}
 		}
 	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 constitional_theocracy_reform = {
@@ -1632,6 +1640,7 @@ regionally_elected_commanders = {
 	}
 	
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		OR = {
 			has_government_attribute = monastic_order
 			tag = KOJ
@@ -1687,6 +1696,9 @@ regionally_elected_commanders = {
 				religion = confucianism
 			}
 		}
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 

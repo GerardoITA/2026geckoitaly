@@ -151,6 +151,12 @@ protectorate_parliament_reform = {
 		enables_aristocratic_idea_group = no
 		cannot_become_dictatorship = yes
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 parliamentary_republic_reform = {
@@ -195,6 +201,12 @@ parliamentary_republic_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		cannot_become_dictatorship = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1412,6 +1424,7 @@ american_republic = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 	}
 	valid_for_nation_designer = yes
@@ -1444,6 +1457,9 @@ american_republic = {
 		}
 	}
 	duration = 6
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 federal_republic = {
@@ -1463,6 +1479,7 @@ federal_republic = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 	}
 	legacy_equivalent = federal_republic_legacy
@@ -1495,6 +1512,9 @@ federal_republic = {
 		}
 	}
 	duration = 6
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 colonial_government = {
@@ -1868,6 +1888,12 @@ english_parliamentary_republic_government = {
 			english_parliament = yes
 		}
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 roman_republic_government = {
@@ -1913,6 +1939,12 @@ roman_republic_government = {
 		}
 	}
 	duration = 6
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 civic_republicanism_government = {
@@ -2044,6 +2076,7 @@ dutch_republic = {
 	}
 
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		if = {
 			# Monarchs seize power
 			limit = { government = monarchy }
@@ -2085,6 +2118,9 @@ dutch_republic = {
 		has_parliament = yes
 	}
 	duration = 6
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
 }
 
 
@@ -3423,6 +3459,12 @@ revolutionary_council_reform = {
 	ai = {
 		factor = 2
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 #Economical Matters
@@ -3900,6 +3942,7 @@ pirate_representation_reform = {
 		has_government_attribute = is_pirate_republic_reform
 	}
 	trigger = {	
+		gecko_can_adopt_parliament_trigger = yes
 		if = {
 			limit = { has_dlc = "Common Sense" }
 			OR = {
@@ -3925,6 +3968,9 @@ pirate_representation_reform = {
 
 	ai = {
 		factor = 0
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -4057,6 +4103,12 @@ federal_senate_reform = {
 		custom_attributes = {
 			halved_parliament_bribes = yes
 		}
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 

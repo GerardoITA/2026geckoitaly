@@ -4914,40 +4914,6 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
-	#gecko fort line
-	if = {
-		limit = {
-			has_province_flag = PR_new_conquest_fort_delay
-		}
-		clr_province_flag = PR_new_conquest_fort_delay
-	}
-	if = {
-		limit = {
-			fort_level = 2
-		}
-		set_province_flag = PR_new_conquest_fort_delay
-	}
-	if = {
-		limit = {
-			area_for_scope_province = {
-				owner = {
-					tag = ROOT
-				}
-				OR = {
-					has_building = fort_15th
-					has_construction = fort_15th
-				}
-				AND = {
-					has_province_flag = PR_new_conquest_fort_delay
-					had_province_flag = {
-						flag = PR_new_conquest_fort_delay
-						days = 182
-					}
-				}
-			}
-		}
-		remove_building = fort_15th
-	}
 }
 
 # country

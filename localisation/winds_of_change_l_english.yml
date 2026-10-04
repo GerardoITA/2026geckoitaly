@@ -2352,6 +2352,8 @@
  desc_ned_baltic_grain_supply:0 "The Baltic Grain Supply has been secured, which allows us to further expand our population."
  ned_connection_to_the_baltic:0 "Connection to the Baltic"
  desc_ned_connection_to_the_baltic:0 "Our connection in the Baltic is now secured, allowing for further trade to be conducted there."
+ ned_brazil_colonial_drill:0 "$por_brazil_colonial$"
+ desc_ned_brazil_colonial_drill:0 "$desc_por_brazil_colonial$"
  ned_found_dutch_states_army:0 "Found the State's Army"
  desc_ned_found_dutch_states_army:0 "The State's Army allows us to protect our state from any invaders."
  ned_empowered_staatse_leger:0 "Staatse Leger"

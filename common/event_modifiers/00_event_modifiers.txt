@@ -13643,7 +13643,7 @@ estate_nobles_expedition_rights_scaling = {
 }
 estate_burghers_promote_burgher_bookkeeping_scaling = {
 	inflation_action_cost = -0.5
-	interest = -0.25
+	inflation_reduction = 0.05
 	state_maintenance_modifier = -0.25
 }
 

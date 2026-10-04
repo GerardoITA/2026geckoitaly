@@ -2791,7 +2791,7 @@ estate_burghers_promote_burgher_bookkeeping = {
 		trigger = { always = yes }
 		modifier = {
 			inflation_action_cost = -0.25
-			interest = -0.15
+			inflation_reduction = 0.05
 			state_maintenance_modifier = -0.20
 		}
 	}

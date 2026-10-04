@@ -709,16 +709,14 @@ NED_2 = {
 				}
 				add_country_modifier = {
 					name = ned_je_maintiedrai
-					duration = 7300
+					duration = 9125
 				}
 			}
 			else = {
 				add_country_modifier = {
 					name = ned_je_maintiedrai
-					duration = 7300
+					duration = 9125
 				}
-				custom_tooltip = " "
-				custom_tooltip = NED_IF_NETHERLANDS_EXTEND_ABOVE_MODIFIER
 			}
 		} 
 	}
@@ -888,7 +886,7 @@ NED_2_1 = {
 			add_navy_tradition = 10
 			add_country_modifier = {
 				name = ned_staatse_vloot
-				duration = 7300
+				duration = 9125
 			}
 		} 
 	}

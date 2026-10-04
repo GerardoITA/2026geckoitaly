@@ -415,6 +415,7 @@ X_CRI_slot_3 = {
 				NOT = {
 					any_country = {
 						NOT = { tag = ROOT }
+						NOT = { is_subject_of = ROOT }
 						num_of_owned_provinces_with = {
 							value = 1
 							any_trade_node_member_province = {

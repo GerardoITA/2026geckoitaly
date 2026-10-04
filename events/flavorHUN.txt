@@ -28,6 +28,7 @@ country_event = {
 		is_year = 1445
 		NOT = { is_year = 1470 }
 		has_government_attribute = heir
+		NOT = { has_country_flag = hun_has_had_matthias_corvinus_event }
 	}
 
 	mean_time_to_happen = {
@@ -163,6 +164,20 @@ country_event = {
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
+		}
+	}
+	option = {
+		name = gecko_hun_keep_current_succession
+		trigger = {
+			has_heir = yes
+			heir_total_stats = { amount = 12 }
+		}
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = hun_has_had_matthias_corvinus_event
+			clr_country_flag = hun_ladislaus_postumus_heir
+			clr_country_flag = hun_ladislaus_postumus_king
+			clr_country_flag = hun_keep_ladislaus_alive
 		}
 	}
 }
@@ -309,6 +324,20 @@ country_event = {
 			hidden_effect = {
 				country_event = { id = flavor_hun.10 days = 1 }
 			}
+		}
+	}
+	option = {
+		name = gecko_hun_keep_current_succession
+		trigger = {
+			has_heir = yes
+			heir_total_stats = { amount = 12 }
+		}
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = hun_has_had_matthias_corvinus_event
+			clr_country_flag = hun_ladislaus_postumus_heir
+			clr_country_flag = hun_ladislaus_postumus_king
+			clr_country_flag = hun_keep_ladislaus_alive
 		}
 	}
 }
@@ -476,6 +505,20 @@ country_event = {
 			hidden_effect = {
 				country_event = { id = flavor_hun.10 days = 1 }
 			}
+		}
+	}
+	option = {
+		name = gecko_hun_keep_current_succession
+		trigger = {
+			has_heir = yes
+			heir_total_stats = { amount = 12 }
+		}
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			set_country_flag = hun_has_had_matthias_corvinus_event
+			clr_country_flag = hun_ladislaus_postumus_heir
+			clr_country_flag = hun_ladislaus_postumus_king
+			clr_country_flag = hun_keep_ladislaus_alive
 		}
 	}
 }

@@ -2174,7 +2174,7 @@ the_licensing_of_the_press_act = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = administrative_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = aristocracy_ideas
 		NOT = { mil_tech = 15 }
 
@@ -2183,7 +2183,7 @@ the_licensing_of_the_press_act = {
 	}
 
 	allow = {
-		full_idea_group = administrative_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = aristocracy_ideas
 		NOT = { mil_tech = 15 }
 
@@ -2205,7 +2205,7 @@ the_licensing_of_the_press_act_1 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = administrative_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = aristocracy_ideas
 		mil_tech = 15
 		NOT = { mil_tech = 22 }
@@ -2215,7 +2215,7 @@ the_licensing_of_the_press_act_1 = {
 	}
 
 	allow = {
-		full_idea_group = administrative_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = aristocracy_ideas
 		mil_tech = 15
 		NOT = { mil_tech = 22 }
@@ -2238,7 +2238,7 @@ the_licensing_of_the_press_act_2 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = administrative_ideas
+		has_idea_group = infrastructure_ideas
 		has_idea_group = aristocracy_ideas
 		mil_tech = 22
 
@@ -2247,7 +2247,7 @@ the_licensing_of_the_press_act_2 = {
 	}
 
 	allow = {
-		full_idea_group = administrative_ideas
+		full_idea_group = infrastructure_ideas
 		full_idea_group = aristocracy_ideas
 		mil_tech = 22
 
@@ -2269,7 +2269,7 @@ aristocratic_rule_act = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = infrastructure_ideas
+		has_idea_group = administrative_ideas
 		has_idea_group = aristocracy_ideas
 		NOT = { mil_tech = 15 }
 
@@ -2278,7 +2278,7 @@ aristocratic_rule_act = {
 	}
 
 	allow = {
-		full_idea_group = infrastructure_ideas
+		full_idea_group = administrative_ideas
 		full_idea_group = aristocracy_ideas
 		NOT = { mil_tech = 15 }
 
@@ -2300,7 +2300,7 @@ aristocratic_rule_act_1 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = infrastructure_ideas
+		has_idea_group = administrative_ideas
 		has_idea_group = aristocracy_ideas
 		mil_tech = 15
 		NOT = { mil_tech = 22 }
@@ -2310,7 +2310,7 @@ aristocratic_rule_act_1 = {
 	}
 
 	allow = {
-		full_idea_group = infrastructure_ideas
+		full_idea_group = administrative_ideas
 		full_idea_group = aristocracy_ideas
 		mil_tech = 15
 		NOT = { mil_tech = 22 }
@@ -2333,7 +2333,7 @@ aristocratic_rule_act_2 = {
 	monarch_power = MIL
 
 	potential = {
-		has_idea_group = infrastructure_ideas
+		has_idea_group = administrative_ideas
 		has_idea_group = aristocracy_ideas
 		mil_tech = 22
 
@@ -2342,7 +2342,7 @@ aristocratic_rule_act_2 = {
 	}
 
 	allow = {
-		full_idea_group = infrastructure_ideas
+		full_idea_group = administrative_ideas
 		full_idea_group = aristocracy_ideas
 		mil_tech = 22
 

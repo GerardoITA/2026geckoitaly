@@ -375,8 +375,8 @@ technology = {
 	
 	#Standardisation of Calibre
 	artillery_shock 	= 	0.1
-	artillery_fire 		= 	0.25
-	cavalry_shock		=	0.25
+	artillery_fire 		= 	0.35
+	cavalry_shock		=	0.35
 
 	training_fields = yes
 	
@@ -389,9 +389,9 @@ technology = {
 	# Tech 17
 	year = 1622
 	
-	cavalry_shock		=	0.25
+	cavalry_shock		=	0.35
 	supply_limit		= 	1
-	artillery_fire		=	0.3
+	artillery_fire		=	0.5
 	enable = maharathan_cavalry		
 	enable = manchu_banner		
 	enable = african_swarm
@@ -403,7 +403,8 @@ technology = {
 	
 	#Carbine
 	maneuver_value 		= 	0.25
-	artillery_fire		=	0.3
+	infantry_fire		=	0.1
+	artillery_fire		=	0.4
 		
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
@@ -428,7 +429,8 @@ technology = {
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
 	supply_limit		=	1
-	artillery_fire		=	0.3
+	artillery_fire		=	0.4
+	infantry_shock		=	0.1
 	fort_17th = yes
 
 	
@@ -458,8 +460,8 @@ technology = {
 	
 	#Killing Grounds
 	
-	infantry_fire		= 	0.5
-	artillery_fire		=	0.3
+	infantry_fire		= 	0.6
+	artillery_fire		=	0.5
 		
 	enable = swivel_cannon
 
@@ -473,10 +475,10 @@ technology = {
 	#Line Infantry
 	sprite_level = 3
 	military_tactics 	= 	0.25
-	cavalry_fire		=	0.25
-	cavalry_shock		=	0.25
-	infantry_shock 		=	0.5
-	artillery_fire		=	0.4
+	cavalry_fire		=	0.35
+	cavalry_shock		=	0.35
+	infantry_shock 		=	0.6
+	artillery_fire		=	0.5
 }
 
 technology = {
@@ -484,11 +486,10 @@ technology = {
 	year = 1687
 	
 	#Cartridge	(1620)?)
-	cavalry_fire		=	0.25
+	cavalry_fire		=	0.35
 	cavalry_shock		=	0.25
 	artillery_shock 	=	0.1
-	artillery_fire		=	2.0
-	artillery_fire		=	0.4
+	artillery_fire		=	0.6
 	
 	combat_width = 2
 	
@@ -507,7 +508,7 @@ technology = {
 	
 	#Light Cavalry
 	
-	cavalry_shock		=	0.25
+	cavalry_shock		=	0.35
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 

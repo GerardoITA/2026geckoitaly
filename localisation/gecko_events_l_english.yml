@@ -235,3 +235,4 @@ echo.25.d:0 "Intlander's Food Truck has arrived in §Y[Root.GetName]§!. We must
 echo.25.a:0 "Only 8 ducats for a hot plate of pasta? That's a bargain!"
 
 echo.25.b:0 "8 ducats for pasta? That's daylight robbery!"
+ gecko_hun_keep_current_succession:0 "Reject both claimants and preserve [Root.Heir.GetName]'s succession."

@@ -300,9 +300,6 @@ WoC_mughals_1 = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			is_ahead_of_time_in_technology = { tech = adm }
-			is_ahead_of_time_in_technology = { tech = dip }
-			is_ahead_of_time_in_technology = { tech = mil }
 			
 			if = {
 				limit = {

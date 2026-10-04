@@ -98,6 +98,7 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  french_empire_desc:0 "I'm literaly napoleon maxxing"
  proclaim_ottoman_empire_title:0 "Proclaim the Ottoman Empire"
  proclaim_ottoman_empire_desc:0 "The Osmanoglu rule over Europe and Middle East"
+ proclaim_ottoman_empire_territory_tt:0 "All provinces in the following regions and areas must be owned by us or our subjects:\n§YRegions:§! Anatolia, Mashriq, Egypt\n§YBalkan areas:§! Thrace, Bulgaria, Silistria, Macedonia, Albania, Rascia, Serbia, Bosnia\n§YGreek areas:§! Central Greece, Morea, Northern Greece, Eastern Mediterranean Islands, Aegean Archipelago\n§YDanubian areas:§! Wallachia, Moldavia\n§YCaucasian areas:§! Imereti, Samtskhe"
  OTTOMAN_EMPIRE:0 "Ottoman Empire"
  OTTOMAN_EMPIRE_ADJ:0 "Ottoman"
 #bertus mod shit

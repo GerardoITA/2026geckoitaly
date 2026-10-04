@@ -54,224 +54,227 @@ country_decisions = {
 		}
 
 		allow = {
-			anatolia_region = {
-				type = all
-				OR = {
-					owned_by = ROOT
-
-					owner = {
-						is_subject_of = ROOT
-					}
-				}
-			}
-
 			adm_tech = 14
 
-			mashriq_region = {
-				type = all
-				OR = {
-					owned_by = ROOT
+			custom_trigger_tooltip = {
+				tooltip = proclaim_ottoman_empire_territory_tt
+				anatolia_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			egypt_region = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				mashriq_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			thrace_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				egypt_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			bulgaria_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				thrace_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			silistria_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				bulgaria_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			macedonia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				silistria_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			X_central_greece_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				macedonia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			morea_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				X_central_greece_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			northern_greece_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				morea_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			eastern_mediterrenean_islands_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				northern_greece_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			aegean_archipelago_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				eastern_mediterrenean_islands_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			albania_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				aegean_archipelago_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			rascia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				albania_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			serbia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				rascia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			bosnia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				serbia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			wallachia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				bosnia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			moldavia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				wallachia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			imereti_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				moldavia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
-			}
 
-			samtskhe_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
+				imereti_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
 
-					owner = {
-						is_subject_of = ROOT
+						owner = {
+							is_subject_of = ROOT
+						}
+					}
+				}
+
+				samtskhe_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+
+						owner = {
+							is_subject_of = ROOT
+						}
 					}
 				}
 			}

@@ -1373,8 +1373,9 @@ in_golden_era = {
 	land_morale = 0.1
 	naval_morale = 0.1
 	max_general_fire = 1
-	max_absolutism = 5
-	max_revolutionary_zeal = 10
+	max_general_shock = 1
+	max_absolutism = 25
+	max_revolutionary_zeal = 25
 }
 
 absolutism = {

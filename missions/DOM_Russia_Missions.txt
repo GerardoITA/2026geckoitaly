@@ -3123,7 +3123,7 @@ rus_russian_bureaucracy = {
 			simple_dynamic_effect = {
 				first_custom_tooltip = rus_enact_the_sudebnik_at
 				first_limit = "has_reform = tysyatsky_reform"
-				first_effect = "add_estate_loyalty = { estate = estate_nobles loyalty = 15 } add_#legitimacy_equivalent = { amount = 10 republican_tradition = 5 }"
+				first_effect = "add_estate_loyalty = { estate = estate_nobles loyalty = 15 } add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }"
 				second_custom_tooltip = rus_enact_the_sudebnik_bt
 				second_limit = "has_reform = namestnik_reform"
 				second_effect = "change_estate_land_share = { estate = all share = -5 } add_adm_power = 50"

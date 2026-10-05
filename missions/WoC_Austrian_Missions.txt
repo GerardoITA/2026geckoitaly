@@ -1,5 +1,5 @@
 
-WoC_austria_1_germany = {
+WoC_austria_1_branching = {
 	slot = 1
 	generic = no
 	ai = yes

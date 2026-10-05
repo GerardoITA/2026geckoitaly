@@ -760,9 +760,8 @@ country_decisions = {
 	#	
 	#	ai_will_do = {factor = 0}
 	#}
-}
 
-embrace_judaism_ethiopia = {
+	embrace_judaism_ethiopia = {
 		potential = {
 			tag = ETH
 			NOT = {
@@ -783,3 +782,4 @@ embrace_judaism_ethiopia = {
 			factor = 0
 		}
 	}
+}

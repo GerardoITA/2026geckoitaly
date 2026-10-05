@@ -400,6 +400,9 @@ country_event = {
 ##UNUSED, DEPRECATED BY 1060
 country_event = {
 	id = intscore.1050
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
 	hidden = yes
 	is_triggered_only = yes
 
@@ -579,6 +582,9 @@ country_event = {
 ############ CALCULATES RANKING FOR INTSCORE WARS
 country_event = {
 	id = intscore.1061
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
 	hidden = yes
 	is_triggered_only = yes
 

@@ -2813,7 +2813,7 @@ PER_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	the_ghulams = {
-		infantry_power = 0.05
+		infantry_power = 0.20
 		ghulams_privilege_slots = 1
 	}
 	improved_silk_road = {

@@ -13,23 +13,13 @@ kilwa_cape_missions_slot = {
 	}
 	has_country_shield = yes
 
-	#Annex Sofala
+	#Build to force limit
 	zan_annex_sofala = {
-		icon = mission_arabian_fort
+		icon = mission_build_up_to_force_limit
 		required_missions = {  }
 		position = 1
-		provinces_to_highlight = {
-			OR = {
-				owned_by = SFA
-				AND = {
-					province_id = 1186
-					NOT = { owned_by = ROOT }
-				}
-			}
-		}
 		trigger = {
-			owns = 1186
-			NOT = { exists = SFA }
+			army_size_percentage = 1
 		}
 		effect = {
 			zimbabwe_area = {
@@ -53,9 +43,23 @@ kilwa_cape_missions_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
+			katanga_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			luba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 		ai_weight = {
-			factor = 500	#Integrate your vassal
+			factor = 500	#Build up the army
 		}
 	}
 
@@ -129,13 +133,11 @@ kilwa_cape_missions_slot = {
 		required_missions = { zan_discover_the_cape }
 		position = 4
 		provinces_to_highlight = {
-			region = south_africa_region
+			province_id = 1177
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			1177 = {
-				is_in_capital_area = yes
-			}
+			owns = 1177
 		}
 		effect = {
 			1177 = {
@@ -445,7 +447,7 @@ kilwa_trade_conquest_missions_slot = {
 		required_missions = {  }
 		position = 1
 		trigger = {
-			num_of_light_ship = 25
+			num_of_light_ship = 10
 		}
 		effect = {
 			add_navy_tradition = 20

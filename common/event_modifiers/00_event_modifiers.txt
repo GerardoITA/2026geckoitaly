@@ -12899,7 +12899,7 @@ zul_provocated_locals = {
 
 #Province modifier
 estate_burghers_control_over_gold_mine = {
-	trade_goods_size_modifier = -0.15
+	trade_goods_size_modifier = -0.05
 }
 
 estate_burghers_hydraulic_rights_desert = {

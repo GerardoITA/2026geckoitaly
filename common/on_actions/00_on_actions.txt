@@ -73,6 +73,8 @@ on_startup = {
 			id = echo.9
 		}
 	}
+	gecko_refresh_african_modifier_cache_effect = yes
+	gecko_refresh_maghreb_modifier_cache_effect = yes
 }
 
 # country
@@ -1094,6 +1096,7 @@ on_siege_lost_province = {
 # root = location, from = country that abandons colony
 # Fired right before the colony is abandoned.
 on_abandon_colony = {
+	gecko_abandon_colony_modifier_cache_effect = yes
 }
 
 # province
@@ -2328,6 +2331,7 @@ on_siberian_pulse = {
 
 # country random events
 on_monthly_pulse = {
+	gecko_monthly_modifier_cache_effect = yes
 }
 
 on_yearly_pulse = {
@@ -4914,6 +4918,7 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
+	gecko_ownership_modifier_cache_effect = yes
 }
 
 # country
@@ -5434,6 +5439,7 @@ on_primary_culture_changed = {
 	on_primary_culture_changed_privileges_effect = yes
 	judaism_on_culture_country_effect = yes
 	imperial_modifiers_on_primary_culture_change_effect = yes
+	gecko_refresh_maghreb_modifier_cache_effect = yes
 }
 
 # FROM = Previous Country, ROOT = Province
@@ -5730,6 +5736,7 @@ on_trade_good_changed = {
 			add_base_production = -1
 		}
 	}
+	gecko_trade_good_modifier_cache_effect = yes
 }
 
 # this = country
@@ -5941,6 +5948,8 @@ on_country_creation = {
 		change_government = theocracy
 		add_government_reform = papacy_reform
 	}
+	gecko_refresh_african_modifier_cache_effect = yes
+	gecko_refresh_maghreb_modifier_cache_effect = yes
 }
 
 on_federation_leader_change = {
@@ -6130,10 +6139,12 @@ on_estate_removed = {
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
+	gecko_colony_modifier_cache_effect = yes
 }
 
 #scope = new country, FROM = parent country
 on_colonial_nation_established = {
+	gecko_refresh_african_modifier_cache_effect = yes
 }
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source
@@ -6401,6 +6412,7 @@ on_slacken_stop = {
 on_colony_finished = {
 	#ROOT - Province
 	on_colony_finished_effect = yes
+	gecko_colony_modifier_cache_effect = yes
 }
 
 on_advisor_hired = {

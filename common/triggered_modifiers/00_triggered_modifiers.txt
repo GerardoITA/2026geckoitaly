@@ -250,9 +250,9 @@ east_indian_trade_route = {
 custodian_of_the_two_holy_mosques = {
 	potential = {
 		normal_or_historical_nations = yes
+		religion_group = muslim
 		has_discovered = 385	# Mecca
 		has_discovered = 384	# Medina
-		religion_group = muslim
 	}
 
 	trigger = {
@@ -293,14 +293,14 @@ custodian_of_the_two_holy_mosques = {
 papal_subjugation = {
 	potential = {
 		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
 		religion = catholic
 		NOT = { tag = PAP }
+		has_discovered = 118	# Roma
 	}
 
 	trigger = {	
-		overlord_of = PAP
 		is_in_trade_league_with = PAP
+		overlord_of = PAP
 	}
 
 	development_cost = 0.5
@@ -350,16 +350,16 @@ submission_to_emperor = {
 
 		has_global_flag = italians_leave_hre
 		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-		is_emperor = no
 		NOT = { is_year = 1550 }
 		culture_group = latin
+		is_emperor = no
 	}
 
 	trigger = {
 		is_part_of_hre = yes
 		NOT = { tag = ITA }
-		NOT = { emperor = { alliance_with = ROOT } }
 		NOT = { is_year = 1550 } # Duplicating so it shows in tooltip
+		NOT = { emperor = { alliance_with = ROOT } }
 	}
 
 	global_unrest = 3
@@ -376,13 +376,12 @@ counter_revolution = {
 	potential = {
 		revolution_target_exists = yes
 		is_revolutionary = no
-		any_country = {
-			is_revolution_target = yes
+		revolution_target = {
 			OR = {
+				is_neighbor_of = ROOT
 				capital_scope = {
 					continent = ROOT
 				}
-				is_neighbor_of = ROOT
 			}
 		}
 	}
@@ -391,6 +390,7 @@ counter_revolution = {
 		revolution_target_exists = yes
 		is_revolutionary = no
 		is_free_or_tributary_trigger = yes
+		government = monarchy
 		NOT = {
 			revolution_target = {
 				war_with = ROOT
@@ -399,7 +399,6 @@ counter_revolution = {
 				truce_with = ROOT
 			} 
 		}
-		government = monarchy
 	}
 
 	prestige = -5
@@ -416,8 +415,7 @@ reaction = {
 	potential = {
 		revolution_target_exists = yes
 		is_revolutionary = no
-		any_country = {
-			is_revolution_target = yes
+		revolution_target = {
 			capital_scope = {
 				continent = ROOT
 			}
@@ -447,21 +445,21 @@ crusader = {
 	potential = {
 		religion = catholic
 		crusade_target = {
-			exists = yes
 			ai = no
+			exists = yes
 		}
 		
 	}
 
 	trigger = {
 		
+		land_maintenance = 1.0
 		crusade_target = {
 			war_with = ROOT
 			any_province = {
 				controlled_by = root
 			}
 		}  
-		land_maintenance = 1.0
 	}
 
 	global_manpower_modifier = 0.3
@@ -649,13 +647,13 @@ waging_war_for_china = {
 ##################################################
 hre_dominant_catholic = {
 	potential = {
-		capital_scope = {
-			continent = europe
-		}
 		OR = {
 			religion = catholic
 			religion = protestant
 			religion = reformed
+		}
+		capital_scope = {
+			continent = europe
 		}
 	}
 
@@ -673,13 +671,13 @@ hre_dominant_catholic = {
 
 hre_dominant_protestant = {
 	potential = {
-		capital_scope = {
-			continent = europe
-		}
 		OR = {
 			religion = catholic
 			religion = protestant
 			religion = reformed
+		}
+		capital_scope = {
+			continent = europe
 		}
 	}
 
@@ -697,13 +695,13 @@ hre_dominant_protestant = {
 
 hre_dominant_reformed = {
 	potential = {
-		capital_scope = {
-			continent = europe
-		}
 		OR = {
 			religion = catholic
 			religion = protestant
 			religion = reformed
+		}
+		capital_scope = {
+			continent = europe
 		}
 	}
 
@@ -743,10 +741,10 @@ golden_age_of_piracy = {
 		1516 = { has_discovered = ROOT }
 	}
 	trigger = {
+		num_ships_privateering = 10
 		1516 = {
 			has_merchant = ROOT
 		}
-		num_ships_privateering = 10
 	}	
 	merchants = 1
 	privateer_efficiency = 0.25
@@ -794,13 +792,13 @@ great_peasants_war_concessions_triggered_modifier = {
 pope_in_hre_triggered_modifier = {
 	potential = {
 		always = no
-		PAP = { is_part_of_hre = yes }
 		religion = catholic
+		PAP = { is_part_of_hre = yes }
 	}
 	trigger = {
-		PAP = { is_part_of_hre = yes }
 		religion = catholic
 		NOT = { is_part_of_hre = yes }
+		PAP = { is_part_of_hre = yes }
 	}
 	prestige = -0.5
 }
@@ -812,25 +810,25 @@ pope_in_hre_triggered_modifier = {
 italian_wars_triggered_modifier = {
 	potential = {
 		has_global_flag = italian_wars_global_flag
+		religion_group = christian
 		capital_scope = {
 			continent = europe
 		}
-		religion_group = christian
 	}
 	trigger = {
 		OR = {
 			AND = {
 				capital_scope = { region = italy_region }
 				any_country = {
-					war_with = ROOT
 					religion_group = christian
-					capital_scope = { continent = europe }
 					total_development = 150
+					war_with = ROOT
+					capital_scope = { continent = europe }
 				}
 			}
 			AND = {
-				NOT = { capital_scope = { region = italy_region } }
 				total_development = 150
+				NOT = { capital_scope = { region = italy_region } }
 				any_country = {
 					war_with = ROOT
 					capital_scope = { region = italy_region }
@@ -857,8 +855,8 @@ defense_of_the_empire_modifier = {
 	}
 	trigger = {
 		any_country = {
-			war_with = ROOT
 			NOT = { is_part_of_hre = yes }
+			war_with = ROOT
 		}
 	}
 	war_taxes_cost_modifier = -1.0

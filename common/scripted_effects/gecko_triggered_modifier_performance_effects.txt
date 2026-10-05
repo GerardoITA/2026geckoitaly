@@ -1,0 +1,156 @@
+# Province scans run on relevant state changes, rather than in every monthly triggered-modifier evaluation.
+
+gecko_refresh_african_modifier_cache_effect = {
+	set_country_flag = gecko_african_cache_initialized
+	if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 1
+				continent = africa
+				trade_goods = gold
+			}
+		}
+		set_country_flag = gecko_african_gold_any
+		if = {
+			limit = {
+				num_of_owned_provinces_with = {
+					value = 3
+					continent = africa
+					trade_goods = gold
+				}
+			}
+			set_country_flag = gecko_african_gold_three
+		}
+		else = { clr_country_flag = gecko_african_gold_three }
+		if = {
+			limit = {
+				owns_all_provinces = {
+					continent = africa
+					trade_goods = gold
+				}
+			}
+			set_country_flag = gecko_african_gold_monopoly
+		}
+		else = { clr_country_flag = gecko_african_gold_monopoly }
+	}
+	else = {
+		clr_country_flag = gecko_african_gold_any
+		clr_country_flag = gecko_african_gold_three
+		clr_country_flag = gecko_african_gold_monopoly
+	}
+	if = {
+		limit = {
+			num_of_owned_provinces_with = {
+				value = 1
+				continent = africa
+				trade_goods = slaves
+			}
+		}
+		set_country_flag = gecko_african_slaves_any
+		if = {
+			limit = {
+				num_of_owned_provinces_with = {
+					value = 5
+					continent = africa
+					trade_goods = slaves
+				}
+			}
+			set_country_flag = gecko_african_slaves_five
+		}
+		else = { clr_country_flag = gecko_african_slaves_five }
+		if = {
+			limit = {
+				owns_all_provinces = {
+					continent = africa
+					trade_goods = slaves
+				}
+			}
+			set_country_flag = gecko_african_slaves_monopoly
+		}
+		else = { clr_country_flag = gecko_african_slaves_monopoly }
+	}
+	else = {
+		clr_country_flag = gecko_african_slaves_any
+		clr_country_flag = gecko_african_slaves_five
+		clr_country_flag = gecko_african_slaves_monopoly
+	}
+}
+
+gecko_refresh_maghreb_modifier_cache_effect = {
+	set_global_flag = gecko_maghreb_cache_initialized
+	if = {
+		limit = {
+			NOT = {
+				maghreb_region = {
+					owner = {
+						OR = {
+							culture_group = latin
+							culture_group = iberian
+						}
+					}
+				}
+			}
+		}
+		set_global_flag = gecko_maghreb_ownership
+	}
+	else = { clr_global_flag = gecko_maghreb_ownership }
+}
+
+# Province scope. FROM is the former owner in on_province_owner_change.
+gecko_ownership_modifier_cache_effect = {
+	if = {
+		limit = { continent = africa }
+		owner = { gecko_refresh_african_modifier_cache_effect = yes }
+		FROM = { gecko_refresh_african_modifier_cache_effect = yes }
+	}
+	if = {
+		limit = { region = maghreb_region }
+		gecko_refresh_maghreb_modifier_cache_effect = yes
+	}
+}
+
+# Changes to African resource membership affect other countries' monopolies too.
+gecko_trade_good_modifier_cache_effect = {
+	if = {
+		limit = { continent = africa }
+		every_country = { gecko_refresh_african_modifier_cache_effect = yes }
+	}
+}
+
+# This hook fires BEFORE abandonment. Use native fallbacks until a post-change hook or the next monthly pulse.
+gecko_abandon_colony_modifier_cache_effect = {
+	if = {
+		limit = { continent = africa }
+		FROM = { set_country_flag = gecko_african_cache_dirty }
+	}
+	if = {
+		limit = { region = maghreb_region }
+		set_global_flag = gecko_maghreb_cache_dirty
+	}
+}
+
+gecko_monthly_modifier_cache_effect = {
+	if = {
+		limit = { has_country_flag = gecko_african_cache_dirty }
+		gecko_refresh_african_modifier_cache_effect = yes
+		clr_country_flag = gecko_african_cache_dirty
+	}
+	if = {
+		limit = { has_global_flag = gecko_maghreb_cache_dirty }
+		gecko_refresh_maghreb_modifier_cache_effect = yes
+		clr_global_flag = gecko_maghreb_cache_dirty
+	}
+}
+
+# FROM can be an expulsion province in this hook; use only the current owner.
+gecko_colony_modifier_cache_effect = {
+	if = {
+		limit = { continent = africa }
+		owner = { gecko_refresh_african_modifier_cache_effect = yes }
+	}
+	if = {
+		limit = { region = maghreb_region }
+		gecko_refresh_maghreb_modifier_cache_effect = yes
+	}
+}
+

@@ -43,7 +43,6 @@ catholic_rome = {
 
 	trigger = {	
 		owner = {
-			NOT = { overlord_of = PAP }
 			NOT = { tag = ITA }
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
@@ -51,6 +50,7 @@ catholic_rome = {
 				tooltip = no_dip_malus_reward_tt
 				NOT = { has_country_flag = general_flag_for_FU_Rome_flag }			
 			}
+			NOT = { overlord_of = PAP }
 		}
 	}
 
@@ -692,19 +692,19 @@ mongol_kurultai = {
 	trigger = {
 		owner = {
 			OR = {
+				primary_culture = mongol
+				primary_culture = chahar
+				primary_culture = khalkha
+				primary_culture = oirats
+				primary_culture = altaic_new
+			}
+			OR = {
 				has_reform = steppe_horde
 				has_reform = great_mongol_state_reform
 				AND = {
 					government = monarchy
 					NOT = { is_emperor_of_china = yes }
 				}
-			}
-			OR = {
-				primary_culture = mongol
-				primary_culture = chahar
-				primary_culture = khalkha
-				primary_culture = oirats
-				primary_culture = altaic_new
 			}
 		}
 	}
@@ -839,15 +839,15 @@ krantor_crane = {
 		normal_or_historical_nations = yes
 	}
 	trigger = {
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			NOT = { devastation = 5 }
+		}
 		owner = {
 			estate_loyalty = { 
 				estate = estate_burghers 
 				loyalty = 50 
 			}
-		}
-		if = { 
-			limit = { has_dlc = "Mandate of Heaven" }
-			NOT = { devastation = 5 } 
 		}
 	}
 	province_trade_power_value = 5 
@@ -885,13 +885,13 @@ great_mosque_djenne_modifier = {
 promised_land_modifier = {
 	potential = {}
 	trigger = {
+		religion = jewish
 		owner = {
 			religion = jewish
 			owns_core_province = 379
 			owns_core_province = 364
 			owns_core_province = 1854
 		}
-		religion = jewish
 	}
 	land_morale = 0.1
 	naval_morale = 0.1
@@ -1022,10 +1022,10 @@ livonian_diet_capital = {
 		owner = { has_country_flag = liv_completed_diet_mission }
 	}
 	trigger = {
+		has_courthouse_building_trigger = yes
 		owner = {
 			is_core = PREV
 		}
-		has_courthouse_building_trigger = yes
 	}
 	advisor_pool = 1
 	local_tax_modifier = 0.1
@@ -1276,9 +1276,10 @@ mng_islamic_mosque_of_beijing_modifier = {
 	potential = { owner = { has_country_flag = mng_islamic_mosque_of_beijing_flag } }
 	trigger = {
 		owner = { 
+			NOT = { religion_group = muslim }
 			OR = {
-				any_ally = { religion_group = muslim }
 				AND = {
+					religion = confucianism
 					custom_trigger_tooltip = {
 						tooltip = mng_3_tolearnce_heathen_trigger_tt
 						has_global_modifier_value = {
@@ -1286,11 +1287,10 @@ mng_islamic_mosque_of_beijing_modifier = {
 							value = 3 
 						}
 					}
-					religion = confucianism
 				}
 				has_harmonized_with = muslim 
+				any_ally = { religion_group = muslim }
 			}
-			NOT = { religion_group = muslim } 
 		}	
 	}
 	tolerance_of_heathens_capacity = 1 
@@ -1354,6 +1354,10 @@ gol_the_tatar_yoke = {
 		NOT = { has_global_flag = end_of_the_tatar_yoke }
 	}
 	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = gol_the_tatar_yoke_tt
+			NOT = { has_global_flag = end_of_the_tatar_yoke }
+		}
 		owner = {
 			OR = {
 				has_reform = steppe_horde
@@ -1361,10 +1365,6 @@ gol_the_tatar_yoke = {
 			}
 			is_subject = no
 			num_of_cities = 4
-		}
-		custom_trigger_tooltip = {
-			tooltip = gol_the_tatar_yoke_tt
-			NOT = { has_global_flag = end_of_the_tatar_yoke }
 		}
 	}
 	on_deactivation = {
@@ -1400,10 +1400,10 @@ BYZ_heart_of_the_empire = {
 	}
 
 	trigger = {
+		controlled_by = owner
 		owner = {
 			stability = 2
 		}
-		controlled_by = owner
 	}
 
 	movement_speed = 0.05
@@ -1426,10 +1426,10 @@ BYZ_illustrious_court = {
 	}
 
 	trigger = {
+		controlled_by = owner
 		owner = {
 			stability = 2
 		}
-		controlled_by = owner
 	}
 
 	reform_progress_growth = 0.1
@@ -1454,15 +1454,15 @@ BYZ_seat_of_a_patriarch = {
 	}
 
 	trigger = {
+		controlled_by = owner
+		NOT = { devastation = 1 }
+		has_tax_building_trigger = yes
 		owner = {
 			stability = 1
 		}
-		controlled_by = owner
 		all_neighbor_province = {
 			controlled_by = owner
 		}
-		NOT = { devastation = 1 }
-		has_tax_building_trigger = yes
 	}
 
 	tax_income = 12
@@ -1486,16 +1486,16 @@ BYZ_bosphorus_toll = {
 	}
 
 	trigger = {
+		controlled_by = owner
+		NOT = { devastation = 1 }
+		has_coast_defense_building_trigger = yes
 		owner = {
 			owns = 151
 			owns = 316
 		}
-		controlled_by = owner
 		all_neighbor_province = {
 			controlled_by = owner
 		}
-		NOT = { devastation = 1 }
-		has_coast_defense_building_trigger = yes
 	}
 
 	province_trade_power_value = 10
@@ -1620,10 +1620,10 @@ ARB_mosque_of_kairouan = {
 	}
 
 	trigger = {
+		development = 30
 		owner = {
 			stability = 1
 		}
-		development = 30
 	}
 
 	overextension_impact_modifier = -0.1
@@ -1735,10 +1735,10 @@ ITA_all_roads_lead_to_rome = {
 	}
 
 	trigger = {
+		controlled_by = owner
 		owner = {
 			stability = 3
 		}
-		controlled_by = owner
 	}
 
 	local_development_cost_modifier = -0.25
@@ -1760,6 +1760,7 @@ ITA_crusader_kings = {
 	}
 
 	trigger = {
+		controlled_by = owner
 		owner = {
 			if = {
 				limit = {
@@ -1781,7 +1782,6 @@ ITA_crusader_kings = {
 				
 			}
 		}
-		controlled_by = owner
 	}
 
 	warscore_cost_vs_other_religion = -0.1
@@ -1805,6 +1805,7 @@ ITA_flowering_of_renaissance = {
 	}
 
 	trigger = {
+		controlled_by = owner
 		if = {
 			limit = {
 				owner = {
@@ -1826,7 +1827,6 @@ ITA_flowering_of_renaissance = {
 				is_ahead_of_time_in_technology = { tech = mil }
 			}
 		}
-		controlled_by = owner
 	}
 
 	yearly_innovativeness = 0.25
@@ -1854,13 +1854,13 @@ ITA_superior_trade_center = {
 	trigger = {
 		owned_by = owner
 		highest_value_trade_node = yes
+		trade_node_value = 150
+		province_trade_power = 75
+		controlled_by = owner
 		trade_share = {
 			country = owner
 			share = 90
 		}
-		trade_node_value = 150
-		province_trade_power = 75
-		controlled_by = owner
 	}
 	
 	local_development_cost_modifier = -0.15
@@ -1954,6 +1954,7 @@ GER_staying_in_lubeck = {
 	}
 
 	trigger = {
+		controlled_by = owner
 		custom_trigger_tooltip = {
 			tooltip = GER_home_trade_node_is_in_the_province
 			owner = {
@@ -1962,7 +1963,6 @@ GER_staying_in_lubeck = {
 				}
 			}
 		}
-		controlled_by = owner
 	}
 
 	trade_efficiency = 0.1
@@ -2288,6 +2288,7 @@ ITA_flowering_of_renaissance_no_dlc = {
         }
     }
     trigger = {
+        controlled_by = owner
         if = {
             limit = {
                 owner = {
@@ -2309,7 +2310,6 @@ ITA_flowering_of_renaissance_no_dlc = {
                 is_ahead_of_time_in_technology = { tech = mil }
             }
         }
-        controlled_by = owner
     }
 
     institution_growth = 3

@@ -22,6 +22,12 @@ Splendid_Court = {
 
 Minor = {
 	potential = {
+		NOT = {
+			is_emperor = yes
+		}
+		ROOT = {
+			ai = no
+		}
 		OR = {
 			OR = {
 				is_part_of_hre = yes
@@ -30,22 +36,16 @@ Minor = {
 				}
 			}
 		}
-		ROOT = {
-			ai = no
-		}
-		NOT = {
-			is_emperor = yes
-		}
 	}
 	trigger = {
 		NOT = {
-			total_own_and_non_tributary_subject_development = 400
+			is_colonial_nation = yes
 		}
 		NOT = {
 			is_emperor = yes
 		}
 		NOT = {
-			is_colonial_nation = yes
+			total_own_and_non_tributary_subject_development = 400
 		}
 	}
 	advisor_cost = -0.25
@@ -60,48 +60,48 @@ Minor = {
 
 We_stand_alone = {
 	potential = {
-		ROOT = {
-			ai = no
-		}
 		NOT = {
 			has_country_modifier = imp_ambition_timer
+		}
+		ROOT = {
+			ai = no
 		}
 	}
 	trigger = {
 		
-		is_great_power = no
-		
-		OR = {
-			
-			NOT = {
-				OR = { 
-					AND = {
-						any_ally = {  ai = no }
-						num_of_allies = 1
-					}
-					AND = {
-						any_ally = {  ai = yes }
-						num_of_allies = 2
-					}
-				}		
-			}
-			
-			
-			has_country_modifier = Berber_Raids
-			has_country_modifier = Stop_the_raids
-			has_country_modifier = Minor
-		}
-		NOT = {
-			is_hegemon = yes
-		}
 		NOT = {
 			is_colonial_nation = yes
+		}
+		is_great_power = no
+		
+		NOT = {
+			is_hegemon = yes
 		}
 		NOT = {
 			is_lacking_institutions = yes
 		}
 		NOT = {
 			is_subject_of_type = tributary_state
+		}
+		OR = {
+			
+			has_country_modifier = Berber_Raids
+			has_country_modifier = Stop_the_raids
+			has_country_modifier = Minor
+			NOT = {
+				OR = { 
+					AND = {
+						num_of_allies = 1
+						any_ally = {  ai = no }
+					}
+					AND = {
+						num_of_allies = 2
+						any_ally = {  ai = yes }
+					}
+				}		
+			}
+			
+			
 		}
 	}
 	manpower_recovery_speed = 0.25
@@ -118,28 +118,28 @@ Great_power_dominance = {
 	}
 	trigger = {
 		NOT = {
-			great_power_rank = 4
+			is_colonial_nation = yes
 		}
 		NOT = {
-			OR = { 
-				AND = {
-					any_ally = {  ai = no }
-					num_of_allies = 1
-				}
-				AND = {
-					any_ally = {  ai = yes }
-					num_of_allies = 2
-				}
-			}		
+			great_power_rank = 4
 		}
 		NOT = {
 			is_hegemon = yes
 		}
 		NOT = {
-			is_colonial_nation = yes
+			is_lacking_institutions = yes
 		}
 		NOT = {
-			is_lacking_institutions = yes
+			OR = { 
+				AND = {
+					num_of_allies = 1
+					any_ally = {  ai = no }
+				}
+				AND = {
+					num_of_allies = 2
+					any_ally = {  ai = yes }
+				}
+			}		
 		}
 	}
 	army_tradition_decay = -0.005
@@ -156,13 +156,13 @@ HRE_backup = {
 			tag = AHU
 			was_tag = HAB
 		}
-		was_player = yes
 		NOT = {
 			is_emperor = yes
 		}
 		ROOT = {
 			ai = no
 		}
+		was_player = yes
 	}
 	trigger = {
 		OR = {
@@ -190,9 +190,6 @@ HRE_backup = {
 
 War_chest = {
 	potential = {
-		ROOT = {
-			ai = no
-		}
 		OR = {
 			current_age = age_of_discovery
 			current_age = age_of_reformation
@@ -200,14 +197,17 @@ War_chest = {
 		NOT = {
 			has_country_modifier = imp_ambition_timer
 		}
+		ROOT = {
+			ai = no
+		}
 	}
 	trigger = {
+		NOT = {
+			is_colonial_nation = yes
+		}
 		OR = {
 			great_power_rank = 4
 			is_great_power = no
-		}
-		any_country = {
-			total_development = ROOT
 		}
 		NOT = {
 			is_hegemon = yes
@@ -219,29 +219,29 @@ War_chest = {
 		NOT = {
 			num_of_loans = 1
 		}
-		NOT = {
-			is_colonial_nation = yes
-		}
 		is_at_war = yes
 		land_maintenance = 1
 		army_size_percentage = 0.3
+		NOT = {
+			is_subject_of_type = tributary_state
+		}
 		OR = {
+			has_country_modifier = Minor
 			NOT = {
 				OR = { 
 					AND = {
-						any_ally = {  ai = no }
 						num_of_allies = 1
+						any_ally = {  ai = no }
 					}
 					AND = {
-						any_ally = {  ai = yes }
 						num_of_allies = 2
+						any_ally = {  ai = yes }
 					}
 				}		
 			}
-			has_country_modifier = Minor
 		}
-		NOT = {
-			is_subject_of_type = tributary_state
+		any_country = {
+			total_development = ROOT
 		}
 	}
 
@@ -325,32 +325,23 @@ Berber_Raids = {
 				great_power_rank = 5
 				is_great_power = no
 			}
+			NOT = {
+				is_lacking_institutions = yes
+			}
+			gecko_maghreb_ownership_trigger = yes
 			OR = {
 				AND = {
 					tag = MOR
 					OR = {
-						TUN = { ai = yes }
 						alliance_with = TUN
+						TUN = { ai = yes }
 					}
 				}
 				AND = {
 					tag = TUN
 					OR = {
-						MOR = { ai = yes }
 						alliance_with = MOR
-					}
-				}
-			}
-			NOT = {
-				is_lacking_institutions = yes
-			}
-			NOT = {
-				maghreb_region = {
-					owner = {
-						OR = {
-							culture_group = latin
-							culture_group = iberian
-						}
+						MOR = { ai = yes }
 					}
 				}
 			}
@@ -374,6 +365,9 @@ Stop_the_raids = {
 			great_power_rank = 5
 			is_great_power = no
 		}
+		NOT = {
+			is_lacking_institutions = yes
+		}
 		OR = {
 			AND = {
 				tag = CAS
@@ -389,9 +383,6 @@ Stop_the_raids = {
 					alliance_with = MOR
 				}
 			}
-		}
-		NOT = {
-			is_lacking_institutions = yes
 		}
 	}
 	navy_tradition = 0.5
@@ -415,20 +406,13 @@ Merc_payments = {
 
 Control_African_Slave_Trade = {
 	potential = {
-		num_of_owned_provinces_with = {
-			value = 1
-			continent = africa
-			trade_goods = slaves
-		}
 		NOT = {
 			technology_group = western
 		}
+		gecko_african_slaves_any_trigger = yes
 	}
 	trigger = {
-		owns_all_provinces = {
-			continent = africa
-			trade_goods = slaves
-		}
+		gecko_african_slaves_monopoly_trigger = yes
 	}
 	global_manpower_modifier = 0.125
 	infantry_power = 0.1
@@ -439,17 +423,10 @@ Control_African_Slave_Trade = {
 
 African_Gold_Monopoly = {
 	potential = {
-		num_of_owned_provinces_with = {
-			value = 1
-			continent = africa
-			trade_goods = gold
-		}
+		gecko_african_gold_any_trigger = yes
 	}
 	trigger = {
-		owns_all_provinces = {
-			continent = africa
-			trade_goods = gold
-		}
+		gecko_african_gold_monopoly_trigger = yes
 	}
 	global_trade_goods_size_modifier = 0.05
 	gold_depletion_chance_modifier = -0.25
@@ -462,18 +439,10 @@ African_Gold_Monopoly = {
 
 African_Gold = {
 	potential = {
-		num_of_owned_provinces_with = {
-			value = 1
-			continent = africa
-			trade_goods = gold
-		}
+		gecko_african_gold_any_trigger = yes
 	}
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 3
-			continent = africa
-			trade_goods = gold
-		}
+		gecko_african_gold_three_trigger = yes
 	}
 	global_trade_goods_size_modifier = 0.05
 	monthly_gold_inflation_modifier = -0.25
@@ -486,11 +455,7 @@ African_Slave_Trade = {
 	potential = {
 	}
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 5
-			continent = africa
-			trade_goods = slaves
-		}
+		gecko_african_slaves_five_trigger = yes
 	}
 	mil_tech_cost_modifier = -0.05
 	infantry_power = 0.05
@@ -501,11 +466,7 @@ African_Slave_Trade_Western = {
 		always = no
 	}
 	trigger = {
-		num_of_owned_provinces_with = {
-			value = 5
-			continent = africa
-			trade_goods = slaves
-		}
+		gecko_african_slaves_five_trigger = yes
 	}
 	global_trade_goods_size_modifier = 0.1
 	global_tariffs = 0.1

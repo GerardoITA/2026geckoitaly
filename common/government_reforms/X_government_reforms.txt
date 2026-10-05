@@ -98,6 +98,7 @@ X_CRI_great_tatar_state_reform_2 = {
 		governing_capacity = 150
 		nomadic_tribes_loyalty_modifier = 0.05
 		reform_progress_growth = -0.25
+		cav_to_inf_ratio = 0.25
 	}
 	custom_attributes = {
 		locked_government_type = yes

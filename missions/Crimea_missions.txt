@@ -44,6 +44,10 @@ X_CRI_slot_1 = {
         icon = a_roman_empire
         required_missions = { X_CRI_mission_3 }
 		position = 2
+		provinces_to_highlight = {
+			province_id = 2410
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			2410 = {
 				owned_by = ROOT
@@ -70,6 +74,11 @@ X_CRI_slot_1 = {
 			X_CRI_mission_4
 		}
 		position = 3
+		provinces_to_highlight = {
+			region = crimea_region
+			NOT = { exists = GOL }
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			stability = 2
 			legitimacy_equivalent = 75
@@ -182,7 +191,13 @@ X_CRI_slot_2 = {
         required_missions = { X_CRI_mission_3 }
 		position = 2
 		provinces_to_highlight = {
-			province_id = 6001
+			OR = {
+				province_id = 6001
+				AND = {
+					province_id = 1322
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+			}
 		}
 		trigger = {
 			num_of_light_ship = 20
@@ -224,6 +239,10 @@ X_CRI_slot_2 = {
         icon = me_mission_great_mosque
         required_missions = { X_CRI_mission_6 }
 		position = 3
+		provinces_to_highlight = {
+			province_id = 6001
+			NOT = { X_has_latest_building_trigger = { tax = yes builder = ROOT } }
+		}
 		trigger = {
 			6001 = { X_has_latest_building_trigger = { tax = yes builder = ROOT } }
 			if = {
@@ -393,6 +412,15 @@ X_CRI_slot_3 = {
 			X_CRI_mission_6
 		}
 		position = 3
+		provinces_to_highlight = {
+			any_trade_node_member_province = {
+				province_id = 1322
+			}
+			owner = {
+				NOT = { tag = ROOT }
+				NOT = { is_subject_of = ROOT }
+			}
+		}
 		trigger = {
 			OR = {
 				trade_goods_produced_amount = {
@@ -457,6 +485,9 @@ X_CRI_slot_3 = {
         icon = mission_defeat_muscovy
         required_missions = { X_CRI_mission_10 }
 		position = 4
+		provinces_to_highlight = {
+			province_id = 295
+		}
 		trigger = {
 			controls = 295
 			295 = {
@@ -610,6 +641,9 @@ X_CRI_slot_4 = {
         icon = fortress_of_belgrade 
         required_missions = { X_CRI_mission_1 }
 		position = 2
+		provinces_to_highlight = {
+			province_id = 6002
+		}
 		trigger = {
 			6002 = {
 				owned_by = ROOT
@@ -640,6 +674,13 @@ X_CRI_slot_4 = {
         icon = mission_lit_harness_steppes
         required_missions = { X_CRI_mission_5 }
 		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = lower_don_area
+				area = sloboda_ukraine_area
+			}
+			NOT = { country_or_subject_holds = ROOT }
+		}
 		trigger = {
 			lower_don_area = {
 				type = all
@@ -686,6 +727,15 @@ X_CRI_slot_4 = {
 			X_CRI_mission_13
 		}
 		position = 4
+		provinces_to_highlight = {
+			region = ruthenia_region
+			has_terrain = steppe
+			owner = {
+				NOT = { is_subject_of = ROOT }
+				unit_type = eastern
+				religion_group = christian
+			}
+		}
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = X_CRI_mission_15_tt
@@ -732,6 +782,18 @@ X_CRI_slot_5 = {
         icon = mission_pol_breadbasket_europe
         required_missions = { }
 		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = odessa_area
+				area = yedisan_area
+				area = zaporizhia_area
+				area = podolia_volhynia_area
+				area = west_dniepr_area
+				area = east_dniepr_area
+				area = chernigov_area
+			}
+			NOT = { country_or_subject_holds = ROOT }
+		}
 		trigger = {
 			calc_true_if = {
 				desc = X_CRI_mission_12_tt
@@ -816,6 +878,19 @@ X_CRI_slot_5 = {
         icon = mission_advance_to_the_dnieper
         required_missions = { X_CRI_mission_12 }
 		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = west_dniepr_area
+				area = east_dniepr_area
+			}
+			OR = {
+				NOT = { country_or_subject_holds = ROOT }
+				owner = {
+					is_subject_of = ROOT
+					liberty_desire = 50
+				}
+			}
+		}
 		trigger = {
 			west_dniepr_area = {
 				type = all
@@ -887,6 +962,19 @@ X_CRI_slot_5 = {
         icon = mission_rule_ruthenia
         required_missions = { X_CRI_mission_13 }
 		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = red_ruthenia_area
+				area = volhynia_area
+			}
+			OR = {
+				NOT = { country_or_subject_holds = ROOT }
+				owner = {
+					is_subject_of = ROOT
+					liberty_desire = 50
+				}
+			}
+		}
 		trigger = {
 			red_ruthenia_area = {
 				type = all
@@ -1031,6 +1119,14 @@ X_CRI_slot_5 = {
         icon = mission_lit_great_power_politics
         required_missions = { X_CRI_mission_14 }
 		position = 5
+		provinces_to_highlight = {
+			region = ruthenia_region
+			OR = {
+				NOT = { country_or_subject_holds = ROOT }
+				owned_by = LIT
+				owner = { overlord_of = LIT }
+			}
+		}
 		trigger = {
 			if = {
 				limit = {

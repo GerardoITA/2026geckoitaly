@@ -1076,6 +1076,7 @@ tributary_state = {
 
 eyalet = {
 	copy_from = default
+	is_potential_overlord = { always = no } # Eyalets are disabled.
 	
 	# Graphics:
     sprite = GFX_icon_eyalet
@@ -1172,6 +1173,7 @@ eyalet = {
 
 core_eyalet = {
 	copy_from = eyalet
+	is_potential_overlord = { always = no } # Eyalets are disabled.
 	
 	# Graphics:
     sprite = GFX_icon_core_eyalet

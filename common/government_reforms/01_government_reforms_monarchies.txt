@@ -973,7 +973,7 @@ ottoman_government = {
 		custom_attributes = {
 			has_harem_events = yes
 			enables_estate_janissaries = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 		government_abilities = {
 			ottoman_decadence_mechanic
@@ -1894,7 +1894,7 @@ modernized_ottoman_government = {
 		custom_attributes = {
 			has_harem_events = yes
 			enables_estate_janissaries = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 	}
 	conditional = {
@@ -1966,7 +1966,7 @@ reorganized_ottoman_government = {
 		has_janissaries = yes
 		custom_attributes = {
 			enables_estate_janissaries = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 	}
 }
@@ -2011,7 +2011,7 @@ sultanate_of_rum_reform = {
 		has_harem = yes
 		custom_attributes = {
 			has_harem_events = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 	}
 	conditional = {

@@ -81,7 +81,7 @@
 
  cb_intscore_rivalry:0 "IntScore War"
 
- cb_intscore_rivalry_desc:0 "Declare war on a player rival to reduce their IntScore. The winner gains half of the IntScore removed from the defeated country. This Casus Belli becomes available from 1 January 1500."
+ cb_intscore_rivalry_desc:0 "Declare war on a player rival to reduce their IntScore. The winner gains half of the IntScore removed from the defeated country. This Casus Belli becomes available from 1 January 1500.\n\n§RThe defeated country suffers +5% All Power Costs for 10 years. Losing again resets the duration to 10 years; the penalty does not stack.§!"
 
  intscore_superiority:0 "Show IntScore Superiority"
 
@@ -91,7 +91,7 @@
 
  intscore_loss_025:0 "Remove Score 25 WS"
 
- intscore_loss_025_desc:0 "The defeated country loses §R25 IntScore§! in 1500–1549, §R50§! in 1550–1599, §R100§! in 1600–1649, §R200§! in 1650–1699, §R300§! in 1700–1749 and §R400§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_025_desc:0 "The defeated country loses §R25 IntScore§! in 1500–1549, §R50§! in 1550–1599, §R100§! in 1600–1649, §R200§! in 1650–1699, §R300§! in 1700–1749 and §R400§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!.\n\n§RThe defeated country suffers +5% All Power Costs for 10 years. Losing again resets the duration to 10 years; the penalty does not stack.§!"
 
  CB_ALLOWED_intscore_loss_025:0 "Reduce enemy IntScore"
 
@@ -99,7 +99,7 @@
 
  intscore_loss_050:0 "Remove Score 50 WS"
 
- intscore_loss_050_desc:0 "The defeated country loses §R50 IntScore§! in 1500–1549, §R100§! in 1550–1599, §R200§! in 1600–1649, §R400§! in 1650–1699, §R600§! in 1700–1749 and §R800§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_050_desc:0 "The defeated country loses §R50 IntScore§! in 1500–1549, §R100§! in 1550–1599, §R200§! in 1600–1649, §R400§! in 1650–1699, §R600§! in 1700–1749 and §R800§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!.\n\n§RThe defeated country suffers +5% All Power Costs for 10 years. Losing again resets the duration to 10 years; the penalty does not stack.§!"
 
  CB_ALLOWED_intscore_loss_050:0 "Reduce enemy IntScore"
 
@@ -107,7 +107,7 @@
 
  intscore_loss_075:0 "Remove Score 75 WS"
 
- intscore_loss_075_desc:0 "The defeated country loses §R75 IntScore§! in 1500–1549, §R150§! in 1550–1599, §R300§! in 1600–1649, §R600§! in 1650–1699, §R900§! in 1700–1749 and §R1200§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_075_desc:0 "The defeated country loses §R75 IntScore§! in 1500–1549, §R150§! in 1550–1599, §R300§! in 1600–1649, §R600§! in 1650–1699, §R900§! in 1700–1749 and §R1200§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!.\n\n§RThe defeated country suffers +5% All Power Costs for 10 years. Losing again resets the duration to 10 years; the penalty does not stack.§!"
 
  CB_ALLOWED_intscore_loss_075:0 "Reduce enemy IntScore"
 
@@ -115,8 +115,10 @@
 
  intscore_loss_100:0 "Remove Score 100 WS"
 
- intscore_loss_100_desc:0 "The defeated country loses §R100 IntScore§! in 1500–1549, §R200§! in 1550–1599, §R400§! in 1600–1649, §R800§! in 1650–1699, §R1200§! in 1700–1749 and §R1600§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!."
+ intscore_loss_100_desc:0 "The defeated country loses §R100 IntScore§! in 1500–1549, §R200§! in 1550–1599, §R400§! in 1600–1649, §R800§! in 1650–1699, §R1200§! in 1700–1749 and §R1600§! from 1750 onward. The winner gains §Ghalf of the IntScore removed§!.\n\n§RThe defeated country suffers +5% All Power Costs for 10 years. Losing again resets the duration to 10 years; the penalty does not stack.§!"
 
  CB_ALLOWED_intscore_loss_100:0 "Reduce enemy IntScore"
 
  PEACE_intscore_loss_100:0 "Remove Score 100 WS"
+ intscore_defeat_penalty:0 "IntScore War Defeat"
+ desc_intscore_defeat_penalty:0 "§RDefeat in an IntScore War increases All Power Costs by 5% for 10 years. Another defeat resets the duration to 10 years; the penalty does not stack.§!"

@@ -13,6 +13,13 @@
 ####INTSCORE
 intscore_apply_pvp_loss = {
 
+	# Refresh the defeat penalty in the losing country's scope; repeated losses do not stack.
+	remove_country_modifier = intscore_defeat_penalty
+	add_country_modifier = {
+		name = intscore_defeat_penalty
+		duration = 3650
+	}
+
 	# Parte dal valore base della peace option.
 	set_variable = {
 		which = intscore_pvp_loss

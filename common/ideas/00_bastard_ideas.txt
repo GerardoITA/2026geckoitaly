@@ -2207,7 +2207,7 @@ ROM_ideas = {
 }
 MOR_ideas = {
 	start = {
-		naval_forcelimit_modifier = 0.25
+		galley_power = 0.25
 		cavalry_power = 0.1
 	}
 	bonus = {

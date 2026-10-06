@@ -564,6 +564,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
+	nomadic_tribes_privilege_slots = 2
 	max_absolutism = 65
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..

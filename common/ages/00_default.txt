@@ -569,6 +569,9 @@ age_of_reformation = {
 				OR = {
 					tag = CRI
 					tag = GLH
+					tag = OIR
+					tag = KHA
+					tag = MGE
 				}	
 				
 			}	

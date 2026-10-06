@@ -518,7 +518,7 @@ weapon_quality_standards_2:0 "Weapon Quality Standards II"
  h_colony_religion:0 "Religious Freedom"
  h_colonial_industry:0 "Rise of Colonial Industry"
 #ages#
- crimean_raids:0 "Crimean Raids"
+ crimean_raids:0 "Tribal Raids"
 
 ###netherlands###
  mechanic_has_defense_of_the_united_provinces_yes:1 "Can use the §YDefend the United Provinces§! Decision during Defensive Wars"

@@ -11053,6 +11053,7 @@ brandenburg_gate = {
 		}
 		country_modifiers = {
 			monthly_militarized_society = 0.01
+			yearly_army_professionalism = 0.005
 			monthly_prussian_militarized_society_1 = 0.01
 			monthly_prussian_militarized_society_2 = 0.01
 			monthly_prussian_militarized_society_3 = 0.01
@@ -11075,6 +11076,7 @@ brandenburg_gate = {
 		}
 		country_modifiers = {
 			monthly_militarized_society = 0.02	
+			yearly_army_professionalism = 0.005
 			prestige_from_land = 1
 			army_tradition_from_battle = 0.25
 			monthly_prussian_militarized_society_1 = 0.02
@@ -11098,6 +11100,7 @@ brandenburg_gate = {
 		}
 		country_modifiers = {
 			monthly_militarized_society = 0.05
+			yearly_army_professionalism = 0.005
 			prestige_from_land = 1.5
 			army_tradition_from_battle = 0.5
 			monthly_prussian_militarized_society_1 = 0.05

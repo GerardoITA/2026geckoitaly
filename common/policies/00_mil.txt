@@ -1097,7 +1097,7 @@ weapon_quality_standards_1 = {
 	}
 
 	infantry_fire = 0.15
-	infantry_shock = 0.15
+	infantry_shock = 0.20
 	
 	effect = {}
 	removed_effect = {}
@@ -1130,7 +1130,7 @@ weapon_quality_standards_2 = {
 	}
 
 	infantry_fire = 0.20
-	infantry_shock = 0.20
+	infantry_shock = 0.25
 	
 	effect = {}
 	removed_effect = {}
@@ -1470,7 +1470,7 @@ vassal_taxation_policy_1 = {
 		NOT = { has_active_policy = vassal_taxation_policy_2 }
 	}
 
-	infantry_shock = 0.30
+	infantry_shock = 0.35
 
 	effect = {}
 	removed_effect = {}
@@ -1501,7 +1501,7 @@ vassal_taxation_policy_2 = {
 		NOT = { has_active_policy = vassal_taxation_policy_1 }
 	}
 
-	infantry_shock = 0.40
+	infantry_shock = 0.45
 
 	effect = {}
 	removed_effect = {}
@@ -1908,8 +1908,8 @@ special_forces_act_1 = {
 	}
 
 	is_cossack_modifier = yes
-	infantry_fire = 0.3
-	infantry_shock = 0.3
+	infantry_fire = 0.35
+	infantry_shock = 0.35
 
 	effect = {
 		add_country_modifier = {
@@ -1957,8 +1957,8 @@ special_forces_act_2 = {
 	}
 
 	is_cossack_modifier = yes
-	infantry_fire = 0.4
-	infantry_shock = 0.4
+	infantry_fire = 0.45
+	infantry_shock = 0.45
 
 	effect = {
 		add_country_modifier = {
@@ -2129,7 +2129,7 @@ the_witchcraft_act_1 = {
 		NOT = { has_active_policy = the_witchcraft_act_2 }
 	}
 
-	cavalry_shock = 0.35
+	cavalry_shock = 0.40
 
 	effect = {}
 	removed_effect = {}
@@ -2160,7 +2160,7 @@ the_witchcraft_act_2 = {
 		NOT = { has_active_policy = the_witchcraft_act_1 }
 	}
 
-	cavalry_shock = 0.45
+	cavalry_shock = 0.50
 
 	effect = {}
 	removed_effect = {}
@@ -2224,7 +2224,7 @@ the_licensing_of_the_press_act_1 = {
 		NOT = { has_active_policy = the_licensing_of_the_press_act_2 }
 	}
 
-	cavalry_fire = 0.35
+	cavalry_fire = 0.40
 
 	effect = {}
 	removed_effect = {}
@@ -2255,7 +2255,7 @@ the_licensing_of_the_press_act_2 = {
 		NOT = { has_active_policy = the_licensing_of_the_press_act_1 }
 	}
 
-	cavalry_fire = 0.45
+	cavalry_fire = 0.50
 
 	effect = {}
 	removed_effect = {}
@@ -2319,7 +2319,7 @@ aristocratic_rule_act_1 = {
 		NOT = { has_active_policy = aristocratic_rule_act_2 }
 	}
 
-	cavalry_shock = 0.35
+	cavalry_shock = 0.40
 
 	effect = {}
 	removed_effect = {}
@@ -2350,7 +2350,7 @@ aristocratic_rule_act_2 = {
 		NOT = { has_active_policy = aristocratic_rule_act_1 }
 	}
 
-	cavalry_shock = 0.45
+	cavalry_shock = 0.50
 
 	effect = {}
 	removed_effect = {}
@@ -2414,7 +2414,7 @@ formalized_measures_1 = {
 		NOT = { has_active_policy = formalized_measures_2 }
 	}
 
-	infantry_fire = 0.30
+	infantry_fire = 0.35
 
 	effect = {}
 	removed_effect = {}
@@ -2445,7 +2445,7 @@ formalized_measures_2 = {
 		NOT = { has_active_policy = formalized_measures_1 }
 	}
 
-	infantry_fire = 0.40
+	infantry_fire = 0.45
 
 	effect = {}
 	removed_effect = {}
@@ -2508,7 +2508,7 @@ black_chamber_act_1 = {
 		NOT = { has_active_policy = black_chamber_act_2 }
 	}
 
-	artillery_fire = 0.8
+	artillery_fire = 1
 
 	effect = {}
 	removed_effect = {}
@@ -2539,7 +2539,7 @@ black_chamber_act_2 = {
 		NOT = { has_active_policy = black_chamber_act_1 }
 	}
 
-	artillery_fire = 1.2
+	artillery_fire = 1.5
 
 	effect = {}
 	removed_effect = {}

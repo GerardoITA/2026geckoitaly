@@ -1095,6 +1095,7 @@ estate_nobles_junker_primacy = {
 		#all_power_cost = 0.05
 	}
 	benefits = {
+		nobles_privilege_slots = 1
 		monthly_militarized_society = 0.03
 		monthly_prussian_militarized_society_1 = 0.02
 		monthly_prussian_militarized_society_2 = 0.05
@@ -3095,6 +3096,7 @@ estate_nobles_consolidated_noble_contracts = {
 	on_revoked = {
 	}
 	benefits = {
+		nobles_privilege_slots = 1
 		core_creation = -0.1
 	}
 	penalties = { 

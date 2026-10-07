@@ -1272,6 +1272,7 @@ hudson_bay_region = {
 
 mexico_region = {
 	areas = {
+		gordita_area
 		eastern_mexico_area
 		mexico_area
 		michoacan_area

@@ -390,13 +390,7 @@ emp_bra_pru_1_b = {
 				value = 0.15
 				extra_shortcut = yes
 			}
-			OR = {
-				full_idea_group = quality_ideas
-				full_idea_group = quantity_ideas
-				full_idea_group = offensive_ideas
-				full_idea_group = defensive_ideas
-				monthly_mil = 12
-			}
+			monthly_mil = 12
 			land_forcelimit = 100
 			OR = { 
 				army_tradition = 90

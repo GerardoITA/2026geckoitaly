@@ -3590,10 +3590,7 @@ WoC_austria_5 = {
 				total_own_and_non_tributary_subject_development = 800
 			}
 			army_size = 125
-			OR = {
-				full_idea_group = diplomatic_ideas
-				diplomatic_reputation = 7
-			}
+			diplomatic_reputation = 5
 		}
 		effect = {
 			custom_tooltip = HAB_UNLOCK_HABSBURG_CONNECTIONS_ESTATE_PRIVILEGE

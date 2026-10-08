@@ -205,7 +205,7 @@ economic_ideas = {
 	smithian_economics = { 
 		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
 		production_efficiency = 0.1 				#for eco ideas are done so via on_actions 
-		global_allowed_num_of_manufactories = 1
+		global_allowed_num_of_buildings = 1
  	}												#for the loans and via the buildings file for the dev from manufactories! happy modding 
 	bureaucracy = { 
 		land_forcelimit_modifier = 0.15
@@ -433,6 +433,7 @@ infrastructure_ideas = {
 	organised_construction = {
 		great_project_upgrade_time = -0.25
 		great_project_upgrade_cost = -0.25
+		build_time = -0.25
 		
 	}
 	efficient_construction_plans = {
@@ -751,7 +752,7 @@ court_ideas = {
 	respected_authority = {
 		max_absolutism = 50
 		imperial_authority_value = 0.2
-		max_absolutism_effect = 0.25
+		max_absolutism_effect = 0.5
 	}
 	
 	ai_will_do = {

@@ -1549,6 +1549,7 @@ colonial_government = {
 	}
 	effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = crown_colony }
 				add_government_reform = crown_colony_government
@@ -1565,6 +1566,7 @@ colonial_government = {
 	}
 	removed_effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = crown_colony }
 				add_government_reform = crown_colony_government
@@ -1610,6 +1612,7 @@ crown_colony_government = {
 	}
 	effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = private_enterprise }
 				add_government_reform = private_enterprise_colony_government
@@ -1622,6 +1625,7 @@ crown_colony_government = {
 	}
 	removed_effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = private_enterprise }
 				add_government_reform = private_enterprise_colony_government
@@ -1684,6 +1688,7 @@ private_enterprise_colony_government = {
 	}
 	effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = crown_colony }
 				add_government_reform = crown_colony_government
@@ -1696,6 +1701,7 @@ private_enterprise_colony_government = {
 	}
 	removed_effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = crown_colony }
 				add_government_reform = crown_colony_government
@@ -1748,6 +1754,7 @@ self_governing_colony_government = {
 	}
 	effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = crown_colony }
 				add_government_reform = crown_colony_government
@@ -1760,6 +1767,7 @@ self_governing_colony_government = {
 	}
 	removed_effect = {
 		hidden_effect = {
+			gc_update_subject_discipline = yes
 			if = {
 				limit = { is_subject_of_type = crown_colony }
 				add_government_reform = crown_colony_government

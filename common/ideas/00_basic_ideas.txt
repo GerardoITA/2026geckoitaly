@@ -660,12 +660,10 @@ influence_ideas = {
 
 	postal_service = {
 		idea_cost = -0.1
-	}
-
-	additional_loyalist_recruitment = {
 		can_fabricate_for_vassals = yes
 		global_own_trade_power = 0.25
 	}
+
 
 	establish_cadet_branches = {
 		stability_cost_modifier = -0.1
@@ -686,6 +684,32 @@ influence_ideas = {
 		vassal_naval_forcelimit_bonus = 0.5
 		vassal_manpower_bonus = 0.2
 		vassal_sailors_bonus = 0.5
+	}
+	additional_loyalist_recruitment = {
+		discipline = 0.005
+		effect = {
+			custom_tooltip = gc_additional_loyalist_recruitment_tt
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						NOT = { has_country_modifier = gc_influential_overlord }
+					}
+					add_country_modifier = {
+						name = gc_influential_overlord
+						duration = -1
+					}
+				}
+			}
+		}
+		removed_effect = {
+			custom_tooltip = gc_additional_loyalist_recruitment_tt
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_country_modifier = gc_influential_overlord }
+					remove_country_modifier = gc_influential_overlord
+				}
+			}
+		}
 	}
 
 	ai_will_do = {

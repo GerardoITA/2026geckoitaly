@@ -1,6 +1,7 @@
 #When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
 # country
 on_startup = {
+	gc_update_subject_discipline = yes
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -229,6 +230,7 @@ on_enforce_rebel_demands = {
 
 # country
 on_colonial_liberation = {
+	gc_update_subject_discipline = yes
 	if = {
 		limit = {
 			NOT = {
@@ -5464,6 +5466,7 @@ on_company_chartered = {
 
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
+	FROM = { gc_update_subject_discipline = yes }
 	if = {
 		limit = {
 			FROM = {
@@ -5494,6 +5497,7 @@ on_dependency_gained = {
 
 # ROOT = Overlord, FROM = Minor
 on_dependency_lost = {
+	FROM = { gc_update_subject_discipline = yes }
 	if = {
 		limit = {
 			has_country_modifier = mng_tibetan_horses_monopoly_modifier
@@ -5541,6 +5545,7 @@ on_dependency_lost = {
 
 # ROOT = New vassal, FROM = Overlord
 on_create_vassal = {
+	gc_update_subject_discipline = yes
 	on_religion_change_estate_privileges_effect = yes
 	if = {
 		limit = {
@@ -5680,6 +5685,7 @@ on_flagship_destroyed = {
 
 # this = Released country, FROM = Releasing country
 on_country_released = {
+	gc_update_subject_discipline = yes
 	if = {
 		limit = {
 			tag = PAP
@@ -5929,6 +5935,7 @@ on_conquest = {
 }
 
 on_country_creation = {
+	gc_update_subject_discipline = yes
 	if = {
 		limit = {
 			tag = PAP
@@ -5976,6 +5983,7 @@ on_transfer_development = {
 
 #FROM = overlord, ROOT - colony
 on_colonial_type_change = {
+	gc_update_subject_discipline = yes
 	clr_country_flag = encourage_cash_crops_flag
 }
 
@@ -6144,6 +6152,7 @@ on_colony_established = {
 
 #scope = new country, FROM = parent country
 on_colonial_nation_established = {
+	gc_update_subject_discipline = yes
 	gecko_refresh_african_modifier_cache_effect = yes
 }
 

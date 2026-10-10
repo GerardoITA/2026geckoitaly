@@ -580,7 +580,7 @@ plutocratic_rule_act = {
 		full_idea_group = plutocracy_ideas 
 	}
 	
-	mercenary_discipline = 0.05
+	mercenary_discipline = 0.075
 
 	effect = {}
 	removed_effect = {}

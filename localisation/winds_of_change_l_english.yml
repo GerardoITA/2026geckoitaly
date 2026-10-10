@@ -1448,7 +1448,7 @@
  GER_statesmen_autonomy:0 "'§YStatesman§!' Advisor Type will now additionally provide additionally §G-0.02%§! Monthly Autonomy Change per Advisor Level."
  GER_statesmen_morale:0 "'§YStatesman§!' Advisor Type will now additionally provide additionally §G+2.0%§! Morale of Armies per Advisor Level."
  GER_statesmen_abso:0 "'§YStatesman§!' Advisor Type will now additionally provide additionally §G+0.4§! Yearly Absolutism per Advisor Level."
- GER_upgrade_the_statesman_privilege:0 "Strengthen the '§YStatesman of the [Root.GetNobilityName]§!' Estate Privilege of the §Y[Root.GetNobilityName]§!, making it give §G+5.00§! Maximum Absolutism and making the decision also recruit a §YStatesman§!."
+ GER_upgrade_the_statesman_privilege:0 "Convene the cabinet to choose an additional bonus for Statesman advisors."
  GER_can_have_radical_reforms_twice:0 "If we had the event '§YRadical Reforms§!', we will be able to get it again. If we haven't we will be able to get it §Ytwice§!."
  GER_give_5_mil_power_for_every_5_loyalty_at_75:0 "Gain §G+5§!£mil£ Military Power for every §G5§! Loyalty of the §Y[Root.GetNobilityName]§! up to a maximum of §G+75§! at 75 Loyalty."
  GER_upgrade_the_junker_primacy:1 "Strengthen the '§YJunker Supremacy§!' Estate Privilege of the §Y[Root.GetNobilityName]§!, making it give double the modifiers."

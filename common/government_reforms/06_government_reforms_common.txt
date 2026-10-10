@@ -4968,6 +4968,7 @@ german_swiss_reform = {
 	}
 	modifiers = {
     	mercenary_manpower = 0.25
+		allow_mercenary_drill = yes
 	}
 	
 	conditional = {

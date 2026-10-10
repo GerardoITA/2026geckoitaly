@@ -2136,22 +2136,8 @@ JHC_GER_5_ger = {
 		icon = ger_kaiserreich
 		required_missions = { JHC_GER_education JHC_GER_junkers }
 		position = 10
-		provinces_to_highlight = {
-			is_capital = yes
-			NOT = { owned_by = ROOT }
-			owner = {
-				total_development = ROOT 
-			}
-		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = kaiserreich_tt
-				NOT = {
-					any_country = {
-						total_development = ROOT
-					}
-				}
-			}
+			total_development = 2500
 			if = {
 				limit = {
 					OR = {

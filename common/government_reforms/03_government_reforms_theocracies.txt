@@ -11,6 +11,7 @@ theocracy_mechanic = {
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
 	custom_attributes = {
+		can_see_theocratic_heir_stats = yes
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}

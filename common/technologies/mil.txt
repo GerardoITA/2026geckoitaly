@@ -263,6 +263,7 @@ technology = {
 	cavalry_fire		= 	0.25
 	artillery_fire 		= 	0.2
 	
+	fort_16th = yes
 	weapons = yes
 	armory = yes
 	combat_width = 2
@@ -312,7 +313,6 @@ technology = {
 	year = 1583
 	
 	#Star Bastions
-	fort_16th = yes
 	infantry_fire		=	0.25
 	infantry_shock		=	0.05
 	cavalry_shock		=	0.25
@@ -379,6 +379,7 @@ technology = {
 	artillery_fire 		= 	0.35
 	cavalry_shock		=	0.35
 
+	fort_17th = yes
 	training_fields = yes
 	
 	combat_width = 1
@@ -433,7 +434,6 @@ technology = {
 	supply_limit		=	1
 	artillery_fire		=	0.4
 	infantry_shock		=	0.1
-	fort_17th = yes
 
 	
 	enable = austrian_tercio   
@@ -476,6 +476,7 @@ technology = {
 	year = 1674
 	
 	#Line Infantry
+	fort_18th = yes
 	sprite_level = 3
 	military_tactics 	= 	0.25
 	cavalry_fire		=	0.35
@@ -549,7 +550,6 @@ technology = {
 	year = 1715
 	
 	#Covered Way
-	fort_18th	= yes	
 	military_tactics 	= 	0.25
 	artillery_fire		=	1.0
 	combat_width = 2

@@ -468,7 +468,7 @@ country_event = {
 			}
 			release = EIC
 			create_subject = {
-				subject_type = commercial_enterprise
+				subject_type = indipendent_commercial_enterprise
 				who = EIC
 			}
 			EIC = {
@@ -708,7 +708,7 @@ country_event = {
 			}
 			release = EIC
 			create_subject = {
-				subject_type = commercial_enterprise
+				subject_type = indipendent_commercial_enterprise
 				who = EIC
 			}
 			EIC = {

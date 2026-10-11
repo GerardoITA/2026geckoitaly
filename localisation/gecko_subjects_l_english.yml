@@ -1,0 +1,9 @@
+﻿l_english:
+ indipendent_commercial_enterprise:0 "Independent Commercial Enterprise"
+ indipendent_commercial_enterprise_long_desc:0 "An independent commercial enterprise manages its own diplomacy, wars, government, and territory under its overlord's protection. It may hold subjects and declines automatic participation in its overlord's wars. It contributes 25% of its land force limit, naval force limit, manpower, and sailors to its overlord."
+ indipendent_commercial_enterprise_title:0 "Independent Commercial Enterprise"
+ indipendent_commercial_enterprise_title_plural:0 "Independent Commercial Enterprises"
+ indipendent_commercial_enterprise_overlord:0 "Independent Commercial Enterprise Overlord"
+ indipendent_commercial_enterprise_subject:0 "Independent Commercial Enterprise Subject"
+ indipendent_commercial_enterprise_is_our:0 "$NAME$ is our Independent Commercial Enterprise."
+ indipendent_commercial_enterprise_no_overlord_dow:0 "We may not declare war on our Independent Commercial Enterprise subjects."

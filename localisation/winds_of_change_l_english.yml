@@ -2482,7 +2482,7 @@
  NED_BUFF_FERVOR_ACTIONS_BY_50:0 "§YFervor Focuses§! will now give §G50%§! more bonuses."
  NED_BUFF_CLERICAL_STUDIES_PRIVILEGE:1 "The Clergy privilege §YFund Theological Studies§! will now grant a modifier scaled with §YClergy§! influence, giving the following at max influence:\n   Tolerance of Heretics: §G+2.00§!\n   Relations with Heretics: §G+30§!"
  NED_BUFF_ARTIST_ADVISOR:1 "§YArtists§! Advisors will now give §G-2.5%§! Construction Cost per level."
- NED_UNLOCK_VOC_PRIVILEGE:1 "Unlocks the §YVereenigde Oostindische Compagnie§! Burghers Privilege, which will allow us to establish the §YVOC§! as a §YCommercial Enterprise§! in §YIndia§!."
+ NED_UNLOCK_VOC_PRIVILEGE:1 "Unlocks the §YVereenigde Oostindische Compagnie§! Burghers Privilege, which will allow us to establish the §YVOC§! as a §YIndependent Commercial Enterprise§! in §YIndia§!."
  NED_BUFFS_VOC_PRIVILEGE:0 "The §YVereenigde Oostindische Compagnie§! Burghers Privilege will now give the following:\n   Trade Company Governing Cost: §G-15.0%§!"
  NED_IF_COMPLETED_VIA_CONQUEST:0 "If the mission was completed via §MConquest§!:"
  NED_PRODUCTION_IN_ALL_COT_JAPAN_PROVINCES:1 "All owned Japanese §YCenter of Trade§! provinces will gain §G+1§! Base Production."
@@ -6045,33 +6045,9 @@
  expand_voc_title:0 "Expand the VOC"
  expand_voc_desc:0 "We have lands in India that should be granted to the Vereenigde Oostindische Compagnie."
 
- voc_ideas:0 "Vereenigde Oostindische Compagnie Ideas"
- voc_ideas_start:0 "Vereenigde Oostindische Compagnie Traditions"
- voc_ideas_bonus:0 "Vereenigde Oostindische Compagnie Ambition"
- 
- voc_1:0 "Governors of India"
- voc_1_desc:0 "We have been blessed by our overlords in the Netherlands with the title of Governors of India. We shall do our best to fulfill that job for them."
- 
- voc_2:0 "Divide and Conquer"
- voc_2_desc:0 "The numerous Indian Sultanates are posing a problem to us, both to conquer and to rule. If we are to accomplish both, then we must divide them, and conquer them separately."
- 
- voc_3:0 "Development of Foreign Lands"
- voc_3_desc:0 "Although we are here only for trade, the lands that we have at our disposal have been lacking compared to those in Europe. We must make sure to expand them."
- 
- voc_4:0 "Expansion of the East Indies"
- voc_4_desc:0 "Although we have been granted the titles of Governors of India, we must not stop our ambitions there. We are the company of the East Indies, and our claims expand to all of Asia."
- 
- voc_5:0 "Shipyards for Trade"
- voc_5_desc:0 "Instead of relying to European merchants to supply us with ships for trade, we should focus on creating new shipyards in order to expand our private fleet."
- 
- voc_6:0 "Into Foreign Lands"
- voc_6_desc:0 "The lands of Asia are foreign to our troops, officers, and generals. We must master them if we are to expand the company's riches."
- 
- voc_7:0 "Private Army"
- voc_7_desc:0 "Rather than the state owning an army, rather than it being an institution for the state's will, we should make our army a private force, with its purpose being to defend the company's interests."
  
  
- NED_ESTABLISH_VOC_IN_INDIA:0 "We will establish the §Y[VOC.GetName]§! in India as our §YCommercial Enterprise§!."
+ NED_ESTABLISH_VOC_IN_INDIA:0 "We will establish the §Y[VOC.GetName]§! in India as our §YIndependent Commercial Enterprise§!."
  NED_CEDE_PROVINCES_TO_VOC:0 "We will grant all of our §YIndian§! provinces to the §Y[VOC.GetName]§!."
  
  increase_voc_eastindiamen_construction:0 "Increase East Indiamen Construction"
@@ -7156,7 +7132,7 @@
 
  HUNGARY_AUSTRIA:0 "Hungary-Austria"
  HUNGARY_AUSTRIA_ADJ:0 "Hungaro-Austrian"
- NED_UNLOCKS_VOC_ESTABLISHMENT:0 "Unlocks the establishment of the §YVOC§! as a §YCommercial Enterprise§! in §YIndia§!."
+ NED_UNLOCKS_VOC_ESTABLISHMENT:0 "Unlocks the establishment of the §YVOC§! as a §YIndependent Commercial Enterprise§! in §YIndia§!."
  ned_man_o_war_from_pu_flag:0 "Unlocked Man-o-Wars from Personal Unions"
  ven_allow_suez_flag:0 "Has gained access to constructing this Canal"
 

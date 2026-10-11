@@ -1787,11 +1787,16 @@ trade_company_government = {
 	allow_normal_conversion = no
 	potential = {
 		OR = {
+			tag = EIC
+			tag = VOC
+		}
+		OR = {
 			has_reform = trade_company_government
 			have_had_reform = trade_company_government
 		}
 	}
 	modifiers = {
+		liberty_desire = -100
 		tolerance_heathen = 1
 		tolerance_of_heathens_capacity = 1
 		production_efficiency = 0.1
@@ -1800,7 +1805,7 @@ trade_company_government = {
 		naval_forcelimit_modifier = 0.1
 	}
 	nation_designer_cost = 60
-	valid_for_nation_designer = yes
+	valid_for_nation_designer = no
 	boost_income = yes
 	duration = 6
 	factions = {
@@ -1813,7 +1818,9 @@ trade_company_government = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
+		enables_estate_nobles = yes
 		enables_estate_burghers = yes
+		enables_estate_church = yes
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
 	}

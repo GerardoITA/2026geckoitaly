@@ -3924,7 +3924,15 @@ shwedagon_pagoda = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#what to do when it's built
@@ -3939,12 +3947,28 @@ shwedagon_pagoda = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -4691,8 +4715,16 @@ taj_mahal = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 
@@ -4708,15 +4740,31 @@ taj_mahal = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 
@@ -5234,7 +5282,15 @@ bagan_temples = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#what to do when it's built
@@ -5249,12 +5305,28 @@ bagan_temples = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -5777,8 +5849,16 @@ golden_temple = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -5794,15 +5874,31 @@ golden_temple = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -11898,6 +11994,12 @@ ellora_caves = {
 
 	build_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -11914,6 +12016,12 @@ ellora_caves = {
 
 	can_use_modifiers_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -11924,6 +12032,12 @@ ellora_caves = {
 
 	can_upgrade_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -12389,8 +12503,16 @@ gomateshwara_statue = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12401,14 +12523,30 @@ gomateshwara_statue = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12516,8 +12654,16 @@ chola_temples = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12528,14 +12674,30 @@ chola_temples = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12804,6 +12966,12 @@ hampi = {
 
 	build_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -12820,6 +12988,12 @@ hampi = {
 
 	can_use_modifiers_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -12830,6 +13004,12 @@ hampi = {
 
 	can_upgrade_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -13291,8 +13471,16 @@ kashi_vishwanath = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -13303,14 +13491,30 @@ kashi_vishwanath = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -13405,8 +13609,16 @@ khajuraho = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -13417,14 +13629,30 @@ khajuraho = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -15478,8 +15706,16 @@ sun_temple_konarak = {
 			}
 		}
 		else = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
+			OR = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = VOC
+					}
+				}
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
 			}
 		}
 	}
@@ -15507,8 +15743,16 @@ sun_temple_konarak = {
 			}
 		}
 		else = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
+			OR = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = VOC
+					}
+				}
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
 			}
 		}
 	}
@@ -15530,8 +15774,16 @@ sun_temple_konarak = {
 			}
 		}
 		else = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
+			OR = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = VOC
+					}
+				}
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
 			}
 		}
 	}
@@ -15627,7 +15879,15 @@ swayambhunath = {
 	type = monument
 
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	on_built = {
@@ -15637,11 +15897,27 @@ swayambhunath = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	keep_trigger = {
@@ -18571,13 +18847,29 @@ shah_rukn_e_alam_tomb = {
 	on_destroyed = {
 	}
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 	keep_trigger = {

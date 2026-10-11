@@ -165,6 +165,32 @@
  mge_religious_pragmatism:0 "Religious Pragmatism"
  mge_religious_pragmatism_desc:0 "The Mongol Empire ruled over peoples of countless faiths and traditions. Rather than impose a single creed upon them, the Khans often allowed their subjects to worship freely so long as they remained loyal. By continuing this tradition of tolerance, we can preserve unity throughout our vast and diverse realm."
 
+ #VOC
+ voc_ideas:0 "VOC Ideas"
+ voc_ideas_start:0 "VOC Traditions"
+ voc_ideas_bonus:0 "VOC Ambition"
+
+ voc_1:0 "Governors of India"
+ voc_1_desc:0 "We have been blessed by our overlords in the Netherlands with the title of Governors of India. We shall do our best to fulfill that job for them."
+
+ voc_2:0 "Divide and Conquer"
+ voc_2_desc:0 "The numerous Indian Sultanates are posing a problem to us, both to conquer and to rule. If we are to accomplish both, then we must divide them, and conquer them separately."
+
+ voc_3:0 "Development of Foreign Lands"
+ voc_3_desc:0 "Although we are here only for trade, the lands that we have at our disposal have been lacking compared to those in Europe. We must make sure to expand them."
+
+ voc_4:0 "Expansion of the East Indies"
+ voc_4_desc:0 "Although we have been granted the titles of Governors of India, we must not stop our ambitions there. We are the company of the East Indies, and our claims expand to all of Asia."
+
+ voc_5:0 "Shipyards for Trade"
+ voc_5_desc:0 "Instead of relying to European merchants to supply us with ships for trade, we should focus on creating new shipyards in order to expand our private fleet."
+
+ voc_6:0 "Into Foreign Lands"
+ voc_6_desc:0 "The lands of Asia are foreign to our troops, officers, and generals. We must master them if we are to expand the company's riches."
+
+ voc_7:0 "Private Army"
+ voc_7_desc:0 "Rather than the state owning an army, rather than it being an institution for the state's will, we should make our army a private force, with its purpose being to defend the company's interests."
+
  TTS_ideas:0 "Two Sicilies Ideas"
  TTS_ideas_start:0 "Two Sicilies Traditions"
  TTS_ideas_bonus:0 "Two Sicilies Ambition"

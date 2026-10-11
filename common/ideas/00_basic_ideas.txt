@@ -206,6 +206,7 @@ economic_ideas = {
 		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
 		production_efficiency = 0.1 				#for eco ideas are done so via on_actions 
 		global_allowed_num_of_buildings = 1
+		global_allowed_num_of_manufactories = 1
  	}												#for the loans and via the buildings file for the dev from manufactories! happy modding 
 	bureaucracy = { 
 		land_forcelimit_modifier = 0.15

@@ -1284,6 +1284,7 @@ mexico_region = {
 		huasteca_area
 		mixteca_area
 		guanajuato_area
+		gordita_area
 	}
 	monsoon = {
 		00.06.01

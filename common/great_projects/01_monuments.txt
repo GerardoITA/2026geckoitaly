@@ -18995,7 +18995,8 @@ nizwa_fort = {
 			factor = 0
 		}
 		province_modifiers = {
-			attrition = 1
+			local_defensiveness = 0.25
+			local_garrison_size = 0.25
 		}
 		area_modifier = {
 		}
@@ -19016,8 +19017,8 @@ nizwa_fort = {
 		
 		}
 		area_modifier = {
-			local_defensiveness = 25
-			local_garrison_size = 25
+			local_defensiveness = 0.25
+			local_garrison_size = 0.25
 		}
 		country_modifiers = {
 			autonomy_change_time = -0.15
@@ -19037,8 +19038,8 @@ nizwa_fort = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_defensiveness = 33
-			local_garrison_size = 33
+			local_defensiveness = 0.33
+			local_garrison_size = 0.33
 			local_defender_dice_roll_bonus = 1
 		}
 		region_modifier = { 

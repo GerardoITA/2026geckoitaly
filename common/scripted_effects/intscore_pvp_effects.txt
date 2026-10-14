@@ -87,7 +87,7 @@ intscore_apply_pvp_loss = {
 	}
 
 	# Se il perdente ha meno IntScore della penalità,
-	# trasferisce soltanto quello che possiede.
+	# sottrae soltanto quello che possiede.
 	if = {
 		limit = {
 			NOT = {
@@ -108,29 +108,6 @@ intscore_apply_pvp_loss = {
 	subtract_variable = {
 		which = IntScore
 		which = intscore_pvp_loss
-	}
-
-	# Il vincitore riceve metà dei punti rimossi.
-	divide_variable = {
-		which = intscore_pvp_loss
-		value = 2
-	}
-
-	PREV = {
-		set_variable = {
-			which = intscore_pvp_loss
-			which = PREV
-		}
-
-		change_variable = {
-			which = IntScore
-			which = intscore_pvp_loss
-		}
-
-		set_variable = {
-			which = intscore_pvp_loss
-			value = 0
-		}
 	}
 
 	# Safety: IntScore non può diventare negativo.

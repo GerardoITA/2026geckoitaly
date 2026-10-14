@@ -19,6 +19,8 @@ country_event = {
 					is_subject_of_type = march
 					is_subject_of_type = client_vassal
 					is_subject_of_type = client_march
+					is_subject_of_type = canton
+					is_subject_of_type = appanage
 				}
 			}
 
@@ -26,6 +28,7 @@ country_event = {
 				country = ROOT
 			}
 		}
+		gecko_lighten_vassal_colors_effect = yes
 	}
 
 	option = {
@@ -40,6 +43,8 @@ country_event = {
 					is_subject_of_type = march
 					is_subject_of_type = client_vassal
 					is_subject_of_type = client_march
+					is_subject_of_type = canton
+					is_subject_of_type = appanage
 				}
 			}
 

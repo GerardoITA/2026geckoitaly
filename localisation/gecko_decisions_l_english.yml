@@ -140,7 +140,7 @@ gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
  educate_ruler_information_desc:0 "Learn how to improve your ruler's skills."
 
  educate_ruler.1.t:0 "Educate the Ruler"
- educate_ruler.1.d:0 "If your ruler has any skill below §Y3§!, you can educate them to improve it.\n\nTo do so, open the Government interface and click directly on the ruler's §YADM§!, §YDIP§! or §YMIL§! skill value."
+ educate_ruler.1.d:0 "If your ruler has any skill below §Y3§!, you can educate them to improve it.\n\nTo do so, open the Government interface and click directly on the ruler's §YADM§!, §YDIP§! or §YMIL§! skill value.\n\nEach +1 skill costs §Y20% of our annual income§! (0.2 years). You must have enough ducats in the treasury to pay for each advancement."
 
  educate_ruler.1.a:0 "Understood."
 

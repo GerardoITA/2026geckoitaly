@@ -18,9 +18,9 @@
  development_counter_tt:0 "Development Improvements:\n\n£adm£ Development Gained: §G[Root.adm_dev_counter.GetValue]§! \n£dip£ Development Gained: §G[Root.dip_dev_counter.GetValue]§! \n£mil£ Development Gained: §G[Root.mil_dev_counter.GetValue]§! \n\nTotal Development Gained: §G[Root.total_dev_counter.GetValue]§!"
  development_counter_update_tt:0 "Add §YDevelopment Improvement Counter§!".
  #Educate Ruler
- improve_heir_adm_button_title:0 "Educate Ruler Administrative Skill"
- improve_heir_dip_button_title:0 "Educate Ruler Diplomatic Skill"
- improve_heir_mil_button_title:0 "Educate Ruler Military Skill"
+ improve_heir_adm_button_title:0 "Educate Ruler Administrative Skill\nEach +1 skill costs §Y20% of our annual income§!."
+ improve_heir_dip_button_title:0 "Educate Ruler Diplomatic Skill\nEach +1 skill costs §Y20% of our annual income§!."
+ improve_heir_mil_button_title:0 "Educate Ruler Military Skill\nEach +1 skill costs §Y20% of our annual income§!."
  #Provincial Investment
  Issue_Provincial_Investment_button:0 "Issue Provincial Improvement"
  echo_provincial_investment_tt:0 "§GIssue a Province Improvement in [Root.Province.GetName]§!\nCreates a Production Hub in this province, greatly increasing its trade value."

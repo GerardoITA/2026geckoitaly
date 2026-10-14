@@ -147,3 +147,7 @@ gecko_merc_limit_tt:0 "Manually Update Mercenary Forcelimit"
 #convert to judaism
  embrace_judaism_ethiopia_title:0 "Embrace Judaism"
  embrace_judaism_ethiopia_desc:0 "Abandon the old faith and embrace Judaism as the official religion of Ethiopia."
+ #Golden Horde
+ gecko_form_golden_horde_title:0 "Form Golden Horde"
+ gecko_form_golden_horde_desc:0 "The Tatars are united under our rule. We can now proclaim the restoration of the Golden Horde, bringing the steppe lands together under a single imperial banner."
+ gecko_form_golden_horde_unlocked_tt:0 "\nUnlocks the decision §YForm Golden Horde§!."

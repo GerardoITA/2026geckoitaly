@@ -1933,14 +1933,13 @@ on_chinese_empire_dismantled = {
 # FROM = Old Emperor, ROOT = New Emperor
 on_mandate_of_heaven_gained = {
 	###X###
-	#Removed all actions, replaced with below
-	add_government_reform = X_CRI_great_tatar_state_reform
+	# Keep the main reform and apply the existing tier-two meritocracy fix.
 	set_variable = {
 		which = X_CRI_celestial_empire_reforms_variable
 		value = 0
 	}
 	set_mandate = 50
-	set_meritocracy = 100
+	gecko_enable_mandate_meritocracy_effect = yes
 	#######
 }
 
@@ -1948,8 +1947,8 @@ on_mandate_of_heaven_gained = {
 # FROM = New Emperor, ROOT = Old Emperor
 on_mandate_of_heaven_lost = {
 	###X###
-	#Removed all actions, replaced with below
-	remove_government_reform = X_CRI_great_tatar_state_reform
+	# Remove the meritocracy fix; leave the main reform alone.
+	remove_government_reform = X_CRI_fix_for_meritocracy
 	#######
 }
 

@@ -5,6 +5,7 @@ monarchy = {
 			reforms = {
 				####X####
 				X_CRI_great_tatar_state_reform_2
+				great_mongol_state_reform
 				great_mongol_state_reform_EOC_version
 				####X####
 				feudalism_reform
@@ -1094,6 +1095,7 @@ tribal = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
+				X_CRI_fix_for_meritocracy
 			}
 		}
 		tribal_religion = {

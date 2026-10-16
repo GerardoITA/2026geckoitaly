@@ -2393,8 +2393,14 @@ dom_cas_missions_4 = {
 		effect = {
 			add_prestige_or_monarch_power = { amount = 25 }
 			add_stability_or_adm_power = yes 
-			227 = { add_base_production = 2 } 
-			231 = { add_base_production = 2 }
+			alentejo_area = {
+				add_base_manpower = 2
+				add_base_tax = 2
+			}	
+			beieras_area = {
+				add_base_manpower = 2
+				add_base_tax = 2
+			}	
 		}
 	}
 	

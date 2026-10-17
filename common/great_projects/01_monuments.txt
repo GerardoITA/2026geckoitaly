@@ -19064,8 +19064,8 @@ nizwa_fort = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_defensiveness = 33
-			local_garrison_size = 33
+			local_defensiveness = 0.33
+			local_garrison_size = 0.33
 			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {

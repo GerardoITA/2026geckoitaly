@@ -3679,18 +3679,6 @@ rus_russian_streltsy = {
 					influence = 50
 				}
 			}
-			if = {
-				limit = {
-					has_any_estates = yes
-				}
-				custom_trigger_tooltip = {
-					tooltip = rus_increase_absolute_rule_tt
-					check_variable = {
-						which = seize_land_counter
-						value = 10
-					}
-				}
-			}
 		}
 		effect = {
 			add_adm_power = 50

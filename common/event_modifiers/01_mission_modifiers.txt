@@ -2644,6 +2644,7 @@ mos_the_secured_future_of_russia = {	#Permanent for ruler
 }
 
 rus_expanded_administrative_offices = {
+	country_admin_power = 1
 	diplomats = 1
 	no_claim_cost_increasement = yes
 	can_claim_states = yes

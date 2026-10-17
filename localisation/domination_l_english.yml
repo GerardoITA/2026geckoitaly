@@ -2596,7 +2596,7 @@
  PERFECTIONISM_POLICY:0 "A Perfectionism Focus"
  ability_russian_modernization_mechanic:0 "Modernization Mechanic"
  russian_modernization:0 "Modernization"
- russian_modernization_desc:0 "Modernization measures the spread of modern the spread of ideas within the state and into your society.\n\nModernization is increased by the following factors:\n - Hired Advisors which are not [Root.Culture.GetGroupName]\n - Receiving Knowledge Sharing\n - Being Ahead in Time of any technology\n - Administrative Skills of the Ruler\n - Stealing or Purchasing Modern Ideas\n\nModernization is decreased by the following factors:\n - Negative Stability\n - Corruption\n - Inflation\n - Bankruptcy\n - Estate Privileges"
+ russian_modernization_desc:0 "Modernization measures the spread of modern the spread of ideas within the state and into your society.\n\nModernization is increased by the following factors:\n - Hired Advisors which are not [Root.Culture.GetGroupName]\n - Receiving Knowledge Sharing\n - Being Ahead in Time of any technology\n - Administrative Skills of the Ruler\n\nModernization is decreased by the following factors:\n - Negative Stability\n - Corruption\n - Inflation\n - Bankruptcy"
  ability_russian_rule_mechanic:0 "Russian Rule"
  russian_administrative_rule:0 "Administrative Rule"
  russian_diplomatic_rule:0 "Diplomatic Rule"

@@ -3260,7 +3260,7 @@ country_event = {
 			add_government_power = { 
 				mechanic_type = russian_modernization_mechanic
 				power_type = russian_modernization
-				value = 10
+				value = 15
 			}
 		}
 		else = {
@@ -3362,7 +3362,7 @@ country_event = {
 			add_government_power = { 
 				mechanic_type = russian_modernization_mechanic
 				power_type = russian_modernization
-				value = 50
+				value = 62.5
 			}
 		}
 		

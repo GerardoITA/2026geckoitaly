@@ -2750,7 +2750,7 @@ rus_tariffs_of_the_new_world = {	#Permanent
 
 rus_the_realm_of_the_rus = {
 	global_autonomy = -0.05
-	monthly_russian_modernization = 0.05
+	monthly_russian_modernization = 0.075
 	monthly_russian_adm_power = 2
 	monthly_russian_dip_power = 2
 	monthly_russian_mil_power = 2

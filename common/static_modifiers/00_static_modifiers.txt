@@ -233,7 +233,7 @@ provincial_production_size = {
 
 knowledge_sharing = {
 	institution_growth = 12
-	monthly_russian_modernization = 0.06
+	monthly_russian_modernization = 0.075
 }
 
 cardinals_spread_institution = {

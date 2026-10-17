@@ -3,7 +3,7 @@ monarch_power = MIL
 # applied when a country is ahead of time in this technology
 # no bonus for MIL currently
 ahead_of_time = {
-	monthly_russian_modernization = 0.05
+	monthly_russian_modernization = 0.1
 }
 
 # Pre-era techs

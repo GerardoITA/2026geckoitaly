@@ -3259,7 +3259,7 @@ rus_russian_nobility = {
 					add_government_power = { 
 						mechanic_type = russian_modernization_mechanic
 						power_type = russian_modernization
-						value = 10
+						value = 15
 					}
 				}
 				else = {

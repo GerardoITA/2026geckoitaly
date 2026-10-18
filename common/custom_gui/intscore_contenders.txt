@@ -1,0 +1,131 @@
+# Read-only Contender cards. Uses the existing authoritative rank 4-6 targets.
+# No effects, scans, new targets or writes to countries.
+
+custom_window = {
+	name = gecko_intscore_contender_4
+	potential = { has_global_flag = intscore_rank_4_exists }
+}
+
+custom_shield = {
+	name = gecko_intscore_contender_shield_4
+	potential = { always = yes }
+	trigger = { always = yes }
+	global_event_target = intscore_rank_4
+	open_country = yes
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_title_4
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_country_4
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_score_4
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_growth_4
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_empty_4
+	potential = { NOT = { has_global_flag = intscore_rank_4_exists } }
+}
+
+custom_window = {
+	name = gecko_intscore_contender_5
+	potential = { has_global_flag = intscore_rank_5_exists }
+}
+
+custom_shield = {
+	name = gecko_intscore_contender_shield_5
+	potential = { always = yes }
+	trigger = { always = yes }
+	global_event_target = intscore_rank_5
+	open_country = yes
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_title_5
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_country_5
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_score_5
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_growth_5
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_empty_5
+	potential = { NOT = { has_global_flag = intscore_rank_5_exists } }
+}
+
+custom_window = {
+	name = gecko_intscore_contender_6
+	potential = { has_global_flag = intscore_rank_6_exists }
+}
+
+custom_shield = {
+	name = gecko_intscore_contender_shield_6
+	potential = { always = yes }
+	trigger = { always = yes }
+	global_event_target = intscore_rank_6
+	open_country = yes
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_title_6
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_country_6
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_score_6
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_growth_6
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_4_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_contender_empty_6
+	potential = { NOT = { has_global_flag = intscore_rank_6_exists } }
+}

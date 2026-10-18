@@ -735,7 +735,7 @@ guiTypes = {
 		# IntScore ranking (custom topbar support, EU4 1.37).
 		guiButtonType = {
 			name = "gecko_intscore_toggle"
-			position = { x = 728 y = 91 }
+			position = { x = 723 y = 88 }
 			quadTextureSprite = "GFX_gecko_intscore_button"
 			buttonText = ""
 			buttonFont = "vic_18"
@@ -745,7 +745,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gecko_intscore_button_label"
-			position = { x = 761 y = 97 }
+			position = { x = 756 y = 94 }
 			font = "vic_18"
 			text = "gecko_intscore_toggle"
 			maxWidth = 141
@@ -757,8 +757,8 @@ guiTypes = {
 
 		windowType = {
 			name = "gecko_intscore_ranking_window"
-			position = { x = -480 y = -270 }
-			size = { x = 960 y = 580 }
+			position = { x = -480 y = -346 }
+			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
 			moveable = 0
 			scripted = yes
@@ -1052,9 +1052,236 @@ guiTypes = {
 				alwaystransparent = yes
 				scripted = yes
 			}
+			# BEGIN INTSCORE CONTENDER CARDS
+			instantTextBoxType = {
+				name = "gecko_intscore_contender_title_4"
+				position = { x = 44 y = 232 }
+				font = "vic_18"
+				text = "gecko_intscore_contender_title_4"
+				maxWidth = 174
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_contender_4"
+				position = { x = 32 y = 258 }
+				size = { x = 212 y = 62 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				guiButtonType = {
+					name = "gecko_intscore_contender_shield_4"
+					position = { x = 12 y = 2 }
+					quadTextureSprite = "GFX_shield_small"
+					clicksound = click
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_country_4"
+					position = { x = 52 y = 0 }
+					font = "vic_18"
+					text = "gecko_intscore_contender_country_4"
+					maxWidth = 148
+					maxHeight = 23
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_score_4"
+					position = { x = 52 y = 25 }
+					font = "vic_22"
+					text = "gecko_intscore_contender_score_4"
+					maxWidth = 90
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_growth_4"
+					position = { x = 142 y = 29 }
+					font = "vic_18"
+					text = "gecko_intscore_contender_growth_4"
+					maxWidth = 58
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_contender_empty_4"
+				position = { x = 44 y = 269 }
+				font = "vic_18"
+				text = "gecko_intscore_contender_empty_4"
+				maxWidth = 190
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_contender_title_5"
+				position = { x = 268 y = 232 }
+				font = "vic_18"
+				text = "gecko_intscore_contender_title_5"
+				maxWidth = 174
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_contender_5"
+				position = { x = 256 y = 258 }
+				size = { x = 212 y = 62 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				guiButtonType = {
+					name = "gecko_intscore_contender_shield_5"
+					position = { x = 12 y = 2 }
+					quadTextureSprite = "GFX_shield_small"
+					clicksound = click
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_country_5"
+					position = { x = 52 y = 0 }
+					font = "vic_18"
+					text = "gecko_intscore_contender_country_5"
+					maxWidth = 148
+					maxHeight = 23
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_score_5"
+					position = { x = 52 y = 25 }
+					font = "vic_22"
+					text = "gecko_intscore_contender_score_5"
+					maxWidth = 90
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_growth_5"
+					position = { x = 142 y = 29 }
+					font = "vic_18"
+					text = "gecko_intscore_contender_growth_5"
+					maxWidth = 58
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_contender_empty_5"
+				position = { x = 268 y = 269 }
+				font = "vic_18"
+				text = "gecko_intscore_contender_empty_5"
+				maxWidth = 190
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_contender_title_6"
+				position = { x = 492 y = 232 }
+				font = "vic_18"
+				text = "gecko_intscore_contender_title_6"
+				maxWidth = 174
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_contender_6"
+				position = { x = 480 y = 258 }
+				size = { x = 212 y = 62 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				guiButtonType = {
+					name = "gecko_intscore_contender_shield_6"
+					position = { x = 12 y = 2 }
+					quadTextureSprite = "GFX_shield_small"
+					clicksound = click
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_country_6"
+					position = { x = 52 y = 0 }
+					font = "vic_18"
+					text = "gecko_intscore_contender_country_6"
+					maxWidth = 148
+					maxHeight = 23
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_score_6"
+					position = { x = 52 y = 25 }
+					font = "vic_22"
+					text = "gecko_intscore_contender_score_6"
+					maxWidth = 90
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_contender_growth_6"
+					position = { x = 142 y = 29 }
+					font = "vic_18"
+					text = "gecko_intscore_contender_growth_6"
+					maxWidth = 58
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_contender_empty_6"
+				position = { x = 492 y = 269 }
+				font = "vic_18"
+				text = "gecko_intscore_contender_empty_6"
+				maxWidth = 190
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			# END INTSCORE CONTENDER CARDS
 			instantTextBoxType = {
 				name = "gecko_intscore_position_header"
-				position = { x = 45 y = 225 }
+				position = { x = 45 y = 337 }
 				font = "vic_18"
 				text = "gecko_intscore_position_header"
 				maxWidth = 50
@@ -1065,7 +1292,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_country_header"
-				position = { x = 101 y = 225 }
+				position = { x = 101 y = 337 }
 				font = "vic_18"
 				text = "gecko_intscore_country_header"
 				maxWidth = 300
@@ -1076,7 +1303,7 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "gecko_intscore_score_header"
-				position = { x = 426 y = 220 }
+				position = { x = 426 y = 332 }
 				quadTextureSprite = "GFX_gecko_intscore_sort_header"
 				buttonFont = "vic_18"
 				buttonText = ""
@@ -1085,7 +1312,7 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "gecko_intscore_yearly_header"
-				position = { x = 554 y = 220 }
+				position = { x = 554 y = 332 }
 				quadTextureSprite = "GFX_gecko_intscore_sort_header"
 				buttonFont = "vic_18"
 				buttonText = ""
@@ -1094,7 +1321,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_score_header_label"
-				position = { x = 431 y = 225 }
+				position = { x = 431 y = 337 }
 				font = "vic_18"
 				text = "gecko_intscore_score_header"
 				maxWidth = 110
@@ -1105,7 +1332,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_yearly_header_label"
-				position = { x = 559 y = 225 }
+				position = { x = 559 y = 337 }
 				font = "vic_18"
 				text = "gecko_intscore_yearly_header"
 				maxWidth = 112
@@ -1116,7 +1343,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_1"
-				position = { x = 32 y = 252 }
+				position = { x = 32 y = 364 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1179,7 +1406,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_2"
-				position = { x = 32 y = 277 }
+				position = { x = 32 y = 389 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1242,7 +1469,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_3"
-				position = { x = 32 y = 302 }
+				position = { x = 32 y = 414 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1305,7 +1532,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_4"
-				position = { x = 32 y = 327 }
+				position = { x = 32 y = 439 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1368,7 +1595,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_5"
-				position = { x = 32 y = 352 }
+				position = { x = 32 y = 464 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1431,7 +1658,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_6"
-				position = { x = 32 y = 377 }
+				position = { x = 32 y = 489 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1494,7 +1721,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_7"
-				position = { x = 32 y = 402 }
+				position = { x = 32 y = 514 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1557,7 +1784,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_8"
-				position = { x = 32 y = 427 }
+				position = { x = 32 y = 539 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1620,7 +1847,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_9"
-				position = { x = 32 y = 452 }
+				position = { x = 32 y = 564 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1683,7 +1910,7 @@ guiTypes = {
 			}
 			windowType = {
 				name = "gecko_intscore_row_10"
-				position = { x = 32 y = 477 }
+				position = { x = 32 y = 589 }
 				size = { x = 660 y = 25 }
 				Orientation = "UPPER_LEFT"
 				moveable = 0
@@ -1746,7 +1973,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_empty"
-				position = { x = 76 y = 317 }
+				position = { x = 76 y = 429 }
 				font = "vic_22"
 				text = "gecko_intscore_empty"
 				maxWidth = 560
@@ -1758,7 +1985,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_count"
-				position = { x = 40 y = 516 }
+				position = { x = 40 y = 628 }
 				font = "vic_18"
 				text = "gecko_intscore_count"
 				maxWidth = 230
@@ -1770,7 +1997,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_page"
-				position = { x = 278 y = 516 }
+				position = { x = 278 y = 628 }
 				font = "vic_18"
 				text = "gecko_intscore_page"
 				maxWidth = 220
@@ -1782,7 +2009,7 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "gecko_intscore_previous"
-				position = { x = 508 y = 512 }
+				position = { x = 508 y = 624 }
 				quadTextureSprite = "GFX_gecko_intscore_page_button"
 				buttonText = "gecko_intscore_previous"
 				buttonFont = "vic_18"
@@ -1791,7 +2018,7 @@ guiTypes = {
 			}
 			guiButtonType = {
 				name = "gecko_intscore_next"
-				position = { x = 598 y = 512 }
+				position = { x = 598 y = 624 }
 				quadTextureSprite = "GFX_gecko_intscore_page_button"
 				buttonText = "gecko_intscore_next"
 				buttonFont = "vic_18"
@@ -1906,7 +2133,7 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_rewards"
-				position = { x = 734 y = 480 }
+				position = { x = 734 y = 592 }
 				font = "vic_18"
 				text = "gecko_intscore_rewards"
 				maxWidth = 166
@@ -1918,14 +2145,14 @@ guiTypes = {
 			}
 			iconType = {
 				name = "gecko_intscore_rewards_info"
-				position = { x = 902 y = 482 }
+				position = { x = 902 y = 594 }
 				spriteType = "GFX_modifier_info"
 				scale = 0.65
 				scripted = yes
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_footer"
-				position = { x = 32 y = 549 }
+				position = { x = 32 y = 661 }
 				font = "vic_18"
 				text = "gecko_intscore_footer"
 				maxWidth = 898
@@ -7241,11 +7468,11 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_intscore_docs_rewards_col_4"
-					position = { x = 814 y = 272 }
+					position = { x = 814 y = 266 }
 					font = "vic_18"
 					text = "gecko_intscore_docs_rewards_col_4"
 					maxWidth = 94
-					maxHeight = 22
+					maxHeight = 38
 					fixedsize = yes
 					format = left
 					alwaystransparent = yes

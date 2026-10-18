@@ -6,7 +6,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_gecko_intscore_panel"
-		texturefile = "gfx/interface/intscore/ranking_panel.tga"
+		texturefile = "gfx/interface/intscore/ranking_panel_contenders.tga"
 		noOfFrames = 1
 	}
 	spriteType = {

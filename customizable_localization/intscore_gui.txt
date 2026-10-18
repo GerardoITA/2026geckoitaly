@@ -47,3 +47,15 @@ defined_text = {
 		localisation_key = gecko_intscore_no_rewards
 	}
 }
+
+defined_text = {
+	name = GetGeckoIntscoreContenderReward
+	text = {
+		trigger = { is_year = 1500 }
+		localisation_key = gecko_intscore_reward_4_details
+	}
+	text = {
+		trigger = { NOT = { is_year = 1500 } }
+		localisation_key = gecko_intscore_no_rewards
+	}
+}

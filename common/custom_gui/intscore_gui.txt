@@ -30,14 +30,14 @@ custom_button = {
 
 custom_window = {
 	name = gecko_intscore_podium_1
-	potential = { has_country_flag = gecko_intscore_gui_podium_1_valid }
+	potential = { has_global_flag = intscore_rank_1_exists }
 }
 
 custom_shield = {
 	name = gecko_intscore_podium_shield_1
 	potential = { always = yes }
 	trigger = { always = yes }
-	global_event_target = gecko_intscore_gui_top_1
+	global_event_target = intscore_rank_1
 	open_country = yes
 	tooltip = gecko_intscore_reward_1_tt
 }
@@ -60,19 +60,19 @@ custom_text_box = {
 
 custom_text_box = {
 	name = gecko_intscore_podium_empty_1
-	potential = { NOT = { has_country_flag = gecko_intscore_gui_podium_1_valid } }
+	potential = { NOT = { has_global_flag = intscore_rank_1_exists } }
 }
 
 custom_window = {
 	name = gecko_intscore_podium_2
-	potential = { has_country_flag = gecko_intscore_gui_podium_2_valid }
+	potential = { has_global_flag = intscore_rank_2_exists }
 }
 
 custom_shield = {
 	name = gecko_intscore_podium_shield_2
 	potential = { always = yes }
 	trigger = { always = yes }
-	global_event_target = gecko_intscore_gui_top_2
+	global_event_target = intscore_rank_2
 	open_country = yes
 	tooltip = gecko_intscore_reward_2_tt
 }
@@ -95,19 +95,19 @@ custom_text_box = {
 
 custom_text_box = {
 	name = gecko_intscore_podium_empty_2
-	potential = { NOT = { has_country_flag = gecko_intscore_gui_podium_2_valid } }
+	potential = { NOT = { has_global_flag = intscore_rank_2_exists } }
 }
 
 custom_window = {
 	name = gecko_intscore_podium_3
-	potential = { has_country_flag = gecko_intscore_gui_podium_3_valid }
+	potential = { has_global_flag = intscore_rank_3_exists }
 }
 
 custom_shield = {
 	name = gecko_intscore_podium_shield_3
 	potential = { always = yes }
 	trigger = { always = yes }
-	global_event_target = gecko_intscore_gui_top_3
+	global_event_target = intscore_rank_3
 	open_country = yes
 	tooltip = gecko_intscore_reward_3_tt
 }
@@ -130,7 +130,7 @@ custom_text_box = {
 
 custom_text_box = {
 	name = gecko_intscore_podium_empty_3
-	potential = { NOT = { has_country_flag = gecko_intscore_gui_podium_3_valid } }
+	potential = { NOT = { has_global_flag = intscore_rank_3_exists } }
 }
 
 custom_window = {

@@ -851,6 +851,18 @@ WoC_austria_2 = {
 		effect = {
 			if = {
 				limit = {
+					exists = BOH
+					BOH = { is_free_or_tributary_trigger = yes }
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300
+					target = BOH
+				}
+			}
+
+			if = {
+				limit = {
 					ai = yes
 				}
 				random_list = {
@@ -2344,11 +2356,6 @@ WoC_austria_3_germany = {
 		} 
 
 		effect = {  
-			custom_tooltip = HAB_UPGRADE_OFFICERS_PRIVILEGE
-			set_country_flag = hab_military_reform_flag
-
-			custom_tooltip = SEPERATOR_TOOLTIP
-
 			add_country_modifier = {
 				name = hab_haugwitz_reforms
 				duration = 7300

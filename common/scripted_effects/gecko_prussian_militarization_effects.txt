@@ -1,0 +1,54 @@
+# Country scope: save before changing militarization tiers, then restore after regeneration.
+# Transfer in chunks to retain two decimal places without applying gain modifiers.
+gecko_store_prussian_militarization = {
+	set_variable = { which = gecko_saved_prussian_militarization value = 0 }
+	gecko_store_prussian_militarization_chunk = { mechanic = $mechanic$ power = $power$ amount = 1 loss = -1 }
+	gecko_store_prussian_militarization_chunk = { mechanic = $mechanic$ power = $power$ amount = 0.1 loss = -0.1 }
+	gecko_store_prussian_militarization_chunk = { mechanic = $mechanic$ power = $power$ amount = 0.01 loss = -0.01 }
+}
+
+gecko_store_prussian_militarization_chunk = {
+	while = {
+		limit = {
+			has_government_power = {
+				mechanic_type = $mechanic$
+				power_type = $power$
+				value = $amount$
+			}
+		}
+		add_government_power = {
+			mechanic_type = $mechanic$
+			power_type = $power$
+			value = $loss$
+			scaled_with_gain_modifier = no
+		}
+		change_variable = { which = gecko_saved_prussian_militarization value = $amount$ }
+	}
+}
+
+gecko_restore_prussian_militarization = {
+	set_government_power = {
+		mechanic_type = $mechanic$
+		power_type = $power$
+		value = 0
+	}
+	gecko_restore_prussian_militarization_chunk = { mechanic = $mechanic$ power = $power$ amount = 1 }
+	gecko_restore_prussian_militarization_chunk = { mechanic = $mechanic$ power = $power$ amount = 0.1 }
+	gecko_restore_prussian_militarization_chunk = { mechanic = $mechanic$ power = $power$ amount = 0.01 }
+	set_variable = { which = gecko_saved_prussian_militarization value = 0 }
+}
+
+gecko_restore_prussian_militarization_chunk = {
+	while = {
+		limit = {
+			check_variable = { which = gecko_saved_prussian_militarization value = $amount$ }
+		}
+		add_government_power = {
+			mechanic_type = $mechanic$
+			power_type = $power$
+			value = $amount$
+			scaled_with_gain_modifier = no
+		}
+		subtract_variable = { which = gecko_saved_prussian_militarization value = $amount$ }
+	}
+}

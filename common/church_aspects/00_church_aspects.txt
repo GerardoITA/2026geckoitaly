@@ -33,7 +33,7 @@ priests_may_marry_aspect = {
 		}
 	}
 	modifier = {
-		technology_cost = -0.025
+		technology_cost = -0.05
 	}
 	ai_will_do = {
 		factor = 10
@@ -293,7 +293,7 @@ translated_bibles_aspect = {
 		}
 	}
 	modifier = {
-		global_unrest = -1
+		global_unrest = -3
 	}
 	ai_will_do = {
 		factor = 10

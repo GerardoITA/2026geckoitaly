@@ -5,6 +5,7 @@ show_score = {
 	major = yes
 	color = { 77  93  83 }
 	potential = {
+		always = no # Temporarily disabled; use the IntScore GUI.
 		was_player = yes
 	}
 
@@ -35,6 +36,7 @@ check_standard_victory_provinces = {
 	major = yes
 	color = { 77  93  83 }
 	potential = {
+		always = no # Temporarily disabled; use the IntScore GUI.
 		was_player = yes
 	}
 
@@ -262,6 +264,7 @@ check_important_victory_provinces = {
 	major = yes
 	color = { 77  93  83 }
 	potential = {
+		always = no # Temporarily disabled; use the IntScore GUI.
 		was_player = yes
 	}
 

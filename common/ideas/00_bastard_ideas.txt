@@ -2188,10 +2188,10 @@ ROM_ideas = {
 	}
 	spqr = {
 		stability_cost_modifier = -0.2
-		land_morale = 0.2
+		land_morale = 0.25
 	}
 	roman_legions = {
-		infantry_power = 0.2
+		infantry_power = 0.25
 		discipline = 0.1
 	}
 	roman_architecture = {

@@ -103,7 +103,7 @@ GER_ideas = {
 	}
 	
 	bonus = {
-		land_morale = 0.15
+		land_morale = 0.2
 	}	
 
 	trigger = {
@@ -113,7 +113,7 @@ GER_ideas = {
 	
 	ger_german_confederation = {
 		manpower_in_culture_group_provinces = 0.33
-		manpower_recovery_speed = 0.33
+		manpower_recovery_speed = 0.5
 	}
 	ger_german_universities = {
 		technology_cost = -0.1

@@ -1,0 +1,1948 @@
+guiTypes = {
+
+	windowType = {
+		name = "topbar"
+		backGround=""
+		position = { x=0 y=-1 }
+		size = { x=2048 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+		show_position = { x = 0 y = -1 }
+		hide_position = { x = 0 y = -165 }
+		animation_type = "decelerated"
+		animation_time = 600
+
+
+		iconType = {
+			name = "brown_bg"
+			spriteType ="GFX_brown_bg"
+			position = { x= 676 y = 20 }
+			alwaystransparent = yes
+		}
+
+
+		iconType =
+		{
+			name ="topbar_1"
+			spriteType = "GFX_remove"
+			position = { x= 99512 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="topbar_2"
+			spriteType = "GFX_remove"
+			position = { x= 991024 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="topbar_3"
+			spriteType = "GFX_remove"
+			position = { x= 991532 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+
+
+
+
+		iconType =
+		{
+			name ="topbar_upper_left_bg"
+			spriteType = "GFX_topbar_bg"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="topbar_upper_left_bg4"
+			spriteType = "GFX_topbar_banner"
+			position = { x= 70 y = 40 }
+			Orientation = "UPPER_LEFT"
+
+		}
+
+		iconType = {
+			name = "government_reforms_button_base"
+			quadTextureSprite ="GFX_government_reforms_button_base"
+			position = { x= 93 y = 104 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+
+		guiButtonType = {
+			name = "player_shield"
+			quadTextureSprite ="GFX_shield_fancy"
+			position = { x= -5 y = 2 }
+			Orientation = "UPPER_LEFT"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			shortcut = "F1"
+		}
+
+		iconType = {
+			name = "player_shield_glow"
+			quadTextureSprite ="GFX_shield_fancy_great_power_glow"
+			position = { x= -5 y = 2 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		guiButtonType = {
+			name = "open_build_interface_button"
+			position = { x = 6 y = 109 }
+			quadTextureSprite ="GFX_open_build_interface"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonFont = "Main_14_black"
+			clicksound = macro_build
+			hint_tag = "hint_macrobuild"
+			shortcut = "b"
+		}
+
+		iconType = {
+			name = "great_power_button_base"
+			quadTextureSprite ="GFX_great_power_button_base"
+			position = { x= 111 y = 80 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		guiButtonType = {
+			name = "great_power_button"
+			position = { x = 115 y = 84 }
+			quadTextureSprite ="GFX_great_power_button"
+			buttonFont = "Main_14_black"
+			clicksound = macro_build
+			shortcut = "Shift+G"
+		}
+
+
+		iconType = {
+			name = "government_reforms_progress"
+			position = { x = 100 y = 110 }
+			quadTextureSprite ="GFX_government_reforms_progress"
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		guiButtonType = {
+			name = "government_reforms_button"
+			position = { x = 100 y = 110 }
+			quadTextureSprite ="GFX_government_reforms_button"
+			buttonFont = "Main_14_black"
+			clicksound = macro_build
+		}
+
+	######### top bar portraits ###########
+
+
+		guiButtonType =
+		{
+			name ="icon_merchant"
+			quadTextureSprite = "GFX_icon_merchant"
+			position = { x= 739 y = 9 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_merchant"
+		}
+
+		guiButtonType =
+		{
+			name ="icon_settler"
+			quadTextureSprite = "GFX_icon_settler"
+			position = { x= 780 y = 9 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_colonist"
+		}
+
+
+		guiButtonType =
+		{
+			name ="icon_diplomat"
+			quadTextureSprite = "GFX_icon_diplomat"
+			position = { x= 821 y = 9 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_diplomat"
+		}
+
+		guiButtonType =
+		{
+			name ="icon_missionary"
+			quadTextureSprite = "GFX_icon_missionary"
+			position = { x= 862 y = 9 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_missionary"
+		}
+
+	##########################################
+
+		iconType =
+		{
+			name ="topbar_upper_left_bg2"
+			spriteType = "GFX_topbar_portrait_value_bg"
+			position = { x= 731 y = 30 }
+			Orientation = "UPPER_LEFT"
+		}
+
+	#############  portrait values #############
+
+		instantTextBoxType = {
+			name = "text_merchants"
+			position = { x = 732 y = 34 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			font = "vic_18"
+			maxWidth = 42
+			maxHeight = 32
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "text_settlers"
+			position = { x = 773 y = 34 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			font = "vic_18"
+			maxWidth = 42
+			maxHeight = 32
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "text_diplomats"
+			position = { x = 814 y = 34 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			font = "vic_18"
+			maxWidth = 42
+			maxHeight = 32
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "text_missionaries"
+			position = { x = 855 y = 34 }
+			textureFile = ""
+			font = "ToolTip_Font"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			font = "vic_18"
+			maxWidth = 42
+			maxHeight = 32
+			format = centre
+		}
+
+
+	###########  top bar icons and values #############
+
+		iconType =
+		{
+			name ="icon_gold"
+			spriteType = "GFX_icon_gold_strip"
+			position = { x= 146 y = 10 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_ducats"
+		}
+		instantTextBoxType = {
+			name = "text_gold"
+			position = { x = 152 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 60
+			maxHeight = 32
+			format = right
+		}
+
+		iconType =
+		{
+			name ="icon_manpower"
+			spriteType = "GFX_icon_manpower"
+			position = { x= 228 y = 11 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_manpower"
+		}
+		instantTextBoxType = {
+			name = "text_manpower"
+			position = { x = 248 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 50
+			maxHeight = 32
+			format = right
+		}
+
+
+		iconType =
+		{
+			name ="icon_sailors"
+			spriteType = "GFX_icon_sailors"
+			position = { x= 311 y = 14 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "text_sailors"
+			position = { x = 331 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 50
+			maxHeight = 32
+			format = right
+		}
+
+
+		iconType =
+		{
+			name ="icon_stability"
+			spriteType = "GFX_icon_stability"
+			position = { x= 394 y = 10 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_stability"
+		}
+		instantTextBoxType = {
+			name = "text_stability"
+			position = { x = 405 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+
+
+
+
+		iconType =
+		{
+			name ="icon_prestige"
+			spriteType = "GFX_icon_prestige"
+			position = { x= 524 y = 10 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_prestige"
+		}
+		instantTextBoxType = {
+			name = "text_prestige"
+			position = { x = 536 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "100"
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+		iconType =
+		{
+			name ="icon_dev"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= 588 y = 10 }
+			Orientation = "UPPER_LEFT"
+			frame = 3
+			hint_tag = "hint_legitimacy"
+		}
+		instantTextBoxType = {
+			name = "text_dev"
+			position = { x = 605 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "100"
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+		iconType =
+		{
+			name ="icon_meritocracy"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= 588 y = 10 }
+			Orientation = "UPPER_LEFT"
+			frame = 5
+			hint_tag = "hint_meritocracy"
+		}
+		instantTextBoxType = {
+			name = "text_meritocracy"
+			position = { x = 605 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "100"
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+
+		iconType =
+		{
+			name ="icon_leg"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= 590 y = 10 }
+			Orientation = "UPPER_LEFT"
+			frame = 1
+			hint_tag = "hint_legitimacy"
+		}
+		instantTextBoxType = {
+			name = "text_leg"
+			position = { x = 605 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "100"
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+		iconType =
+		{
+			name ="icon_rep"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= 590 y = 10 }
+			Orientation = "UPPER_LEFT"
+			frame = 2
+			hint_tag = "hint_republican"
+		}
+		instantTextBoxType = {
+			name = "text_rep"
+			position = { x = 606 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "100"
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+		iconType =
+		{
+			name ="icon_unity"
+			spriteType = "GFX_icon_legitimacy"
+			position = { x= 590 y = 10 }
+			Orientation = "UPPER_LEFT"
+			frame = 4
+		}
+		instantTextBoxType = {
+			name = "text_unity"
+			position = { x = 606 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "100"
+			maxWidth = 40
+			maxHeight = 32
+			format = right
+		}
+
+		windowType = {
+			name = "powerprojection_topbar"
+			backGround=""
+			position = { x = 148 y = 0 }
+			size = { x=100 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+
+				iconType =
+				{
+					name ="topbar_liberty_overlay"
+					spriteType = "GFX_topbar_liberty_overlay"
+					position = { x= 491 y = -1 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				iconType =
+				{
+					name ="icon_powerprojection"
+					spriteType = "GFX_icon_powerprojection"
+					position = { x= 518 y = 10 }
+					Orientation = "UPPER_LEFT"
+					hint_tag = "hint_powerprojection"
+				}
+
+				instantTextBoxType = {
+					name = "text_powerprojection"
+					position = { x = 527 y = 13 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 4 y = 4}
+					text = ""
+					maxWidth = 40
+					maxHeight = 32
+					format = right
+				}
+
+		}
+
+		windowType = {
+			name = "liberty_desire_topbar"
+			backGround=""
+			position = { x = 148 y = 0 }
+			size = { x=100 y=100 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+
+				iconType =
+				{
+					name ="topbar_liberty_overlay"
+					spriteType = "GFX_topbar_liberty_overlay"
+					position = { x= 491 y = -1 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				iconType =
+				{
+					name ="topbar_liberty_icon"
+					spriteType = "GFX_liberty_icon"
+					position = { x= 512 y = 10 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType =
+				{
+					name = "topbar_liberty_value"
+					position = { x = 527 y = 13 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 4 y = 4}
+					text = "100"
+					maxWidth = 40
+					maxHeight = 32
+					format = right
+				}
+
+		}
+	#######################################
+
+
+
+
+
+
+
+
+
+	############### Power mechanics for a country ################
+
+
+
+
+		iconType =
+		{
+			name ="icon_corruption"
+			spriteType = "GFX_icon_corruption_small"
+			position = { x= 458 y = 11 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "text_corruption"
+			position = { x = 463 y = 13 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 46
+			maxHeight = 32
+			format = right
+		}
+
+		instantTextBoxType = {
+			name = "text_ADM"
+			position = { x = 520 y = 52 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "5"
+			maxWidth = 36
+			maxHeight = 32
+			format = left
+		}
+		iconType = {
+			name ="icon_ADM"
+			spriteType = "GFX_icon_powers_administrative"
+			position = { x= 498 y = 49 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_adm"
+		}
+
+
+		instantTextBoxType = {
+			name = "text_DIP"
+			position = { x = 581 y = 52 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "5"
+			maxWidth = 36
+			maxHeight = 32
+			format = left
+		}
+		iconType = {
+			name ="icon_DIP"
+			spriteType = "GFX_icon_powers_diplomatic"
+			position = { x= 558 y = 49 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_dip"
+		}
+
+		instantTextBoxType = {
+			name = "text_MIL"
+			position = { x = 639 y = 52 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "5"
+			maxWidth = 36
+			maxHeight = 32
+			format = left
+		}
+		iconType = {
+			name = "icon_MIL"
+			spriteType ="GFX_icon_powers_military"
+			position = { x= 616 y = 49 }
+			Orientation = "UPPER_LEFT"
+			hint_tag = "hint_mil"
+		}
+
+		iconType = {
+			name = "button_base"
+			spriteType ="GFX_age_frame_addon"
+			position = { x= 690 y = 30 }
+			alwaystransparent = yes
+		}
+
+		guiButtonType = {
+			name = "current_age_button"
+			position = { x = 722 y = 32 }
+			quadTextureSprite ="GFX_age_button"
+			clicksound = macro_build
+			shortcut = "Shift+A"
+		}
+
+		guiButtonType = {
+			name = "age_icon"
+			spriteType ="GFX_icon_age_s"
+			position = { x= 705 y = 47 }
+			frame = 1
+		}
+
+		instantTextBoxType = {
+			name = "age_title"
+			position = { x = 740 y = 52 }
+			textureFile = ""
+			font = "vic_18"
+			borderSize = {x = 4 y = 4}
+			text = "AgeText"
+			maxWidth = 160
+			maxHeight = 32
+			format = left
+			alwaystransparent = yes
+		}
+
+
+
+
+
+
+	#################################################
+
+
+
+		instantTextBoxType = {
+			name = "PlayerNationText"
+			position = { x = 151 y = 50 }
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 4 y = 4}
+			text = ""
+			maxWidth = 340
+			maxHeight = 32
+			fixedsize = yes
+		}
+
+
+	############### DATE PANEL ###################
+
+
+
+
+
+		windowType = {
+			name = "pause_window"
+			backGround=""
+			position = { x=-203 y= 100 }
+			size = { x=406 y=70 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "CENTER_UP"
+
+			iconType ={
+				name ="pause_banner"
+				spriteType = "GFX_pause_banner"
+				position = { x = 0 y = -15 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			#Needs localisation change
+			instantTextBoxType = {
+				name = "pause_banner_text"
+				position = { x = 140 y = 9 }
+				textureFile = ""
+				font = "vic_22"
+				borderSize = {x = 4 y = 4}
+				text = "CORE_PAUSED"
+				maxWidth = 120
+				maxHeight = 32
+				format = center
+			}
+		}
+		# IntScore ranking (custom topbar support, EU4 1.37).
+		guiButtonType = {
+			name = "gecko_intscore_toggle"
+			position = { x = 932 y = 41 }
+			quadTextureSprite = "GFX_gecko_intscore_button"
+			buttonText = ""
+			buttonFont = "vic_18"
+			clicksound = click
+			scripted = yes
+		}
+
+		instantTextBoxType = {
+			name = "gecko_intscore_button_label"
+			position = { x = 965 y = 47 }
+			font = "vic_18"
+			text = "gecko_intscore_toggle"
+			maxWidth = 141
+			maxHeight = 22
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
+
+		windowType = {
+			name = "gecko_intscore_ranking_window"
+			position = { x = -480 y = -270 }
+			size = { x = 960 y = 580 }
+			Orientation = "CENTER"
+			moveable = 0
+			scripted = yes
+			iconType = {
+				name = "gecko_intscore_background"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_gecko_intscore_panel"
+			}
+
+			instantTextBoxType = {
+				name = "gecko_intscore_title"
+				position = { x = 180 y = 24 }
+				font = "vic_29s"
+				text = "gecko_intscore_title"
+				maxWidth = 600
+				maxHeight = 40
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_subtitle"
+				position = { x = 108 y = 73 }
+				font = "vic_18"
+				text = "gecko_intscore_subtitle"
+				maxWidth = 680
+				maxHeight = 22
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_close"
+				position = { x = 912 y = 20 }
+				quadTextureSprite = "GFX_closebutton2"
+				buttonText = "gecko_intscore_close"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+				shortcut = "ESCAPE"
+			}
+			guiButtonType = {
+				name = "gecko_intscore_refresh"
+				position = { x = 832 y = 70 }
+				quadTextureSprite = "GFX_gecko_intscore_page_button"
+				buttonText = "gecko_intscore_refresh"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_podium_title_1"
+				position = { x = 44 y = 120 }
+				font = "vic_18"
+				text = "gecko_intscore_podium_title_1"
+				maxWidth = 174
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_podium_1"
+				position = { x = 32 y = 146 }
+				size = { x = 212 y = 62 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				guiButtonType = {
+					name = "gecko_intscore_podium_shield_1"
+					position = { x = 12 y = 2 }
+					quadTextureSprite = "GFX_shield_small"
+					clicksound = click
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_country_1"
+					position = { x = 52 y = 0 }
+					font = "vic_18"
+					text = "gecko_intscore_podium_country_1"
+					maxWidth = 148
+					maxHeight = 23
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_score_1"
+					position = { x = 52 y = 25 }
+					font = "vic_22"
+					text = "gecko_intscore_podium_score_1"
+					maxWidth = 90
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_growth_1"
+					position = { x = 142 y = 29 }
+					font = "vic_18"
+					text = "gecko_intscore_podium_growth_1"
+					maxWidth = 58
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_podium_empty_1"
+				position = { x = 44 y = 157 }
+				font = "vic_18"
+				text = "gecko_intscore_podium_empty_1"
+				maxWidth = 190
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_podium_title_2"
+				position = { x = 268 y = 120 }
+				font = "vic_18"
+				text = "gecko_intscore_podium_title_2"
+				maxWidth = 174
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_podium_2"
+				position = { x = 256 y = 146 }
+				size = { x = 212 y = 62 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				guiButtonType = {
+					name = "gecko_intscore_podium_shield_2"
+					position = { x = 12 y = 2 }
+					quadTextureSprite = "GFX_shield_small"
+					clicksound = click
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_country_2"
+					position = { x = 52 y = 0 }
+					font = "vic_18"
+					text = "gecko_intscore_podium_country_2"
+					maxWidth = 148
+					maxHeight = 23
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_score_2"
+					position = { x = 52 y = 25 }
+					font = "vic_22"
+					text = "gecko_intscore_podium_score_2"
+					maxWidth = 90
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_growth_2"
+					position = { x = 142 y = 29 }
+					font = "vic_18"
+					text = "gecko_intscore_podium_growth_2"
+					maxWidth = 58
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_podium_empty_2"
+				position = { x = 268 y = 157 }
+				font = "vic_18"
+				text = "gecko_intscore_podium_empty_2"
+				maxWidth = 190
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_podium_title_3"
+				position = { x = 492 y = 120 }
+				font = "vic_18"
+				text = "gecko_intscore_podium_title_3"
+				maxWidth = 174
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_podium_3"
+				position = { x = 480 y = 146 }
+				size = { x = 212 y = 62 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				guiButtonType = {
+					name = "gecko_intscore_podium_shield_3"
+					position = { x = 12 y = 2 }
+					quadTextureSprite = "GFX_shield_small"
+					clicksound = click
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_country_3"
+					position = { x = 52 y = 0 }
+					font = "vic_18"
+					text = "gecko_intscore_podium_country_3"
+					maxWidth = 148
+					maxHeight = 23
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_score_3"
+					position = { x = 52 y = 25 }
+					font = "vic_22"
+					text = "gecko_intscore_podium_score_3"
+					maxWidth = 90
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_podium_growth_3"
+					position = { x = 142 y = 29 }
+					font = "vic_18"
+					text = "gecko_intscore_podium_growth_3"
+					maxWidth = 58
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_podium_empty_3"
+				position = { x = 492 y = 157 }
+				font = "vic_18"
+				text = "gecko_intscore_podium_empty_3"
+				maxWidth = 190
+				maxHeight = 25
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_position_header"
+				position = { x = 45 y = 225 }
+				font = "vic_18"
+				text = "gecko_intscore_position_header"
+				maxWidth = 50
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_country_header"
+				position = { x = 101 y = 225 }
+				font = "vic_18"
+				text = "gecko_intscore_country_header"
+				maxWidth = 300
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_score_header"
+				position = { x = 431 y = 225 }
+				font = "vic_18"
+				text = "gecko_intscore_score_header"
+				maxWidth = 110
+				maxHeight = 22
+				fixedsize = yes
+				format = right
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_yearly_header"
+				position = { x = 559 y = 225 }
+				font = "vic_18"
+				text = "gecko_intscore_yearly_header"
+				maxWidth = 112
+				maxHeight = 22
+				fixedsize = yes
+				format = right
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_intscore_row_1"
+				position = { x = 32 y = 252 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_1_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_1_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_1_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_1_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_1_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_1_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_1_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_1_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_1_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_2"
+				position = { x = 32 y = 277 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_2_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_2_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_2_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_2_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_2_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_2_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_2_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_2_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_2_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_3"
+				position = { x = 32 y = 302 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_3_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_3_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_3_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_3_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_3_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_3_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_3_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_3_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_3_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_4"
+				position = { x = 32 y = 327 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_4_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_4_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_4_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_4_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_4_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_4_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_4_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_4_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_4_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_5"
+				position = { x = 32 y = 352 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_5_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_5_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_5_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_5_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_5_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_5_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_5_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_5_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_5_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_6"
+				position = { x = 32 y = 377 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_6_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_6_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_6_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_6_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_6_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_6_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_6_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_6_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_6_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_7"
+				position = { x = 32 y = 402 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_7_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_7_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_7_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_7_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_7_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_7_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_7_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_7_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_7_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_8"
+				position = { x = 32 y = 427 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_8_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_8_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_8_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_8_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_8_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_8_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_8_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_8_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_8_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_9"
+				position = { x = 32 y = 452 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_9_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_9_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_9_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_9_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_9_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_9_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_9_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_9_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_9_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			windowType = {
+				name = "gecko_intscore_row_10"
+				position = { x = 32 y = 477 }
+				size = { x = 660 y = 25 }
+				Orientation = "UPPER_LEFT"
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_intscore_row_10_highlight"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_intscore_row_highlight"
+					scripted = yes
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_10_position"
+					position = { x = 13 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_10_position"
+					maxWidth = 42
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_10_country"
+					position = { x = 69 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_10_country"
+					maxWidth = 313
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_10_score"
+					position = { x = 399 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_10_score"
+					maxWidth = 110
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_row_10_growth"
+					position = { x = 527 y = 3 }
+					font = "vic_18"
+					text = "gecko_intscore_row_10_growth"
+					maxWidth = 112
+					maxHeight = 22
+					fixedsize = yes
+					format = right
+					alwaystransparent = yes
+					scripted = yes
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_empty"
+				position = { x = 76 y = 317 }
+				font = "vic_22"
+				text = "gecko_intscore_empty"
+				maxWidth = 560
+				maxHeight = 110
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_count"
+				position = { x = 40 y = 516 }
+				font = "vic_18"
+				text = "gecko_intscore_count"
+				maxWidth = 230
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_page"
+				position = { x = 278 y = 516 }
+				font = "vic_18"
+				text = "gecko_intscore_page"
+				maxWidth = 220
+				maxHeight = 22
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_previous"
+				position = { x = 508 y = 512 }
+				quadTextureSprite = "GFX_gecko_intscore_page_button"
+				buttonText = "gecko_intscore_previous"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_next"
+				position = { x = 598 y = 512 }
+				quadTextureSprite = "GFX_gecko_intscore_page_button"
+				buttonText = "gecko_intscore_next"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_your_campaign"
+				position = { x = 734 y = 124 }
+				font = "vic_18"
+				text = "gecko_intscore_your_campaign"
+				maxWidth = 176
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_your_country"
+				position = { x = 734 y = 153 }
+				font = "vic_22"
+				text = "gecko_intscore_your_country"
+				maxWidth = 176
+				maxHeight = 27
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_score_label"
+				position = { x = 734 y = 189 }
+				font = "vic_18"
+				text = "gecko_intscore_score_label"
+				maxWidth = 176
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_your_score"
+				position = { x = 734 y = 211 }
+				font = "vic_29s"
+				text = "gecko_intscore_your_score"
+				maxWidth = 176
+				maxHeight = 43
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_your_growth"
+				position = { x = 734 y = 256 }
+				font = "vic_18"
+				text = "gecko_intscore_your_growth"
+				maxWidth = 176
+				maxHeight = 23
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_your_rank"
+				position = { x = 734 y = 284 }
+				font = "vic_18"
+				text = "gecko_intscore_your_rank"
+				maxWidth = 176
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_unranked"
+				position = { x = 734 y = 284 }
+				font = "vic_18"
+				text = "gecko_intscore_unranked"
+				maxWidth = 176
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_rules_title"
+				position = { x = 734 y = 332 }
+				font = "vic_18"
+				text = "gecko_intscore_rules_title"
+				maxWidth = 176
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_rules"
+				position = { x = 734 y = 360 }
+				font = "vic_18"
+				text = "gecko_intscore_rules"
+				maxWidth = 176
+				maxHeight = 112
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_rewards"
+				position = { x = 734 y = 480 }
+				font = "vic_18"
+				text = "gecko_intscore_rewards"
+				maxWidth = 166
+				maxHeight = 60
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_intscore_rewards_info"
+				position = { x = 902 y = 482 }
+				spriteType = "GFX_modifier_info"
+				scale = 0.65
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_footer"
+				position = { x = 32 y = 549 }
+				font = "vic_18"
+				text = "gecko_intscore_footer"
+				maxWidth = 898
+				maxHeight = 20
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+		}
+
+	} ### end of "topbar"
+
+	windowType = {
+		name = "alerts_parent"
+		backGround=""
+		position = { x=0 y=-1 }
+		size = { x=2048 y=100 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = yes
+
+		show_position = { x = 0 y = -1 }
+		hide_position = { x = 0 y = -165 }
+		animation_type = "decelerated"
+		animation_time = 600
+	}
+
+	windowType = {
+		name = "hotkey_assign_parent"
+		backGround=""
+		position = { x=-202 y=-38 }
+		size = { x=404 y=76 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		orientation = "CENTER"
+
+		iconType = {
+			name ="assign_hotkey_pick_button_hint"
+			spriteType = "GFX_nation_designer_hint_bg"
+			position = { x= 0 y = 0 }
+		}
+		instantTextBoxType = {
+			name = "assign_hotkey_pick_button_hint_text"
+			position = { x = 40 y = 27 }
+			font = "vic_22"
+			text = "PICK_HOTKEY_BUTTON_HINT"
+			maxWidth = 320
+			maxHeight = 60
+			format = centre
+		}
+	}
+}

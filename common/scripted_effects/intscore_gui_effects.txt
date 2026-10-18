@@ -1,0 +1,252 @@
+# Country scope throughout. Only GUI data is changed; points and place bonuses are untouched.
+# The visible page and row buffers belong to the viewing country, not global targets.
+
+gecko_intscore_gui_open = {
+	set_variable = { which = gecko_intscore_gui_page value = 1 }
+	gecko_intscore_gui_refresh = yes
+	set_country_flag = gecko_intscore_gui_open
+}
+
+gecko_intscore_gui_clear_target = {
+	if = {
+		limit = { has_saved_global_event_target = $TARGET$ }
+		clear_global_event_target = $TARGET$
+	}
+}
+
+# Compare two local numeric buffers on ROOT. Keep PREV transfers in effects,
+# outside trigger-scoped event targets, and skip transfers from ROOT to itself.
+# Registered tag order breaks equal-score ties consistently between viewers.
+gecko_intscore_gui_consider_candidate = {
+	set_variable = { which = gecko_intscore_gui_scan_score which = IntScore }
+	set_variable = { which = gecko_intscore_gui_scan_order which = gecko_intscore_gui_order }
+	if = {
+		limit = { NOT = { tag = ROOT } }
+		ROOT = {
+			set_variable = { which = gecko_intscore_gui_scan_score which = PREV }
+			set_variable = { which = gecko_intscore_gui_scan_order which = PREV }
+		}
+	}
+	ROOT = {
+		if = {
+			limit = {
+				OR = {
+					NOT = { check_variable = { which = gecko_intscore_gui_best_score which = gecko_intscore_gui_scan_score } }
+					AND = {
+						is_variable_equal = { which = gecko_intscore_gui_best_score which = gecko_intscore_gui_scan_score }
+						NOT = { check_variable = { which = gecko_intscore_gui_best_order which = gecko_intscore_gui_scan_order } }
+					}
+				}
+			}
+			set_variable = { which = gecko_intscore_gui_best_score which = gecko_intscore_gui_scan_score }
+			set_variable = { which = gecko_intscore_gui_best_order which = gecko_intscore_gui_scan_order }
+		}
+	}
+}
+
+gecko_intscore_gui_select_next = {
+	set_variable = { which = gecko_intscore_gui_best_score value = -1 }
+	set_variable = { which = gecko_intscore_gui_best_order value = 0 }
+	if = {
+		limit = { gecko_intscore_gui_unselected = yes }
+		gecko_intscore_gui_consider_candidate = yes
+	}
+	every_country = {
+		limit = { NOT = { tag = ROOT } gecko_intscore_gui_unselected = yes }
+		gecko_intscore_gui_consider_candidate = yes
+	}
+	change_variable = { which = gecko_intscore_gui_cursor value = 1 }
+	# Resolve the winning ordinal directly, without a temporary event-target scope.
+	set_variable = { which = gecko_intscore_gui_match_order which = gecko_intscore_gui_best_order }
+	if = {
+		limit = {
+			gecko_intscore_gui_unselected = yes
+			is_variable_equal = { which = gecko_intscore_gui_order which = gecko_intscore_gui_best_order }
+		}
+		gecko_intscore_gui_assign_rank = yes
+	}
+	else = {
+		random_country = {
+			limit = {
+				NOT = { tag = ROOT }
+				gecko_intscore_gui_unselected = yes
+				is_variable_equal = { which = gecko_intscore_gui_match_order which = ROOT }
+			}
+			gecko_intscore_gui_assign_rank = yes
+		}
+	}
+}
+
+# Country scope is the winning country; ROOT remains the viewer.
+gecko_intscore_gui_assign_rank = {
+	set_country_flag = gecko_intscore_gui_selected
+	set_variable = { which = gecko_intscore_gui_cursor which = ROOT }
+	set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_cursor }
+	if = {
+		limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 1 } }
+		save_global_event_target_as = gecko_intscore_gui_top_1
+		gecko_intscore_gui_capture_podium = { PLACE = 1 }
+	}
+	else_if = {
+		limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 2 } }
+		save_global_event_target_as = gecko_intscore_gui_top_2
+		gecko_intscore_gui_capture_podium = { PLACE = 2 }
+	}
+	else_if = {
+		limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 3 } }
+		save_global_event_target_as = gecko_intscore_gui_top_3
+		gecko_intscore_gui_capture_podium = { PLACE = 3 }
+	}
+	if = {
+		limit = { NOT = { tag = ROOT } }
+		set_variable = { which = gecko_intscore_gui_cursor value = 0 }
+	}
+}
+
+# Store podium text on the viewer, just like the paginated rows. GUI localisation
+# must not depend on the event-target snapshot created when the topbar was opened.
+gecko_intscore_gui_capture_podium = {
+	gecko_intscore_gui_cache_country_identity = { KEY = gecko_intscore_gui_podium_$PLACE$_country_id }
+	set_variable = { which = gecko_intscore_gui_transfer_score which = IntScore }
+	set_variable = { which = gecko_intscore_gui_transfer_growth which = YearlyIntScore }
+	if = {
+		limit = { NOT = { tag = ROOT } }
+		ROOT = {
+			set_variable = { which = gecko_intscore_gui_transfer_score which = PREV }
+			set_variable = { which = gecko_intscore_gui_transfer_growth which = PREV }
+		}
+	}
+	ROOT = {
+		set_variable = { which = gecko_intscore_gui_podium_$PLACE$_score which = gecko_intscore_gui_transfer_score }
+		set_variable = { which = gecko_intscore_gui_podium_$PLACE$_growth which = gecko_intscore_gui_transfer_growth }
+		set_country_flag = gecko_intscore_gui_podium_$PLACE$_valid
+	}
+}
+
+gecko_intscore_gui_build = {
+	set_variable = { which = gecko_intscore_gui_count value = 0 }
+	set_variable = { which = gecko_intscore_gui_cursor value = 0 }
+	set_variable = { which = gecko_intscore_gui_position value = 0 }
+	clr_country_flag = gecko_intscore_gui_selected
+	clr_country_flag = gecko_intscore_gui_podium_1_valid
+	clr_country_flag = gecko_intscore_gui_podium_2_valid
+	clr_country_flag = gecko_intscore_gui_podium_3_valid
+	gecko_intscore_gui_clear_target = { TARGET = gecko_intscore_gui_top_1 }
+	gecko_intscore_gui_clear_target = { TARGET = gecko_intscore_gui_top_2 }
+	gecko_intscore_gui_clear_target = { TARGET = gecko_intscore_gui_top_3 }
+	if = {
+		limit = { gecko_intscore_gui_eligible = yes }
+		set_variable = { which = gecko_intscore_gui_count value = 1 }
+		gecko_intscore_gui_cache_country_identity = { KEY = gecko_intscore_gui_identity_scratch }
+		set_variable = { which = gecko_intscore_gui_match_order which = gecko_intscore_gui_order }
+	}
+	every_country = {
+		limit = { NOT = { tag = ROOT } }
+		clr_country_flag = gecko_intscore_gui_selected
+		set_variable = { which = gecko_intscore_gui_position value = 0 }
+		if = {
+			limit = { gecko_intscore_gui_eligible = yes }
+			ROOT = { change_variable = { which = gecko_intscore_gui_count value = 1 } }
+			gecko_intscore_gui_cache_country_identity = { KEY = gecko_intscore_gui_identity_scratch }
+			set_variable = { which = gecko_intscore_gui_match_order which = gecko_intscore_gui_order }
+		}
+	}
+	set_variable = { which = gecko_intscore_gui_identity_scratch value = 0 }
+	# There is no fixed number of rank slots. Stop only when all eligible countries are ranked.
+	while = {
+		limit = {
+			OR = {
+				gecko_intscore_gui_unselected = yes
+				any_country = { NOT = { tag = ROOT } gecko_intscore_gui_unselected = yes }
+			}
+		}
+		gecko_intscore_gui_select_next = yes
+	}
+	clr_country_flag = gecko_intscore_gui_selected
+	every_country = {
+		limit = { has_country_flag = gecko_intscore_gui_selected }
+		clr_country_flag = gecko_intscore_gui_selected
+	}
+}
+
+# SLOT is one of the ten visible rows, independent of its absolute rank.
+gecko_intscore_gui_capture_row = {
+	gecko_intscore_gui_cache_country_identity = { KEY = gecko_intscore_gui_row_$SLOT$_country_id }
+	set_variable = { which = gecko_intscore_gui_transfer_score which = IntScore }
+	set_variable = { which = gecko_intscore_gui_transfer_growth which = YearlyIntScore }
+	if = {
+		limit = { NOT = { tag = ROOT } }
+		ROOT = {
+			set_variable = { which = gecko_intscore_gui_transfer_score which = PREV }
+			set_variable = { which = gecko_intscore_gui_transfer_growth which = PREV }
+		}
+	}
+	ROOT = {
+		set_variable = { which = gecko_intscore_gui_row_$SLOT$_score which = gecko_intscore_gui_transfer_score }
+		set_variable = { which = gecko_intscore_gui_row_$SLOT$_growth which = gecko_intscore_gui_transfer_growth }
+		set_country_flag = gecko_intscore_gui_row_$SLOT$_valid
+	}
+}
+
+gecko_intscore_gui_fill_row = {
+	clr_country_flag = gecko_intscore_gui_row_$SLOT$_valid
+	clr_country_flag = gecko_intscore_gui_row_$SLOT$_self
+	# The country identity is resolved by native customizable localisation.
+	set_variable = { which = gecko_intscore_gui_row_$SLOT$_rank which = gecko_intscore_gui_offset }
+	change_variable = { which = gecko_intscore_gui_row_$SLOT$_rank value = $SLOT$ }
+	if = {
+		limit = { check_variable = { which = gecko_intscore_gui_count which = gecko_intscore_gui_row_$SLOT$_rank } }
+		# Scope comparisons use the same variable name on both countries. Temporarily
+		# put the requested rank in ROOT, exclude ROOT from the search, then restore it.
+		set_variable = { which = gecko_intscore_gui_saved_position which = gecko_intscore_gui_position }
+		set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_row_$SLOT$_rank }
+		if = {
+			limit = { is_variable_equal = { which = gecko_intscore_gui_position which = gecko_intscore_gui_saved_position } }
+			gecko_intscore_gui_capture_row = { SLOT = $SLOT$ }
+			set_country_flag = gecko_intscore_gui_row_$SLOT$_self
+		}
+		else = {
+			random_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					gecko_intscore_gui_eligible = yes
+					is_variable_equal = { which = gecko_intscore_gui_position which = ROOT }
+				}
+				gecko_intscore_gui_capture_row = { SLOT = $SLOT$ }
+			}
+		}
+		set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_saved_position }
+	}
+}
+
+gecko_intscore_gui_refresh = {
+	gecko_intscore_gui_build = yes
+	set_variable = { which = gecko_intscore_gui_pages which = gecko_intscore_gui_count }
+	divide_variable = { which = gecko_intscore_gui_pages value = 10 }
+	round_variable = { which = gecko_intscore_gui_pages value = 1 }
+	if = {
+		limit = { NOT = { check_variable = { which = gecko_intscore_gui_pages value = 1 } } }
+		set_variable = { which = gecko_intscore_gui_pages value = 1 }
+	}
+	if = {
+		limit = { NOT = { check_variable = { which = gecko_intscore_gui_page value = 1 } } }
+		set_variable = { which = gecko_intscore_gui_page value = 1 }
+	}
+	if = {
+		limit = { check_variable = { which = gecko_intscore_gui_page which = gecko_intscore_gui_pages } }
+		set_variable = { which = gecko_intscore_gui_page which = gecko_intscore_gui_pages }
+	}
+	set_variable = { which = gecko_intscore_gui_offset which = gecko_intscore_gui_page }
+	subtract_variable = { which = gecko_intscore_gui_offset value = 1 }
+	multiply_variable = { which = gecko_intscore_gui_offset value = 10 }
+	gecko_intscore_gui_fill_row = { SLOT = 1 }
+	gecko_intscore_gui_fill_row = { SLOT = 2 }
+	gecko_intscore_gui_fill_row = { SLOT = 3 }
+	gecko_intscore_gui_fill_row = { SLOT = 4 }
+	gecko_intscore_gui_fill_row = { SLOT = 5 }
+	gecko_intscore_gui_fill_row = { SLOT = 6 }
+	gecko_intscore_gui_fill_row = { SLOT = 7 }
+	gecko_intscore_gui_fill_row = { SLOT = 8 }
+	gecko_intscore_gui_fill_row = { SLOT = 9 }
+	gecko_intscore_gui_fill_row = { SLOT = 10 }
+}

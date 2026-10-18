@@ -527,7 +527,7 @@ custom_text_box = {
 
 custom_window = {
 	name = gecko_intscore_ranking_window
-	potential = { ai = no has_country_flag = gecko_intscore_gui_open }
+	potential = { ai = no has_country_flag = gecko_intscore_gui_open NOT = { has_country_flag = gecko_victory_atlas_menu } }
 }
 
 custom_button = {

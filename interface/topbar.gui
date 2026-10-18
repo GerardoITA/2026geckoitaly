@@ -768,6 +768,24 @@ guiTypes = {
 				spriteType = "GFX_gecko_intscore_panel"
 			}
 
+			guiButtonType = {
+				name = "gecko_victory_nav_rankings_rankings"
+				position = { x = 32 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_rankings_tab"
+				buttonText = "gecko_victory_rankings"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_nav_rankings_provinces"
+				position = { x = 154 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_victory_provinces"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
 			instantTextBoxType = {
 				name = "gecko_intscore_title"
 				position = { x = 180 y = 24 }
@@ -781,10 +799,10 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_subtitle"
-				position = { x = 108 y = 73 }
+				position = { x = 336 y = 73 }
 				font = "vic_18"
 				text = "gecko_intscore_subtitle"
-				maxWidth = 680
+				maxWidth = 452
 				maxHeight = 22
 				fixedsize = yes
 				format = center
@@ -1899,6 +1917,4013 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
+
+		# BEGIN GENERATED VICTORY ATLAS
+		windowType = {
+			name = "gecko_victory_atlas_window"
+			position = { x = -480 y = -270 }
+			size = { x = 960 y = 580 }
+			Orientation = "CENTER"
+			moveable = 0
+			scripted = yes
+			iconType = {
+				name = "gecko_victory_background"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_gecko_victory_panel"
+			}
+			guiButtonType = {
+				name = "gecko_victory_nav_atlas_rankings"
+				position = { x = 32 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_rankings_tab"
+				buttonText = "gecko_victory_rankings"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_nav_atlas_provinces"
+				position = { x = 154 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_victory_provinces"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_title"
+				position = { x = 180 y = 24 }
+				font = "vic_29s"
+				text = "gecko_victory_title"
+				maxWidth = 600
+				maxHeight = 40
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_subtitle"
+				position = { x = 336 y = 73 }
+				font = "vic_18"
+				text = "gecko_victory_subtitle"
+				maxWidth = 452
+				maxHeight = 22
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_close"
+				position = { x = 912 y = 20 }
+				quadTextureSprite = "GFX_closebutton2"
+				buttonText = "gecko_intscore_close"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+				shortcut = "ESCAPE"
+			}
+			guiButtonType = {
+				name = "gecko_victory_filter_all"
+				position = { x = 32 y = 114 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_filter_important"
+				position = { x = 122 y = 114 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_important"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_filter_standard"
+				position = { x = 212 y = 114 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_standard"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_victory_legend_important"
+				position = { x = 460 y = 123 }
+				spriteType = "GFX_gecko_victory_important"
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_legend_text_important"
+				position = { x = 477 y = 119 }
+				font = "vic_18"
+				text = "gecko_victory_important_legend"
+				maxWidth = 190
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_victory_legend_standard"
+				position = { x = 670 y = 123 }
+				spriteType = "GFX_gecko_victory_standard"
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_legend_text_standard"
+				position = { x = 687 y = 119 }
+				font = "vic_18"
+				text = "gecko_victory_standard_legend"
+				maxWidth = 190
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_view_world"
+				position = { x = 32 y = 150 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_view_world"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_view_europe"
+				position = { x = 122 y = 150 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_view_europe"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_view_africa"
+				position = { x = 212 y = 150 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_view_africa"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_view_asia"
+				position = { x = 302 y = 150 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_view_asia"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_view_americas"
+				position = { x = 392 y = 150 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_view_americas"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_victory_canvas_world"
+				position = { x = 32 y = 184 }
+				size = { x = 896 y = 326 }
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_victory_canvas_world_map"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_victory_map_world"
+				}
+				windowType = {
+					name = "gecko_victory_canvas_world_standard"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_world_103"
+						position = { x = 461 y = 94 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_116"
+						position = { x = 470 y = 100 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_4738"
+						position = { x = 476 y = 94 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_125"
+						position = { x = 476 y = 117 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_121"
+						position = { x = 478 y = 108 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_174"
+						position = { x = 441 y = 97 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_192"
+						position = { x = 455 y = 89 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_213"
+						position = { x = 447 y = 107 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_227"
+						position = { x = 420 y = 115 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_226"
+						position = { x = 429 y = 122 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_248"
+						position = { x = 434 y = 60 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_4121"
+						position = { x = 427 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_87"
+						position = { x = 447 y = 78 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_85"
+						position = { x = 459 y = 77 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1874"
+						position = { x = 464 y = 70 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_45"
+						position = { x = 469 y = 67 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_4742"
+						position = { x = 469 y = 74 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_75"
+						position = { x = 461 y = 85 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_165"
+						position = { x = 461 y = 90 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_266"
+						position = { x = 478 y = 80 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1872"
+						position = { x = 467 y = 85 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_153"
+						position = { x = 491 y = 88 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1756"
+						position = { x = 515 y = 94 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_137"
+						position = { x = 488 y = 103 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_141"
+						position = { x = 495 y = 97 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_5004"
+						position = { x = 472 y = 61 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1"
+						position = { x = 487 y = 48 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_17"
+						position = { x = 469 y = 46 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_38"
+						position = { x = 503 y = 56 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_41"
+						position = { x = 493 y = 64 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_280"
+						position = { x = 518 y = 78 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_293"
+						position = { x = 523 y = 64 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_33"
+						position = { x = 516 y = 46 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2410"
+						position = { x = 526 y = 97 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_466"
+						position = { x = 557 y = 87 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2444"
+						position = { x = 587 y = 64 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_677"
+						position = { x = 669 y = 141 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_421"
+						position = { x = 566 y = 110 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_422"
+						position = { x = 549 y = 104 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_476"
+						position = { x = 610 y = 82 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_718"
+						position = { x = 671 y = 88 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_326"
+						position = { x = 523 y = 112 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_377"
+						position = { x = 535 y = 123 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_411"
+						position = { x = 550 y = 123 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_408"
+						position = { x = 562 y = 139 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_385"
+						position = { x = 542 y = 163 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_395"
+						position = { x = 570 y = 153 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_390"
+						position = { x = 552 y = 179 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_416"
+						position = { x = 559 y = 118 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2999"
+						position = { x = 582 y = 149 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_451"
+						position = { x = 613 y = 129 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1234"
+						position = { x = 523 y = 159 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_356"
+						position = { x = 493 y = 134 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_341"
+						position = { x = 468 y = 122 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_338"
+						position = { x = 450 y = 121 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2269"
+						position = { x = 450 y = 180 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2288"
+						position = { x = 485 y = 183 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_5807"
+						position = { x = 434 y = 153 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1147"
+						position = { x = 455 y = 203 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1116"
+						position = { x = 406 y = 181 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_4085"
+						position = { x = 485 y = 234 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1177"
+						position = { x = 488 y = 308 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1196"
+						position = { x = 540 y = 242 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1792"
+						position = { x = 561 y = 267 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_4064"
+						position = { x = 522 y = 218 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1205"
+						position = { x = 554 y = 213 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_507"
+						position = { x = 628 y = 136 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2095"
+						position = { x = 649 y = 154 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_504"
+						position = { x = 610 y = 155 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2058"
+						position = { x = 626 y = 155 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_534"
+						position = { x = 632 y = 191 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_542"
+						position = { x = 637 y = 174 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2089"
+						position = { x = 624 y = 172 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2099"
+						position = { x = 644 y = 200 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_563"
+						position = { x = 662 y = 153 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_552"
+						position = { x = 656 y = 166 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_586"
+						position = { x = 682 y = 173 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_584"
+						position = { x = 681 y = 162 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_613"
+						position = { x = 704 y = 164 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_4815"
+						position = { x = 700 y = 216 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_622"
+						position = { x = 702 y = 226 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_641"
+						position = { x = 742 y = 233 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_2687"
+						position = { x = 709 y = 236 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1084"
+						position = { x = 740 y = 298 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_965"
+						position = { x = 259 y = 73 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_994"
+						position = { x = 265 y = 55 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_490"
+						position = { x = 269 y = 135 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_852"
+						position = { x = 196 y = 133 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_893"
+						position = { x = 219 y = 105 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_831"
+						position = { x = 275 y = 157 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_763"
+						position = { x = 333 y = 242 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_778"
+						position = { x = 296 y = 274 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "gecko_victory_canvas_world_important"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_world_118"
+						position = { x = 473 y = 105 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_183"
+						position = { x = 448 y = 84 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_217"
+						position = { x = 433 y = 110 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_236"
+						position = { x = 442 y = 75 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_97"
+						position = { x = 455 y = 72 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1876"
+						position = { x = 464 y = 80 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_50"
+						position = { x = 476 y = 71 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_134"
+						position = { x = 484 y = 86 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_257"
+						position = { x = 494 y = 74 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_295"
+						position = { x = 535 y = 61 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_151"
+						position = { x = 514 y = 108 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_1224"
+						position = { x = 537 y = 188 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_343"
+						position = { x = 431 y = 128 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_361"
+						position = { x = 520 y = 140 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_454"
+						position = { x = 609 y = 113 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_522"
+						position = { x = 635 y = 144 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_world_600"
+						position = { x = 692 y = 182 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+			}
+			windowType = {
+				name = "gecko_victory_canvas_europe"
+				position = { x = 32 y = 184 }
+				size = { x = 896 y = 326 }
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_victory_canvas_europe_map"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_victory_map_europe"
+				}
+				windowType = {
+					name = "gecko_victory_canvas_europe_standard"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_103"
+						position = { x = 312 y = 191 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_116"
+						position = { x = 340 y = 209 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_4738"
+						position = { x = 358 y = 191 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_125"
+						position = { x = 358 y = 265 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_121"
+						position = { x = 365 y = 236 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_174"
+						position = { x = 249 y = 199 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_192"
+						position = { x = 293 y = 176 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_213"
+						position = { x = 267 y = 232 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_227"
+						position = { x = 181 y = 256 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_226"
+						position = { x = 210 y = 279 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_248"
+						position = { x = 226 y = 85 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_4121"
+						position = { x = 206 y = 99 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_87"
+						position = { x = 267 y = 140 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_85"
+						position = { x = 306 y = 138 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_1874"
+						position = { x = 321 y = 116 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_45"
+						position = { x = 336 y = 108 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_4742"
+						position = { x = 336 y = 130 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_75"
+						position = { x = 312 y = 161 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_165"
+						position = { x = 312 y = 178 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_266"
+						position = { x = 364 y = 148 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_1872"
+						position = { x = 331 y = 162 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_153"
+						position = { x = 406 y = 171 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_1756"
+						position = { x = 482 y = 190 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_137"
+						position = { x = 396 y = 220 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_141"
+						position = { x = 417 y = 200 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_5004"
+						position = { x = 347 y = 89 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_1"
+						position = { x = 392 y = 45 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_17"
+						position = { x = 338 y = 39 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_38"
+						position = { x = 443 y = 73 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_41"
+						position = { x = 412 y = 98 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_280"
+						position = { x = 489 y = 142 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_293"
+						position = { x = 507 y = 98 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_33"
+						position = { x = 485 y = 41 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_2410"
+						position = { x = 517 y = 201 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_466"
+						position = { x = 614 y = 168 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_2444"
+						position = { x = 707 y = 96 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_421"
+						position = { x = 640 y = 242 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_422"
+						position = { x = 589 y = 223 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_476"
+						position = { x = 781 y = 154 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_326"
+						position = { x = 508 y = 248 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_377"
+						position = { x = 544 y = 281 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_411"
+						position = { x = 591 y = 281 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_416"
+						position = { x = 620 y = 266 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_451"
+						position = { x = 789 y = 300 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_341"
+						position = { x = 332 y = 278 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_338"
+						position = { x = 276 y = 277 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "gecko_victory_canvas_europe_important"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_118"
+						position = { x = 350 y = 227 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_183"
+						position = { x = 271 y = 160 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_217"
+						position = { x = 223 y = 241 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_236"
+						position = { x = 253 y = 133 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_97"
+						position = { x = 291 y = 123 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_1876"
+						position = { x = 320 y = 146 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_50"
+						position = { x = 360 y = 120 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_134"
+						position = { x = 382 y = 165 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_257"
+						position = { x = 416 y = 128 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_295"
+						position = { x = 544 y = 88 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_151"
+						position = { x = 477 y = 235 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_343"
+						position = { x = 216 y = 299 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_europe_454"
+						position = { x = 776 y = 252 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+			}
+			windowType = {
+				name = "gecko_victory_canvas_africa"
+				position = { x = 32 y = 184 }
+				size = { x = 896 y = 326 }
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_victory_canvas_africa_map"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_victory_map_africa"
+				}
+				windowType = {
+					name = "gecko_victory_canvas_africa_standard"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_125"
+						position = { x = 433 y = 11 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_227"
+						position = { x = 347 y = 6 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_226"
+						position = { x = 361 y = 18 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_677"
+						position = { x = 729 y = 46 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_326"
+						position = { x = 505 y = 2 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_377"
+						position = { x = 523 y = 19 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_411"
+						position = { x = 546 y = 18 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_408"
+						position = { x = 564 y = 43 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_385"
+						position = { x = 533 y = 80 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_395"
+						position = { x = 577 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_390"
+						position = { x = 549 y = 105 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_416"
+						position = { x = 560 y = 11 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2999"
+						position = { x = 595 y = 59 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_451"
+						position = { x = 642 y = 28 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1234"
+						position = { x = 505 y = 74 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_356"
+						position = { x = 458 y = 36 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_341"
+						position = { x = 420 y = 17 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_338"
+						position = { x = 393 y = 17 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2269"
+						position = { x = 393 y = 106 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2288"
+						position = { x = 446 y = 111 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_5807"
+						position = { x = 369 y = 64 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1147"
+						position = { x = 401 y = 141 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1116"
+						position = { x = 325 y = 107 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_4085"
+						position = { x = 447 y = 188 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1177"
+						position = { x = 452 y = 301 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1196"
+						position = { x = 531 y = 201 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1792"
+						position = { x = 563 y = 239 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_4064"
+						position = { x = 504 y = 164 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1205"
+						position = { x = 552 y = 157 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_507"
+						position = { x = 666 y = 40 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2095"
+						position = { x = 698 y = 66 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_504"
+						position = { x = 638 y = 68 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2058"
+						position = { x = 662 y = 68 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_534"
+						position = { x = 671 y = 122 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_542"
+						position = { x = 679 y = 97 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2089"
+						position = { x = 660 y = 94 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2099"
+						position = { x = 690 y = 137 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_563"
+						position = { x = 717 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_552"
+						position = { x = 709 y = 84 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_586"
+						position = { x = 747 y = 96 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_584"
+						position = { x = 746 y = 79 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_613"
+						position = { x = 782 y = 82 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_4815"
+						position = { x = 775 y = 160 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_622"
+						position = { x = 778 y = 176 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_641"
+						position = { x = 839 y = 188 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_2687"
+						position = { x = 789 y = 191 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1084"
+						position = { x = 836 y = 286 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_490"
+						position = { x = 117 y = 38 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_852"
+						position = { x = 4 y = 34 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_831"
+						position = { x = 126 y = 71 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_763"
+						position = { x = 214 y = 202 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_778"
+						position = { x = 157 y = 250 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "gecko_victory_canvas_africa_important"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_1224"
+						position = { x = 526 y = 119 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_343"
+						position = { x = 364 y = 27 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_361"
+						position = { x = 501 y = 45 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_454"
+						position = { x = 636 y = 5 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_522"
+						position = { x = 676 y = 52 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_africa_600"
+						position = { x = 763 y = 109 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+			}
+			windowType = {
+				name = "gecko_victory_canvas_asia"
+				position = { x = 32 y = 184 }
+				size = { x = 896 y = 326 }
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_victory_canvas_asia_map"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_victory_map_asia"
+				}
+				windowType = {
+					name = "gecko_victory_canvas_asia_standard"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_103"
+						position = { x = 124 y = 42 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_116"
+						position = { x = 140 y = 52 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_4738"
+						position = { x = 150 y = 41 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_125"
+						position = { x = 150 y = 84 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_121"
+						position = { x = 154 y = 68 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_174"
+						position = { x = 88 y = 46 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_192"
+						position = { x = 113 y = 33 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_213"
+						position = { x = 98 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_227"
+						position = { x = 49 y = 79 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_226"
+						position = { x = 65 y = 92 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_87"
+						position = { x = 98 y = 12 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_85"
+						position = { x = 120 y = 11 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_4742"
+						position = { x = 138 y = 6 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_75"
+						position = { x = 124 y = 24 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_165"
+						position = { x = 124 y = 34 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_266"
+						position = { x = 154 y = 17 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1872"
+						position = { x = 135 y = 25 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_153"
+						position = { x = 178 y = 30 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1756"
+						position = { x = 222 y = 41 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_137"
+						position = { x = 172 y = 58 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_141"
+						position = { x = 184 y = 47 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_280"
+						position = { x = 226 y = 13 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2410"
+						position = { x = 242 y = 48 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_466"
+						position = { x = 297 y = 29 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_677"
+						position = { x = 501 y = 126 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_421"
+						position = { x = 313 y = 71 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_422"
+						position = { x = 283 y = 60 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_476"
+						position = { x = 394 y = 20 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_718"
+						position = { x = 503 y = 31 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_326"
+						position = { x = 236 y = 74 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_377"
+						position = { x = 257 y = 94 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_411"
+						position = { x = 284 y = 93 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_408"
+						position = { x = 306 y = 123 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_385"
+						position = { x = 269 y = 166 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_395"
+						position = { x = 321 y = 148 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_390"
+						position = { x = 288 y = 196 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_416"
+						position = { x = 301 y = 85 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2999"
+						position = { x = 343 y = 141 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_451"
+						position = { x = 398 y = 104 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1234"
+						position = { x = 236 y = 159 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_356"
+						position = { x = 181 y = 115 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_341"
+						position = { x = 135 y = 92 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_338"
+						position = { x = 103 y = 91 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2269"
+						position = { x = 103 y = 197 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2288"
+						position = { x = 166 y = 203 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_5807"
+						position = { x = 75 y = 148 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1147"
+						position = { x = 113 y = 238 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1116"
+						position = { x = 23 y = 199 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_4085"
+						position = { x = 168 y = 294 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1196"
+						position = { x = 266 y = 309 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_4064"
+						position = { x = 234 y = 266 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1205"
+						position = { x = 291 y = 257 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_507"
+						position = { x = 426 y = 118 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2095"
+						position = { x = 464 y = 149 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_504"
+						position = { x = 394 y = 151 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2058"
+						position = { x = 422 y = 153 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_534"
+						position = { x = 432 y = 216 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_542"
+						position = { x = 442 y = 186 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2089"
+						position = { x = 419 y = 182 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2099"
+						position = { x = 454 y = 234 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_563"
+						position = { x = 486 y = 149 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_552"
+						position = { x = 477 y = 171 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_586"
+						position = { x = 523 y = 185 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_584"
+						position = { x = 521 y = 165 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_613"
+						position = { x = 563 y = 168 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_4815"
+						position = { x = 555 y = 261 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_622"
+						position = { x = 559 y = 280 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_641"
+						position = { x = 631 y = 294 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_2687"
+						position = { x = 572 y = 298 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "gecko_victory_canvas_asia_important"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_118"
+						position = { x = 146 y = 62 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_183"
+						position = { x = 100 y = 24 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_217"
+						position = { x = 73 y = 71 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_236"
+						position = { x = 90 y = 8 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_97"
+						position = { x = 112 y = 3 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1876"
+						position = { x = 129 y = 16 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_50"
+						position = { x = 152 y = 1 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_134"
+						position = { x = 164 y = 26 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_257"
+						position = { x = 184 y = 5 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_151"
+						position = { x = 219 y = 67 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_1224"
+						position = { x = 260 y = 212 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_343"
+						position = { x = 69 y = 104 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_361"
+						position = { x = 231 y = 125 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_454"
+						position = { x = 390 y = 77 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_522"
+						position = { x = 438 y = 133 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_asia_600"
+						position = { x = 541 y = 201 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+			}
+			windowType = {
+				name = "gecko_victory_canvas_americas"
+				position = { x = 32 y = 184 }
+				size = { x = 896 y = 326 }
+				moveable = 0
+				scripted = yes
+				iconType = {
+					name = "gecko_victory_canvas_americas_map"
+					position = { x = 0 y = 0 }
+					spriteType = "GFX_gecko_victory_map_americas"
+				}
+				windowType = {
+					name = "gecko_victory_canvas_americas_standard"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_103"
+						position = { x = 613 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_116"
+						position = { x = 625 y = 73 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_4738"
+						position = { x = 633 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_125"
+						position = { x = 633 y = 97 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_121"
+						position = { x = 636 y = 84 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_174"
+						position = { x = 587 y = 69 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_192"
+						position = { x = 605 y = 59 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_213"
+						position = { x = 595 y = 83 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_227"
+						position = { x = 558 y = 93 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_226"
+						position = { x = 571 y = 103 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_248"
+						position = { x = 577 y = 21 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_4121"
+						position = { x = 569 y = 27 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_87"
+						position = { x = 594 y = 44 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_85"
+						position = { x = 611 y = 43 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1874"
+						position = { x = 617 y = 34 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_45"
+						position = { x = 624 y = 30 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_4742"
+						position = { x = 624 y = 39 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_75"
+						position = { x = 613 y = 53 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_165"
+						position = { x = 613 y = 60 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_266"
+						position = { x = 635 y = 47 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1872"
+						position = { x = 621 y = 53 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_153"
+						position = { x = 653 y = 57 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1756"
+						position = { x = 685 y = 65 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_137"
+						position = { x = 649 y = 78 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_141"
+						position = { x = 658 y = 69 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_5004"
+						position = { x = 628 y = 22 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1"
+						position = { x = 647 y = 4 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_17"
+						position = { x = 624 y = 1 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_38"
+						position = { x = 669 y = 15 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_41"
+						position = { x = 656 y = 26 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_280"
+						position = { x = 688 y = 45 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_293"
+						position = { x = 696 y = 26 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_33"
+						position = { x = 686 y = 2 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2410"
+						position = { x = 700 y = 70 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_466"
+						position = { x = 741 y = 56 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2444"
+						position = { x = 780 y = 25 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_421"
+						position = { x = 752 y = 87 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_422"
+						position = { x = 730 y = 79 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_476"
+						position = { x = 811 y = 50 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_326"
+						position = { x = 696 y = 89 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_377"
+						position = { x = 711 y = 103 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_411"
+						position = { x = 731 y = 103 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_408"
+						position = { x = 747 y = 125 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_385"
+						position = { x = 720 y = 157 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_395"
+						position = { x = 758 y = 144 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_390"
+						position = { x = 734 y = 179 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_416"
+						position = { x = 743 y = 97 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2999"
+						position = { x = 774 y = 138 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_451"
+						position = { x = 815 y = 111 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1234"
+						position = { x = 696 y = 152 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_356"
+						position = { x = 655 y = 119 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_341"
+						position = { x = 622 y = 102 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_338"
+						position = { x = 598 y = 102 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2269"
+						position = { x = 598 y = 180 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2288"
+						position = { x = 645 y = 184 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_5807"
+						position = { x = 577 y = 143 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1147"
+						position = { x = 605 y = 209 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1116"
+						position = { x = 540 y = 181 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_4085"
+						position = { x = 645 y = 251 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1196"
+						position = { x = 718 y = 262 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1792"
+						position = { x = 746 y = 294 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_4064"
+						position = { x = 694 y = 230 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1205"
+						position = { x = 736 y = 223 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_507"
+						position = { x = 835 y = 122 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2095"
+						position = { x = 863 y = 144 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_504"
+						position = { x = 811 y = 146 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2058"
+						position = { x = 832 y = 147 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_534"
+						position = { x = 840 y = 193 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_542"
+						position = { x = 847 y = 172 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2089"
+						position = { x = 830 y = 169 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_2099"
+						position = { x = 856 y = 206 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_563"
+						position = { x = 879 y = 144 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_552"
+						position = { x = 872 y = 160 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_965"
+						position = { x = 345 y = 37 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_994"
+						position = { x = 353 y = 14 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_490"
+						position = { x = 359 y = 120 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_852"
+						position = { x = 261 y = 117 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_893"
+						position = { x = 292 y = 80 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_831"
+						position = { x = 367 y = 149 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_763"
+						position = { x = 443 y = 262 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_778"
+						position = { x = 394 y = 304 }
+						quadTextureSprite = "GFX_gecko_victory_standard"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+				windowType = {
+					name = "gecko_victory_canvas_americas_important"
+					position = { x = 0 y = 0 }
+					size = { x = 896 y = 326 }
+					moveable = 0
+					scripted = yes
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_118"
+						position = { x = 630 y = 80 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_183"
+						position = { x = 596 y = 52 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_217"
+						position = { x = 576 y = 87 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_236"
+						position = { x = 588 y = 41 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_97"
+						position = { x = 605 y = 37 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1876"
+						position = { x = 617 y = 46 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_50"
+						position = { x = 634 y = 35 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_134"
+						position = { x = 643 y = 54 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_257"
+						position = { x = 658 y = 39 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_295"
+						position = { x = 711 y = 22 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_151"
+						position = { x = 683 y = 84 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_1224"
+						position = { x = 713 y = 191 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_343"
+						position = { x = 573 y = 111 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_361"
+						position = { x = 692 y = 126 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_454"
+						position = { x = 809 y = 91 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+					guiButtonType = {
+						name = "gecko_victory_marker_americas_522"
+						position = { x = 844 y = 132 }
+						quadTextureSprite = "GFX_gecko_victory_important"
+						buttonText = ""
+						buttonFont = "vic_18"
+						clicksound = click
+						scripted = yes
+					}
+				}
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_selected_name"
+				position = { x = 32 y = 516 }
+				font = "vic_22"
+				text = "gecko_victory_selected_name"
+				maxWidth = 420
+				maxHeight = 28
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_selected_info"
+				position = { x = 468 y = 520 }
+				font = "vic_18"
+				text = "gecko_victory_selected_info"
+				maxWidth = 460
+				maxHeight = 22
+				fixedsize = yes
+				format = right
+				alwaystransparent = yes
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_victory_footer"
+				position = { x = 32 y = 549 }
+				font = "vic_18"
+				text = "gecko_victory_footer"
+				maxWidth = 898
+				maxHeight = 20
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+		}
+		# END GENERATED VICTORY ATLAS
 
 	} ### end of "topbar"
 

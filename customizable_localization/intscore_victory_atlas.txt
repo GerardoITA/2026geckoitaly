@@ -1,0 +1,461 @@
+# Generated from the decisions; the selected identity belongs to the viewer.
+
+defined_text = {
+	name = GetGeckoVictoryProvinceName
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 103 } }
+		localisation_key = gecko_victory_name_103
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 116 } }
+		localisation_key = gecko_victory_name_116
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 4738 } }
+		localisation_key = gecko_victory_name_4738
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 125 } }
+		localisation_key = gecko_victory_name_125
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 121 } }
+		localisation_key = gecko_victory_name_121
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 174 } }
+		localisation_key = gecko_victory_name_174
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 192 } }
+		localisation_key = gecko_victory_name_192
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 213 } }
+		localisation_key = gecko_victory_name_213
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 227 } }
+		localisation_key = gecko_victory_name_227
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 226 } }
+		localisation_key = gecko_victory_name_226
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 248 } }
+		localisation_key = gecko_victory_name_248
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 4121 } }
+		localisation_key = gecko_victory_name_4121
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 87 } }
+		localisation_key = gecko_victory_name_87
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 85 } }
+		localisation_key = gecko_victory_name_85
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1874 } }
+		localisation_key = gecko_victory_name_1874
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 45 } }
+		localisation_key = gecko_victory_name_45
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 4742 } }
+		localisation_key = gecko_victory_name_4742
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 75 } }
+		localisation_key = gecko_victory_name_75
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 165 } }
+		localisation_key = gecko_victory_name_165
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 266 } }
+		localisation_key = gecko_victory_name_266
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1872 } }
+		localisation_key = gecko_victory_name_1872
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 153 } }
+		localisation_key = gecko_victory_name_153
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1756 } }
+		localisation_key = gecko_victory_name_1756
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 137 } }
+		localisation_key = gecko_victory_name_137
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 141 } }
+		localisation_key = gecko_victory_name_141
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 5004 } }
+		localisation_key = gecko_victory_name_5004
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1 } }
+		localisation_key = gecko_victory_name_1
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 17 } }
+		localisation_key = gecko_victory_name_17
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 38 } }
+		localisation_key = gecko_victory_name_38
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 41 } }
+		localisation_key = gecko_victory_name_41
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 280 } }
+		localisation_key = gecko_victory_name_280
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 293 } }
+		localisation_key = gecko_victory_name_293
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 33 } }
+		localisation_key = gecko_victory_name_33
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2410 } }
+		localisation_key = gecko_victory_name_2410
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 466 } }
+		localisation_key = gecko_victory_name_466
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2444 } }
+		localisation_key = gecko_victory_name_2444
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 677 } }
+		localisation_key = gecko_victory_name_677
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 421 } }
+		localisation_key = gecko_victory_name_421
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 422 } }
+		localisation_key = gecko_victory_name_422
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 476 } }
+		localisation_key = gecko_victory_name_476
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 718 } }
+		localisation_key = gecko_victory_name_718
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 326 } }
+		localisation_key = gecko_victory_name_326
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 377 } }
+		localisation_key = gecko_victory_name_377
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 411 } }
+		localisation_key = gecko_victory_name_411
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 408 } }
+		localisation_key = gecko_victory_name_408
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 385 } }
+		localisation_key = gecko_victory_name_385
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 395 } }
+		localisation_key = gecko_victory_name_395
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 390 } }
+		localisation_key = gecko_victory_name_390
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 416 } }
+		localisation_key = gecko_victory_name_416
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2999 } }
+		localisation_key = gecko_victory_name_2999
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 451 } }
+		localisation_key = gecko_victory_name_451
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1234 } }
+		localisation_key = gecko_victory_name_1234
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 356 } }
+		localisation_key = gecko_victory_name_356
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 341 } }
+		localisation_key = gecko_victory_name_341
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 338 } }
+		localisation_key = gecko_victory_name_338
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2269 } }
+		localisation_key = gecko_victory_name_2269
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2288 } }
+		localisation_key = gecko_victory_name_2288
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 5807 } }
+		localisation_key = gecko_victory_name_5807
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1147 } }
+		localisation_key = gecko_victory_name_1147
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1116 } }
+		localisation_key = gecko_victory_name_1116
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 4085 } }
+		localisation_key = gecko_victory_name_4085
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1177 } }
+		localisation_key = gecko_victory_name_1177
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1196 } }
+		localisation_key = gecko_victory_name_1196
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1792 } }
+		localisation_key = gecko_victory_name_1792
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 4064 } }
+		localisation_key = gecko_victory_name_4064
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1205 } }
+		localisation_key = gecko_victory_name_1205
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 507 } }
+		localisation_key = gecko_victory_name_507
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2095 } }
+		localisation_key = gecko_victory_name_2095
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 504 } }
+		localisation_key = gecko_victory_name_504
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2058 } }
+		localisation_key = gecko_victory_name_2058
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 534 } }
+		localisation_key = gecko_victory_name_534
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 542 } }
+		localisation_key = gecko_victory_name_542
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2089 } }
+		localisation_key = gecko_victory_name_2089
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2099 } }
+		localisation_key = gecko_victory_name_2099
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 563 } }
+		localisation_key = gecko_victory_name_563
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 552 } }
+		localisation_key = gecko_victory_name_552
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 586 } }
+		localisation_key = gecko_victory_name_586
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 584 } }
+		localisation_key = gecko_victory_name_584
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 613 } }
+		localisation_key = gecko_victory_name_613
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 4815 } }
+		localisation_key = gecko_victory_name_4815
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 622 } }
+		localisation_key = gecko_victory_name_622
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 641 } }
+		localisation_key = gecko_victory_name_641
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 2687 } }
+		localisation_key = gecko_victory_name_2687
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1084 } }
+		localisation_key = gecko_victory_name_1084
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 965 } }
+		localisation_key = gecko_victory_name_965
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 994 } }
+		localisation_key = gecko_victory_name_994
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 490 } }
+		localisation_key = gecko_victory_name_490
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 852 } }
+		localisation_key = gecko_victory_name_852
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 893 } }
+		localisation_key = gecko_victory_name_893
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 831 } }
+		localisation_key = gecko_victory_name_831
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 763 } }
+		localisation_key = gecko_victory_name_763
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 778 } }
+		localisation_key = gecko_victory_name_778
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 118 } }
+		localisation_key = gecko_victory_name_118
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 183 } }
+		localisation_key = gecko_victory_name_183
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 217 } }
+		localisation_key = gecko_victory_name_217
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 236 } }
+		localisation_key = gecko_victory_name_236
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 97 } }
+		localisation_key = gecko_victory_name_97
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1876 } }
+		localisation_key = gecko_victory_name_1876
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 50 } }
+		localisation_key = gecko_victory_name_50
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 134 } }
+		localisation_key = gecko_victory_name_134
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 257 } }
+		localisation_key = gecko_victory_name_257
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 295 } }
+		localisation_key = gecko_victory_name_295
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 151 } }
+		localisation_key = gecko_victory_name_151
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 1224 } }
+		localisation_key = gecko_victory_name_1224
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 343 } }
+		localisation_key = gecko_victory_name_343
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 361 } }
+		localisation_key = gecko_victory_name_361
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 454 } }
+		localisation_key = gecko_victory_name_454
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 522 } }
+		localisation_key = gecko_victory_name_522
+	}
+	text = {
+		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 600 } }
+		localisation_key = gecko_victory_name_600
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = gecko_victory_select_prompt
+	}
+}
+
+defined_text = {
+	name = GetGeckoVictoryProvinceInfo
+	text = {
+		trigger = { NOT = { check_variable = { which = gecko_victory_selected_id value = 1 } } }
+		localisation_key = gecko_victory_select_help
+	}
+	text = {
+		trigger = { has_country_flag = gecko_victory_selected_important }
+		localisation_key = gecko_victory_info_important
+	}
+	text = {
+		trigger = { always = yes }
+		localisation_key = gecko_victory_info_standard
+	}
+}

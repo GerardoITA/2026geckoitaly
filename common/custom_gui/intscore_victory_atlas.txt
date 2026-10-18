@@ -4,9 +4,9 @@ custom_button = {
 	name = gecko_victory_nav_rankings_rankings
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { clr_country_flag = gecko_victory_atlas_menu } }
+	effect = { hidden_effect = { clr_country_flag = gecko_victory_documentation_menu clr_country_flag = gecko_victory_atlas_menu } }
 	tooltip = gecko_victory_rankings_tt
-	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_atlas_menu } } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_documentation_menu } NOT = { has_country_flag = gecko_victory_atlas_menu } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -14,9 +14,19 @@ custom_button = {
 	name = gecko_victory_nav_rankings_provinces
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { if = { limit = { NOT = { has_country_flag = gecko_victory_atlas_initialized } } set_variable = { which = gecko_victory_view value = 0 } set_variable = { which = gecko_victory_filter value = 0 } set_variable = { which = gecko_victory_selected_id value = 0 } clr_country_flag = gecko_victory_selected_important set_country_flag = gecko_victory_atlas_initialized } set_country_flag = gecko_victory_atlas_menu } }
+	effect = { hidden_effect = { clr_country_flag = gecko_victory_documentation_menu if = { limit = { NOT = { has_country_flag = gecko_victory_atlas_initialized } } set_variable = { which = gecko_victory_view value = 0 } set_variable = { which = gecko_victory_filter value = 0 } set_variable = { which = gecko_victory_selected_id value = 0 } clr_country_flag = gecko_victory_selected_important set_country_flag = gecko_victory_atlas_initialized } set_country_flag = gecko_victory_atlas_menu } }
 	tooltip = gecko_victory_provinces_tt
-	frame = { number = 2 trigger = { has_country_flag = gecko_victory_atlas_menu } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_documentation_menu } has_country_flag = gecko_victory_atlas_menu } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_victory_nav_rankings_documentation
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { if = { limit = { NOT = { has_country_flag = gecko_victory_docs_initialized } } set_variable = { which = gecko_victory_docs_page value = 0 } set_country_flag = gecko_victory_docs_initialized } clr_country_flag = gecko_victory_atlas_menu set_country_flag = gecko_victory_documentation_menu } }
+	tooltip = gecko_victory_documentation_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_victory_documentation_menu } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -24,9 +34,9 @@ custom_button = {
 	name = gecko_victory_nav_atlas_rankings
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { clr_country_flag = gecko_victory_atlas_menu } }
+	effect = { hidden_effect = { clr_country_flag = gecko_victory_documentation_menu clr_country_flag = gecko_victory_atlas_menu } }
 	tooltip = gecko_victory_rankings_tt
-	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_atlas_menu } } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_documentation_menu } NOT = { has_country_flag = gecko_victory_atlas_menu } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -34,15 +44,55 @@ custom_button = {
 	name = gecko_victory_nav_atlas_provinces
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { if = { limit = { NOT = { has_country_flag = gecko_victory_atlas_initialized } } set_variable = { which = gecko_victory_view value = 0 } set_variable = { which = gecko_victory_filter value = 0 } set_variable = { which = gecko_victory_selected_id value = 0 } clr_country_flag = gecko_victory_selected_important set_country_flag = gecko_victory_atlas_initialized } set_country_flag = gecko_victory_atlas_menu } }
+	effect = { hidden_effect = { clr_country_flag = gecko_victory_documentation_menu if = { limit = { NOT = { has_country_flag = gecko_victory_atlas_initialized } } set_variable = { which = gecko_victory_view value = 0 } set_variable = { which = gecko_victory_filter value = 0 } set_variable = { which = gecko_victory_selected_id value = 0 } clr_country_flag = gecko_victory_selected_important set_country_flag = gecko_victory_atlas_initialized } set_country_flag = gecko_victory_atlas_menu } }
 	tooltip = gecko_victory_provinces_tt
-	frame = { number = 2 trigger = { has_country_flag = gecko_victory_atlas_menu } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_documentation_menu } has_country_flag = gecko_victory_atlas_menu } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_victory_nav_atlas_documentation
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { if = { limit = { NOT = { has_country_flag = gecko_victory_docs_initialized } } set_variable = { which = gecko_victory_docs_page value = 0 } set_country_flag = gecko_victory_docs_initialized } clr_country_flag = gecko_victory_atlas_menu set_country_flag = gecko_victory_documentation_menu } }
+	tooltip = gecko_victory_documentation_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_victory_documentation_menu } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_victory_nav_documentation_rankings
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_victory_documentation_menu clr_country_flag = gecko_victory_atlas_menu } }
+	tooltip = gecko_victory_rankings_tt
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_documentation_menu } NOT = { has_country_flag = gecko_victory_atlas_menu } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_victory_nav_documentation_provinces
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_victory_documentation_menu if = { limit = { NOT = { has_country_flag = gecko_victory_atlas_initialized } } set_variable = { which = gecko_victory_view value = 0 } set_variable = { which = gecko_victory_filter value = 0 } set_variable = { which = gecko_victory_selected_id value = 0 } clr_country_flag = gecko_victory_selected_important set_country_flag = gecko_victory_atlas_initialized } set_country_flag = gecko_victory_atlas_menu } }
+	tooltip = gecko_victory_provinces_tt
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_victory_documentation_menu } has_country_flag = gecko_victory_atlas_menu } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_victory_nav_documentation_documentation
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { if = { limit = { NOT = { has_country_flag = gecko_victory_docs_initialized } } set_variable = { which = gecko_victory_docs_page value = 0 } set_country_flag = gecko_victory_docs_initialized } clr_country_flag = gecko_victory_atlas_menu set_country_flag = gecko_victory_documentation_menu } }
+	tooltip = gecko_victory_documentation_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_victory_documentation_menu } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
 custom_window = {
 	name = gecko_victory_atlas_window
-	potential = { ai = no has_country_flag = gecko_intscore_gui_open has_country_flag = gecko_victory_atlas_menu }
+	potential = { ai = no has_country_flag = gecko_intscore_gui_open has_country_flag = gecko_victory_atlas_menu NOT = { has_country_flag = gecko_victory_documentation_menu } }
 }
 
 custom_button = {

@@ -786,6 +786,15 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 			}
+			guiButtonType = {
+				name = "gecko_victory_nav_rankings_documentation"
+				position = { x = 320 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_victory_documentation"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
 			instantTextBoxType = {
 				name = "gecko_intscore_title"
 				position = { x = 180 y = 24 }
@@ -799,10 +808,10 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_subtitle"
-				position = { x = 336 y = 73 }
+				position = { x = 490 y = 73 }
 				font = "vic_18"
 				text = "gecko_intscore_subtitle"
-				maxWidth = 452
+				maxWidth = 298
 				maxHeight = 22
 				fixedsize = yes
 				format = center
@@ -817,15 +826,6 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 				shortcut = "ESCAPE"
-			}
-			guiButtonType = {
-				name = "gecko_intscore_refresh"
-				position = { x = 832 y = 70 }
-				quadTextureSprite = "GFX_gecko_intscore_page_button"
-				buttonText = "gecko_intscore_refresh"
-				buttonFont = "vic_18"
-				clicksound = click
-				scripted = yes
 			}
 			instantTextBoxType = {
 				name = "gecko_intscore_podium_title_1"
@@ -1967,6 +1967,15 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 			}
+			guiButtonType = {
+				name = "gecko_victory_nav_atlas_documentation"
+				position = { x = 320 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_victory_documentation"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
 			instantTextBoxType = {
 				name = "gecko_victory_title"
 				position = { x = 180 y = 24 }
@@ -1980,10 +1989,10 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_victory_subtitle"
-				position = { x = 336 y = 73 }
+				position = { x = 490 y = 73 }
 				font = "vic_18"
 				text = "gecko_victory_subtitle"
-				maxWidth = 452
+				maxWidth = 298
 				maxHeight = 22
 				fixedsize = yes
 				format = center
@@ -5951,6 +5960,1779 @@ guiTypes = {
 			}
 		}
 		# END GENERATED VICTORY ATLAS
+
+		# BEGIN GENERATED INTSCORE DOCUMENTATION
+		windowType = {
+			name = "gecko_intscore_documentation_window"
+			position = { x = -480 y = -270 }
+			size = { x = 960 y = 580 }
+			Orientation = "CENTER"
+			moveable = 0
+			scripted = yes
+			iconType = {
+				name = "gecko_intscore_docs_background"
+				position = { x = 0 y = 0 }
+				spriteType = "GFX_gecko_intscore_documentation_panel"
+			}
+			guiButtonType = {
+				name = "gecko_victory_nav_documentation_rankings"
+				position = { x = 32 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_rankings_tab"
+				buttonText = "gecko_victory_rankings"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_nav_documentation_provinces"
+				position = { x = 154 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_victory_provinces"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_nav_documentation_documentation"
+				position = { x = 320 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_victory_documentation"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_docs_title"
+				position = { x = 180 y = 24 }
+				font = "vic_29s"
+				text = "gecko_intscore_docs_title"
+				maxWidth = 600
+				maxHeight = 40
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_docs_subtitle"
+				position = { x = 490 y = 73 }
+				font = "vic_18"
+				text = "gecko_intscore_docs_subtitle"
+				maxWidth = 298
+				maxHeight = 22
+				fixedsize = yes
+				format = center
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_close"
+				position = { x = 912 y = 20 }
+				quadTextureSprite = "GFX_closebutton2"
+				buttonText = "gecko_intscore_close"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+				shortcut = "ESCAPE"
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_docs_contents"
+				position = { x = 44 y = 119 }
+				font = "vic_18"
+				text = "gecko_intscore_docs_contents"
+				maxWidth = 150
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_docs_help"
+				position = { x = 44 y = 439 }
+				font = "vic_18"
+				text = "gecko_intscore_docs_help"
+				maxWidth = 150
+				maxHeight = 72
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_section_overview"
+				position = { x = 42 y = 153 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_intscore_docs_section_overview"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_docs_page_overview"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_title"
+					position = { x = 240 y = 130 }
+					font = "vic_22"
+					text = "gecko_intscore_docs_overview_title"
+					maxWidth = 668
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_lead"
+					position = { x = 240 y = 173 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_lead"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_heading_0"
+					position = { x = 240 y = 209 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_heading_0"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_body_0"
+					position = { x = 240 y = 235 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_body_0"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_heading_1"
+					position = { x = 240 y = 285 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_heading_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_body_1"
+					position = { x = 240 y = 311 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_body_1"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_heading_2"
+					position = { x = 240 y = 361 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_heading_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_body_2"
+					position = { x = 240 y = 387 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_body_2"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_overview_page_number"
+					position = { x = 240 y = 509 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_overview_page_number"
+					maxWidth = 460
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_section_provinces"
+				position = { x = 42 y = 197 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_intscore_docs_section_provinces"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_docs_page_provinces"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_title"
+					position = { x = 240 y = 130 }
+					font = "vic_22"
+					text = "gecko_intscore_docs_provinces_title"
+					maxWidth = 668
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_lead"
+					position = { x = 240 y = 173 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_lead"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_heading_0"
+					position = { x = 240 y = 209 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_heading_0"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_body_0"
+					position = { x = 240 y = 235 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_body_0"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_heading_1"
+					position = { x = 240 y = 265 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_heading_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_body_1"
+					position = { x = 240 y = 291 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_body_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_heading_2"
+					position = { x = 240 y = 321 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_heading_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_body_2"
+					position = { x = 240 y = 347 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_body_2"
+					maxWidth = 668
+					maxHeight = 62
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_provinces_page_number"
+					position = { x = 240 y = 509 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_provinces_page_number"
+					maxWidth = 460
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_section_annual"
+				position = { x = 42 y = 241 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_intscore_docs_section_annual"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_docs_page_annual"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_title"
+					position = { x = 240 y = 130 }
+					font = "vic_22"
+					text = "gecko_intscore_docs_annual_title"
+					maxWidth = 668
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_lead"
+					position = { x = 240 y = 173 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_lead"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_formula"
+					position = { x = 240 y = 226 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_formula"
+					maxWidth = 668
+					maxHeight = 24
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_col_0"
+					position = { x = 240 y = 270 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_col_0"
+					maxWidth = 205
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_col_1"
+					position = { x = 457 y = 270 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_col_1"
+					maxWidth = 116
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_col_2"
+					position = { x = 585 y = 270 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_col_2"
+					maxWidth = 159
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_col_3"
+					position = { x = 756 y = 270 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_col_3"
+					maxWidth = 152
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_0_0"
+					position = { x = 240 y = 302 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_0_0"
+					maxWidth = 205
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_0_1"
+					position = { x = 457 y = 302 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_0_1"
+					maxWidth = 116
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_0_2"
+					position = { x = 585 y = 302 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_0_2"
+					maxWidth = 159
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_0_3"
+					position = { x = 756 y = 302 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_0_3"
+					maxWidth = 152
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_1_0"
+					position = { x = 240 y = 329 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_1_0"
+					maxWidth = 205
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_1_1"
+					position = { x = 457 y = 329 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_1_1"
+					maxWidth = 116
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_1_2"
+					position = { x = 585 y = 329 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_1_2"
+					maxWidth = 159
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_1_3"
+					position = { x = 756 y = 329 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_1_3"
+					maxWidth = 152
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_2_0"
+					position = { x = 240 y = 356 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_2_0"
+					maxWidth = 205
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_2_1"
+					position = { x = 457 y = 356 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_2_1"
+					maxWidth = 116
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_2_2"
+					position = { x = 585 y = 356 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_2_2"
+					maxWidth = 159
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_2_3"
+					position = { x = 756 y = 356 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_2_3"
+					maxWidth = 152
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_3_0"
+					position = { x = 240 y = 383 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_3_0"
+					maxWidth = 205
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_3_1"
+					position = { x = 457 y = 383 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_3_1"
+					maxWidth = 116
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_3_2"
+					position = { x = 585 y = 383 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_3_2"
+					maxWidth = 159
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_cell_3_3"
+					position = { x = 756 y = 383 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_cell_3_3"
+					maxWidth = 152
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_example"
+					position = { x = 240 y = 426 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_example"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_note"
+					position = { x = 240 y = 460 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_note"
+					maxWidth = 668
+					maxHeight = 40
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_annual_page_number"
+					position = { x = 240 y = 509 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_annual_page_number"
+					maxWidth = 460
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_section_wars"
+				position = { x = 42 y = 285 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_intscore_docs_section_wars"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_docs_page_wars"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_title"
+					position = { x = 240 y = 130 }
+					font = "vic_22"
+					text = "gecko_intscore_docs_wars_title"
+					maxWidth = 668
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_lead"
+					position = { x = 240 y = 173 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_lead"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_heading_0"
+					position = { x = 240 y = 209 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_heading_0"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_body_0"
+					position = { x = 240 y = 235 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_body_0"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_heading_1"
+					position = { x = 240 y = 285 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_heading_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_body_1"
+					position = { x = 240 y = 311 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_body_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_heading_2"
+					position = { x = 240 y = 341 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_heading_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_body_2"
+					position = { x = 240 y = 367 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_body_2"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_wars_page_number"
+					position = { x = 240 y = 509 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_wars_page_number"
+					maxWidth = 460
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_section_penalties"
+				position = { x = 42 y = 329 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_intscore_docs_section_penalties"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_docs_page_penalties"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_title"
+					position = { x = 240 y = 130 }
+					font = "vic_22"
+					text = "gecko_intscore_docs_penalties_title"
+					maxWidth = 668
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_lead"
+					position = { x = 240 y = 173 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_lead"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_col_0"
+					position = { x = 240 y = 233 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_col_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_col_1"
+					position = { x = 434 y = 233 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_col_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_col_2"
+					position = { x = 553 y = 233 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_col_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_col_3"
+					position = { x = 672 y = 233 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_col_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_col_4"
+					position = { x = 791 y = 233 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_col_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_0_0"
+					position = { x = 240 y = 264 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_0_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_0_1"
+					position = { x = 434 y = 264 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_0_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_0_2"
+					position = { x = 553 y = 264 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_0_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_0_3"
+					position = { x = 672 y = 264 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_0_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_0_4"
+					position = { x = 791 y = 264 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_0_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_1_0"
+					position = { x = 240 y = 288 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_1_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_1_1"
+					position = { x = 434 y = 288 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_1_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_1_2"
+					position = { x = 553 y = 288 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_1_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_1_3"
+					position = { x = 672 y = 288 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_1_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_1_4"
+					position = { x = 791 y = 288 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_1_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_2_0"
+					position = { x = 240 y = 312 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_2_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_2_1"
+					position = { x = 434 y = 312 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_2_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_2_2"
+					position = { x = 553 y = 312 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_2_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_2_3"
+					position = { x = 672 y = 312 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_2_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_2_4"
+					position = { x = 791 y = 312 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_2_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_3_0"
+					position = { x = 240 y = 336 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_3_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_3_1"
+					position = { x = 434 y = 336 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_3_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_3_2"
+					position = { x = 553 y = 336 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_3_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_3_3"
+					position = { x = 672 y = 336 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_3_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_3_4"
+					position = { x = 791 y = 336 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_3_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_4_0"
+					position = { x = 240 y = 360 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_4_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_4_1"
+					position = { x = 434 y = 360 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_4_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_4_2"
+					position = { x = 553 y = 360 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_4_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_4_3"
+					position = { x = 672 y = 360 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_4_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_4_4"
+					position = { x = 791 y = 360 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_4_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_5_0"
+					position = { x = 240 y = 384 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_5_0"
+					maxWidth = 180
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_5_1"
+					position = { x = 434 y = 384 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_5_1"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_5_2"
+					position = { x = 553 y = 384 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_5_2"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_5_3"
+					position = { x = 672 y = 384 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_5_3"
+					maxWidth = 105
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_cell_5_4"
+					position = { x = 791 y = 384 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_cell_5_4"
+					maxWidth = 117
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_note"
+					position = { x = 240 y = 426 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_note"
+					maxWidth = 668
+					maxHeight = 68
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_penalties_page_number"
+					position = { x = 240 y = 509 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_penalties_page_number"
+					maxWidth = 460
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_section_rewards"
+				position = { x = 42 y = 373 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_intscore_docs_section_rewards"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_intscore_docs_page_rewards"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_title"
+					position = { x = 240 y = 130 }
+					font = "vic_22"
+					text = "gecko_intscore_docs_rewards_title"
+					maxWidth = 668
+					maxHeight = 30
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_lead"
+					position = { x = 240 y = 173 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_lead"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_note"
+					position = { x = 240 y = 223 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_note"
+					maxWidth = 668
+					maxHeight = 42
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_col_0"
+					position = { x = 240 y = 272 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_col_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_col_1"
+					position = { x = 544 y = 272 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_col_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_col_2"
+					position = { x = 634 y = 272 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_col_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_col_3"
+					position = { x = 724 y = 272 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_col_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_col_4"
+					position = { x = 814 y = 272 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_col_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_0_0"
+					position = { x = 240 y = 304 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_0_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_0_1"
+					position = { x = 544 y = 304 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_0_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_0_2"
+					position = { x = 634 y = 304 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_0_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_0_3"
+					position = { x = 724 y = 304 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_0_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_0_4"
+					position = { x = 814 y = 304 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_0_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_1_0"
+					position = { x = 240 y = 327 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_1_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_1_1"
+					position = { x = 544 y = 327 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_1_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_1_2"
+					position = { x = 634 y = 327 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_1_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_1_3"
+					position = { x = 724 y = 327 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_1_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_1_4"
+					position = { x = 814 y = 327 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_1_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_2_0"
+					position = { x = 240 y = 350 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_2_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_2_1"
+					position = { x = 544 y = 350 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_2_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_2_2"
+					position = { x = 634 y = 350 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_2_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_2_3"
+					position = { x = 724 y = 350 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_2_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_2_4"
+					position = { x = 814 y = 350 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_2_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_3_0"
+					position = { x = 240 y = 373 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_3_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_3_1"
+					position = { x = 544 y = 373 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_3_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_3_2"
+					position = { x = 634 y = 373 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_3_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_3_3"
+					position = { x = 724 y = 373 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_3_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_3_4"
+					position = { x = 814 y = 373 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_3_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_4_0"
+					position = { x = 240 y = 396 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_4_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_4_1"
+					position = { x = 544 y = 396 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_4_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_4_2"
+					position = { x = 634 y = 396 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_4_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_4_3"
+					position = { x = 724 y = 396 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_4_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_4_4"
+					position = { x = 814 y = 396 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_4_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_5_0"
+					position = { x = 240 y = 419 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_5_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_5_1"
+					position = { x = 544 y = 419 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_5_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_5_2"
+					position = { x = 634 y = 419 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_5_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_5_3"
+					position = { x = 724 y = 419 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_5_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_5_4"
+					position = { x = 814 y = 419 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_5_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_6_0"
+					position = { x = 240 y = 442 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_6_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_6_1"
+					position = { x = 544 y = 442 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_6_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_6_2"
+					position = { x = 634 y = 442 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_6_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_6_3"
+					position = { x = 724 y = 442 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_6_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_6_4"
+					position = { x = 814 y = 442 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_6_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_7_0"
+					position = { x = 240 y = 465 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_7_0"
+					maxWidth = 296
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_7_1"
+					position = { x = 544 y = 465 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_7_1"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_7_2"
+					position = { x = 634 y = 465 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_7_2"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_7_3"
+					position = { x = 724 y = 465 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_7_3"
+					maxWidth = 82
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_cell_7_4"
+					position = { x = 814 y = 465 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_cell_7_4"
+					maxWidth = 94
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_page_number"
+					position = { x = 240 y = 509 }
+					font = "vic_18"
+					text = "gecko_intscore_docs_rewards_page_number"
+					maxWidth = 460
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_previous"
+				position = { x = 748 y = 503 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_intscore_docs_previous"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_docs_next"
+				position = { x = 838 y = 503 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_intscore_docs_next"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_docs_footer"
+				position = { x = 32 y = 549 }
+				font = "vic_18"
+				text = "gecko_intscore_docs_footer"
+				maxWidth = 898
+				maxHeight = 20
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+		}
+		# END GENERATED INTSCORE DOCUMENTATION
 
 	} ### end of "topbar"
 

@@ -1,8 +1,10 @@
 ﻿l_english:
  gecko_victory_title:0 "Victory Provinces"
- gecko_victory_subtitle:0 "A geographical guide to the IntScore provinces"
+ gecko_victory_subtitle:0 "Victory Provinces • Geographical guide"
  gecko_victory_rankings:0 "Rankings"
  gecko_victory_provinces:0 "Victory Provinces"
+ gecko_victory_documentation:0 "Documentation"
+ gecko_victory_documentation_tt:0 "Open Menu 3 — Documentation."
  gecko_victory_rankings_tt:0 "Open Menu 1 — Rankings."
  gecko_victory_provinces_tt:0 "Open Menu 2 — Victory Provinces."
  gecko_victory_filter_tt:0 "Choose the province categories shown on the atlas."

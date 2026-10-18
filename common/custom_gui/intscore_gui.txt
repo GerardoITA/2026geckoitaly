@@ -28,14 +28,6 @@ custom_button = {
 	tooltip = gecko_intscore_close_tt
 }
 
-custom_button = {
-	name = gecko_intscore_refresh
-	potential = { ai = no }
-	trigger = { always = yes }
-	effect = { hidden_effect = { gecko_intscore_gui_refresh = yes } }
-	tooltip = gecko_intscore_refresh_tt
-}
-
 custom_window = {
 	name = gecko_intscore_podium_1
 	potential = { has_country_flag = gecko_intscore_gui_podium_1_valid }
@@ -547,7 +539,7 @@ custom_text_box = {
 
 custom_window = {
 	name = gecko_intscore_ranking_window
-	potential = { ai = no has_country_flag = gecko_intscore_gui_open NOT = { has_country_flag = gecko_victory_atlas_menu } }
+	potential = { ai = no has_country_flag = gecko_intscore_gui_open NOT = { has_country_flag = gecko_victory_atlas_menu } NOT = { has_country_flag = gecko_victory_documentation_menu } }
 }
 
 custom_button = {

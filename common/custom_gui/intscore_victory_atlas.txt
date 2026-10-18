@@ -54,6 +54,14 @@ custom_button = {
 }
 
 custom_button = {
+	name = gecko_victory_go_to
+	potential = { ai = no }
+	trigger = { check_variable = { which = gecko_victory_selected_id value = 1 } }
+	effect = { hidden_effect = { clr_country_flag = gecko_intscore_gui_open country_event = { id = gecko_victory_atlas.1 } } }
+	tooltip = gecko_victory_go_to_tt
+}
+
+custom_button = {
 	name = gecko_victory_filter_all
 	potential = { ai = no }
 	trigger = { always = yes }

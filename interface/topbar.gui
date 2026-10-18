@@ -735,7 +735,7 @@ guiTypes = {
 		# IntScore ranking (custom topbar support, EU4 1.37).
 		guiButtonType = {
 			name = "gecko_intscore_toggle"
-			position = { x = 932 y = 41 }
+			position = { x = 728 y = 91 }
 			quadTextureSprite = "GFX_gecko_intscore_button"
 			buttonText = ""
 			buttonFont = "vic_18"
@@ -745,7 +745,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gecko_intscore_button_label"
-			position = { x = 965 y = 47 }
+			position = { x = 761 y = 97 }
 			font = "vic_18"
 			text = "gecko_intscore_toggle"
 			maxWidth = 141
@@ -1074,8 +1074,26 @@ guiTypes = {
 				format = left
 				alwaystransparent = yes
 			}
-			instantTextBoxType = {
+			guiButtonType = {
 				name = "gecko_intscore_score_header"
+				position = { x = 426 y = 220 }
+				quadTextureSprite = "GFX_gecko_intscore_sort_header"
+				buttonFont = "vic_18"
+				buttonText = ""
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_intscore_yearly_header"
+				position = { x = 554 y = 220 }
+				quadTextureSprite = "GFX_gecko_intscore_sort_header"
+				buttonFont = "vic_18"
+				buttonText = ""
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_intscore_score_header_label"
 				position = { x = 431 y = 225 }
 				font = "vic_18"
 				text = "gecko_intscore_score_header"
@@ -1086,7 +1104,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 			instantTextBoxType = {
-				name = "gecko_intscore_yearly_header"
+				name = "gecko_intscore_yearly_header_label"
 				position = { x = 559 y = 225 }
 				font = "vic_18"
 				text = "gecko_intscore_yearly_header"
@@ -2081,6 +2099,15 @@ guiTypes = {
 				position = { x = 392 y = 150 }
 				quadTextureSprite = "GFX_gecko_victory_option"
 				buttonText = "gecko_victory_view_americas"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_victory_go_to"
+				position = { x = 850 y = 150 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_victory_go_to"
 				buttonFont = "vic_18"
 				clicksound = click
 				scripted = yes

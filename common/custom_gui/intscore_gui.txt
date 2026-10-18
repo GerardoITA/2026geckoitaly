@@ -1,6 +1,26 @@
 # IntScore presentation only. ROOT and FROM are the local player country in topbar.
 
 custom_button = {
+	name = gecko_intscore_score_header
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_intscore_gui_sort_annual set_variable = { which = gecko_intscore_gui_page value = 1 } gecko_intscore_gui_refresh = yes } }
+	tooltip = gecko_intscore_sort_total_tt
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_intscore_gui_sort_annual } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_intscore_yearly_header
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_country_flag = gecko_intscore_gui_sort_annual set_variable = { which = gecko_intscore_gui_page value = 1 } gecko_intscore_gui_refresh = yes } }
+	tooltip = gecko_intscore_sort_annual_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_intscore_gui_sort_annual } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
 	name = gecko_intscore_close
 	potential = { ai = no }
 	trigger = { always = yes }

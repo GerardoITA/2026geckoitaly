@@ -1,5 +1,10 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_gecko_intscore_sort_header"
+		texturefile = "gfx/interface/intscore/sort_header.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_gecko_intscore_panel"
 		texturefile = "gfx/interface/intscore/ranking_panel.tga"
 		noOfFrames = 1

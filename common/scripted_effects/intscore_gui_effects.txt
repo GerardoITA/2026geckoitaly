@@ -16,14 +16,20 @@ gecko_intscore_gui_clear_target = {
 
 # Compare two local numeric buffers on ROOT. Keep PREV transfers in effects,
 # outside trigger-scoped event targets, and skip transfers from ROOT to itself.
-# Registered tag order breaks equal-score ties consistently between viewers.
+# Annual ties use total score, then registered tag order, consistently between viewers.
 gecko_intscore_gui_consider_candidate = {
 	set_variable = { which = gecko_intscore_gui_scan_score which = IntScore }
+	set_variable = { which = gecko_intscore_gui_scan_total which = IntScore }
+	if = {
+		limit = { ROOT = { has_country_flag = gecko_intscore_gui_sort_pass } }
+		set_variable = { which = gecko_intscore_gui_scan_score which = YearlyIntScore }
+	}
 	set_variable = { which = gecko_intscore_gui_scan_order which = gecko_intscore_gui_order }
 	if = {
 		limit = { NOT = { tag = ROOT } }
 		ROOT = {
 			set_variable = { which = gecko_intscore_gui_scan_score which = PREV }
+			set_variable = { which = gecko_intscore_gui_scan_total which = PREV }
 			set_variable = { which = gecko_intscore_gui_scan_order which = PREV }
 		}
 	}
@@ -31,14 +37,22 @@ gecko_intscore_gui_consider_candidate = {
 		if = {
 			limit = {
 				OR = {
+					is_variable_equal = { which = gecko_intscore_gui_best_order value = 0 }
 					NOT = { check_variable = { which = gecko_intscore_gui_best_score which = gecko_intscore_gui_scan_score } }
 					AND = {
 						is_variable_equal = { which = gecko_intscore_gui_best_score which = gecko_intscore_gui_scan_score }
-						NOT = { check_variable = { which = gecko_intscore_gui_best_order which = gecko_intscore_gui_scan_order } }
+						OR = {
+							NOT = { check_variable = { which = gecko_intscore_gui_best_total which = gecko_intscore_gui_scan_total } }
+							AND = {
+								is_variable_equal = { which = gecko_intscore_gui_best_total which = gecko_intscore_gui_scan_total }
+								NOT = { check_variable = { which = gecko_intscore_gui_best_order which = gecko_intscore_gui_scan_order } }
+							}
+						}
 					}
 				}
 			}
 			set_variable = { which = gecko_intscore_gui_best_score which = gecko_intscore_gui_scan_score }
+			set_variable = { which = gecko_intscore_gui_best_total which = gecko_intscore_gui_scan_total }
 			set_variable = { which = gecko_intscore_gui_best_order which = gecko_intscore_gui_scan_order }
 		}
 	}
@@ -46,6 +60,7 @@ gecko_intscore_gui_consider_candidate = {
 
 gecko_intscore_gui_select_next = {
 	set_variable = { which = gecko_intscore_gui_best_score value = -1 }
+	set_variable = { which = gecko_intscore_gui_best_total value = -1 }
 	set_variable = { which = gecko_intscore_gui_best_order value = 0 }
 	if = {
 		limit = { gecko_intscore_gui_unselected = yes }
@@ -81,21 +96,26 @@ gecko_intscore_gui_select_next = {
 gecko_intscore_gui_assign_rank = {
 	set_country_flag = gecko_intscore_gui_selected
 	set_variable = { which = gecko_intscore_gui_cursor which = ROOT }
-	set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_cursor }
+	set_variable = { which = gecko_intscore_gui_table_position which = gecko_intscore_gui_cursor }
+	# An annual-gain pass changes only table order. Podium and world rank use totals.
 	if = {
-		limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 1 } }
-		save_global_event_target_as = gecko_intscore_gui_top_1
-		gecko_intscore_gui_capture_podium = { PLACE = 1 }
-	}
-	else_if = {
-		limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 2 } }
-		save_global_event_target_as = gecko_intscore_gui_top_2
-		gecko_intscore_gui_capture_podium = { PLACE = 2 }
-	}
-	else_if = {
-		limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 3 } }
-		save_global_event_target_as = gecko_intscore_gui_top_3
-		gecko_intscore_gui_capture_podium = { PLACE = 3 }
+		limit = { NOT = { ROOT = { has_country_flag = gecko_intscore_gui_sort_pass } } }
+		set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_cursor }
+		if = {
+			limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 1 } }
+			save_global_event_target_as = gecko_intscore_gui_top_1
+			gecko_intscore_gui_capture_podium = { PLACE = 1 }
+		}
+		else_if = {
+			limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 2 } }
+			save_global_event_target_as = gecko_intscore_gui_top_2
+			gecko_intscore_gui_capture_podium = { PLACE = 2 }
+		}
+		else_if = {
+			limit = { is_variable_equal = { which = gecko_intscore_gui_cursor value = 3 } }
+			save_global_event_target_as = gecko_intscore_gui_top_3
+			gecko_intscore_gui_capture_podium = { PLACE = 3 }
+		}
 	}
 	if = {
 		limit = { NOT = { tag = ROOT } }
@@ -124,9 +144,11 @@ gecko_intscore_gui_capture_podium = {
 }
 
 gecko_intscore_gui_build = {
+	clr_country_flag = gecko_intscore_gui_sort_pass
 	set_variable = { which = gecko_intscore_gui_count value = 0 }
 	set_variable = { which = gecko_intscore_gui_cursor value = 0 }
 	set_variable = { which = gecko_intscore_gui_position value = 0 }
+	set_variable = { which = gecko_intscore_gui_table_position value = 0 }
 	clr_country_flag = gecko_intscore_gui_selected
 	clr_country_flag = gecko_intscore_gui_podium_1_valid
 	clr_country_flag = gecko_intscore_gui_podium_2_valid
@@ -144,6 +166,7 @@ gecko_intscore_gui_build = {
 		limit = { NOT = { tag = ROOT } }
 		clr_country_flag = gecko_intscore_gui_selected
 		set_variable = { which = gecko_intscore_gui_position value = 0 }
+		set_variable = { which = gecko_intscore_gui_table_position value = 0 }
 		if = {
 			limit = { gecko_intscore_gui_eligible = yes }
 			ROOT = { change_variable = { which = gecko_intscore_gui_count value = 1 } }
@@ -162,6 +185,26 @@ gecko_intscore_gui_build = {
 		}
 		gecko_intscore_gui_select_next = yes
 	}
+	gecko_intscore_gui_clear_selection = yes
+	if = {
+		limit = { has_country_flag = gecko_intscore_gui_sort_annual }
+		set_country_flag = gecko_intscore_gui_sort_pass
+		set_variable = { which = gecko_intscore_gui_cursor value = 0 }
+		while = {
+			limit = {
+				OR = {
+					gecko_intscore_gui_unselected = yes
+					any_country = { NOT = { tag = ROOT } gecko_intscore_gui_unselected = yes }
+				}
+			}
+			gecko_intscore_gui_select_next = yes
+		}
+		clr_country_flag = gecko_intscore_gui_sort_pass
+		gecko_intscore_gui_clear_selection = yes
+	}
+}
+
+gecko_intscore_gui_clear_selection = {
 	clr_country_flag = gecko_intscore_gui_selected
 	every_country = {
 		limit = { has_country_flag = gecko_intscore_gui_selected }
@@ -198,10 +241,10 @@ gecko_intscore_gui_fill_row = {
 		limit = { check_variable = { which = gecko_intscore_gui_count which = gecko_intscore_gui_row_$SLOT$_rank } }
 		# Scope comparisons use the same variable name on both countries. Temporarily
 		# put the requested rank in ROOT, exclude ROOT from the search, then restore it.
-		set_variable = { which = gecko_intscore_gui_saved_position which = gecko_intscore_gui_position }
-		set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_row_$SLOT$_rank }
+		set_variable = { which = gecko_intscore_gui_saved_position which = gecko_intscore_gui_table_position }
+		set_variable = { which = gecko_intscore_gui_table_position which = gecko_intscore_gui_row_$SLOT$_rank }
 		if = {
-			limit = { is_variable_equal = { which = gecko_intscore_gui_position which = gecko_intscore_gui_saved_position } }
+			limit = { is_variable_equal = { which = gecko_intscore_gui_table_position which = gecko_intscore_gui_saved_position } }
 			gecko_intscore_gui_capture_row = { SLOT = $SLOT$ }
 			set_country_flag = gecko_intscore_gui_row_$SLOT$_self
 		}
@@ -210,12 +253,12 @@ gecko_intscore_gui_fill_row = {
 				limit = {
 					NOT = { tag = ROOT }
 					gecko_intscore_gui_eligible = yes
-					is_variable_equal = { which = gecko_intscore_gui_position which = ROOT }
+					is_variable_equal = { which = gecko_intscore_gui_table_position which = ROOT }
 				}
 				gecko_intscore_gui_capture_row = { SLOT = $SLOT$ }
 			}
 		}
-		set_variable = { which = gecko_intscore_gui_position which = gecko_intscore_gui_saved_position }
+		set_variable = { which = gecko_intscore_gui_table_position which = gecko_intscore_gui_saved_position }
 	}
 }
 

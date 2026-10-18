@@ -1125,10 +1125,10 @@ NGF_ideas = {
 		infantry_power = 0.15
 	}
 	NGF_national_idea_2 = {
-		land_morale = 0.15
+		land_morale = 0.2
 	}
 	NGF_national_idea_3 = {
-		manpower_recovery_speed = 0.15
+		manpower_recovery_speed = 0.25
 		monthly_prussian_militarized_society_1 = 0.33
 		monthly_prussian_militarized_society_2 = 0.33
 		monthly_prussian_militarized_society_3 = 0.33

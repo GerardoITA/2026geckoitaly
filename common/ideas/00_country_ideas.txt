@@ -12248,7 +12248,8 @@ BHA_ideas = {
 	free = yes
 
 	bha_modernized_war_elephants = {
-		infantry_power = 0.1
+		cavalry_power = 0.15
+		cavalry_shock = 0.25
 	}
 	bha_united_india = {
 		num_accepted_cultures = 3
@@ -12260,7 +12261,7 @@ BHA_ideas = {
 		discipline = 0.05
 	}
 	bha_ganga = {
-		land_morale = 0.10
+		land_morale = 0.20
 	}
 	bha_brahmin_administration = {
 		administrative_efficiency = 0.05
@@ -12272,7 +12273,7 @@ BHA_ideas = {
 
 HIN_ideas = {
 	start = {
-		governing_capacity_modifier = 0.1
+		infantry_power = 0.15
 		global_manpower_modifier = 0.2
 	}
 	bonus = {
@@ -12284,19 +12285,21 @@ HIN_ideas = {
 	free = yes
 	
 	hin_sepahi = {
-		infantry_power = 0.15
+		infantry_fire = 0.3
 	}
 	hin_persianate_court = {
 		advisor_cost = -0.1
 	}
 	hin_indian_empire = {
 		years_of_nationalism = -5
+		governing_capacity_modifier = 0.1
 	}
 	hin_peacock_throne = {
 		land_morale = 0.10
 	}
 	hin_gunpowder_empire = {
 		fire_damage = 0.20
+		shock_damage_received = -0.1
 	}
 	hin_sufism = {
 		global_missionary_strength = 0.02

@@ -1,0 +1,9 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_gecko_menu_badge"
+		texturefile = "gfx/interface/Eu4_logo.dds"
+		size = { x = 26 y = 30 }
+		borderSize = { x = 0 y = 0 }
+		effectFile = "gfx/FX/gecko_menu_badge.shader"
+	}
+}

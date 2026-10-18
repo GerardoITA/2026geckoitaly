@@ -2,6 +2,7 @@ country_decisions = {
 	new_player_readme = {
 		color = { 41  233  249 }
 		potential = {
+			always = no # Replaced by Gecko Menu Documentation.
 			ai = no
 			NOT = { has_country_flag = hide_extra_decisions }
 		}

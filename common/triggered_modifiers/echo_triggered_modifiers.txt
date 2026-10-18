@@ -1,3 +1,14 @@
+player_start_ai_naval_forcelimit = {
+	potential = {
+		ai = yes
+		has_country_flag = player_start
+	}
+	trigger = {
+		always = yes
+	}
+	naval_forcelimit = 20
+}
+
 Splendid_Court = {
 	potential = {
 		current_age = age_of_discovery

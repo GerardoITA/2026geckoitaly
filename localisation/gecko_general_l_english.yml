@@ -1,4 +1,5 @@
 ﻿l_english:
+ player_start_ai_naval_forcelimit:0 "Former Player Naval Capacity"
  religion_enforced_edict:1 "Allows State Edict '§YReligion Enforced§!'\n (Resistance to Reformation: §G+100%§!)\n"
  PR_commandant_cooldown:0 "Inspirational Leader Cooldown"
  PR_commandant_cooldown_tooltip:0 "Perhaps another time..."

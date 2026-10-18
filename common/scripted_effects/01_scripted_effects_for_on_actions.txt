@@ -4144,7 +4144,19 @@ on_non_estate_disaster_end = {
 	}
 }
 
+# Country scope; called at startup and on the yearly pulse.
+gecko_mark_player_country_effect = {
+	if = {
+		limit = {
+			ai = no
+			NOT = { has_country_flag = player_start }
+		}
+		set_country_flag = player_start
+	}
+}
+
 on_startup_effect = {
+	gecko_mark_player_country_effect = yes
 	if = {
 		limit = {
 			ai = no

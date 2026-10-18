@@ -2336,6 +2336,7 @@ on_monthly_pulse = {
 }
 
 on_yearly_pulse = {
+	gecko_mark_player_country_effect = yes
 	events = {
 		flavor_mos.3		#Yearly Tatar Yoke Tribute
 	}

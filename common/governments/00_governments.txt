@@ -147,7 +147,6 @@ monarchy = {
 				poligar_reform
 				khalsa_reform
 				deccani_society_reform
-				mughal_government
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
@@ -383,7 +382,6 @@ monarchy = {
 				of_noble_bearing_reform
 				meritocratic_focus_reform
 				dakhni_culture_reform
-				zabt_reform
 				dyanstic_administration_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform

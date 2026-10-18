@@ -353,7 +353,6 @@ technology = {
 	#Maurician Infantry
 	land_morale 		=	1.0
 	military_tactics	=	0.25
-	cavalry_shock		=	0.25
 	artillery_fire 		= 	0.25
 	
 	enable = irish_charge 
@@ -377,7 +376,7 @@ technology = {
 	#Standardisation of Calibre
 	artillery_shock 	= 	0.1
 	artillery_fire 		= 	0.35
-	cavalry_shock		=	0.35
+	cavalry_shock		=	0.25
 
 	fort_17th = yes
 	training_fields = yes
@@ -489,7 +488,7 @@ technology = {
 	# Tech 22
 	year = 1687
 	
-	#Cartridge	(1620)?)
+	#Cartridge	(1620)?
 	cavalry_fire		=	0.35
 	cavalry_shock		=	0.25
 	artillery_shock 	=	0.1

@@ -582,8 +582,32 @@ custom_button = {
 	name = gecko_menu_cosmetics_tab
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_country_flag = gecko_menu_actions_open } }
-	frame = { number = 2 trigger = { always = yes } }
+	effect = { hidden_effect = { clr_country_flag = gecko_menu_edicts_open clr_country_flag = gecko_menu_edicts_effects_open } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_menu_edicts_open } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_edicts_tab
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_country_flag = gecko_menu_edicts_open clr_country_flag = gecko_menu_edicts_effects_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
+	frame = { number = 2 trigger = { has_country_flag = gecko_menu_edicts_open NOT = { has_country_flag = gecko_menu_edicts_effects_open } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_edicts_effects_tab
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_country_flag = gecko_menu_edicts_open set_country_flag = gecko_menu_edicts_effects_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
+	frame = { number = 2 trigger = { has_country_flag = gecko_menu_edicts_open has_country_flag = gecko_menu_edicts_effects_open } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_cosmetics_content
+	potential = { NOT = { has_country_flag = gecko_menu_edicts_open } }
 }
 
 custom_button = {
@@ -600,6 +624,757 @@ custom_button = {
 	trigger = { any_subject_country = { OR = { is_subject_of_type = eyalet is_subject_of_type = core_eyalet is_subject_of_type = vassal is_subject_of_type = march is_subject_of_type = client_vassal is_subject_of_type = client_march is_subject_of_type = canton is_subject_of_type = appanage } } }
 	effect = { hidden_effect = { every_subject_country = { limit = { OR = { is_subject_of_type = eyalet is_subject_of_type = core_eyalet is_subject_of_type = vassal is_subject_of_type = march is_subject_of_type = client_vassal is_subject_of_type = client_march is_subject_of_type = canton is_subject_of_type = appanage } } restore_country_color = yes } } }
 	tooltip = gecko_menu_cosmetics_restore_tt
+}
+
+custom_window = {
+	name = gecko_menu_edicts_content
+	potential = { has_country_flag = gecko_menu_edicts_open }
+}
+
+custom_button = {
+	name = gecko_menu_edict_0
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 0 } } }
+	tooltip = gecko_menu_edict_0_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 0 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_0_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 0 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_0_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_advancement_effort } set_country_flag = sea_state_edicts_decision_edict_advancement_effort_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_0_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_0_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_advancement_effort } set_country_flag = sea_state_edicts_decision_edict_advancement_effort_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_0_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_0_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_0_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_1
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 1 } } }
+	tooltip = gecko_menu_edict_1_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 1 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_1_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 1 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_1_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_centralization_effort } set_country_flag = sea_state_edicts_decision_edict_centralization_effort_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_1_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_1_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_centralization_effort } set_country_flag = sea_state_edicts_decision_edict_centralization_effort_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_1_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_1_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_1_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_2
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 2 } } }
+	tooltip = gecko_menu_edict_2_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 2 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_2_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 2 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_2_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_defensive_edict } set_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_2_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_2_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_defensive_edict } set_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_2_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_2_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_2_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_3
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 3 } } }
+	tooltip = gecko_menu_edict_3_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 3 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_3_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 3 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_3_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } always = yes }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_devastation_edict } set_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_3_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_3_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } always = yes }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_devastation_edict } set_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_3_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_3_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } always = yes }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_3_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } always = yes } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_4
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 4 } } }
+	tooltip = gecko_menu_edict_4_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 4 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_4_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 4 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_4_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_of_governance } set_country_flag = sea_state_edicts_decision_edict_of_governance_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_4_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_4_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_of_governance } set_country_flag = sea_state_edicts_decision_edict_of_governance_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_4_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_4_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_4_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_5
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 5 } } }
+	tooltip = gecko_menu_edict_5_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 5 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_5_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 5 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_5_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_encourage_development } set_country_flag = sea_state_edicts_decision_edict_encourage_development_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_5_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_5_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_encourage_development } set_country_flag = sea_state_edicts_decision_edict_encourage_development_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_5_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_5_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_5_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_6
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 6 } } }
+	tooltip = gecko_menu_edict_6_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 6 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_6_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 6 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_6_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_feudal_de_jure_law } set_country_flag = sea_state_edicts_decision_edict_feudal_de_jure_law_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_6_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_6_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_feudal_de_jure_law } set_country_flag = sea_state_edicts_decision_edict_feudal_de_jure_law_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_6_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_6_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_6_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_7
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 7 } } }
+	tooltip = gecko_menu_edict_7_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 7 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_7_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 7 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_7_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = french_infrastructure_network } set_country_flag = sea_state_edicts_decision_french_infrastructure_network_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_7_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_7_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = french_infrastructure_network } set_country_flag = sea_state_edicts_decision_french_infrastructure_network_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_7_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_7_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_7_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_8
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 8 } } }
+	tooltip = gecko_menu_edict_8_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 8 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_8_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 8 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_8_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_promote_military_recruitment } set_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_8_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_8_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_promote_military_recruitment } set_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_8_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_8_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_8_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_9
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 9 } } }
+	tooltip = gecko_menu_edict_9_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 9 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_9_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 9 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_9_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_protect_trade } set_country_flag = sea_state_edicts_decision_edict_protect_trade_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_9_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_9_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_protect_trade } set_country_flag = sea_state_edicts_decision_edict_protect_trade_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_9_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_9_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_9_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_10
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 10 } } }
+	tooltip = gecko_menu_edict_10_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 10 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_10_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 10 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_10_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = protect_trade_empowered } set_country_flag = sea_state_edicts_decision_protect_trade_empowered_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_10_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_10_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = protect_trade_empowered } set_country_flag = sea_state_edicts_decision_protect_trade_empowered_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_10_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_10_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_10_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
+	tooltip = gecko_menu_edict_11_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 11 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_11_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 11 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_religion_enforced } set_country_flag = sea_state_edicts_decision_edict_religion_enforced_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_11_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_religion_enforced } set_country_flag = sea_state_edicts_decision_edict_religion_enforced_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_11_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_11_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_11_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_12
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 12 } } }
+	tooltip = gecko_menu_edict_12_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 12 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_12_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 12 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_12_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_religious_unity } set_country_flag = sea_state_edicts_decision_edict_religious_unity_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_12_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_12_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_religious_unity } set_country_flag = sea_state_edicts_decision_edict_religious_unity_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_12_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_12_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_12_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_13_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 13 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = chinese_industrialization } set_country_flag = sea_state_edicts_decision_chinese_industrialization_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_13_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = chinese_industrialization } set_country_flag = sea_state_edicts_decision_chinese_industrialization_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_13_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_13_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_13_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_14_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 14 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = feudal_taxes_state_edict } set_country_flag = sea_state_edicts_decision_feudal_taxes_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_14_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = feudal_taxes_state_edict } set_country_flag = sea_state_edicts_decision_feudal_taxes_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_14_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_14_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_14_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_15_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 15 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = religious_tolerance_state_edict } set_country_flag = sea_state_edicts_decision_religious_tolerance_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_15_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = religious_tolerance_state_edict } set_country_flag = sea_state_edicts_decision_religious_tolerance_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_15_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_15_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_15_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_16_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 16 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = state_integration_state_edict } set_country_flag = sea_state_edicts_decision_state_integration_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_16_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = state_integration_state_edict } set_country_flag = sea_state_edicts_decision_state_integration_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_16_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_16_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_16_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_edict_17_details
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 17 } }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_all
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = urbanization_state_edict } set_country_flag = sea_state_edicts_decision_urbanization_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_17_all_tt
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_empty
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = urbanization_state_edict } set_country_flag = sea_state_edicts_decision_urbanization_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
+	tooltip = gecko_menu_edict_17_empty_tt
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_17_ready
+	potential = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_edict_17_locked
+	potential = { NOT = { AND = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } } } }
+}
+
+custom_button = {
+	name = gecko_menu_edicts_clear
+	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } }
+	effect = { hidden_effect = { set_country_flag = sea_state_edicts_clear_flag clr_country_flag = sea_state_edicts_flag custom_tooltip = sealand_events.28.00.tt } }
+	tooltip = gecko_menu_edicts_clear_tt
 }
 
 custom_window = {

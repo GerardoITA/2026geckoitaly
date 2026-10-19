@@ -716,6 +716,7 @@ country_decisions = {
 		}
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Actions.
 			NOT = { has_country_flag = sea_state_edicts_flag }
 			OR = {
 				NOT = { has_country_flag = sea_state_edicts_clear_flag }

@@ -13406,6 +13406,30 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 			}
+			guiButtonType = {
+				name = "gecko_menu_edicts_tab"
+				position = { x = 42 y = 197 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edicts_tab"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edicts_effects_tab"
+				position = { x = 42 y = 241 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edicts_effects_tab"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_cosmetics_content"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
 			instantTextBoxType = {
 				name = "gecko_menu_cosmetics_heading"
 				position = { x = 240 y = 184 }
@@ -13456,6 +13480,1625 @@ guiTypes = {
 				fixedsize = yes
 				format = left
 				alwaystransparent = yes
+			}
+			}
+			windowType = {
+				name = "gecko_menu_edicts_content"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			guiButtonType = {
+				name = "gecko_menu_edict_0"
+				position = { x = 240 y = 194 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_0"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_0_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_0_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_0_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_0_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_institution_growth"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_0_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_0_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_0_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_0_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_0_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_0_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_0_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_0_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_0_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_0_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_1"
+				position = { x = 460 y = 194 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_1"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_1_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_1_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_1_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_1_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_autonomy"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_1_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_1_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_1_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_1_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_1_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_1_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_1_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_1_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_1_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_1_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_2"
+				position = { x = 680 y = 194 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_2"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_2_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_2_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_2_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_2_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_defensiveness"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_2_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_2_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_2_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_2_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_2_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_2_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_2_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_2_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_2_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_2_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_3"
+				position = { x = 240 y = 226 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_3"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_3_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_3_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_3_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_3_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_monthly_devastation"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_3_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_3_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_3_modifier_1_icon"
+				position = { x = 242 y = 457 }
+				spriteType = "GFX_gecko_menu_modifier_local_prosperity_growth"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_3_modifier_1"
+				position = { x = 270 y = 455 }
+				font = "vic_18"
+				text = "gecko_menu_edict_3_modifier_1"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_3_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_3_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_3_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_3_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_3_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_3_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_3_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_3_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_4"
+				position = { x = 460 y = 226 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_4"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_4_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_4_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_4_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_4_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_governing_cost"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_4_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_4_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_4_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_4_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_4_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_4_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_4_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_4_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_4_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_4_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_5"
+				position = { x = 680 y = 226 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_5"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_5_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_5_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_5_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_5_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_production_efficiency"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_5_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_5_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_5_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_5_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_5_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_5_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_5_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_5_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_5_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_5_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_6"
+				position = { x = 240 y = 258 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_6"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_6_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_6_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_6_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_6_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_unrest"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_6_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_6_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_6_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_6_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_6_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_6_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_6_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_6_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_6_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_6_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_7"
+				position = { x = 460 y = 258 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_7"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_7_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_7_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_7_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_7_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_friendly_movement_speed"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_7_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_7_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_7_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_7_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_7_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_7_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_7_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_7_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_7_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_7_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_8"
+				position = { x = 680 y = 258 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_8"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_8_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_8_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_8_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_8_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_manpower_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_8_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_8_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_8_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_8_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_8_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_8_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_8_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_8_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_8_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_8_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_9"
+				position = { x = 240 y = 290 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_9"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_9_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_9_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_9_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_9_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_province_trade_power_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_9_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_9_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_9_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_9_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_9_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_9_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_9_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_9_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_9_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_9_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_10"
+				position = { x = 460 y = 290 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_10"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_10_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_10_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_10_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_10_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_province_trade_power_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_10_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_10_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_10_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_10_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_10_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_10_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_10_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_10_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_10_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_10_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_11"
+				position = { x = 680 y = 290 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_11"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_11_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_11_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_11_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_11_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_religious_conversion_resistance"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_11_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_11_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_11_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_11_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_11_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_11_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_11_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_11_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_11_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_11_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_12"
+				position = { x = 240 y = 322 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_12"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_12_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_12_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_12_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_12_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_missionary_strength"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_12_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_12_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_12_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_12_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_12_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_12_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_12_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_12_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_12_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_12_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_13"
+				position = { x = 460 y = 322 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_13"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_13_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_13_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_13_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_13_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_development_cost_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_13_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_13_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_13_modifier_1_icon"
+				position = { x = 242 y = 457 }
+				spriteType = "GFX_gecko_menu_modifier_trade_goods_size_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_13_modifier_1"
+				position = { x = 270 y = 455 }
+				font = "vic_18"
+				text = "gecko_menu_edict_13_modifier_1"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_13_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_13_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_13_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_13_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_13_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_13_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_13_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_13_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_14"
+				position = { x = 680 y = 322 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_14"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_14_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_14_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_14_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_14_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_tax_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_14_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_14_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_14_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_14_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_14_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_14_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_14_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_14_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_14_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_14_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_15"
+				position = { x = 240 y = 354 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_15"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_15_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_15_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_15_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_15_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_religious_unity_contribution"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_15_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_15_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_15_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_15_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_15_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_15_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_15_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_15_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_15_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_15_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_16"
+				position = { x = 460 y = 354 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_16"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_16_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_16_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_16_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_16_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_local_years_of_nationalism"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_16_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_16_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_16_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_16_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_16_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_16_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_16_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_16_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_16_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_16_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_17"
+				position = { x = 680 y = 354 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_edict_17"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_menu_edict_17_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_edict_17_title"
+				position = { x = 240 y = 397 }
+				font = "vic_22"
+				text = "gecko_menu_edict_17_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "gecko_menu_edict_17_modifier_0_icon"
+				position = { x = 242 y = 435 }
+				spriteType = "GFX_gecko_menu_modifier_trade_goods_size_modifier"
+				scale = 0.28125
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_17_modifier_0"
+				position = { x = 270 y = 433 }
+				font = "vic_18"
+				text = "gecko_menu_edict_17_modifier_0"
+				maxWidth = 638
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_17_all"
+				position = { x = 240 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_17_all"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_edict_17_empty"
+				position = { x = 450 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edict_17_empty"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_17_ready"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_17_ready"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_edict_17_locked"
+				position = { x = 240 y = 164 }
+				font = "vic_18"
+				text = "gecko_menu_edict_17_locked"
+				maxWidth = 668
+				maxHeight = 22
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_menu_edicts_clear"
+				position = { x = 720 y = 491 }
+				quadTextureSprite = "GFX_gecko_intscore_button"
+				buttonText = "gecko_menu_edicts_clear"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
 			}
 			}
 			windowType = {

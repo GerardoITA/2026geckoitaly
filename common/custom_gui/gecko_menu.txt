@@ -1,4 +1,4 @@
-# Gecko handbook only. Every effect changes viewer UI flags/variables only.
+# Gecko Menu. Navigation is viewer-only; migrated actions reuse the existing decisions.
 
 custom_button = {
 	name = gecko_menu_toggle
@@ -149,22 +149,12 @@ custom_button = {
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 17 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 17 } NOT = { check_variable = { which = gecko_menu_page value = 20 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 17 } NOT = { check_variable = { which = gecko_menu_page value = 22 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
 custom_button = {
 	name = gecko_menu_section_mercenaries
-	potential = { ai = no }
-	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 20 } } }
-	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 20 } NOT = { check_variable = { which = gecko_menu_page value = 22 } } } }
-	frame = { number = 1 trigger = { always = yes } }
-}
-
-custom_button = {
-	name = gecko_menu_section_navy
 	potential = { ai = no }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 22 } } }
@@ -174,7 +164,7 @@ custom_button = {
 }
 
 custom_button = {
-	name = gecko_menu_section_diplomacy
+	name = gecko_menu_section_navy
 	potential = { ai = no }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 24 } } }
@@ -184,12 +174,22 @@ custom_button = {
 }
 
 custom_button = {
-	name = gecko_menu_section_subjects
+	name = gecko_menu_section_diplomacy
 	potential = { ai = no }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 26 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 29 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 28 } } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_section_subjects
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 28 } } }
+	tooltip = gecko_menu_section_tt
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 28 } NOT = { check_variable = { which = gecko_menu_page value = 31 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -202,16 +202,6 @@ custom_button = {
 	name = gecko_menu_section_expansion
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 29 } } }
-	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 29 } NOT = { check_variable = { which = gecko_menu_page value = 31 } } } }
-	frame = { number = 1 trigger = { always = yes } }
-}
-
-custom_button = {
-	name = gecko_menu_section_ideas
-	potential = { ai = no }
-	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 31 } } }
 	tooltip = gecko_menu_section_tt
 	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 31 } NOT = { check_variable = { which = gecko_menu_page value = 33 } } } }
@@ -219,12 +209,22 @@ custom_button = {
 }
 
 custom_button = {
-	name = gecko_menu_section_powers
+	name = gecko_menu_section_ideas
 	potential = { ai = no }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 33 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 36 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 35 } } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_section_powers
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 35 } } }
+	tooltip = gecko_menu_section_tt
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 35 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -232,9 +232,9 @@ custom_button = {
 	name = gecko_menu_section_religion
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 36 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 38 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 38 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -444,6 +444,21 @@ custom_window = {
 	potential = { is_variable_equal = { which = gecko_menu_page value = 37 } }
 }
 
+custom_window = {
+	name = gecko_menu_page_38
+	potential = { is_variable_equal = { which = gecko_menu_page value = 38 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_39
+	potential = { is_variable_equal = { which = gecko_menu_page value = 39 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_40
+	potential = { is_variable_equal = { which = gecko_menu_page value = 40 } }
+}
+
 custom_button = {
 	name = gecko_menu_previous
 	potential = { ai = no }
@@ -456,15 +471,15 @@ custom_button = {
 		if = { limit = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 11 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 11 } NOT = { check_variable = { which = gecko_menu_page value = 15 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 15 } NOT = { check_variable = { which = gecko_menu_page value = 17 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 17 } NOT = { check_variable = { which = gecko_menu_page value = 20 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 20 } NOT = { check_variable = { which = gecko_menu_page value = 22 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 17 } NOT = { check_variable = { which = gecko_menu_page value = 22 } } } set_variable = { which = gecko_menu_index value = 1 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 22 } NOT = { check_variable = { which = gecko_menu_page value = 24 } } } set_variable = { which = gecko_menu_index value = 1 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 24 } NOT = { check_variable = { which = gecko_menu_page value = 26 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 29 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 29 } NOT = { check_variable = { which = gecko_menu_page value = 31 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 28 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 28 } NOT = { check_variable = { which = gecko_menu_page value = 31 } } } set_variable = { which = gecko_menu_index value = 1 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 31 } NOT = { check_variable = { which = gecko_menu_page value = 33 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 36 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 35 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 35 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 38 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } set_variable = { which = gecko_menu_index value = 2 } }
 	} }
 	tooltip = gecko_menu_previous_tt
 }
@@ -472,7 +487,7 @@ custom_button = {
 custom_button = {
 	name = gecko_menu_next
 	potential = { ai = no }
-	trigger = { NOT = { check_variable = { which = gecko_menu_page value = 37 } } }
+	trigger = { NOT = { check_variable = { which = gecko_menu_page value = 40 } } }
 	effect = { hidden_effect = { change_variable = { which = gecko_menu_page value = 1 }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 0 } NOT = { check_variable = { which = gecko_menu_page value = 2 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 2 } NOT = { check_variable = { which = gecko_menu_page value = 6 } } } set_variable = { which = gecko_menu_index value = 0 } }
@@ -481,15 +496,15 @@ custom_button = {
 		if = { limit = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 11 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 11 } NOT = { check_variable = { which = gecko_menu_page value = 15 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 15 } NOT = { check_variable = { which = gecko_menu_page value = 17 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 17 } NOT = { check_variable = { which = gecko_menu_page value = 20 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 20 } NOT = { check_variable = { which = gecko_menu_page value = 22 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 17 } NOT = { check_variable = { which = gecko_menu_page value = 22 } } } set_variable = { which = gecko_menu_index value = 1 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 22 } NOT = { check_variable = { which = gecko_menu_page value = 24 } } } set_variable = { which = gecko_menu_index value = 1 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 24 } NOT = { check_variable = { which = gecko_menu_page value = 26 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 29 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 29 } NOT = { check_variable = { which = gecko_menu_page value = 31 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 28 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 28 } NOT = { check_variable = { which = gecko_menu_page value = 31 } } } set_variable = { which = gecko_menu_index value = 1 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 31 } NOT = { check_variable = { which = gecko_menu_page value = 33 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 36 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 35 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 35 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 38 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } set_variable = { which = gecko_menu_index value = 2 } }
 	} }
 	tooltip = gecko_menu_next_tt
 }
@@ -499,7 +514,127 @@ custom_window = {
 	potential = { has_country_flag = gecko_menu_actions_open }
 }
 
+custom_button = {
+	name = gecko_menu_cosmetics_tab
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_country_flag = gecko_menu_actions_open } }
+	frame = { number = 2 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_cosmetics_match
+	potential = { ai = no }
+	trigger = { any_subject_country = { OR = { is_subject_of_type = eyalet is_subject_of_type = core_eyalet is_subject_of_type = vassal is_subject_of_type = march is_subject_of_type = client_vassal is_subject_of_type = client_march is_subject_of_type = canton is_subject_of_type = appanage } } }
+	effect = { hidden_effect = { every_subject_country = { limit = { OR = { is_subject_of_type = eyalet is_subject_of_type = core_eyalet is_subject_of_type = vassal is_subject_of_type = march is_subject_of_type = client_vassal is_subject_of_type = client_march is_subject_of_type = canton is_subject_of_type = appanage } } change_country_color = { country = ROOT } } gecko_lighten_vassal_colors_effect = yes } }
+	tooltip = gecko_menu_cosmetics_match_tt
+}
+
+custom_button = {
+	name = gecko_menu_cosmetics_restore
+	potential = { ai = no }
+	trigger = { any_subject_country = { OR = { is_subject_of_type = eyalet is_subject_of_type = core_eyalet is_subject_of_type = vassal is_subject_of_type = march is_subject_of_type = client_vassal is_subject_of_type = client_march is_subject_of_type = canton is_subject_of_type = appanage } } }
+	effect = { hidden_effect = { every_subject_country = { limit = { OR = { is_subject_of_type = eyalet is_subject_of_type = core_eyalet is_subject_of_type = vassal is_subject_of_type = march is_subject_of_type = client_vassal is_subject_of_type = client_march is_subject_of_type = canton is_subject_of_type = appanage } } restore_country_color = yes } } }
+	tooltip = gecko_menu_cosmetics_restore_tt
+}
+
 custom_window = {
 	name = gecko_menu_country_information_content
 	potential = { has_country_flag = gecko_menu_country_information_open }
+}
+
+custom_button = {
+	name = gecko_menu_information_development
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_menu_critical_events_open } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_menu_critical_events_open } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_information_critical
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_country_flag = gecko_menu_critical_events_open } }
+	frame = { number = 2 trigger = { has_country_flag = gecko_menu_critical_events_open } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_information_development_content
+	potential = { NOT = { has_country_flag = gecko_menu_critical_events_open } }
+}
+
+custom_text_box = {
+	name = gecko_menu_development_adm_value
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_menu_development_dip_value
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_menu_development_mil_value
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_menu_development_total_value
+	potential = { always = yes }
+}
+
+custom_button = {
+	name = gecko_menu_development_initialize
+	potential = { ai = no NOT = { has_country_flag = has_development_counter_cflag } }
+	trigger = { always = yes }
+	effect = { if = { limit = { NOT = { has_country_flag = has_development_counter_cflag } } custom_tooltip = development_counter_update_tt hidden_effect = { development_counter = { on_startup = yes } } } }
+	tooltip = gecko_menu_development_initialize_tt
+}
+
+custom_window = {
+	name = gecko_menu_information_critical_content
+	potential = { has_country_flag = gecko_menu_critical_events_open }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_0_available
+	potential = { NOT = { has_country_flag = radical_mercantilist_reforms } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_0_unavailable
+	potential = { NOT = { AND = { NOT = { has_country_flag = radical_mercantilist_reforms } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_1_available
+	potential = { NOT = { has_country_flag = military_reform } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_1_unavailable
+	potential = { NOT = { AND = { NOT = { has_country_flag = military_reform } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_2_available
+	potential = { NOT = { has_country_modifier = echo_commandant_cooldown } NOT = { has_country_modifier = echo_commandant_cooldown_100 } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_2_unavailable
+	potential = { NOT = { AND = { NOT = { has_country_modifier = echo_commandant_cooldown } NOT = { has_country_modifier = echo_commandant_cooldown_100 } } } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_3_available
+	potential = { NOT = { has_country_modifier = echo_grand_captain_cooldown } NOT = { has_country_modifier = echo_grand_captain_cooldown_100 } }
+}
+
+custom_text_box = {
+	name = gecko_menu_critical_3_unavailable
+	potential = { NOT = { AND = { NOT = { has_country_modifier = echo_grand_captain_cooldown } NOT = { has_country_modifier = echo_grand_captain_cooldown_100 } } } }
 }

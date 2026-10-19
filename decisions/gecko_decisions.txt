@@ -7,6 +7,7 @@ country_decisions = {
 
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Actions.
 
 		}
 

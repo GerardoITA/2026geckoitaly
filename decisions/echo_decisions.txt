@@ -132,6 +132,7 @@ country_decisions = {
 		color = { 166  0  0 }
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Country Information.
 		}
 		ai_will_do = {
 			factor = 0
@@ -496,7 +497,7 @@ country_decisions = {
 
 	development_counter = {
 		color = { 166  0  0 }
-		potential = { ai = no }
+		potential = { ai = no always = no } # Moved to Gecko Menu / Country Information.
 		allow = {
 			if = {
 				limit = {

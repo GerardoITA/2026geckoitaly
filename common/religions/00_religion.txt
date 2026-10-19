@@ -536,6 +536,7 @@ christian = {
 		country = {
 			tolerance_heretic = 2
 			advisor_pool = 1
+			development_cost = -0.05
 		}
 		
 

@@ -9543,20 +9543,8 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
-					name = "gecko_menu_page_5_body_0_line_2"
-					position = { x = 240 y = 281 }
-					font = "vic_18"
-					borderSize = { x = 0 y = 0 }
-					text = "gecko_menu_page_5_body_0_line_2"
-					maxWidth = 668
-					maxHeight = 22
-					fixedsize = yes
-					format = left
-					alwaystransparent = yes
-				}
-				instantTextBoxType = {
 					name = "gecko_menu_page_5_heading_1"
-					position = { x = 240 y = 313 }
+					position = { x = 240 y = 291 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_5_heading_1"
@@ -9568,7 +9556,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_5_body_1"
-					position = { x = 240 y = 339 }
+					position = { x = 240 y = 317 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_5_body_1"
@@ -9580,7 +9568,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_5_body_1_line_1"
-					position = { x = 240 y = 361 }
+					position = { x = 240 y = 339 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_5_body_1_line_1"
@@ -9591,20 +9579,8 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
-					name = "gecko_menu_page_5_body_1_line_2"
-					position = { x = 240 y = 383 }
-					font = "vic_18"
-					borderSize = { x = 0 y = 0 }
-					text = "gecko_menu_page_5_body_1_line_2"
-					maxWidth = 668
-					maxHeight = 22
-					fixedsize = yes
-					format = left
-					alwaystransparent = yes
-				}
-				instantTextBoxType = {
 					name = "gecko_menu_page_5_heading_2"
-					position = { x = 240 y = 415 }
+					position = { x = 240 y = 371 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_5_heading_2"
@@ -9616,7 +9592,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_5_body_2"
-					position = { x = 240 y = 441 }
+					position = { x = 240 y = 397 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_5_body_2"
@@ -9628,7 +9604,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_5_body_2_line_1"
-					position = { x = 240 y = 463 }
+					position = { x = 240 y = 419 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_5_body_2_line_1"

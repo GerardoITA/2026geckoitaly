@@ -735,7 +735,7 @@ guiTypes = {
 		# IntScore ranking (custom topbar support, EU4 1.37).
 		guiButtonType = {
 			name = "gecko_intscore_toggle"
-			position = { x = 925 y = 19 }
+			position = { x = 925 y = 48 }
 			quadTextureSprite = "GFX_gecko_intscore_button"
 			buttonText = ""
 			buttonFont = "vic_18"
@@ -745,7 +745,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "gecko_intscore_button_label"
-			position = { x = 958 y = 25 }
+			position = { x = 958 y = 54 }
 			font = "vic_18"
 			text = "gecko_intscore_toggle"
 			maxWidth = 141
@@ -7964,7 +7964,7 @@ guiTypes = {
 		# BEGIN GENERATED GECKO MENU
 		guiButtonType = {
 			name = "gecko_menu_toggle"
-			position = { x = 925 y = 53 }
+			position = { x = 925 y = 14 }
 			quadTextureSprite = "GFX_gecko_intscore_button"
 			buttonText = ""
 			buttonFont = "vic_18"
@@ -7973,13 +7973,13 @@ guiTypes = {
 		}
 		iconType = {
 			name = "gecko_menu_badge"
-			position = { x = 933 y = 54 }
+			position = { x = 933 y = 15 }
 			spriteType = "GFX_gecko_menu_badge"
 			alwaystransparent = yes
 		}
 		instantTextBoxType = {
 			name = "gecko_menu_button_label"
-			position = { x = 966 y = 59 }
+			position = { x = 966 y = 20 }
 			font = "vic_18"
 			text = "gecko_menu_button_label"
 			maxWidth = 133
@@ -8009,6 +8009,24 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 			}
+			guiButtonType = {
+				name = "gecko_menu_actions"
+				position = { x = 194 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_actions"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_menu_country_information"
+				position = { x = 356 y = 70 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_menu_country_information"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
 			instantTextBoxType = {
 				name = "gecko_menu_title"
 				position = { x = 180 y = 24 }
@@ -8022,10 +8040,10 @@ guiTypes = {
 			}
 			instantTextBoxType = {
 				name = "gecko_menu_subtitle"
-				position = { x = 490 y = 73 }
+				position = { x = 532 y = 73 }
 				font = "vic_18"
 				text = "gecko_menu_subtitle"
-				maxWidth = 298
+				maxWidth = 396
 				maxHeight = 22
 				fixedsize = yes
 				format = center
@@ -8041,6 +8059,12 @@ guiTypes = {
 				scripted = yes
 				shortcut = "ESCAPE"
 			}
+			windowType = {
+				name = "gecko_menu_documentation_content"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
 			instantTextBoxType = {
 				name = "gecko_menu_contents"
 				position = { x = 44 y = 119 }
@@ -12181,6 +12205,65 @@ guiTypes = {
 				buttonFont = "vic_18"
 				clicksound = click
 				scripted = yes
+			}
+			}
+			windowType = {
+				name = "gecko_menu_actions_content"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_actions_title"
+				position = { x = 240 y = 130 }
+				font = "vic_22"
+				text = "gecko_menu_actions_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_actions_empty"
+				position = { x = 240 y = 173 }
+				font = "vic_18"
+				text = "gecko_menu_actions_empty"
+				maxWidth = 668
+				maxHeight = 42
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			}
+			windowType = {
+				name = "gecko_menu_country_information_content"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 580 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_menu_country_information_title"
+				position = { x = 240 y = 130 }
+				font = "vic_22"
+				text = "gecko_menu_country_information_title"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_menu_country_information_empty"
+				position = { x = 240 y = 173 }
+				font = "vic_18"
+				text = "gecko_menu_country_information_empty"
+				maxWidth = 668
+				maxHeight = 42
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
 			}
 			instantTextBoxType = {
 				name = "gecko_menu_footer"

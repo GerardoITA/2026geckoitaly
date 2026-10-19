@@ -32,9 +32,35 @@ custom_button = {
 	name = gecko_menu_documentation
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_country_flag = gecko_menu_open } }
-	tooltip = gecko_menu_open_tt
-	frame = { number = 2 trigger = { always = yes } }
+	effect = { hidden_effect = { clr_country_flag = gecko_menu_actions_open clr_country_flag = gecko_menu_country_information_open } }
+	tooltip = gecko_menu_documentation_tt
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_menu_actions_open } NOT = { has_country_flag = gecko_menu_country_information_open } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_actions
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_menu_actions_open clr_country_flag = gecko_menu_country_information_open set_country_flag = gecko_menu_actions_open } }
+	tooltip = gecko_menu_actions_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_menu_actions_open } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_country_information
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_menu_actions_open clr_country_flag = gecko_menu_country_information_open set_country_flag = gecko_menu_country_information_open } }
+	tooltip = gecko_menu_country_information_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_menu_country_information_open } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_documentation_content
+	potential = { NOT = { has_country_flag = gecko_menu_actions_open } NOT = { has_country_flag = gecko_menu_country_information_open } }
 }
 
 custom_window = {
@@ -466,4 +492,14 @@ custom_button = {
 		if = { limit = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 38 } } } set_variable = { which = gecko_menu_index value = 2 } }
 	} }
 	tooltip = gecko_menu_next_tt
+}
+
+custom_window = {
+	name = gecko_menu_actions_content
+	potential = { has_country_flag = gecko_menu_actions_open }
+}
+
+custom_window = {
+	name = gecko_menu_country_information_content
+	potential = { has_country_flag = gecko_menu_country_information_open }
 }

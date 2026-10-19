@@ -67,7 +67,6 @@ check_standard_victory_provinces = {
 
 			################### BRITAIN
 			province_id = 248  # LOTHIAN
-			province_id = 4121 # DUBLIN
 
 			################### LOW COUNTRIES
 			province_id = 87 # CALAIS

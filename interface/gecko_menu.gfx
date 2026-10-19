@@ -7,6 +7,11 @@ spriteTypes = {
 		effectFile = "gfx/FX/gecko_menu_badge.shader"
 	}
 	spriteType = {
+		name = "GFX_gecko_menu_panel"
+		texturefile = "gfx/interface/gecko_menu_panel.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
 		name = "GFX_gecko_menu_modifier_institution_growth"
 		texturefile = "gfx/interface/ideas_EU4/institution_growth.dds"
 		noOfFrames = 1
@@ -95,5 +100,11 @@ spriteTypes = {
 		name = "GFX_gecko_menu_modifier_local_years_of_nationalism"
 		texturefile = "gfx/interface/ideas_EU4/local_years_of_nationalism.dds"
 		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_edict_button"
+		texturefile = "gfx/interface/gecko_menu_edict_button.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 }

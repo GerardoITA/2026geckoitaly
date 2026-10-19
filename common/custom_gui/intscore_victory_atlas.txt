@@ -192,6 +192,11 @@ custom_button = {
 }
 
 custom_text_box = {
+	name = gecko_victory_selected_owner
+	potential = { check_variable = { which = gecko_victory_selected_id value = 1 } }
+}
+
+custom_text_box = {
 	name = gecko_victory_selected_name
 	potential = { always = yes }
 }

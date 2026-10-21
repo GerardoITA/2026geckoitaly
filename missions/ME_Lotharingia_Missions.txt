@@ -399,6 +399,7 @@ ME_bur_2 = {
 		effect = {  
 			give_claims = { area = romandie_area }
 			give_claims = { area = switzerland_area }
+			give_claims = { area = bern_area }
 			give_claims = { id = 80 }
 			custom_tooltip = " "
 			add_estate_loyalty = {
@@ -829,6 +830,7 @@ ME_bur_3 = {
 				OR = {
 					area = switzerland_area
 					area = romandie_area
+					area = bern_area
 				}
 			}
 		} 
@@ -1537,37 +1539,10 @@ ME_bur_5 = {
 			}
 		} 
 
-		effect = {  
-			custom_tooltip = ME_BUR_UNLOCK_POLDER_CONDITIONAL_MODIFIER
-			custom_tooltip = " "
+		effect = {
 			distribute_development = {
 				type = production
 				amount = 15
-				limit = "
-					OR = {
-						has_great_project = {
-							type = fu_brugge_dike 
-							tier = 3
-						}
-						has_great_project = {
-							type = fu_gent_dike  
-							tier = 3
-						}
-						has_great_project = {
-							type = fu_antwerp_dike  
-							tier = 3
-						}
-						has_great_project = {
-							type = fu_zeeland_dike  
-							tier = 3
-						}
-						has_great_project = {
-							type = fu_amsterdam_dike 
-							tier = 3
-						}
-					}
-				"
-				tooltip = ME_BUR_ONLY_IN_DIKE_PROVINCES
 			}
 			97 = {
 				add_permanent_province_modifier = {

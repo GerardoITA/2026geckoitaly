@@ -12,7 +12,7 @@ intscore_loss_100 = {
 	}
 
 	requires_is_allowed = yes
-	applies_to_war_target = yes
+	applies_to_war_target = no
 
 	is_visible = {
 		always = yes

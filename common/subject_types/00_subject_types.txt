@@ -1282,18 +1282,10 @@ commercial_enterprise = {
 	relative_power_class = 0
 	should_quit_wars_on_activation = yes
 	
-	can_fight = {
-		independent_nations = yes
-		other_overlord = all
-	}
-	can_rival = {
-		independent_nations = yes
-		other_overlord = all
-	}
-	can_ally = {
-		independent_nations = yes
-		other_overlord = all
-	}
+	# Company diplomacy is handled by the overlord.
+	can_fight = {}
+	can_rival = {}
+	can_ally = {}
 	forcelimit_to_overlord = 0.1						# Percent of subject FL to use as base for modifiers
 	naval_forcelimit_to_overlord = 0.1					# Percent of subject FL to use as base for modifiers
 	manpower_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers

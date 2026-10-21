@@ -65,7 +65,6 @@ intscore_score_valid_provinces = {
 		################### BRITAIN
 			intscore_score_single_province = { PROVINCE = 236  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # LONDON
 			intscore_score_single_province = { PROVINCE = 248  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LOTHIAN
-			intscore_score_single_province = { PROVINCE = 4121 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DUBLIN
 
 		################### LOW COUNTRIES
 			intscore_score_single_province = { PROVINCE = 87 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CALAIS

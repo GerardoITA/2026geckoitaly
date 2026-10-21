@@ -1,7 +1,7 @@
 spriteTypes = {
 	spriteType = {
 		name = "GFX_gecko_victory_panel"
-		texturefile = "gfx/interface/intscore/atlas/panel.tga"
+		texturefile = "gfx/interface/intscore/atlas/panel_full.tga"
 		noOfFrames = 1
 	}
 	spriteType = {

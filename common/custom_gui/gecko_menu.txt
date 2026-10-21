@@ -9,6 +9,7 @@ custom_button = {
 		else = {
 			clr_country_flag = gecko_intscore_gui_open
 			if = { limit = { NOT = { has_country_flag = gecko_menu_initialized } } set_variable = { which = gecko_menu_page value = 0 } set_variable = { which = gecko_menu_index value = 0 } set_country_flag = gecko_menu_initialized }
+			if = { limit = { check_variable = { which = gecko_menu_page value = 58 } } set_variable = { which = gecko_menu_page value = 0 } set_variable = { which = gecko_menu_index value = 0 } }
 			set_country_flag = gecko_menu_open
 		}
 	} }
@@ -119,12 +120,12 @@ custom_button = {
 }
 
 custom_button = {
-	name = gecko_menu_section_economy
+	name = gecko_menu_section_province_buttons
 	potential = { ai = no }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 10 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 14 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 12 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -134,12 +135,22 @@ custom_window = {
 }
 
 custom_button = {
+	name = gecko_menu_section_economy
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 12 } } }
+	tooltip = gecko_menu_section_tt
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 12 } NOT = { check_variable = { which = gecko_menu_page value = 16 } } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
 	name = gecko_menu_section_trade
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 14 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 16 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 14 } NOT = { check_variable = { which = gecko_menu_page value = 16 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 16 } NOT = { check_variable = { which = gecko_menu_page value = 18 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -147,9 +158,9 @@ custom_button = {
 	name = gecko_menu_section_army
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 16 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 18 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 16 } NOT = { check_variable = { which = gecko_menu_page value = 21 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 18 } NOT = { check_variable = { which = gecko_menu_page value = 23 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -157,9 +168,9 @@ custom_button = {
 	name = gecko_menu_section_mercenaries
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 21 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 23 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 21 } NOT = { check_variable = { which = gecko_menu_page value = 23 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 23 } NOT = { check_variable = { which = gecko_menu_page value = 26 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -167,9 +178,9 @@ custom_button = {
 	name = gecko_menu_section_navy
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 23 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 26 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 23 } NOT = { check_variable = { which = gecko_menu_page value = 25 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 28 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -177,19 +188,9 @@ custom_button = {
 	name = gecko_menu_section_diplomacy
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 25 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 28 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 25 } NOT = { check_variable = { which = gecko_menu_page value = 27 } } } }
-	frame = { number = 1 trigger = { always = yes } }
-}
-
-custom_button = {
-	name = gecko_menu_section_subjects
-	potential = { ai = no }
-	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 27 } } }
-	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 27 } NOT = { check_variable = { which = gecko_menu_page value = 30 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 28 } NOT = { check_variable = { which = gecko_menu_page value = 30 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -199,12 +200,22 @@ custom_window = {
 }
 
 custom_button = {
-	name = gecko_menu_section_expansion
+	name = gecko_menu_section_subjects
 	potential = { ai = no }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 30 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 30 } NOT = { check_variable = { which = gecko_menu_page value = 32 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 30 } NOT = { check_variable = { which = gecko_menu_page value = 33 } } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_menu_section_expansion
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 33 } } }
+	tooltip = gecko_menu_section_tt
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 36 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -212,9 +223,9 @@ custom_button = {
 	name = gecko_menu_section_ideas
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 32 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 36 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 32 } NOT = { check_variable = { which = gecko_menu_page value = 34 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -222,9 +233,9 @@ custom_button = {
 	name = gecko_menu_section_powers
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 34 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 41 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 34 } NOT = { check_variable = { which = gecko_menu_page value = 37 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 41 } NOT = { check_variable = { which = gecko_menu_page value = 46 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -232,9 +243,9 @@ custom_button = {
 	name = gecko_menu_section_religion
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 37 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 46 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 37 } NOT = { check_variable = { which = gecko_menu_page value = 39 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 46 } NOT = { check_variable = { which = gecko_menu_page value = 48 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -242,19 +253,24 @@ custom_button = {
 	name = gecko_menu_section_great_khan
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 39 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 48 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 39 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 48 } NOT = { check_variable = { which = gecko_menu_page value = 50 } } } }
 	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_menu_index_3
+	potential = { is_variable_equal = { which = gecko_menu_index value = 3 } }
 }
 
 custom_button = {
 	name = gecko_menu_section_hre
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 41 } } }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_page value = 50 } } }
 	tooltip = gecko_menu_section_tt
-	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 41 } NOT = { check_variable = { which = gecko_menu_page value = 49 } } } }
+	frame = { number = 2 trigger = { check_variable = { which = gecko_menu_page value = 50 } NOT = { check_variable = { which = gecko_menu_page value = 58 } } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -269,7 +285,7 @@ custom_button = {
 custom_button = {
 	name = gecko_menu_index_next
 	potential = { ai = no }
-	trigger = { NOT = { check_variable = { which = gecko_menu_index value = 2 } } }
+	trigger = { NOT = { check_variable = { which = gecko_menu_index value = 3 } } }
 	effect = { hidden_effect = { change_variable = { which = gecko_menu_index value = 1 } } }
 	tooltip = gecko_menu_index_tt
 }
@@ -519,6 +535,51 @@ custom_window = {
 	potential = { is_variable_equal = { which = gecko_menu_page value = 48 } }
 }
 
+custom_window = {
+	name = gecko_menu_page_49
+	potential = { is_variable_equal = { which = gecko_menu_page value = 49 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_50
+	potential = { is_variable_equal = { which = gecko_menu_page value = 50 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_51
+	potential = { is_variable_equal = { which = gecko_menu_page value = 51 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_52
+	potential = { is_variable_equal = { which = gecko_menu_page value = 52 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_53
+	potential = { is_variable_equal = { which = gecko_menu_page value = 53 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_54
+	potential = { is_variable_equal = { which = gecko_menu_page value = 54 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_55
+	potential = { is_variable_equal = { which = gecko_menu_page value = 55 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_56
+	potential = { is_variable_equal = { which = gecko_menu_page value = 56 } }
+}
+
+custom_window = {
+	name = gecko_menu_page_57
+	potential = { is_variable_equal = { which = gecko_menu_page value = 57 } }
+}
+
 custom_button = {
 	name = gecko_menu_previous
 	potential = { ai = no }
@@ -529,19 +590,20 @@ custom_button = {
 		if = { limit = { check_variable = { which = gecko_menu_page value = 5 } NOT = { check_variable = { which = gecko_menu_page value = 7 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 7 } NOT = { check_variable = { which = gecko_menu_page value = 9 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 9 } NOT = { check_variable = { which = gecko_menu_page value = 10 } } } set_variable = { which = gecko_menu_index value = 0 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 14 } } } set_variable = { which = gecko_menu_index value = 0 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 14 } NOT = { check_variable = { which = gecko_menu_page value = 16 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 16 } NOT = { check_variable = { which = gecko_menu_page value = 21 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 21 } NOT = { check_variable = { which = gecko_menu_page value = 23 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 23 } NOT = { check_variable = { which = gecko_menu_page value = 25 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 25 } NOT = { check_variable = { which = gecko_menu_page value = 27 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 27 } NOT = { check_variable = { which = gecko_menu_page value = 30 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 30 } NOT = { check_variable = { which = gecko_menu_page value = 32 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 32 } NOT = { check_variable = { which = gecko_menu_page value = 34 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 34 } NOT = { check_variable = { which = gecko_menu_page value = 37 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 37 } NOT = { check_variable = { which = gecko_menu_page value = 39 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 39 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 41 } NOT = { check_variable = { which = gecko_menu_page value = 49 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 12 } } } set_variable = { which = gecko_menu_index value = 0 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 12 } NOT = { check_variable = { which = gecko_menu_page value = 16 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 16 } NOT = { check_variable = { which = gecko_menu_page value = 18 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 18 } NOT = { check_variable = { which = gecko_menu_page value = 23 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 23 } NOT = { check_variable = { which = gecko_menu_page value = 26 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 28 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 28 } NOT = { check_variable = { which = gecko_menu_page value = 30 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 30 } NOT = { check_variable = { which = gecko_menu_page value = 33 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 36 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 41 } NOT = { check_variable = { which = gecko_menu_page value = 46 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 46 } NOT = { check_variable = { which = gecko_menu_page value = 48 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 48 } NOT = { check_variable = { which = gecko_menu_page value = 50 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 50 } NOT = { check_variable = { which = gecko_menu_page value = 58 } } } set_variable = { which = gecko_menu_index value = 3 } }
 	} }
 	tooltip = gecko_menu_previous_tt
 }
@@ -549,26 +611,27 @@ custom_button = {
 custom_button = {
 	name = gecko_menu_next
 	potential = { ai = no }
-	trigger = { NOT = { check_variable = { which = gecko_menu_page value = 48 } } }
+	trigger = { NOT = { check_variable = { which = gecko_menu_page value = 57 } } }
 	effect = { hidden_effect = { change_variable = { which = gecko_menu_page value = 1 }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 0 } NOT = { check_variable = { which = gecko_menu_page value = 2 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 2 } NOT = { check_variable = { which = gecko_menu_page value = 5 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 5 } NOT = { check_variable = { which = gecko_menu_page value = 7 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 7 } NOT = { check_variable = { which = gecko_menu_page value = 9 } } } set_variable = { which = gecko_menu_index value = 0 } }
 		if = { limit = { check_variable = { which = gecko_menu_page value = 9 } NOT = { check_variable = { which = gecko_menu_page value = 10 } } } set_variable = { which = gecko_menu_index value = 0 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 14 } } } set_variable = { which = gecko_menu_index value = 0 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 14 } NOT = { check_variable = { which = gecko_menu_page value = 16 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 16 } NOT = { check_variable = { which = gecko_menu_page value = 21 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 21 } NOT = { check_variable = { which = gecko_menu_page value = 23 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 23 } NOT = { check_variable = { which = gecko_menu_page value = 25 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 25 } NOT = { check_variable = { which = gecko_menu_page value = 27 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 27 } NOT = { check_variable = { which = gecko_menu_page value = 30 } } } set_variable = { which = gecko_menu_index value = 1 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 30 } NOT = { check_variable = { which = gecko_menu_page value = 32 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 32 } NOT = { check_variable = { which = gecko_menu_page value = 34 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 34 } NOT = { check_variable = { which = gecko_menu_page value = 37 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 37 } NOT = { check_variable = { which = gecko_menu_page value = 39 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 39 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } set_variable = { which = gecko_menu_index value = 2 } }
-		if = { limit = { check_variable = { which = gecko_menu_page value = 41 } NOT = { check_variable = { which = gecko_menu_page value = 49 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 10 } NOT = { check_variable = { which = gecko_menu_page value = 12 } } } set_variable = { which = gecko_menu_index value = 0 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 12 } NOT = { check_variable = { which = gecko_menu_page value = 16 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 16 } NOT = { check_variable = { which = gecko_menu_page value = 18 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 18 } NOT = { check_variable = { which = gecko_menu_page value = 23 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 23 } NOT = { check_variable = { which = gecko_menu_page value = 26 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 26 } NOT = { check_variable = { which = gecko_menu_page value = 28 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 28 } NOT = { check_variable = { which = gecko_menu_page value = 30 } } } set_variable = { which = gecko_menu_index value = 1 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 30 } NOT = { check_variable = { which = gecko_menu_page value = 33 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 33 } NOT = { check_variable = { which = gecko_menu_page value = 36 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 36 } NOT = { check_variable = { which = gecko_menu_page value = 41 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 41 } NOT = { check_variable = { which = gecko_menu_page value = 46 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 46 } NOT = { check_variable = { which = gecko_menu_page value = 48 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 48 } NOT = { check_variable = { which = gecko_menu_page value = 50 } } } set_variable = { which = gecko_menu_index value = 2 } }
+		if = { limit = { check_variable = { which = gecko_menu_page value = 50 } NOT = { check_variable = { which = gecko_menu_page value = 58 } } } set_variable = { which = gecko_menu_index value = 3 } }
 	} }
 	tooltip = gecko_menu_next_tt
 }
@@ -582,7 +645,7 @@ custom_button = {
 	name = gecko_menu_cosmetics_tab
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { clr_country_flag = gecko_menu_edicts_open clr_country_flag = gecko_menu_edicts_effects_open } }
+	effect = { hidden_effect = { clr_country_flag = gecko_menu_edicts_open } }
 	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_menu_edicts_open } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
@@ -591,17 +654,8 @@ custom_button = {
 	name = gecko_menu_edicts_tab
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_country_flag = gecko_menu_edicts_open clr_country_flag = gecko_menu_edicts_effects_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
-	frame = { number = 2 trigger = { has_country_flag = gecko_menu_edicts_open NOT = { has_country_flag = gecko_menu_edicts_effects_open } } }
-	frame = { number = 1 trigger = { always = yes } }
-}
-
-custom_button = {
-	name = gecko_menu_edicts_effects_tab
-	potential = { ai = no }
-	trigger = { always = yes }
-	effect = { hidden_effect = { set_country_flag = gecko_menu_edicts_open set_country_flag = gecko_menu_edicts_effects_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
-	frame = { number = 2 trigger = { has_country_flag = gecko_menu_edicts_open has_country_flag = gecko_menu_edicts_effects_open } }
+	effect = { hidden_effect = { set_country_flag = gecko_menu_edicts_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
+	frame = { number = 2 trigger = { has_country_flag = gecko_menu_edicts_open } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -631,9 +685,14 @@ custom_window = {
 	potential = { has_country_flag = gecko_menu_edicts_open }
 }
 
+custom_text_box = {
+	name = gecko_menu_edicts_instructions
+	potential = { NOT = { OR = { AND = { is_variable_equal = { which = gecko_menu_edict value = 0 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 1 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 2 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 3 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 4 } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict } AND = { is_variable_equal = { which = gecko_menu_edict value = 5 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 6 } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery } AND = { is_variable_equal = { which = gecko_menu_edict value = 7 } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } } AND = { is_variable_equal = { which = gecko_menu_edict value = 8 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 9 } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 10 } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } } AND = { is_variable_equal = { which = gecko_menu_edict value = 11 } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation } AND = { is_variable_equal = { which = gecko_menu_edict value = 12 } always = yes always = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 13 } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes } AND = { is_variable_equal = { which = gecko_menu_edict value = 14 } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery } AND = { is_variable_equal = { which = gecko_menu_edict value = 15 } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation } AND = { is_variable_equal = { which = gecko_menu_edict value = 16 } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism } AND = { is_variable_equal = { which = gecko_menu_edict value = 17 } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions } } } }
+}
+
 custom_button = {
 	name = gecko_menu_edict_0
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_0_0 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 0 } } }
 	tooltip = gecko_menu_edict_0_tt
@@ -641,14 +700,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_0_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_0_0 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_0_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 0 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 0 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_0_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_advancement_effort } set_country_flag = sea_state_edicts_decision_edict_advancement_effort_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_0_all_tt
@@ -656,7 +720,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_0_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_advancement_effort } set_country_flag = sea_state_edicts_decision_edict_advancement_effort_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_0_empty_tt
@@ -674,7 +738,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_1
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_1_1 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 1 } } }
 	tooltip = gecko_menu_edict_1_tt
@@ -682,14 +746,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_1_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_1_1 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_1_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 1 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 1 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_1_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_centralization_effort } set_country_flag = sea_state_edicts_decision_edict_centralization_effort_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_1_all_tt
@@ -697,7 +766,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_1_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_centralization_effort } set_country_flag = sea_state_edicts_decision_edict_centralization_effort_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_1_empty_tt
@@ -715,7 +784,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_2
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_2_2 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 2 } } }
 	tooltip = gecko_menu_edict_2_tt
@@ -723,14 +792,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_2_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_2_2 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_2_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 2 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 2 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_2_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_defensive_edict } set_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_2_all_tt
@@ -738,7 +812,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_2_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_defensive_edict } set_country_flag = sea_state_edicts_decision_edict_defensive_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_2_empty_tt
@@ -756,7 +830,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_3
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_3_3 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 3 } } }
 	tooltip = gecko_menu_edict_3_tt
@@ -764,14 +838,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_3_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_3_3 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_3_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 3 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 3 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_3_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } always = yes }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_devastation_edict } set_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_3_all_tt
@@ -779,7 +858,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_3_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } always = yes }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_devastation_edict } set_country_flag = sea_state_edicts_decision_edict_devastation_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_3_empty_tt
@@ -797,7 +876,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_4
-	potential = { ai = no }
+	potential = { ai = no has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict gecko_menu_edict_prefix_9_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 4 } } }
 	tooltip = gecko_menu_edict_4_tt
@@ -805,14 +884,49 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_4_modifier_icon
+	potential = { ai = no has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict gecko_menu_edict_prefix_9_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_4_slot_8
+	potential = { ai = no has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict gecko_menu_edict_prefix_9_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 4 } } }
+	tooltip = gecko_menu_edict_4_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 4 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_4_slot_8_modifier_icon
+	potential = { ai = no has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict gecko_menu_edict_prefix_9_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_4_slot_9
+	potential = { ai = no has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict gecko_menu_edict_prefix_9_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 4 } } }
+	tooltip = gecko_menu_edict_4_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 4 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_4_slot_9_modifier_icon
+	potential = { ai = no has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict gecko_menu_edict_prefix_9_9 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_4_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 4 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 4 } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict }
 }
 
 custom_button = {
 	name = gecko_menu_edict_4_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_of_governance } set_country_flag = sea_state_edicts_decision_edict_of_governance_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_4_all_tt
@@ -820,7 +934,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_4_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict has_country_flag = hab_prosperity_edict custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_of_governance } set_country_flag = sea_state_edicts_decision_edict_of_governance_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_4_empty_tt
@@ -838,7 +952,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_5
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_4_4 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 5 } } }
 	tooltip = gecko_menu_edict_5_tt
@@ -846,14 +960,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_5_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_4_4 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_5_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 5 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 5 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_5_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_encourage_development } set_country_flag = sea_state_edicts_decision_edict_encourage_development_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_5_all_tt
@@ -861,7 +980,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_5_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_encourage_development } set_country_flag = sea_state_edicts_decision_edict_encourage_development_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_5_empty_tt
@@ -879,7 +998,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_6
-	potential = { ai = no }
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 6 } } }
 	tooltip = gecko_menu_edict_6_tt
@@ -887,14 +1006,64 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_6_modifier_icon
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_6_slot_8
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 6 } } }
+	tooltip = gecko_menu_edict_6_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 6 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_6_slot_8_modifier_icon
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_6_slot_9
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 6 } } }
+	tooltip = gecko_menu_edict_6_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 6 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_6_slot_9_modifier_icon
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_6_slot_10
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 6 } } }
+	tooltip = gecko_menu_edict_6_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 6 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_6_slot_10_modifier_icon
+	potential = { ai = no current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery gecko_menu_edict_prefix_10_10 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_6_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 6 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 6 } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery }
 }
 
 custom_button = {
 	name = gecko_menu_edict_6_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_feudal_de_jure_law } set_country_flag = sea_state_edicts_decision_edict_feudal_de_jure_law_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_6_all_tt
@@ -902,7 +1071,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_6_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery current_age = age_of_discovery always = yes current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_feudal_de_jure_law } set_country_flag = sea_state_edicts_decision_edict_feudal_de_jure_law_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_6_empty_tt
@@ -920,7 +1089,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_7
-	potential = { ai = no }
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 7 } } }
 	tooltip = gecko_menu_edict_7_tt
@@ -928,14 +1097,79 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_7_modifier_icon
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_7_slot_8
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 7 } } }
+	tooltip = gecko_menu_edict_7_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 7 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_7_slot_8_modifier_icon
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_7_slot_9
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 7 } } }
+	tooltip = gecko_menu_edict_7_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 7 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_7_slot_9_modifier_icon
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_7_slot_10
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 7 } } }
+	tooltip = gecko_menu_edict_7_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 7 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_7_slot_10_modifier_icon
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_7_slot_11
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 7 } } }
+	tooltip = gecko_menu_edict_7_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 7 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_7_slot_11_modifier_icon
+	potential = { ai = no has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } gecko_menu_edict_prefix_11_11 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_7_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 7 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 7 } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } }
 }
 
 custom_button = {
 	name = gecko_menu_edict_7_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = french_infrastructure_network } set_country_flag = sea_state_edicts_decision_french_infrastructure_network_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_7_all_tt
@@ -943,7 +1177,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_7_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_enable_infrastructure_network_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_enable_infrastructure_network_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = french_infrastructure_network } set_country_flag = sea_state_edicts_decision_french_infrastructure_network_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_7_empty_tt
@@ -961,7 +1195,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_8
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_5_5 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 8 } } }
 	tooltip = gecko_menu_edict_8_tt
@@ -969,14 +1203,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_8_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_5_5 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_8_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 8 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 8 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_8_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_promote_military_recruitment } set_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_8_all_tt
@@ -984,7 +1223,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_8_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_promote_military_recruitment } set_country_flag = sea_state_edicts_decision_edict_promote_military_recruitment_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_8_empty_tt
@@ -1002,7 +1241,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_9
-	potential = { ai = no }
+	potential = { ai = no NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes gecko_menu_edict_prefix_6_6 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 9 } } }
 	tooltip = gecko_menu_edict_9_tt
@@ -1010,14 +1249,19 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_9_modifier_icon
+	potential = { ai = no NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes gecko_menu_edict_prefix_6_6 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_9_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 9 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 9 } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_9_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_protect_trade } set_country_flag = sea_state_edicts_decision_edict_protect_trade_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_9_all_tt
@@ -1025,7 +1269,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_9_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } NOT = { has_country_flag = fra_improve_trade_power_state_edict_flag } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_protect_trade } set_country_flag = sea_state_edicts_decision_edict_protect_trade_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_9_empty_tt
@@ -1043,7 +1287,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_10
-	potential = { ai = no }
+	potential = { ai = no has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } gecko_menu_edict_prefix_7_6 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 10 } } }
 	tooltip = gecko_menu_edict_10_tt
@@ -1051,14 +1295,34 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_10_modifier_icon
+	potential = { ai = no has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } gecko_menu_edict_prefix_7_6 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_10_slot_7
+	potential = { ai = no has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } gecko_menu_edict_prefix_7_7 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 10 } } }
+	tooltip = gecko_menu_edict_10_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 10 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_10_slot_7_modifier_icon
+	potential = { ai = no has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } gecko_menu_edict_prefix_7_7 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_10_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 10 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 10 } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } }
 }
 
 custom_button = {
 	name = gecko_menu_edict_10_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = protect_trade_empowered } set_country_flag = sea_state_edicts_decision_protect_trade_empowered_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_10_all_tt
@@ -1066,7 +1330,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_10_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = fra_improve_trade_power_state_edict_flag has_country_flag = fra_improve_trade_power_state_edict_flag custom_trigger_tooltip = { tooltip = unlocked_if_tt has_country_flag = fra_improve_trade_power_state_edict_flag } custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = protect_trade_empowered } set_country_flag = sea_state_edicts_decision_protect_trade_empowered_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_10_empty_tt
@@ -1084,7 +1348,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_11
-	potential = { ai = no }
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
 	tooltip = gecko_menu_edict_11_tt
@@ -1092,14 +1356,94 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_11_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_slot_8
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
+	tooltip = gecko_menu_edict_11_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 11 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_11_slot_8_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_slot_9
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
+	tooltip = gecko_menu_edict_11_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 11 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_11_slot_9_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_slot_10
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
+	tooltip = gecko_menu_edict_11_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 11 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_11_slot_10_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_slot_11
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
+	tooltip = gecko_menu_edict_11_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 11 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_11_slot_11_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_11 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_11_slot_12
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_12 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 11 } } }
+	tooltip = gecko_menu_edict_11_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 11 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_11_slot_12_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation gecko_menu_edict_prefix_12_12 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_11_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 11 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 11 } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation }
 }
 
 custom_button = {
 	name = gecko_menu_edict_11_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_religion_enforced } set_country_flag = sea_state_edicts_decision_edict_religion_enforced_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_11_all_tt
@@ -1107,7 +1451,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_11_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_country_flag = religion_enforced_edict current_age = age_of_reformation custom_trigger_tooltip = { tooltip = edict_religion_enforced_tooltip has_country_flag = religion_enforced_edict } current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_religion_enforced } set_country_flag = sea_state_edicts_decision_edict_religion_enforced_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_11_empty_tt
@@ -1125,7 +1469,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_12
-	potential = { ai = no }
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_8_6 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 12 } } }
 	tooltip = gecko_menu_edict_12_tt
@@ -1133,14 +1477,49 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_12_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_8_6 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_12_slot_7
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_8_7 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 12 } } }
+	tooltip = gecko_menu_edict_12_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 12 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_12_slot_7_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_8_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_12_slot_8
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_8_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 12 } } }
+	tooltip = gecko_menu_edict_12_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 12 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_12_slot_8_modifier_icon
+	potential = { ai = no always = yes always = yes gecko_menu_edict_prefix_8_8 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_12_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 12 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 12 } always = yes always = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_12_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = edict_religious_unity } set_country_flag = sea_state_edicts_decision_edict_religious_unity_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_12_all_tt
@@ -1148,7 +1527,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_12_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } always = yes always = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = edict_religious_unity } set_country_flag = sea_state_edicts_decision_edict_religious_unity_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_12_empty_tt
@@ -1166,7 +1545,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_13
-	potential = { ai = no }
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
 	tooltip = gecko_menu_edict_13_tt
@@ -1174,14 +1553,109 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_13_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_slot_8
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_13_slot_8_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_slot_9
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_13_slot_9_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_slot_10
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_13_slot_10_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_slot_11
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_13_slot_11_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_11 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_slot_12
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_12 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_13_slot_12_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_12 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_13_slot_13
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_13 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 13 } } }
+	tooltip = gecko_menu_edict_13_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 13 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_13_slot_13_modifier_icon
+	potential = { ai = no has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes gecko_menu_edict_prefix_13_13 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_13_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 13 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 13 } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes }
 }
 
 custom_button = {
 	name = gecko_menu_edict_13_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = chinese_industrialization } set_country_flag = sea_state_edicts_decision_chinese_industrialization_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_13_all_tt
@@ -1189,7 +1663,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_13_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } has_country_flag = enable_industrialisation_flag has_country_flag = enable_industrialisation_flag is_emperor_of_china = yes custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = chinese_industrialization } set_country_flag = sea_state_edicts_decision_chinese_industrialization_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_13_empty_tt
@@ -1207,7 +1681,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_14
-	potential = { ai = no }
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
 	tooltip = gecko_menu_edict_14_tt
@@ -1215,14 +1689,124 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_14_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_8
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_8_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_9
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_9_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_10
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_10_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_11
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_11_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_11 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_12
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_12 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_12_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_12 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_13
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_13 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_13_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_13 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_14_slot_14
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_14 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 14 } } }
+	tooltip = gecko_menu_edict_14_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 14 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_14_slot_14_modifier_icon
+	potential = { ai = no current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery gecko_menu_edict_prefix_14_14 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_14_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 14 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 14 } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery }
 }
 
 custom_button = {
 	name = gecko_menu_edict_14_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = feudal_taxes_state_edict } set_country_flag = sea_state_edicts_decision_feudal_taxes_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_14_all_tt
@@ -1230,7 +1814,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_14_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_discovery custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = feudal_taxes_state_edict } set_country_flag = sea_state_edicts_decision_feudal_taxes_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_14_empty_tt
@@ -1248,7 +1832,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_15
-	potential = { ai = no }
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
 	tooltip = gecko_menu_edict_15_tt
@@ -1256,14 +1840,139 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_15_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_8
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_8_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_9
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_9_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_10
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_10_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_11
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_11_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_11 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_12
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_12 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_12_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_12 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_13
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_13 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_13_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_13 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_14
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_14 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_14_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_14 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_15_slot_15
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_15 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 15 } } }
+	tooltip = gecko_menu_edict_15_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 15 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_15_slot_15_modifier_icon
+	potential = { ai = no current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation gecko_menu_edict_prefix_15_15 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_15_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 15 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 15 } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation }
 }
 
 custom_button = {
 	name = gecko_menu_edict_15_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = religious_tolerance_state_edict } set_country_flag = sea_state_edicts_decision_religious_tolerance_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_15_all_tt
@@ -1271,7 +1980,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_15_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_reformation custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = religious_tolerance_state_edict } set_country_flag = sea_state_edicts_decision_religious_tolerance_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_15_empty_tt
@@ -1289,7 +1998,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_16
-	potential = { ai = no }
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
 	tooltip = gecko_menu_edict_16_tt
@@ -1297,14 +2006,154 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_16_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_8
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_8_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_9
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_9_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_10
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_10_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_11
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_11_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_11 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_12
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_12 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_12_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_12 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_13
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_13 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_13_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_13 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_14
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_14 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_14_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_14 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_15
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_15 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_15_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_15 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_16_slot_16
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_16 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 16 } } }
+	tooltip = gecko_menu_edict_16_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 16 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_16_slot_16_modifier_icon
+	potential = { ai = no current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism gecko_menu_edict_prefix_16_16 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_16_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 16 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 16 } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism }
 }
 
 custom_button = {
 	name = gecko_menu_edict_16_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = state_integration_state_edict } set_country_flag = sea_state_edicts_decision_state_integration_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_16_all_tt
@@ -1312,7 +2161,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_16_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_absolutism custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = state_integration_state_edict } set_country_flag = sea_state_edicts_decision_state_integration_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_16_empty_tt
@@ -1330,7 +2179,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edict_17
-	potential = { ai = no }
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_7 = yes }
 	trigger = { always = yes }
 	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
 	tooltip = gecko_menu_edict_17_tt
@@ -1338,14 +2187,169 @@ custom_button = {
 	frame = { number = 1 trigger = { always = yes } }
 }
 
+custom_icon = {
+	name = gecko_menu_edict_17_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_7 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_8
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_8 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_8_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_8 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_9
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_9 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_9_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_9 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_10
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_10 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_10_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_10 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_11
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_11 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_11_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_11 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_12
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_12 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_12_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_12 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_13
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_13 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_13_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_13 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_14
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_14 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_14_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_14 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_15
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_15 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_15_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_15 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_16
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_16 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_16_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_16 = yes }
+}
+
+custom_button = {
+	name = gecko_menu_edict_17_slot_17
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_17 = yes }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_menu_edict value = 17 } } }
+	tooltip = gecko_menu_edict_17_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_menu_edict value = 17 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_icon = {
+	name = gecko_menu_edict_17_slot_17_modifier_icon
+	potential = { ai = no current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions gecko_menu_edict_prefix_17_17 = yes }
+}
+
 custom_window = {
 	name = gecko_menu_edict_17_details
-	potential = { is_variable_equal = { which = gecko_menu_edict value = 17 } }
+	potential = { is_variable_equal = { which = gecko_menu_edict value = 17 } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions }
 }
 
 custom_button = {
 	name = gecko_menu_edict_17_all
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes } set_state_edict = urbanization_state_edict } set_country_flag = sea_state_edicts_decision_urbanization_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_17_all_tt
@@ -1353,7 +2357,7 @@ custom_button = {
 
 custom_button = {
 	name = gecko_menu_edict_17_empty
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions has_government_attribute = unlock_special_state_edicts has_government_attribute = unlock_special_state_edicts current_age = age_of_revolutions custom_trigger_tooltip = { tooltip = sea_remove_state_edicts_flag_tt OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } } }
 	effect = { hidden_effect = { every_owned_province = { limit = { is_state = yes NOT = { has_state_edict_enabled = yes } } set_state_edict = urbanization_state_edict } set_country_flag = sea_state_edicts_decision_urbanization_state_edict_flag clr_country_flag = sea_state_edicts_flag } }
 	tooltip = gecko_menu_edict_17_empty_tt
@@ -1371,7 +2375,7 @@ custom_text_box = {
 
 custom_button = {
 	name = gecko_menu_edicts_clear
-	potential = { ai = no NOT = { has_country_flag = gecko_menu_edicts_effects_open } }
+	potential = { ai = no }
 	trigger = { ai = no NOT = { has_country_flag = sea_state_edicts_flag } OR = { NOT = { has_country_flag = sea_state_edicts_clear_flag } had_country_flag = { flag = sea_state_edicts_clear_flag days = 33 } } }
 	effect = { hidden_effect = { set_country_flag = sea_state_edicts_clear_flag clr_country_flag = sea_state_edicts_flag custom_tooltip = sealand_events.28.00.tt } }
 	tooltip = gecko_menu_edicts_clear_tt

@@ -739,7 +739,7 @@ BRA_missions_4 = {
 				}
 				multiply_variable = {
 					which = BRA_SAX_Army
-					value = 1.5
+					value = 1
 				}
 				check_variable = {
 					which = BRA_BRA_Army
@@ -1014,8 +1014,8 @@ BRA_missions_5 = {
 		}
 		trigger = {
 			OR = {
-				num_of_royal_marriages = 4
-				num_of_allies = 4
+				num_of_royal_marriages = 2
+				num_of_allies = 2
 			}
 		}
 		effect = {
@@ -1053,37 +1053,14 @@ BRA_missions_5 = {
 			}
 		}
 		effect = {
-			custom_tooltip = BRA_if_completed_by_conquest
-			tooltip = {
-				add_prestige_or_monarch_power = { amount = 15 }
-				add_papal_influence = 40
-			}
-			custom_tooltip = BRA_rewards_when_alliance
-			tooltip = { 
-				country_event = { id = ME_Prussia_Events.1 }
-			}
-			custom_tooltip = BRA_MAGDEBURG_VASSALIZATION
-			hidden_effect = {
-				if = {
-					limit = {
-						52 = { owned_by = ROOT }
-					}
-					add_prestige_or_monarch_power = { amount = 15 }
-					add_papal_influence = 40
+			add_prestige_or_monarch_power = { amount = 15 }
+			add_papal_influence = 40
+			if={
+				limit= {
+					exists = MAG
 				}
-				else = {
-					country_event = { id = ME_Prussia_Events.1 }
-					set_country_flag = BRA_recipient
-				}
+				vassalize = MAG
 			}
-			
-			#Tooltip for the event allowing for vassalization
-			custom_tooltip = BRA_ROOT
-			custom_tooltip = BRA_von_Hohenzollern_ROOT
-			custom_tooltip = BRA_religion_ROOT
-			custom_tooltip = BRA_MAG
-			custom_tooltip = BRA_von_Hohenzollern_MAG
-			custom_tooltip = BRA_religion_MAG
 		}
 	}
 	BRA_irontooth = {
@@ -1155,6 +1132,19 @@ BRA_missions_5 = {
 			}
 		}
 		effect = {
+			set_country_flag = renovate_berlin_flag
+			country_event = { id = flavor_brapru.20 }
+			
+			if = { 
+				limit = { has_dlc = "Domination" }
+				50 = { 
+					add_province_modifier = {
+						name = pru_palace_of_berlin_modifier
+						duration = -1 
+						desc = until_its_sieged_desc
+					}
+				}
+			}
 			add_country_modifier = {
 				name = BRA_new_lords_of_brandenburg
 				duration = 9125

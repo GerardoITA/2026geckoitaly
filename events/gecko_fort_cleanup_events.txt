@@ -1,0 +1,23 @@
+namespace = gecko_fort_cleanup
+
+# One global event during January. No bootstrap, delayed events or self-calls.
+province_event = {
+	id = gecko_fort_cleanup.1
+	title = gecko_fort_cleanup_title
+	desc = gecko_fort_cleanup_desc
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { is_month = 1 }
+		NOT = { has_global_flag = gecko_fort_cleanup_done_this_january }
+	}
+
+	immediate = {
+		set_global_flag = gecko_fort_cleanup_done_this_january
+		every_country = { gecko_fort_cleanup_country = yes }
+	}
+
+	option = { name = OK }
+}

@@ -48,26 +48,6 @@ country_event = {
 			hidden = yes
 		}
 	}
-	option = { #Promote colonial expansion
-		trigger = {
-			NOT = { has_country_modifier = free_colonist }
-			OR = {
-				AND = {
-					is_colonial_nation = yes 
-					dip_tech = 10
-				}
-				AND = {
-					is_colonial_nation = no
-					dip_tech = 6
-				}
-			}	
-		}
-		name = gecko_court.1.f
-		add_country_modifier = {
-			name = "free_colonist"
-			duration = -1
-		}
-	}
 	option = { #Back
 		name = gecko_court.1.g
 	}

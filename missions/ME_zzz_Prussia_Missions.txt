@@ -221,11 +221,9 @@ PRU_missions_1_2 = {
 				OR = {
 					is_emperor = yes
 					NOT = { hre_size = 1 }
-					emperor = {
-						custom_trigger_tooltip = {
-							tooltip = PRU_po_enforced
-							has_country_flag = PRU_po_enforced_flag
-						}
+					has_won_war_against = {
+						who = emperor
+						max_years_since = 10
 					}
 				}
 			}
@@ -233,11 +231,9 @@ PRU_missions_1_2 = {
 				OR = {
 					is_emperor = yes
 					NOT = { hre_size = 1 }
-					event_target:ME_PRU_EMPEROR_TARGET = {
-						custom_trigger_tooltip = {
-							tooltip = PRU_po_enforced
-							has_country_flag = PRU_po_enforced_flag
-						}
+					has_won_war_against = {
+						who = event_target:ME_PRU_EMPEROR_TARGET
+						max_years_since = 10
 					}
 				}
 			}
@@ -368,6 +364,21 @@ PRU_missions_2 = {
 		}
 		trigger = {
 			silesia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			lusatia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			opole_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			breg_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -1196,20 +1207,16 @@ PRU_missions_3 = {
 				limit = {
 					NOT = { has_country_flag = PRU_TARGET_INITIALIZED }
 				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = PRU_po_enforced
-						has_country_flag = PRU_po_enforced_flag
+				has_won_war_against = {
+						who = FRA
+						max_years_since = 10
 					}
-				}
 			}
 			else = {
-				event_target:ME_PRU_FRANCE_TARGET = {
-					custom_trigger_tooltip = {
-						tooltip = PRU_po_enforced
-						has_country_flag = PRU_po_enforced_flag
+				has_won_war_against = {
+						who = event_target:ME_PRU_FRANCE_TARGET
+						max_years_since = 10
 					}
-				}
 			}
 		}
 		effect = {

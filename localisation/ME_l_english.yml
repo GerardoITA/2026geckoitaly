@@ -465,6 +465,7 @@
  PRU_highlighted_provs: "Every owned province with either §YPrussian§!, §YSaxon§! or §YPomeranian§! culture gets:"
  PRU_has_20_buildings: "Has at least §Y20§! buildings in the §YEast Prussia§! and §YWest Prussia§! areas summed"
  PRU_OUR_TOLERANCE_OF_REF: "Our tolerance of the §YReformed§! faith is at least §Y2§!."
+ POM_FOR_EVERY_STAB: "For every §Y1§! Stability, we will get §G25%§! more §YChurch Power§! for a maximum of §G75§!."
  PRU_OUR_TOLERANCE_OF_PROT: "Our tolerance of the §YProtestant§! faith is at least §Y2§!."
  PRU_picked_option_in_toleranzedikt: "Picked the option '§YForce the Edict!§!' in the '§YDer Toleranzedikt§!' event." 
  PRU_EVERY_RULER: "Each consecutive Prussian Ruler will be able to crown themselves king in the Schlosskirche through the '§YCoronation of a Prussian Ruler§!'."

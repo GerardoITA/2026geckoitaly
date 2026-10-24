@@ -725,95 +725,81 @@ country_event = {
 		
 		ai_chance = { factor = 100 }
 		
-		2966 = { #Glogow 9 dev
-			add_base_tax = 1
-			add_base_production = 1
-			add_province_modifier = {
-				name = PRU_colonization
-				duration = -1
-			}
-			add_devastation = -25
-		}
-		4238 = { #Legnica 10 dev
-			add_base_tax = 1
-			add_base_production = 1
-			add_province_modifier = {
-				name = PRU_colonization
-				duration = -1
-			}
-			add_devastation = -25
-		}
-		264 = { #Wroclaw 13 dev
-			add_base_manpower = 1
-			add_province_modifier = {
-				name = PRU_colonization
-				duration = -1
-			}
-			add_devastation = -25
-		}
-		4723 = { #Opole 8 dev
+		silesia_area = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 			add_province_modifier = {
 				name = PRU_colonization
 				duration = -1
+				}
 			}
-			add_devastation = -25
-		}
-		263 = { #Racibórz 8 dev
+		lusatia_area = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 			add_province_modifier = {
 				name = PRU_colonization
 				duration = -1
+				}
 			}
-			add_devastation = -25
+		opole_area = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+				}
+			}
+		breg_area = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = PRU_colonization
+				duration = -1
+				}
+			}
 		}
-	}
 	option = {
 		name = ME_Prussia_Events.17.b
 		
 		ai_chance = { factor = 100 }
 		
 		add_years_of_income = -1
-		2966 = { #Glogow 9 dev
-			add_base_tax = 1
-			add_base_production = 1
-			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
-		}
-		4238 = { #Legnica 10 dev
-			add_base_tax = 1
-			add_base_production = 1
-			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
-		}
-		264 = { #Wroclaw 13 dev
-			add_base_manpower = 1
-			change_religion = ROOT
-			change_culture = prussian
-			add_devastation = -25
-		}
-		4723 = { #Opole 8 dev
+		
+		silesia_area = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 			change_religion = ROOT
 			change_culture = prussian
 			add_devastation = -25
-		}
-		263 = { #Racibórz 8 dev
+			}
+		lusatia_area = {
 			add_base_tax = 1
 			add_base_production = 1
 			add_base_manpower = 1
 			change_religion = ROOT
 			change_culture = prussian
 			add_devastation = -25
-		}
+			}
+		opole_area = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = prussian
+			add_devastation = -25
+			}
+		breg_area = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_religion = ROOT
+			change_culture = prussian
+			add_devastation = -25
 	}
 }
 country_event = {
@@ -1058,7 +1044,12 @@ country_event = {
 	title = ME_Prussia_Events.25.t #HRE Influence
 	desc = {
 		trigger = {
-			has_country_flag = PRU_po_enforced_flag
+			PRU={
+				has_won_war_against = {
+						who = PREV
+						max_years_since = 10
+					}
+			}
 		}
 		desc = "ME_Prussia_Events.25.d.1"
 	}

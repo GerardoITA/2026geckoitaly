@@ -285,35 +285,13 @@ TUR = {
 		NOT = {
 			is_year = 1465
 		}
-		OR = {
-			AND = {
-				is_in_war = {
-					attackers = HUN
-				}
-				is_in_war = {
-					defenders = MAM
-				}
-				MAM = {
-					ai = no
-				}
-				HUN = {
-					ai = no
-				}
-			}
-			AND = {
-				is_in_war = {
-					attackers = HUN
-				}
-				is_in_war = {
-					attackers = MAM
-				}
-				MAM = {
-					ai = no
-				}
-				HUN = {
-					ai = no
-				}
-			}
+		war_with = MAM
+		war_with = HUN
+		MAM = {
+			ai = no
+		}
+		HUN = {
+			ai = no
 		}
 	}
 	mercenary_manpower = 1

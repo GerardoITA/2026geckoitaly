@@ -1663,7 +1663,7 @@ country_event = {
 	}
 	
 	immediate = {
-		clr_province_flag = PRU_vassal_dev_cost
+		clr_country_flag = PRU_vassal_dev_cost
 		set_country_flag = PRU_vassal_dev_cost
 	}
 	option = {

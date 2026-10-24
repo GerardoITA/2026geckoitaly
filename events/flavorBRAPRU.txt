@@ -220,7 +220,7 @@ country_event = {
 			has_country_flag = brapru_army_reforms_2
 			AND = {
 				NOT = { has_mission = teu_pru_army_reforms }
-				NOT = { has_mission = emp_brapru_army_reforms_2 }
+				NOT = { has_mission = PRU_standing_army }
 				tag = PRU
 				is_year = 1700
 			}
@@ -2179,7 +2179,6 @@ country_event = {
 		hidden_effect = {
 			clr_country_flag = accepted_ANS_union_flag
 			clr_country_flag = declined_ANS_union_flag
-			complete_mission = emp_brapru_franconian_conquest
 		}
 	}
 	
@@ -2188,7 +2187,6 @@ country_event = {
 		
 		clr_country_flag = accepted_ANS_union_flag
 		clr_country_flag = declined_ANS_union_flag
-		complete_mission = emp_brapru_franconian_conquest
 		
 		custom_tooltip = release_franconia_tt
 		hidden_effect = {
@@ -2402,7 +2400,7 @@ country_event = {
 		}
 		if = {
 			limit = { has_dlc = "Emperor" }
-			mission_completed = emp_brapru_renovate_berlin
+			has_country_flag = renovate_berlin_flag
 		}
 	}
 	

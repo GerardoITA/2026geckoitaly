@@ -4,10 +4,10 @@ intscore_score_single_province = {
 		limit = {
 			$PROVINCE$ = {
 				OR = {
-					owned_by = ROOT
+					owned_by = event_target:intscore_score_recipient
 
 					owner = {
-						is_subject_of = ROOT
+						is_subject_of = event_target:intscore_score_recipient
 					}
 				}
 			}
@@ -41,6 +41,8 @@ intscore_score_single_province = {
 }
 
 intscore_score_valid_provinces = {
+	# The recipient is explicit: ROOT may be the global coordinator province.
+	save_event_target_as = intscore_score_recipient
 
 	################################################# EUROPA
 		################### ITALY

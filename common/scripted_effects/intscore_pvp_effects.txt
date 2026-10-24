@@ -127,6 +127,11 @@ intscore_apply_pvp_loss = {
 		}
 	}
 
+	if = {
+		limit = { check_variable = { which = intscore_pvp_loss value = 0.001 } }
+		intscore_record_score_change = yes
+	}
+
 	# Ripulisce la variabile temporanea del perdente.
 	set_variable = {
 		which = intscore_pvp_loss

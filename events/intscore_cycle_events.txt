@@ -1,0 +1,72 @@
+namespace = intscore
+
+# The first native January monthly pulse runs the complete annual transaction.
+# The persisted global guard prevents duplicate awards after save/reload.
+province_event = {
+	id = intscore.1063
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { is_month = 1 }
+		NOT = { has_global_flag = intscore_year_scored }
+	}
+	immediate = {
+		# Recheck inside the effect: explicit event calls must also be idempotent.
+		if = {
+			limit = {
+				NOT = { is_month = 1 }
+				NOT = { has_global_flag = intscore_year_scored }
+			}
+			set_global_flag = intscore_year_scored
+			change_variable = { which = intscore_score_order value = 1 }
+			every_country = {
+				limit = {
+					OR = {
+						AND = { was_player = yes is_colonial_nation = no }
+						has_country_flag = intscore_participant
+					}
+				}
+				if = {
+					limit = { was_player = yes is_colonial_nation = no }
+					intscore_award_annual_country = yes
+				}
+				else = {
+					# An ineligible former participant cannot hold up any other country.
+					set_variable = { which = YearlyIntScore value = 0 }
+				}
+			}
+			intscore_build_ranking = yes
+			intscore_finish_ranking = yes
+		}
+	}
+	option = { name = score_option_a }
+}
+
+# Peace, formation and repair refreshes never award annual points.
+province_event = {
+	id = intscore.1064
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		intscore_build_ranking = yes
+		intscore_finish_ranking = yes
+	}
+	option = { name = score_option_a }
+}
+
+country_event = {
+	id = intscore.1062
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { gecko_intscore_gui_refresh = yes }
+	option = { name = score_option_a }
+}

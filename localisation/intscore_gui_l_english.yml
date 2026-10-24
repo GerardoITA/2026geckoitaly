@@ -88,7 +88,7 @@
  gecko_intscore_rules_title:0 "§YVictory Provinces§!"
  gecko_intscore_rules:0 "Direct and subject land\nStandard §G1§! / Important §G2§!\n\nAnnual multiplier\n1444 ×1   1500 ×2\n1600 ×4   1700 ×6"
  gecko_intscore_rewards:0 "§YRanking rewards§!\nTop 3 + Contenders (4-6)\nHover shields for details"
- gecko_intscore_footer:0 "Annual scoring  •  Close and reopen this window to update the standings."
+ gecko_intscore_footer:0 "Annual scoring  •  Standings refresh automatically."
  gecko_intscore_toggle:0 "Intscore Ranking"
 
  gecko_intscore_score_label:0 "Total IntScore"

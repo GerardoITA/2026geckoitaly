@@ -36,7 +36,7 @@ namespace = intscore
 #	}
 #}
 ###################################################
-##SETS INTSCORE TO 0 AT THE BEGINNING OF THE GAME##
+##INITIALIZES MISSING SCORE STATE WITHOUT ERASING POINTS##
 ###################################################
 country_event = {
 	 id = intscore.0
@@ -46,14 +46,7 @@ picture = COURT_eventPicture
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
-		set_variable = {
-			which = IntScore
-			value = 0
-		}
-		set_variable = {
-			which = YearlyIntScore
-			value = 0
-		}
+		intscore_initialize_country = yes
 	}
 	
 	option = {
@@ -167,59 +160,11 @@ country_event = {
 	desc = intscore.999.d
 	picture = COURT_eventPicture
 	hidden = yes
+	is_triggered_only = yes
 
-	trigger = {
-		was_player = yes
-		is_colonial_nation = no
-
-		NOT = {
-			has_country_flag = score_event_fired
-		}
-
-		is_month = 0
-		NOT = {
-			is_month = 1
-		}
-
-		is_year = 1444
-		NOT = {
-			is_year = 1500
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		# Calcola i punti delle province valide.
-		#
-		# Ogni provincia assegna:
-		# BASE della provincia × MULTIPLIER dell'epoca.
-		#
-		# Per il periodo 1444-1499 il moltiplicatore è 1.
-
-		set_variable = {
-			which = YearlyIntScore
-			value = 0
-		}
-
-		intscore_score_valid_provinces = {
-			MULTIPLIER = 1
-		}
-
-		set_country_flag = intscore_participant
-		set_country_flag = score_event_fired
-		clr_global_flag = intscore_ranking_updated
-	}
-
-	option = {
-		name = score_option_a
-
-		ai_chance = {
-			factor = 100
-		}
-	}
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
 }
 
 country_event = {
@@ -228,55 +173,11 @@ country_event = {
 	desc = intscore.1000.d
 	picture = COURT_eventPicture
 	hidden = yes
+	is_triggered_only = yes
 
-	trigger = {
-		was_player = yes
-		is_colonial_nation = no
-
-		NOT = {
-			has_country_flag = score_event_fired
-		}
-
-		is_month = 0
-		NOT = {
-			is_month = 1
-		}
-
-		is_year = 1500
-		NOT = {
-			is_year = 1600
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		# 1500-1599:
-		# valore base della provincia × 2
-
-		set_variable = {
-			which = YearlyIntScore
-			value = 0
-		}
-
-		intscore_score_valid_provinces = {
-			MULTIPLIER = 2
-		}
-
-		set_country_flag = intscore_participant
-		set_country_flag = score_event_fired
-		clr_global_flag = intscore_ranking_updated
-	}
-
-	option = {
-		name = score_option_a
-
-		ai_chance = {
-			factor = 100
-		}
-	}
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
 }
 
 country_event = {
@@ -285,55 +186,11 @@ country_event = {
 	desc = intscore.1001.d
 	picture = COURT_eventPicture
 	hidden = yes
+	is_triggered_only = yes
 
-	trigger = {
-		was_player = yes
-		is_colonial_nation = no
-
-		NOT = {
-			has_country_flag = score_event_fired
-		}
-
-		is_month = 0
-		NOT = {
-			is_month = 1
-		}
-
-		is_year = 1600
-		NOT = {
-			is_year = 1700
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		# 1600-1699:
-		# valore base della provincia × 4
-
-		set_variable = {
-			which = YearlyIntScore
-			value = 0
-		}
-
-		intscore_score_valid_provinces = {
-			MULTIPLIER = 4
-		}
-
-		set_country_flag = intscore_participant
-		set_country_flag = score_event_fired
-		clr_global_flag = intscore_ranking_updated
-	}
-
-	option = {
-		name = score_option_a
-
-		ai_chance = {
-			factor = 100
-		}
-	}
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
 }
 
 country_event = {
@@ -342,52 +199,11 @@ country_event = {
 	desc = intscore.1002.d
 	picture = COURT_eventPicture
 	hidden = yes
+	is_triggered_only = yes
 
-	trigger = {
-		was_player = yes
-		is_colonial_nation = no
-
-		NOT = {
-			has_country_flag = score_event_fired
-		}
-
-		is_month = 0
-		NOT = {
-			is_month = 1
-		}
-
-		is_year = 1700
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		# Dal 1700:
-		# valore base della provincia × 6
-
-		set_variable = {
-			which = YearlyIntScore
-			value = 0
-		}
-
-		intscore_score_valid_provinces = {
-			MULTIPLIER = 6
-		}
-
-		set_country_flag = intscore_participant
-		set_country_flag = score_event_fired
-		clr_global_flag = intscore_ranking_updated
-	}
-
-	option = {
-		name = score_option_a
-
-		ai_chance = {
-			factor = 100
-		}
-	}
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
 }
 
 
@@ -397,7 +213,7 @@ country_event = {
 ###########################################
 
 
-##UNUSED, DEPRECATED BY 1060
+##UNUSED: the native annual cycle no longer needs per-country reset flags
 country_event = {
 	id = intscore.1050
 	title = intscore_ranking_title
@@ -523,59 +339,10 @@ country_event = {
 	desc = intscore.1060.d
 	picture = COURT_eventPicture
 	hidden = yes
+	is_triggered_only = yes
 
-	trigger = {
-		has_country_flag = intscore_participant
-		has_country_flag = score_event_fired
-
-		# Esclusivamente febbraio
-		is_month = 1
-		NOT = {
-			is_month = 2
-		}
-
-		NOT = {
-			has_global_flag = intscore_ranking_updated
-		}
-
-		NOT = {
-			any_country = {
-				has_country_flag = intscore_participant
-
-				NOT = {
-					has_country_flag = score_event_fired
-				}
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	immediate = {
-		set_global_flag = intscore_ranking_updated
-
-		intscore_build_ranking = yes
-		intscore_assign_place_flags = yes
-
-		clr_country_flag = score_event_fired
-
-		every_country = {
-			limit = {
-				has_country_flag = intscore_participant
-			}
-
-			clr_country_flag = score_event_fired
-		}
-	}
-
-	option = {
-		name = score_option_a
-		ai_chance = {
-			factor = 100
-		}
-	}
+	immediate = { 1 = { province_event = { id = intscore.1064 } } }
+	option = { name = score_option_a }
 }
 
 
@@ -588,15 +355,6 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 
-	immediate = {
-		intscore_build_ranking = yes
-		intscore_assign_place_flags = yes
-	}
-
-	option = {
-		name = score_option_a
-		ai_chance = {
-			factor = 100
-		}
-	}
+	immediate = { 1 = { province_event = { id = intscore.1064 } } }
+	option = { name = score_option_a }
 }

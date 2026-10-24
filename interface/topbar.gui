@@ -8204,6 +8204,18 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_ties"
+					position = { x = 240 y = 530 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_intscore_docs_rewards_ties"
+					maxWidth = 668
+					maxHeight = 44
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
 					name = "gecko_intscore_docs_rewards_page_number"
 					position = { x = 240 y = 621 }
 					font = "vic_18"

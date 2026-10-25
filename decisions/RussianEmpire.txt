@@ -15,7 +15,15 @@ country_decisions = {
 				region = ural_region
 				region = crimea_region
 				region = caucasia_region
-				region = central_asia_region
+				area = nogai_area
+				area = kazakhstan_area
+				area = balchasj_area
+				area = ferghana_area
+				area = jetysuu_area
+				area = arys_area
+				area = lower_yik_area
+				area = syr_darya_area
+				area = kyzylkum_area
 				region = west_siberia_region
 				region = east_siberia_region
 				area = tannu_uriankhai_area
@@ -88,7 +96,71 @@ country_decisions = {
 					}
 				}
 
-				central_asia_region = {
+				nogai_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				kazakhstan_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				balchasj_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				ferghana_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				jetysuu_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				arys_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				lower_yik_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				syr_darya_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				kyzylkum_area = {
 					type = all
 					OR = {
 						owned_by = ROOT

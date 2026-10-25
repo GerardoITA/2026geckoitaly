@@ -1,7 +1,7 @@
 ﻿l_english:
  gecko_proclaim_russian_empire_title:0 "Proclaim the Russian Empire"
  gecko_proclaim_russian_empire_desc:0 "Let the name of our realm reflect the extent of Russian power and proclaim the Russian Empire."
- gecko_russian_empire_territory_tt:0 "All provinces in the following regions and areas must be owned by us or our subjects:\n§YRegions:§! Ruthenia, Russia, Ural, Pontic Steppe\nCaucasia, Central Asia, West Siberia, East Siberia\n§YSiberian area:§! Tannu Uriankhai\n§YCentral Asian areas:§! Khiva, Transoxiana, Samarkand, Khuttalan, Merv, Transcaspia\n§YDanubian area:§! Moldavia\n§YBaltic areas:§! Samogitia, Aukstaitija, Curonia, Livonia, Estonia\n§YFinnish areas:§! Nyland, Inner Finland, Finland, Ostrobothnia\n§YPolish area:§! Mazovia"
+ gecko_russian_empire_territory_tt:0 "All provinces in the following regions and areas must be owned by us or our subjects:\n§YRegions:§! Ruthenia, Russia, Ural, Pontic Steppe\nCaucasia, West Siberia, East Siberia\n§YSiberian area:§! Tannu Uriankhai\n§YCentral Asian areas:§! Khiva, Transoxiana, Samarkand, Khuttalan, Merv, Transcaspia\nNogai, Kazakhstan, Balchash, Ferghana, Jetysuu\nArys, Lower Yik, Syr Darya, Kyzylkum\n§YDanubian area:§! Moldavia\n§YBaltic areas:§! Samogitia, Aukstaitija, Curonia, Livonia, Estonia\n§YFinnish areas:§! Nyland, Inner Finland, Finland, Ostrobothnia\n§YPolish area:§! Mazovia"
  GECKO_RUSSIAN_EMPIRE:0 "Russian Empire"
  GECKO_RUSSIAN_EMPIRE_ADJ:0 "Russian"
  gecko_proclaim_british_empire_title:0 "Proclaim the British Empire"

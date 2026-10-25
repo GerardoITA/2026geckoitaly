@@ -16365,20 +16365,8 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
-					name = "gecko_menu_page_47_body_0_line_2"
-					position = { x = 240 y = 281 }
-					font = "vic_18"
-					borderSize = { x = 0 y = 0 }
-					text = "gecko_menu_page_47_body_0_line_2"
-					maxWidth = 668
-					maxHeight = 22
-					fixedsize = yes
-					format = left
-					alwaystransparent = yes
-				}
-				instantTextBoxType = {
 					name = "gecko_menu_page_47_heading_1"
-					position = { x = 240 y = 313 }
+					position = { x = 240 y = 291 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_heading_1"
@@ -16390,7 +16378,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_47_body_1"
-					position = { x = 240 y = 339 }
+					position = { x = 240 y = 317 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_body_1"
@@ -16402,7 +16390,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_47_body_1_line_1"
-					position = { x = 240 y = 361 }
+					position = { x = 240 y = 339 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_body_1_line_1"
@@ -16414,10 +16402,70 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_47_body_1_line_2"
-					position = { x = 240 y = 383 }
+					position = { x = 240 y = 361 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_body_1_line_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_1_line_3"
+					position = { x = 240 y = 383 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_1_line_3"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_heading_2"
+					position = { x = 240 y = 415 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_heading_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_2"
+					position = { x = 240 y = 441 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_2_line_1"
+					position = { x = 240 y = 463 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_2_line_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_2_line_2"
+					position = { x = 240 y = 485 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_2_line_2"
 					maxWidth = 668
 					maxHeight = 22
 					fixedsize = yes

@@ -1,16 +1,7 @@
 organised_through_bishops_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = { 
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = organised_through_bishops_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
-		build_cost = -0.05
+		build_cost = -0.1
 	}
 	ai_will_do = {
 		factor = 15
@@ -23,17 +14,9 @@ organised_through_bishops_aspect = {
 
 priests_may_marry_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = priests_may_marry_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		technology_cost = -0.05
+		tolerance_own = 1
 	}
 	ai_will_do = {
 		factor = 10
@@ -51,17 +34,9 @@ priests_may_marry_aspect = {
 
 adult_baptism_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = adult_baptism_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = { 
 		manpower_recovery_speed = 0.15
+		manpower_in_true_faith_provinces = 0.125
 	}
 	ai_will_do = {
 		factor = 12
@@ -82,17 +57,9 @@ adult_baptism_aspect = {
 
 holy_sacraments_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = holy_sacraments_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = { 
 		discipline = 0.025
+		morale_damage = 0.05
 	}
 	ai_will_do = {
 		factor = 12
@@ -105,18 +72,10 @@ holy_sacraments_aspect = {
 
 saints_accept_prayers_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = saints_accept_prayers_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = { 
 		land_morale = 0.05
 		naval_morale = 0.05
+		army_tradition_from_battle = 0.25
 	}
 	ai_will_do = {
 		factor = 12
@@ -129,17 +88,9 @@ saints_accept_prayers_aspect = {
 
 icons_images_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = icons_images_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = { 
 		prestige = 0.5
+		same_culture_advisor_cost = -0.05
 	}
 	ai_will_do = {
 		factor = 12
@@ -152,21 +103,13 @@ icons_images_aspect = {
 
 legalised_divorces_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = legalised_divorces_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		legitimacy = 0.5
 		devotion = 0.5
 		horde_unity = 0.5
 		meritocracy = 0.5
 		republican_tradition = 0.2
+		reform_progress_growth = 0.2
 	}
 	ai_will_do = {
 		factor = 6
@@ -191,17 +134,9 @@ legalised_divorces_aspect = {
 
 heretics_deported_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = heretics_deported_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		global_colonial_growth = 15
+		colonist_placement_chance = 0.05
 	}
 	ai_will_do = {
 		factor = 10
@@ -218,17 +153,9 @@ heretics_deported_aspect = {
 
 parish_registers_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = parish_registers_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		free_adm_policy = 1 
+		yearly_corruption = -0.25
 	}
 	ai_will_do = {
 		factor = 5
@@ -237,17 +164,9 @@ parish_registers_aspect = {
 
 individual_creeds_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = individual_creeds_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = { 
 		idea_cost = -0.05
+		advisor_pool = 2
 	}
 	ai_will_do = {
 		factor = 15
@@ -256,17 +175,9 @@ individual_creeds_aspect = {
 
 allow_usury_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = allow_usury_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = { 
 		production_efficiency = 0.1
+		interest = -0.15
 	}
 	ai_will_do = {
 		factor = 17
@@ -283,17 +194,9 @@ allow_usury_aspect = {
 
 translated_bibles_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = translated_bibles_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		global_unrest = -3
+		global_trade_goods_size_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 10
@@ -310,17 +213,9 @@ translated_bibles_aspect = {
 
 justified_religious_war_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = justified_religious_war_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		ae_impact = -0.05
+		warscore_cost_vs_other_religion = -0.1
 	}
 	ai_will_do = {
 		factor = 1
@@ -333,17 +228,9 @@ justified_religious_war_aspect = {
 
 war_preaches_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = war_preaches_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		war_exhaustion = -0.03
+		war_taxes_cost_modifier = -1
 	}
 	ai_will_do = {
 		factor = 2
@@ -356,17 +243,9 @@ war_preaches_aspect = {
 
 head_of_the_church_aspect = {
 	cost = 100
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = head_of_the_church_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		global_autonomy = -0.025
+		yearly_absolutism = 1
 	}
 	ai_will_do = {
 		factor = 2
@@ -384,17 +263,9 @@ anglican_aspect = {
 			church_aspect = anglican_aspect
 		}
 	}
-	effect = {
-		hidden_effect = {
-			clr_protestant_aspects_buffs = yes
-			add_country_modifier = {
-				name = anglican_aspect_aspect_modifier
-				duration = 3650
-			}
-		}
-	}
 	modifier = {
 		global_autonomy = -0.025
+		tolerance_heretic = 1
 	}
 	ai_will_do = {
 		factor = 2

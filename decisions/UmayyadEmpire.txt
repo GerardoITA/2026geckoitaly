@@ -17,6 +17,7 @@ country_decisions = {
 				region = maghreb_region
 				area = mashhad_area
 				area = sistan_area
+				area = upper_andalucia_area
 			}
 			NOT = {
 				OR = {
@@ -78,6 +79,14 @@ country_decisions = {
 				}
 
 				sistan_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				upper_andalucia_area = {
 					type = all
 					OR = {
 						owned_by = ROOT

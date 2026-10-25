@@ -20,9 +20,9 @@ country_decisions = {
 				area = upper_andalucia_area
 			}
 			NOT = {
-				OR = {
+				AND = {
 					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
+					is_core = ROOT
 				}
 			}
 		}
@@ -32,65 +32,65 @@ country_decisions = {
 				tooltip = gecko_umayyad_empire_territory_tt
 				arabia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				mashriq_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				persia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				egypt_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				maghreb_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				mashhad_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				sistan_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				upper_andalucia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 			}

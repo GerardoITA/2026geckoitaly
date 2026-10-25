@@ -144,27 +144,27 @@ country_decisions = {
 		allow = {
 			wallonia_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			brabant_area= {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			flanders_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			north_brabant_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			holland_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			france_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 		effect = {

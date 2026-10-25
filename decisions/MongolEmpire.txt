@@ -23,7 +23,7 @@ country_decisions = {
 						region = central_asia_region
 						region = crimea_region
 					}
-					NOT = { owned_by = ROOT }
+					NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 				}
 				
 			}
@@ -36,11 +36,11 @@ country_decisions = {
 			}
 			central_asia_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			crimea_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			#khorasan_region	= {
 			#	type = all

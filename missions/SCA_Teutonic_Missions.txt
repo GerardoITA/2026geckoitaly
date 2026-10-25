@@ -1305,6 +1305,7 @@ teu_pru_dummy_hre_mission_slot_1 = {
 						}
 						else = {
 							num_of_owned_provinces_with = {
+								is_core = ROOT
 								OR = {
 									region = north_german_region
 									region = south_german_region
@@ -1320,6 +1321,7 @@ teu_pru_dummy_hre_mission_slot_1 = {
 						always = no
 					}
 					num_of_owned_provinces_with = {
+						is_core = ROOT
 						custom_trigger_tooltip = {
 							tooltip = teu_pru_an_empire_of_blood_and_iron_tt
 							OR = {
@@ -2374,7 +2376,7 @@ teu_pru_diplomatic_hre_mission_slot = {
 					region = north_german_region
 					region = south_german_region
 				}
-				NOT = { owned_by = ROOT }
+				NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 			}
 			else = {
 				owner = {
@@ -2443,6 +2445,7 @@ teu_pru_diplomatic_hre_mission_slot = {
 			}
 			else = {
 				num_of_owned_provinces_with = {
+					is_core = ROOT
 					OR = {
 						region = north_german_region
 						region = south_german_region
@@ -2952,11 +2955,12 @@ teu_pru_conquest_hre_mission_slot = {
 				area = hesse_area
 				province_id = 1931
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = TEU_PRU }
 			num_of_owned_provinces_with = {
+				is_core = ROOT
 				custom_trigger_tooltip = {
 					tooltip = teu_pru_an_empire_of_blood_and_iron_tt
 					OR = {

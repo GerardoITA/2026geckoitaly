@@ -2590,7 +2590,7 @@ WoC_austria_3_1 = {
 				area = austria_proper_area
 			}
 			NOT = {
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 		trigger = {
@@ -2610,48 +2610,48 @@ WoC_austria_3_1 = {
 				tooltip = gecko_habsburg_empire_requirements_tooltip
 				erzgebirge_area = {
 					type = all
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				bohemia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				moravia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				slovakia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				135 = {
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				4240 = {
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				1864 = {
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				carinthia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				venetia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				tirol_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				inner_austria_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				austria_proper_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 			}
 		}

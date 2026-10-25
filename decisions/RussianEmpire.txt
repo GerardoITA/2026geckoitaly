@@ -46,9 +46,9 @@ country_decisions = {
 				area = mazovia_area
 			}
 			NOT = {
-				OR = {
+				AND = {
 					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
+					is_core = ROOT
 				}
 			}
 		}
@@ -58,273 +58,273 @@ country_decisions = {
 				tooltip = gecko_russian_empire_territory_tt
 				ruthenia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				russia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				ural_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				crimea_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				caucasia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				nogai_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				kazakhstan_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				balchasj_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				ferghana_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				jetysuu_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				arys_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				lower_yik_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				syr_darya_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				kyzylkum_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				west_siberia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				east_siberia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				tannu_uriankhai_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				khiva_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				transoxiana_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				samarkand_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				termez_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				merv_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				transcaspia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				moldavia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				samogitia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				lithuania_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				curonia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				livonia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				estonia_ingria_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				nyland_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				inner_finland_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				finland_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				bothnia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				mazovia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 			}

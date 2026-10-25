@@ -23,9 +23,9 @@ country_decisions = {
 				area = thrace_area
 			}
 			NOT = {
-				OR = {
+				AND = {
 					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
+					is_core = ROOT
 				}
 			}
 		}
@@ -35,89 +35,89 @@ country_decisions = {
 				tooltip = gecko_persian_empire_territory_tt
 				persia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				khorasan_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				mashriq_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				anatolia_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				egypt_region = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				shirvan_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				armenia_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				samtskhe_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				imereti_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				kartli_kakheti_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 
 				thrace_area = {
 					type = all
-					OR = {
+					AND = {
 						owned_by = ROOT
-						owner = { is_subject_of = ROOT }
+						is_core = ROOT
 					}
 				}
 			}

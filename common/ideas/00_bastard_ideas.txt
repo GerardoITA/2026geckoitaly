@@ -4869,7 +4869,7 @@ PER_EMPIRE_ideas = {
 }
 
 # Imperial copy of ARB_ideas; edit this group independently.
-ARB_EMPIRE_ideas = { #Umayyad Empire
+ARB_EMPIRE_ideas = { #Rashidun Caliphate
 	start = {
 		development_cost = -0.1
 		infantry_power = 0.15

@@ -2208,8 +2208,8 @@ prussian_monarchy = {
 			AND = {
 				
 				OR = {
-					has_mission = emp_brapru_army_reforms_2
-					has_mission = emp_brapru_army_reforms_3
+					has_mission = PRU_standing_army
+					has_mission = PRU_an_army_with_a_state
 				}
 				NOT = { map_setup = map_setup_random }
 			}
@@ -2275,8 +2275,8 @@ prussian_monarchy_base = {
 		NOT = { have_had_reform = prussian_monarchy }
 		OR = {
 			NOT = { has_dlc = "Domination" }
-			NOT = { has_mission = emp_brapru_army_reforms_2 }
-			NOT = { has_mission = emp_brapru_army_reforms_3 }
+			NOT = { has_mission = PRU_standing_army }
+			NOT = { has_mission = PRU_an_army_with_a_state }
 		}
 		OR = {
 			AND = {

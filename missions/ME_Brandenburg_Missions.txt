@@ -548,6 +548,10 @@ BRA_missions_3 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = { has_dlc = "Leviathan" }
+				custom_tooltip = pru_unifying_germany_bb_gate_magnificent_tier_tt
+			}
 			custom_tooltip = BRA_for_every_war_reparations_15_dip
 			
 			hidden_effect = {
@@ -689,7 +693,6 @@ BRA_missions_3 = {
 				}
 			}
 			custom_tooltip = BRA_Prussian_modifier
-			complete_prussian_ascendance_missions = yes
 		}
 	}
 }

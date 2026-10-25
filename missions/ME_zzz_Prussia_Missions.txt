@@ -71,7 +71,6 @@ PRU_generic_missions_3 = {
 				name = BRA_prussian_ambition_2
 				duration = 5475
 			}
-			complete_prussian_ascendance_missions = yes
 		}
 	}
 }
@@ -1198,7 +1197,6 @@ PRU_missions_3 = {
 					duration = -1
 				}
 			}
-			set_country_flag = PRU_religionsedikt_may_happen #22
 		}
 	}
 	
@@ -1446,6 +1444,7 @@ PRU_missions_3 = {
 			}
 		}
 		effect = {
+			custom_tooltip = gecko_pru_kiel_canal_unlocked_tt
 			2969 = {
 				add_province_modifier = {
 					name = PRU_oder_spree_kanal
@@ -1913,6 +1912,7 @@ PRU_missions_4 = {
 			#country_event = { id = flavor_brapru.36 }
 			set_country_flag = brapru_army_reforms_3
 			country_event = { id = flavor_brapru.29 }
+			gecko_upgrade_prussian_militarization_3 = yes
 			create_general = { tradition = 100 }
 		}
 	}
@@ -2451,6 +2451,10 @@ PRU_missions_5 = {
 				name = PRU_GER_place_in_the_sun
 				duration = 9125
 			}
+			if = {
+				limit = { has_dlc = "Leviathan" }
+				custom_tooltip = pru_unifying_germany_bb_gate_magnificent_tier_tt
+			}
 			#custom_tooltip = PRU_can_get_in_german_tree_permanently
 		}
 	}
@@ -2474,6 +2478,7 @@ PRU_missions_5 = {
 		effect = {
 			set_country_flag = brapru_army_reforms_2
 			country_event = { id = flavor_brapru.6 }
+			gecko_upgrade_prussian_militarization_2 = yes
 			add_mil_power = 50
 		}
 	}

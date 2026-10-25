@@ -237,11 +237,7 @@ country_event = {
 		add_army_professionalism = 0.05
 		if = {
 			limit = { has_dlc = "Rights of Man" }
-			add_government_power = {
-				mechanic_type = militarization_mechanic
-				power_type = militarized_society
-				value = 20
-			}
+			gecko_add_prussian_militarization = { amount = 20 }
 			add_mil_power = 100
 		}
 		if = {
@@ -1619,11 +1615,7 @@ country_event = {
 					has_reform = prussian_monarchy
 				}
 			}
-			add_government_power = {
-				mechanic_type = militarization_mechanic
-				power_type = militarized_society
-				value = 20
-			}
+			gecko_add_prussian_militarization = { amount = 20 }
 		}
 		add_ruler_modifier = {
 			name = "brandenburg_recess"
@@ -1701,11 +1693,7 @@ country_event = {
 					has_reform = prussian_monarchy
 				}
 			}
-			add_government_power = {
-				mechanic_type = militarization_mechanic
-				power_type = militarized_society
-				value = 10
-			}
+			gecko_add_prussian_militarization = { amount = 10 }
 		}
 	}
 	option = {
@@ -1875,11 +1863,7 @@ country_event = {
 		add_army_professionalism = 0.05
 		if = {
 			limit = { has_dlc = "Rights of Man" }
-			add_government_power = {
-				mechanic_type = militarization_mechanic
-				power_type = militarized_society
-				value = 40
-			}
+			gecko_add_prussian_militarization = { amount = 40 }
 		}
 		if = {
 			limit = {

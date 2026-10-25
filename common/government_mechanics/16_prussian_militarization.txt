@@ -92,6 +92,7 @@ prussian_militarization_mechanic_2 = {
 			has_country_flag = access_to_prussian_militarization_flag #For the modders
 		}
 		has_country_flag = enable_second_mil_level_flag
+		NOT = { has_country_flag = enable_third_mil_level_flag }
 	}
 
 	powers = {

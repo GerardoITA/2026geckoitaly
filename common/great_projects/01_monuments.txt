@@ -11204,7 +11204,14 @@ brandenburg_gate = {
 			monthly_prussian_militarized_society_3 = 0.05
 		}
 		conditional_modifier = {
-			trigger = { owner = { mission_completed = emp_brapru_the_balance_of_power } }
+			trigger = {
+				owner = {
+					OR = {
+						mission_completed = BRA_project_power
+						mission_completed = PRU_place_in_the_sun
+					}
+				}
+			}
 			modifier = {
 				max_absolutism_effect = 0.1
 			}

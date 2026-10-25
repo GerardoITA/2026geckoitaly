@@ -1220,24 +1220,29 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
-	}
-	option = {
-		name = ME_Prussia_Events.29.b #Ok
-		
-		ai_chance = { factor = 100 }
-		
-		custom_tooltip = PRU_may_convert_vassals
-		
-		custom_tooltip = PRU_decision_germany
-		set_country_flag = formed_germany_flag 
-		add_country_modifier = {
-			name = PRU_vassal_play
-			duration = -1
-		}
 		hidden_effect = {
+			# Make the national replacement missions available after Eagle in the North.
 			swap_non_generic_missions = yes
 		}
 	}
+	# Temporarily disabled: retain only the North Germany permanent-claim option.
+	# option = {
+		# name = ME_Prussia_Events.29.b #Ok
+		#
+		# ai_chance = { factor = 100 }
+		#
+		# custom_tooltip = PRU_may_convert_vassals
+		#
+		# custom_tooltip = PRU_decision_germany
+		# set_country_flag = formed_germany_flag
+		# add_country_modifier = {
+			# name = PRU_vassal_play
+			# duration = -1
+		# }
+		# hidden_effect = {
+			# swap_non_generic_missions = yes
+		# }
+	# }
 }
 
 country_event = {
@@ -1635,18 +1640,22 @@ country_event = {
 	desc = ME_Prussia_Events.44.d
 	picture = COURT_eventPicture
 	
+	# The recurring special-vassal event is temporarily disabled.
+	# trigger = {
+		# mission_completed = PRU_zollverein
+		# NOT = {
+			# had_country_flag = {
+				# flag = PRU_vassal_dev_cost
+				# days = 9125
+			# }
+		# }
+		# prussian_vassal = 1
+		# any_neighbor_country = {
+			# is_subject_of_type = prussian_vassal
+		# }
+	# }
 	trigger = {
-		mission_completed = PRU_zollverein
-		NOT = {
-			had_country_flag = {
-				flag = PRU_vassal_dev_cost
-				days = 9125
-			}
-		}
-		prussian_vassal = 1
-		any_neighbor_country = {
-			is_subject_of_type = prussian_vassal
-		}
+		always = no
 	}
 	
 	mean_time_to_happen = {
@@ -1666,41 +1675,42 @@ country_event = {
 			mission_completed = PRU_zollverein
 		}
 		
-		random_neighbor_country = {
-			limit = {
-				is_subject_of_type = prussian_vassal
-			}
-			random_owned_province = {
-				limit = {
-					any_neighbor_province = {
-						owned_by = ROOT
-					}
-				}
-				random_neighbor_province = {
-					limit = {
-						owned_by = ROOT
-					}
-					area = {
-						limit = {
-							owned_by = ROOT
-						}
-						add_province_modifier = {
-							name = PRU_dev_cost_boost
-							duration = 9125
-						}
-					}
-				}
-				area = {
-					limit = {
-						owned_by = PREV
-					}
-					add_province_modifier = {
-						name = PRU_dev_cost_boost
-						duration = 9125
-					}
-				}
-			}
-		}
+		# Special-vassal province bonuses are temporarily disabled.
+		# random_neighbor_country = {
+			# limit = {
+				# is_subject_of_type = prussian_vassal
+			# }
+			# random_owned_province = {
+				# limit = {
+					# any_neighbor_province = {
+						# owned_by = ROOT
+					# }
+				# }
+				# random_neighbor_province = {
+					# limit = {
+						# owned_by = ROOT
+					# }
+					# area = {
+						# limit = {
+							# owned_by = ROOT
+						# }
+						# add_province_modifier = {
+							# name = PRU_dev_cost_boost
+							# duration = 9125
+						# }
+					# }
+				# }
+				# area = {
+					# limit = {
+						# owned_by = PREV
+					# }
+					# add_province_modifier = {
+						# name = PRU_dev_cost_boost
+						# duration = 9125
+					# }
+				# }
+			# }
+		# }
 	}
 }
 

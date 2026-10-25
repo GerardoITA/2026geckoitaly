@@ -1,0 +1,34 @@
+country_decisions = {
+
+	gecko_proclaim_russian_empire = {
+		major = yes
+
+		potential = {
+			tag = RUS
+			NOT = { has_country_flag = gecko_proclaimed_russian_empire }
+		}
+
+		# Add provinces_to_highlight when the territorial requirements are defined.
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_russian_empire_territory_tt
+				# Add territorial scopes here; provinces may be owned by us or our subjects.
+				always = no
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_RUSSIAN_EMPIRE
+			set_country_flag = gecko_proclaimed_russian_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

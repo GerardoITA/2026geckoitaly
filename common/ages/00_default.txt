@@ -911,7 +911,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				discipline = 0.05
+				discipline = 0.075
 			}
 			ai_will_do = {
 				factor = 100

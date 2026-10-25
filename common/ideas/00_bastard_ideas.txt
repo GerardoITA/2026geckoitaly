@@ -1788,6 +1788,7 @@ GBR_ideas = {
 	
 	trigger = {
 		tag = GBR
+		NOT = { has_country_flag = gecko_proclaimed_british_empire }
 	}
 	free = yes		#will be added at load.
 
@@ -1964,6 +1965,7 @@ RUS_ideas = {
 
 	trigger = {
 		tag = RUS
+		NOT = { has_country_flag = gecko_proclaimed_russian_empire }
 	}
 	free = yes		#will be added at load.
 
@@ -2805,6 +2807,7 @@ PER_ideas = {
 	
 	trigger = {
 		tag = PER
+		NOT = { has_country_flag = gecko_proclaimed_persian_empire }
 	}
 	free = yes
 	the_qizilbash = {
@@ -4722,5 +4725,142 @@ SPI_ideas = {
 	}
 	spi_risorgimento = {
 		ae_impact = -0.1
+	}
+}
+# Cosmetic empire national ideas. Numerical effects initially match the corresponding baseline groups.
+
+# Imperial copy of RUS_ideas; edit this group independently.
+RUS_EMPIRE_ideas = {
+	start = {
+		core_creation = -0.15
+		global_manpower_modifier = 0.33
+	}
+
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1	#For completion's sake
+		horde_unity = 1
+	}
+
+	trigger = {
+		tag = RUS
+		has_country_flag = gecko_proclaimed_russian_empire
+	}
+	free = yes		#will be added at load.
+
+	rus_empire_land_of_the_rus = {
+		shock_damage_received = -0.15
+	}
+	rus_empire_siberian_frontier = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	rus_empire_russian_artillery_yard = {
+		artillery_cost = -0.1
+		artillery_power = 0.1
+	}
+	rus_empire_life_long_conscription  = {
+		land_forcelimit_modifier = 0.33
+	}
+	rus_empire_abolish_the_mestnichestvo = {
+		yearly_corruption = -0.1
+		nobles_influence_modifier = -0.1
+	}
+	rus_empire_table_of_ranks = {
+		advisor_cost = -0.10
+		army_tradition = 0.25
+	}
+	rus_empire_curriculum_of_the_cadet_corps = {
+		land_morale = 0.05
+		fire_damage_received = -0.1
+	}
+}
+
+# Imperial copy of GBR_ideas; edit this group independently.
+GBR_EMPIRE_ideas = {
+	start = {
+		infantry_power = 0.1
+		naval_morale  = 0.1
+
+	}
+
+	bonus = {
+		backrow_artillery_damage = 0.1
+	}
+
+	trigger = {
+		tag = GBR
+		has_country_flag = gecko_proclaimed_british_empire
+	}
+	free = yes		#will be added at load.
+
+	gbr_empire_acts_of_union = {
+		global_tax_modifier = 0.1
+	}
+	gbr_empire_city_upon_a_hill = {
+		manpower_recovery_speed = 0.2
+	}
+	gbr_empire_the_british_parliament = {
+		global_unrest = -1
+		num_of_parliament_issues = 1
+	}
+	gbr_empire_the_royal_society = {
+		technology_cost = -0.05
+	}
+	gbr_empire_reform_of_comission_buying = {
+		discipline = 0.05
+	}
+	gbr_empire_british_industrialization = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	gbr_empire_britanna_rules_the_waves = {
+		leader_naval_manuever = 1
+		navy_tradition = 1
+		blockade_efficiency = 0.33
+		allowed_marine_fraction = 0.25
+	}
+}
+
+# Imperial copy of PER_ideas; edit this group independently.
+PER_EMPIRE_ideas = {
+	start = {
+		land_morale = 0.1
+		defensiveness = 0.15
+	}
+
+	bonus = {
+		recover_army_morale_speed = 0.10
+	}
+
+	trigger = {
+		tag = PER
+		has_country_flag = gecko_proclaimed_persian_empire
+	}
+	free = yes
+	per_empire_the_qizilbash = {
+		global_manpower_modifier = 0.15
+		qizilbash_privilege_slots = 1
+	}
+	per_empire_persian_rug_production = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	per_empire_the_ghulams = {
+		infantry_power = 0.20
+		ghulams_privilege_slots = 1
+	}
+	per_empire_improved_silk_road = {
+		caravan_power = 0.2
+	}
+	per_empire_encouraged_art = {
+		prestige = 1
+		production_efficiency = 0.1
+	}
+	per_empire_promotion_of_irrigation = {
+		manpower_recovery_speed = 0.15
+	}
+	per_empire_increased_crown_lands = {
+		global_tax_modifier = 0.1
 	}
 }

@@ -233,3 +233,23 @@ otto_per_mille_cossack_bonus = {
 	cavalry_power = 0.10
 	shock_damage = 0.15
 }
+
+gecko_pru_zollverein_domestic = {
+	global_trade_goods_size_modifier = 0.05
+}
+
+gecko_pru_constitution_domestic = {
+	stability_cost_modifier = -0.05
+}
+
+gecko_pru_august_diplomacy = {
+	diplomatic_reputation = 0.5
+}
+
+gecko_pru_officer_training = {
+	army_tradition = 0.25
+}
+
+gecko_pru_domestic_trade = {
+	trade_efficiency = 0.05
+}

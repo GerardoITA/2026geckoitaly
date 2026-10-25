@@ -257,3 +257,27 @@ gecko_pru_domestic_trade = {
 gecko_formed_umayyad_empire = {
 	land_morale = 0.20
 }
+
+gecko_greater_german_empire = {
+	global_trade_goods_size_modifier = 0.20
+	discipline = 0.05
+}
+
+gecko_emperor_of_the_french = {
+	leader_land_fire = 1
+	max_general_fire = 1
+	special_unit_forcelimit = 0.25
+}
+
+# Keep unit-specific discipline separate from the national bonuses.
+gecko_emperor_of_the_french_cossacks = {
+	is_cossack_modifier = yes
+	discipline = 0.20
+}
+
+gecko_genghis_khan_reborn = {
+	global_manpower_modifier = 0.20
+	land_forcelimit_modifier = 0.20
+	shock_damage = 0.25
+	fire_damage_received = -0.10
+}

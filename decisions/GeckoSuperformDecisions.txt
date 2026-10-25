@@ -4,7 +4,10 @@ country_decisions = {
 		major = yes
 
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = MOS
+			}
 			NOT = { has_country_flag = gecko_proclaimed_russian_empire }
 		}
 
@@ -53,6 +56,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			tag = RUS
 			adm_tech = 20
 			custom_trigger_tooltip = {
 				tooltip = gecko_russian_empire_territory_tt
@@ -335,6 +339,7 @@ country_decisions = {
 			set_country_flag = gecko_proclaimed_russian_empire
 			if = {
 				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_russian_empire_idea_improvements_tt
 				country_event = { id = ideagroups.1 }
 			}
 		}
@@ -661,6 +666,7 @@ country_decisions = {
 			set_country_flag = gecko_proclaimed_british_empire
 			if = {
 				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_british_empire_idea_improvements_tt
 				country_event = { id = ideagroups.1 }
 			}
 		}
@@ -674,7 +680,11 @@ country_decisions = {
 		major = yes
 
 		potential = {
-			tag = PER
+			OR = {
+				tag = PER
+				tag = ARL
+				tag = FRS
+			}
 			NOT = { has_country_flag = gecko_proclaimed_persian_empire }
 		}
 
@@ -700,6 +710,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			tag = PER
 			adm_tech = 20
 			custom_trigger_tooltip = {
 				tooltip = gecko_persian_empire_territory_tt
@@ -798,6 +809,7 @@ country_decisions = {
 			set_country_flag = gecko_proclaimed_persian_empire
 			if = {
 				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_achaemenid_empire_idea_improvements_tt
 				country_event = { id = ideagroups.1 }
 			}
 		}
@@ -812,7 +824,10 @@ country_decisions = {
 		major = yes
 
 		potential = {
-			tag = ARB
+			OR = {
+				tag = ARB
+				tag = RAS
+			}
 			NOT = { has_country_flag = gecko_proclaimed_umayyad_empire }
 		}
 
@@ -837,6 +852,7 @@ country_decisions = {
 			}
 		}
 		allow = {
+			tag = ARB
 			adm_tech = 20
 			custom_trigger_tooltip = {
 				tooltip = gecko_rashidun_caliphate_territory_tt
@@ -927,6 +943,7 @@ country_decisions = {
 			set_country_flag = gecko_proclaimed_umayyad_empire
 			if = {
 				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_rashidun_caliphate_idea_improvements_tt
 				country_event = { id = ideagroups.1 }
 			}
 		}
@@ -1252,6 +1269,7 @@ country_decisions = {
 					has_custom_ideas = no
 				}
 
+				custom_tooltip = gecko_ottoman_empire_idea_improvements_tt
 				country_event = {
 					id = ideagroups.1
 				}
@@ -1568,7 +1586,10 @@ country_decisions = {
 		potential = {
 			OR = {
 				tag = MGE
-				tag = GOL
+				tag = GLH
+				tag = CRI
+				tag = OIR
+				tag = KHA
 			}
 			NOT = { has_country_modifier = gecko_genghis_khan_reborn }
 		}

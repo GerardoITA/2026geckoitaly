@@ -760,7 +760,7 @@ guiTypes = {
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
 			iconType = {
 				name = "gecko_intscore_background"
@@ -2169,7 +2169,7 @@ guiTypes = {
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
 			iconType = {
 				name = "gecko_victory_background"
@@ -6180,7 +6180,7 @@ guiTypes = {
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
 			iconType = {
 				name = "gecko_intscore_docs_background"
@@ -8270,6 +8270,7 @@ guiTypes = {
 			buttonFont = "vic_18"
 			clicksound = click
 			scripted = yes
+			shortcut = "z"
 		}
 		iconType = {
 			name = "gecko_menu_badge"
@@ -8293,7 +8294,7 @@ guiTypes = {
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
 			iconType = {
 				name = "gecko_menu_background"

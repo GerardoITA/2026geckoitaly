@@ -645,6 +645,9 @@ shipyard = {
 fort_15th = {
 	cost = 200
 	time = 30
+	build_trigger = {
+		gecko_fort_construction_allowed = yes
+	}
 	modifier = {
 		fort_level = 2
 	}
@@ -1103,6 +1106,9 @@ regimental_camp = {
 fort_16th = {
 	cost = 400
 	time = 30
+	build_trigger = {
+		gecko_fort_construction_allowed = yes
+	}
 	make_obsolete = fort_15th
 	modifier = {
 		fort_level = 4
@@ -1872,6 +1878,9 @@ training_fields = {
 fort_17th = {
 	cost = 600
 	time = 30
+	build_trigger = {
+		gecko_fort_construction_allowed = yes
+	}
 	make_obsolete = fort_16th
 
 	modifier = {
@@ -2521,6 +2530,9 @@ conscription_center = {
 fort_18th = {
 	cost = 800
 	time = 30
+	build_trigger = {
+		gecko_fort_construction_allowed = yes
+	}
 
 	make_obsolete = fort_17th
 

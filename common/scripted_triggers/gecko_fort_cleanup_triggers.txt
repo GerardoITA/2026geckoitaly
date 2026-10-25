@@ -1,6 +1,10 @@
-# Province scope. Capitals and recently acquired forts cannot form an illegal pair.
-# Construction is unrestricted; only completed fort buildings are checked.
+# Province scope. Only forts owned and controlled by the country being checked count.
+# Capitals, occupied or besieged forts and recently acquired forts cannot form an illegal pair.
+# Cleanup checks completed fort buildings; construction has a separate restriction below.
 gecko_fort_cleanup_eligible = {
+	owned_by = event_target:gecko_fort_cleanup_owner
+	controlled_by = owner
+	has_siege = no
 	has_fort_building_trigger = yes
 	is_capital = no
 	NOT = {
@@ -17,5 +21,26 @@ gecko_fort_cleanup_conflict = {
 	any_neighbor_province = {
 		owned_by = event_target:gecko_fort_cleanup_owner
 		gecko_fort_cleanup_eligible = yes
+	}
+}
+
+# Province scope. Upgrades and replacements beside unoccupied forts remain allowed.
+# PREV inside any_neighbor_province is the construction province, not the builder.
+gecko_fort_construction_allowed = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_fort_construction_allowed_tt
+		OR = {
+			has_fort_building_trigger = yes
+			NOT = {
+				any_neighbor_province = {
+					owned_by = PREV
+					has_fort_building_trigger = yes
+					OR = {
+						NOT = { controlled_by = owner }
+						has_siege = yes
+					}
+				}
+			}
+		}
 	}
 }

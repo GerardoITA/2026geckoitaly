@@ -1,0 +1,103 @@
+country_decisions = {
+
+	gecko_proclaim_umayyad_empire = {
+		major = yes
+
+		potential = {
+			tag = ARB
+			NOT = { has_country_flag = gecko_proclaimed_umayyad_empire }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = arabia_region
+				region = mashriq_region
+				region = persia_region
+				region = egypt_region
+				region = maghreb_region
+				area = mashhad_area
+				area = sistan_area
+			}
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_umayyad_empire_territory_tt
+				arabia_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				mashriq_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				persia_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				egypt_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				maghreb_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				mashhad_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				sistan_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_UMAYYAD_EMPIRE
+			set_country_flag = gecko_proclaimed_umayyad_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

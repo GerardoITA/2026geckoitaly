@@ -356,6 +356,7 @@ ARB_ideas = { #Arabian Empire
 	
 	trigger = {
 		tag = ARB
+		NOT = { has_country_flag = gecko_proclaimed_umayyad_empire }
 	}
 	free = yes
 	
@@ -4733,7 +4734,7 @@ SPI_ideas = {
 RUS_EMPIRE_ideas = {
 	start = {
 		core_creation = -0.15
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.5
 	}
 
 	bonus = {
@@ -4758,11 +4759,11 @@ RUS_EMPIRE_ideas = {
 		auto_explore_adjacent_to_colony = yes
 	}
 	rus_empire_russian_artillery_yard = {
-		artillery_cost = -0.1
-		artillery_power = 0.1
+		artillery_cost = -0.2
+		artillery_power = 0.2
 	}
 	rus_empire_life_long_conscription  = {
-		land_forcelimit_modifier = 0.33
+		land_forcelimit_modifier = 0.5
 	}
 	rus_empire_abolish_the_mestnichestvo = {
 		yearly_corruption = -0.1
@@ -4773,7 +4774,7 @@ RUS_EMPIRE_ideas = {
 		army_tradition = 0.25
 	}
 	rus_empire_curriculum_of_the_cadet_corps = {
-		land_morale = 0.05
+		land_morale = 0.1
 		fire_damage_received = -0.1
 	}
 }
@@ -4781,13 +4782,13 @@ RUS_EMPIRE_ideas = {
 # Imperial copy of GBR_ideas; edit this group independently.
 GBR_EMPIRE_ideas = {
 	start = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 		naval_morale  = 0.1
 
 	}
 
 	bonus = {
-		backrow_artillery_damage = 0.1
+		backrow_artillery_damage = 0.15
 	}
 
 	trigger = {
@@ -4797,23 +4798,24 @@ GBR_EMPIRE_ideas = {
 	free = yes		#will be added at load.
 
 	gbr_empire_acts_of_union = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.5
 	}
 	gbr_empire_city_upon_a_hill = {
 		manpower_recovery_speed = 0.2
+		land_forcelimit_modifier = 0.25
 	}
 	gbr_empire_the_british_parliament = {
-		global_unrest = -1
+		global_unrest = -6
 		num_of_parliament_issues = 1
 	}
 	gbr_empire_the_royal_society = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 	}
 	gbr_empire_reform_of_comission_buying = {
 		discipline = 0.05
 	}
 	gbr_empire_british_industrialization = {
-		global_trade_goods_size_modifier = 0.15
+		global_trade_goods_size_modifier = 0.5
 	}
 	gbr_empire_britanna_rules_the_waves = {
 		leader_naval_manuever = 1
@@ -4826,7 +4828,7 @@ GBR_EMPIRE_ideas = {
 # Imperial copy of PER_ideas; edit this group independently.
 PER_EMPIRE_ideas = {
 	start = {
-		land_morale = 0.1
+		land_morale = 0.15
 		defensiveness = 0.15
 	}
 
@@ -4840,14 +4842,14 @@ PER_EMPIRE_ideas = {
 	}
 	free = yes
 	per_empire_the_qizilbash = {
-		global_manpower_modifier = 0.15
+		global_manpower_modifier = 0.25
 		qizilbash_privilege_slots = 1
 	}
 	per_empire_persian_rug_production = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.2
 	}
 	per_empire_the_ghulams = {
-		infantry_power = 0.20
+		infantry_power = 0.25
 		ghulams_privilege_slots = 1
 	}
 	per_empire_improved_silk_road = {
@@ -4859,8 +4861,51 @@ PER_EMPIRE_ideas = {
 	}
 	per_empire_promotion_of_irrigation = {
 		manpower_recovery_speed = 0.15
+		discipline = 0.05
 	}
 	per_empire_increased_crown_lands = {
 		global_tax_modifier = 0.1
 	}
+}
+
+# Imperial copy of ARB_ideas; edit this group independently.
+ARB_EMPIRE_ideas = { #Umayyad Empire
+	start = {
+		development_cost = -0.1
+		infantry_power = 0.15
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.33
+	}
+
+	trigger = {
+		tag = ARB
+		has_country_flag = gecko_proclaimed_umayyad_empire
+	}
+	free = yes
+
+	arb_empire_1 = { #Indian Ocean Trade
+		trade_efficiency = 0.2
+	}
+	arb_empire_3 = { #Bedouin Raiders
+		shock_damage_received = -0.15
+	}
+	arb_empire_5 = { #Unite the Tribes
+		manpower_recovery_speed = 0.2
+	}
+	arb_empire_2 = { #Arabian Horsemanship
+		cavalry_cost = -0.1
+		cavalry_power = 0.2
+	}
+	arb_empire_4 = { #Spreading the Prophet's Word
+		global_missionary_strength = 0.03
+	}
+	arb_empire_6 = { #Bedouin Traders
+		trade_steering = 0.33
+	}
+	arb_empire_7 = { #Arabia
+		land_morale = 0.25
+	}
+
 }

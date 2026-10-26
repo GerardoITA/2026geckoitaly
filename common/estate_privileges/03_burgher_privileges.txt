@@ -471,34 +471,59 @@ estate_burghers_indebted_to_burghers = {
 			add_inflation = 0.5
 		}
 		hidden_effect = {
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
 			if = {
-				limit = {
-					has_country_flag = BYZ_buff_burgher_loans_flag
+				limit = { religion = jewish }
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = BYZ_buff_burgher_loans_flag
+					}
+					add_loan = {
+						fixed_interest = 1
+						duration = 60
+						estate_loan = yes
+					}
+					add_loan = {
+						fixed_interest = 1
+						duration = 60
+						estate_loan = yes
+					}
+				}
+			}
+			else = {
+				add_loan = {
+					fixed_interest = 2
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 2
+					duration = 60
+					estate_loan = yes
 				}
 				add_loan = {
 					fixed_interest = 2
@@ -509,6 +534,26 @@ estate_burghers_indebted_to_burghers = {
 					fixed_interest = 2
 					duration = 60
 					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 2
+					duration = 60
+					estate_loan = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = BYZ_buff_burgher_loans_flag
+					}
+					add_loan = {
+						fixed_interest = 2
+						duration = 60
+						estate_loan = yes
+					}
+					add_loan = {
+						fixed_interest = 2
+						duration = 60
+						estate_loan = yes
+					}
 				}
 			}
 		}

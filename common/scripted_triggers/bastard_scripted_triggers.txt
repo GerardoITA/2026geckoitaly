@@ -201,3 +201,27 @@ has_state_edict_enabled = {
 		has_state_edict = urbanization_state_edict
 	}
 }
+
+# Country scope: shared twenty-year return cooldown after removing a Trading City reform.
+gecko_can_adopt_trade_city_reform_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_trade_city_return_cooldown_tt
+		OR = {
+			NOT = { has_country_flag = gecko_trade_city_reform_removed }
+			had_country_flag = {
+				flag = gecko_trade_city_reform_removed
+				days = 7300
+			}
+			has_reform = plutocratic_reform
+			has_reform = livonian_trade_monarchy
+			has_reform = merchants_reform
+			has_reform = venice_merchants_reform
+			has_reform = veche_republic
+			has_reform = great_veche_republic
+			has_reform = great_russian_republic_reform
+			has_reform = trade_company_government
+			has_reform = merchant_theocracy_reform
+			has_reform = reformer_state_reform
+		}
+	}
+}

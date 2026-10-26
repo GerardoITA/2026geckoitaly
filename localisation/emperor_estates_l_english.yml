@@ -18,7 +18,7 @@
  estate_burghers_commercial_board_of_advice:0 "Commercial Advisory Board"
  estate_burghers_new_world_charter:0 "Grant New World Charters"
  estate_burghers_indebted_to_burghers:0 "Indebted to the $ESTATE_NAME$"
- estate_burghers_indebted_to_burghers_effect_tooltip:2 "Take §Y5§! five-year loans at §Y2%§! interest. The privilege will be removed automatically when repaid."
+ estate_burghers_indebted_to_burghers_effect_tooltip:2 "Take §Y5§! five-year loans at §Y2%§! annual interest (§Y1%§! for Jewish countries). The privilege will be removed automatically when repaid."
  estate_burghers_free_enterprise:0 "Demand Contribution"
  estate_cossacks_exploration_expedition:0 "Cossack Exploration Expeditions"
  estate_cossacks_cossack_self_governance:0 "Cossack Self-Governance"

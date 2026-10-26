@@ -322,12 +322,14 @@ merchant_theocracy_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
 		OR = {
 			religion = catholic
 			is_playing_custom_nation = yes
 		}
 	}
 	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
 		if = {
 			limit = {
 				is_playing_custom_nation = no
@@ -399,6 +401,7 @@ reformer_state_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
 		OR = {
 			is_playing_custom_nation = yes
 			religion = hussite
@@ -463,6 +466,9 @@ reformer_state_reform = {
 		custom_attributes = {
 			can_spread_the_reformation = yes
 		}
+	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
 	}
 }
 

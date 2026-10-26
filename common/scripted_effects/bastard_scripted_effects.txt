@@ -529,3 +529,9 @@ bastard_dev_cost_terrain_remove_from_buildings = {
 		remove_province_modifier = provincial_investment_steppe
 	}
 }
+
+# Called only by reforms allowing Trading Cities. Restart the shared timer on every removal.
+gecko_trade_city_reform_removed_effect = {
+	clr_country_flag = gecko_trade_city_reform_removed
+	set_country_flag = gecko_trade_city_reform_removed
+}

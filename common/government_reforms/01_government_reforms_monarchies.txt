@@ -139,6 +139,12 @@ plutocratic_reform = {
 	ai = {
 		factor = 0.75 #generic
 	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 austrian_archduchy_reform = {
@@ -3638,6 +3644,7 @@ livonian_trade_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3694,6 +3701,9 @@ livonian_trade_monarchy = {
 		can_use_trade_post = yes
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
+	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
 	}
 }
 

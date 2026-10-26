@@ -93,4 +93,4 @@
  qizilbash_cavalry_unit: "Qizilbash Cavalry"
  gecko_parliament_return_cooldown_tt:0 "§RHas not left Parliament in the last 10 years, or still has Parliament.§!"
 
- gecko_trade_city_return_cooldown_tt:0 "§RHas not removed a reform allowing Trading Cities in the last 20 years, or still has such a reform.§!"
+ gecko_trade_city_return_cooldown_tt:0 "§RHas not removed a reform allowing Trading Cities in the last 50 years, or still has such a reform.§!"

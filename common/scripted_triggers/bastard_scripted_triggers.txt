@@ -202,7 +202,7 @@ has_state_edict_enabled = {
 	}
 }
 
-# Country scope: shared twenty-year return cooldown after removing a Trading City reform.
+# Country scope: shared fifty-year return cooldown after removing a Trading City reform.
 gecko_can_adopt_trade_city_reform_trigger = {
 	custom_trigger_tooltip = {
 		tooltip = gecko_trade_city_return_cooldown_tt
@@ -210,7 +210,7 @@ gecko_can_adopt_trade_city_reform_trigger = {
 			NOT = { has_country_flag = gecko_trade_city_reform_removed }
 			had_country_flag = {
 				flag = gecko_trade_city_reform_removed
-				days = 7300
+				days = 18250
 			}
 			has_reform = plutocratic_reform
 			has_reform = livonian_trade_monarchy

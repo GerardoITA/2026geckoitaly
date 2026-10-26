@@ -205,7 +205,7 @@ severe_monsoon = {
 
 blockaded = {
 	regiment_recruit_speed = 0.5
-	ship_recruit_speed = 0.5
+	ship_recruit_speed = -0.9
 	local_monthly_devastation = 0.33
 	trade_goods_size_modifier = -0.25 
 	local_tax_modifier = -1
@@ -233,7 +233,7 @@ provincial_production_size = {
 
 knowledge_sharing = {
 	institution_growth = 12
-	monthly_russian_modernization = 0.06
+	monthly_russian_modernization = 0.075
 }
 
 cardinals_spread_institution = {
@@ -564,6 +564,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
+	nomadic_tribes_privilege_slots = 2
 	max_absolutism = 65
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
@@ -585,7 +586,7 @@ base_values = {
 	vassal_income = 0.15
 	horde_unity = -2
 	devotion = -0.5
-	meritocracy = -1
+	meritocracy = -2
 	governing_capacity = 200
 	num_accepted_cultures = 2
 	monthly_splendor = 1
@@ -878,7 +879,7 @@ navy_tradition = {
 	enuchs_influence = 0.1
 	mr_traders_influence = 0.1
 	blockade_efficiency = 1
-	sailors_recovery_speed = 0.2
+	sailors_recovery_speed = 1
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	allowed_galleass_fraction = 0.5
@@ -934,8 +935,8 @@ emperor = {
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-	land_forcelimit	= 0.5					#each state increases forcelimit by 0.5
-	global_manpower = 0.5					#each gives 0.5 MP to the emperor.
+	land_forcelimit	= 0.1					#each state increases forcelimit by 0.1
+	global_manpower = 0.1					#each gives 0.1 MP to the emperor.
 }
 
 free_cities_in_hre = {							#bonuses for each free city in the HRE.. as emperor
@@ -1004,6 +1005,7 @@ negative_karma = {
 # Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
 country_development = {
 	horde_unity = -3
+	meritocracy = -3
 }
 
 # Multiplied by current Legitimacy - 50
@@ -1099,6 +1101,7 @@ recovery_motivation = {
 	navy_tradition = 1
 	global_unrest = -5
 	horde_unity = 10
+	meritocracy = 10
 }
 
 luck = {
@@ -1371,12 +1374,13 @@ in_golden_era = {
 	land_morale = 0.1
 	naval_morale = 0.1
 	max_general_fire = 1
-	max_absolutism = 5
-	max_revolutionary_zeal = 10
+	max_general_shock = 1
+	max_absolutism = 25
+	max_revolutionary_zeal = 25
 }
 
 absolutism = {
-	administrative_efficiency = 0.35
+	administrative_efficiency = 0.25
 	discipline = 0.05
 	core_decay_on_your_own = -0.5
 	monthly_ottoman_decadence = -0.5
@@ -1447,6 +1451,7 @@ power_projection = {
 	legitimacy = 0.5
 	devotion = 0.5
 	horde_unity = 0.5
+	meritocracy = 0.5
 	republican_tradition = 0.2
 }
 
@@ -2031,6 +2036,7 @@ ismaili_scholar_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	horde_unity = 1
+	meritocracy = 1
 	legitimacy = 1
 	republican_tradition = 0.5
 	devotion = 1
@@ -2056,10 +2062,9 @@ zaidi_scholar_modifier = {
 # Regiment Types Modifiers
 ########################################
 regiment_drill_modifier = { # Used by individual regiments
-	fire_damage = 0.1
-	shock_damage = 0.1
-	morale_damage = 0.1
-	assault_fort_ability = 0.5
+	fire_damage = 0.15
+	shock_damage = 0.15
+	morale_damage = 0.15
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill

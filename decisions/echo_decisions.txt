@@ -2,6 +2,7 @@ country_decisions = {
 	new_player_readme = {
 		color = { 41  233  249 }
 		potential = {
+			always = no # Replaced by Gecko Menu Documentation.
 			ai = no
 			NOT = { has_country_flag = hide_extra_decisions }
 		}
@@ -131,6 +132,7 @@ country_decisions = {
 		color = { 166  0  0 }
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Country Information.
 		}
 		ai_will_do = {
 			factor = 0
@@ -495,7 +497,7 @@ country_decisions = {
 
 	development_counter = {
 		color = { 166  0  0 }
-		potential = { ai = no }
+		potential = { ai = no always = no } # Moved to Gecko Menu / Country Information.
 		allow = {
 			if = {
 				limit = {
@@ -672,7 +674,40 @@ country_decisions = {
 			}
 		}
 	}
-	
+	educate_ruler_information = {
+		color = { 41  233  249 }
+		potential = {
+			OR = {
+				NOT = { adm = 3 }
+				NOT = { dip = 3 }
+				NOT = { mil = 3 }
+			}
+
+			NOT = {
+				OR = {
+					has_government_attribute = has_term_election
+					has_government_attribute = election_on_death
+					has_government_attribute = lottery_election
+					has_government_attribute = is_merchant_republic
+				}
+			}
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			country_event = {
+				id = educate_ruler.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
 	sea_state_edicts_decision = {
 		major = yes
 		provinces_to_highlight = {
@@ -681,6 +716,7 @@ country_decisions = {
 		}
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Actions.
 			NOT = { has_country_flag = sea_state_edicts_flag }
 			OR = {
 				NOT = { has_country_flag = sea_state_edicts_clear_flag }
@@ -727,4 +763,26 @@ country_decisions = {
 	#	
 	#	ai_will_do = {factor = 0}
 	#}
+
+	embrace_judaism_ethiopia = {
+		potential = {
+			tag = ETH
+			NOT = {
+				religion = jewish
+			}
+		}
+
+		allow = {
+			stability = -2
+		}
+
+		effect = {
+			add_stability = -1
+			change_religion = jewish
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

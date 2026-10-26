@@ -26,54 +26,54 @@ country_decisions = {
 			}
 
 			NOT = {
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 
 		allow = {
 			thrace_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			aegean_archipelago_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			macedonia_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			morea_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			northern_greece_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			X_central_greece_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			aydin_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			hudavendigar_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			germiyan_area = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			
 

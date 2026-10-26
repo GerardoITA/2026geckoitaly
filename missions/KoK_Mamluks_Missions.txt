@@ -228,7 +228,7 @@ mam_missions_1 = {
 				}
 			}
 			else = { add_dip_power = 100 }
-			create_admiral = { tradition = 70 }
+			create_admiral = { tradition = 50 }
 		}
 	}
 

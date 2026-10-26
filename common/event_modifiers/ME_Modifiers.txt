@@ -881,7 +881,7 @@ POL_double_trouble = {
 }
 
 POL_leave_brick_2 = {
-	development_cost = -0.05
+	development_cost = -0.1
 }
 
 POL_influx_of_polish_settlers = {
@@ -944,6 +944,7 @@ POL_return = {
 	legitimacy = 1
 	republican_tradition = 1
 	horde_unity = 1
+	meritocracy = 1
 	devotion = 1
 	ae_impact = -0.2
 }

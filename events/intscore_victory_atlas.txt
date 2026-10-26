@@ -1,0 +1,450 @@
+namespace = gecko_victory_atlas
+
+# Generated from the existing victory-province decisions. Navigation only.
+country_event = {
+	id = gecko_victory_atlas.1
+	title = gecko_victory_navigation_title
+	desc = gecko_victory_navigation_desc
+	picture = CITY_VIEW_eventPicture
+	is_triggered_only = yes
+	goto = gecko_victory_destination
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 103 } }
+				103 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 116 } }
+				116 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 4738 } }
+				4738 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 125 } }
+				125 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 121 } }
+				121 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 174 } }
+				174 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 192 } }
+				192 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 213 } }
+				213 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 227 } }
+				227 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 226 } }
+				226 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 248 } }
+				248 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 87 } }
+				87 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 85 } }
+				85 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1874 } }
+				1874 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 45 } }
+				45 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 4742 } }
+				4742 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 75 } }
+				75 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 165 } }
+				165 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 266 } }
+				266 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1872 } }
+				1872 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 153 } }
+				153 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1756 } }
+				1756 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 137 } }
+				137 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 141 } }
+				141 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 5004 } }
+				5004 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1 } }
+				1 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 17 } }
+				17 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 38 } }
+				38 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 41 } }
+				41 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 280 } }
+				280 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 293 } }
+				293 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 33 } }
+				33 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2410 } }
+				2410 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 466 } }
+				466 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2444 } }
+				2444 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 677 } }
+				677 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 421 } }
+				421 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 422 } }
+				422 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 476 } }
+				476 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 718 } }
+				718 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 326 } }
+				326 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 377 } }
+				377 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 411 } }
+				411 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 408 } }
+				408 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 385 } }
+				385 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 395 } }
+				395 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 390 } }
+				390 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 416 } }
+				416 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2999 } }
+				2999 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 451 } }
+				451 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1234 } }
+				1234 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 356 } }
+				356 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 341 } }
+				341 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 338 } }
+				338 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2269 } }
+				2269 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2288 } }
+				2288 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 5807 } }
+				5807 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1147 } }
+				1147 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1116 } }
+				1116 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 4085 } }
+				4085 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1177 } }
+				1177 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1196 } }
+				1196 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1792 } }
+				1792 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 4064 } }
+				4064 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1205 } }
+				1205 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 507 } }
+				507 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2095 } }
+				2095 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 504 } }
+				504 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2058 } }
+				2058 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 534 } }
+				534 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 542 } }
+				542 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2089 } }
+				2089 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2099 } }
+				2099 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 563 } }
+				563 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 552 } }
+				552 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 586 } }
+				586 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 584 } }
+				584 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 613 } }
+				613 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 4815 } }
+				4815 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 622 } }
+				622 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 641 } }
+				641 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 2687 } }
+				2687 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1084 } }
+				1084 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 965 } }
+				965 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 994 } }
+				994 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 490 } }
+				490 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 852 } }
+				852 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 893 } }
+				893 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 831 } }
+				831 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 763 } }
+				763 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 778 } }
+				778 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 118 } }
+				118 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 183 } }
+				183 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 217 } }
+				217 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 236 } }
+				236 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 97 } }
+				97 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1876 } }
+				1876 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 50 } }
+				50 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 134 } }
+				134 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 257 } }
+				257 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 295 } }
+				295 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 151 } }
+				151 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 1224 } }
+				1224 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 343 } }
+				343 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 361 } }
+				361 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 454 } }
+				454 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 522 } }
+				522 = { save_event_target_as = gecko_victory_destination }
+			}
+			else_if = {
+				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 600 } }
+				600 = { save_event_target_as = gecko_victory_destination }
+			}
+		}
+	}
+	option = {
+		name = gecko_victory_navigation_close
+	}
+}

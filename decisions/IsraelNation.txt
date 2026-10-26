@@ -1,0 +1,98 @@
+country_decisions = {
+	israel_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			OR = {
+				tag = ETH
+				was_never_end_game_tag_trigger = yes
+			}
+			NOT = { has_country_flag = formed_israel_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { tag = ISR }
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = ISR }
+					num_of_cities = 3 #Carnage
+				}
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = MAM }	#RIP irony
+			religion = jewish
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 379	# Jerusalem
+				province_id = 364	# Gaza
+				province_id = 1854	# Jaffa
+				province_id = 365	# Sinai
+				province_id = 380	# Al Karak
+				province_id = 381	# Ajlun
+				province_id = 2327	# Ma'an
+				province_id = 4268	# Aqaba
+				province_id = 4270	# Azraq
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = ISR }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 379	# Jerusalem
+			owns_core_province = 364	# Gaza
+			owns_core_province = 1854	# Jaffa
+			owns_core_province = 365	# Sinai
+			owns_core_province = 380	# Al Karak
+			owns_core_province = 381	# Ajlun
+			owns_core_province = 2327	# Ma'an
+			owns_core_province = 4268	# Aqaba
+			owns_core_province = 4270	# Azraq
+			religion = jewish
+		}
+		effect = {
+			change_tag = ISR
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			set_capital = 379
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = ISR_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_israel_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+	
+}

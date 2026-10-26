@@ -280,27 +280,27 @@ estate_jains_indebted_to_jains = {
 		}
 		hidden_effect = {
 			add_loan = {
-				fixed_interest = 2.5
+				fixed_interest = 2
 				duration = 60
 				estate_loan = yes
 			}
 			add_loan = {
-				fixed_interest = 2.5
+				fixed_interest = 2
 				duration = 60
 				estate_loan = yes
 			}
 			add_loan = {
-				fixed_interest = 2.5
+				fixed_interest = 2
 				duration = 60
 				estate_loan = yes
 			}
 			add_loan = {
-				fixed_interest = 2.5
+				fixed_interest = 2
 				duration = 60
 				estate_loan = yes
 			}
 			add_loan = {
-				fixed_interest = 2.5
+				fixed_interest = 2
 				duration = 60
 				estate_loan = yes
 			}
@@ -337,10 +337,11 @@ estate_jains_conscientious_objection = {
 		num_of_loans = 10
 	}
 
-	modifier = { 
+	modifier = {
+		can_not_declare_war = yes
 		all_power_cost = 0.05 
 		production_efficiency = 0.05
-		can_not_declare_war = yes
+		
 	}
 	
 	benefits = {
@@ -1210,10 +1211,6 @@ estate_jains_patronize_jain_familiy = {
 		}
 	}
 	mechanics = {
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.02 }
 	}
 	ai_will_do = {
 		factor = 10

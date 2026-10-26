@@ -534,7 +534,7 @@ reign_in_eyalet = {
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = core_eyalet
+			subject_type = vassal
 			subject = FROM
 			keep_liberty_desire = yes
 		}
@@ -1676,7 +1676,7 @@ grant_autonomy_to_core_eyalet = {
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = eyalet
+			subject_type = vassal
 			subject = FROM
 			keep_liberty_desire = yes
 		}
@@ -1718,7 +1718,7 @@ promote_vassal_to_eyalet = {
 	}
 	on_accept = {
 		create_subject = {
-			subject_type = eyalet
+			subject_type = vassal
 			subject = FROM
 			keep_liberty_desire = yes
 		}
@@ -2035,9 +2035,11 @@ steal_modern_ideas = {
 	require_acceptance = no
 
 	is_visible = {
+		always = no # Modernization from diplomatic actions is disabled.
 		has_government_mechanic = russian_modernization_mechanic
 	}
 	is_allowed = {
+		always = no # Modernization from diplomatic actions is disabled.
 		if = {
 			limit = {
 				FROM = { NOT = { tech_difference = 0 } }
@@ -2154,9 +2156,11 @@ request_access_to_modern_ideas = {
 	alert_tooltip = request_access_to_modern_ideas_alert_tooltip
 
 	is_visible = {
+		always = no # Modernization from diplomatic actions is disabled.
 		has_government_mechanic = russian_modernization_mechanic
 	}
 	is_allowed = {
+		always = no # Modernization from diplomatic actions is disabled.
 		if = {
 			limit = {
 				FROM = { NOT = { tech_difference = 1 } }
@@ -2455,9 +2459,11 @@ share_modern_ideas = {
 	alert_tooltip = share_modern_ideas_alert_tooltip
 
 	is_visible = {
+		always = no # Modernization from diplomatic actions is disabled.
 		FROM = { has_government_mechanic = russian_modernization_mechanic }
 	}
 	is_allowed = {
+		always = no # Modernization from diplomatic actions is disabled.
 		if = {
 			limit = {
 				FROM = { tech_difference = 1 }

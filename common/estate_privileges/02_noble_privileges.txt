@@ -30,10 +30,6 @@ estate_nobles_land_rights = {
 	benefits = {
 		governing_capacity = 100
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -232,10 +228,6 @@ estate_nobles_nobility_primacy = {
 	benefits = {
 		country_military_power = 1
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -311,19 +303,11 @@ estate_nobles_officer_corp = {
 		army_tradition_decay = -0.005
 	}
 	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
-	conditional_modifier = {
 		trigger = { 
 			mission_completed = ME_bur_expanding_the_order
 			army_tradition = 80
 		}
 		modifier = { max_general_shock = 1 }
-	}
-	conditional_modifier = {
-		trigger = { has_country_flag = hab_military_reform_flag }
-		modifier = { land_morale = 0.1 }
 	}
 	ai_will_do = {
 		factor = 0
@@ -372,10 +356,6 @@ estate_nobles_levies = {
 			max_absolutism = 5
 			nobles_influence_modifier = -0.1
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	conditional_modifier = {
 		trigger = {
@@ -469,10 +449,6 @@ estate_nobles_advisors = {
 	benefits = {
 		mil_advisor_cost = -0.10
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -560,10 +536,6 @@ estate_nobles_right_of_counsel = {
 		disable_estate_action = {
 			estate_action = RAISE_HOST_NOMADIC_TRIBES
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -720,10 +692,6 @@ estate_nobles_supremacy_over_crown = {
 	}
 	mechanics = {
 		can_give_agendas_without_interaction
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -1095,6 +1063,7 @@ estate_nobles_junker_primacy = {
 		#all_power_cost = 0.05
 	}
 	benefits = {
+		nobles_privilege_slots = 1
 		monthly_militarized_society = 0.03
 		monthly_prussian_militarized_society_1 = 0.02
 		monthly_prussian_militarized_society_2 = 0.05
@@ -1163,10 +1132,6 @@ estate_nobles_strong_duchies = {
 		modifier = {
 			nobles_loyalty_modifier = 0.05
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = hun_upgrade_strong_duchies }
@@ -1395,10 +1360,6 @@ estate_nobles_statutory_rights = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -1474,10 +1435,6 @@ estate_nobles_better_integration = {
 		diplomatic_annexation_cost = -0.15
 	}
 	cooldown_years = 10
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -2389,19 +2346,22 @@ estate_nobles_rynda = {
 	
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = { has_absolutism_reduction_for_estate_privileges = yes }
+		modifier = { max_absolutism = 1 }
+	}
+
+	benefits = {
+		infantry_cost = -0.2
+		infantry_power = 0.1
+	}
+
 	on_granted = {
 		custom_tooltip = estate_nobles_rynda_at
-		custom_tooltip = SCALES_WITH_INFLUENCE_TT
-
-	}
-
-	influence_scaled_conditional_modifier = {
-		modifier = { infantry_cost = -0.2 }
-		modifier = { infantry_power = 0.1 }
 	}
 	
-	mechanics = {  }
+	mechanics = { }
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -2413,20 +2373,23 @@ estate_nobles_landed_army = {
 	
 	influence = 0.05
 	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	conditional_modifier = {
+		trigger = { has_absolutism_reduction_for_estate_privileges = yes }
+		modifier = { max_absolutism = 1 }
+	}
+
 	benefits = {
 		cav_to_inf_ratio = 0.1
 		cavalry_cost = -0.1
+		cavalry_power = 0.1
 	}
+
 	on_granted = {
 		custom_tooltip = estate_nobles_landed_army_tt
-		custom_tooltip = SCALES_WITH_INFLUENCE_TT
 	}
-	influence_scaled_conditional_modifier = {
-		trigger = { always = yes }
-		modifier = { cavalry_power = 0.1 }
-	}
-	mechanics = {  }
+
+	mechanics = { }
+
 	ai_will_do = {
 		factor = 1
 	}
@@ -2466,16 +2429,6 @@ estate_nobles_mestnichestvo = {
 			add_legitimacy = -15
 			add_corruption = 2
 		}
-	}
-	conditional_modifier = {
-		trigger = {
-			has_government_mechanic = russian_modernization_mechanic
-		}
-		modifier = {
-			monthly_russian_modernization = -1
-			russian_modernization_gain_modifier = -1
-		}
-		is_bad = yes
 	}
 	#modifier_by_land_ownership = {
 	#	yearly_corruption = 0.4
@@ -2554,7 +2507,6 @@ estate_nobles_early_serfdom = {
 	}
 	penalties = {
 		global_institution_spread = -0.2
-		monthly_russian_modernization = -0.5
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2632,7 +2584,6 @@ estate_nobles_legalized_serfdom = {
 		global_institution_spread = -0.2
 		technology_cost = 0.05
 		idea_cost = 0.05
-		monthly_russian_modernization = -0.5
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2709,7 +2660,6 @@ estate_nobles_total_serfdom = {
 		global_institution_spread = -0.2
 		technology_cost = 0.1
 		idea_cost = 0.1
-		monthly_russian_modernization = -1
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2783,7 +2733,6 @@ estate_nobles_restricted_serfdom = {
 		global_institution_spread = -0.2
 		technology_cost = 0.1
 		idea_cost = 0.1
-		monthly_russian_modernization = -0.25
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2858,7 +2807,6 @@ estate_nobles_devastating_serfdom = {
 		global_institution_spread = -0.5
 		technology_cost = 0.15
 		idea_cost = 0.15
-		monthly_russian_modernization = -1
 	}
 	conditional_modifier = {
 		trigger = { has_country_flag = rus_buffed_serfdom_privileges }
@@ -2935,7 +2883,7 @@ estate_nobles_increased_peasant_freedom = {
 		nobles_privilege_slots = 1
 		russian_modernization_gain_modifier = 0.1
 		global_institution_spread = 0.1
-		monthly_russian_modernization = 0.5
+		monthly_russian_modernization = 0.625
 	}
 	penalties = {
 		global_manpower_modifier = -0.2
@@ -3008,7 +2956,7 @@ estate_nobles_peasant_liberation = {
 		nobles_privilege_slots = 1
 		russian_modernization_gain_modifier = 0.1
 		global_institution_spread = 0.2
-		monthly_russian_modernization = 0.75
+		monthly_russian_modernization = 0.9375
 	}
 	penalties = {
 		global_manpower_modifier = -0.2
@@ -3089,6 +3037,7 @@ estate_nobles_consolidated_noble_contracts = {
 	on_revoked = {
 	}
 	benefits = {
+		nobles_privilege_slots = 1
 		core_creation = -0.1
 	}
 	penalties = { 
@@ -3255,10 +3204,6 @@ estate_nobles_development_of_castles = {
 	mechanics = {
 		#no_estate_crownland_loss_from_developing
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -3292,10 +3237,6 @@ estate_nobles_statesman_servitude = {
 		disable_estate_action = {
 			estate_action = RECRUIT_MINISTER_NOBLES
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -3375,10 +3316,6 @@ estate_nobles_royal_court_tasks = {
 			prestige_decay = -0.01
 		}
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -3412,10 +3349,6 @@ estate_nobles_diet_right = {
 		}
 	}
 	mechanics = {
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -3462,10 +3395,6 @@ estate_nobles_force_conscription = {
 			estate_action = DEMAND_MORE_TROOPS_NOBLES
 		}
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
-	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
@@ -3499,10 +3428,6 @@ estate_nobles_noble_officer_right = {
 		disable_estate_action = {
 			estate_action = GRANT_GENERALSHIP_NOBLES
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -3554,10 +3479,6 @@ estate_nobles_expedition_rights = {
 		disable_estate_action = {
 			estate_action = RECRUIT_CONQUISTADOR_ESTATES_NOBLES
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.05 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -4075,10 +3996,6 @@ estate_nobles_orangist_privileges = {
 	
 	}
 	benefits = {
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
 	}
 	ai_will_do = {
 		factor = 0
@@ -4668,20 +4585,13 @@ estate_nobles_hab_von_raab_restructions = {
 	}
 	can_select = {
 	}
-	on_granted = {
-		custom_tooltip = VON_RAAB_RESTRICTIONS_TOOLTIP
-	}
-	loyalty_scaled_conditional_modifier = {
+	
+	influence_scaled_conditional_modifier = {
 		trigger = {
-			NOT = {
-				estate_influence = {
-					estate = estate_nobles
-					influence = 40
-				}
-			}
+			always = yes
 		}
 		modifier = {
-			development_cost = -0.075
+			development_cost = -0.05
 		}
 	}
 	ai_will_do = {

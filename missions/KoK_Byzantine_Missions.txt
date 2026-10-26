@@ -3953,20 +3953,10 @@ MEE_BYZ_military_centralized_5 = {
 		}
 		trigger = {
 			not_in_mission_preview_mode = { key = BYZ }
-			calc_true_if = {
-				all_subject_country = {
-					OR = {
-						is_subject_of_type = hereditary_pronoia_subject_type
-						is_subject_of_type = pronoia_subject_type
-					}
-					NOT = { liberty_desire = 5 }
-				}
-				amount = 2
-			}
-			OR = {
-				num_of_generals = 6
-				crown_land_share = 50
-			}
+			
+			num_of_generals = 6
+			crown_land_share = 50
+			
 		}
 		effect = {
 			change_government_reform_progress = 100 

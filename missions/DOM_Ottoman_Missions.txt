@@ -491,7 +491,7 @@ tur_conquest_of_europe = {
 					}
 					create_subject = {
 						who = HUN
-						subject_type = core_eyalet
+						subject_type = vassal
 					}
 					add_dip_power = 100
 				}
@@ -1579,7 +1579,7 @@ tur_african_conquest = {
 					}
 					create_subject = {
 						who = TUN
-						subject_type = core_eyalet
+						subject_type = vassal
 					}
 					add_dip_power = 100
 				}
@@ -1753,7 +1753,7 @@ tur_african_conquest = {
 					}
 					create_subject = {
 						who = MOR
-						subject_type = core_eyalet
+						subject_type = vassal
 					}
 					add_dip_power = 100
 				}
@@ -2596,7 +2596,7 @@ tur_egyptian_conquest = {
 					}
 					create_subject = {
 						who = YEM
-						subject_type = core_eyalet
+						subject_type = vassal
 					}
 					add_dip_power = 100
 				}
@@ -2694,7 +2694,7 @@ tur_egyptian_conquest = {
 					}
 					create_subject = {
 						who = ADA
-						subject_type = core_eyalet
+						subject_type = vassal
 					}
 					add_dip_power = 100
 				}

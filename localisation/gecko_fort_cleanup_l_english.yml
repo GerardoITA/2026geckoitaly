@@ -1,0 +1,4 @@
+﻿l_english:
+ gecko_fort_cleanup_title:0 "Annual Fort Cleanup"
+ gecko_fort_cleanup_desc:0 "Remove adjacent forts according to terrain and building priorities."
+ gecko_fort_construction_allowed_tt:0 "No neighbouring province with the same owner has an occupied or besieged fort. Existing forts can still be upgraded."

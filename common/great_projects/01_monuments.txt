@@ -3924,7 +3924,15 @@ shwedagon_pagoda = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#what to do when it's built
@@ -3939,12 +3947,28 @@ shwedagon_pagoda = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -4691,8 +4715,16 @@ taj_mahal = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 
@@ -4708,15 +4740,31 @@ taj_mahal = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 
@@ -5234,7 +5282,15 @@ bagan_temples = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#what to do when it's built
@@ -5249,12 +5305,28 @@ bagan_temples = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -5777,8 +5849,16 @@ golden_temple = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -5794,15 +5874,31 @@ golden_temple = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -11053,6 +11149,7 @@ brandenburg_gate = {
 		}
 		country_modifiers = {
 			monthly_militarized_society = 0.01
+			yearly_army_professionalism = 0.005
 			monthly_prussian_militarized_society_1 = 0.01
 			monthly_prussian_militarized_society_2 = 0.01
 			monthly_prussian_militarized_society_3 = 0.01
@@ -11075,6 +11172,7 @@ brandenburg_gate = {
 		}
 		country_modifiers = {
 			monthly_militarized_society = 0.02	
+			yearly_army_professionalism = 0.005
 			prestige_from_land = 1
 			army_tradition_from_battle = 0.25
 			monthly_prussian_militarized_society_1 = 0.02
@@ -11098,6 +11196,7 @@ brandenburg_gate = {
 		}
 		country_modifiers = {
 			monthly_militarized_society = 0.05
+			yearly_army_professionalism = 0.005
 			prestige_from_land = 1.5
 			army_tradition_from_battle = 0.5
 			monthly_prussian_militarized_society_1 = 0.05
@@ -11105,7 +11204,14 @@ brandenburg_gate = {
 			monthly_prussian_militarized_society_3 = 0.05
 		}
 		conditional_modifier = {
-			trigger = { owner = { mission_completed = emp_brapru_the_balance_of_power } }
+			trigger = {
+				owner = {
+					OR = {
+						mission_completed = BRA_project_power
+						mission_completed = PRU_place_in_the_sun
+					}
+				}
+			}
 			modifier = {
 				max_absolutism_effect = 0.1
 			}
@@ -11895,6 +12001,12 @@ ellora_caves = {
 
 	build_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -11911,6 +12023,12 @@ ellora_caves = {
 
 	can_use_modifiers_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -11921,6 +12039,12 @@ ellora_caves = {
 
 	can_upgrade_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -12094,6 +12218,7 @@ erdene_zuu = {
 		country_modifiers = {
 			religious_unity = 0.1
 			horde_unity = 0.5
+			meritocracy = 0.5
 			church_loyalty_modifier = 0.05
 			yearly_karma_decay = 0.01
 		}
@@ -12115,6 +12240,7 @@ erdene_zuu = {
 		}
 		country_modifiers = {
 			horde_unity = 1
+			meritocracy = 1
 			religious_unity = 0.2
 			church_loyalty_modifier = 0.1
 			yearly_karma_decay = 0.025
@@ -12137,6 +12263,7 @@ erdene_zuu = {
 		}
 		country_modifiers = {
 			horde_unity = 2
+			meritocracy = 2
 			religious_unity = 0.3
 			church_loyalty_modifier = 0.15
 			yearly_karma_decay = 0.05
@@ -12383,8 +12510,16 @@ gomateshwara_statue = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12395,14 +12530,30 @@ gomateshwara_statue = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12510,8 +12661,16 @@ chola_temples = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12522,14 +12681,30 @@ chola_temples = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -12798,6 +12973,12 @@ hampi = {
 
 	build_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -12814,6 +12995,12 @@ hampi = {
 
 	can_use_modifiers_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -12824,6 +13011,12 @@ hampi = {
 
 	can_upgrade_trigger = {
 		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
 			AND = {
 				religion_group = dharmic
 				has_owner_religion = yes
@@ -13285,8 +13478,16 @@ kashi_vishwanath = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -13297,14 +13498,30 @@ kashi_vishwanath = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -13399,8 +13616,16 @@ khajuraho = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -13411,14 +13636,30 @@ khajuraho = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = dharmic
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = dharmic
+			}
 		}
 	}
 
@@ -15472,8 +15713,16 @@ sun_temple_konarak = {
 			}
 		}
 		else = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
+			OR = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = VOC
+					}
+				}
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
 			}
 		}
 	}
@@ -15501,8 +15750,16 @@ sun_temple_konarak = {
 			}
 		}
 		else = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
+			OR = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = VOC
+					}
+				}
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
 			}
 		}
 	}
@@ -15524,8 +15781,16 @@ sun_temple_konarak = {
 			}
 		}
 		else = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
+			OR = {
+				owner = {
+					OR = {
+						tag = EIC
+						tag = VOC
+					}
+				}
+				province_is_or_accepts_religion_group = {
+					religion_group = dharmic
+				}
 			}
 		}
 	}
@@ -15621,7 +15886,15 @@ swayambhunath = {
 	type = monument
 
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	on_built = {
@@ -15631,11 +15904,27 @@ swayambhunath = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_buddhist_or_accepts_buddhism = yes
+		}
 	}
 
 	keep_trigger = {
@@ -18565,13 +18854,29 @@ shah_rukn_e_alam_tomb = {
 	on_destroyed = {
 	}
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			owner = {
+				OR = {
+					tag = EIC
+					tag = VOC
+				}
+			}
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
 		}
 	}
 	keep_trigger = {
@@ -18697,7 +19002,8 @@ nizwa_fort = {
 			factor = 0
 		}
 		province_modifiers = {
-			attrition = 1
+			local_defensiveness = 0.25
+			local_garrison_size = 0.25
 		}
 		area_modifier = {
 		}
@@ -18715,11 +19021,11 @@ nizwa_fort = {
 			factor = 350
 		}
 		province_modifiers = {
-			attrition = 1
-			max_attrition = 1
+		
 		}
 		area_modifier = {
-			
+			local_defensiveness = 0.25
+			local_garrison_size = 0.25
 		}
 		country_modifiers = {
 			autonomy_change_time = -0.15
@@ -18739,8 +19045,9 @@ nizwa_fort = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			attrition = 2
-			max_attrition = 2
+			local_defensiveness = 0.33
+			local_garrison_size = 0.33
+			local_defender_dice_roll_bonus = 1
 		}
 		region_modifier = { 
 			
@@ -18764,7 +19071,9 @@ nizwa_fort = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			
+			local_defensiveness = 0.33
+			local_garrison_size = 0.33
+			local_defender_dice_roll_bonus = 1
 		}
 		country_modifiers = {
 			autonomy_change_time = -0.25
@@ -19521,6 +19830,7 @@ schonbrunn_palace = {
 		area_modifier = {}
 		country_modifiers = {
 			diplomats = 1
+			diplomatic_reputation = 1
 		}
 		on_upgraded = {}
 	}
@@ -19530,9 +19840,9 @@ schonbrunn_palace = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_splendor = 1
-			chance_to_inherit = 0.05
+			monthly_splendor = 2
 			diplomats = 1
+			diplomatic_reputation = 2
 		}
 		on_upgraded = {}
 	}
@@ -19542,10 +19852,10 @@ schonbrunn_palace = {
 		province_modifiers = {}
 		area_modifier = {}
 		country_modifiers = {
-			monthly_splendor = 2
-			chance_to_inherit = 0.1 
+			monthly_splendor = 4
 			diplomats = 1
-			years_to_integrate_personal_union = -5
+			diplomatic_reputation = 2
+			diplomatic_upkeep = 1
 		}
 		on_upgraded = {}
 	}
@@ -19697,6 +20007,7 @@ city_of_sarai = {
 		}
 		country_modifiers = {
 			horde_unity = 0.5
+			meritocracy = 0.5
 			envoy_travel_time = -0.15
 		}
 		on_upgraded = {}
@@ -19712,6 +20023,7 @@ city_of_sarai = {
 		}
 		country_modifiers = {
 			horde_unity = 1
+			meritocracy = 1
 			envoy_travel_time = -0.15
 		}
 		on_upgraded = {}
@@ -19727,6 +20039,7 @@ city_of_sarai = {
 		}
 		country_modifiers = {
 			horde_unity = 2
+			meritocracy = 2
 			envoy_travel_time = -0.25
 		}
 		on_upgraded = {}
@@ -21515,11 +21828,7 @@ gme_munich_neuschwanstein_castle = {
 	can_be_moved = no
 	build_trigger = {
 		FROM = { adm_tech = 10 }
-		FROM = { government = monarchy }
-		OR = {
-			culture = bavarian
-			culture = austrian
-		}
+		culture_group = germanic
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -21528,11 +21837,7 @@ gme_munich_neuschwanstein_castle = {
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		FROM = { government = monarchy }
-		OR = {
-			culture = bavarian
-			culture = austrian
-		}
+		culture_group = germanic
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes
@@ -21540,11 +21845,7 @@ gme_munich_neuschwanstein_castle = {
 	}
 	can_upgrade_trigger = {
 		FROM = { adm_tech = 10 }
-		FROM = { government = monarchy }
-		OR = {
-			culture = bavarian
-			culture = austrian
-		}
+		culture_group = germanic
 		OR = {
 			has_owner_culture = yes
 			has_owner_accepted_culture = yes

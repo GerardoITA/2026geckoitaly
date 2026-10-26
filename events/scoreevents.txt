@@ -1,0 +1,360 @@
+###################################################
+###################BY INTLANDER####################
+###################################################
+
+####INTSCORE
+
+namespace = intscore
+
+
+#country_event = {
+#	 id = debugscore.1
+#	title = debugscore.1.t
+#    desc = debugscore.1.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = no
+#	immediate = {
+#		export_to_variable = {
+#			which = FLScore
+#			value = modifier:discipline
+#			who = ROOT
+#		}
+#		#divide_variable = {
+#		#	which = FLScore
+#		#	value = 10
+#		#}
+#		change_variable = {
+#			which = IntScore
+#			which = FLScore
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#		add_prestige = 5
+#	}
+#}
+###################################################
+##INITIALIZES MISSING SCORE STATE WITHOUT ERASING POINTS##
+###################################################
+country_event = {
+	 id = intscore.0
+	title = intscore.0.t
+    desc = intscore.0.d
+picture = COURT_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		intscore_initialize_country = yes
+	}
+	
+	option = {
+		name = score_option_a
+		ai_chance = { factor = 100 }
+	}
+}
+
+#####################################################################################
+## EVENTS TO INCREASE THE SCORE BY X POINTS - TO BE LINKED TO MISSIONS, EVENTS ETCC##
+#####################################################################################
+#country_event = {
+#	 id = intscore.1
+#	title = intscore.1.t
+#    desc = intscore.1.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 1
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.5
+#	title = intscore.5.t
+#    desc = intscore.5.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 5
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.10
+#	title = intscore.10.t
+#    desc = intscore.10.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 10
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.25
+#	title = intscore.25.t
+#    desc = intscore.25.d
+#picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+#        which = IntScore
+#        value = 25
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#country_event = {
+#	 id = intscore.50
+#	title = intscore.50.t
+ #   desc = intscore.50.d
+#	picture = COURT_eventPicture
+#	is_triggered_only = yes
+#	hidden = yes
+#	immediate = {
+#		change_variable = {
+ #       which = IntScore
+  #      value = 50
+#		}
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+###########################################
+######EVENT THAT CALCULATES VP YEARLY######
+###########################################
+###10 25 50 100
+###10 20 40 60
+
+country_event = {
+	id = intscore.999
+	title = intscore.999.t
+	desc = intscore.999.d
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
+}
+
+country_event = {
+	id = intscore.1000
+	title = intscore.1000.t
+	desc = intscore.1000.d
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
+}
+
+country_event = {
+	id = intscore.1001
+	title = intscore.1001.t
+	desc = intscore.1001.d
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
+}
+
+country_event = {
+	id = intscore.1002
+	title = intscore.1002.t
+	desc = intscore.1002.d
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	# Compatibility entry point; the native pulse owns the annual transaction.
+	immediate = { 1 = { province_event = { id = intscore.1063 } } }
+	option = { name = score_option_a }
+}
+
+
+
+###########################################
+#######EVENT TO CLEAR FLAG EVERY YEAR######
+###########################################
+
+
+##UNUSED: the native annual cycle no longer needs per-country reset flags
+country_event = {
+	id = intscore.1050
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		clr_country_flag = score_event_fired
+	}
+
+	option = {
+		name = score_option_a
+	}
+}
+
+#country_event = {
+#	 id = intscore.1100
+#	title = intscore.1100.t 
+#    desc = intscore.1100.d
+#	picture = COURT_eventPicture
+#	hidden = no
+#	trigger = {
+#		NOT = { has_country_flag = score_event2_fired}
+#		is_month = 0
+#		NOT = {	is_month = 4}
+#		OR ={
+#			AND = {
+#				is_year = 1450
+#				NOT = { is_year = 1451 }
+#			}
+#			AND = {
+#				is_year = 1455
+#				NOT = { is_year = 1456 }
+#			}
+#			AND = {
+#				is_year = 1460
+#				NOT = { is_year = 1461 }
+#			}
+#		
+#		}
+#	}
+#	mean_time_to_happen = {
+#	days = 1
+#	}
+#	immediate = {
+#		change_variable = {
+#			which = IntScore
+#			value = 1000
+#		}
+#		set_country_flag = score_event2_fired
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+#
+#country_event = {
+#	 id = intscore.1101
+#	title = intscore.1101.t 
+#    desc = intscore.1101.d
+#	picture = COURT_eventPicture
+#	hidden = yes
+#	trigger = {
+#		has_country_flag = score_event2_fired
+#		is_month = 0
+#		NOT = {	is_month = 4}
+#		OR ={
+#			AND = {
+#				is_year = 1451
+#				NOT = { is_year = 1452 }
+#			}
+#			AND = {
+#				is_year = 1456
+#				NOT = { is_year = 1457 }
+#			}
+#			AND = {
+#				is_year = 1461
+#				NOT = { is_year = 1462 }
+#			}
+#		
+#		}
+#	}
+#	mean_time_to_happen = {
+#	days = 1
+#	}
+#	immediate = {
+#		clr_country_flag = score_event2_fired
+#	}
+#	option = {
+#		name = score_option_a
+#		ai_chance = { factor = 100 }
+#	}
+#}
+
+############################################################
+################### INTSCORE RANKING UI #####################
+############################################################
+
+country_event = {
+	id = intscore.2000
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = intscore_ranking_close
+	}
+}
+
+
+
+
+
+
+####### RICALCOLA CLASSIFICA 
+country_event = {
+	id = intscore.1060
+	title = intscore.1060.t
+	desc = intscore.1060.d
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = { 1 = { province_event = { id = intscore.1064 } } }
+	option = { name = score_option_a }
+}
+
+
+############ CALCULATES RANKING FOR INTSCORE WARS
+country_event = {
+	id = intscore.1061
+	title = intscore_ranking_title
+	desc = intscore_ranking_desc
+	picture = COURT_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = { 1 = { province_event = { id = intscore.1064 } } }
+	option = { name = score_option_a }
+}

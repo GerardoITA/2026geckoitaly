@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "INTLANDER_FOOD_TRUCK_eventPicture"
+		texturefile = "gfx/event_pictures/intlander_food_truck.dds"
+		allwaystransparent = yes
+	}
+
+}

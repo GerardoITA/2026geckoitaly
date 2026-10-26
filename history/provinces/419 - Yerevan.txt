@@ -29,7 +29,6 @@ add_province_triggered_modifier=transcaucasian_wine_valleys
 	owner = ARM
 	controller = ARM
 	add_core = ARM
-	remove_core = TIM
 } 
 1435.1.1 = { unrest = 10 } 
 1453.1.1 = { unrest = 0 }

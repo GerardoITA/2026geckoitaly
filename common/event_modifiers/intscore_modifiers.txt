@@ -1,0 +1,5 @@
+####INTSCORE
+
+intscore_defeat_penalty = {
+	all_power_cost = 0.05
+}

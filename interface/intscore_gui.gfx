@@ -1,0 +1,69 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gecko_intscore_sort_header"
+		texturefile = "gfx/interface/intscore/sort_header.tga"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_gecko_intscore_panel"
+		texturefile = "gfx/interface/intscore/ranking_panel_contenders.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_intscore_button"
+		texturefile = "gfx/interface/intscore/ranking_button.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_intscore_page_button"
+		texturefile = "gfx/interface/intscore/page_button.tga"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_intscore_row_highlight"
+		texturefile = "gfx/interface/intscore/row_highlight.tga"
+		noOfFrames = 1
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_discipline"
+		texturefile = "gfx/interface/intscore/discipline.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_land_morale"
+		texturefile = "gfx/interface/intscore/land_morale.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_naval_morale"
+		texturefile = "gfx/interface/intscore/naval_morale.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_manpower_recovery_speed"
+		texturefile = "gfx/interface/intscore/manpower_recovery_speed.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_global_trade_goods_size_modifier"
+		texturefile = "gfx/interface/intscore/global_trade_goods_size_modifier.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_global_colonial_growth"
+		texturefile = "gfx/interface/intscore/global_colonial_growth.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_merchants"
+		texturefile = "gfx/interface/intscore/merchants.tga"
+	}
+	# Native modifier icon, resized to the surrounding text height.
+	spriteType = {
+		name = "GFX_text_gecko_intscore_development_cost"
+		texturefile = "gfx/interface/intscore/development_cost.tga"
+	}
+}

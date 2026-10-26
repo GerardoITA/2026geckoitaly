@@ -301,7 +301,7 @@
  X_CRI_reform_8_title:0 "Unite the Tatars"
  X_CRI_reform_8_emperor:0 "Unite the Tatars"
  X_CRI_reform_8_desc:0 ""
- X_CRI_reform_8_tt:0 "\n§RWarning if u pass this reform you will not be able to pass any other reforms!!!§!\n\n§WCountry changes to §Y[GLH.GetName]§!.\nIf we own §Y[466.GetName]§!, then §Y[466.GetName]§! will become the new Capital.\nIf our Government Rank is less than §YEmpire§!, the Government Rank of §Y[GLH.GetName]§! changes to §YEmpire§!.\nThe event '§YNew Traditions & Ambitions§!' happens.\n§Y[GLH.GetName]§! gains a permanent claim on all §YTatar§! provinces.§!"
+ X_CRI_reform_8_tt:0 "\n§RPassing this reform prevents any further Khanate Reforms from being enacted.§!"
  #Reform tooltips
  X_CRI_reform_1_passed_tt:0 "§YReinforce Genghisid Rule§! Khanate Reform has been enacted."
  #Event Modifiers
@@ -406,8 +406,8 @@
  #Mission Tooltips
  X_CRI_mission_3_tt:0 "Event '§YGenoa Cedes Gazaria§!' has happened."
  X_CRI_mission_7_tt:0 "If this mission is completed by having the required relations with §Y[TUR.GetName]§!, you lose half the money."
- X_CRI_mission_8_tt:0 "All provinces in the §YCrimea§! trade node are owned by §Y[Root.GetName]§!."
- X_CRI_mission_9_tt:0 "Every owned province in the §Y[284.GetRegionName]§! gains §G1§! Base Tax and Base Manpower.\nEvery owned province NOT of §Y[Root.Culture.GetGroupName]§! culture will become §Y[Root.Culture.GetName]§!."
+ X_CRI_mission_8_tt:0 "All provinces in the §YCrimea§! trade node are owned by §Y[Root.GetName]§! or its subjects (including tributaries)."
+ X_CRI_mission_9_tt:0 "Every owned province in the §YCrimea region§! gains §G1§! Base Tax and Base Manpower.\nEvery owned province in the §YCrimea region§! outside our primary culture group will adopt our primary culture."
  X_CRI_mission_11_tt:0 "A §Ythird§! of the development in §Y[295.GetName]§! will be taken and randomly distributed amongst provinces owned by §Y[Root.GetName]§!.\n§Y[Root.GetName]§! gains §G+1000§!£icon_manpower£ and §Y20.0§!¤ per 1 development of §Y[295.GetName]§!."
  X_CRI_mission_12_tt:0 " provinces in the §Y[282.GetAreaName]§! area, §Y[1974.GetAreaName]§! area, §Y[283.GetAreaName]§! area, §Y[281.GetAreaName]§! area, §Y[280.GetAreaName]§! area, §Y[290.GetAreaName]§! area, and §Y[289.GetAreaName]§! area owned by §Y[Root.GetName]§! or its Subjects."
  X_CRI_mission_16_tt:0 " provinces in the §Y[280.GetRegionName]§! region owned by §Y[Root.GetName]§! or its Subjects."

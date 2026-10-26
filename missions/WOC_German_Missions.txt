@@ -1608,28 +1608,10 @@ JHC_GER_3_ger = {
 			}
 		}
 		trigger = {
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Rights of Man"
-						has_dlc = "Emperor"
-					}
-				}
-				NOT = { great_power_rank = 6 }
-			}
-			else = {
-				total_development = 500
-			}
-			army_size = 200
-			power_projection = 25
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				num_of_age_rewards_taken = {
-					amount = 4
-				}
-			}
+			
+			total_development = 2000
+			army_size = 400
+			power_projection = 75
 		}
 		effect = {
 			if = {
@@ -2154,22 +2136,8 @@ JHC_GER_5_ger = {
 		icon = ger_kaiserreich
 		required_missions = { JHC_GER_education JHC_GER_junkers }
 		position = 10
-		provinces_to_highlight = {
-			is_capital = yes
-			NOT = { owned_by = ROOT }
-			owner = {
-				total_development = ROOT 
-			}
-		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = kaiserreich_tt
-				NOT = {
-					any_country = {
-						total_development = ROOT
-					}
-				}
-			}
+			total_development = 2500
 			if = {
 				limit = {
 					OR = {

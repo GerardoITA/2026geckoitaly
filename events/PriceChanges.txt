@@ -70,7 +70,7 @@ country_event = {
 			continent = europe
 		}
 		2190 = {
-			is_discovered_by = ROOT
+			has_discovered = ROOT
 		}
 		NOT = { has_global_flag = europeans_in_china_happened }
 	}

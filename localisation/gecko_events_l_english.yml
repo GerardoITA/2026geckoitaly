@@ -143,7 +143,7 @@
  gc_burgundy_event.3.b:0 "Decline the offer."
  #Gecko Austria
  flavor_hab.20.gc:0 "We may not abandon our German roots."
- gecko_habsburg_empire_requirements_tooltip:0 "The Entirety of Austria, Bohemia and Royal Hungary must be directly controlled by us. Furthermore we must secure our Ambitions in Italy and conquer the City of Venice."
+ gecko_habsburg_empire_requirements_tooltip:0 "The Entirety of Austria, Bohemia and Royal Hungary must be directly owned and cored by us. Furthermore we must secure our Ambitions in Italy and own and core the City of Venice."
  gecko.1000.t:0 "Hungarian Levies"
  gecko.1000.d:0 "The levies previously provided by the Hungarian Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
  gecko.1000.a:0 "Do nothing."
@@ -227,3 +227,13 @@ create_45_mercs_tt:0 "Hire 45 Mercenary Regiments"
 create_50_mercs_tt:0 "Hire 50 Mercenary Regiments"
 create_100_mercs_tt:0 "Hire 100 Mercenary Regiments"
 create_200_mercs_tt:0 "Hire 200 Mercenary Regiments"
+
+echo.25.t:0 "Intlander's Food Truck"
+
+echo.25.d:0 "Intlander's Food Truck has arrived in §Y[Root.GetName]§!. We must decide whether to make it an official supplier to the army or deny it the permits required to operate.\n\nWe have managed to recover a copy of the menu:\n\nSpaghetti al Pomodoro — §Y8 Ducats§!\nPenne all'Arrabbiata — §Y8 Ducats§!\nCarbonara — §Y10 Ducats§!\nAmatriciana — §Y10 Ducats§!\nCacio e Pepe — §Y10 Ducats§!\nPasta al Ragù — §Y12 Ducats§!\nLinguine al Pesto — §Y10 Ducats§!\nLasagna — §Y14 Ducats§!"
+
+echo.25.a:0 "Only 8 ducats for a hot plate of pasta? That's a bargain!"
+
+echo.25.b:0 "8 ducats for pasta? That's daylight robbery!"
+ gecko_hun_keep_current_succession:0 "Reject both claimants and preserve [Root.Heir.GetName]'s succession."
+ gecko_hun_keep_current_ruler:0 "Keep our current ruler and heir."

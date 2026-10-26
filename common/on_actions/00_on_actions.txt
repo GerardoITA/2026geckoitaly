@@ -1,6 +1,7 @@
 #When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
 # country
 on_startup = {
+	gc_update_subject_discipline = yes
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -73,6 +74,8 @@ on_startup = {
 			id = echo.9
 		}
 	}
+	gecko_refresh_african_modifier_cache_effect = yes
+	gecko_refresh_maghreb_modifier_cache_effect = yes
 }
 
 # country
@@ -227,6 +230,7 @@ on_enforce_rebel_demands = {
 
 # country
 on_colonial_liberation = {
+	gc_update_subject_discipline = yes
 	if = {
 		limit = {
 			NOT = {
@@ -1094,6 +1098,7 @@ on_siege_lost_province = {
 # root = location, from = country that abandons colony
 # Fired right before the colony is abandoned.
 on_abandon_colony = {
+	gecko_abandon_colony_modifier_cache_effect = yes
 }
 
 # province
@@ -1217,6 +1222,24 @@ on_monarch_death = {
 
 		country_event = {
 			id = ruler_failsafe.1
+		}
+	}
+	# POLAND
+	if = {
+		limit = {
+			tag = POL
+
+			NOT = {
+				is_year = 1470
+			}
+
+			NOT = {
+				has_country_flag = ruler_failsafe_poland_used
+			}
+		}
+
+		country_event = {
+			id = ruler_failsafe.2
 		}
 	}
 
@@ -1910,14 +1933,13 @@ on_chinese_empire_dismantled = {
 # FROM = Old Emperor, ROOT = New Emperor
 on_mandate_of_heaven_gained = {
 	###X###
-	#Removed all actions, replaced with below
-	add_government_reform = X_CRI_great_tatar_state_reform
+	# Keep the main reform and apply the existing tier-two meritocracy fix.
 	set_variable = {
 		which = X_CRI_celestial_empire_reforms_variable
 		value = 0
 	}
 	set_mandate = 50
-	set_meritocracy = 100
+	gecko_enable_mandate_meritocracy_effect = yes
 	#######
 }
 
@@ -1925,8 +1947,8 @@ on_mandate_of_heaven_gained = {
 # FROM = New Emperor, ROOT = Old Emperor
 on_mandate_of_heaven_lost = {
 	###X###
-	#Removed all actions, replaced with below
-	remove_government_reform = X_CRI_great_tatar_state_reform
+	# Remove the meritocracy fix; leave the main reform alone.
+	remove_government_reform = X_CRI_fix_for_meritocracy
 	#######
 }
 
@@ -2310,9 +2332,11 @@ on_siberian_pulse = {
 
 # country random events
 on_monthly_pulse = {
+	gecko_monthly_modifier_cache_effect = yes
 }
 
 on_yearly_pulse = {
+	gecko_mark_player_country_effect = yes
 	events = {
 		flavor_mos.3		#Yearly Tatar Yoke Tribute
 	}
@@ -2729,6 +2753,7 @@ on_bi_yearly_pulse_4 = {
 		1000 = estate_privileges_and_agendas_events.4
 		1000 = estate_privileges_and_agendas_events.5
 		2000 = 0
+		
 	}
 }
 
@@ -3020,7 +3045,6 @@ on_thri_yearly_pulse_3 = {
 		50 = subject_interaction_events.35
 		50 = subject_interaction_events.36
 		50 = subject_interaction_events.38
-		50 = subject_interaction_events.40
 		50 = subject_interaction_events.43
 		75 = tributary_events.1
 		75 = tributary_events.2
@@ -4896,40 +4920,7 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
-	#gecko fort line
-	if = {
-		limit = {
-			has_province_flag = PR_new_conquest_fort_delay
-		}
-		clr_province_flag = PR_new_conquest_fort_delay
-	}
-	if = {
-		limit = {
-			fort_level = 2
-		}
-		set_province_flag = PR_new_conquest_fort_delay
-	}
-	if = {
-		limit = {
-			area_for_scope_province = {
-				owner = {
-					tag = ROOT
-				}
-				OR = {
-					has_building = fort_15th
-					has_construction = fort_15th
-				}
-				AND = {
-					has_province_flag = PR_new_conquest_fort_delay
-					had_province_flag = {
-						flag = PR_new_conquest_fort_delay
-						days = 182
-					}
-				}
-			}
-		}
-		remove_building = fort_15th
-	}
+	gecko_ownership_modifier_cache_effect = yes
 }
 
 # country
@@ -5450,6 +5441,7 @@ on_primary_culture_changed = {
 	on_primary_culture_changed_privileges_effect = yes
 	judaism_on_culture_country_effect = yes
 	imperial_modifiers_on_primary_culture_change_effect = yes
+	gecko_refresh_maghreb_modifier_cache_effect = yes
 }
 
 # FROM = Previous Country, ROOT = Province
@@ -5474,6 +5466,7 @@ on_company_chartered = {
 
 # ROOT = Overlord, FROM = Minor
 on_dependency_gained = {
+	FROM = { gc_update_subject_discipline = yes }
 	if = {
 		limit = {
 			FROM = {
@@ -5504,6 +5497,7 @@ on_dependency_gained = {
 
 # ROOT = Overlord, FROM = Minor
 on_dependency_lost = {
+	FROM = { gc_update_subject_discipline = yes }
 	if = {
 		limit = {
 			has_country_modifier = mng_tibetan_horses_monopoly_modifier
@@ -5551,6 +5545,7 @@ on_dependency_lost = {
 
 # ROOT = New vassal, FROM = Overlord
 on_create_vassal = {
+	gc_update_subject_discipline = yes
 	on_religion_change_estate_privileges_effect = yes
 	if = {
 		limit = {
@@ -5690,6 +5685,7 @@ on_flagship_destroyed = {
 
 # this = Released country, FROM = Releasing country
 on_country_released = {
+	gc_update_subject_discipline = yes
 	if = {
 		limit = {
 			tag = PAP
@@ -5746,6 +5742,7 @@ on_trade_good_changed = {
 			add_base_production = -1
 		}
 	}
+	gecko_trade_good_modifier_cache_effect = yes
 }
 
 # this = country
@@ -5938,6 +5935,7 @@ on_conquest = {
 }
 
 on_country_creation = {
+	gc_update_subject_discipline = yes
 	if = {
 		limit = {
 			tag = PAP
@@ -5957,6 +5955,8 @@ on_country_creation = {
 		change_government = theocracy
 		add_government_reform = papacy_reform
 	}
+	gecko_refresh_african_modifier_cache_effect = yes
+	gecko_refresh_maghreb_modifier_cache_effect = yes
 }
 
 on_federation_leader_change = {
@@ -5983,6 +5983,7 @@ on_transfer_development = {
 
 #FROM = overlord, ROOT - colony
 on_colonial_type_change = {
+	gc_update_subject_discipline = yes
 	clr_country_flag = encourage_cash_crops_flag
 }
 
@@ -6146,10 +6147,13 @@ on_estate_removed = {
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
 on_colony_established = {
+	gecko_colony_modifier_cache_effect = yes
 }
 
 #scope = new country, FROM = parent country
 on_colonial_nation_established = {
+	gc_update_subject_discipline = yes
+	gecko_refresh_african_modifier_cache_effect = yes
 }
 
 ##scope = colony province, FROM = owner country or province if there's a minority expulsion source
@@ -6417,6 +6421,7 @@ on_slacken_stop = {
 on_colony_finished = {
 	#ROOT - Province
 	on_colony_finished_effect = yes
+	gecko_colony_modifier_cache_effect = yes
 }
 
 on_advisor_hired = {

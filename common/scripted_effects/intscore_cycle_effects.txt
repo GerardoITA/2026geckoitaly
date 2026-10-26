@@ -1,0 +1,132 @@
+# Country scope. Initialization must never erase an existing score.
+intscore_initialize_country = {
+	if = {
+		limit = { NOT = { has_country_flag = score_set } }
+		change_variable = { which = IntScore value = 0 }
+		change_variable = { which = YearlyIntScore value = 0 }
+		set_country_flag = score_set
+	}
+}
+
+# Province 1 holds fixed-size counters; ownership changes do not reset them.
+# Registration supplies the final deterministic fallback for simultaneous ties.
+intscore_register_participant = {
+	if = {
+		limit = { NOT = { has_country_flag = intscore_registered } }
+		save_event_target_as = intscore_registration_country
+		1 = {
+			change_variable = { which = intscore_entry_order value = 1 }
+			event_target:intscore_registration_country = {
+				set_variable = { which = intscore_entry_order which = PREV }
+			}
+		}
+		set_country_flag = intscore_registered
+	}
+}
+
+# Country scope. Called synchronously for every eligible country by the cycle.
+intscore_award_annual_country = {
+	intscore_initialize_country = yes
+	intscore_register_participant = yes
+	set_country_flag = intscore_participant
+	set_variable = { which = YearlyIntScore value = 0 }
+	if = {
+		limit = { is_year = 1700 }
+		intscore_score_valid_provinces = { MULTIPLIER = 6 }
+	}
+	else_if = {
+		limit = { is_year = 1600 }
+		intscore_score_valid_provinces = { MULTIPLIER = 4 }
+	}
+	else_if = {
+		limit = { is_year = 1500 }
+		intscore_score_valid_provinces = { MULTIPLIER = 2 }
+	}
+	else = {
+		intscore_score_valid_provinces = { MULTIPLIER = 1 }
+	}
+	if = {
+		limit = { check_variable = { which = YearlyIntScore value = 0.001 } }
+		# All countries changing score in this annual batch share its timestamp.
+		1 = {
+			PREV = { set_variable = { which = intscore_score_order which = PREV } }
+		}
+	}
+}
+
+# Country scope. A peace loss reaches a new score after earlier arrivals.
+intscore_record_score_change = {
+	save_event_target_as = intscore_changed_country
+	1 = {
+		change_variable = { which = intscore_score_order value = 1 }
+		event_target:intscore_changed_country = {
+			set_variable = { which = intscore_score_order which = PREV }
+		}
+	}
+}
+
+# Province scope. All authoritative rebuilds use the same ROOT and country set.
+intscore_finish_ranking = {
+	intscore_assign_place_flags = yes
+	set_global_flag = intscore_ranking_updated
+	change_variable = { which = intscore_cache_version value = 1 }
+	every_country = {
+		limit = { ai = no has_country_flag = gecko_intscore_gui_open }
+		# Give presentation effects their own country ROOT.
+		country_event = { id = intscore.1062 }
+	}
+}
+
+# Country scope. Covers tag changes even when a formation omits on_change_tag_effect.
+intscore_check_country_rank_slot = {
+	if = {
+		limit = {
+			is_variable_equal = { which = intscore_current_rank value = $RANK$ }
+			NOT = { event_target:intscore_rank_$RANK$ = { tag = ROOT } }
+		}
+		1 = { province_event = { id = intscore.1064 } }
+	}
+}
+
+intscore_validate_country_rank = {
+	intscore_check_country_rank_slot = { RANK = 1 }
+	intscore_check_country_rank_slot = { RANK = 2 }
+	intscore_check_country_rank_slot = { RANK = 3 }
+	intscore_check_country_rank_slot = { RANK = 4 }
+	intscore_check_country_rank_slot = { RANK = 5 }
+	intscore_check_country_rank_slot = { RANK = 6 }
+	intscore_check_country_rank_slot = { RANK = 7 }
+	intscore_check_country_rank_slot = { RANK = 8 }
+	intscore_check_country_rank_slot = { RANK = 9 }
+	intscore_check_country_rank_slot = { RANK = 10 }
+	intscore_check_country_rank_slot = { RANK = 11 }
+	intscore_check_country_rank_slot = { RANK = 12 }
+	intscore_check_country_rank_slot = { RANK = 13 }
+	intscore_check_country_rank_slot = { RANK = 14 }
+	intscore_check_country_rank_slot = { RANK = 15 }
+	intscore_check_country_rank_slot = { RANK = 16 }
+	intscore_check_country_rank_slot = { RANK = 17 }
+	intscore_check_country_rank_slot = { RANK = 18 }
+	intscore_check_country_rank_slot = { RANK = 19 }
+	intscore_check_country_rank_slot = { RANK = 20 }
+	intscore_check_country_rank_slot = { RANK = 21 }
+	intscore_check_country_rank_slot = { RANK = 22 }
+	intscore_check_country_rank_slot = { RANK = 23 }
+	intscore_check_country_rank_slot = { RANK = 24 }
+	intscore_check_country_rank_slot = { RANK = 25 }
+	intscore_check_country_rank_slot = { RANK = 26 }
+	intscore_check_country_rank_slot = { RANK = 27 }
+	intscore_check_country_rank_slot = { RANK = 28 }
+	intscore_check_country_rank_slot = { RANK = 29 }
+	intscore_check_country_rank_slot = { RANK = 30 }
+	intscore_check_country_rank_slot = { RANK = 31 }
+	intscore_check_country_rank_slot = { RANK = 32 }
+	intscore_check_country_rank_slot = { RANK = 33 }
+	intscore_check_country_rank_slot = { RANK = 34 }
+	intscore_check_country_rank_slot = { RANK = 35 }
+	intscore_check_country_rank_slot = { RANK = 36 }
+	intscore_check_country_rank_slot = { RANK = 37 }
+	intscore_check_country_rank_slot = { RANK = 38 }
+	intscore_check_country_rank_slot = { RANK = 39 }
+	intscore_check_country_rank_slot = { RANK = 40 }
+}

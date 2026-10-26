@@ -7,6 +7,7 @@ X_CRI_reform_1 = {
 	}
 	emperor = {
 		meritocracy = 0.5
+		horde_unity = 0.5
 		imperial_mandate = 0.1
 	}
 	on_effect = {
@@ -252,86 +253,16 @@ X_CRI_reform_8 = {
 	}
 	on_effect = {
 		custom_tooltip = X_CRI_reform_8_tt
+		if = {
+			limit = { tag = CRI }
+			custom_tooltip = gecko_form_golden_horde_unlocked_tt
+		}
 		hidden_effect = {
 			change_variable = {
 				which = X_CRI_celestial_empire_reforms_variable
 				value = 1
 			}
-			every_country = {
-				limit = {
-					is_emperor_of_china = yes
-				}
-				change_tag = GLH
-				if = {
-					limit = {
-						owns = 466
-					}
-					set_capital = 466
-				}
-				on_change_tag_effect = yes
-				swap_non_generic_missions = yes
-				remove_non_electors_emperors_from_empire_effect = yes
-				if = {
-					limit = {
-						NOT = {
-							government_rank = 3
-						}
-					}
-					set_government_rank = 3
-				}
-				if = {
-					limit = {
-						has_custom_ideas = no
-					}
-					set_country_flag = formed_golden_horde_flag
-					country_event = {
-						id = ideagroups.1
-					}					#Swap Ideas
-				}
-				crimea_region = {
-					add_permanent_claim = GLH
-				}
-				nogai_area = {
-					add_permanent_claim = GLH
-				}
-				lower_yik_area = {
-					add_permanent_claim = GLH
-				}
-				bashkiria_area = {
-					add_permanent_claim = GLH
-				}
-				kazan_area = {
-					add_permanent_claim = GLH
-				}
-				samara_area = {
-					add_permanent_claim = GLH
-				}
-				ural_area = {
-					add_permanent_claim = GLH
-				}
-				ishim_area = {
-					add_permanent_claim = GLH
-				}
-				yrtesh_area = {
-					add_permanent_claim = GLH
-				}
-				ob_area = {
-					add_permanent_claim = GLH
-				}
-				kazakhstan_area = {
-					add_permanent_claim = GLH
-				}
-			}
 		}
-		GLH = {
-			change_government_to_monarchy = yes
-			add_government_reform = X_CRI_great_tatar_state_reform_2
-		}
-		add_country_modifier = {
-			name = "centralization_modifier"
-			duration = 7300
-		}
-		add_prestige = 25
 	}
 	off_effect = {
 		hidden_effect = {

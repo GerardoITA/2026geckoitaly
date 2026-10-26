@@ -1,0 +1,1792 @@
+country_decisions = {
+
+	gecko_proclaim_russian_empire = {
+		major = yes
+
+		potential = {
+			OR = {
+				tag = RUS
+				tag = MOS
+			}
+			NOT = { has_country_flag = gecko_proclaimed_russian_empire }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = ruthenia_region
+				region = russia_region
+				region = ural_region
+				region = crimea_region
+				region = caucasia_region
+				area = nogai_area
+				area = kazakhstan_area
+				area = balchasj_area
+				area = ferghana_area
+				area = jetysuu_area
+				area = arys_area
+				area = lower_yik_area
+				area = syr_darya_area
+				area = kyzylkum_area
+				region = west_siberia_region
+				region = east_siberia_region
+				area = tannu_uriankhai_area
+				area = khiva_area
+				area = transoxiana_area
+				area = samarkand_area
+				area = termez_area
+				area = merv_area
+				area = transcaspia_area
+				area = moldavia_area
+				area = samogitia_area
+				area = lithuania_area
+				area = curonia_area
+				area = livonia_area
+				area = estonia_ingria_area
+				area = nyland_area
+				area = inner_finland_area
+				area = finland_area
+				area = bothnia_area
+				area = mazovia_area
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			tag = RUS
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_russian_empire_territory_tt
+				ruthenia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				russia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				ural_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				crimea_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				caucasia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				nogai_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				kazakhstan_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				balchasj_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				ferghana_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				jetysuu_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				arys_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lower_yik_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				syr_darya_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				kyzylkum_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				west_siberia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				east_siberia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				tannu_uriankhai_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				khiva_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				transoxiana_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				samarkand_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				termez_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				merv_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				transcaspia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				moldavia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				samogitia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lithuania_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				curonia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				livonia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				estonia_ingria_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				nyland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				inner_finland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				finland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				bothnia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				mazovia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_RUSSIAN_EMPIRE
+			set_country_flag = gecko_proclaimed_russian_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_russian_empire_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_proclaim_british_empire = {
+		major = yes
+
+		potential = {
+			tag = GBR
+			NOT = { has_country_flag = gecko_proclaimed_british_empire }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = south_africa_region
+				region = east_africa_region
+				region = egypt_region
+				region = canada_region
+				region = hudson_bay_region
+				region = australia_region
+				region = burma_region
+				region = bengal_region
+				region = hindusthan_region
+				region = west_india_region
+				region = deccan_region
+				region = coromandel_region
+				region = british_isles_region
+				area = kenya_area
+				area = tanzania_area
+				area = palestine_area
+				area = johor_area
+				area = malacca_area
+				area = malaya_area
+				area = brunei_area
+				area = benin_area
+				area = lower_niger_area
+				area = pirate_coast_area
+				area = oman_area
+				area = mascat_area
+				area = dhofar_area
+				area = mahra_area
+				area = hadramut_area
+				area = yemen_area
+				area = upper_yemen_area
+				area = tihama_al_yemen_area
+				area = asir_area
+			}
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_british_empire_territory_tt
+				south_africa_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				east_africa_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				egypt_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				canada_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				hudson_bay_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				australia_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				burma_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				bengal_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				hindusthan_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				west_india_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				deccan_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				coromandel_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				british_isles_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				kenya_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				tanzania_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				palestine_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				johor_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				malacca_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				malaya_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				brunei_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				benin_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				lower_niger_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				pirate_coast_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				oman_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				mascat_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				dhofar_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				mahra_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				hadramut_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				yemen_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				upper_yemen_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				tihama_al_yemen_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+
+				asir_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_BRITISH_EMPIRE
+			set_country_flag = gecko_proclaimed_british_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_british_empire_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_proclaim_persian_empire = {
+		major = yes
+
+		potential = {
+			OR = {
+				tag = PER
+				tag = ARL
+				tag = FRS
+			}
+			NOT = { has_country_flag = gecko_proclaimed_persian_empire }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = persia_region
+				region = khorasan_region
+				region = mashriq_region
+				region = anatolia_region
+				region = egypt_region
+				area = shirvan_area
+				area = armenia_area
+				area = samtskhe_area
+				area = imereti_area
+				area = kartli_kakheti_area
+				area = thrace_area
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			tag = PER
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_persian_empire_territory_tt
+				persia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				khorasan_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				mashriq_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				anatolia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				egypt_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				shirvan_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				armenia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				samtskhe_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				imereti_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				kartli_kakheti_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				thrace_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_PERSIAN_EMPIRE
+			set_country_flag = gecko_proclaimed_persian_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_achaemenid_empire_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# Country flags retain their existing IDs for save and idea compatibility.
+	gecko_proclaim_rashidun_caliphate = {
+		major = yes
+
+		potential = {
+			OR = {
+				tag = ARB
+				tag = RAS
+			}
+			NOT = { has_country_flag = gecko_proclaimed_umayyad_empire }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = arabia_region
+				region = mashriq_region
+				region = persia_region
+				region = egypt_region
+				region = khorasan_region
+				area = north_kurdistan_area
+				area = dulkadir_area
+				area = cukurova_area
+				area = karaman_area
+				area = rum_area
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			tag = ARB
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_rashidun_caliphate_territory_tt
+				arabia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				mashriq_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				persia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				egypt_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				khorasan_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				north_kurdistan_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				dulkadir_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				cukurova_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				karaman_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				rum_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_RASHIDUN_CALIPHATE
+			set_country_flag = gecko_proclaimed_umayyad_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_rashidun_caliphate_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_proclaim_umayyad_caliphate = {
+		major = yes
+
+		potential = {
+			OR = {
+				tag = TUN
+				tag = ADU
+				tag = MOR
+			}
+			NOT = { has_country_flag = gecko_proclaimed_western_umayyad_empire }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = egypt_region
+				region = maghreb_region
+				region = iberia_region
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_umayyad_caliphate_territory_tt
+				egypt_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				maghreb_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				iberia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+
+		effect = {
+			override_country_name = GECKO_UMAYYAD_CALIPHATE
+			set_country_flag = gecko_proclaimed_western_umayyad_empire
+			add_country_modifier = {
+				name = gecko_formed_umayyad_empire
+				duration = -1
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	proclaim_ottoman_empire = {
+		major = yes
+
+		potential = {
+			normal_or_historical_nations = yes
+
+			NOT = {
+				has_country_flag = proclaim_ottoman_empire_flag
+			}
+
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+
+			tag = TUR
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = mashriq_region
+				region = egypt_region
+				region = anatolia_region
+				area = thrace_area
+				area = bulgaria_area
+				area = silistria_area
+				area = macedonia_area
+				area = X_central_greece_area
+				area = morea_area
+				area = northern_greece_area
+				area = eastern_mediterrenean_islands_area
+				area = aegean_archipelago_area
+				area = albania_area
+				area = rascia_area
+				area = serbia_area
+				area = bosnia_area
+				area = wallachia_area
+				area = moldavia_area
+				area = imereti_area
+				area = samtskhe_area
+			}
+
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+
+		allow = {
+			adm_tech = 14
+
+			custom_trigger_tooltip = {
+				tooltip = proclaim_ottoman_empire_territory_tt
+				anatolia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				mashriq_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				egypt_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				thrace_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				bulgaria_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				silistria_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				macedonia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				X_central_greece_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				morea_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				northern_greece_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				eastern_mediterrenean_islands_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				aegean_archipelago_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				albania_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				rascia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				serbia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				bosnia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				wallachia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				moldavia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				imereti_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				samtskhe_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+		}
+
+		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 100
+			}
+
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+
+				set_government_rank = 3
+			}
+
+			override_country_name = OTTOMAN_EMPIRE
+
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+
+				custom_tooltip = gecko_ottoman_empire_idea_improvements_tt
+				country_event = {
+					id = ideagroups.1
+				}
+			}
+
+			set_country_flag = proclaim_ottoman_empire_flag
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_greater_german_empire = {
+		major = yes
+		potential = {
+			tag = GER
+			NOT = { has_country_modifier = gecko_greater_german_empire }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+				region = poland_region
+				area = west_prussia_area
+				area = east_prussia_area
+				area = denmark_area
+				area = jutland_area
+				area = south_jutland_area
+			}
+			NOT = {
+				OR = {
+					area = grisons_area
+					area = switzerland_area
+					area = bern_area
+					area = romandie_area
+				}
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_greater_german_empire_territory_tt
+				north_german_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				south_german_region = {
+					type = all
+					OR = {
+						area = grisons_area
+						area = switzerland_area
+						area = bern_area
+						area = romandie_area
+						AND = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+				}
+
+				poland_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				west_prussia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				east_prussia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				denmark_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				jutland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				south_jutland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gecko_greater_german_empire
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_emperor_of_the_french = {
+		major = yes
+		potential = {
+			tag = FRA
+			NOT = { has_country_modifier = gecko_emperor_of_the_french }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = france_region
+				region = low_countries_region
+				area = hesse_area
+				area = north_rhine_area
+				area = lower_rhineland_area
+				area = palatinate_area
+				area = alsace_area
+				area = upper_rhineland_area
+				area = lower_swabia_area
+				area = switzerland_area
+				area = bern_area
+				area = romandie_area
+				area = lombardy_area
+				area = torino_area
+				area = liguria_area
+				area = piedmont_area
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_emperor_of_the_french_territory_tt
+				france_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				low_countries_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				hesse_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				north_rhine_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lower_rhineland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				palatinate_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				alsace_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				upper_rhineland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lower_swabia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				switzerland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				bern_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				romandie_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lombardy_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				torino_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				liguria_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				piedmont_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gecko_emperor_of_the_french
+				duration = -1
+			}
+			add_country_modifier = {
+				name = gecko_emperor_of_the_french_cossacks
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_genghis_khan_reborn = {
+		major = yes
+		potential = {
+			OR = {
+				tag = MGE
+				tag = GLH
+				tag = CRI
+				tag = OIR
+				tag = KHA
+			}
+			NOT = { has_country_modifier = gecko_genghis_khan_reborn }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = mongolia_region
+				region = tibet_region
+				region = central_asia_region
+				region = khorasan_region
+				region = persia_region
+				region = caucasia_region
+				region = west_siberia_region
+				region = east_siberia_region
+				region = ural_region
+				region = crimea_region
+				region = ruthenia_region
+				area = tver_area
+				area = moscow_area
+				area = vladimir_area
+				area = suzdal_area
+				area = ryazan_area
+				area = oka_area
+				area = moldavia_area
+				area = wallachia_area
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_genghis_khan_reborn_territory_tt
+				mongolia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				tibet_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				central_asia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				khorasan_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				persia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				caucasia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				west_siberia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				east_siberia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				ural_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				crimea_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				ruthenia_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				tver_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				moscow_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				vladimir_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				suzdal_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				ryazan_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				oka_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				moldavia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				wallachia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gecko_genghis_khan_reborn
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

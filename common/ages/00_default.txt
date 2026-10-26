@@ -569,6 +569,9 @@ age_of_reformation = {
 				OR = {
 					tag = CRI
 					tag = GLH
+					tag = OIR
+					tag = KHA
+					tag = MGE
 				}	
 				
 			}	
@@ -601,7 +604,7 @@ age_of_absolutism = {
 		decrease_autonomy_command = 0
 		strengthen_government = 2
 		
-		increase_autonomy_command = -2
+		increase_autonomy_command = -1
 		debase_currency = -0
 		execute_rebel_acceptance_command = -1
 		automatic_seat_in_parliament = 0
@@ -908,7 +911,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				discipline = 0.05
+				discipline = 0.075
 			}
 			ai_will_do = {
 				factor = 100

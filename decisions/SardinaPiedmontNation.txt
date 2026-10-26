@@ -28,7 +28,7 @@ country_decisions = {
 			}
 
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 
@@ -40,32 +40,32 @@ country_decisions = {
 
 			liguria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			torino_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			lombardy_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			po_valley_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			venetia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			piedmont_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 		effect = {
@@ -139,7 +139,7 @@ country_decisions = {
 					owns_core_province = 2986			# Cagliari
 					senior_union_with = SAV
 					SAV = {
-						owns_core_province = 103		# Piedmont
+						ROOT = { owns_core_province = 103 }		# Piedmont
 						103 = {							# Piedmont
 							is_state = yes
 						}
@@ -154,7 +154,7 @@ country_decisions = {
 					}
 					senior_union_with = SAR
 					SAR = {
-						owns_core_province = 2986		# Cagliari
+						ROOT = { owns_core_province = 2986 }		# Cagliari
 						NOT = { num_of_cities = 8 } #Original 3 + 5
 					}
 				}

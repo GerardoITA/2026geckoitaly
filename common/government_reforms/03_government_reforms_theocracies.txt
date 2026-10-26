@@ -11,6 +11,7 @@ theocracy_mechanic = {
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
 	custom_attributes = {
+		can_see_theocratic_heir_stats = yes
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
@@ -663,6 +664,9 @@ dutch_theocracy_reform = {
 	nation_designer_cost = 40
 	modifiers = {
 		heavy_ship_power = 0.1
+		colonists = 1
+		global_colonial_growth = 20
+		global_ship_trade_power = 0.2
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
 		has_voc_indiamen = yes
@@ -670,6 +674,7 @@ dutch_theocracy_reform = {
 	}
 
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		country_event = { id = dutch_republic.33 }
 	}
 	royal_marriage = yes
@@ -712,6 +717,9 @@ dutch_theocracy_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 	}
 }
 
@@ -1545,6 +1553,7 @@ theocratic_democracy_reform = {
 	}
 	
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		NOT = { has_government_attribute = monastic_order }
 		if = {
 			limit = { 
@@ -1598,6 +1607,9 @@ theocratic_democracy_reform = {
 			}
 		}
 	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 constitional_theocracy_reform = {
@@ -1629,6 +1641,7 @@ regionally_elected_commanders = {
 	}
 	
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		OR = {
 			has_government_attribute = monastic_order
 			tag = KOJ
@@ -1684,6 +1697,9 @@ regionally_elected_commanders = {
 				religion = confucianism
 			}
 		}
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 

@@ -25,7 +25,7 @@ country_decisions = {
 			}
 
 			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 		allow = {
@@ -36,32 +36,32 @@ country_decisions = {
 
 			western_sicily_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			sicily_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			corsica_sardinia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			naples_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			apulia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 
 			calabria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 		effect = {

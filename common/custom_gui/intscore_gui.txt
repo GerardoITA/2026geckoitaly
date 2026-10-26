@@ -1,0 +1,571 @@
+# IntScore presentation only. ROOT and FROM are the local player country in topbar.
+
+custom_button = {
+	name = gecko_intscore_score_header
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_intscore_gui_sort_annual set_variable = { which = gecko_intscore_gui_page value = 1 } gecko_intscore_gui_refresh = yes } }
+	tooltip = gecko_intscore_sort_total_tt
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_intscore_gui_sort_annual } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_intscore_yearly_header
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_country_flag = gecko_intscore_gui_sort_annual set_variable = { which = gecko_intscore_gui_page value = 1 } gecko_intscore_gui_refresh = yes } }
+	tooltip = gecko_intscore_sort_annual_tt
+	frame = { number = 2 trigger = { has_country_flag = gecko_intscore_gui_sort_annual } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_button = {
+	name = gecko_intscore_close
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_intscore_gui_open } }
+	tooltip = gecko_intscore_close_tt
+}
+
+custom_window = {
+	name = gecko_intscore_podium_1
+	potential = { has_global_flag = intscore_rank_1_exists }
+}
+
+custom_shield = {
+	name = gecko_intscore_podium_shield_1
+	potential = { always = yes }
+	trigger = { always = yes }
+	global_event_target = intscore_rank_1
+	open_country = yes
+	tooltip = gecko_intscore_reward_1_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_country_1
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_1_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_score_1
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_growth_1
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_empty_1
+	potential = { NOT = { has_global_flag = intscore_rank_1_exists } }
+}
+
+custom_window = {
+	name = gecko_intscore_podium_2
+	potential = { has_global_flag = intscore_rank_2_exists }
+}
+
+custom_shield = {
+	name = gecko_intscore_podium_shield_2
+	potential = { always = yes }
+	trigger = { always = yes }
+	global_event_target = intscore_rank_2
+	open_country = yes
+	tooltip = gecko_intscore_reward_2_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_country_2
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_2_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_score_2
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_growth_2
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_empty_2
+	potential = { NOT = { has_global_flag = intscore_rank_2_exists } }
+}
+
+custom_window = {
+	name = gecko_intscore_podium_3
+	potential = { has_global_flag = intscore_rank_3_exists }
+}
+
+custom_shield = {
+	name = gecko_intscore_podium_shield_3
+	potential = { always = yes }
+	trigger = { always = yes }
+	global_event_target = intscore_rank_3
+	open_country = yes
+	tooltip = gecko_intscore_reward_3_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_country_3
+	potential = { always = yes }
+	tooltip = gecko_intscore_reward_3_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_score_3
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_growth_3
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_empty_3
+	potential = { NOT = { has_global_flag = intscore_rank_3_exists } }
+}
+
+custom_window = {
+	name = gecko_intscore_row_1
+	potential = { has_country_flag = gecko_intscore_gui_row_1_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_1_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_1_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_1_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_1_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_1_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_1_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_1_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_2
+	potential = { has_country_flag = gecko_intscore_gui_row_2_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_2_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_2_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_2_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_2_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_2_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_2_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_2_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_3
+	potential = { has_country_flag = gecko_intscore_gui_row_3_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_3_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_3_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_3_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_3_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_3_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_3_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_3_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_4
+	potential = { has_country_flag = gecko_intscore_gui_row_4_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_4_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_4_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_4_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_4_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_4_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_4_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_4_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_5
+	potential = { has_country_flag = gecko_intscore_gui_row_5_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_5_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_5_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_5_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_5_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_5_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_5_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_5_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_6
+	potential = { has_country_flag = gecko_intscore_gui_row_6_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_6_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_6_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_6_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_6_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_6_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_6_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_6_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_7
+	potential = { has_country_flag = gecko_intscore_gui_row_7_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_7_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_7_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_7_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_7_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_7_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_7_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_7_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_8
+	potential = { has_country_flag = gecko_intscore_gui_row_8_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_8_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_8_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_8_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_8_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_8_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_8_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_8_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_9
+	potential = { has_country_flag = gecko_intscore_gui_row_9_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_9_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_9_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_9_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_9_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_9_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_9_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_9_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_window = {
+	name = gecko_intscore_row_10
+	potential = { has_country_flag = gecko_intscore_gui_row_10_valid }
+}
+
+custom_icon = {
+	name = gecko_intscore_row_10_highlight
+	potential = { has_country_flag = gecko_intscore_gui_row_10_self }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_10_position
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_10_country
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_10_country
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_10_score
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_row_10_growth
+	potential = { always = yes }
+	tooltip = gecko_intscore_row_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_empty
+	potential = { NOT = { check_variable = { which = gecko_intscore_gui_count value = 1 } } }
+}
+
+custom_text_box = {
+	name = gecko_intscore_count
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_page
+	potential = { always = yes }
+}
+
+custom_button = {
+	name = gecko_intscore_previous
+	potential = { ai = no }
+	trigger = { check_variable = { which = gecko_intscore_gui_page value = 2 } }
+	effect = { hidden_effect = { subtract_variable = { which = gecko_intscore_gui_page value = 1 } gecko_intscore_gui_refresh = yes } }
+	tooltip = gecko_intscore_prev_tt
+}
+
+custom_button = {
+	name = gecko_intscore_next
+	potential = { ai = no }
+	trigger = { NOT = { check_variable = { which = gecko_intscore_gui_page which = gecko_intscore_gui_pages } } }
+	effect = { hidden_effect = { change_variable = { which = gecko_intscore_gui_page value = 1 } gecko_intscore_gui_refresh = yes } }
+	tooltip = gecko_intscore_next_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_your_country
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_your_score
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_your_growth
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_your_rank
+	potential = { check_variable = { which = gecko_intscore_gui_position value = 1 } }
+}
+
+custom_text_box = {
+	name = gecko_intscore_unranked
+	potential = { NOT = { check_variable = { which = gecko_intscore_gui_position value = 1 } } }
+}
+
+custom_text_box = {
+	name = gecko_intscore_rules_title
+	potential = { always = yes }
+	tooltip = gecko_intscore_scoring_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_rules
+	potential = { always = yes }
+	tooltip = gecko_intscore_scoring_tt
+}
+
+custom_text_box = {
+	name = gecko_intscore_rewards
+	potential = { is_year = 1500 }
+	tooltip = gecko_intscore_bonus_tt
+}
+
+custom_window = {
+	name = gecko_intscore_ranking_window
+	potential = { ai = no has_country_flag = gecko_intscore_gui_open NOT = { has_country_flag = gecko_victory_atlas_menu } NOT = { has_country_flag = gecko_victory_documentation_menu } }
+}
+
+custom_button = {
+	name = gecko_intscore_toggle
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { if = { limit = { has_country_flag = gecko_intscore_gui_open } clr_country_flag = gecko_intscore_gui_open } else = { gecko_intscore_gui_open = yes } } }
+	tooltip = gecko_intscore_open_tt
+}
+custom_text_box = {
+	name = gecko_intscore_podium_title_1
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_title_2
+	potential = { always = yes }
+}
+
+custom_text_box = {
+	name = gecko_intscore_podium_title_3
+	potential = { always = yes }
+}
+
+custom_icon = {
+	name = gecko_intscore_rewards_info
+	potential = { is_year = 1500 }
+	tooltip = gecko_intscore_bonus_tt
+}

@@ -1448,7 +1448,7 @@
  GER_statesmen_autonomy:0 "'§YStatesman§!' Advisor Type will now additionally provide additionally §G-0.02%§! Monthly Autonomy Change per Advisor Level."
  GER_statesmen_morale:0 "'§YStatesman§!' Advisor Type will now additionally provide additionally §G+2.0%§! Morale of Armies per Advisor Level."
  GER_statesmen_abso:0 "'§YStatesman§!' Advisor Type will now additionally provide additionally §G+0.4§! Yearly Absolutism per Advisor Level."
- GER_upgrade_the_statesman_privilege:0 "Strengthen the '§YStatesman of the [Root.GetNobilityName]§!' Estate Privilege of the §Y[Root.GetNobilityName]§!, making it give §G+5.00§! Maximum Absolutism and making the decision also recruit a §YStatesman§!."
+ GER_upgrade_the_statesman_privilege:0 "Convene the cabinet to choose an additional bonus for Statesman advisors."
  GER_can_have_radical_reforms_twice:0 "If we had the event '§YRadical Reforms§!', we will be able to get it again. If we haven't we will be able to get it §Ytwice§!."
  GER_give_5_mil_power_for_every_5_loyalty_at_75:0 "Gain §G+5§!£mil£ Military Power for every §G5§! Loyalty of the §Y[Root.GetNobilityName]§! up to a maximum of §G+75§! at 75 Loyalty."
  GER_upgrade_the_junker_primacy:1 "Strengthen the '§YJunker Supremacy§!' Estate Privilege of the §Y[Root.GetNobilityName]§!, making it give double the modifiers."
@@ -2352,6 +2352,8 @@
  desc_ned_baltic_grain_supply:0 "The Baltic Grain Supply has been secured, which allows us to further expand our population."
  ned_connection_to_the_baltic:0 "Connection to the Baltic"
  desc_ned_connection_to_the_baltic:0 "Our connection in the Baltic is now secured, allowing for further trade to be conducted there."
+ ned_brazil_colonial_drill:0 "$por_brazil_colonial$"
+ desc_ned_brazil_colonial_drill:0 "$desc_por_brazil_colonial$"
  ned_found_dutch_states_army:0 "Found the State's Army"
  desc_ned_found_dutch_states_army:0 "The State's Army allows us to protect our state from any invaders."
  ned_empowered_staatse_leger:0 "Staatse Leger"
@@ -2438,7 +2440,7 @@
  NED_GAIN_RELATIONS_WITH_LUBECK_COUNTRIES:0 "Every nation in the §YLubeck§! Trade Node will gain §G30§! Opinion with us."
  NED_IF_NO_LUBECK:1 "If §Y[HSA.GetName]§! is not a §YTrade League Leader§!:"
  NED_WON_AT_LEAST_200_BATTLES:0 "has won at least §Y200§! Battles. (§G[Root.NEDBattlesWon.GetValue]§!)"
- NED_FORTS_GRANT_BONUSES_IN_LOW_COUNTRIES:0 "§YFort§! provinces in the §YLow Countries§! will now grant the following bonuses:\n   Local Development Cost: §G-5.00%§!\n   Local Production Efficiency: §G+10.0%§!\n   Local Fort Defense: §G+10.0%§!\n\nThe above bonuses will be §GDoubled§! should we ever complete §YDefensive Ideas§!."
+ NED_FORTS_GRANT_BONUSES_IN_LOW_COUNTRIES:0 "§YTrade Center§! provinces in the §YLow Countries§! will now grant the following bonuses:\n   Local Development Cost Modifier: §G-7.50%§!\n   Local Development Cost: §G-7.5%§!\n\nThe above bonuses will be §GDoubled§! should we ever complete §YInfrastructure Ideas§!."
  NED_MODIFY_STAATSE_LEGER_REFORM:0 "The Government Reform §YStaatse Leger§! will now grant the following:\n   Drill Gain Modifier: §G+15.0%§!\n   Discipline: §G+2.5%§!"
  NED_MILITARY_ENGINEER_GRANTS_SIEGE_ABILITY:0 "From now on, §YMilitary Engineer§! Advisors will grant §G+5.00%§! Siege Ability per level"
  NED_MODIFY_DUTCH_POLDERS_MONUMENT:0 "The §YDutch Polders§! Great Project will now grant the following:\n   Goods Produced Modifier: §G+5.00%§!\n   Provincial Trade Power Modifier: §G+20.0%§!"
@@ -2480,7 +2482,7 @@
  NED_BUFF_FERVOR_ACTIONS_BY_50:0 "§YFervor Focuses§! will now give §G50%§! more bonuses."
  NED_BUFF_CLERICAL_STUDIES_PRIVILEGE:1 "The Clergy privilege §YFund Theological Studies§! will now grant a modifier scaled with §YClergy§! influence, giving the following at max influence:\n   Tolerance of Heretics: §G+2.00§!\n   Relations with Heretics: §G+30§!"
  NED_BUFF_ARTIST_ADVISOR:1 "§YArtists§! Advisors will now give §G-2.5%§! Construction Cost per level."
- NED_UNLOCK_VOC_PRIVILEGE:1 "Unlocks the §YVereenigde Oostindische Compagnie§! Burghers Privilege, which will allow us to establish the §YVOC§! as a §YCommercial Enterprise§! in §YIndia§!."
+ NED_UNLOCK_VOC_PRIVILEGE:1 "Unlocks the §YVereenigde Oostindische Compagnie§! Burghers Privilege, which will allow us to establish the §YVOC§! as a §YIndependent Commercial Enterprise§! in §YIndia§!."
  NED_BUFFS_VOC_PRIVILEGE:0 "The §YVereenigde Oostindische Compagnie§! Burghers Privilege will now give the following:\n   Trade Company Governing Cost: §G-15.0%§!"
  NED_IF_COMPLETED_VIA_CONQUEST:0 "If the mission was completed via §MConquest§!:"
  NED_PRODUCTION_IN_ALL_COT_JAPAN_PROVINCES:1 "All owned Japanese §YCenter of Trade§! provinces will gain §G+1§! Base Production."
@@ -5787,7 +5789,7 @@
  HAB_ENACTED_UNITE_HABSBURG_LANDS_DECISION:0 "Has enacted the §YUnite the Habsburg Lands§! Decision."
  HAB_GAIN_25_AE_WITH_ALL_HRE:1 "§Y[Emperor.GetName]§! will gain §R+25§! Aggressive Expansion with all of the §YImperial Princes§!."
  HAB_LOSE_75_OPINION_WITH_ALL_HRE:1 "§Y[Emperor.GetName]§! will lose §R75§! Opinion with all of the §YImperial Princes§!."
- HAB_UNLOCK_RAAB_RESTRICTIONS_PRIVILEGE:1 "Unlocks the §YVon Raab's Restrictions§! Nobility Estate Privilege, which will have the following modifier scaled with Estate Loyalty as long as we keep the §YNobility's§! Influence to less than §Y40§!:\n   Development Cost: §G-7.5%§!"
+ HAB_UNLOCK_RAAB_RESTRICTIONS_PRIVILEGE:1 "Unlocks the §YVon Raab's Restrictions§! Nobility Estate Privilege, which grants up to §G-5% Development Cost§!, scaling with the §YNobility's Influence§!."
  HAB_MODIFY_SUPREMACY_OVER_THE_CROWN_PRIVILEGE:1 "This option doesn't exist because Dukksa removed supremacy over the crown, but I thought it would be funny to keep it in the mission tooltip."
  HAB_UNLOCK_PROSPERITY_EDICT:1 "Unlocks the §YEdict of Governance§! State Edict, which will give the following:\n   Province Governing Cost: §G-5.00%§!"
  HAB_this_is_a_branching_mission:0 "This is a §YBranching Mission§!. Complete §YSecure Electors§! Mission to preview each branch."
@@ -6043,33 +6045,9 @@
  expand_voc_title:0 "Expand the VOC"
  expand_voc_desc:0 "We have lands in India that should be granted to the Vereenigde Oostindische Compagnie."
 
- voc_ideas:0 "Vereenigde Oostindische Compagnie Ideas"
- voc_ideas_start:0 "Vereenigde Oostindische Compagnie Traditions"
- voc_ideas_bonus:0 "Vereenigde Oostindische Compagnie Ambition"
- 
- voc_1:0 "Governors of India"
- voc_1_desc:0 "We have been blessed by our overlords in the Netherlands with the title of Governors of India. We shall do our best to fulfill that job for them."
- 
- voc_2:0 "Divide and Conquer"
- voc_2_desc:0 "The numerous Indian Sultanates are posing a problem to us, both to conquer and to rule. If we are to accomplish both, then we must divide them, and conquer them separately."
- 
- voc_3:0 "Development of Foreign Lands"
- voc_3_desc:0 "Although we are here only for trade, the lands that we have at our disposal have been lacking compared to those in Europe. We must make sure to expand them."
- 
- voc_4:0 "Expansion of the East Indies"
- voc_4_desc:0 "Although we have been granted the titles of Governors of India, we must not stop our ambitions there. We are the company of the East Indies, and our claims expand to all of Asia."
- 
- voc_5:0 "Shipyards for Trade"
- voc_5_desc:0 "Instead of relying to European merchants to supply us with ships for trade, we should focus on creating new shipyards in order to expand our private fleet."
- 
- voc_6:0 "Into Foreign Lands"
- voc_6_desc:0 "The lands of Asia are foreign to our troops, officers, and generals. We must master them if we are to expand the company's riches."
- 
- voc_7:0 "Private Army"
- voc_7_desc:0 "Rather than the state owning an army, rather than it being an institution for the state's will, we should make our army a private force, with its purpose being to defend the company's interests."
  
  
- NED_ESTABLISH_VOC_IN_INDIA:0 "We will establish the §Y[VOC.GetName]§! in India as our §YCommercial Enterprise§!."
+ NED_ESTABLISH_VOC_IN_INDIA:0 "We will establish the §Y[VOC.GetName]§! in India as our §YIndependent Commercial Enterprise§!."
  NED_CEDE_PROVINCES_TO_VOC:0 "We will grant all of our §YIndian§! provinces to the §Y[VOC.GetName]§!."
  
  increase_voc_eastindiamen_construction:0 "Increase East Indiamen Construction"
@@ -7154,7 +7132,7 @@
 
  HUNGARY_AUSTRIA:0 "Hungary-Austria"
  HUNGARY_AUSTRIA_ADJ:0 "Hungaro-Austrian"
- NED_UNLOCKS_VOC_ESTABLISHMENT:0 "Unlocks the establishment of the §YVOC§! as a §YCommercial Enterprise§! in §YIndia§!."
+ NED_UNLOCKS_VOC_ESTABLISHMENT:0 "Unlocks the establishment of the §YVOC§! as a §YIndependent Commercial Enterprise§! in §YIndia§!."
  ned_man_o_war_from_pu_flag:0 "Unlocked Man-o-Wars from Personal Unions"
  ven_allow_suez_flag:0 "Has gained access to constructing this Canal"
 

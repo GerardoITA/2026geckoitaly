@@ -1,0 +1,33 @@
+####INTSCORE
+on_startup = {
+	intscore_initialize_country = yes
+}
+
+# Monthly pulses are native country hooks, staggered within the month.
+# The first January pulse awards every eligible country and then ranks them.
+# Every later month resets only the guard; no participant can block a reset.
+on_monthly_pulse = {
+	if = {
+		limit = {
+			NOT = { is_month = 1 }
+			NOT = { has_global_flag = intscore_year_scored }
+		}
+		1 = { province_event = { id = intscore.1063 } }
+	}
+	else_if = {
+		limit = {
+			is_month = 1
+			has_global_flag = intscore_year_scored
+		}
+		clr_global_flag = intscore_year_scored
+	}
+
+	# Repair stale tag targets without changing scores or waiting for January.
+	if = {
+		limit = {
+			has_country_flag = intscore_participant
+			check_variable = { which = intscore_current_rank value = 1 }
+		}
+		intscore_validate_country_rank = yes
+	}
+}

@@ -189,7 +189,7 @@ economic_ideas = {
 	}
 	merchant_passes = {
 		merchants = 1
-		inflation_reduction = 0.1
+		
 	}
 	nationalistic_enthusiasm = {
 		land_maintenance_modifier = -0.1
@@ -200,15 +200,17 @@ economic_ideas = {
 		monthly_gold_inflation_modifier = -0.25
 	}
 	debt_and_loans = {
-		interest = -0.5
+		interest = -0.25
+		inflation_reduction = 0.1
 	}
 	smithian_economics = { 
 		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
 		production_efficiency = 0.1 				#for eco ideas are done so via on_actions 
+		global_allowed_num_of_buildings = 1
 		global_allowed_num_of_manufactories = 1
  	}												#for the loans and via the buildings file for the dev from manufactories! happy modding 
 	bureaucracy = { 
-		land_forcelimit_modifier = 0.15
+		land_forcelimit_modifier = 0.1
 	}
 
 	ai_will_do = {
@@ -433,6 +435,7 @@ infrastructure_ideas = {
 	organised_construction = {
 		great_project_upgrade_time = -0.25
 		great_project_upgrade_cost = -0.25
+		build_time = -0.25
 		
 	}
 	efficient_construction_plans = {
@@ -606,8 +609,8 @@ diplomatic_ideas = {
 		dip_advisor_cost = -0.25
 	}
 	benign_diplomats = {
-		free_policy = 2
-		possible_policy = 2
+		free_policy = 1
+		possible_policy = 1
 		diplomats = 3
 	}
 	experienced_diplomats = {
@@ -659,12 +662,10 @@ influence_ideas = {
 
 	postal_service = {
 		idea_cost = -0.1
-	}
-
-	additional_loyalist_recruitment = {
 		can_fabricate_for_vassals = yes
 		global_own_trade_power = 0.25
 	}
+
 
 	establish_cadet_branches = {
 		stability_cost_modifier = -0.1
@@ -678,6 +679,7 @@ influence_ideas = {
 	diplomatic_influence = {
 		diplomatic_upkeep = 2
 		diplomatic_reputation = 2
+		imperial_authority_value = 0.1
 	}
 
 	marcher_lords = {
@@ -685,6 +687,32 @@ influence_ideas = {
 		vassal_naval_forcelimit_bonus = 0.5
 		vassal_manpower_bonus = 0.2
 		vassal_sailors_bonus = 0.5
+	}
+	additional_loyalist_recruitment = {
+		discipline = 0.005
+		effect = {
+			custom_tooltip = gc_additional_loyalist_recruitment_tt
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						NOT = { has_country_modifier = gc_influential_overlord }
+					}
+					add_country_modifier = {
+						name = gc_influential_overlord
+						duration = -1
+					}
+				}
+			}
+		}
+		removed_effect = {
+			custom_tooltip = gc_additional_loyalist_recruitment_tt
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_country_modifier = gc_influential_overlord }
+					remove_country_modifier = gc_influential_overlord
+				}
+			}
+		}
 	}
 
 	ai_will_do = {
@@ -750,8 +778,8 @@ court_ideas = {
 
 	respected_authority = {
 		max_absolutism = 50
-		imperial_authority_value = 0.2
-		max_absolutism_effect = 0.25
+		imperial_authority_value = 0.25
+		max_absolutism_effect = 0.5
 	}
 	
 	ai_will_do = {
@@ -788,6 +816,8 @@ maritime_ideas = {
 
 	bonus = {
 		sea_repair = yes
+		has_man_of_war = yes
+		allowed_man_of_war_fraction = 0.05
 	}
 
 	merchant_adventures = {
@@ -916,8 +946,8 @@ aristocracy_ideas = {
 		nomadic_tribes_loyalty_modifier = 0.25
 	}
 	noble_resilience = {
-		max_general_siege = 1
-		leader_siege  = 1
+		max_general_shock = 1
+		leader_land_shock = 1
 	}
 	serfdom = {
 		siege_ability = 0.15
@@ -941,7 +971,7 @@ plutocracy_ideas = {
 	category = MIL
 
 	bonus = {
-		fire_damage = 0.15
+		fire_damage = 0.1
 		burghers_loyalty_modifier = 0.1
 		vaisyas_loyalty_modifier = 0.1
 	}
@@ -1026,6 +1056,7 @@ theocracy_gov_ideas = {
 	}
 	friends_in_high_places = {
 		leader_cost = -0.15
+		special_unit_forcelimit = 0.1
 	}
 	flesh_is_weak = {
 		morale_damage = 0.15
@@ -1076,18 +1107,18 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		max_general_shock = 1
-		leader_land_shock = 1
+		leader_siege = 1
 	}
 
-	shock_tactics = {
-		shock_damage = 0.1
-	}
+	
 	glory_on_the_battlefield = {
 		warscore_from_battles_modifier = 0.25
 	}
+	shock_tactics = {
+		shock_damage = 0.15
+	}
 	volley_fire = {
-		fire_damage = 0.1
+		fire_damage = 0.15
 	}
 	engineer_corps = {
 		siege_ability = 0.25
@@ -1157,7 +1188,7 @@ defensive_ideas = {
 	category = MIL
 
 	bonus = {
-		military_tactics = 0.1
+		military_tactics = 0.15
 	}
 	improved_body_armor = {
 		shock_damage_received = -0.1
@@ -1169,7 +1200,7 @@ defensive_ideas = {
 	}
 	until_the_last_man = {
 		morale_damage_received = -0.1
-		drill_decay_modifier = -0.1
+		land_morale = 0.075
 	}
 	homeland_specialization = {
 		reinforce_speed = 0.33
@@ -1251,8 +1282,8 @@ quality_ideas = {
 		army_tradition = 0.5
 	}
 	military_drill = {
-		drill_gain_modifier = 0.1
-		drill_decay_modifier = -0.1
+		drill_gain_modifier = 0.5
+		drill_decay_modifier = -0.25
 	}
 	quality_education = {
 		leader_land_manuever  = 1
@@ -1263,6 +1294,8 @@ quality_ideas = {
 	regimental_system = {
 		may_refill_garrison = yes
 		may_return_manpower_on_disband = yes
+		may_build_supply_depot = yes
+		force_march_free = yes
 	}
 	napoleonic_warfare = {
 		discipline = 0.05
@@ -1545,6 +1578,7 @@ horde_gov_ideas = {
 	horde_loyalty = {
 		global_unrest = -1
 		horde_unity = 0.5
+		meritocracy = 0.5
 	}
 	watchers_of_the_silk_road = {	
 		caravan_power = 0.20

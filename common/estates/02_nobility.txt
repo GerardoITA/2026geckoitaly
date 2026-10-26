@@ -4,7 +4,7 @@ estate_nobles = {
 	# If true, country will get estate
 	trigger = {
 		###X###
-		is_emperor_of_china = no
+		#is_emperor_of_china = no
 		#######
 		OR = {	#bertus mod
 			ai = no
@@ -27,7 +27,10 @@ estate_nobles = {
 				NOT = { has_reform = siberian_tribe }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				NOT = { has_reform = revolutionary_empire_reform }
-				is_nomad = no
+				OR = {
+					is_nomad = no
+					has_reform = X_CRI_great_tatar_state_reform_2
+				}
 				is_colonial_nation = no
 				if = {
 					limit = {

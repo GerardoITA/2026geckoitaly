@@ -5,6 +5,7 @@ monarchy = {
 			reforms = {
 				####X####
 				X_CRI_great_tatar_state_reform_2
+				great_mongol_state_reform
 				great_mongol_state_reform_EOC_version
 				####X####
 				feudalism_reform
@@ -146,7 +147,6 @@ monarchy = {
 				poligar_reform
 				khalsa_reform
 				deccani_society_reform
-				mughal_government
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
@@ -382,7 +382,6 @@ monarchy = {
 				of_noble_bearing_reform
 				meritocratic_focus_reform
 				dakhni_culture_reform
-				zabt_reform
 				dyanstic_administration_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
@@ -886,6 +885,7 @@ republic = {
 		}
 		federalism_vs_unitarism_vs_confederacy = {
 			reforms = {
+				centralize_reform
 				provincial_governments_reform
 				administrative_divisions_reform
 				union_of_states_reform
@@ -1093,6 +1093,7 @@ tribal = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
+				X_CRI_fix_for_meritocracy
 			}
 		}
 		tribal_religion = {

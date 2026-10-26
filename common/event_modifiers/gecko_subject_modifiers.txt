@@ -1,0 +1,3 @@
+gc_influential_overlord = {
+	discipline = 0.075
+}

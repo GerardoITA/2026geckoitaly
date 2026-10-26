@@ -53,7 +53,9 @@ HES_Missions_1 = {
 			if = {
 				limit = {
 					exists = THU
-					valid_for_personal_unions_trigger = yes
+					THU = {
+						valid_for_personal_unions_trigger = yes
+					}
 				}
 				custom_tooltip = HES_thu_valid_yes
 				hidden_effect = {

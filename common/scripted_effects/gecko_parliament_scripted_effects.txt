@@ -1,0 +1,5 @@
+# Called only by parliament-granting reforms. Do not check attributes of the reform being removed.
+gecko_parliament_removed_effect = {
+	clr_country_flag = gecko_parliament_removed
+	set_country_flag = gecko_parliament_removed
+}

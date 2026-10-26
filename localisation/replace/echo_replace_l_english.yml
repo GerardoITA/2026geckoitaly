@@ -119,3 +119,11 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  desc_vassal_taxation_policy_1:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
  desc_vassal_taxation_policy_2:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
  desc_vassal_taxation_policy:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
+
+# Sunda city development: the event no longer moves the capital.
+ flavor_sun.2.t:0 "The Cities of Our Realm"
+ flavor_sun.2.desc:0 "Banten and Cirebon have emerged as major cities under our rule, and we have founded a new city named Jayakerta near Kalapa. We must decide which city will benefit from further investment and whether to proclaim a new sultanate."
+ flavor_sun.2.a:0 "Invest in our current capital."
+ flavor_sun.2.b:0 "Develop Banten and proclaim its sultanate."
+ flavor_sun.2.c:0 "Develop Cirebon and proclaim its sultanate."
+ flavor_sun.2.d:0 "Develop Jayakerta."

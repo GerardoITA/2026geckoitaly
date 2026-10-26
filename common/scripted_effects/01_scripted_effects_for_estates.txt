@@ -5811,8 +5811,9 @@ estate_action_SUPPORT_TRIBES_NOMADIC_TRIBES = {
 	}
 }
 estate_action_CONTRIBUTE_WARRIORS_NOMADIC_TRIBES = {
-	
-	add_yearly_manpower = 2
+	estate_action_yearly_manpower = {
+		estate = estate_nomadic_tribes
+	}
 	estate_action_scaling_modifier = {
 		estate = estate_nomadic_tribes
 		name = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES

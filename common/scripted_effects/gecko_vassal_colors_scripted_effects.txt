@@ -323,7 +323,7 @@ gecko_lighten_vassal_colors_effect = {
 		GHR = { gecko_apply_vassal_shade_effect = { red = 99 green = 174 blue = 159 } }
 		GLE = { gecko_apply_vassal_shade_effect = { red = 81 green = 179 blue = 105 } }
 		GLG = { gecko_apply_vassal_shade_effect = { red = 55 green = 188 blue = 169 } }
-		GLH = { gecko_apply_vassal_shade_effect = { red = 251 green = 197 blue = 53 } }
+		GLH = { gecko_apply_vassal_shade_effect = { red = 143 green = 62 blue = 88 } }
 		GMA = { gecko_apply_vassal_shade_effect = { red = 223 green = 65 blue = 77 } }
 		GMI = { gecko_apply_vassal_shade_effect = { red = 98 green = 169 blue = 140 } }
 		GNG = { gecko_apply_vassal_shade_effect = { red = 101 green = 82 blue = 165 } }

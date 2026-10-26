@@ -254,6 +254,10 @@ gecko_pru_domestic_trade = {
 	trade_efficiency = 0.05
 }
 
+gecko_formed_rashidun_caliphate = {
+	infantry_shock = 0.5
+}
+
 gecko_formed_umayyad_empire = {
 	land_morale = 0.20
 }

@@ -757,12 +757,13 @@ guiTypes = {
 
 		windowType = {
 			name = "gecko_intscore_ranking_window"
+			backGround = "gecko_intscore_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
 			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_intscore_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_intscore_panel"
@@ -2166,12 +2167,13 @@ guiTypes = {
 		# BEGIN GENERATED VICTORY ATLAS
 		windowType = {
 			name = "gecko_victory_atlas_window"
+			backGround = "gecko_victory_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
 			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_victory_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_victory_panel"
@@ -6177,12 +6179,13 @@ guiTypes = {
 		# BEGIN GENERATED INTSCORE DOCUMENTATION
 		windowType = {
 			name = "gecko_intscore_documentation_window"
+			backGround = "gecko_intscore_docs_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
 			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_intscore_docs_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_intscore_documentation_panel"
@@ -8291,12 +8294,13 @@ guiTypes = {
 		}
 		windowType = {
 			name = "gecko_menu_window"
+			backGround = "gecko_menu_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
 			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_menu_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_menu_panel"

@@ -451,13 +451,27 @@ estate_burghers_indebted_to_burghers = {
 	influence = 0.05
 	on_granted = {
 		if = {
-			limit = {
-				has_country_flag = BYZ_buff_burgher_loans_flag
+			limit = { religion = jewish }
+			if = {
+				limit = {
+					has_country_flag = BYZ_buff_burgher_loans_flag
+				}
+				custom_tooltip = gecko_jewish_byz_burgher_loans_tt
 			}
-			custom_tooltip = BYZ_estate_burghers_indebted_to_burghers_effect_tooltip
+			else = {
+				custom_tooltip = gecko_jewish_burgher_loans_tt
+			}
 		}
 		else = {
-			custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
+			if = {
+				limit = {
+					has_country_flag = BYZ_buff_burgher_loans_flag
+				}
+				custom_tooltip = BYZ_estate_burghers_indebted_to_burghers_effect_tooltip
+			}
+			else = {
+				custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
+			}
 		}
 		if = {
 			limit = {

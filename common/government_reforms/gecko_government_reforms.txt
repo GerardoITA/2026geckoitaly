@@ -9,6 +9,7 @@ silk_road_empire = { #tier 1
 		merchants = 2
 		missionaries = 1
 		trade_steering = 0.33
+		trade_efficiency = 0.20
 		global_trade_power = 0.25
 		trade_range_modifier = 0.50
 		#movement_speed = 0.20	

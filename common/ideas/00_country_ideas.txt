@@ -13039,13 +13039,12 @@ SOO_ideas = {
 
 OIR_ideas = {
 	start = {
-		cavalry_power = 0.20
 		core_creation = -0.20
 		embracement_cost = -0.5
 	}
 	
 	bonus = {
-		leader_land_shock = 1
+		cavalry_power = 0.20
 	}
 	
 	trigger = {
@@ -13071,6 +13070,8 @@ OIR_ideas = {
 	}
 	life_of_steppe_warrior = { #also used in Horde ideas, KHA_ideas
 		land_attrition = -0.20
+		land_morale = 0.10
+		leader_land_shock = 1
 	}
 	
 	todo_besheg_script = {
@@ -13085,6 +13086,7 @@ OIR_ideas = {
 	}
 	glory_of_conquest = { #also used in Horde ideas, KHA_ideas and CHG_ideas
 		global_manpower_modifier = 0.15
+		leader_land_shock = 1
 	}
 }
 

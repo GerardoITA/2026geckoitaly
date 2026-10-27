@@ -5,7 +5,6 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			OR = {
-				tag = BUK
 				tag = OIR
 				tag = KHA
 			}
@@ -30,7 +29,6 @@ country_decisions = {
 		}
 		allow = {
 			OR = {
-				tag = BUK
 				tag = OIR
 				tag = KHA
 			}

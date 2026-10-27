@@ -3,7 +3,12 @@ country_decisions = {
 	bukharan_nation = {
 		major = yes
 		potential = {
-			tag = KHA
+			OR = {
+				tag = KHA
+				tag = OIR
+				tag = AFG
+				tag = TIM
+			}
 			NOT = { has_country_flag = bukharan_nation }
 		}
 		provinces_to_highlight = {
@@ -83,6 +88,8 @@ country_decisions = {
 				}
 			}	
 			change_government_to_monarchy = yes
+			change_technology_group = muslim
+			change_unit_type = muslim
 			set_government_rank = 3			
 			add_government_reform = silk_road_empire
 			gecko_enable_mandate_meritocracy_effect = yes

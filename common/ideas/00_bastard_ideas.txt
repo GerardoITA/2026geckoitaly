@@ -2953,11 +2953,12 @@ TIM_ideas = {
 }
 BUK_ideas = {
 	start = {
-		manpower_recovery_speed = 0.2
-		leader_land_fire = 1
+		inflation_reduction = 0.15
+		embracement_cost = -0.5
+		
 	}
 	bonus = {
-		discipline = 0.05
+		leader_land_fire = 1
 	}
 	trigger = {
 		tag = BUK
@@ -2968,25 +2969,24 @@ BUK_ideas = {
 		core_creation = -0.2
 	}
 	the_mantle_of_the_great_khan = {
-		cavalry_power = 0.1
-		leader_land_shock = 1
+		discipline = 0.05
 	}
 	unleash_the_tiger = {
-		fire_damage = 0.15
+		fire_damage = 0.1
 	}
 	bastard_populating_the_steppes = {
 		global_manpower_modifier = 0.2
 	}
 	timurid_renaissance = {
-		technology_cost = -0.05
+		all_power_cost = -0.1
 	}
 	riches_of_the_silk_road = {
-		trade_efficiency = 0.1
+		global_prov_trade_power_modifier = 0.5
 		global_trade_goods_size_modifier = 0.1
 	}
 	buk_the_jews_of_bukhara = {
 		artillery_cost = -0.2
-		artillery_power = 0.15
+		artillery_power = 0.1
 	}
 }
 GLH_ideas = {

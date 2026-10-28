@@ -13071,7 +13071,6 @@ OIR_ideas = {
 	life_of_steppe_warrior = { #also used in Horde ideas, KHA_ideas
 		land_attrition = -0.20
 		land_morale = 0.10
-		leader_land_shock = 1
 	}
 	
 	todo_besheg_script = {

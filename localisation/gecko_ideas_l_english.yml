@@ -201,3 +201,18 @@
  gc_regulation_bureau_production_hub_bonus:0 "Province Improvement Bonus"
 
  gc_additional_loyalist_recruitment_tt:0 "All our §Ysubjects, including colonial nations§!, gain §G+7.5%§! Discipline."
+ #Bukhara
+ buk_the_mantle_of_the_great_khan:0 "The Mantle of the Great Khan"
+ buk_the_mantle_of_the_great_khan_desc:0 "The death of the Eponymous founder of our dynasty created a power vacuum that lead to people who should have known better aiming for power. However through marriages we have consolidated our claim to descent from the Great Khan himself, and the Steppe warrior knows whom to follow."
+ buk_unleash_the_tiger:0 "Unleash the Tiger"
+ buk_unleash_the_tiger_desc:0 "Timur made the world tremble with his conquests, we will do the same. Our enemies will be the authors of their own calamity!"
+ buk_populating_the_steppes:0 "Populating the Steppes"
+ buk_populating_the_steppes_desc:0 "By encouraging settlement and supporting communities across the steppes, we can sustain a larger population and draw more soldiers into our armies."
+ buk_timurid_renaissance:0 "Timurid Renaissance"
+ buk_timurid_renaissance_desc:0 "Ever since the time of the Timurid expansion our lands have attracted the greatest artisans and wise men of the age. Through continued patronization of art, science and literature we have made our capitals at Herat and Samarkand the brightest jewels in the Islamic world."
+ buk_riches_of_the_silk_road:0 "Control of the Silk Road"
+ buk_riches_of_the_silk_road_desc:0 "As long as we control the lands of Transoxiana and Samarkand the trade of the silk road shall flow unhindered and the wealth of our dynasty will continue to grow."
+
+ #Timurids
+ bastard_populating_the_steppes:0 "Populating the Steppes"
+ bastard_populating_the_steppes_desc:0 "By encouraging settlement and supporting communities across the steppes, we can sustain a larger population and draw more soldiers into our armies."

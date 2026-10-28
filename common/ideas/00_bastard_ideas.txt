@@ -2968,19 +2968,19 @@ BUK_ideas = {
 	buk_jochid_patrimony = {
 		core_creation = -0.2
 	}
-	the_mantle_of_the_great_khan = {
+	buk_the_mantle_of_the_great_khan = {
 		discipline = 0.05
 	}
-	unleash_the_tiger = {
+	buk_unleash_the_tiger = {
 		fire_damage = 0.1
 	}
-	bastard_populating_the_steppes = {
+	buk_populating_the_steppes = {
 		global_manpower_modifier = 0.2
 	}
-	timurid_renaissance = {
+	buk_timurid_renaissance = {
 		all_power_cost = -0.1
 	}
-	riches_of_the_silk_road = {
+	buk_riches_of_the_silk_road = {
 		global_prov_trade_power_modifier = 0.5
 		global_trade_goods_size_modifier = 0.1
 	}

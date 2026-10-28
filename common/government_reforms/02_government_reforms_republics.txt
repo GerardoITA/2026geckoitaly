@@ -349,6 +349,7 @@ merchants_reform = {
 		NOT = { has_reform = self_governing_colony_government }
 	}
 	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
 		OR = {
 			has_reform = merchants_reform
 			crown_stronger_than_estate = { estate = all }
@@ -410,6 +411,7 @@ merchants_reform = {
 		}
 	}
 	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
 		hidden_effect = {
 			set_variable = {
 				which = election_term
@@ -514,6 +516,12 @@ venice_merchants_reform = {
 		bonus_stats_for_elected_ruler = yes
 	}
 	has_term_election = no
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 pirate_republic_reform = {
@@ -1263,6 +1271,12 @@ veche_republic = {
 		}
 	}
 	duration = 6
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 great_veche_republic = {
@@ -1344,6 +1358,12 @@ great_veche_republic = {
 		}
 	}
 	duration = 6
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 great_russian_republic_reform = {
@@ -1402,6 +1422,12 @@ great_russian_republic_reform = {
 		}
 	}
 	duration = 6
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 american_republic = {
@@ -1855,6 +1881,12 @@ trade_company_government = {
 		trade_city_reform = trading_city
 	}
 
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 english_parliamentary_republic_government = {

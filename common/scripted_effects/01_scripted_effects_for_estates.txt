@@ -5273,9 +5273,9 @@ estate_action_RAISE_COSSACK_HOST_COSSACKS = {
 	}
 }
 estate_action_COSSACK_CONQUISTADOR_COSSACKS = {
-	create_leader_scaling_with_tradition = {
-		leader = conquistador
-		type = army
+	create_conquistador = {
+		tradition = 40
+		add_manuever = 3
 	}
 	#add_estate_influence_modifier = {
 	#	estate = estate_cossacks
@@ -5712,9 +5712,9 @@ estate_action_GRANT_GENERALSHIP_NOBLES = {
 	}
 }
 estate_action_RECRUIT_CONQUISTADOR_ESTATES_NOBLES = {
-	create_leader_scaling_with_tradition = {
-		leader = conquistador
-		type = army
+	create_conquistador = {
+		tradition = 40
+		add_manuever = 3
 	}
 	#add_estate_influence_modifier = {
 	#	estate = estate_nobles
@@ -5811,8 +5811,9 @@ estate_action_SUPPORT_TRIBES_NOMADIC_TRIBES = {
 	}
 }
 estate_action_CONTRIBUTE_WARRIORS_NOMADIC_TRIBES = {
-	
-	add_yearly_manpower = 2
+	estate_action_yearly_manpower = {
+		estate = estate_nomadic_tribes
+	}
 	estate_action_scaling_modifier = {
 		estate = estate_nomadic_tribes
 		name = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES

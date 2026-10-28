@@ -353,17 +353,9 @@ mnd_siam_3 = {
 			}
 		}
 		trigger = {
-			if = {
-				limit = {
-					KHM = {
-						is_subject_of = ROOT
-					}
-				}
-				NOT = {
-					KHM = {
-						liberty_desire = 50
-					}
-				}
+			KHM = {
+				is_subject_of = ROOT
+				is_subject_of_type = vassal
 			}
 			cambodia_area = {
 				type = all
@@ -384,7 +376,7 @@ mnd_siam_3 = {
 					num_of_subjects = 1
 				}
 				every_subject_country = {
-					add_liberty_desire = -25
+					add_liberty_desire = -100
 				}
 			}
 			else = {

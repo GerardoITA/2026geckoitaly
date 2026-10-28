@@ -45,15 +45,15 @@
 
 #protestant aspects
  organised_through_bishops_aspect:0 "Organized Through Bishops"
- desc_organised_through_bishops_aspect:1 "Bishops used to be leader of a single church, confined to an urban area. Nowadays, they lead the churches of a larger area and no longer serve individual congregations. Priests are appointed to minister each congregation, and acts as the bishop's delegate. \n\n We will also gain §G-5%§! Construction Cost for §Y10§! years"
+ desc_organised_through_bishops_aspect:1 "Bishops used to be leader of a single church, confined to an urban area. Nowadays, they lead the churches of a larger area and no longer serve individual congregations. Priests are appointed to minister each congregation, and acts as the bishop's delegate. \n\nWhile this aspect is active, it also provides §G-5%§! Construction Cost."
  saints_accept_prayers_aspect:0 "Saints Accept Prayers"
- desc_saints_accept_prayers_aspect:1 "The Intercession of saints, that saints may be asked to intercede or pray for others, is a doctrine supported by our church. \n\n We will also gain §G+25%§! Army Tradition from Battles for §Y10§! years"
+ desc_saints_accept_prayers_aspect:1 "The Intercession of saints, that saints may be asked to intercede or pray for others, is a doctrine supported by our church. \n\nWhile this aspect is active, it also provides §G+25%§! Army Tradition from Battles."
  icons_images_aspect:0 "Icons"
- desc_icons_images_aspect:1 "The images depicting Jesus, Mary, saints and angels, cast in metal, carved in stone, embroidered on cloth, painted on wood or made in many different ways are often illuminated. These icons have been debated and opposed, but the popular favor for icons have guaranteed their continued existence and the Church have finally resigned themselves to allow the veneration of icons. \n\n We will also gain §G-5%§! Advisor Cost with Ruler's Culture for §Y10§! years"
+ desc_icons_images_aspect:1 "The images depicting Jesus, Mary, saints and angels, cast in metal, carved in stone, embroidered on cloth, painted on wood or made in many different ways are often illuminated. These icons have been debated and opposed, but the popular favor for icons have guaranteed their continued existence and the Church have finally resigned themselves to allow the veneration of icons. \n\nWhile this aspect is active, it also provides §G-5%§! Advisor Cost with Ruler's Culture."
  parish_registers_aspect:0 "Parish Registers"
- desc_parish_registers_aspect:1 "Details of baptisms, marriages and burials will from now on be documented in a parish register. Each parish priest will keep a book where they will enter these events and keep it in a sure coffer with two locks. \n\n We will also gain §G-0.25%§! Yearly Corruption for §Y10§! years"
+ desc_parish_registers_aspect:1 "Details of baptisms, marriages and burials will from now on be documented in a parish register. Each parish priest will keep a book where they will enter these events and keep it in a sure coffer with two locks. \n\nWhile this aspect is active, it also provides §G-0.25§! Yearly Corruption."
  allow_usury_aspect:0 "Allow Usury"
- desc_allow_usury_aspect:1 "Monetary loans with interest that enrich the lender is now allowed and no longer considered sinful. \n\n We will also gain §G-0.15%§! Interest per Annum for §Y10§! years"
+ desc_allow_usury_aspect:1 "Monetary loans with interest that enrich the lender is now allowed and no longer considered sinful. \n\nWhile this aspect is active, it also provides §G-0.15%§! Interest per Annum."
  organised_through_bishops_aspect_modifier:0 "Church Aspect Zeal"
 
 #egyptian westernisation
@@ -98,7 +98,7 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  french_empire_desc:0 "I'm literaly napoleon maxxing"
  proclaim_ottoman_empire_title:0 "Proclaim the Ottoman Empire"
  proclaim_ottoman_empire_desc:0 "The Osmanoglu rule over Europe and Middle East"
- proclaim_ottoman_empire_territory_tt:0 "All provinces in the following regions and areas must be owned by us or our subjects:\n§YRegions:§! Anatolia, Mashriq, Egypt\n§YBalkan areas:§! Thrace, Bulgaria, Silistria, Macedonia, Albania, Rascia, Serbia, Bosnia\n§YGreek areas:§! Central Greece, Morea, Northern Greece, Eastern Mediterranean Islands, Aegean Archipelago\n§YDanubian areas:§! Wallachia, Moldavia\n§YCaucasian areas:§! Imereti, Samtskhe"
+ proclaim_ottoman_empire_territory_tt:0 "All provinces in the following regions and areas must be directly owned and cored by us:\n§YRegions:§! Anatolia, Mashriq, Egypt\n§YBalkan areas:§! Thrace, Bulgaria, Silistria, Macedonia, Albania, Rascia, Serbia, Bosnia\n§YGreek areas:§! Central Greece, Morea, Northern Greece, Eastern Mediterranean Islands, Aegean Archipelago\n§YDanubian areas:§! Wallachia, Moldavia\n§YCaucasian areas:§! Imereti, Samtskhe"
  OTTOMAN_EMPIRE:0 "Ottoman Empire"
  OTTOMAN_EMPIRE_ADJ:0 "Ottoman"
 #bertus mod shit
@@ -119,3 +119,11 @@ unite_mongol_culture_tt:1 "All owned provinces with §YKazakh§!, §YTurkmeni§!
  desc_vassal_taxation_policy_1:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
  desc_vassal_taxation_policy_2:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
  desc_vassal_taxation_policy:0 "Ensuring our troops receive an adequate amount of melee training is essential to maintain our military superiority. Our troops will henceforth be trained in sword and lance techniques."
+
+# Sunda city development: the event no longer moves the capital.
+ flavor_sun.2.t:0 "The Cities of Our Realm"
+ flavor_sun.2.desc:0 "Banten and Cirebon have emerged as major cities under our rule, and we have founded a new city named Jayakerta near Kalapa. We must decide which city will benefit from further investment and whether to proclaim a new sultanate."
+ flavor_sun.2.a:0 "Invest in our current capital."
+ flavor_sun.2.b:0 "Develop Banten and proclaim its sultanate."
+ flavor_sun.2.c:0 "Develop Cirebon and proclaim its sultanate."
+ flavor_sun.2.d:0 "Develop Jayakerta."

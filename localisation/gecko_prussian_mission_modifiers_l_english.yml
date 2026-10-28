@@ -1,0 +1,12 @@
+﻿l_english:
+ gecko_pru_zollverein_domestic:0 "Prussian Customs Union"
+ desc_gecko_pru_zollverein_domestic:0 "A common customs policy encourages production throughout our lands."
+ gecko_pru_constitution_domestic:0 "Federal Administration"
+ desc_gecko_pru_constitution_domestic:0 "A clearer division of administrative responsibilities strengthens the stability of our state."
+ gecko_pru_august_diplomacy:0 "Treaties of August"
+ desc_gecko_pru_august_diplomacy:0 "Our diplomatic agreements lend greater weight to Prussia's voice."
+ gecko_pru_officer_training:0 "Prussian Officer Training"
+ desc_gecko_pru_officer_training:0 "The military academy preserves and passes on the experience of our officers."
+ gecko_pru_domestic_trade:0 "Domestic Free Trade"
+ desc_gecko_pru_domestic_trade:0 "Fewer internal barriers allow our merchants to trade more efficiently."
+ gecko_pru_kiel_canal_unlocked_tt:0 "Allows construction of the Kiel Canal before Administrative Technology 22. Required provinces and construction costs still apply."

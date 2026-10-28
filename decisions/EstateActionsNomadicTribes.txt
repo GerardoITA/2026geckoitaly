@@ -44,9 +44,6 @@ country_decisions = {
 	}
 	estate_nomadic_tribes_contribute_warriors = {
 		color = { 195 160 20 }
-		allow = {
-			NOT = { has_country_modifier = slackening_modifier }
-		}
 		potential = {
 			has_enabled_estate_action = {
 				estate_action = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES
@@ -54,6 +51,7 @@ country_decisions = {
 			has_estate = estate_nomadic_tribes
 		}
 		allow = {
+			NOT = { has_country_modifier = slackening_modifier }
 			has_not_any_estate_disaster_active = yes
 			estate_action_off_cooldown = {
 				estate_action = CONTRIBUTE_WARRIORS_NOMADIC_TRIBES

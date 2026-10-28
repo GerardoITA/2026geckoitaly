@@ -139,11 +139,18 @@ plutocratic_reform = {
 	ai = {
 		factor = 0.75 #generic
 	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 austrian_archduchy_reform = {
 	icon = "austrian_archduchy_reform"
 	allow_normal_conversion = yes
+	maintain_dynasty = yes
 	legacy_equivalent = austrian_archduchy
 	valid_for_nation_designer = yes
 	potential = {
@@ -2208,8 +2215,8 @@ prussian_monarchy = {
 			AND = {
 				
 				OR = {
-					has_mission = emp_brapru_army_reforms_2
-					has_mission = emp_brapru_army_reforms_3
+					has_mission = PRU_standing_army
+					has_mission = PRU_an_army_with_a_state
 				}
 				NOT = { map_setup = map_setup_random }
 			}
@@ -2275,8 +2282,8 @@ prussian_monarchy_base = {
 		NOT = { have_had_reform = prussian_monarchy }
 		OR = {
 			NOT = { has_dlc = "Domination" }
-			NOT = { has_mission = emp_brapru_army_reforms_2 }
-			NOT = { has_mission = emp_brapru_army_reforms_3 }
+			NOT = { has_mission = PRU_standing_army }
+			NOT = { has_mission = PRU_an_army_with_a_state }
 		}
 		OR = {
 			AND = {
@@ -2370,6 +2377,7 @@ prussian_monarchy_base = {
 austrian_dual_monarchy = {
 	icon = "austrian_dual_monarchy_reform"
 	allow_normal_conversion = yes
+	maintain_dynasty = yes
 	legacy_equivalent = austrian_archduchy
 	potential = { #added via script
 		has_dlc = "Emperor"
@@ -3636,6 +3644,7 @@ livonian_trade_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3692,6 +3701,9 @@ livonian_trade_monarchy = {
 		can_use_trade_post = yes
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
+	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
 	}
 }
 

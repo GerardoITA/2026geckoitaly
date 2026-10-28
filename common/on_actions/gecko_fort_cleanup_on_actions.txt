@@ -1,0 +1,27 @@
+# Native monthly pulses are staggered by country. The first January pulse
+# runs one global cleanup; the first February-or-later pulse resets the guard.
+on_monthly_pulse = {
+	if = {
+		limit = {
+			NOT = { is_month = 1 }
+			NOT = { has_global_flag = gecko_fort_cleanup_done_this_january }
+		}
+		1 = { province_event = { id = gecko_fort_cleanup.1 } }
+	}
+	else_if = {
+		limit = {
+			is_month = 1
+			has_global_flag = gecko_fort_cleanup_done_this_january
+		}
+		clr_global_flag = gecko_fort_cleanup_done_this_january
+	}
+}
+
+# Province scope. Only an existing fort receives the old 182-day conquest grace.
+on_province_owner_change = {
+	clr_province_flag = PR_new_conquest_fort_delay
+	if = {
+		limit = { has_fort_building_trigger = yes }
+		set_province_flag = PR_new_conquest_fort_delay
+	}
+}

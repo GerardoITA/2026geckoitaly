@@ -5,7 +5,6 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			OR = {
-				tag = BUK
 				tag = OIR
 				tag = KHA
 			}
@@ -23,24 +22,23 @@ country_decisions = {
 						region = central_asia_region
 						region = crimea_region
 					}
-					NOT = { owned_by = ROOT }
+					NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 				}
 				
 			}
 		}
 		allow = {
 			OR = {
-				tag = BUK
 				tag = OIR
 				tag = KHA
 			}
 			central_asia_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			crimea_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			#khorasan_region	= {
 			#	type = all

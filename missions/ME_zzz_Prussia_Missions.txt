@@ -71,7 +71,6 @@ PRU_generic_missions_3 = {
 				name = BRA_prussian_ambition_2
 				duration = 5475
 			}
-			complete_prussian_ascendance_missions = yes
 		}
 	}
 }
@@ -150,29 +149,43 @@ PRU_missions_1_vassal = {
 	ai = yes
 	potential = {
 		tag = PRU
-		has_country_modifier = PRU_vassal_play
+		# The national replacement missions are available without the special-vassal route.
+		# has_country_modifier = PRU_vassal_play
+		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	
 	PRU_zollverein = {
 		icon = dominant_economy
-		required_missions = { }
+		required_missions = { PRU_eagle_in_the_north }
 		position = 10
 		trigger = {
-			calc_true_if = {
-				all_subject_country = {
-					has_divert_trade = yes
-				}
-				amount = 2
+			# Temporarily replace the subject trade-diversion requirement.
+			# calc_true_if = {
+				# all_subject_country = {
+					# has_divert_trade = yes
+				# }
+				# amount = 2
+			# }
+			num_of_owned_provinces_with = {
+				has_trade_building_trigger = yes
+				value = 5
 			}
 			OR = {
 				trader = 1
 				has_dip_advisor_3 = yes
 			}
 		}
+		# Temporarily replace the special-vassal reward with a smaller national bonus.
+		# effect = {
+			# custom_tooltip = PRU_every_subject
+			# set_country_flag = PRU_vassal_goods
+		# }
 		effect = {
-			custom_tooltip = PRU_every_subject
-			set_country_flag = PRU_vassal_goods
+			add_country_modifier = {
+				name = gecko_pru_zollverein_domestic
+				duration = 9125
+			}
 		}
 	}
 	
@@ -181,18 +194,27 @@ PRU_missions_1_vassal = {
 		required_missions = { PRU_zollverein PRU_august }
 		position = 11
 		trigger = {
-			calc_true_if = {
-				all_subject_country = {
-					NOT = { liberty_desire = 5 }
-					is_subject_of_type = prussian_vassal
-				}
-				amount = 3
-			}
+			# Temporarily replace the special-vassal requirement.
+			# calc_true_if = {
+				# all_subject_country = {
+					# NOT = { liberty_desire = 5 }
+					# is_subject_of_type = prussian_vassal
+				# }
+				# amount = 3
+			# }
+			stability = 1
 			has_adm_advisor_3 = yes
 		}
+		# Temporarily replace the special-vassal capacity reward.
+		# effect = {
+			# set_country_flag = PRU_vassal_more
+			# custom_tooltip = PRU_amount_of_prussian_vassal
+		# }
 		effect = {
-			set_country_flag = PRU_vassal_more
-			custom_tooltip = PRU_amount_of_prussian_vassal
+			add_country_modifier = {
+				name = gecko_pru_constitution_domestic
+				duration = 9125
+			}
 		}
 	}
 }
@@ -221,11 +243,9 @@ PRU_missions_1_2 = {
 				OR = {
 					is_emperor = yes
 					NOT = { hre_size = 1 }
-					emperor = {
-						custom_trigger_tooltip = {
-							tooltip = PRU_po_enforced
-							has_country_flag = PRU_po_enforced_flag
-						}
+					has_won_war_against = {
+						who = emperor
+						max_years_since = 10
 					}
 				}
 			}
@@ -233,11 +253,9 @@ PRU_missions_1_2 = {
 				OR = {
 					is_emperor = yes
 					NOT = { hre_size = 1 }
-					event_target:ME_PRU_EMPEROR_TARGET = {
-						custom_trigger_tooltip = {
-							tooltip = PRU_po_enforced
-							has_country_flag = PRU_po_enforced_flag
-						}
+					has_won_war_against = {
+						who = event_target:ME_PRU_EMPEROR_TARGET
+						max_years_since = 10
 					}
 				}
 			}
@@ -372,6 +390,21 @@ PRU_missions_2 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
+			lusatia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			opole_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			breg_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		effect = {
 			country_event = { id = ME_Prussia_Events.17 }
@@ -408,13 +441,15 @@ PRU_missions_2_vassal = {
 	ai = yes
 	potential = {
 		tag = PRU
-		has_country_modifier = PRU_vassal_play
+		# The national replacement missions are available without the special-vassal route.
+		# has_country_modifier = PRU_vassal_play
+		NOT = { has_country_flag = PRU_ducal }
 	}
 	has_country_shield = yes
 	
 	PRU_august = {
 		icon = catholic_confraternity
-		required_missions = { }
+		required_missions = { PRU_eagle_in_the_north }
 		position = 10
 		trigger = {
 			calc_true_if = {
@@ -433,32 +468,39 @@ PRU_missions_2_vassal = {
 				amount = 3
 			}
 		}
+		# Temporarily replace the confederation reward with a smaller national bonus.
+		# effect = {
+			# custom_tooltip = PRU_every_germanic_ally_subject
+			# hidden_effect = {
+				# every_ally = {
+					# limit = {
+						# culture_group = germanic
+					# }
+					# add_trust = {
+						# who = ROOT
+						# value = 25
+						# mutual = yes
+					# }
+				# }
+				# every_subject_country = {
+					# limit = {
+						# culture_group = germanic
+					# }
+					# add_trust = {
+						# who = ROOT
+						# value = 25
+						# mutual = yes
+					# }
+				# }
+			# }
+			# add_country_modifier = {
+				# name = PRU_treaties_of_august
+				# duration = 9125
+			# }
+		# }
 		effect = {
-			custom_tooltip = PRU_every_germanic_ally_subject
-			hidden_effect = {
-				every_ally = {
-					limit = {
-						culture_group = germanic
-					}
-					add_trust = {
-						who = ROOT
-						value = 25
-						mutual = yes
-					}
-				}
-				every_subject_country = {
-					limit = {
-						culture_group = germanic
-					}
-					add_trust = {
-						who = ROOT
-						value = 25
-						mutual = yes
-					}
-				}
-			}
 			add_country_modifier = {
-				name = PRU_treaties_of_august
+				name = gecko_pru_august_diplomacy
 				duration = 9125
 			}
 		}
@@ -913,12 +955,18 @@ PRU_missions_2_2 = {
 					duration = -1
 				}
 			}
-			set_country_flag = PRU_vassal_tradition
-			if = {
-				limit = {
-					has_country_modifier = PRU_vassal_play
-				}
-				custom_tooltip = PRU_every_vassal_kriegsakademie
+			# Special-vassal academy bonuses are temporarily disabled.
+			# set_country_flag = PRU_vassal_tradition
+			# Use a smaller national officer-training bonus instead.
+			# if = {
+				# limit = {
+					# has_country_modifier = PRU_vassal_play
+				# }
+				# custom_tooltip = PRU_every_vassal_kriegsakademie
+			# }
+			add_country_modifier = {
+				name = gecko_pru_officer_training
+				duration = 9125
 			}
 		}
 	}
@@ -1149,7 +1197,6 @@ PRU_missions_3 = {
 					duration = -1
 				}
 			}
-			set_country_flag = PRU_religionsedikt_may_happen #22
 		}
 	}
 	
@@ -1196,20 +1243,16 @@ PRU_missions_3 = {
 				limit = {
 					NOT = { has_country_flag = PRU_TARGET_INITIALIZED }
 				}
-				FRA = {
-					custom_trigger_tooltip = {
-						tooltip = PRU_po_enforced
-						has_country_flag = PRU_po_enforced_flag
+				has_won_war_against = {
+						who = FRA
+						max_years_since = 10
 					}
-				}
 			}
 			else = {
-				event_target:ME_PRU_FRANCE_TARGET = {
-					custom_trigger_tooltip = {
-						tooltip = PRU_po_enforced
-						has_country_flag = PRU_po_enforced_flag
+				has_won_war_against = {
+						who = event_target:ME_PRU_FRANCE_TARGET
+						max_years_since = 10
 					}
-				}
 			}
 		}
 		effect = {
@@ -1401,6 +1444,7 @@ PRU_missions_3 = {
 			}
 		}
 		effect = {
+			custom_tooltip = gecko_pru_kiel_canal_unlocked_tt
 			2969 = {
 				add_province_modifier = {
 					name = PRU_oder_spree_kanal
@@ -1823,23 +1867,25 @@ PRU_missions_4 = {
 				name = PRU_general_staff_modifier
 				duration = -1
 			}
-			if = {
-				limit = {
-					NOT = { has_country_modifier = PRU_vassal_play }
-				}
-				add_army_tradition_or_mil_power = { amount = 20 }
-			}
-			else = {
-				add_army_tradition_or_mil_power = { amount = 10 }
-				custom_tooltip = PRU_for_every_vassal
-				hidden_effect = {
-					every_subject_country = {
-						ROOT = {
-							add_army_tradition_or_mil_power = { amount = 5 }
-						}
-					}
-				}
-			}
+			# Retain the normal national reward without counting subjects.
+			# if = {
+				# limit = {
+					# NOT = { has_country_modifier = PRU_vassal_play }
+				# }
+				# add_army_tradition_or_mil_power = { amount = 20 }
+			# }
+			# else = {
+				# add_army_tradition_or_mil_power = { amount = 10 }
+				# custom_tooltip = PRU_for_every_vassal
+				# hidden_effect = {
+					# every_subject_country = {
+						# ROOT = {
+							# add_army_tradition_or_mil_power = { amount = 5 }
+						# }
+					# }
+				# }
+			# }
+			add_army_tradition_or_mil_power = { amount = 20 }
 		}
 	}
 	
@@ -1866,6 +1912,7 @@ PRU_missions_4 = {
 			#country_event = { id = flavor_brapru.36 }
 			set_country_flag = brapru_army_reforms_3
 			country_event = { id = flavor_brapru.29 }
+			gecko_upgrade_prussian_militarization_3 = yes
 			create_general = { tradition = 100 }
 		}
 	}
@@ -2168,26 +2215,31 @@ PRU_missions_4 = {
 			tooltip = {
 				add_years_of_income = 0.1
 			}
-			if = {
-				limit = {
-					has_country_modifier = PRU_vassal_play
-				}
-				custom_tooltip = PRU_free_trade_vassal
-				hidden_effect = {
-					every_subject_country = {
-						limit = {
-							is_subject_of_type = prussian_vassal
-						}
-						ROOT = {
-							set_variable = {
-								which = PRU_money_to_add
-								value = 0
-							}
-							export_to_variable = {
-							}
-						}
-					}
-				}
+			# Temporarily replace special-vassal income with a smaller national trade bonus.
+			# if = {
+				# limit = {
+					# has_country_modifier = PRU_vassal_play
+				# }
+				# custom_tooltip = PRU_free_trade_vassal
+				# hidden_effect = {
+					# every_subject_country = {
+						# limit = {
+							# is_subject_of_type = prussian_vassal
+						# }
+						# ROOT = {
+							# set_variable = {
+								# which = PRU_money_to_add
+								# value = 0
+							# }
+							# export_to_variable = {
+							# }
+						# }
+					# }
+				# }
+			# }
+			add_country_modifier = {
+				name = gecko_pru_domestic_trade
+				duration = 9125
 			}
 			hidden_effect = {
 				if = {
@@ -2399,6 +2451,10 @@ PRU_missions_5 = {
 				name = PRU_GER_place_in_the_sun
 				duration = 9125
 			}
+			if = {
+				limit = { has_dlc = "Leviathan" }
+				custom_tooltip = pru_unifying_germany_bb_gate_magnificent_tier_tt
+			}
 			#custom_tooltip = PRU_can_get_in_german_tree_permanently
 		}
 	}
@@ -2422,6 +2478,7 @@ PRU_missions_5 = {
 		effect = {
 			set_country_flag = brapru_army_reforms_2
 			country_event = { id = flavor_brapru.6 }
+			gecko_upgrade_prussian_militarization_2 = yes
 			add_mil_power = 50
 		}
 	}

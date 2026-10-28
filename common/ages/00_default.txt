@@ -492,7 +492,7 @@ age_of_reformation = {
 				tag = SPA
 			}
 			modifier = {
-				leader_land_shock = 1
+				infantry_shock = 0.2
 				allowed_tercio_fraction = 0.1
 			}
 			ai_will_do = {
@@ -911,7 +911,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				discipline = 0.05
+				discipline = 0.075
 			}
 			ai_will_do = {
 				factor = 100

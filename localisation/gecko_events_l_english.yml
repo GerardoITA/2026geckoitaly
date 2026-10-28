@@ -143,7 +143,7 @@
  gc_burgundy_event.3.b:0 "Decline the offer."
  #Gecko Austria
  flavor_hab.20.gc:0 "We may not abandon our German roots."
- gecko_habsburg_empire_requirements_tooltip:0 "The Entirety of Austria, Bohemia and Royal Hungary must be directly controlled by us. Furthermore we must secure our Ambitions in Italy and conquer the City of Venice."
+ gecko_habsburg_empire_requirements_tooltip:0 "The Entirety of Austria, Bohemia and Royal Hungary must be directly owned and cored by us. Furthermore we must secure our Ambitions in Italy and own and core the City of Venice."
  gecko.1000.t:0 "Hungarian Levies"
  gecko.1000.d:0 "The levies previously provided by the Hungarian Nobles have been put to good use. We now have an opportunity to press them for service again, however they will not like it."
  gecko.1000.a:0 "Do nothing."

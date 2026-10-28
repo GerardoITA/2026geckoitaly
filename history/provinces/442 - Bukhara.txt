@@ -25,6 +25,12 @@ center_of_trade = 1
 	owner = TRS
 	controller = TRS
 }
+1444.11.11 = {
+	owner = KHI
+	controller = KHI
+	add_core = KHI
+}
+
 1448.3.1 = { #Ulugh Beg takes Herat and reunites the core of the Timurid Empire
 	owner = TIM
 	controller = TIM

@@ -497,6 +497,7 @@ X_VEN_slot_1 = {
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
+								is_core = ROOT
 								value = 12
 								culture = greek
 								has_owner_accepted_culture = yes
@@ -513,7 +514,7 @@ X_VEN_slot_1 = {
 					}
 					culture = greek
 					province_is_on_an_island = no
-					NOT = { owned_by = ROOT }
+					NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 					OR = {
 						area = morea_area
 						area = X_central_greece_area
@@ -526,6 +527,7 @@ X_VEN_slot_1 = {
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
+								is_core = ROOT
 								value = 12
 								culture = greek
 								has_owner_accepted_culture = yes
@@ -542,7 +544,7 @@ X_VEN_slot_1 = {
 					}
 					culture = greek
 					province_is_on_an_island = no
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 					has_owner_accepted_culture = no
 					OR = {
 						area = morea_area
@@ -560,6 +562,7 @@ X_VEN_slot_1 = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
+				is_core = ROOT
 				value = 12
 				culture = greek
 				has_owner_accepted_culture = yes

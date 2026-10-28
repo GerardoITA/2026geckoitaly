@@ -271,7 +271,24 @@ gecko_intscore_gui_fill_row = {
 }
 
 gecko_intscore_gui_refresh = {
-	gecko_intscore_gui_build = yes
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_country_flag = gecko_intscore_gui_cache_valid }
+				1 = { NOT = { is_variable_equal = { which = intscore_cache_version which = ROOT } } }
+				AND = { has_country_flag = gecko_intscore_gui_sort_annual NOT = { has_country_flag = gecko_intscore_gui_cached_sort_annual } }
+				AND = { NOT = { has_country_flag = gecko_intscore_gui_sort_annual } has_country_flag = gecko_intscore_gui_cached_sort_annual }
+			}
+		}
+		gecko_intscore_gui_build = yes
+		set_country_flag = gecko_intscore_gui_cache_valid
+		clr_country_flag = gecko_intscore_gui_cached_sort_annual
+		if = {
+			limit = { has_country_flag = gecko_intscore_gui_sort_annual }
+			set_country_flag = gecko_intscore_gui_cached_sort_annual
+		}
+		1 = { ROOT = { set_variable = { which = intscore_cache_version which = PREV } } }
+	}
 	set_variable = { which = gecko_intscore_gui_pages which = gecko_intscore_gui_count }
 	divide_variable = { which = gecko_intscore_gui_pages value = 10 }
 	round_variable = { which = gecko_intscore_gui_pages value = 1 }

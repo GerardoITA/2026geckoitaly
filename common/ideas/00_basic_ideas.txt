@@ -679,6 +679,7 @@ influence_ideas = {
 	diplomatic_influence = {
 		diplomatic_upkeep = 2
 		diplomatic_reputation = 2
+		imperial_authority_value = 0.1
 	}
 
 	marcher_lords = {
@@ -777,7 +778,7 @@ court_ideas = {
 
 	respected_authority = {
 		max_absolutism = 50
-		imperial_authority_value = 0.2
+		imperial_authority_value = 0.25
 		max_absolutism_effect = 0.5
 	}
 	

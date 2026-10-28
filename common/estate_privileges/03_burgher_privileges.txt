@@ -451,13 +451,27 @@ estate_burghers_indebted_to_burghers = {
 	influence = 0.05
 	on_granted = {
 		if = {
-			limit = {
-				has_country_flag = BYZ_buff_burgher_loans_flag
+			limit = { religion = jewish }
+			if = {
+				limit = {
+					has_country_flag = BYZ_buff_burgher_loans_flag
+				}
+				custom_tooltip = gecko_jewish_byz_burgher_loans_tt
 			}
-			custom_tooltip = BYZ_estate_burghers_indebted_to_burghers_effect_tooltip
+			else = {
+				custom_tooltip = gecko_jewish_burgher_loans_tt
+			}
 		}
 		else = {
-			custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
+			if = {
+				limit = {
+					has_country_flag = BYZ_buff_burgher_loans_flag
+				}
+				custom_tooltip = BYZ_estate_burghers_indebted_to_burghers_effect_tooltip
+			}
+			else = {
+				custom_tooltip = estate_burghers_indebted_to_burghers_effect_tooltip
+			}
 		}
 		if = {
 			limit = {
@@ -471,34 +485,59 @@ estate_burghers_indebted_to_burghers = {
 			add_inflation = 0.5
 		}
 		hidden_effect = {
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
-			add_loan = {
-				fixed_interest = 2
-				duration = 60
-				estate_loan = yes
-			}
 			if = {
-				limit = {
-					has_country_flag = BYZ_buff_burgher_loans_flag
+				limit = { religion = jewish }
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 1
+					duration = 60
+					estate_loan = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = BYZ_buff_burgher_loans_flag
+					}
+					add_loan = {
+						fixed_interest = 1
+						duration = 60
+						estate_loan = yes
+					}
+					add_loan = {
+						fixed_interest = 1
+						duration = 60
+						estate_loan = yes
+					}
+				}
+			}
+			else = {
+				add_loan = {
+					fixed_interest = 2
+					duration = 60
+					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 2
+					duration = 60
+					estate_loan = yes
 				}
 				add_loan = {
 					fixed_interest = 2
@@ -509,6 +548,26 @@ estate_burghers_indebted_to_burghers = {
 					fixed_interest = 2
 					duration = 60
 					estate_loan = yes
+				}
+				add_loan = {
+					fixed_interest = 2
+					duration = 60
+					estate_loan = yes
+				}
+				if = {
+					limit = {
+						has_country_flag = BYZ_buff_burgher_loans_flag
+					}
+					add_loan = {
+						fixed_interest = 2
+						duration = 60
+						estate_loan = yes
+					}
+					add_loan = {
+						fixed_interest = 2
+						duration = 60
+						estate_loan = yes
+					}
 				}
 			}
 		}

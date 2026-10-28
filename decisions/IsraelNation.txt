@@ -39,19 +39,27 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 379	# Jerusalem
-				province_id = 364	# Gaza
-				province_id = 1854	# Jaffa
-				province_id = 365	# Sinai
-				province_id = 380	# Al Karak
-				province_id = 381	# Ajlun
-				province_id = 2327	# Ma'an
-				province_id = 4268	# Aqaba
-				province_id = 4270	# Azraq
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					OR = {
+						province_id = 379	# Jerusalem
+						province_id = 364	# Gaza
+						province_id = 1854	# Jaffa
+						province_id = 365	# Sinai
+						province_id = 380	# Al Karak
+						province_id = 381	# Ajlun
+						province_id = 2327	# Ma'an
+						province_id = 4268	# Aqaba
+						province_id = 4270	# Azraq
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+				AND = {
+					region = egypt_region
+					NOT = { owned_by = ROOT }
+				}
 			}
 		}
 		allow = {
@@ -68,6 +76,10 @@ country_decisions = {
 			owns_core_province = 2327	# Ma'an
 			owns_core_province = 4268	# Aqaba
 			owns_core_province = 4270	# Azraq
+			egypt_region = {
+				type = all
+				owned_by = ROOT
+			}
 			religion = jewish
 		}
 		effect = {

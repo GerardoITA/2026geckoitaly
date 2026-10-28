@@ -757,12 +757,13 @@ guiTypes = {
 
 		windowType = {
 			name = "gecko_intscore_ranking_window"
+			backGround = "gecko_intscore_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_intscore_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_intscore_panel"
@@ -2166,12 +2167,13 @@ guiTypes = {
 		# BEGIN GENERATED VICTORY ATLAS
 		windowType = {
 			name = "gecko_victory_atlas_window"
+			backGround = "gecko_victory_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_victory_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_victory_panel"
@@ -6177,12 +6179,13 @@ guiTypes = {
 		# BEGIN GENERATED INTSCORE DOCUMENTATION
 		windowType = {
 			name = "gecko_intscore_documentation_window"
+			backGround = "gecko_intscore_docs_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_intscore_docs_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_intscore_documentation_panel"
@@ -8204,6 +8207,18 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
+					name = "gecko_intscore_docs_rewards_ties"
+					position = { x = 240 y = 530 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_intscore_docs_rewards_ties"
+					maxWidth = 668
+					maxHeight = 44
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
 					name = "gecko_intscore_docs_rewards_page_number"
 					position = { x = 240 y = 621 }
 					font = "vic_18"
@@ -8258,6 +8273,7 @@ guiTypes = {
 			buttonFont = "vic_18"
 			clicksound = click
 			scripted = yes
+			shortcut = "z"
 		}
 		iconType = {
 			name = "gecko_menu_badge"
@@ -8278,12 +8294,13 @@ guiTypes = {
 		}
 		windowType = {
 			name = "gecko_menu_window"
+			backGround = "gecko_menu_background"
 			position = { x = -480 y = -346 }
 			size = { x = 960 y = 692 }
 			Orientation = "CENTER"
-			moveable = 0
+			moveable = 1
 			scripted = yes
-			iconType = {
+			guiButtonType = {
 				name = "gecko_menu_background"
 				position = { x = 0 y = 0 }
 				spriteType = "GFX_gecko_menu_panel"
@@ -16353,20 +16370,8 @@ guiTypes = {
 					alwaystransparent = yes
 				}
 				instantTextBoxType = {
-					name = "gecko_menu_page_47_body_0_line_2"
-					position = { x = 240 y = 281 }
-					font = "vic_18"
-					borderSize = { x = 0 y = 0 }
-					text = "gecko_menu_page_47_body_0_line_2"
-					maxWidth = 668
-					maxHeight = 22
-					fixedsize = yes
-					format = left
-					alwaystransparent = yes
-				}
-				instantTextBoxType = {
 					name = "gecko_menu_page_47_heading_1"
-					position = { x = 240 y = 313 }
+					position = { x = 240 y = 291 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_heading_1"
@@ -16378,7 +16383,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_47_body_1"
-					position = { x = 240 y = 339 }
+					position = { x = 240 y = 317 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_body_1"
@@ -16390,7 +16395,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_47_body_1_line_1"
-					position = { x = 240 y = 361 }
+					position = { x = 240 y = 339 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_body_1_line_1"
@@ -16402,10 +16407,70 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "gecko_menu_page_47_body_1_line_2"
-					position = { x = 240 y = 383 }
+					position = { x = 240 y = 361 }
 					font = "vic_18"
 					borderSize = { x = 0 y = 0 }
 					text = "gecko_menu_page_47_body_1_line_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_1_line_3"
+					position = { x = 240 y = 383 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_1_line_3"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_heading_2"
+					position = { x = 240 y = 415 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_heading_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_2"
+					position = { x = 240 y = 441 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_2"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_2_line_1"
+					position = { x = 240 y = 463 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_2_line_1"
+					maxWidth = 668
+					maxHeight = 22
+					fixedsize = yes
+					format = left
+					alwaystransparent = yes
+				}
+				instantTextBoxType = {
+					name = "gecko_menu_page_47_body_2_line_2"
+					position = { x = 240 y = 485 }
+					font = "vic_18"
+					borderSize = { x = 0 y = 0 }
+					text = "gecko_menu_page_47_body_2_line_2"
 					maxWidth = 668
 					maxHeight = 22
 					fixedsize = yes

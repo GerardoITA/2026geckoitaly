@@ -1,0 +1,101 @@
+# Country scope inside a global province event: save the country explicitly.
+# Re-evaluate after each demolition so both members of a pair are never removed.
+# Keep mountains first, then ramparts, then other defensive terrain. Among equally
+# preferred forts, demolish the one resolving most conflicts, then the lower tier.
+gecko_fort_cleanup_country = {
+	save_event_target_as = gecko_fort_cleanup_owner
+	while = {
+		limit = { any_owned_province = { gecko_fort_cleanup_conflict = yes } }
+		clr_country_flag = gecko_fort_cleanup_candidate_found
+		every_owned_province = {
+			limit = { gecko_fort_cleanup_conflict = yes }
+			# Low values are demolished first; mountains outrank ramparts and rough terrain.
+			set_variable = { which = gecko_fort_cleanup_priority value = 0 }
+			if = {
+				limit = { has_terrain = mountain }
+				set_variable = { which = gecko_fort_cleanup_priority value = 4 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_terrain = hills
+						has_terrain = highlands
+						has_terrain = forest
+						has_terrain = woods
+						has_terrain = jungle
+						has_terrain = marsh
+						has_terrain = glacier
+					}
+				}
+				set_variable = { which = gecko_fort_cleanup_priority value = 1 }
+			}
+			if = {
+				limit = { has_building = ramparts }
+				change_variable = { which = gecko_fort_cleanup_priority value = 2 }
+			}
+			set_variable = { which = gecko_fort_cleanup_neighbors value = 0 }
+			every_neighbor_province = {
+				limit = {
+					owned_by = event_target:gecko_fort_cleanup_owner
+					gecko_fort_cleanup_eligible = yes
+				}
+				PREV = { change_variable = { which = gecko_fort_cleanup_neighbors value = 1 } }
+			}
+			set_variable = { which = gecko_fort_cleanup_tier value = 2 }
+			if = {
+				limit = { has_building = fort_18th }
+				set_variable = { which = gecko_fort_cleanup_tier value = 8 }
+			}
+			else_if = {
+				limit = { has_building = fort_17th }
+				set_variable = { which = gecko_fort_cleanup_tier value = 6 }
+			}
+			else_if = {
+				limit = { has_building = fort_16th }
+				set_variable = { which = gecko_fort_cleanup_tier value = 4 }
+			}
+			if = {
+				limit = { event_target:gecko_fort_cleanup_owner = { NOT = { has_country_flag = gecko_fort_cleanup_candidate_found } } }
+				save_event_target_as = gecko_fort_cleanup_candidate
+				event_target:gecko_fort_cleanup_owner = { set_country_flag = gecko_fort_cleanup_candidate_found }
+			}
+			else_if = {
+				limit = {
+					event_target:gecko_fort_cleanup_candidate = {
+						OR = {
+							AND = {
+								check_variable = { which = gecko_fort_cleanup_priority which = PREV }
+								NOT = { is_variable_equal = { which = gecko_fort_cleanup_priority which = PREV } }
+							}
+							AND = {
+								is_variable_equal = { which = gecko_fort_cleanup_priority which = PREV }
+								OR = {
+									NOT = { check_variable = { which = gecko_fort_cleanup_neighbors which = PREV } }
+									AND = {
+										is_variable_equal = { which = gecko_fort_cleanup_neighbors which = PREV }
+										check_variable = { which = gecko_fort_cleanup_tier which = PREV }
+									}
+								}
+							}
+						}
+					}
+				}
+				save_event_target_as = gecko_fort_cleanup_candidate
+				event_target:gecko_fort_cleanup_owner = { set_country_flag = gecko_fort_cleanup_candidate_found }
+			}
+		}
+		event_target:gecko_fort_cleanup_candidate = {
+			remove_building = fort_18th
+			remove_building = fort_17th
+			remove_building = fort_16th
+			remove_building = fort_15th
+		}
+	}
+	clr_country_flag = gecko_fort_cleanup_candidate_found
+	every_owned_province = {
+		limit = { check_variable = { which = gecko_fort_cleanup_neighbors value = 1 } }
+		set_variable = { which = gecko_fort_cleanup_priority value = 0 }
+		set_variable = { which = gecko_fort_cleanup_neighbors value = 0 }
+		set_variable = { which = gecko_fort_cleanup_tier value = 0 }
+	}
+}

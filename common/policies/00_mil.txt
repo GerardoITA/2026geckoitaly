@@ -77,8 +77,6 @@ taxation_with_representation = {
 		remove_country_modifier = taxation_with_representation_marine_bonus
 	}
 
-	effect = {}
-	removed_effect = {}
 	ai_will_do = {
 		factor = 1		
 	}

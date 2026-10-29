@@ -2913,7 +2913,7 @@ guiTypes = {
 		name = "countryreligionview_aspectitem_protestant"
 		backGround =""
 		position = { x=10 y=-20 }	
-		size = { x=50 y=46 }
+		size = { x=50 y=60 }
 		moveable = 0
 		dontRender = ""
 		horizontalBorder = ""
@@ -2933,7 +2933,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "AspectName"	
 			maxWidth = 102
-			maxHeight = 24
+			maxHeight = 48
 			Orientation = "UPPER_LEFT"
 			format = left
 		}
@@ -2945,7 +2945,7 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
 			maxWidth = 206
-			maxHeight = 24
+			maxHeight = 54
 			Orientation = "UPPER_LEFT"
 			format = left
 		}

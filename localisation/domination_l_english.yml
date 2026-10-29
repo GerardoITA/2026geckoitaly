@@ -6101,7 +6101,7 @@
  desc_talented_architect:0 "The state is blessed with the work of an architectural visionary, whose passion and sweat will bring greatness to our cities."
  ###CHURCH ASPECTS###
  anglican_aspect:0 "Anglican Aspect"
- desc_anglican_aspect:1 "Unlike many other branches and directions of Protestantism, the Anglican aspect tries to combine the ideas of the Reformation with the traditions of Catholicism. \n\nWhile this aspect is active, it also provides §G+1§! Tolerance of Heretics."
+ desc_anglican_aspect:1 "Unlike many other branches and directions of Protestantism, the Anglican aspect tries to combine the ideas of the Reformation with the traditions of Catholicism."
  anglican_aspect_aspect_modifier:0 "Church Aspect Zeal"
  desc_anglican_aspect_aspect_modifier:0 "The introduction of a new aspect of our faith inspired our people to live according to this new codex."
  spread_the_book_of_common_prayer:1 "§YSpread the Book of Common Prayer§!"

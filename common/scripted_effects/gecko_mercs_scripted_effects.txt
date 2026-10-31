@@ -407,6 +407,12 @@ gecko_mercs_base_system = {
 			which = mercenary_forcelimit_modifier
 		}
 		
+		#Reduce total mercenary availability by 33%, including all force-limit bonuses
+		multiply_variable = {
+			which = mercenary_forcelimit
+			value = 0.67
+		}
+
 		gecko_mercs_truncation_effect = {
 			truncated_variable = mercenary_forcelimit
 		}

@@ -8273,7 +8273,7 @@ guiTypes = {
 			buttonFont = "vic_18"
 			clicksound = click
 			scripted = yes
-			shortcut = "z"
+			shortcut = "<"
 		}
 		iconType = {
 			name = "gecko_menu_badge"

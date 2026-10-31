@@ -846,6 +846,7 @@ republic = {
 				merchant_arsenal_reform
 				tercios_reform
 				expanded_black_army_reform
+				theme_system_reform
 				#1.36
 				sparapet_office
 				legacy_of_the_seljuk_reform

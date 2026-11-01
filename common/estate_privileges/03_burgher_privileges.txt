@@ -573,6 +573,7 @@ estate_burghers_indebted_to_burghers = {
 		}
 	}
 	penalties = {
+		trade_efficiency = -0.05
 	}
 	benefits = {
 	}

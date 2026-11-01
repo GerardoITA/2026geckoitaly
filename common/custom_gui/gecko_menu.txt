@@ -645,8 +645,8 @@ custom_button = {
 	name = gecko_menu_cosmetics_tab
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { clr_country_flag = gecko_menu_edicts_open } }
-	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_menu_edicts_open } } }
+	effect = { hidden_effect = { clr_country_flag = gecko_special_open clr_country_flag = gecko_menu_edicts_open } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_special_open } NOT = { has_country_flag = gecko_menu_edicts_open } } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
@@ -654,14 +654,14 @@ custom_button = {
 	name = gecko_menu_edicts_tab
 	potential = { ai = no }
 	trigger = { always = yes }
-	effect = { hidden_effect = { set_country_flag = gecko_menu_edicts_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
-	frame = { number = 2 trigger = { has_country_flag = gecko_menu_edicts_open } }
+	effect = { hidden_effect = { clr_country_flag = gecko_special_open set_country_flag = gecko_menu_edicts_open if = { limit = { NOT = { has_country_flag = gecko_menu_edicts_initialized } } set_variable = { which = gecko_menu_edict value = 0 } set_country_flag = gecko_menu_edicts_initialized } } }
+	frame = { number = 2 trigger = { NOT = { has_country_flag = gecko_special_open } has_country_flag = gecko_menu_edicts_open } }
 	frame = { number = 1 trigger = { always = yes } }
 }
 
 custom_window = {
 	name = gecko_menu_cosmetics_content
-	potential = { NOT = { has_country_flag = gecko_menu_edicts_open } }
+	potential = { NOT = { has_country_flag = gecko_special_open } NOT = { has_country_flag = gecko_menu_edicts_open } }
 }
 
 custom_button = {
@@ -682,7 +682,7 @@ custom_button = {
 
 custom_window = {
 	name = gecko_menu_edicts_content
-	potential = { has_country_flag = gecko_menu_edicts_open }
+	potential = { NOT = { has_country_flag = gecko_special_open } has_country_flag = gecko_menu_edicts_open }
 }
 
 custom_text_box = {

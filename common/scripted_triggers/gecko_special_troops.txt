@@ -1,0 +1,74 @@
+# Generated special regiment access and manpower requirements.
+
+gecko_special_marines_unlocked = {
+OR = { has_dlc = "Emperor" has_dlc = "Rule Britannia" } OR = { has_global_modifier_value = { which = has_marines value = 1 } } OR = { has_global_modifier_value = { which = allowed_marine_fraction value = 0.001 }  }
+}
+
+gecko_special_heavy_infantry_unlocked = {
+has_dlc = "Domination" OR = { has_global_modifier_value = { which = can_recruit_cossacks value = 1 } has_estate_privilege = estate_nobles_right_of_counsel has_estate_privilege = estate_cossacks_establish_the_cossack_regiments } OR = { has_global_modifier_value = { which = allowed_cossack_fraction value = 0.001 }  }
+}
+
+gecko_special_heavy_cavalry_unlocked = {
+has_dlc = "Domination" OR = { has_global_modifier_value = { which = can_recruit_cossacks value = 1 } has_estate_privilege = estate_nobles_right_of_counsel has_estate_privilege = estate_cossacks_establish_the_cossack_regiments } OR = { has_global_modifier_value = { which = allowed_cossack_fraction value = 0.001 }  }
+}
+
+gecko_special_mamluk_infantry_unlocked = {
+has_dlc = "King of Kings" OR = { has_global_modifier_value = { which = has_mamluks value = 1 } } OR = { has_global_modifier_value = { which = allowed_mamluks_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_mamluks value = 1 } }
+}
+
+gecko_special_mamluk_cavalry_unlocked = {
+has_dlc = "King of Kings" OR = { has_global_modifier_value = { which = has_mamluks value = 1 } } OR = { has_global_modifier_value = { which = allowed_mamluks_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_mamluks value = 1 } }
+}
+
+gecko_special_streltsy_unlocked = {
+OR = { has_dlc = "Third Rome" has_dlc = "Domination" } OR = { has_global_modifier_value = { which = has_streltsy value = 1 } } OR = { has_global_modifier_value = { which = allowed_streltsy_fraction value = 0.001 }  }
+}
+
+gecko_special_rajputs_unlocked = {
+has_dlc = "Dharma" OR = { has_global_modifier_value = { which = can_recruit_rajputs value = 1 } has_estate_privilege = estate_rajput_rajput_regiments } OR = { has_global_modifier_value = { which = allowed_rajput_fraction value = 0.001 }  }
+}
+
+gecko_special_guard_infantry_unlocked = {
+has_dlc = "Emperor" OR = { has_global_modifier_value = { which = can_recruit_revolutionary_guards value = 1 } is_revolutionary = yes } OR = { has_global_modifier_value = { which = allowed_rev_guard_fraction value = 0.001 }  }
+}
+
+gecko_special_guard_cavalry_unlocked = {
+has_dlc = "Emperor" OR = { has_global_modifier_value = { which = can_recruit_revolutionary_guards value = 1 } is_revolutionary = yes } OR = { has_global_modifier_value = { which = allowed_rev_guard_fraction value = 0.001 }  }
+}
+
+gecko_special_tercios_unlocked = {
+has_dlc = "Domination" OR = { has_global_modifier_value = { which = has_tercio value = 1 } } OR = { has_global_modifier_value = { which = allowed_tercio_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_tercio value = 1 } }
+}
+
+gecko_special_musketeers_unlocked = {
+has_dlc = "Domination" OR = { has_global_modifier_value = { which = has_musketeer value = 1 } } OR = { has_global_modifier_value = { which = allowed_musketeer_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_musketeers value = 1 } }
+}
+
+gecko_special_samurai_unlocked = {
+has_dlc = "Domination" OR = { has_global_modifier_value = { which = has_samurai value = 1 } } OR = { has_global_modifier_value = { which = allowed_samurai_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_samurai value = 1 } }
+}
+
+gecko_special_qizilbash_infantry_unlocked = {
+has_dlc = "King of Kings" OR = { has_global_modifier_value = { which = has_qizilbash value = 1 } } OR = { has_global_modifier_value = { which = allowed_qizilbash_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_qizilbash value = 1 } }
+}
+
+gecko_special_qizilbash_cavalry_unlocked = {
+has_dlc = "King of Kings" OR = { has_global_modifier_value = { which = has_qizilbash value = 1 } } OR = { has_global_modifier_value = { which = allowed_qizilbash_fraction value = 0.001 } has_global_modifier_value = { which = amount_of_qizilbash value = 1 } }
+}
+
+gecko_special_caroleans_unlocked = {
+has_dlc = "Lions of the North" OR = { has_global_modifier_value = { which = has_carolean value = 1 } has_government_attribute = allow_carolean } 
+}
+
+gecko_special_hussars_unlocked = {
+has_dlc = "Lions of the North" OR = { has_global_modifier_value = { which = can_recruit_hussars value = 1 } } 
+}
+
+gecko_special_can_recruit = {
+	capital_scope = { controlled_by = ROOT has_siege = no unit_in_battle = no }
+	check_variable = { which = gecko_special_amount_$tier$ value = 1 }
+	custom_trigger_tooltip = {
+		tooltip = gecko_special_$resource$_tt
+		check_variable = { which = gecko_special_reserve which = gecko_special_men_$tier$ }
+	}
+}

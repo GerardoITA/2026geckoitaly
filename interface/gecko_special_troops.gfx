@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = { name = "GFX_gecko_special_marines" texturefile = "gfx/interface/band_regiment_marines.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_cossacks" texturefile = "gfx/interface/band_regiment_cossacks.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_mamluks" texturefile = "gfx/interface/band_regiment_mamluks.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_streltsy" texturefile = "gfx/interface/band_regiment_streltsy.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_rajput" texturefile = "gfx/interface/band_regiment_rajput.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_revolutionary_guard" texturefile = "gfx/interface/band_regiment_revolutionary_guard.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_tercio" texturefile = "gfx/interface/band_regiment_tercio.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_musketeer" texturefile = "gfx/interface/band_regiment_musketeer.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_samurai" texturefile = "gfx/interface/band_regiment_samurai.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_qizilbash" texturefile = "gfx/interface/band_regiment_qizilbash.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_carolean" texturefile = "gfx/interface/band_regiment_carolean.dds" noOfFrames = 1 }
+	spriteType = { name = "GFX_gecko_special_hussars" texturefile = "gfx/interface/band_regiment_hussars.dds" noOfFrames = 1 }
+}

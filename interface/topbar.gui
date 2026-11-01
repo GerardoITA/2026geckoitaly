@@ -17945,6 +17945,1422 @@ guiTypes = {
 				clicksound = click
 				scripted = yes
 			}
+			# BEGIN GECKO SPECIAL TROOPS
+			guiButtonType = {
+				name = "gecko_special_tab"
+				position = { x = 42 y = 241 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = "gecko_special_tab"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			windowType = {
+				name = "gecko_special_content"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_heading"
+				position = { x = 240 y = 173 }
+				font = "vic_22"
+				text = "gecko_special_heading"
+				maxWidth = 668
+				maxHeight = 30
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_instructions"
+				position = { x = 240 y = 207 }
+				font = "vic_18"
+				text = "gecko_special_instructions"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_empty"
+				position = { x = 240 y = 263 }
+				font = "vic_18"
+				text = "gecko_special_empty"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_marines"
+				position = { x = 240 y = 263 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_marines_band"
+				position = { x = 240 y = 263 }
+				spriteType = "GFX_gecko_special_marines"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_marines_label"
+				position = { x = 244 y = 268 }
+				font = "vic_18"
+				text = "gecko_special_marines_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_marines_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_marines_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_marines_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_marines_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_marines_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_marines_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_marines_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_marines_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_marines_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_marines_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_marines_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_infantry"
+				position = { x = 580 y = 263 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_heavy_infantry_band"
+				position = { x = 580 y = 263 }
+				spriteType = "GFX_gecko_special_cossacks"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_heavy_infantry_label"
+				position = { x = 584 y = 268 }
+				font = "vic_18"
+				text = "gecko_special_heavy_infantry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_heavy_infantry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_heavy_infantry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_heavy_infantry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_infantry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_infantry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_infantry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_infantry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_infantry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_infantry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_infantry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_infantry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_cavalry"
+				position = { x = 240 y = 295 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_heavy_cavalry_band"
+				position = { x = 240 y = 295 }
+				spriteType = "GFX_gecko_special_cossacks"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_heavy_cavalry_label"
+				position = { x = 244 y = 300 }
+				font = "vic_18"
+				text = "gecko_special_heavy_cavalry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_heavy_cavalry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_heavy_cavalry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_heavy_cavalry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_cavalry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_cavalry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_cavalry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_cavalry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_cavalry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_cavalry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_heavy_cavalry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_heavy_cavalry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_infantry"
+				position = { x = 580 y = 295 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_mamluk_infantry_band"
+				position = { x = 580 y = 295 }
+				spriteType = "GFX_gecko_special_mamluks"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_mamluk_infantry_label"
+				position = { x = 584 y = 300 }
+				font = "vic_18"
+				text = "gecko_special_mamluk_infantry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_mamluk_infantry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_mamluk_infantry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_mamluk_infantry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_infantry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_infantry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_infantry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_infantry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_infantry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_infantry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_infantry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_infantry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_cavalry"
+				position = { x = 240 y = 327 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_mamluk_cavalry_band"
+				position = { x = 240 y = 327 }
+				spriteType = "GFX_gecko_special_mamluks"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_mamluk_cavalry_label"
+				position = { x = 244 y = 332 }
+				font = "vic_18"
+				text = "gecko_special_mamluk_cavalry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_mamluk_cavalry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_mamluk_cavalry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_mamluk_cavalry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_cavalry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_cavalry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_cavalry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_cavalry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_cavalry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_cavalry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_mamluk_cavalry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_mamluk_cavalry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_streltsy"
+				position = { x = 580 y = 327 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_streltsy_band"
+				position = { x = 580 y = 327 }
+				spriteType = "GFX_gecko_special_streltsy"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_streltsy_label"
+				position = { x = 584 y = 332 }
+				font = "vic_18"
+				text = "gecko_special_streltsy_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_streltsy_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_streltsy_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_streltsy_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_streltsy_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_streltsy_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_streltsy_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_streltsy_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_streltsy_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_streltsy_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_streltsy_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_streltsy_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_rajputs"
+				position = { x = 240 y = 359 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_rajputs_band"
+				position = { x = 240 y = 359 }
+				spriteType = "GFX_gecko_special_rajput"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_rajputs_label"
+				position = { x = 244 y = 364 }
+				font = "vic_18"
+				text = "gecko_special_rajputs_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_rajputs_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_rajputs_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_rajputs_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_rajputs_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_rajputs_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_rajputs_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_rajputs_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_rajputs_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_rajputs_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_rajputs_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_rajputs_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_infantry"
+				position = { x = 580 y = 359 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_guard_infantry_band"
+				position = { x = 580 y = 359 }
+				spriteType = "GFX_gecko_special_revolutionary_guard"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_guard_infantry_label"
+				position = { x = 584 y = 364 }
+				font = "vic_18"
+				text = "gecko_special_guard_infantry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_guard_infantry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_guard_infantry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_guard_infantry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_infantry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_infantry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_infantry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_infantry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_infantry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_infantry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_infantry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_infantry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_cavalry"
+				position = { x = 240 y = 391 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_guard_cavalry_band"
+				position = { x = 240 y = 391 }
+				spriteType = "GFX_gecko_special_revolutionary_guard"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_guard_cavalry_label"
+				position = { x = 244 y = 396 }
+				font = "vic_18"
+				text = "gecko_special_guard_cavalry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_guard_cavalry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_guard_cavalry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_guard_cavalry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_cavalry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_cavalry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_cavalry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_cavalry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_cavalry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_cavalry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_guard_cavalry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_guard_cavalry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_tercios"
+				position = { x = 580 y = 391 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_tercios_band"
+				position = { x = 580 y = 391 }
+				spriteType = "GFX_gecko_special_tercio"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_tercios_label"
+				position = { x = 584 y = 396 }
+				font = "vic_18"
+				text = "gecko_special_tercios_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_tercios_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_tercios_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_tercios_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_tercios_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_tercios_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_tercios_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_tercios_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_tercios_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_tercios_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_tercios_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_tercios_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_musketeers"
+				position = { x = 240 y = 423 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_musketeers_band"
+				position = { x = 240 y = 423 }
+				spriteType = "GFX_gecko_special_musketeer"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_musketeers_label"
+				position = { x = 244 y = 428 }
+				font = "vic_18"
+				text = "gecko_special_musketeers_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_musketeers_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_musketeers_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_musketeers_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_musketeers_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_musketeers_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_musketeers_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_musketeers_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_musketeers_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_musketeers_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_musketeers_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_musketeers_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_samurai"
+				position = { x = 580 y = 423 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_samurai_band"
+				position = { x = 580 y = 423 }
+				spriteType = "GFX_gecko_special_samurai"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_samurai_label"
+				position = { x = 584 y = 428 }
+				font = "vic_18"
+				text = "gecko_special_samurai_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_samurai_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_samurai_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_samurai_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_samurai_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_samurai_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_samurai_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_samurai_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_samurai_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_samurai_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_samurai_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_samurai_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_infantry"
+				position = { x = 240 y = 455 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_qizilbash_infantry_band"
+				position = { x = 240 y = 455 }
+				spriteType = "GFX_gecko_special_qizilbash"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_qizilbash_infantry_label"
+				position = { x = 244 y = 460 }
+				font = "vic_18"
+				text = "gecko_special_qizilbash_infantry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_qizilbash_infantry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_qizilbash_infantry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_qizilbash_infantry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_infantry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_infantry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_infantry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_infantry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_infantry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_infantry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_infantry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_infantry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_cavalry"
+				position = { x = 580 y = 455 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_qizilbash_cavalry_band"
+				position = { x = 580 y = 455 }
+				spriteType = "GFX_gecko_special_qizilbash"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_qizilbash_cavalry_label"
+				position = { x = 584 y = 460 }
+				font = "vic_18"
+				text = "gecko_special_qizilbash_cavalry_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_qizilbash_cavalry_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_qizilbash_cavalry_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_qizilbash_cavalry_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_cavalry_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_cavalry_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_cavalry_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_cavalry_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_cavalry_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_cavalry_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_qizilbash_cavalry_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_qizilbash_cavalry_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_caroleans"
+				position = { x = 240 y = 487 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_caroleans_band"
+				position = { x = 240 y = 487 }
+				spriteType = "GFX_gecko_special_carolean"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_caroleans_label"
+				position = { x = 244 y = 492 }
+				font = "vic_18"
+				text = "gecko_special_caroleans_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_caroleans_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_caroleans_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_caroleans_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_caroleans_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_caroleans_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_caroleans_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_caroleans_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_caroleans_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_caroleans_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_caroleans_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_caroleans_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_hussars"
+				position = { x = 580 y = 487 }
+				quadTextureSprite = "GFX_gecko_victory_provinces_tab"
+				buttonText = ""
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			iconType = {
+				name = "gecko_special_hussars_band"
+				position = { x = 580 y = 487 }
+				spriteType = "GFX_gecko_special_hussars"
+				scale = 0.45
+				scripted = yes
+				alwaystransparent = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_hussars_label"
+				position = { x = 584 y = 492 }
+				font = "vic_18"
+				text = "gecko_special_hussars_label"
+				maxWidth = 146
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			windowType = {
+				name = "gecko_special_hussars_details"
+				position = { x = 0 y = 0 }
+				size = { x = 960 y = 692 }
+				moveable = 0
+				scripted = yes
+			instantTextBoxType = {
+				name = "gecko_special_hussars_summary"
+				position = { x = 240 y = 523 }
+				font = "vic_18"
+				text = "gecko_special_hussars_summary"
+				maxWidth = 668
+				maxHeight = 44
+				fixedsize = yes
+				format = left
+				scripted = yes
+				alwaystransparent = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_hussars_25"
+				position = { x = 240 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_hussars_25"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_hussars_50"
+				position = { x = 332 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_hussars_50"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_hussars_75"
+				position = { x = 424 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_hussars_75"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			guiButtonType = {
+				name = "gecko_special_hussars_100"
+				position = { x = 516 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_hussars_100"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			}
+			guiButtonType = {
+				name = "gecko_special_refresh"
+				position = { x = 740 y = 585 }
+				quadTextureSprite = "GFX_gecko_victory_option"
+				buttonText = "gecko_special_refresh"
+				buttonFont = "vic_18"
+				clicksound = click
+				scripted = yes
+			}
+			instantTextBoxType = {
+				name = "gecko_special_note"
+				position = { x = 240 y = 625 }
+				font = "vic_18"
+				text = "gecko_special_note"
+				maxWidth = 668
+				maxHeight = 24
+				fixedsize = yes
+				format = left
+				alwaystransparent = yes
+			}
+			}
+			# END GECKO SPECIAL TROOPS
 			windowType = {
 				name = "gecko_menu_cosmetics_content"
 				position = { x = 0 y = 0 }

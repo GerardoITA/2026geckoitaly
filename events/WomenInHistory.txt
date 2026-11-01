@@ -772,8 +772,14 @@ country_event = {
 				has_government_attribute = heir
 				is_lesser_in_union = no
 				government = monarchy
-				NOT = {
-					has_disaster = castilian_civil_war
+				OR = {
+					NOT = {
+						has_disaster = castilian_civil_war
+					}
+					AND = {
+						tag = CAS
+						has_disaster = castilian_civil_war
+					}
 				}
 			}
 		}

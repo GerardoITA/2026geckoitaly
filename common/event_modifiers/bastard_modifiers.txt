@@ -255,7 +255,8 @@ gecko_pru_domestic_trade = {
 }
 
 gecko_formed_rashidun_caliphate = {
-	infantry_shock = 0.5
+	shock_damage = 0.2
+	infantry_shock = 0.3
 }
 
 gecko_formed_umayyad_empire = {

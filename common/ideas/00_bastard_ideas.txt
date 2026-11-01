@@ -2377,7 +2377,8 @@ MAM_ideas = {
 EGY_ideas = {
 	start = {
 		trade_efficiency = 0.15
-		cavalry_power = 0.10
+		infantry_power = 0.1
+		
 	}
 
 	bonus = {
@@ -2397,8 +2398,9 @@ EGY_ideas = {
 		reinforce_speed = 0.15
 	}
 	b_purchase_new_mamelukes = {
-		infantry_power = 0.1
-		shock_damage_received = -0.1
+		cavalry_power = 0.1
+		cavalry_cost = -0.1
+		shock_damage = 0.1
 	}
 	nile_production = {
 		production_efficiency = 0.15

@@ -275,6 +275,18 @@ gecko_emperor_of_the_french_cossacks = {
 	discipline = 0.20
 }
 
+gecko_emperor_of_lotharingia = {
+	leader_land_fire = 1
+	max_general_fire = 1
+	special_unit_forcelimit = 0.25
+}
+
+# Keep unit-specific discipline separate from the national bonuses.
+gecko_emperor_of_lotharingia_cossacks = {
+	is_cossack_modifier = yes
+	discipline = 0.20
+}
+
 gecko_genghis_khan_reborn = {
 	global_manpower_modifier = 0.20
 	land_forcelimit_modifier = 0.20

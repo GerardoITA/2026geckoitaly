@@ -710,7 +710,8 @@ cancelled_loan = {
 }
 
 bank_loan = {
-	build_cost = 0.005
+	build_cost = 0.01
+	advisor_cost = 0.01
 }
 
 inflation = {

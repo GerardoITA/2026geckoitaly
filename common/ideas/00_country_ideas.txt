@@ -14648,6 +14648,7 @@ UKR_ideas = {
  
 	trigger = {
 		tag = UKR
+		NOT = { has_country_flag = gecko_proclaimed_greater_commonwealth }
 	}
 	free = yes
  

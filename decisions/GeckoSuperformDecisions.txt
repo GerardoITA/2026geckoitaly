@@ -1802,4 +1802,382 @@ country_decisions = {
 			factor = 1
 		}
 	}
+
+	gecko_proclaim_spanish_empire = {
+		major = yes
+		potential = {
+			tag = SPA
+			NOT = { has_country_flag = gecko_proclaimed_spanish_empire }
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = iberia_region
+					NOT = { area = alentejo_area }
+					NOT = { area = beieras_area }
+					NOT = { province_id = 367 } # Azores
+					NOT = { province_id = 368 } # Madeira
+				}
+				region = maghreb_region
+				area = corsica_sardinia_area
+				area = sicily_area
+				area = western_sicily_area
+				area = naples_area
+				area = apulia_area
+				area = calabria_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_spanish_empire_territory_tt
+				iberia_region = {
+					type = all
+					OR = {
+						area = alentejo_area
+						area = beieras_area
+						province_id = 367 # Azores
+						province_id = 368 # Madeira
+						AND = { owned_by = ROOT is_core = ROOT }
+					}
+				}
+				maghreb_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				corsica_sardinia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				sicily_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				western_sicily_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				naples_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				apulia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				calabria_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+			}
+		}
+		effect = {
+			override_country_name = GECKO_SPANISH_EMPIRE
+			set_country_flag = gecko_proclaimed_spanish_empire
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_spanish_empire_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_proclaim_greater_commonwealth = {
+		major = yes
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = is_LPC_flag }
+			NOT = { has_country_flag = gecko_proclaimed_greater_commonwealth }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = baltic_region
+				region = poland_region
+				region = ruthenia_region
+				area = moldavia_area
+				area = odessa_area
+				area = zaporizhia_area
+				area = yedisan_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_greater_commonwealth_territory_tt
+				baltic_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				poland_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				ruthenia_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				moldavia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				odessa_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				zaporizhia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				yedisan_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+			}
+		}
+		effect = {
+			override_country_name = GECKO_GREATER_COMMONWEALTH
+			set_country_flag = gecko_proclaimed_greater_commonwealth
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_greater_commonwealth_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	gecko_proclaim_greater_ruthenia = {
+		major = yes
+		potential = {
+			tag = UKR
+			NOT = { has_country_flag = is_LPC_flag }
+			NOT = { has_country_flag = gecko_proclaimed_greater_commonwealth }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = baltic_region
+				region = poland_region
+				region = ruthenia_region
+				area = moldavia_area
+				area = odessa_area
+				area = zaporizhia_area
+				area = yedisan_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_greater_commonwealth_territory_tt
+				baltic_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				poland_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				ruthenia_region = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				moldavia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				odessa_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				zaporizhia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				yedisan_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+			}
+		}
+		effect = {
+			override_country_name = GECKO_GREATER_RUTHENIA
+			set_country_flag = gecko_proclaimed_greater_commonwealth
+			if = {
+				limit = { has_custom_ideas = no }
+				custom_tooltip = gecko_ruthenian_commonwealth_idea_improvements_tt
+				country_event = { id = ideagroups.1 }
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	gecko_proclaim_austrian_primacy = {
+		major = yes
+		potential = {
+			OR = {
+				tag = HAB
+				tag = AUH
+				tag = AHU
+			}
+			NOT = { has_country_flag = gecko_proclaimed_austrian_primacy }
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = carpathia_region
+					NOT = { area = moldavia_area }
+				}
+				area = serbia_area
+				area = rascia_area
+				area = bosnia_area
+				area = slavonia_area
+				area = east_adriatic_coast_area
+				area = croatia_area
+				area = moravia_area
+				area = bohemia_area
+				area = hradecko_area
+				area = erzgebirge_area
+				area = austria_proper_area
+				area = inner_austria_area
+				area = outer_austria_area
+				area = krain_area
+				area = tirol_area
+				area = carinthia_area
+				area = venetia_area
+				area = po_valley_area
+				area = sandomierz_area
+				area = malopolska_area
+				province_id = 1862
+				province_id = 104
+				province_id = 4740
+				province_id = 76
+				province_id = 4760
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_austrian_primacy_territory_tt
+				carpathia_region = {
+					type = all
+					OR = {
+						area = moldavia_area
+						AND = { owned_by = ROOT is_core = ROOT }
+					}
+				}
+				serbia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				rascia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				bosnia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				slavonia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				east_adriatic_coast_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				croatia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				moravia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				bohemia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				hradecko_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				erzgebirge_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				austria_proper_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				inner_austria_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				outer_austria_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				krain_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				tirol_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				carinthia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				venetia_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				po_valley_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				sandomierz_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				malopolska_area = {
+					type = all
+					AND = { owned_by = ROOT is_core = ROOT }
+				}
+				owns_core_province = 1862
+				owns_core_province = 104
+				owns_core_province = 4740
+				owns_core_province = 76
+				owns_core_province = 4760
+			}
+		}
+		effect = {
+			# TODO: country name override pending final name selection.
+			set_country_flag = gecko_proclaimed_austrian_primacy
+			add_country_modifier = {
+				name = gecko_austrian_primacy
+				duration = -1
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
 }

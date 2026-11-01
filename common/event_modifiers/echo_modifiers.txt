@@ -127,3 +127,13 @@ h_event_mil = {
 eng_two_crowns = {
 	liberty_desire = -50
 }
+
+gecko_benelux_integration = {
+	governing_capacity = 150
+	vassal_income = 0.1
+}
+
+gecko_austrian_primacy = {
+	artillery_power = 0.1
+	infantry_power = 0.1
+}

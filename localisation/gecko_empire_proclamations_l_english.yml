@@ -56,3 +56,8 @@
  gecko_proclaim_greater_ruthenia_desc:0 "Unite the lands of our expanded realm and proclaim Greater Ruthenia."
  GECKO_GREATER_RUTHENIA:0 "Greater Ruthenia"
  GECKO_GREATER_RUTHENIA_ADJ:0 "Ruthenian"
+ gecko_proclaim_dutch_empire_title:0 "Proclaim the Dutch Empire"
+ gecko_proclaim_dutch_empire_desc:0 "Establish Dutch power across the Low Countries, southern Africa and the trading ports and islands of Asia."
+ gecko_dutch_empire_territory_tt:0 "All provinces in the following regions and areas must be owned by us or our subjects:\n§YRegions:§! Low Countries, Malacca, Indonesia, Moluccas\n§YAreas:§! Cape of Good Hope, Xhosa, North Lanka, South Lanka, Malabar, Madura, Tanjore"
+ gecko_dutch_empire:0 "Dutch Empire"
+ desc_gecko_dutch_empire:0 "Our overseas empire strengthens military discipline, naval morale and trade efficiency."

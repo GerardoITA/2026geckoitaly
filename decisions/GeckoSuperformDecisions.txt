@@ -1419,6 +1419,7 @@ country_decisions = {
 		potential = {
 			tag = FRA
 			NOT = { has_country_modifier = gecko_emperor_of_the_french }
+			NOT = { has_country_modifier = gecko_emperor_of_lotharingia }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1586,6 +1587,197 @@ country_decisions = {
 			}
 			add_country_modifier = {
 				name = gecko_emperor_of_the_french_cossacks
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	gecko_emperor_of_lotharingia = {
+		major = yes
+		potential = {
+			OR = {
+				tag = BUR
+				tag = LOT
+			}
+			NOT = { has_country_modifier = gecko_emperor_of_lotharingia }
+			NOT = { has_country_modifier = gecko_emperor_of_the_french }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = france_region
+				region = low_countries_region
+				area = hesse_area
+				area = north_rhine_area
+				area = lower_rhineland_area
+				area = palatinate_area
+				area = alsace_area
+				area = upper_rhineland_area
+				area = lower_swabia_area
+				area = switzerland_area
+				area = bern_area
+				area = romandie_area
+				area = lombardy_area
+				area = torino_area
+				area = liguria_area
+				area = piedmont_area
+			}
+			NOT = {
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_emperor_of_lotharingia_territory_tt
+				france_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				low_countries_region = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				hesse_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				north_rhine_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lower_rhineland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				palatinate_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				alsace_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				upper_rhineland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lower_swabia_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				switzerland_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				bern_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				romandie_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				lombardy_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				torino_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				liguria_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+
+				piedmont_area = {
+					type = all
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { tag = BUR }
+				override_country_name = GECKO_BURGUNDIAN_EMPIRE
+			}
+			else = {
+				override_country_name = GECKO_LOTHARINGIAN_EMPIRE
+			}
+			add_country_modifier = {
+				name = gecko_emperor_of_lotharingia
+				duration = -1
+			}
+			add_country_modifier = {
+				name = gecko_emperor_of_lotharingia_cossacks
 				duration = -1
 			}
 		}
@@ -2179,5 +2371,126 @@ country_decisions = {
 			}
 		}
 		ai_will_do = { factor = 1 }
+	}
+
+	gecko_proclaim_dutch_empire = {
+		major = yes
+		potential = {
+			tag = NED
+			NOT = { has_country_modifier = gecko_dutch_empire }
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = low_countries_region
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+				area = cape_of_good_hope_area
+				area = xhosa_area
+				area = lanka_area
+				area = south_lanka_area
+				area = malabar_area
+				area = madura_area
+				area = tanjore_area
+			}
+			NOT = {
+				OR = {
+					owned_by = ROOT
+					owner = { is_subject_of = ROOT }
+				}
+			}
+		}
+		allow = {
+			adm_tech = 20
+			custom_trigger_tooltip = {
+				tooltip = gecko_dutch_empire_territory_tt
+				low_countries_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				malaya_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				indonesia_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				moluccas_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				cape_of_good_hope_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				xhosa_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				lanka_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				south_lanka_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				malabar_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				madura_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				tanjore_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gecko_dutch_empire
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 }

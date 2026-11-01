@@ -55,6 +55,59 @@ transfer_all_provinces = {
 	}
 }
 
+request_ally_transfer_all_provinces = {
+	category = influence
+
+	alert_index = 6
+	alert_tooltip = ICON_VASSAL
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			ai = yes
+			NOT = { is_subject_of = ROOT }
+			OR = {
+				is_in_war = {
+					attackers = ROOT
+					attackers = FROM
+				}
+				is_in_war = {
+					defenders = ROOT
+					defenders = FROM
+				}
+			}
+		}
+	}
+
+	is_allowed = {
+		NOT = { war_with = ROOT }
+	}
+
+	on_accept = {
+		every_province = {
+			limit = {
+				controlled_by = FROM
+				owner = {
+					war_with = ROOT
+					war_with = FROM
+				}
+			}
+			change_controller = ROOT
+		}
+	}
+
+	on_decline = {
+	}
+
+	ai_acceptance = {
+		always = yes
+	}
+
+	ai_will_do = {
+	}
+}
+
 request_subject_transfer_all_provinces = {
 	category = influence
 

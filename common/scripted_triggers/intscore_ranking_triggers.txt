@@ -1,3 +1,10 @@
+# Country scope. Human and AI sovereigns compete under the same rules.
+# Subject provinces already contribute to their overlord's score.
+intscore_eligible_country = {
+	is_subject = no
+	is_colonial_nation = no
+}
+
 # Current scope is the best candidate; PREV is the country being considered.
 # Prefer more points, then the earlier arrival at this score. Simultaneous
 # annual arrivals keep the preceding rank, then their fixed registration order.

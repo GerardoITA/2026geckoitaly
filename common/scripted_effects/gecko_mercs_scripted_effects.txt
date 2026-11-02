@@ -369,13 +369,13 @@ gecko_mercs_base_system = {
 		}
 		
 		#Smaller nations can receive a larger mercenary force limit
-		if = {
-			limit = { has_country_modifier = Minor }
-			change_variable = {
-				which = mercenary_forcelimit
-				value = $minor_forcelimit_modifier$
-			}
-		}
+#		if = {
+#			limit = { has_country_modifier = Minor }
+#			change_variable = {
+#				which = mercenary_forcelimit
+#				value = $minor_forcelimit_modifier$
+#			}
+#		}
 		
 		#Converts mercenary_manpower modifier to mercenary force limit for this mercenary system
 		export_to_variable = {

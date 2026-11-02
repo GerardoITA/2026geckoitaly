@@ -5,7 +5,6 @@ country_decisions = {
 			has_country_flag = bur_unlock_east_francia_decision
 			NOT = { has_country_flag = bur_established_east_francia }
 			tag = LOT
-			always = no
 		}
 		allow = {
 			NOT = {

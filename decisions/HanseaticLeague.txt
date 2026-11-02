@@ -2,7 +2,6 @@ country_decisions = {
 	declare_hanseatic_league = {
 		major = yes
 		potential = {
-			always = no
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_hsa_flag }

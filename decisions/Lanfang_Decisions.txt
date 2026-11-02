@@ -1,7 +1,6 @@
 country_decisions = {
 	lanfang_decision = {
 		potential = {
-			always = no
 			normal_or_historical_nations = yes
 			technology_group = chinese
 			owns = 4802
@@ -66,7 +65,6 @@ country_decisions = {
 	lanfang_decision_formation = {
 		major = yes
 		potential = {
-			always = no
 			tag = SMB
 			owns = 4802
 			normal_or_historical_nations = yes

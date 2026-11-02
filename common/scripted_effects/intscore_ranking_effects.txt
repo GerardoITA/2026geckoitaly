@@ -16,6 +16,7 @@ intscore_select_rank_slot = {
 		random_country = {
 			limit = {
 				has_country_flag = intscore_participant
+				intscore_eligible_country = yes
 				check_variable = { which = IntScore value = 0.001 }
 				NOT = { has_country_flag = intscore_ranking_selected }
 			}
@@ -24,6 +25,7 @@ intscore_select_rank_slot = {
 		every_country = {
 			limit = {
 				has_country_flag = intscore_participant
+				intscore_eligible_country = yes
 				check_variable = { which = IntScore value = 0.001 }
 				NOT = { has_country_flag = intscore_ranking_selected }
 			}
@@ -135,7 +137,7 @@ intscore_build_ranking = {
 		limit = { has_country_flag = intscore_participant }
 		intscore_register_participant = yes
 		if = {
-			limit = { check_variable = { which = IntScore value = 0.001 } }
+			limit = { intscore_eligible_country = yes check_variable = { which = IntScore value = 0.001 } }
 			PREV = { change_variable = { which = intscore_remaining_candidates value = 1 } }
 		}
 		set_variable = { which = intscore_previous_rank value = 41 }

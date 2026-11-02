@@ -116,7 +116,6 @@ country_decisions = {
 	adopt_mamluk_government = {
 		major = yes
 		potential = {
-			always = no
 			or = {
 				has_reform = iqta
 				has_reform = barbary_sultanate_reform

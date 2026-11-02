@@ -9,294 +9,294 @@ player_start_ai_naval_forcelimit = {
 	naval_forcelimit = 20
 }
 
-Splendid_Court = {
-	potential = {
-		current_age = age_of_discovery
-		ROOT = {
-			ai = no
-		}
-	}
-	trigger = {
-		NOT = {
-			is_colonial_nation = yes
-		}
-		is_at_war = no
-		OR = {
-			has_adm_advisor_3 = yes
-			has_dip_advisor_3 = yes
-			has_mil_advisor_3 = yes
-		}
-	}
-	advisor_cost = -0.1
-	development_cost = -0.05
-}
+#Splendid_Court = {
+#	potential = {
+#		current_age = age_of_discovery
+#		ROOT = {
+#			ai = no
+#		}
+#	}
+#	trigger = {
+#		NOT = {
+#			is_colonial_nation = yes
+#		}
+#		is_at_war = no
+#		OR = {
+#			has_adm_advisor_3 = yes
+#			has_dip_advisor_3 = yes
+#			has_mil_advisor_3 = yes
+#		}
+#	}
+#	advisor_cost = -0.1
+#	development_cost = -0.05
+#}
 
-Minor = {
-	potential = {
-		NOT = {
-			is_emperor = yes
-		}
-		ROOT = {
-			ai = no
-		}
-		OR = {
-			OR = {
-				is_part_of_hre = yes
-				NOT = {
-					is_great_power = yes
-				}
-			}
-		}
-	}
-	trigger = {
-		NOT = {
-			is_colonial_nation = yes
-		}
-		NOT = {
-			is_emperor = yes
-		}
-		NOT = {
-			total_own_and_non_tributary_subject_development = 400
-		}
-	}
-	advisor_cost = -0.25
-	interest = -0.25
-	global_regiment_cost = -0.1
-	mercenary_cost = -0.25
-	merc_maintenance_modifier = -0.25
-	monthly_reform_progress_modifier = 0.025
-	ae_impact = -0.1
-	fort_maintenance_modifier = -0.67
-}
+#Minor = {
+#	potential = {
+#		NOT = {
+#			is_emperor = yes
+#		}
+#		ROOT = {
+#			ai = no
+#		}
+#		OR = {
+#			OR = {
+#				is_part_of_hre = yes
+#				NOT = {
+#					is_great_power = yes
+#				}
+#			}
+#		}
+#	}
+#	trigger = {
+#		NOT = {
+#			is_colonial_nation = yes
+#		}
+#		NOT = {
+#			is_emperor = yes
+#		}
+#		NOT = {
+#			total_own_and_non_tributary_subject_development = 400
+#		}
+#	}
+#	advisor_cost = -0.25
+#	interest = -0.25
+#	global_regiment_cost = -0.1
+#	mercenary_cost = -0.25
+#	merc_maintenance_modifier = -0.25
+#	monthly_reform_progress_modifier = 0.025
+#	ae_impact = -0.1
+#	fort_maintenance_modifier = -0.67
+#}
 
-We_stand_alone = {
-	potential = {
-		NOT = {
-			has_country_modifier = imp_ambition_timer
-		}
-		ROOT = {
-			ai = no
-		}
-	}
-	trigger = {
+#We_stand_alone = {
+#	potential = {
+#		NOT = {
+#			has_country_modifier = imp_ambition_timer
+#		}
+#		ROOT = {
+#			ai = no
+#		}
+#	}
+#	trigger = {
 		
-		NOT = {
-			is_colonial_nation = yes
-		}
-		is_great_power = no
+#		NOT = {
+#			is_colonial_nation = yes
+#		}
+#		is_great_power = no
 		
-		NOT = {
-			is_hegemon = yes
-		}
-		NOT = {
-			is_lacking_institutions = yes
-		}
-		NOT = {
-			is_subject_of_type = tributary_state
-		}
-		OR = {
+#		NOT = {
+#			is_hegemon = yes
+#		}
+#		NOT = {
+#			is_lacking_institutions = yes
+#		}
+#		NOT = {
+#			is_subject_of_type = tributary_state
+#		}
+#		OR = {
 			
-			has_country_modifier = Berber_Raids
-			has_country_modifier = Stop_the_raids
-			has_country_modifier = Minor
-			NOT = {
-				OR = { 
-					AND = {
-						num_of_allies = 1
-						any_ally = {  ai = no }
-					}
-					AND = {
-						num_of_allies = 2
-						any_ally = {  ai = yes }
-					}
-				}		
-			}
+#			has_country_modifier = Berber_Raids
+#			has_country_modifier = Stop_the_raids
+#			has_country_modifier = Minor
+#			NOT = {
+#				OR = { 
+#					AND = {
+#						num_of_allies = 1
+#						any_ally = {  ai = no }
+#					}
+#					AND = {
+#						num_of_allies = 2
+#						any_ally = {  ai = yes }
+#					}
+#				}		
+#			}
 			
 			
-		}
-	}
-	manpower_recovery_speed = 0.25
-	reinforce_cost_modifier = -0.2
-	fort_maintenance_modifier = -0.2
-	mercenary_manpower = 0.15
-}
+#		}
+#	}
+#	manpower_recovery_speed = 0.25
+#	reinforce_cost_modifier = -0.2
+#	fort_maintenance_modifier = -0.2
+#	mercenary_manpower = 0.15
+#}
 
-Great_power_dominance = {
-	potential = {
-		ROOT = {
-			ai = no
-		}
-	}
-	trigger = {
-		NOT = {
-			is_colonial_nation = yes
-		}
-		NOT = {
-			great_power_rank = 4
-		}
-		NOT = {
-			is_hegemon = yes
-		}
-		NOT = {
-			is_lacking_institutions = yes
-		}
-		NOT = {
-			OR = { 
-				AND = {
-					num_of_allies = 1
-					any_ally = {  ai = no }
-				}
-				AND = {
-					num_of_allies = 2
-					any_ally = {  ai = yes }
-				}
-			}		
-		}
-	}
-	army_tradition_decay = -0.005
-	navy_tradition_decay = -0.005
-}
+#Great_power_dominance = {
+#	potential = {
+#		ROOT = {
+#			ai = no
+#		}
+#	}
+#	trigger = {
+#		NOT = {
+#			is_colonial_nation = yes
+#		}
+#		NOT = {
+#			great_power_rank = 4
+#		}
+#		NOT = {
+#			is_hegemon = yes
+#		}
+#		NOT = {
+#			is_lacking_institutions = yes
+#		}
+#		NOT = {
+#			OR = { 
+#				AND = {
+#					num_of_allies = 1
+#					any_ally = {  ai = no }
+#				}
+#				AND = {
+#					num_of_allies = 2
+#					any_ally = {  ai = yes }
+#				}
+#			}		
+#		}
+#	}
+#	army_tradition_decay = -0.005
+#	navy_tradition_decay = -0.005
+#}
 
-HRE_backup = {
-	potential = {
-		NOT = {
-			is_year = 1530
-		}
-		OR = {
-			tag = HAB
-			tag = AHU
-			was_tag = HAB
-		}
-		NOT = {
-			is_emperor = yes
-		}
-		ROOT = {
-			ai = no
-		}
-		was_player = yes
-	}
-	trigger = {
-		OR = {
-			tag = HAB
-			tag = AHU
-			was_tag = HAB
-		}
-		NOT = {
-			is_emperor = yes
-		}
-	}
-	global_manpower = 15
-	land_forcelimit = 15
-	global_tax_income = 36
-	spy_offence = 0.1	#minor bonus on spies.
-	advisor_pool = 1
-	diplomatic_upkeep = 1
-	free_leader_pool = 1
-	prestige = 1
-	province_warscore_cost = -0.1
-	papal_influence = 1
-	ae_impact = -0.1
-	governing_capacity = 400
-}
+#HRE_backup = {
+#	potential = {
+#		NOT = {
+#			is_year = 1530
+#		}
+#		OR = {
+#			tag = HAB
+#			tag = AHU
+#			was_tag = HAB
+#		}
+#		NOT = {
+#			is_emperor = yes
+#		}
+#		ROOT = {
+#			ai = no
+#		}
+#		was_player = yes
+#	}
+#	trigger = {
+#		OR = {
+#			tag = HAB
+#			tag = AHU
+#			was_tag = HAB
+#		}
+#		NOT = {
+#			is_emperor = yes
+#		}
+#	}
+#	global_manpower = 15
+#	land_forcelimit = 15
+#	global_tax_income = 36
+#	spy_offence = 0.1	#minor bonus on spies.
+#	advisor_pool = 1
+#	diplomatic_upkeep = 1
+#	free_leader_pool = 1
+#	prestige = 1
+#	province_warscore_cost = -0.1
+#	papal_influence = 1
+#	ae_impact = -0.1
+#	governing_capacity = 400
+#}
 
-War_chest = {
-	potential = {
-		OR = {
-			current_age = age_of_discovery
-			current_age = age_of_reformation
-		}
-		NOT = {
-			has_country_modifier = imp_ambition_timer
-		}
-		ROOT = {
-			ai = no
-		}
-	}
-	trigger = {
-		NOT = {
-			is_colonial_nation = yes
-		}
-		OR = {
-			great_power_rank = 4
-			is_great_power = no
-		}
-		NOT = {
-			is_hegemon = yes
-		}
-		years_of_income = 1.25
-		NOT = {
-			corruption = 1
-		}
-		NOT = {
-			num_of_loans = 1
-		}
-		is_at_war = yes
-		land_maintenance = 1
-		army_size_percentage = 0.3
-		NOT = {
-			is_subject_of_type = tributary_state
-		}
-		OR = {
-			has_country_modifier = Minor
-			NOT = {
-				OR = { 
-					AND = {
-						num_of_allies = 1
-						any_ally = {  ai = no }
-					}
-					AND = {
-						num_of_allies = 2
-						any_ally = {  ai = yes }
-					}
-				}		
-			}
-		}
-		any_country = {
-			total_development = ROOT
-		}
-	}
+#War_chest = {
+#	potential = {
+#		OR = {
+#			current_age = age_of_discovery
+#			current_age = age_of_reformation
+#		}
+#		NOT = {
+#			has_country_modifier = imp_ambition_timer
+#		}
+#		ROOT = {
+#			ai = no
+#		}
+#	}
+#	trigger = {
+#		NOT = {
+#			is_colonial_nation = yes
+#		}
+#		OR = {
+#			great_power_rank = 4
+#			is_great_power = no
+#		}
+#		NOT = {
+#			is_hegemon = yes
+#		}
+#		years_of_income = 1.25
+#		NOT = {
+#			corruption = 1
+#		}
+#		NOT = {
+#			num_of_loans = 1
+#		}
+#		is_at_war = yes
+#		land_maintenance = 1
+#		army_size_percentage = 0.3
+#		NOT = {
+#			is_subject_of_type = tributary_state
+#		}
+#		OR = {
+#			has_country_modifier = Minor
+#			NOT = {
+#				OR = { 
+#					AND = {
+#						num_of_allies = 1
+#						any_ally = {  ai = no }
+#					}
+#					AND = {
+#						num_of_allies = 2
+#						any_ally = {  ai = yes }
+#					}
+#				}		
+#			}
+#		}
+#		any_country = {
+#			total_development = ROOT
+#		}
+#	}
 
-	mercenary_discipline = 0.05
+#	mercenary_discipline = 0.05
 
 	
-}
+#}
 
-Ahead_of_time = {
-	potential = {
-		ROOT = {
-			ai = no
-		}
-	}
-	trigger = {
-		NOT = {
-			is_lacking_institutions = yes
-		}
-	}
-	monthly_reform_progress_modifier = 0.25
-	yearly_innovativeness = 0.3
-	army_tradition = 1
-}
+#Ahead_of_time = {
+#	potential = {
+#		ROOT = {
+#			ai = no
+#		}
+#	}
+#	trigger = {
+#		NOT = {
+#			is_lacking_institutions = yes
+#		}
+#	}
+#	monthly_reform_progress_modifier = 0.25
+#	yearly_innovativeness = 0.3
+#	army_tradition = 1
+#}
 
-TUR = {
-	potential = {
-		tag = TUR
-	}
-	trigger = {
-		NOT = {
-			is_year = 1465
-		}
-		war_with = MAM
-		war_with = HUN
-		MAM = {
-			ai = no
-		}
-		HUN = {
-			ai = no
-		}
-	}
-	mercenary_manpower = 1
-	land_forcelimit = 15
-}
+#TUR = {
+#	potential = {
+#		tag = TUR
+#	}
+#	trigger = {
+#		NOT = {
+#			is_year = 1465
+#		}
+#		war_with = MAM
+#		war_with = HUN
+#		MAM = {
+#			ai = no
+#		}
+#		HUN = {
+#			ai = no
+#		}
+#	}
+#	mercenary_manpower = 1
+#	land_forcelimit = 15
+#}
 
 Berber_Raids = {
 	potential = {
@@ -378,20 +378,20 @@ Stop_the_raids = {
 	army_tradition = 0.5
 }
 
-Merc_payments = {
-	potential = {
-		ROOT = {
-			ai = no
-		}
-	}
-	trigger = {
-		is_at_war = yes
-		NOT = {
-			manpower_percentage = 0.1
-		}
-	}
-	mercenary_discipline = -0.05
-}
+#Merc_payments = {
+#	potential = {
+#		ROOT = {
+#			ai = no
+#		}
+#	}
+#	trigger = {
+#		is_at_war = yes
+#		NOT = {
+#			manpower_percentage = 0.1
+#		}
+#	}
+#	mercenary_discipline = -0.05
+#}
 
 Control_African_Slave_Trade = {
 	potential = {
@@ -529,69 +529,6 @@ italian_riches = {
 #	global_autonomy = -0.05
 #	monthly_reform_progress_modifier = 0.25
 #}
-
-help_im_getting_vultured = {
-	potential = {
-		OR = {
-			tag = PER 
-			tag = FRS 
-			tag = ARL
-		}
-	}
-	trigger = {
-		NOT = {
-			is_year = 1470
-		}
-		OR = {
-			AND = {
-				is_in_war = {
-					attackers = TUR
-				}
-				TUR = {
-					ai = no
-				}
-			}
-			AND = {
-				is_in_war = {
-					attackers = MAM
-				}
-				MAM = {
-					ai = no
-				}
-			}
-			AND = {
-				is_in_war = {
-					attackers = AFG
-				}
-				AFG = {
-					ai = no
-				}
-			}
-			AND = {
-				is_in_war = {
-					attackers = TIM
-				}
-				TIM = {
-					ai = no
-				}
-			}
-			AND = {
-				is_in_war = {
-					attackers = MUG
-				}
-				MUG = {
-					ai = no
-				}
-			}
-			
-		}
-	}
-	defensiveness = 0.75
-	garrison_size = 0.75
-	hostile_attrition = 5
-	max_hostile_attrition = 5
-	
-}
 
 fars_ardabil_attack_bonus = {
 	potential = {

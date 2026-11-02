@@ -25,12 +25,12 @@ province_event = {
 			every_country = {
 				limit = {
 					OR = {
-						AND = { was_player = yes is_colonial_nation = no }
+						intscore_eligible_country = yes
 						has_country_flag = intscore_participant
 					}
 				}
 				if = {
-					limit = { was_player = yes is_colonial_nation = no }
+					limit = { intscore_eligible_country = yes }
 					intscore_award_annual_country = yes
 				}
 				else = {

@@ -34,12 +34,16 @@ on_startup = {
 	}
 	if = {
 		limit = {
-			ai = no
-			is_part_of_hre = yes
-			is_elector = no
-			NOT = {
-				tag = HAB
+			OR = {
+				tag = BRA
+				tag = HSA
+				tag = HES
+				tag = SWI
+				tag = MLO
+				tag = SIC
+				tag = VEN
 			}
+			is_elector = no
 		}
 		elector = yes
 	}

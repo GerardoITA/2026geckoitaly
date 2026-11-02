@@ -3,7 +3,6 @@ country_decisions = {
 	sultan_of_delhi = {
 		major = yes
 		potential = {
-			always = no
 			normal_or_historical_nations = yes
 			government = monarchy
 			was_never_end_game_tag_trigger = yes

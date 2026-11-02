@@ -34,7 +34,7 @@ country_event = { #A new Order
 			factor = 0
 		}
 
-		brittany_area = {
+		france_region = {
 			limit = {
 				NOT = { is_core = ROOT }
 				NOT = { is_permanent_claim = ROOT }

@@ -657,6 +657,10 @@ ENG_missions_2_1 = {
 			}
 		}
 		effect = {
+			custom_tooltip = gecko_unlock_angevin_kingdom_tt
+			hidden_effect = {
+				set_country_flag = gecko_unlocked_angevin_empire
+			}
 			country_event = { id = ME_England_Events.2 } #New Order
 		}
 	}

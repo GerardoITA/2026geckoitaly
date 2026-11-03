@@ -603,7 +603,7 @@ base_values = {
 	has_marines = yes
 	sunk_ship_morale_hit_recieved = -0.9
 	max_possible_parliament_seats = 30
-	naval_attrition = -0.5
+	naval_attrition = -1.0
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -1492,6 +1492,7 @@ gbr_colonial_investment = {
 }
 
 crown_colony_overlord = {
+	global_tariffs = -0.10
 	merchants = 1
 	#global_trade_power = 0.05
 }
@@ -1499,13 +1500,13 @@ crown_colony_overlord = {
 private_enterprise_overlord = {
 	merchants = 1
 	#global_trade_power = 0.05
-	global_tariffs = -0.05
+	global_tariffs = -0.10
 }
 
 self_governing_colony_overlord = {
 	merchants = 1
 	#global_trade_power = 0.05
-	global_tariffs = -0.20
+	global_tariffs = -0.10
 }
 
 crown_colony_subject = {
@@ -2067,7 +2068,6 @@ regiment_drill_modifier = { # Used by individual regiments
 }
 
 army_drill_modifier = { # Used by an entire army, is the average of all subunits drill
-	movement_speed = 0.2
 }
 
 janissary_regiment = {

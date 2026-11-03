@@ -140,7 +140,7 @@ NDefines.NMilitary.MERCENARY_REINFORCE_COST_MULTIPLIER = 0.6 -- Total reinforcem
 NDefines.NMilitary.FORTRESS_COST = 0.25
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 30
 NDefines.NMilitary.ARMY_DRILL_SKILL_MONTHS = 60
-NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 1
+NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 0
 NDefines.NMilitary.GARRISON_SIZE = 3000							-- GARRISON_SIZE
 NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER =  0.334			-- x times garrison to be able to siege.
 NDefines.NMilitary.MAX_BREACH = 1
@@ -210,7 +210,7 @@ NDefines.NGovernment.LEADER_AS_MONARCH_TRADITION = 15
 
 NDefines.NGame.DAYS_BEHIND_PAUSE = 90					-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will pause
 NDefines.NGame.DAYS_BEHIND_LOWER_SPEED = 90			-- In multiplayer, if the slowest player is lagging behind this amount of days, the game will slow down
-NDefines.NGame.HEGEMONY_LOST_DAYS = 1825
+NDefines.NDiplomacy.HEGEMONY_LOST_DAYS = 1825
 
 -- Xorme ai ones from here
 NDefines.NAI.DIPLOMATIC_ACTION_INFLUENCE_NATION_BASE_FACTOR = 5

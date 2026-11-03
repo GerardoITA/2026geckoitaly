@@ -1568,6 +1568,7 @@ colonial_government = {
 	}
 
 	custom_attributes = {
+		cannot_become_dictatorship = yes
 		has_limited_terms = yes
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
@@ -1664,6 +1665,7 @@ crown_colony_government = {
 	}
 
 	custom_attributes = {
+		cannot_become_dictatorship = yes
 		has_limited_terms = yes
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
@@ -1704,6 +1706,7 @@ private_enterprise_colony_government = {
 	}
 
 	custom_attributes = {
+		cannot_become_dictatorship = yes
 		has_limited_terms = yes
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
@@ -1770,6 +1773,7 @@ self_governing_colony_government = {
 	}
 
 	custom_attributes = {
+		cannot_become_dictatorship = yes
 		has_limited_terms = yes
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes

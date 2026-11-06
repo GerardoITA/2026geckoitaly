@@ -57,6 +57,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = AVE
+			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			if = {

@@ -4157,6 +4157,27 @@ gecko_mark_player_country_effect = {
 
 on_startup_effect = {
 	gecko_mark_player_country_effect = yes
+	# Fill missing starting HRE truces once; never renew them on later reloads.
+	if = {
+		limit = {
+			is_part_of_hre = yes
+			NOT = { is_date = 1444.11.12 }
+			NOT = { has_country_flag = gecko_starting_hre_truces_initialized }
+		}
+		set_country_flag = gecko_starting_hre_truces_initialized
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				NOT = { tag = ROOT }
+				OR = {
+					NOT = { truce_with = ROOT }
+					ROOT = { NOT = { truce_with = PREV } }
+				}
+			}
+			add_truce_with = ROOT
+			ROOT = { add_truce_with = PREV }
+		}
+	}
 	if = {
 		limit = {
 			ai = no

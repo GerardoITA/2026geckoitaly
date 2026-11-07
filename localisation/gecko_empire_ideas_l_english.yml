@@ -144,7 +144,7 @@
  PLC_GREATER_ideas:0 "Greater Commonwealth Ideas"
  PLC_GREATER_ideas_start:0 "Greater Commonwealth Traditions"
  PLC_GREATER_ideas_bonus:0 "Greater Commonwealth Ambition"
- gecko_greater_commonwealth_idea_improvements_tt:0 "\n§YNational Idea Improvements§!\n$PLC_ideas$ §Y->§! §G$PLC_GREATER_ideas$§!\n\n§Y$winged_hussars$§!\n  - Additional Winged Hussars: §W0§! §Y->§! §G+40§!\n\n§Y$pol_royal_guards$§!\n  - Shock Damage Received: §W0%§! §Y->§! §G-10%§!\n\nThese improvements apply if you adopt the new national ideas."
+ gecko_greater_commonwealth_idea_improvements_tt:0 "\n§YNational Idea Improvements§!\n$PLC_ideas$ §Y->§! §G$PLC_GREATER_ideas$§!\n\n§Y$winged_hussars$§!\n  - Additional Winged Hussars: §W0§! §Y->§! §G+40§!\n  - Winged Hussars Cavalry Shock: §W+0.25§! §Y->§! §G+0.50§!\n\n§Y$pol_royal_guards$§!\n  - Shock Damage Received: §W0%§! §Y->§! §G-10%§!\n\nThese improvements apply if you adopt the new national ideas."
  ukr_greater_mother_of_russian_cities:0 "The Mother of Russian States"
  ukr_greater_mother_of_russian_cities_desc:0 "Historically Kiev was the center of Rus' before the Mongol invasion. Many other Russian states attempted to fill the void after Kiev's fall: Moscow, Tver, Novgorod... But none of them could match Kiev's former glory.\nUnlike these northern upstarts, however, we are true heirs of the Kievan legacy, our people walk the same land as our Kievan ancestors and our capital aspires to the same greatness. Our claims must be respected!"
  ukr_greater_international_influences:0 "Foreign Influences"
@@ -163,3 +163,6 @@
  UKR_GREATER_ideas_start:0 "Greater Ruthenia Traditions"
  UKR_GREATER_ideas_bonus:0 "Greater Ruthenia Ambition"
  gecko_ruthenian_commonwealth_idea_improvements_tt:0 "\n§YNational Idea Improvements§!\n$UKR_ideas$ §Y->§! §G$UKR_GREATER_ideas$§!\n\n§YAmbition§!\n  - Infantry Combat Ability: §W0%§! §Y->§! §G+20%§!\n\nThese improvements apply if you adopt the new national ideas."
+
+ gecko_greater_commonwealth_hussars:0 "Greater Commonwealth Hussars"
+ desc_gecko_greater_commonwealth_hussars:0 "Our elite Winged Hussars deliver even stronger charges."

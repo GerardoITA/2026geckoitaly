@@ -298,3 +298,8 @@ gecko_genghis_khan_reborn = {
 	shock_damage = 0.25
 	fire_damage_received = -0.10
 }
+
+gecko_greater_commonwealth_hussars = {
+	cavalry_shock = 0.25
+	is_hussars_modifier = yes
+}

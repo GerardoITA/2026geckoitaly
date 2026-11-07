@@ -3833,7 +3833,7 @@
  custom_amount_of_carolean:0 "Carolus Rex Hymn"
  custom_amount_of_carolean_desc:0 "The Carolean fight to the bitter end and charge without any hesitation into the battle. Let their victories and their fighting will be sung in a hymn, which shall be an inspiration for everyone!"
  custom_can_recruit_hussars:0 "The Hussars"
- custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 100 development."
+ custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 33 development."
  custom_amount_of_hussars:0 "Toss a Coin to your Hussar"
  custom_amount_of_hussars_desc:0 "The Hussars are the best of the best of our army. Their involvment changed the tide of the battle many times in the past. However, being one of the Hussars is not comfortable fate. Let the people of our country know what the Hussars have to go through and let them donate a portion of their savings to them."
  custom_military_tactics:0 "Tactical Games"

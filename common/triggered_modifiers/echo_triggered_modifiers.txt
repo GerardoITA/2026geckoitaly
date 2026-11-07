@@ -339,6 +339,7 @@ Berber_Raids = {
 	defensiveness = 0.15
 	available_province_loot = 1
 	coast_raid_range = 1
+	naval_forcelimit = 10
 }
 
 Stop_the_raids = {

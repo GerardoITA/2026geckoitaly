@@ -354,6 +354,7 @@ maghreb_region = {
 		kabylia_area
 		algiers_area
 		hautes_plaines_area
+		kasdir_area
 		north_saharan_area
 		tafilalt_area
 		sus_area

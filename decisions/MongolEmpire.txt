@@ -5,7 +5,6 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			OR = {
-				tag = BUK
 				tag = OIR
 				tag = KHA
 			}
@@ -23,24 +22,23 @@ country_decisions = {
 						region = central_asia_region
 						region = crimea_region
 					}
-					NOT = { owned_by = ROOT }
+					NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 				}
 				
 			}
 		}
 		allow = {
 			OR = {
-				tag = BUK
 				tag = OIR
 				tag = KHA
 			}
 			central_asia_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			crimea_region = {
 				type = all
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 			#khorasan_region	= {
 			#	type = all
@@ -68,7 +66,13 @@ country_decisions = {
 				limit = { is_revolutionary = no }
 				#change_government = tribal
 				
+				# Remove previous tier-one reforms before installing the Mongol reform.
+				remove_government_reform = steppe_horde
+				remove_government_reform = silk_road_empire
+				remove_government_reform = X_CRI_great_tatar_state_reform
+				remove_government_reform = great_mongol_state_reform_EOC_version
 				add_government_reform = great_mongol_state_reform
+				gecko_enable_mandate_meritocracy_effect = yes
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -109,12 +113,7 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
-			if = {
-				limit = {
-					is_emperor_of_china = yes
-				}
-				dismantle_empire_of_china = yes
-			}
+			gecko_enable_mandate_meritocracy_effect = yes
 			#if = {
 				#limit = { is_revolutionary = no }
 				#change_government = tribal

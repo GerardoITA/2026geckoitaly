@@ -15,10 +15,6 @@ estate_cossacks_land_rights = {
 	benefits = {
 		governing_capacity = 100
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -273,10 +269,6 @@ estate_cossacks_exploration_expedition = {
 	}
 	penalties = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -314,10 +306,6 @@ estate_cossacks_cossack_self_governance = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
 	ai_will_do = {
 		factor = 10
 		modifier = {
@@ -351,10 +339,6 @@ estate_cossacks_establish_the_cossack_regiments = {
 	mechanics = {
 		enables_cossack_regiments
 		exempt_from_seize_land
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
 	}
 	ai_will_do = {
 		factor = 1
@@ -439,10 +423,6 @@ estate_cossacks_expand_the_cossack_regiments = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -475,10 +455,6 @@ estate_cossacks_recruit_cossack_generals = {
 	benefits = {
 		army_tradition = 0.5
 		#leader_land_shock = 1
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
 	}
 	ai_will_do = {
 		factor = 10
@@ -548,10 +524,6 @@ estate_cossacks_prime_herding_rights = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -606,10 +578,6 @@ estate_cossacks_freedom_of_the_steppes = {
 	mechanics = {
 		no_estate_crownland_loss_from_developing
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
-	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -639,10 +607,6 @@ estate_cossacks_grant_military_leadership = {
 		disable_estate_action = {
 			estate_action = RECRUIT_MINISTER_COSSACKS
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
 	}
 	ai_will_do = {
 		factor = 0
@@ -674,10 +638,6 @@ estate_cossacks_exempt_from_bureaucracy = {
 	}
 	mechanics = {
 	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.02 }
-	}
 	ai_will_do = {
 		factor = 0
 	}
@@ -707,10 +667,6 @@ estate_cossacks_military_service = {
 		disable_estate_action = {
 			estate_action = SUPPLY_ARMS_COSSACKS
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
 	}
 	ai_will_do = {
 		factor = 0
@@ -753,10 +709,6 @@ estate_cossacks_expand_cossacks_raiders = {
 		disable_estate_action = {
 			estate_action = CONSCRIPT_COSSACK_ELITE_COSSACKS
 		}
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.01 }
 	}
 	ai_will_do = {
 		factor = 0

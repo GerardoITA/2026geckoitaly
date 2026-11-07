@@ -2,6 +2,6 @@
 /.cwtools
 /.vscode
 /tools
-CLAUDE.md
-HANDOFF.md
-PROJECT.md
+/.ai/
+/AGENTS.md
+/CLAUDE.md

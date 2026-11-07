@@ -258,4 +258,10 @@ reform_the_janissaries_reform = { #tier 6
 	ai = {
 		factor = 1000
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }

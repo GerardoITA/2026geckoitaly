@@ -1,0 +1,110 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_gecko_menu_badge"
+		texturefile = "gfx/interface/Eu4_logo.dds"
+		size = { x = 26 y = 30 }
+		borderSize = { x = 0 y = 0 }
+		effectFile = "gfx/FX/gecko_menu_badge.shader"
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_panel"
+		texturefile = "gfx/interface/gecko_menu_panel.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_institution_growth"
+		texturefile = "gfx/interface/ideas_EU4/institution_growth.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_autonomy"
+		texturefile = "gfx/interface/ideas_EU4/local_autonomy.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_defensiveness"
+		texturefile = "gfx/interface/ideas_EU4/local_defensiveness.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_monthly_devastation"
+		texturefile = "gfx/interface/ideas_EU4/local_monthly_devastation.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_prosperity_growth"
+		texturefile = "gfx/interface/ideas_EU4/local_prosperity_growth.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_governing_cost"
+		texturefile = "gfx/interface/ideas_EU4/local_governing_cost.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_production_efficiency"
+		texturefile = "gfx/interface/ideas_EU4/local_production_efficiency.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_unrest"
+		texturefile = "gfx/interface/ideas_EU4/local_unrest.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_friendly_movement_speed"
+		texturefile = "gfx/interface/ideas_EU4/local_friendly_movement_speed.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_manpower_modifier"
+		texturefile = "gfx/interface/ideas_EU4/local_manpower_modifier.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_province_trade_power_modifier"
+		texturefile = "gfx/interface/ideas_EU4/province_trade_power_modifier.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_religious_conversion_resistance"
+		texturefile = "gfx/interface/ideas_EU4/local_religious_conversion_resistance.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_missionary_strength"
+		texturefile = "gfx/interface/ideas_EU4/local_missionary_strength.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_development_cost_modifier"
+		texturefile = "gfx/interface/ideas_EU4/local_development_cost_modifier.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_trade_goods_size_modifier"
+		texturefile = "gfx/interface/ideas_EU4/trade_goods_size_modifier.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_tax_modifier"
+		texturefile = "gfx/interface/ideas_EU4/local_tax_modifier.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_religious_unity_contribution"
+		texturefile = "gfx/interface/ideas_EU4/local_religious_unity_contribution.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_modifier_local_years_of_nationalism"
+		texturefile = "gfx/interface/ideas_EU4/local_years_of_nationalism.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_menu_edict_button"
+		texturefile = "gfx/interface/gecko_menu_edict_button.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+}

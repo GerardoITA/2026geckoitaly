@@ -510,12 +510,12 @@ trade_company_sevilla = {
 		227 229 230 4787 4150 #alentejo_state
 		231 232 228 1851 4556 #beiras_state
 		366 4565 367 368 #macaronesia_area
-		347 1110 2470 #southern_morocco_area
+		347 1110 6449 2470 #southern_morocco_area
 		342 345 2469 4564 #western_morocco_area
-		343 344 2467 2468 #marrekesh_area
+		343 6446 344 2467 2468 #marrekesh_area
 		334 335 1751 4563 4561 #northern_morocco_area
-		348 2464 2466 4568 #sus_area
-		346 2460 349 #tafilalt_area
+		348 6448 2464 2466 4568 #sus_area
+		346 2460 6443 349 6442 #tafilalt_area
 		336 2465 4562 #algier_area
 		6193 6195 6194 6209 215
 	}
@@ -676,12 +676,12 @@ trade_company_tunis = {
 	provinces = {
 		339 1882 340 #kabylia_area
 		2455 341 2473 4566 2454 #tunisia_area
-		351 2458 350 #ouled_nail_area
+		351 2458 350 6440 6441 #ouled_nail_area
 		2453 2954 353 #djerba_area
-		2452 354 2451 355 #tripolitania_area
+		2452 354 2451 355 6447 #tripolitania_area
 		4567 2449 2448  #fezzan_area
 		2457 2456 2472 2450 352 #north_sahara_area
-		2463 2462 2459 #hautes_plaines_area
+		2463 6451 6452 6444 2462 6445 2459 6450 #hautes_plaines_area
 		337 2461 338 #barbary_coast_area
 		5826 5825
 	}

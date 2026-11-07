@@ -1,0 +1,120 @@
+# Documentation presentation only. ROOT/FROM are the viewing country.
+
+custom_window = {
+	name = gecko_intscore_documentation_window
+	potential = { ai = no has_country_flag = gecko_intscore_gui_open has_country_flag = gecko_victory_documentation_menu }
+}
+
+custom_button = {
+	name = gecko_intscore_docs_close
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { clr_country_flag = gecko_intscore_gui_open } }
+	tooltip = gecko_intscore_close_tt
+}
+
+custom_button = {
+	name = gecko_intscore_docs_previous
+	potential = { ai = no }
+	trigger = { check_variable = { which = gecko_victory_docs_page value = 1 } }
+	effect = { hidden_effect = { subtract_variable = { which = gecko_victory_docs_page value = 1 } } }
+	tooltip = gecko_intscore_docs_previous_tt
+}
+
+custom_button = {
+	name = gecko_intscore_docs_next
+	potential = { ai = no }
+	trigger = { NOT = { check_variable = { which = gecko_victory_docs_page value = 5 } } }
+	effect = { hidden_effect = { change_variable = { which = gecko_victory_docs_page value = 1 } } }
+	tooltip = gecko_intscore_docs_next_tt
+}
+
+custom_button = {
+	name = gecko_intscore_docs_section_overview
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_victory_docs_page value = 0 } } }
+	tooltip = gecko_intscore_docs_section_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_victory_docs_page value = 0 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_intscore_docs_page_overview
+	potential = { is_variable_equal = { which = gecko_victory_docs_page value = 0 } }
+}
+
+custom_button = {
+	name = gecko_intscore_docs_section_provinces
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_victory_docs_page value = 1 } } }
+	tooltip = gecko_intscore_docs_section_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_victory_docs_page value = 1 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_intscore_docs_page_provinces
+	potential = { is_variable_equal = { which = gecko_victory_docs_page value = 1 } }
+}
+
+custom_button = {
+	name = gecko_intscore_docs_section_annual
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_victory_docs_page value = 2 } } }
+	tooltip = gecko_intscore_docs_section_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_victory_docs_page value = 2 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_intscore_docs_page_annual
+	potential = { is_variable_equal = { which = gecko_victory_docs_page value = 2 } }
+}
+
+custom_button = {
+	name = gecko_intscore_docs_section_wars
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_victory_docs_page value = 3 } } }
+	tooltip = gecko_intscore_docs_section_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_victory_docs_page value = 3 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_intscore_docs_page_wars
+	potential = { is_variable_equal = { which = gecko_victory_docs_page value = 3 } }
+}
+
+custom_button = {
+	name = gecko_intscore_docs_section_penalties
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_victory_docs_page value = 4 } } }
+	tooltip = gecko_intscore_docs_section_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_victory_docs_page value = 4 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_intscore_docs_page_penalties
+	potential = { is_variable_equal = { which = gecko_victory_docs_page value = 4 } }
+}
+
+custom_button = {
+	name = gecko_intscore_docs_section_rewards
+	potential = { ai = no }
+	trigger = { always = yes }
+	effect = { hidden_effect = { set_variable = { which = gecko_victory_docs_page value = 5 } } }
+	tooltip = gecko_intscore_docs_section_tt
+	frame = { number = 2 trigger = { is_variable_equal = { which = gecko_victory_docs_page value = 5 } } }
+	frame = { number = 1 trigger = { always = yes } }
+}
+
+custom_window = {
+	name = gecko_intscore_docs_page_rewards
+	potential = { is_variable_equal = { which = gecko_victory_docs_page value = 5 } }
+}

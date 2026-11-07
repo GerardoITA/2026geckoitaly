@@ -3247,37 +3247,38 @@ woc_hun_fifth_branch = {
 			NOT ={ has_country_flag = formed_eoh_flag}
 			    bohemia_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
                 erzgebirge_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
                 moravia_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
                 austria_proper_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
                 inner_austria_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
                 silesia_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
                 tirol_area = {
                     type = all
-                    owned_by = ROOT
+                    AND = { owned_by = ROOT is_core = ROOT }
                 }
-			num_of_cities = 30
+			num_of_owned_provinces_with = { value = 30 is_core = ROOT }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 		
 			num_of_owned_provinces_with = {
+				is_core = ROOT
 				value = 30
 				NOT = { unrest = 1 }
 				NOT = { nationalism = 1 }

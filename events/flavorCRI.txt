@@ -722,7 +722,8 @@ country_event = {
 	}
 
 	trigger = {
-		NOT = { has_country_flag = got_the_tier2 }
+		has_dlc = "Mandate of Heaven"
+		NOT = { has_reform = X_CRI_fix_for_meritocracy }
 		is_emperor_of_china = yes
 	}
 
@@ -730,6 +731,6 @@ country_event = {
 		name = flavor_cri.9.a
 
 		set_country_flag = got_the_tier2
-		add_government_reform = X_CRI_fix_for_meritocracy
+		gecko_enable_mandate_meritocracy_effect = yes
 	}
 }

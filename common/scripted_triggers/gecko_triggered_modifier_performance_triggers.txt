@@ -1,0 +1,156 @@
+# Cached country conditions. Native checks remain as a fallback until initialization or while a pre-change hook is pending.
+
+gecko_african_slaves_any_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_african_slaves_any_tt
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = gecko_african_cache_initialized }
+					has_country_flag = gecko_african_cache_dirty
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				continent = africa
+				trade_goods = slaves
+			}
+		}
+		else = {
+			has_country_flag = gecko_african_slaves_any
+		}
+	}
+}
+
+gecko_african_gold_any_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_african_gold_any_tt
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = gecko_african_cache_initialized }
+					has_country_flag = gecko_african_cache_dirty
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 1
+				continent = africa
+				trade_goods = gold
+			}
+		}
+		else = {
+			has_country_flag = gecko_african_gold_any
+		}
+	}
+}
+
+gecko_african_slaves_monopoly_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_african_slaves_monopoly_tt
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = gecko_african_cache_initialized }
+					has_country_flag = gecko_african_cache_dirty
+				}
+			}
+			owns_all_provinces = {
+				continent = africa
+				trade_goods = slaves
+			}
+		}
+		else = {
+			has_country_flag = gecko_african_slaves_monopoly
+		}
+	}
+}
+
+gecko_african_gold_monopoly_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_african_gold_monopoly_tt
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = gecko_african_cache_initialized }
+					has_country_flag = gecko_african_cache_dirty
+				}
+			}
+			owns_all_provinces = {
+				continent = africa
+				trade_goods = gold
+			}
+		}
+		else = {
+			has_country_flag = gecko_african_gold_monopoly
+		}
+	}
+}
+
+gecko_african_gold_three_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_african_gold_three_tt
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = gecko_african_cache_initialized }
+					has_country_flag = gecko_african_cache_dirty
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 3
+				continent = africa
+				trade_goods = gold
+			}
+		}
+		else = {
+			has_country_flag = gecko_african_gold_three
+		}
+	}
+}
+
+gecko_african_slaves_five_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = gecko_african_slaves_five_tt
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_country_flag = gecko_african_cache_initialized }
+					has_country_flag = gecko_african_cache_dirty
+				}
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				continent = africa
+				trade_goods = slaves
+			}
+		}
+		else = {
+			has_country_flag = gecko_african_slaves_five
+		}
+	}
+}
+
+gecko_maghreb_ownership_trigger = {
+	if = {
+		limit = {
+			OR = {
+				NOT = { has_global_flag = gecko_maghreb_cache_initialized }
+				has_global_flag = gecko_maghreb_cache_dirty
+			}
+		}
+		NOT = {
+			maghreb_region = {
+				owner = {
+					OR = {
+						culture_group = latin
+						culture_group = iberian
+					}
+				}
+			}
+		}
+	}
+	else = {
+		has_global_flag = gecko_maghreb_ownership
+	}
+}
+

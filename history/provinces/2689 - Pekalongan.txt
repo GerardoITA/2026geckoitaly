@@ -1,5 +1,5 @@
 
-owner = DMk
+owner = DMK
 controller = DMK
 add_core = DMK
 culture = javanese

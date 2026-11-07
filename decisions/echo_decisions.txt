@@ -2,6 +2,7 @@ country_decisions = {
 	new_player_readme = {
 		color = { 41  233  249 }
 		potential = {
+			always = no # Replaced by Gecko Menu Documentation.
 			ai = no
 			NOT = { has_country_flag = hide_extra_decisions }
 		}
@@ -131,6 +132,7 @@ country_decisions = {
 		color = { 166  0  0 }
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Country Information.
 		}
 		ai_will_do = {
 			factor = 0
@@ -495,7 +497,7 @@ country_decisions = {
 
 	development_counter = {
 		color = { 166  0  0 }
-		potential = { ai = no }
+		potential = { ai = no always = no } # Moved to Gecko Menu / Country Information.
 		allow = {
 			if = {
 				limit = {
@@ -714,6 +716,7 @@ country_decisions = {
 		}
 		potential = {
 			ai = no
+			always = no # Moved to Gecko Menu / Actions.
 			NOT = { has_country_flag = sea_state_edicts_flag }
 			OR = {
 				NOT = { has_country_flag = sea_state_edicts_clear_flag }
@@ -760,9 +763,8 @@ country_decisions = {
 	#	
 	#	ai_will_do = {factor = 0}
 	#}
-}
 
-embrace_judaism_ethiopia = {
+	embrace_judaism_ethiopia = {
 		potential = {
 			tag = ETH
 			NOT = {
@@ -783,3 +785,4 @@ embrace_judaism_ethiopia = {
 			factor = 0
 		}
 	}
+}

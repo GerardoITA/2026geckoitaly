@@ -12,6 +12,7 @@ base_manpower = 1
 capital = "Turov"
 is_city = yes
 add_core = LIT
+fort_15th = yes
 
 
 

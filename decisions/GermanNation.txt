@@ -145,7 +145,11 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			OR = {
+				has_country_flag = remove_germany_tech_requirement_flag
+				adm_tech = 20
+			}
+	
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no

@@ -1,0 +1,23 @@
+# Country scope: update only this country's bonus from its current overlord.
+# No ROOT/FROM assumptions, so this also works inside subject and reform scopes.
+gc_update_subject_discipline = {
+	if = {
+		limit = {
+			is_subject = yes
+			overlord = { has_idea = additional_loyalist_recruitment }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_modifier = gc_influential_overlord }
+			}
+			add_country_modifier = {
+				name = gc_influential_overlord
+				duration = -1
+			}
+		}
+	}
+	else_if = {
+		limit = { has_country_modifier = gc_influential_overlord }
+		remove_country_modifier = gc_influential_overlord
+	}
+}

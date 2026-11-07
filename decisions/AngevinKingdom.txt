@@ -1,0 +1,76 @@
+country_decisions = {
+
+	gecko_form_angevin_kingdom = {
+		major = yes
+		potential = {
+			tag = ENG
+			has_country_flag = gecko_unlocked_angevin_empire
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					region = british_isles_region
+					NOT = {
+						OR = {
+							owned_by = ROOT
+							owner = { is_subject_of = ROOT }
+						}
+					}
+				}
+				AND = {
+					region = france_region
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 30
+								region = france_region
+								is_core = ROOT
+							}
+						}
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+			}
+		}
+		allow = {
+			is_subject = no
+			is_at_war = no
+			NOT = { exists = AVE }
+			custom_trigger_tooltip = {
+				tooltip = gecko_angevin_kingdom_territory_tt
+				british_isles_region = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = { is_subject_of = ROOT }
+					}
+				}
+				num_of_owned_provinces_with = {
+					value = 30
+					region = france_region
+					is_core = ROOT
+				}
+			}
+		}
+		effect = {
+			change_tag = AVE
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

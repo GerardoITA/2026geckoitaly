@@ -398,6 +398,7 @@ categories =  {
 			4563 1127 335 #gc morocco
 			1934 #gc italy
 			165 #gc switzerland
+			6446 343 # North Africa province splits
 		}
 	}
 
@@ -573,6 +574,7 @@ categories =  {
 			860 2618
 			#gecko 
 			6017 6020 6023 6024 6025 6026 6019 1228 6021
+			6440 6441 6443 6447 2460 # North Africa province splits
 		}
 	}
 	
@@ -689,6 +691,7 @@ categories =  {
 			6139 6144 #gc persia
 			6192 6195
 			381 #Ajloun
+			6449 # North Africa province splits
 		}
 	}
 
@@ -710,7 +713,7 @@ categories =  {
 			850 852 853 2018 2621 2622 2623 2626 2628 2629 2644 2646 2645 
 			588 2401 2301 1224 
 			869 2006 2019 2483 2488 2496 2501 2624
-			336 339 340 346 348 349 351 1171 1184 1185 1188 1207 1208 1211 1218 1219 1227 1882 2274 2454 2458 2459 2462 2463 
+			336 339 340 346 348 349 351 1171 1184 1185 1188 1207 1208 1211 1218 1219 1227 1882 2274 2454 2458 2459 2462
 			2464 2465 2756 2757 2758 2762 2763 2766 2770 2771 2772 2778 2779 2781 2787 2792 2950 2951
 			326 329 332 418 1846 
 			2303
@@ -748,6 +751,8 @@ categories =  {
 			4239 #Belgrade
 			2750 4703 4311 4312 4315 4307 4702 4705 4779 #otto terrain changes
 			382
+			6442 6444 6445 6448 # North Africa province splits
+			6450 # Boghar
 		}
 	}
 
@@ -843,7 +848,7 @@ categories =  {
 
 		movement_cost = 1.00
 		province_trade_power_modifier = 0.25
-		local_development_cost = 0.10
+		local_development_cost = -0.05
 		nation_designer_cost_multiplier = 0.95
 		supply_limit = 5
 	
@@ -858,6 +863,7 @@ categories =  {
 			4275
 			404
 			739 461 2124 710 2192 715 712 4209
+			2463 6451 6452 # Kasdir oasis provinces
 		}
 	}
 }

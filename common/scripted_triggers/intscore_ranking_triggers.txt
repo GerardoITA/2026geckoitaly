@@ -1,0 +1,31 @@
+# Current scope is the best candidate; PREV is the country being considered.
+# Prefer more points, then the earlier arrival at this score. Simultaneous
+# annual arrivals keep the preceding rank, then their fixed registration order.
+intscore_prefer_previous_candidate = {
+	OR = {
+		NOT = { check_variable = { which = IntScore which = PREV } }
+		AND = {
+			is_variable_equal = { which = IntScore which = PREV }
+			OR = {
+				AND = {
+					check_variable = { which = intscore_score_order which = PREV }
+					NOT = { is_variable_equal = { which = intscore_score_order which = PREV } }
+				}
+				AND = {
+					is_variable_equal = { which = intscore_score_order which = PREV }
+					OR = {
+						AND = {
+							check_variable = { which = intscore_previous_rank which = PREV }
+							NOT = { is_variable_equal = { which = intscore_previous_rank which = PREV } }
+						}
+						AND = {
+							is_variable_equal = { which = intscore_previous_rank which = PREV }
+							check_variable = { which = intscore_entry_order which = PREV }
+							NOT = { is_variable_equal = { which = intscore_entry_order which = PREV } }
+						}
+					}
+				}
+			}
+		}
+	}
+}

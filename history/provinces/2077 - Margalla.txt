@@ -49,7 +49,6 @@ discovered_by = chinese
 	owner = MUG
 	controller = MUG
 	add_core = MUG
-	remove_core = DLH
 	remove_core = TIM
 } # Battle of Panipat & Tag Change
 1540.1.1 = { religion = sikhism }

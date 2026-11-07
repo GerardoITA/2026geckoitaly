@@ -1,0 +1,39 @@
+country_decisions = {
+	manage_eyalet_colors = {
+		major = yes
+
+		color = { 41  233  249 }
+
+
+		potential = {
+			ai = no
+			always = no # Moved to Gecko Menu / Actions.
+
+		}
+
+		allow = {
+			any_subject_country = {
+				OR = {
+					is_subject_of_type = eyalet
+					is_subject_of_type = core_eyalet
+					is_subject_of_type = vassal
+					is_subject_of_type = march
+					is_subject_of_type = client_vassal
+					is_subject_of_type = client_march
+					is_subject_of_type = canton
+					is_subject_of_type = appanage
+				}
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = eyalet_colors.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

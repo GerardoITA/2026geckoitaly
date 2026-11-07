@@ -139,11 +139,18 @@ plutocratic_reform = {
 	ai = {
 		factor = 0.75 #generic
 	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
+	}
+	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
+	}
 }
 
 austrian_archduchy_reform = {
 	icon = "austrian_archduchy_reform"
 	allow_normal_conversion = yes
+	maintain_dynasty = yes
 	legacy_equivalent = austrian_archduchy
 	valid_for_nation_designer = yes
 	potential = {
@@ -760,6 +767,12 @@ english_monarchy = {
 			english_parliament = yes
 		}
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 british_monarchy = {
@@ -804,6 +817,12 @@ british_monarchy = {
 	}
 	ai = {
 		factor = 100
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -859,6 +878,12 @@ angevin_monarchy = {
 	ai = {
 		factor = 100
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 absolute_british_monarchy = {
@@ -900,6 +925,12 @@ absolute_british_monarchy = {
 			english_parliament = yes
 			can_force_issue_through = yes
 		}
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -949,7 +980,7 @@ ottoman_government = {
 		custom_attributes = {
 			has_harem_events = yes
 			enables_estate_janissaries = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 		government_abilities = {
 			ottoman_decadence_mechanic
@@ -1033,6 +1064,12 @@ reformed_byzantine_monarchy_reform = {
 		custom_attributes = {
 			enables_pronoias = yes 
 		}
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1174,6 +1211,7 @@ irish_highkingdom_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		primary_culture = irish
 	}
 	nation_designer_trigger = {
@@ -1205,6 +1243,9 @@ irish_highkingdom_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1242,6 +1283,12 @@ scottish_monarchy_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1394,6 +1441,12 @@ roman_empire_reform = {
 	}
 	ai = {
 		factor = 1
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -1638,11 +1691,11 @@ stadthalter_monarchy_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		is_lesser_in_union = no
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
-	lock_level_when_selected = yes
 
 	modifiers = {
 
@@ -1659,6 +1712,7 @@ stadthalter_monarchy_reform = {
 	}
 
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		country_event = { id = dutch_republic.33 }
 	}
 
@@ -1847,7 +1901,7 @@ modernized_ottoman_government = {
 		custom_attributes = {
 			has_harem_events = yes
 			enables_estate_janissaries = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 	}
 	conditional = {
@@ -1919,7 +1973,7 @@ reorganized_ottoman_government = {
 		has_janissaries = yes
 		custom_attributes = {
 			enables_estate_janissaries = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 	}
 }
@@ -1964,7 +2018,7 @@ sultanate_of_rum_reform = {
 		has_harem = yes
 		custom_attributes = {
 			has_harem_events = yes
-			has_eyalets = yes
+			has_eyalets = no
 		}
 	}
 	conditional = {
@@ -2161,8 +2215,8 @@ prussian_monarchy = {
 			AND = {
 				
 				OR = {
-					has_mission = emp_brapru_army_reforms_2
-					has_mission = emp_brapru_army_reforms_3
+					has_mission = PRU_standing_army
+					has_mission = PRU_an_army_with_a_state
 				}
 				NOT = { map_setup = map_setup_random }
 			}
@@ -2228,8 +2282,8 @@ prussian_monarchy_base = {
 		NOT = { have_had_reform = prussian_monarchy }
 		OR = {
 			NOT = { has_dlc = "Domination" }
-			NOT = { has_mission = emp_brapru_army_reforms_2 }
-			NOT = { has_mission = emp_brapru_army_reforms_3 }
+			NOT = { has_mission = PRU_standing_army }
+			NOT = { has_mission = PRU_an_army_with_a_state }
 		}
 		OR = {
 			AND = {
@@ -2323,6 +2377,7 @@ prussian_monarchy_base = {
 austrian_dual_monarchy = {
 	icon = "austrian_dual_monarchy_reform"
 	allow_normal_conversion = yes
+	maintain_dynasty = yes
 	legacy_equivalent = austrian_archduchy
 	potential = { #added via script
 		has_dlc = "Emperor"
@@ -3314,6 +3369,12 @@ polish_great_sejm = {
 		}
 		has_parliament = yes
 	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 polish_elective_monarchy = {
@@ -3365,6 +3426,12 @@ polish_elective_monarchy = {
 			}
 		}
 		has_parliament = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -3577,6 +3644,7 @@ livonian_trade_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_trade_city_reform_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3633,6 +3701,9 @@ livonian_trade_monarchy = {
 		can_use_trade_post = yes
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
+	}
+	removed_effect = {
+		gecko_trade_city_reform_removed_effect = yes
 	}
 }
 
@@ -3840,6 +3911,7 @@ livonian_diplomatic_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3874,6 +3946,9 @@ livonian_diplomatic_monarchy = {
 		}
 		has_parliament = yes
 	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
+	}
 }
 
 # If you want to keep security and stability	(Wide)
@@ -3892,6 +3967,7 @@ livonian_constitutional_monarchy = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -3930,6 +4006,9 @@ livonian_constitutional_monarchy = {
 			blocked_call_diet = yes
 			halved_parliament_bribes = yes
 		}
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -4216,6 +4295,12 @@ norwegian_parliamentary_monarchy = {
 			}
 		}
 		has_parliament = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 austrian_absolute_monarchy = {
@@ -5118,7 +5203,6 @@ centralize_reform = {
 		}
 	}
 	modifiers = {
-		development_cost_modifier = -0.05
 		global_prosperity_growth = 0.5
 		all_estate_loyalty_equilibrium = -0.05
 	}
@@ -6031,6 +6115,7 @@ ottoman_siyasah_tax_reform = {
 		}
 	}
 	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
 		religion_group = muslim
 	}
 	effect = {
@@ -6056,6 +6141,7 @@ ottoman_siyasah_tax_reform = {
 		}
 	}
 	removed_effect = {
+		gecko_parliament_removed_effect = yes
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -6213,7 +6299,6 @@ great_council_of_mechelen_reform = {
 strengthened_parliament_reform = {
 	icon = "parliament_hall"
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
 	potential = {
 		has_dlc = "Domination"
 		has_parliament = yes
@@ -6710,6 +6795,7 @@ absolute_shogunate_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	potential = {
+		always = no
 		OR = {
 			AND = {
 				is_playing_custom_nation = yes
@@ -6739,6 +6825,7 @@ japanese_divine_empire = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	potential = {
+		always = no
 		OR = { 
 			AND = {
 				is_playing_custom_nation = yes
@@ -6793,6 +6880,7 @@ land_christian_sun_reform = {
 	icon = "land_christian_sun_reform"
 	allow_normal_conversion = no
 	potential = {
+		always = no
 		OR = { 
 			AND = {
 				has_reform = land_christian_sun_reform
@@ -6840,6 +6928,7 @@ strengthen_bakuhan_system_reform = {
 	icon = "strengthen_bakuhan_system_reform"
 	allow_normal_conversion = no
 	potential = {
+		always = no
 		OR = { 
 			have_had_reform = strengthen_bakuhan_system_reform
 			mission_completed = jap_strengthen_bakuhan_system
@@ -6911,6 +7000,12 @@ courts_of_navarra = {
 			}
 		}
 		has_parliament = yes
+	}
+	trigger = {
+		gecko_can_adopt_parliament_trigger = yes
+	}
+	removed_effect = {
+		gecko_parliament_removed_effect = yes
 	}
 }
 
@@ -7051,4 +7146,28 @@ crusader_nobility_reform = {
 		pp_on_heathen_wars = yes
 	}
 
+}
+
+league_of_lezhe_reform = {
+	icon = "giga_chad"
+	allow_normal_conversion = yes
+	potential = {
+		primary_culture = albanian
+	}
+	nation_designer_trigger = {
+		primary_culture = albanian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		morale_damage = 0.1
+		hostile_attrition = 1
+		defensiveness = 0.25
+	}
+	custom_attributes = {
+		winning_battles_increases_legitimacy = yes
+	}
+	ai = {
+		factor = 1
+	}
 }

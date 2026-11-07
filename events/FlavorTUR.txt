@@ -3009,7 +3009,7 @@ country_event = {
 		}
 		create_subject = {
 			who = HUN
-			subject_type = core_eyalet
+			subject_type = vassal
 		}
 		HUN = {
 			if = {
@@ -3018,7 +3018,7 @@ country_event = {
 			}
 			if = {
 				limit = { NOT = { has_reform = eyalet_government } }
-				add_government_reform = eyalet_government
+				add_government_reform = feudalism_reform
 			}
 		}
 		custom_tooltip = CORE_EYALET_TT
@@ -3164,7 +3164,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -3172,7 +3172,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY0
@@ -3223,7 +3223,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:second_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:second_potential_eyalet
 		}
 		event_target:second_potential_eyalet = {
@@ -3231,7 +3231,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY2
@@ -3270,7 +3270,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:third_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:third_potential_eyalet
 		}
 		event_target:third_potential_eyalet = {
@@ -3278,7 +3278,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY1
@@ -3463,14 +3463,14 @@ country_event = {
 					}
 				}
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			eyalet_effect = {
 				tag = EY3
 			}
 		}
 		create_subject = {
 			who = HAB
-			subject_type = eyalet
+			subject_type = vassal
 		}
 		ai_chance = {
 			factor = 1
@@ -3583,7 +3583,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -3591,7 +3591,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E14
@@ -3644,7 +3644,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:second_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:second_potential_eyalet
 		}
 		event_target:second_potential_eyalet = {
@@ -3652,7 +3652,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY4
@@ -3705,7 +3705,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:third_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:third_potential_eyalet
 		}
 		event_target:third_potential_eyalet = {
@@ -3713,7 +3713,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY4
@@ -3766,7 +3766,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:fourth_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:fourth_potential_eyalet
 		}
 		event_target:fourth_potential_eyalet = {
@@ -3774,7 +3774,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY4
@@ -3827,7 +3827,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:fifth_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:fifth_potential_eyalet
 		}
 		event_target:fifth_potential_eyalet = {
@@ -3835,7 +3835,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E15
@@ -3952,7 +3952,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -3974,7 +3974,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = SIQ
@@ -4034,7 +4034,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -4042,7 +4042,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY5
@@ -4303,7 +4303,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -4311,7 +4311,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			set_capital = 118
 			eyalet_effect = {
@@ -4357,7 +4357,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:second_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:second_potential_eyalet
 		}
 		event_target:second_potential_eyalet = {
@@ -4365,7 +4365,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			set_capital = 118
 			eyalet_effect = {
@@ -4485,7 +4485,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -4497,7 +4497,7 @@ country_event = {
 				limit = { NOT = { religion = ROOT } }
 				change_religion = ROOT
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			set_government_rank = 2
 			add_liberty_desire = -25
 			set_capital = 225
@@ -4554,7 +4554,7 @@ country_event = {
 		}
 		create_subject = {
 			who = TUN
-			subject_type = core_eyalet
+			subject_type = vassal
 		}
 		TUN = {
 			if = {
@@ -4563,7 +4563,7 @@ country_event = {
 			}
 			if = {
 				limit = { NOT = { has_reform = barbary_eyalet_government } }
-				add_government_reform = barbary_eyalet_government
+				add_government_reform = feudalism_reform
 			}
 		}
 		custom_tooltip = CORE_EYALET_TT
@@ -4605,7 +4605,7 @@ country_event = {
 			}
 		}
 		TUN = {
-			add_government_reform = barbary_eyalet_government
+			add_government_reform = feudalism_reform
 			eyalet_effect = {
 				tag = EY9
 			}
@@ -4713,7 +4713,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -4721,7 +4721,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = barbary_eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY9
@@ -4772,7 +4772,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:second_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:second_potential_eyalet
 		}
 		event_target:second_potential_eyalet = {
@@ -4780,7 +4780,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = barbary_eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = EY8
@@ -4904,7 +4904,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -4912,7 +4912,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = barbary_eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E10
@@ -4960,7 +4960,7 @@ country_event = {
 		}
 		create_subject = {
 			who = MOR
-			subject_type = core_eyalet
+			subject_type = vassal
 		}
 		MOR = {
 			if = {
@@ -4969,7 +4969,7 @@ country_event = {
 			}
 			if = {
 				limit = { NOT = { has_reform = barbary_eyalet_government } }
-				add_government_reform = barbary_eyalet_government
+				add_government_reform = feudalism_reform
 			}
 		}
 		custom_tooltip = CORE_EYALET_TT
@@ -5011,7 +5011,7 @@ country_event = {
 			}
 		}
 		MOR = {
-			add_government_reform = barbary_eyalet_government
+			add_government_reform = feudalism_reform
 			eyalet_effect = {
 				tag = E16
 			}
@@ -5139,7 +5139,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -5147,7 +5147,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = barbary_eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E16
@@ -5195,7 +5195,7 @@ country_event = {
 		}
 		create_subject = {
 			who = ADA
-			subject_type = core_eyalet
+			subject_type = vassal
 		}
 		ADA = {
 			if = {
@@ -5204,7 +5204,7 @@ country_event = {
 			}
 			if = {
 				limit = { NOT = { has_reform = eyalet_government } }
-				add_government_reform = eyalet_government
+				add_government_reform = feudalism_reform
 			}
 		}
 		custom_tooltip = CORE_EYALET_TT
@@ -5339,7 +5339,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -5347,7 +5347,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E13
@@ -5519,7 +5519,7 @@ country_event = {
 		}
 		create_subject = {
 			who = YEM
-			subject_type = core_eyalet
+			subject_type = vassal
 		}
 		YEM = {
 			if = {
@@ -5528,7 +5528,7 @@ country_event = {
 			}
 			if = {
 				limit = { NOT = { has_reform = eyalet_government } }
-				add_government_reform = eyalet_government
+				add_government_reform = feudalism_reform
 			}
 		}
 		custom_tooltip = CORE_EYALET_TT
@@ -5677,7 +5677,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -5685,7 +5685,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E17
@@ -5775,7 +5775,7 @@ country_event = {
 		custom_tooltip = eyalet_cores_only_on_owned_provinces_tt
 		release = event_target:first_potential_eyalet
 		create_subject = { 
-			subject_type = eyalet
+			subject_type = vassal
 			who = event_target:first_potential_eyalet
 		}
 		event_target:first_potential_eyalet = {
@@ -5783,7 +5783,7 @@ country_event = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			add_liberty_desire = -25
 			eyalet_effect = {
 				tag = E12
@@ -6145,14 +6145,14 @@ country_event = {
 		}
 		create_subject = {
 			who = EGY
-			subject_type = core_eyalet
+			subject_type = vassal
 		}
 		EGY = {
 			if = {
 				limit = { NOT = { government = monarchy } }
 				change_government = monarchy
 			}
-			add_government_reform = eyalet_government
+			add_government_reform = feudalism_reform
 			eyalet_effect = {
 				tag = EY7
 			}

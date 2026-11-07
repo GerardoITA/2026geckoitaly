@@ -1,0 +1,38 @@
+# Fixed elector bonuses use country triggers instead of unsupported elector reform blocks.
+# Keep eligibility in trigger so appointments, revocations and repealed reforms are rechecked.
+emperor_reichstag_collegia_elector = {
+	potential = {
+		has_dlc = "Emperor"
+	}
+	trigger = {
+		is_part_of_hre = yes
+		is_elector = yes
+		hre_reform_passed = emperor_reichstag_collegia
+	}
+	advisor_cost = -0.05
+}
+
+emperor_expand_gemeiner_pfennig_elector = {
+	potential = {
+		has_dlc = "Emperor"
+	}
+	trigger = {
+		is_part_of_hre = yes
+		is_elector = yes
+		hre_reform_passed = emperor_expand_gemeiner_pfennig
+	}
+	global_manpower = 5
+	global_tax_income = 72
+}
+
+emperor_rechenschaft_elector = {
+	potential = {
+		has_dlc = "Emperor"
+	}
+	trigger = {
+		is_part_of_hre = yes
+		is_elector = yes
+		hre_reform_passed = emperor_rechenschaft
+	}
+	land_forcelimit = 5
+}

@@ -1,0 +1,62 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gecko_victory_panel"
+		texturefile = "gfx/interface/intscore/atlas/panel_full.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_option"
+		texturefile = "gfx/interface/intscore/atlas/option.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_rankings_tab"
+		texturefile = "gfx/interface/intscore/atlas/rankings_tab.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_provinces_tab"
+		texturefile = "gfx/interface/intscore/atlas/provinces_tab.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_important"
+		texturefile = "gfx/interface/intscore/atlas/marker_important.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_standard"
+		texturefile = "gfx/interface/intscore/atlas/marker_standard.tga"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_map_world"
+		texturefile = "gfx/interface/intscore/atlas/map_world.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_map_europe"
+		texturefile = "gfx/interface/intscore/atlas/map_europe.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_map_africa"
+		texturefile = "gfx/interface/intscore/atlas/map_africa.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_map_asia"
+		texturefile = "gfx/interface/intscore/atlas/map_asia.tga"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_gecko_victory_map_americas"
+		texturefile = "gfx/interface/intscore/atlas/map_americas.tga"
+		noOfFrames = 1
+	}
+}

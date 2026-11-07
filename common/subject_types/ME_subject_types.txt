@@ -1,0 +1,35 @@
+
+
+prussian_congress_vassal = {
+	copy_from = vassal
+	count = vassal
+}
+
+prussian_vassal = {
+	copy_from = vassal
+	count = vassal
+
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = prussian_vassal_modifier
+	}
+	modifier_overlord = {
+		modifier = prussian_vassal_modifier_overlord
+	}
+
+	can_fight = {
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+	}
+	can_ally = {
+		other_overlord = all
+	}
+	can_marry = {
+		independent_nations = yes
+		other_overlord = all
+	}
+
+	takes_diplo_slot = no
+}

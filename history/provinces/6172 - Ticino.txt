@@ -1,8 +1,9 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Ticino
 add_core = MLO
-owner = MLO
-controller = MLO
+add_core = SWI
+owner = SWI
+controller = SWI
 culture = swiss
 religion = catholic
 hre = yes

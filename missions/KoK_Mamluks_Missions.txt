@@ -747,61 +747,6 @@ mam_missions_2 = {
 		}
 	}
 
-	mam_highway_empire = {
-		icon = mam_highway_empire
-		required_missions = { mam_alexandrian_trade }
-		position = 9
-		provinces_to_highlight = {
-			OR = {
-				province_id = 4316 
-				province_id = 2315
-			}
-		}
-		trigger = {
-			if = {
-				limit = { has_dlc = "Leviathan" }
-				4316 = {
-					owned_by = ROOT
-					OR = {
-						num_of_times_improved = 10
-						has_great_project = { 
-							type = suez_canal 
-							tier = 3 
-						}
-					}
-				}
-				4316 = { has_any_ongoing_construction = no }
-			}
-			else = {
-				4316 = { num_of_times_improved = 10 }
-			}
-			2315 = { owned_by = ROOT }
-			is_at_war = no			
-		}
-		effect = {
-			if = {
-				limit = { 
-					has_dlc = "Leviathan" 
-					4316 = {
-						NOT = {
-							has_great_project = { 
-								type = suez_canal 
-								tier = 3 
-							}
-						}
-					}
-					NOT = { adm_tech = 22 }
-				}
-				country_event = { id = flavor_mam.115 }
-				custom_tooltip = flavor_mam.115_tt
-			}
-			else = {
-				4316 = { add_base_production = 3 }
-			}
-			add_mercantilism = 3
-		}
-	}
-
 	mam_karimi_merchants = {
 		icon = mission_restore_trade_superiority
 		required_missions = {  }

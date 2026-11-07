@@ -4,6 +4,7 @@ government_rank = 1
 primary_culture = persian
 religion = shiite
 technology_group = muslim
+add_truce_with = ARL
 capital = 2218 # Shiraz
 historical_rival = ISF
 historical_rival = KHO

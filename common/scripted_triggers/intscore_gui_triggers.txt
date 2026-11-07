@@ -1,0 +1,10 @@
+# Match the existing ranking's participants and strictly positive score threshold.
+gecko_intscore_gui_eligible = {
+	has_country_flag = intscore_participant
+	check_variable = { which = IntScore value = 0.001 }
+}
+
+gecko_intscore_gui_unselected = {
+	gecko_intscore_gui_eligible = yes
+	NOT = { has_country_flag = gecko_intscore_gui_selected }
+}

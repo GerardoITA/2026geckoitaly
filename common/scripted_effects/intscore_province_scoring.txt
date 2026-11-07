@@ -4,10 +4,10 @@ intscore_score_single_province = {
 		limit = {
 			$PROVINCE$ = {
 				OR = {
-					owned_by = ROOT
+					owned_by = event_target:intscore_score_recipient
 
 					owner = {
-						is_subject_of = ROOT
+						is_subject_of = event_target:intscore_score_recipient
 					}
 				}
 			}
@@ -41,6 +41,8 @@ intscore_score_single_province = {
 }
 
 intscore_score_valid_provinces = {
+	# The recipient is explicit: ROOT may be the global coordinator province.
+	save_event_target_as = intscore_score_recipient
 
 	################################################# EUROPA
 		################### ITALY
@@ -65,7 +67,6 @@ intscore_score_valid_provinces = {
 		################### BRITAIN
 			intscore_score_single_province = { PROVINCE = 236  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # LONDON
 			intscore_score_single_province = { PROVINCE = 248  BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LOTHIAN
-			intscore_score_single_province = { PROVINCE = 4121 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # DUBLIN
 
 		################### LOW COUNTRIES
 			intscore_score_single_province = { PROVINCE = 87 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # CALAIS

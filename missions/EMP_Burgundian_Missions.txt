@@ -369,7 +369,7 @@ emp_burgundy_2 = {
 			}
 		}
 		trigger = {
-			1269 = {
+			96 = {
 				is_strongest_trade_power = root
 			}
 			if = {

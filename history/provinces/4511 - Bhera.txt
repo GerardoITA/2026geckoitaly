@@ -41,7 +41,6 @@ add_local_autonomy = 50 #Kokhars
 	owner = MUG
 	controller = MUG
 	add_core = MUG
-	remove_core = DLH
 } # Battle of Panipat
 1540.1.1 = {
 	religion = sikhism

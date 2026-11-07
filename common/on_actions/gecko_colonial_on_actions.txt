@@ -1,0 +1,14 @@
+# These hooks run in country scope.
+on_dip_tech_taken = {
+	gecko_grant_colonial_expansion_effect = yes
+}
+
+# Apply the bonus to eligible countries in existing saves and later bookmarks.
+on_startup = {
+	gecko_grant_colonial_expansion_effect = yes
+}
+
+# Also cover new countries that start with the required technology already taken.
+on_monthly_pulse = {
+	gecko_grant_colonial_expansion_effect = yes
+}

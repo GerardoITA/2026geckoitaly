@@ -1,0 +1,29 @@
+#6444 - El Bayadh
+
+owner = TLC
+controller = TLC
+culture = berber
+religion = sunni
+capital = "El Bayadh"
+trade_goods = livestock
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = TLC
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = western
+
+
+1549.1.1 = {
+	owner = MOR
+	controller = MOR
+	add_core = MOR
+} #Conquered by the Saadians
+1554.1.1 = {
+	owner = ALG
+	controller = ALG
+	add_core = ALG
+}

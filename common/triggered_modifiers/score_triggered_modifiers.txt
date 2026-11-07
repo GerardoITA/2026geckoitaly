@@ -1,7 +1,7 @@
 ####INTSCORE
 intscore_first_place_modifier = {
 	potential = {
-		always = yes
+		is_year = 1500
 	}
 
 	trigger = {
@@ -22,7 +22,7 @@ intscore_first_place_modifier = {
 
 intscore_second_place_modifier = {
 	potential = {
-		always = yes
+		is_year = 1500
 	}
 
 	trigger = {
@@ -43,7 +43,7 @@ intscore_second_place_modifier = {
 
 intscore_third_place_modifier = {
 	potential = {
-		always = yes
+		is_year = 1500
 	}
 
 	trigger = {
@@ -61,7 +61,7 @@ intscore_third_place_modifier = {
 
 intscore_contender_modifier = {
 	potential = {
-		always = yes
+		is_year = 1500
 	}
 
 	trigger = {

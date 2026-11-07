@@ -30,7 +30,6 @@ cb_intscore_rivalry = {
 	# FROM = bersaglio
 	# =========================================================
 	prerequisites = {
-
 		# Il bersaglio deve essere un rivale dell'attaccante.
 		is_rival = FROM
 

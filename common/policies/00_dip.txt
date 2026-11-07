@@ -3,6 +3,7 @@ client_state_act = {
 	monarch_power = DIP
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = influence_ideas   
 	}
@@ -422,6 +423,7 @@ loyal_conduct_act = {
 	monarch_power = MIL
 	
 	potential = {
+		always = no
 		has_idea_group = mercenary_ideas
 		has_idea_group = spy_ideas   
 	}
@@ -444,6 +446,7 @@ loyal_conduct_act = {
  	monarch_power = MIL
  	
  	potential = {
+		always = no
  		has_idea_group = mercenary_ideas
  		has_idea_group = diplomatic_ideas   
  	}

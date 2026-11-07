@@ -133,11 +133,11 @@ chilean_sea_area = {
 }
 
 gulf_of_panama_area = {
-	1547 1548 1549 1550 6420
+	1547 1548 1549 1550
 }
 
 gordita_area = {
-    6416 6417 6418 6419
+    6416 6417 6418 6419 6420
 }
 
 bay_of_biscay_area = {
@@ -1501,8 +1501,8 @@ said_area = { #5 #Upper Egypt
 	360 1231 2319 4319 4320
 }
 
-tripolitania_area = { #4
-	354 2451 2452 355
+tripolitania_area = { #5
+	354 2451 2452 355 6447
 }
 
 cyrenaica_area = { #5
@@ -1529,36 +1529,40 @@ kabylia_area = { #3
 	339 340 1882 
 }
 
-hautes_plaines_area = { #3
-	2459 2462 2463 
+hautes_plaines_area = { #4
+	2459 6450 2462 6445
 }
 
-ouled_nail_area = { #3
-	350 351 2458
+kasdir_area = { #5
+	2463 6449 6444 6451 6452
+}
+
+ouled_nail_area = { #5
+	350 6440 6441 351 2458
 }
 
 north_saharan_area = { #5
 	352 2450 2456 2457 2472
 }
 
-tafilalt_area = { #3
-	346 349 2460
+tafilalt_area = { #5
+	346 349 6442 2460 6443
 }
 
-sus_area = { #4
-	348 2464 2466 4568
+sus_area = { #5
+	348 6448 2464 2466 4568
 }
 
 southern_morocco_area = { #3
-	347 1110 2470 
+	347 1110 2470
 }
 
 western_morocco_area = { #3
 	342 345 2469 4564
 }
 
-marrekesh_area = { #3
-	343 344 2467 2468
+marrekesh_area = { #5
+	343 6446 344 2467 2468
 }
 
 northern_morocco_area = { #5

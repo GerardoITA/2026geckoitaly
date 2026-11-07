@@ -16,7 +16,7 @@ add_age_modifier = {
 }
 add_legitimacy_or_reform_progress = {
 	tooltip = {
-		legitimacy = $amount$
+		add_legitimacy = $amount$
 	}
 	custom_tooltip = add_legitimacy_or_reform_progress_tt
 	hidden_effect = {

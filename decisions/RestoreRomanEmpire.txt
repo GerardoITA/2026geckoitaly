@@ -32,14 +32,14 @@ country_decisions = {
 				region = anatolia_region
 				region = mashriq_region
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { AND = { owned_by = ROOT is_core = ROOT } }
 		}
 		allow = {
 			italy_region = {
 				type = all
 				OR = {
 					area = vatican_area
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 			}
 }
 			num_of_owned_provinces_with = {

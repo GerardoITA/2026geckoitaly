@@ -1,5 +1,5 @@
 
-WoC_austria_1_germany = {
+WoC_austria_1_branching = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -849,6 +849,18 @@ WoC_austria_2 = {
 			num_of_generals = 1
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = BOH
+					BOH = { is_free_or_tributary_trigger = yes }
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = BOH
+				}
+			}
+
 			if = {
 				limit = {
 					ai = yes
@@ -2344,11 +2356,6 @@ WoC_austria_3_germany = {
 		} 
 
 		effect = {  
-			custom_tooltip = HAB_UPGRADE_OFFICERS_PRIVILEGE
-			set_country_flag = hab_military_reform_flag
-
-			custom_tooltip = SEPERATOR_TOOLTIP
-
 			add_country_modifier = {
 				name = hab_haugwitz_reforms
 				duration = 7300
@@ -2583,7 +2590,7 @@ WoC_austria_3_1 = {
 				area = austria_proper_area
 			}
 			NOT = {
-				owned_by = ROOT
+				AND = { owned_by = ROOT is_core = ROOT }
 			}
 		}
 		trigger = {
@@ -2603,48 +2610,48 @@ WoC_austria_3_1 = {
 				tooltip = gecko_habsburg_empire_requirements_tooltip
 				erzgebirge_area = {
 					type = all
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				bohemia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				moravia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				slovakia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				135 = {
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				4240 = {
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				1864 = {
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				carinthia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				venetia_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				tirol_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				inner_austria_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 				austria_proper_area = {
 					type = all 
-					owned_by = ROOT
+					AND = { owned_by = ROOT is_core = ROOT }
 				}
 			}
 		}
@@ -3590,10 +3597,7 @@ WoC_austria_5 = {
 				total_own_and_non_tributary_subject_development = 800
 			}
 			army_size = 125
-			OR = {
-				full_idea_group = diplomatic_ideas
-				diplomatic_reputation = 7
-			}
+			diplomatic_reputation = 5
 		}
 		effect = {
 			custom_tooltip = HAB_UNLOCK_HABSBURG_CONNECTIONS_ESTATE_PRIVILEGE

@@ -9,6 +9,7 @@ silk_road_empire = { #tier 1
 		merchants = 2
 		missionaries = 1
 		trade_steering = 0.33
+		trade_efficiency = 0.20
 		global_trade_power = 0.25
 		trade_range_modifier = 0.50
 		#movement_speed = 0.20	
@@ -218,22 +219,22 @@ kingdom_of_god_reform = {
 	fixed_rank = 3
 }
 
-gc_french_empire = { #tier 1
-	icon = "austrian_archduchy_reform"
-	potential = {
-		tag = FRA
-		OR = {
-			has_reform = gc_french_empire
-			have_had_reform = gc_french_empire
-		}	
-	}
-	modifiers = {
-		artillery_power = 0.15
-		leader_land_fire = 1
-	    army_tradition = 0.25
-		governing_capacity = 150
-		vassal_income = 0.1
-	}
-	allow_normal_conversion = yes
-	fixed_rank = 3
-}
+#gc_french_empire = { #tier 1
+#	icon = "austrian_archduchy_reform"
+#	potential = {
+#		tag = FRA
+#		OR = {
+#			has_reform = gc_french_empire
+#			have_had_reform = gc_french_empire
+#		}
+#	}
+#	modifiers = {
+#		artillery_power = 0.15
+#		leader_land_fire = 1
+#	    army_tradition = 0.25
+#		governing_capacity = 150
+#		vassal_income = 0.1
+#	}
+#	allow_normal_conversion = yes
+#	fixed_rank = 3
+#}

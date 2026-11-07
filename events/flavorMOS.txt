@@ -327,7 +327,7 @@ country_event = {
 				limit = { has_leader = "Dmitry Shemiaka Rurikovich" }
 				define_leader_to_ruler = {
 					name = "Dmitry Shemiaka Rurikovich"
-					adm = 2
+					adm = 4
 					dip = 1
 					mil = 5
 					claim = 40
@@ -342,7 +342,7 @@ country_event = {
 					dynasty = "Rurikovich"
 					min_age = 20
 					max_age = 40
-					adm = 2
+					adm = 4
 					dip = 1
 					mil = 5
 					claim = 40

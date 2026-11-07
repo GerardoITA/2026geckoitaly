@@ -2877,8 +2877,6 @@ guiTypes = {
 			fullScreen = no
 			moveable = 0
 			Orientation = "UPPER_LEFT"
-			max_slots_horizontal = 6
-				max_slots_vertical = 3
 
 			#### GREAT PROJECTS WINDOW
 			windowType = {

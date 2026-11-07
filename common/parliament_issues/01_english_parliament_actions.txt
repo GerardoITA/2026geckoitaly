@@ -72,6 +72,7 @@ english_french_act_of_union = {
 		}
 		#custom_tooltip = english_french_act_of_union_at
 		change_tag = AVE
+		swap_non_generic_missions = yes
 		hidden_effect = {
 			on_change_tag_effect = yes
 			if = {
@@ -1560,7 +1561,10 @@ acts_of_annexation = {
 		has_issue_unlocked = {
 			issue = british_ideas_laws
 		}
-		has_idea = gbr_acts_of_union
+		OR = {
+			has_idea = gbr_acts_of_union
+			has_idea = gbr_empire_acts_of_union
+		}
 		NOT = { has_country_modifier = acts_of_development_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}
@@ -1595,7 +1599,10 @@ global_empire_act = {
 		has_issue_unlocked = {
 			issue = british_ideas_laws
 		}
-		has_idea = city_upon_a_hill
+		OR = {
+			has_idea = city_upon_a_hill
+			has_idea = gbr_empire_city_upon_a_hill
+		}
 		NOT = { has_country_modifier = global_empire_act_modifier }
 		NOT = { has_country_flag = eng_can_not_adjust_ideas }
 	}

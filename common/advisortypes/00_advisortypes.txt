@@ -23,7 +23,7 @@ philosopher = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 	skill_scaled_modifier = {
@@ -149,7 +149,7 @@ natural_scientist = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -272,7 +272,7 @@ artist = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -426,7 +426,7 @@ treasurer = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -549,7 +549,7 @@ theologian = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -692,7 +692,7 @@ master_of_mint = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -829,7 +829,7 @@ inquisitor = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 	allow_only_owner_religion = yes
@@ -1003,7 +1003,7 @@ statesman = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1130,7 +1130,7 @@ naval_reformer = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1226,7 +1226,7 @@ trader = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1356,7 +1356,7 @@ spymaster = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1433,7 +1433,7 @@ colonial_governor = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1524,7 +1524,7 @@ diplomat = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1635,7 +1635,7 @@ navigator = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1721,7 +1721,7 @@ army_reformer = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1800,7 +1800,7 @@ army_organiser = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1890,7 +1890,7 @@ commandant = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -1973,7 +1973,7 @@ quartermaster = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -2045,7 +2045,7 @@ recruitmaster = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -2118,7 +2118,7 @@ fortification_expert = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 
@@ -2194,7 +2194,7 @@ grand_captain = {
 			}
 		}
 		modifier = {
-			monthly_russian_modernization = 0.02
+			monthly_russian_modernization = 0.03
 		}
 	}
 	

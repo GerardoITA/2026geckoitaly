@@ -65,12 +65,12 @@ kok_persia_conquest_mission_slot_1 = {
 			country_event_with_effect_insight = {
 				id = flavor_per.40
 				effect = "
-					add_accepted_culture_or_dip_power = {
+					add_accepted_culture_or_dip_power_stated = {
 						culture = georgian
 						free = yes
 						new_line = yes
 					}
-					add_accepted_culture_or_dip_power = {
+					add_accepted_culture_or_dip_power_stated = {
 						culture = armenian
 						free = yes
 					}

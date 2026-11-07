@@ -1,0 +1,11 @@
+# Country scope. Apply the existing tier-two fix before setting meritocracy.
+gecko_enable_mandate_meritocracy_effect = {
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+			is_emperor_of_china = yes
+		}
+		add_government_reform = X_CRI_fix_for_meritocracy
+		set_meritocracy = 100
+	}
+}

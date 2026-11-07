@@ -531,7 +531,10 @@ fu_ardabil_missions_5 = {
 			}
 			every_owned_province = {
 				limit = { trade_goods = silk }
-				add_province_modifier = arl_on_the_silk_road_modifier
+				add_province_modifier = {
+					name = arl_on_the_silk_road_modifier
+					duration = -1
+				}
 			}
 			if = { 
 				limit = { 

@@ -520,10 +520,10 @@ country_event = {
 	hidden = yes
 	option = {
 		name = echo.15.a
-		add_country_modifier = {
-			name = Merc_payments_reneged
-			duration = -1
-		}
+		#add_country_modifier = {
+		#	name = Merc_payments_reneged
+		#	duration = -1
+		#}
 	}
 }
 

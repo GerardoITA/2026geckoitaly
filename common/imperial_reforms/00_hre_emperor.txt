@@ -1,5 +1,9 @@
 emperor_reichsreform = {
 	empire = hre
+	emperor = {
+		global_manpower = 5
+		land_forcelimit = 5
+	}
 	potential = {
 		has_dlc = "Emperor"
 	}
@@ -25,6 +29,8 @@ emperor_reichsregiment = {
 		 local_development_cost = -0.025
 	}
 	emperor = {
+		global_manpower = 5
+		land_forcelimit = 5
 		diplomatic_reputation = 2
 	}
 	required_reform = emperor_reichsreform
@@ -33,6 +39,10 @@ emperor_reichsregiment = {
 
 emperor_reichsstabilitaet = {
 	empire = hre
+	emperor = {
+		global_manpower = 5
+		land_forcelimit = 5
+	}
 	required_reform = emperor_reichsregiment
 	gui_container = mainline
 
@@ -51,14 +61,16 @@ emperor_reichsstabilitaet = {
 
 emperor_gemeinerpfennig = {
 	empire = hre
+	emperor = {
+		global_manpower = 10
+		land_forcelimit = 10
+		global_tax_income = 36
+	}
 	potential = {
 		has_dlc = "Emperor"
 	}
 	all = {
 		diplomatic_reputation = 2
-	}
-	emperor_per_prince = {
-		global_tax_income = 0.5
 	}
 	required_reform = emperor_reichsstabilitaet
 	gui_container = mainline
@@ -74,6 +86,8 @@ emperor_perpetual_diet = {
 	}
 	
 	emperor = {
+		global_manpower = 10
+		land_forcelimit = 10
 		free_city_imperial_authority = 0.5
 	}
 	on_effect = {
@@ -114,6 +128,10 @@ emperor_perpetual_diet = {
 
 emperor_landsknechtswesen = {
 	empire = hre
+	emperor = {
+		global_manpower = 10
+		land_forcelimit = 10
+	}
 	required_reform = emperor_perpetual_diet
 	gui_container = mainline
 
@@ -134,6 +152,9 @@ emperor_landfriede = {
 		technology_cost = -0.05
 	}
 	emperor = {
+		global_manpower = 20
+		land_forcelimit = 20
+		land_morale = 0.05
 		prestige = 0.5
 	}
 	province = {
@@ -153,12 +174,10 @@ emperor_reichstag_collegia = {
 	}
 	emperor = {
 		build_cost = -0.05
+		global_tax_income = 96
 	}
-	emperor_per_prince = {
-		global_tax_income = 1.5
-	}
-	elector_per_prince = {
-		advisor_cost = -0.0015
+	elector = {
+		advisor_cost = -0.05
 	}
 }
 
@@ -170,14 +189,12 @@ emperor_expand_gemeiner_pfennig = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor_per_prince = {
-		global_manpower = 0.4
+	emperor = {
+		global_manpower = 15
 	}
-	elector_per_prince = {
-		global_manpower = 0.15
-	}
-	elector_per_prince = {
-		 global_tax_income = 1
+	elector = {
+		global_manpower = 5
+		global_tax_income = 72
 	}
 }
 
@@ -189,11 +206,11 @@ emperor_rechenschaft = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor_per_prince = {
-		land_forcelimit	= 0.4
+	emperor = {
+		land_forcelimit = 15
 	}
-	elector_per_prince = {
-		land_forcelimit	= 0.15
+	elector = {
+		land_forcelimit = 5
 	}
 	province = {
 		local_production_efficiency = 0.05

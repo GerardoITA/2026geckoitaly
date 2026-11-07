@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gecko_intscore_documentation_panel"
+		texturefile = "gfx/interface/intscore/documentation_panel_full.tga"
+		noOfFrames = 1
+	}
+}

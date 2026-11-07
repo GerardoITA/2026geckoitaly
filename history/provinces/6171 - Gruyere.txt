@@ -1,8 +1,9 @@
 #Written with Eu4 Easy Province Creator by emiroercn
 #Gruyere
 add_core = SAV
-owner = SAV
-controller = SAV
+add_core = SWI
+owner = SWI
+controller = SWI
 culture = swiss
 religion = catholic
 hre = yes

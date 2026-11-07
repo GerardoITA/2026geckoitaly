@@ -1,0 +1,61 @@
+# Reward details are presentation-only and become visible alongside the modifiers in 1500.
+
+defined_text = {
+	name = GetGeckoIntscoreFirstReward
+	text = {
+		trigger = { is_year = 1500 }
+		localisation_key = gecko_intscore_reward_1_details
+	}
+	text = {
+		trigger = { NOT = { is_year = 1500 } }
+		localisation_key = gecko_intscore_no_rewards
+	}
+}
+
+defined_text = {
+	name = GetGeckoIntscoreSecondReward
+	text = {
+		trigger = { is_year = 1500 }
+		localisation_key = gecko_intscore_reward_2_details
+	}
+	text = {
+		trigger = { NOT = { is_year = 1500 } }
+		localisation_key = gecko_intscore_no_rewards
+	}
+}
+
+defined_text = {
+	name = GetGeckoIntscoreThirdReward
+	text = {
+		trigger = { is_year = 1500 }
+		localisation_key = gecko_intscore_reward_3_details
+	}
+	text = {
+		trigger = { NOT = { is_year = 1500 } }
+		localisation_key = gecko_intscore_no_rewards
+	}
+}
+
+defined_text = {
+	name = GetGeckoIntscoreAllRewards
+	text = {
+		trigger = { is_year = 1500 }
+		localisation_key = gecko_intscore_all_rewards
+	}
+	text = {
+		trigger = { NOT = { is_year = 1500 } }
+		localisation_key = gecko_intscore_no_rewards
+	}
+}
+
+defined_text = {
+	name = GetGeckoIntscoreContenderReward
+	text = {
+		trigger = { is_year = 1500 }
+		localisation_key = gecko_intscore_reward_4_details
+	}
+	text = {
+		trigger = { NOT = { is_year = 1500 } }
+		localisation_key = gecko_intscore_no_rewards
+	}
+}

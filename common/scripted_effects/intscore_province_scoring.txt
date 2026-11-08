@@ -62,7 +62,6 @@ intscore_score_valid_provinces = {
 			intscore_score_single_province = { PROVINCE = 217 BASE = 2 MULTIPLIER = $MULTIPLIER$ } # MADRID
 			intscore_score_single_province = { PROVINCE = 213 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # BARCELONA
 			intscore_score_single_province = { PROVINCE = 227 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # LISBON
-			intscore_score_single_province = { PROVINCE = 226 BASE = 1 MULTIPLIER = $MULTIPLIER$ } # GIBRALTAIR
 
 		################### BRITAIN
 			intscore_score_single_province = { PROVINCE = 236  BASE = 2 MULTIPLIER = $MULTIPLIER$ } # LONDON

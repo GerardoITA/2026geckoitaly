@@ -5,6 +5,12 @@ technology_group = western
 religion = catholic
 primary_culture = swiss
 capital = 165 # Bern
+add_truce_with = MLO
+add_truce_with = VEN
+add_truce_with = HAB
+add_truce_with = HES
+add_truce_with = FRA
+add_truce_with = BUR
 add_army_professionalism = 0.1
 
 1444.11.1 = {

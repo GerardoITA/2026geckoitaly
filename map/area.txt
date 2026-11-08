@@ -1533,8 +1533,8 @@ hautes_plaines_area = { #4
 	2459 6450 2462 6445
 }
 
-kasdir_area = { #5
-	2463 6449 6444 6451 6452
+kasdir_area = { #4
+	2463 6444 6451 6452
 }
 
 ouled_nail_area = { #5
@@ -1553,8 +1553,8 @@ sus_area = { #5
 	348 6448 2464 2466 4568
 }
 
-southern_morocco_area = { #3
-	347 1110 2470
+southern_morocco_area = { #4
+	347 1110 2470 6449
 }
 
 western_morocco_area = { #3

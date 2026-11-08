@@ -2809,7 +2809,7 @@ country_event = {
 			culture = hungarian
 			religion = catholic
 			type = army_reformer
-			skill = 2
+			skill = 3
 			cost_multiplier = 0.75
 		}
 		custom_tooltip = flavor_tur.204.a.tt

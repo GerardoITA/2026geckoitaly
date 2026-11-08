@@ -6,6 +6,7 @@ religion = orthodox
 technology_group = eastern
 historical_rival = NOV
 capital = 295 # Moskva
+add_truce_with = CRI
 fixed_capital = 295 # Cannot move capital away from this province & no power cost to move to it
 historical_rival = GOL
 national_focus = ADM

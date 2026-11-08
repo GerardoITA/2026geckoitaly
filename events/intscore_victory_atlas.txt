@@ -47,10 +47,6 @@ country_event = {
 				227 = { save_event_target_as = gecko_victory_destination }
 			}
 			else_if = {
-				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 226 } }
-				226 = { save_event_target_as = gecko_victory_destination }
-			}
-			else_if = {
 				limit = { is_variable_equal = { which = gecko_victory_selected_id value = 248 } }
 				248 = { save_event_target_as = gecko_victory_destination }
 			}

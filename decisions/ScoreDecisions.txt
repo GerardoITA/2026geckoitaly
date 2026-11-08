@@ -63,7 +63,6 @@ check_standard_victory_provinces = {
 			################### IBERIA
 			province_id = 213 # BARCELONA
 			province_id = 227 # LISBON
-			province_id = 226 # GIBRALTAIR		
 
 			################### BRITAIN
 			province_id = 248  # LOTHIAN

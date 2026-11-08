@@ -39,10 +39,6 @@ defined_text = {
 		localisation_key = gecko_victory_name_227
 	}
 	text = {
-		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 226 } }
-		localisation_key = gecko_victory_name_226
-	}
-	text = {
 		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 248 } }
 		localisation_key = gecko_victory_name_248
 	}
@@ -493,10 +489,6 @@ defined_text = {
 	text = {
 		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 227 } 227 = { owner = { exists = yes } } }
 		localisation_key = gecko_victory_owner_227
-	}
-	text = {
-		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 226 } 226 = { owner = { exists = yes } } }
-		localisation_key = gecko_victory_owner_226
 	}
 	text = {
 		trigger = { is_variable_equal = { which = gecko_victory_selected_id value = 248 } 248 = { owner = { exists = yes } } }

@@ -5,6 +5,11 @@ technology_group = western
 primary_culture = saxon
 religion = catholic
 capital = 50	# Berlin
+add_truce_with = HES
+add_truce_with = HSA
+add_truce_with = POL
+add_truce_with = HAB
+add_truce_with = SWE
 
 change_estate_land_share = {
 	estate = estate_church

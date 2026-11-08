@@ -6,6 +6,8 @@ primary_culture = swedish
 religion = catholic
 add_accepted_culture = finnish
 capital = 1	#Stockholm
+add_truce_with = HSA
+add_truce_with = BRA
 
 national_focus = MIL
 

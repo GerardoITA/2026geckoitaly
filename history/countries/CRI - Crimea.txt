@@ -10,6 +10,8 @@ national_focus = MIL
 set_government_rank = 2
 set_emperor_of_china = CRI
 add_truce_with = GEN
+add_truce_with = MOS
+add_truce_with = POL
 #######
 
 1441.1.1 = {

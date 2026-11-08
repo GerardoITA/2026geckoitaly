@@ -6,6 +6,7 @@ technology_group = western
 religion = catholic
 primary_culture = franconian
 capital = 4715	# Rothenburg
+add_truce_with = HAB
 fixed_capital = 4715 # Cannot move capital away from this province & no power cost to move to it
 
 1419.9.11 = { leader = {	name = "John the Bastard"   	type = general	fire = 3	shock = 3	manuever = 3	siege = 3 } }

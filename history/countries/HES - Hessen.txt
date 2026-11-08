@@ -5,6 +5,11 @@ primary_culture = hessian
 religion = catholic
 technology_group = western
 capital = 1762	# Kassel
+add_truce_with = SWI
+add_truce_with = HAB
+add_truce_with = BRA
+add_truce_with = HSA
+add_truce_with = BUR
 
 
 1376.1.1 = {

@@ -6,8 +6,11 @@ technology_group = eastern
 historical_friend = LIT
 historical_rival = TEU
 capital = 262 # Krakow
+add_truce_with = BRA
 add_accepted_culture = ruthenian
 add_truce_with = HUN
+add_truce_with = HAB
+add_truce_with = CRI
 set_country_flag = pol_pact_conventa_flag
 
 1444.10.1 = {

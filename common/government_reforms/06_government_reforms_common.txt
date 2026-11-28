@@ -3619,6 +3619,7 @@ lessons_of_the_hussite_wars_reform = {
 	icon = "war_map"
 	allow_normal_conversion = yes
 	potential = {
+		always = no
 		has_dlc = "Domination"
 		OR = {
 			primary_culture = czech

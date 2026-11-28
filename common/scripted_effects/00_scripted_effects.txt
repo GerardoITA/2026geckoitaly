@@ -2091,7 +2091,7 @@ add_development_from_building = {
 	if = {
 		limit = {
 			FROM = { has_country_flag = improve_development_on_buildings_built }
-			NOT = { gained_development_from_building = { building = $building$ } }
+			#NOT = { gained_development_from_building = { building = $building$ } }
 		}
 		add_base_$type$ = $value$
 		hidden_effect = {
@@ -2125,7 +2125,7 @@ remove_development_from_building = {
 	if = {
 		limit = {
 			FROM = { has_country_flag = improve_development_on_buildings_built }
-			gained_development_from_building = { building = $building$ }
+			#gained_development_from_building = { building = $building$ }
 		}
 		add_base_$type$ = -$value$
 		if = {

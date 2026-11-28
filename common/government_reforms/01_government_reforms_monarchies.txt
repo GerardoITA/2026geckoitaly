@@ -2611,6 +2611,8 @@ russian_empire_reform = {
 		global_manpower_modifier = 0.20
 		embracement_cost = -0.5
 		governing_capacity = 350
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.2
 	}
 
 	conditional = {
@@ -4749,7 +4751,7 @@ poligar_reform = {
 		}
 	}
 	modifiers = {
-		infantry_power = 0.05
+		infantry_power = 0.1
 		build_cost = -0.05
 	}
 	conditional = {

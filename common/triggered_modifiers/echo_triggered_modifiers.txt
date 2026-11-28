@@ -33,9 +33,6 @@ Splendid_Court = {
 
 Minor = {
 	potential = {
-		NOT = {
-			is_emperor = yes
-		}
 		ROOT = {
 			ai = no
 		}
@@ -51,9 +48,6 @@ Minor = {
 	trigger = {
 		NOT = {
 			is_colonial_nation = yes
-		}
-		NOT = {
-			is_emperor = yes
 		}
 		NOT = {
 			total_own_and_non_tributary_subject_development = 400

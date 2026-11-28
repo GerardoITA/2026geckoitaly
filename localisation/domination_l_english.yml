@@ -2523,7 +2523,7 @@
  estate_special:0 "Internal Structures"
  mechanic_cheaper_streltsy_yes:0 "§YStreltsy§! will now demand §G-25.0%§! less Ducats on every new ruler"
  mechanic_buffed_streltsy_button_yes:0 "Reduces the reinforce cost by §G-10.0%§! and increase the reinforce speed by §G+10.0%§! of §YStreltsy§! when using the §YEquip Streltsy§! interaction"
- mechanic_new_order_regiment_buff_yes:1 "The §YMobilize New Order Regiments§! interaction grants §G+15.0%§! Infantry Combat Ability for §Y10 years§!"
+ mechanic_new_order_regiment_buff_yes:1 "The §YMobilize New Order Regiments§! interaction grants an extra §G+5.0%§! Infantry Combat Ability for §Y10 years§! (§G+10.0%§! total)"
  mechanic_has_weaker_harem_events_yes:0 "Has §YSecured Succession§!"
  mechanic_manpower_sailors_on_build_yes:0 "Gain §G1000§! Manpower or §G200§! Sailors upon construction of §YBarracks§!, §YTraining Fields§!, §YDocks§!, and §YDrydocks§!."
  mechanic_is_peasants_republic_yes:0 "Is a §YPeasants Republic§!"

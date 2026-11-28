@@ -1391,6 +1391,8 @@ great_russian_republic_reform = {
 		global_autonomy = -0.05
 		embracement_cost = -0.5
 		max_absolutism = 50
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.2
 	}
 
 	custom_attributes = {

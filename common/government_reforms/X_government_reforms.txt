@@ -48,8 +48,9 @@ X_CRI_great_tatar_state_reform = {
 	
 }
 
-#tier 2 that gets given by an event to fix the meritocracy
+#tier 2 applied to the Mandate holder to enable meritocracy
 X_CRI_fix_for_meritocracy = {
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			is_emperor_of_china = yes
@@ -66,7 +67,7 @@ X_CRI_fix_for_meritocracy = {
 
 	modifiers = {
 		global_manpower_modifier = 0.1
-		global_tax_modifier = 0.2
+		global_tax_modifier = 0.1
 	}
 	custom_attributes = {
 		locked_government_type = yes

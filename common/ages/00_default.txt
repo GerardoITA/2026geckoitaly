@@ -508,7 +508,7 @@ age_of_reformation = {
 				}
 			}
 			modifier = {
-				fire_damage = 0.15
+				fire_damage = 0.1
 			}
 			ai_will_do = {
 				factor = 100

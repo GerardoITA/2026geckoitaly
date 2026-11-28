@@ -442,7 +442,7 @@ estate_nomadic_tribes_ensure_tribal_loyalty = {
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	is_valid = {
-		has_dlc = "Domination"
+		always = no
 	}
 	loyalty_scaled_conditional_modifier = {
 		trigger = {

@@ -1240,7 +1240,7 @@ MUG_ideas = {
 	}
 	
 	bonus = {
-		fire_damage = 0.15
+		fire_damage = 0.1
 	}
 	
 	trigger = {
@@ -2999,7 +2999,7 @@ BUK_ideas = {
 }
 GLH_ideas = {
 	start = {
-		development_cost = -0.15
+		development_cost = -0.05
 		build_cost = -0.05
 	}
 	bonus = {
@@ -4049,7 +4049,6 @@ CRI_ideas = {
 	}
 	cri_ruthenian_raids = {
 		loot_amount = 0.25
-		shock_damage = 0.10
 	}
 	cri_genghisid_legacy = {
 		land_morale = 0.1

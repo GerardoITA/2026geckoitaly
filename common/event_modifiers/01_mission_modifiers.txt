@@ -14727,8 +14727,7 @@ MUG_friends_in_high_places = {
 }
 
 MUG_gunpowder_mastery = {
-	fire_damage = 0.15
-	artillery_power = 0.1
+	artillery_power = 0.05
 }
 
 MUG_rajput_reforms = {

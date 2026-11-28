@@ -2961,8 +2961,8 @@
  estate_burghers_hungarian_royal_cities:0 "Expand the Free Royal Towns"
  estate_burghers_hungarian_royal_cities_desc:0 "The Royal Towns of Hungary have for centuries served as the centers of commerce and trade, bringing immense wealth to the entire country. Let us further increase their privileges to attract even more foreign merchants and investors so that they turn into true metropolises, overshadowing even the greatest cities in the West."
  estate_burghers_hungarian_royal_cities_tt:2 "Every province in §YCarpathia§! with a §YCenter of Trade§! and §Y20§! development gains the following modifier:"
- unlock_privilege_estate_burghers_hungarian_royal_cities_tt:2 "Unlock the [Root.GetBurghersOrFallbackName] estate privilege '§YExpand the Free Royal Towns§!', affecting all of our provinces in §YCarpathia§! with a §YCenter of Trade§! and §Y20§! development, granting them the following modifiers:\n\n§G+1§! Possible Number of Manufactories\n§G-10.0%§! Local Development Cost Modifier\n§G+50.0%§! Local Goods Produced Modifier"
- estate_burghers_hungarian_royal_cities_rt:2 "Every province in §YCarpathia§! with a §YCenter of Trade§! and §Y20§! development loses §G+1§! Possible Number of Manufactories, §G-10.0%§! Local Development Cost Modifier and §G+50.0%§! Local Goods Produced Modifier."
+ unlock_privilege_estate_burghers_hungarian_royal_cities_tt:2 "Unlock the [Root.GetBurghersOrFallbackName] estate privilege '§YExpand the Free Royal Towns§!'. While enacted, it grants our provinces in §YCarpathia§! with a §YCenter of Trade§! and at least §Y20§! development the following modifiers:\n\n§G+1§! Possible Number of Manufactories\n§G+20.0%§! Local Goods Produced Modifier"
+ estate_burghers_hungarian_royal_cities_rt:2 "Provinces that received the Free Royal Towns modifier lose §G+1§! Possible Number of Manufactories and §G+20.0%§! Local Goods Produced Modifier."
  hun_royal_province_desc:0 "for as long as this privilege is enacted"
 
 #Government
@@ -6641,7 +6641,7 @@
  MUG_embassy_to_the_west:0 "Embassy to the West"
  desc_MUG_embassy_to_the_west:0 "With western courtiers, we will be able to make better connections and alliances."
  MUG_gunpowder_mastery:0 "Gunpowder Mastery"
- desc_MUG_gunpowder_mastery:0 "We have mastered gunpowder weapons and earned ourselves the nickname 'Gunpowder Empire.'"
+ desc_MUG_gunpowder_mastery:0 "Our mastery of gunpowder grants §G+5%§! Artillery Combat Ability for the rest of the game."
  MUG_rajput_reforms:0 "Reform of the Rajput Regiments"
  desc_MUG_rajput_reforms:0 "The drill of our Rajput regiments has vastly improved, giving way for increased combat potential."
  MUG_indian_recruitment:0 "Indian Recruitment"
@@ -7033,7 +7033,7 @@
  HAB_EVERY_HUNGARIAN_PROVINCE_GAINS_35_AUTONOMY:0 "All §YHungarian§! Core provinces will gain §R35%§! Autonomy."
  HAB_ALL_HUNGARIAN_PROVINCES_LOSE_AUTONOMY_AND_GAIN_THE_FOLLOWING_MODIFIER:0 "All §YHungarian§! Core provinces will lose §G50%§! Autonomy and gain the following:"
  
- HungarianRevolutionCompromise:0 "The end of the Hungarian Revolution is here. Neither side was able to emerge victorious, so leaders from both sides came to a compromise. Instead of an independent Hungarian state, or the Austrian crown emerging on top, the creation of Austria-Hungary was the best solution. The Hungarian nobles now enjoy an elevated status in [Root.GetName]."
+ HungarianRevolutionCompromise:0 "The end of the Hungarian Revolution is here. Neither side was able to emerge victorious, so leaders from both sides came to a compromise. The Hungarian nobles now enjoy an elevated status in [Root.GetName]."
  
  HungarianRevolutionVictory:0 "The end of the Hungarian Revolution is here. Despite the brave resistance of the Hungarians, the crown of [Root.GetName] has emerged victorious. The fate of Hungary is now at their hands."
  

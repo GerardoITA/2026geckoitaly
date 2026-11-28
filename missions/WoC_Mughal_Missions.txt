@@ -2989,15 +2989,9 @@ WoC_mughals_5 = {
 			monthly_mil = 9
 		}
 		effect = {
-			add_country_modifier_for_age = {
+			add_country_modifier = {
 				name = MUG_gunpowder_mastery
-				age = age_of_reformation
-				else = "
-					create_general_with_pips = {
-						tradition = 80
-						add_siege = 3
-					}
-				"
+				duration = -1
 			}
 			
 			change_innovativeness = 3

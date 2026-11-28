@@ -19,9 +19,9 @@ add_truce_with = POL
 		name = "Haji I"
 		dynasty = Giray
 		birth_date = 1425.1.1
-		adm = 4                                                         
-		dip = 6
-		mil = 4
+		adm = 3
+		dip = 5
+		mil = 3
 	}
 }
 

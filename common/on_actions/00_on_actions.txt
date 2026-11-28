@@ -10,6 +10,10 @@ on_startup = {
 			is_emperor_of_china = yes
 		}
 		save_global_event_target_as = EmperorOfChina
+		if = {
+			limit = { NOT = { has_reform = X_CRI_fix_for_meritocracy } }
+			gecko_enable_mandate_meritocracy_effect = yes
+		}
 	}
 	events = {
 		muslim_school_events.20		#Pick School

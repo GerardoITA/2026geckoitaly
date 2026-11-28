@@ -12,7 +12,6 @@ base_manpower = 4
 capital = "Udine" 
 is_city = yes # Estimated
 add_core = AQU
-fort_15th = yes
 
 discovered_by = western
 discovered_by = eastern
